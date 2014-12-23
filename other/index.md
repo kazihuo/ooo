@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Other
+title: Memos & Notes
 ---
 
 <ul class="post-list">
