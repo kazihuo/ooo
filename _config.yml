@@ -40,9 +40,5 @@ owner:
   github: dbarobin
   twitter: dbarobin
   facebook: dbarobin
-
-# Analytics and webmaster tools stuff goes here
-analytics :
-  provider : google
-  google :
-      tracking_id : 'UA-57297247-1'
+  google:
+    analytics: UA-57297247-1
