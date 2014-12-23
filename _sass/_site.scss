@@ -28,7 +28,7 @@ body {
 body {
 	font-family: $base-font;
 	color: $text-color;
-	@include font-size(12);
+	@include font-size(16);
 }
 
 p {
@@ -194,11 +194,10 @@ figcaption {
 
 blockquote {
 	font-family: $alt-font;
-	font-style: normal;
-	@include font-size(11);
-	padding-left: 0 15px;
-	border-left: 4px solid #DDD;
-	color: #777;
+	font-style: italic;
+	@include font-size(16);
+	padding-left: 20px;
+	border-left: 8px solid $black;
 }
 
 
