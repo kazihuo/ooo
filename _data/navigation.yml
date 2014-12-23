@@ -3,14 +3,21 @@
 - title: About
   url: /about/
 
+- title: tags
+  url: /tags/
+
 - title: Articles
   url: /articles/
 
-- title: Blog
-  url: /blog/
+- title: MySQL
+  url: /mysql/
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: Linux
+  url: /linux/
 
-- title: Made Mistakes
-  url: http://mademistakes.com
+- title: Python
+  url: /python/
+
+- title: other
+  url: /other/
+
