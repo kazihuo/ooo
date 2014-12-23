@@ -196,7 +196,7 @@ blockquote {
 	font-family: $alt-font;
 	font-style: normal;
 	@include font-size(11);
-	padding-left: 0 15px;
+	padding-left: 15px;
 	border-left: 4px solid #DDD;
 	color: #777;
 }
