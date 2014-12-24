@@ -6,12 +6,12 @@ description: Above all, don't lose hope.
 logo: site-logo.png
 search: true
 url: https://dbarobin.github.io
-timezone:    Asia/Chongqing
+timezone: Asia/Chongqing
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
-markdown:    kramdown
+permalink: /:categories/:title/
+markdown: kramdown
 highlighter: pygments
 sass:
   sass_dir: _sass
@@ -25,7 +25,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..2
-  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: false
 
 include: [".htaccess"]
