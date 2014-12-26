@@ -11,6 +11,16 @@
 
 {% include navigation.html %}
 
+{% if site.readtime %}
+  {% for post in site.posts %}
+    {% if site.wpm %}
+      {% ASSIGN readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
+    {% else %}
+      {% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:180 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 <div id="main" role="main">
   <article class="hentry">
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>{% endif %}{% endif %}
@@ -34,7 +44,11 @@
         {% endif %}
         <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
         <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
-        <span class="reading time"><span class="fn">{{ readtime }}</span></span>
+		{% if site.readtime %}
+		  {% if readtime < 1 %} <span class="reading time"><span class="fn">Less than 1 minute read</span></span>  
+		  {% elsif readtime > 1 and readtime < 1.5 %} <span class="fn">1 minute read</span></span>
+		  {% elsif readtime > 1.5 %}<span class="reading time"><span class="fn">{{ readtime }} minutes read</span></span>{% endif %}
+		{% endif %}
         {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
         {% if page.share %}{% include social-share.html %}{% endif %}
         {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
