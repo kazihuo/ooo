@@ -14,7 +14,7 @@ share: true
 * Table of Contents
 {:toc}
 
-##  ##
+## How to master mysql systematically  ##
 
 `文/温国兵`
 
