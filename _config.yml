@@ -1,5 +1,4 @@
 # Site wide configuration
-
 title: DBA@Robin's Blog-Focus on database.
 locale: zh_CN
 description: Above all, don't lose hope.
@@ -17,10 +16,6 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
-
-# Read Time is a CALCULATOR to provide post Estimated Reading Time (ERT) based on word count. Usage is recommended.
-readtime: true
-wpm: 200
 
 kramdown:
   input: GFM
