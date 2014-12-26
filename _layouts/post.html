@@ -34,11 +34,6 @@
         {% endif %}
         <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
         <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
-		{% if site.readtime %}
-		  {% if readtime < 1 %} <span class="reading time"><span class="fn">Less than 1 minute read</span></span>  
-		  {% elsif readtime > 1 and readtime < 1.5 %} <span class="fn">1 minute read</span></span>
-		  {% elsif readtime > 1.5 %}<span class="reading time"><span class="fn">{{ readtime }} minutes read</span></span>{% endif %}
-		{% endif %}
         {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
         {% if page.share %}{% include social-share.html %}{% endif %}
         {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
