@@ -89,7 +89,7 @@ GitHub地址：<a href="https://github.com/fabric/fabric" target="_blank"><i cla
 
 其中，远程调用使用Fabric提供的run方法，此方法和Ruby中的run有异曲同工之妙。
 
-下面，谈到本文的核心了。**使用Fabric读取远程文件需要使用StringIO模块和get()方法，通过StringIO模块的getvalue()方法获取文件内容。 **
+下面，谈到本文的核心了。**使用Fabric读取远程文件需要使用StringIO模块和get()方法，通过StringIO模块的getvalue()方法获取文件内容。**
 
 下面是脚本的核心代码：
 {% highlight python %}
