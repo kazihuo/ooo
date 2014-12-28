@@ -143,7 +143,7 @@ def auto_gen():
         print green('Auto generate testing reports finished!')
 {% endhighlight %}
 
-在远程服务器调用该脚本即可，具体使用方法可以参考<a href=""https://github.com/dbarobin/python-auto-deploy/tree/master/auto_gen_testing_reports target="_blank">此处</a>，该项目已经托管在GitHub上。
+在远程服务器调用该脚本即可，具体使用方法可以参考<a href="https://github.com/dbarobin/python-auto-deploy/tree/master/auto_gen_testing_reports" target="_blank">此处</a>，该项目已经托管在GitHub上。
 
 –EOF–
 
