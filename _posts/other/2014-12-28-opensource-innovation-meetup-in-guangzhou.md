@@ -47,7 +47,7 @@ share: true
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://www.oschina.net/question/28_60390" target="_blank"><img src="http://imgur.com/ZRkdggf" title="OSC" height="16px" width="16px" border="0" alt="OSC" /></a>
+题图来自：<a href="http://www.oschina.net/question/28_60390" target="_blank"><img src="http://i.imgur.com/ZRkdggf.png" title="OSC" height="16px" width="16px" border="0" alt="OSC" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
 
