@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "插件化生存"
+title: "开源中国广州源创会分享"
 category: other
-tags: [other, 插件化, 思想, 生存]
+tags: [other, 开源中国, OSC, 源创会, OpenSourc Innovation Meetup, 分享, SequoiaDB, 自动化运维, CoreOS, Git]
 comments: true
 share: true
 
@@ -13,7 +13,7 @@ share: true
 * Table of Contents
 {:toc}
 
-## Plugin thoughts to survive ##
+## OpenSourc Innovation Meetup in GuangZhou ##
 
 `文/温国兵`
 
