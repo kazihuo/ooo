@@ -13,7 +13,7 @@ share: true
 * Table of Contents
 {:toc}
 
-## OpenSourc Innovation Meetup in GuangZhou ##
+## OpenSource Innovation Meetup in GuangZhou ##
 
 `文/温国兵`
 
