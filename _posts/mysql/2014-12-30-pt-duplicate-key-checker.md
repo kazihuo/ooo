@@ -43,13 +43,16 @@ mysql> CREATE TABLE temp
 Query OK, 0 rows affected (0.12 sec)
 
 # 插入测试数据
-mysql> INSERT INTO temp(name, password, age) VALUES('robin', '123456', '18');
+mysql> INSERT INTO temp(name, password, age) \
+VALUES('robin', '123456', '18');
 Query OK, 1 row affected (0.00 sec)
 
-mysql> INSERT INTO temp(name, password, age) VALUES('jack', '123456', '19');
+mysql> INSERT INTO temp(name, password, age) \
+VALUES('jack', '123456', '19');
 Query OK, 1 row affected (0.00 sec)
 
-mysql> INSERT INTO temp(name, password, age) VALUES('rose', '123456', '20');
+mysql> INSERT INTO temp(name, password, age) \
+VALUES('rose', '123456', '20');
 Query OK, 1 row affected (0.00 sec)
 
 mysql> SELECT * FROM temp;
