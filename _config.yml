@@ -19,6 +19,8 @@ gems:
 
 # Enable pagination
 paginate: 10
+paginate_path: "/page:num"
+paginate_per_category: true
 
 kramdown:
   input: GFM
