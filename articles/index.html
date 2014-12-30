@@ -4,11 +4,15 @@ title: Articles
 ---
 
 <!-- This loops through the paginated posts -->
-<ul class="post-list">
 {% for post in paginator.posts %}
-<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_x    mlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
 {% endfor %}
-</ul>
 
 <!-- Pagination links -->
 <div class="pagination">
