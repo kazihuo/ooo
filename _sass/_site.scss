@@ -28,11 +28,11 @@ body {
 body {
 	font-family: $base-font;
 	color: $text-color;
-	@include font-size(12);
+	@include font-size(16);
 }
 
 p {
-	@include font-size(12,yes,28);
+	@include font-size(18,yes,28);
 }
 
 li {
@@ -194,11 +194,10 @@ figcaption {
 
 blockquote {
 	font-family: $alt-font;
-	font-style: normal;
-	@include font-size(11);
-	padding-left: 15px;
-	border-left: 4px solid #DDD;
-	color: #777;
+	font-style: italic;
+	@include font-size(16);
+	padding-left: 20px;
+	border-left: 8px solid $black;
 }
 
 
@@ -220,7 +219,7 @@ tt, code, kbd, samp, pre {
 p,
 li { 
 	code {
-		@include font-size(12);
+		@include font-size(14);
 		font-family: $code-font;
 		white-space: nowrap;
 		margin: 0 2px;
@@ -231,7 +230,7 @@ li {
 	}
 }
 pre {
-	@include font-size(12);
+	@include font-size(14);
 	overflow-x: auto;
 }
 
