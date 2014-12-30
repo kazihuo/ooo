@@ -222,8 +222,8 @@ span + .entry-title {
 }
 .entry-title {
 	font-family: $alt-font;
-	font-style: normal;
-	@include font-size(16,yes,16);
+	font-style: italic;
+	@include font-size(36,yes,36);
 	font-weight: 400;
 	line-height: 1;
 	letter-spacing: -3px;
