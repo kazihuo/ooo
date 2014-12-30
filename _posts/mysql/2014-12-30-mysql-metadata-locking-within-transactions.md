@@ -110,7 +110,10 @@ Query OK, 0 rows affected (24.17 sec)
 
 同样，在MySQL 5.1中做相同的测试。
 {% highlight bash %}
-/usr/local/mysql_5.1/bin/mysqld_multi --defaults-extra-file=/etc/my_mutli.cnf start 5173
+/usr/local/mysql_5.1/bin/mysqld_multi \
+--defaults-extra-file=/etc/my_mutli.cnf \
+start 5173
+
 mysql --socket=/tmp/mysql5173.sock -uroot -p
 {% endhighlight %}
 
@@ -195,6 +198,7 @@ Query OK, 0 rows affected (0.00 sec)
 可以删除，MySQL 5.1和MySQL 5.5在元数据锁中的实现略有不同，5.1删表不会发生锁等待，而5.5会。
 
 具体的原因，我查了下官方文档。
+
 > To ensure transaction serializability, the server must not permit one session to perform a data definition language (DDL) statement on a table that is used in an uncompleted explicitly or implicitly started transaction in another session. The server achieves this by acquiring metadata locks on tables used within a transaction and deferring release of those locks until the transaction ends. A metadata lock on a table prevents changes to the table's structure. This locking approach has the implication that a table that is being used by a transaction within one session cannot be used in DDL statements by other sessions until the transaction ends.
 
 也就是说，5.5中表的“元数据锁”一直到整个”事务”全部完成后才会释放，而5.1中，一个事务请求表的“元数据锁”直到“语句”执行完毕。这个特性的好处在于可以避免复制过程中日志顺序错误的问题。
