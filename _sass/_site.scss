@@ -28,11 +28,11 @@ body {
 body {
 	font-family: $base-font;
 	color: $text-color;
-	@include font-size(12);
+	@include font-size(14);
 }
 
 p {
-	@include font-size(12,yes,22);
+	@include font-size(16,yes,26);
 }
 
 li {
