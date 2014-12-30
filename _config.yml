@@ -17,9 +17,6 @@ sass:
 gems:
   - jekyll-sitemap
 
-# Enable pagination
-paginate: 10
-
 kramdown:
   input: GFM
   auto_ids: true
