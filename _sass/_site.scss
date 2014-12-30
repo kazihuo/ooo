@@ -28,11 +28,11 @@ body {
 body {
 	font-family: $base-font;
 	color: $text-color;
-	@include font-size(14);
+	@include font-size(12);
 }
 
 p {
-	@include font-size(16,yes,26);
+	@include font-size(12,yes,28);
 }
 
 li {
@@ -220,7 +220,7 @@ tt, code, kbd, samp, pre {
 p,
 li { 
 	code {
-		@include font-size(14);
+		@include font-size(12);
 		font-family: $code-font;
 		white-space: nowrap;
 		margin: 0 2px;
@@ -231,7 +231,7 @@ li {
 	}
 }
 pre {
-	@include font-size(14);
+	@include font-size(12);
 	overflow-x: auto;
 }
 
