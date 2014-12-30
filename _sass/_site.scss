@@ -194,10 +194,11 @@ figcaption {
 
 blockquote {
 	font-family: $alt-font;
-	font-style: italic;
-	@include font-size(16);
-	padding-left: 20px;
-	border-left: 8px solid $black;
+	font-style: normal;
+	@include font-size(11);
+	padding-left: 15px;
+	border-left: 4px solid #DDD;
+	color: #777;
 }
 
 
