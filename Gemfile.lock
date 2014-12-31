@@ -89,5 +89,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-paginate
   jekyll-sitemap
   octopress (~> 3.0.0.rc.12)
