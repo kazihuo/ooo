@@ -127,10 +127,10 @@ FROM   #temp
 
 > **Returns the part of a character expression that starts at the specified position and has the specified length. The position parameter and the length parameter must evaluate to integers.**
 > 
-> **Syntax **
+> **Syntax**
 > SUBSTRING(character_expression, position, length)
 > 
-> **Arguments **
+> **Arguments**
 > character_expression
 > Is a character expression from which to extract characters.
 > position
@@ -138,14 +138,14 @@ FROM   #temp
 > length
 > Is an integer that specifies the length of the substring as number of characters.
 > 
-> **Result Types **
+> **Result Types**
 > DT_WSTR
 
 **Charindex**
 
 > **Searches an expression for another expression and returns its starting position if found.**
 > 
-> **Syntax **
+> **Syntax**
 > CHARINDEX ( expressionToFind ,expressionToSearch [ , start_location ] )
 > 
 > **Arguments**
