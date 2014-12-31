@@ -41,8 +41,9 @@ share: true
 4.确实现在已经过了Oracle的黄金期，Oracle的技术已经趋于成熟。至于资料，不缺。比如国内技术大牛的技术分享（可以看下ACOUG成员的博客）、国外牛人的博客等等。
 
 分享两位前辈的博客：
-<a href="http://www.eygle.com/" target="_blank">Oracle Life - 提供专业的技术支持,性能调整及 Oracle 数据恢复服务</a> <br/>
-<a href="http://blog.csdn.net/tianlesoftware" target="_blank">David Dai --Focus on Oracle</a>
+
+* <a href="http://www.eygle.com/" target="_blank">Oracle Life - 提供专业的技术支持,性能调整及 Oracle 数据恢复服务</a>
+* <a href="http://blog.csdn.net/tianlesoftware" target="_blank">David Dai --Focus on Oracle</a>
 
 5.下面把你的回答摘抄下来，然后我试着回答你其中提到的一些问题。
 
