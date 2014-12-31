@@ -14,7 +14,7 @@ share: true
 * Table of Contents
 {:toc}
 
-## Memory with jay ##
+## Memory with Jay ##
 
 `文/温国兵`
 
