@@ -13,7 +13,7 @@ share: true
 * Table of Contents
 {:toc}
 
-## 文档摘要 ##
+## MySQL pt-duplicate-key-checker ##
 
 `文/温国兵`
 
