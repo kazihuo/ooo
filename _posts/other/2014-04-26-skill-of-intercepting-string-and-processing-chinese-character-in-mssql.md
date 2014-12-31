@@ -35,7 +35,8 @@ EnterpriseEdition:Core-basedLicensing(64-bit)onWindowsNT6.1(Build7601:ServicePac
 ------------------
 System Information
 ------------------
-Operating System: Windows 7 Ultimate 64-bit (6.1, Build 7601) Service Pack 1 (7601.win7sp1_gdr.130828-1532)
+Operating System: Windows 7 Ultimate 64-bit (6.1, Build 7601) \
+Service Pack 1 (7601.win7sp1_gdr.130828-1532)
 System Model: Aspire E1-471G
 Processor: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz (4 CPUs), ~2.6GHz
 Memory: 4096MB RAM
@@ -124,70 +125,56 @@ FROM   #temp
 
 **Substring**
 
-> Returns the part of a character expression that starts at the specified position and has the specified length. The position parameter and the length parameter must evaluate to integers.
-> 
-> Syntax
+> **Returns the part of a character expression that starts at the specified position and has the specified length. The position parameter and the length parameter must evaluate to integers.**
+> **Syntax **
 > SUBSTRING(character_expression, position, length)
-> 
-> Arguments
+> **Arguments **
 > character_expression
 > Is a character expression from which to extract characters.
 > position
 > Is an integer that specifies where the substring begins.
 > length
 > Is an integer that specifies the length of the substring as number of characters.
-> 
-> Result Types
->DT_WSTR
+> **Result Types **
+> DT_WSTR
 
 **Charindex**
 
-> Searches an expression for another expression and returns its starting position if found.
-> 
-> Syntax
+> **Searches an expression for another expression and returns its starting position if found.**
+> **Syntax **
 > CHARINDEX ( expressionToFind ,expressionToSearch [ , start_location ] )
-> 
-> Arguments
+> **Arguments**
 > expressionToFind
 > Is a character expression that contains the sequence to be found. expressionToFind is limited to 8000 characters.
 > expressionToSearch
 > Is a character expression to be searched.
 > start_location
 > Is an integer or bigint expression at which the search starts. If start_location is not specified, is a negative number, or is 0, the search starts at the beginning of expressionToSearch.
-> 
-> Return Types
+> **Return Types**
 > bigint if expressionToSearch is of the varchar(max), nvarchar(max), or varbinary(max) data types; otherwise, int.
 
 **Rtrim**
 
-> Returns a character expression after removing trailing spaces.
-> 
+> **Returns a character expression after removing trailing spaces.**
 > RTRIM does not remove white space characters such as the tab or line feed characters. Unicode provides code points for many different types of spaces, but this function recognizes only the Unicode code point 0x0020. When double-byte character set (DBCS) strings are converted to Unicode they may include space characters other than 0x0020 and the function cannot remove such spaces. To remove all kinds of spaces, you can use the Microsoft Visual Basic .NET RTrim method in a script run from the Script component.
-> 
-> Syntax
+> **Syntax**
 > RTRIM(character expression)
-> 
-> Arguments
+> **Arguments**
 > character_expression
 > Is a character expression from which to remove spaces.
-> 
-> Result Types
+> **Result Types**
 > DT_WSTR
 
 **Ltrim**
 
-> Returns a character expression after removing leading spaces.
-> 
+> **Returns a character expression after removing leading spaces.**
 > LTRIM does not remove white-space characters such as the tab or line feed characters. Unicode provides code points for many different types of spaces, but this function recognizes only the Unicode code point 0x0020. When double-byte character set (DBCS) strings are converted to Unicode they may include space characters other than 0x0020 and the function cannot remove such spaces. To remove all kinds of spaces, you can use the Microsoft Visual Basic .NET LTrim method in a script run from the Script component.
-> 
-> Syntax
+> **Syntax**
 > LTRIM(character expression)
-> 
-> Arguments
+> **Arguments**
 > character_expression
 > Is a character expression from which to remove spaces.
-> 
-> Result Types
+> **Result Types**
 > DT_WSTR
 
 好了，我们查看处理完后的结果，可以看到包含店的字符串已经全部过滤出编号。
