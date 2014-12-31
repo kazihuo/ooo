@@ -232,10 +232,10 @@ span + .entry-title {
 		text-decoration: underline;
 	}
 	@include media($medium) {
-		@include font-size(16,yes,54); // size for tablets
+		@include font-size(24,yes,54); // size for tablets
 	}
 	@include media($large) {
-		@include font-size(16,yes,72); // size for desktop
+		@include font-size(24,yes,72); // size for desktop
 	}
 }
 .entry-wrapper {
