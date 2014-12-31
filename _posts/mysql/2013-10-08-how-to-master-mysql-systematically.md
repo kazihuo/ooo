@@ -61,7 +61,6 @@ share: true
 From：<a href="http://www.itpub.net/thread-1573610-1-1.html" target="_blank"><img src="http://i.imgur.com/luz6LB6.png" title="ITPUB" border="0" alt="ITPUB" height="16px" width="16px" /></a>
 
 黄杉
-
 1）MYSQL 重要参数的作用； 包括副作用哪些呢？ 是key_buffer_size、tmp_table_size、sort_buffer_size、innodb_buffer_size、innodb_log_file_size、innodb_flush_logs_at_trx_commit、max_tmp_tables等等！
 2）SHELL，要熟练； shell具体指的是啥，能否举例说明一本书籍，说搞懂了这本书籍，shell就算熟练了？
 3）PYTHON ， PERL 懂一种。 不懂，看来还得去买一本书，慢慢修炼了。
