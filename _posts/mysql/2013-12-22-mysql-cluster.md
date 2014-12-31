@@ -371,8 +371,8 @@ interactive-timeout
 [mysql_cluster]
 ndb_connectstring=192.168.1.11
 
-#下划线或者横线都可以
-#ndb-connectstring=192.168.1.11
+# 下划线或者横线都可以
+# ndb-connectstring=192.168.1.11
 {% endhighlight %}
 
 第五步，ndb01创建数据目录，修改所有者和所属组。
