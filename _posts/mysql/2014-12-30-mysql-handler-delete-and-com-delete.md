@@ -31,7 +31,7 @@ mysql> CREATE TABLE t2
     -> (id int auto_increment primary key,
     -> name varchar(20),
     -> password varchar(20),
-    -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8;                                                                                    
+    -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8; 
 Query OK, 0 rows affected (0.07 sec)
 
 mysql> INSERT INTO t2(name, password, age) \
