@@ -3,7 +3,7 @@
 # Date: 11:52:23 2014-12-04.
 # Desc: Auto push after update the repo.
 
-while getopts :ac:p:w ARGS
+while getopts :ac:pw ARGS
 do
 case $ARGS in
     a)  
