@@ -94,7 +94,7 @@ mysql> SHOW GLOBAL STATUS LIKE '%delete%';
 
 也就是说Handler_delete是**删除的记录数**，Com_delete是**执行Delete命令的次数**。
 
-## 参考资料 ##
+**参考资料**
 
 * <a href="http://dev.mysql.com/doc/refman/5.1/en/server-status-variables.html#statvar_Handler_delete" target="_blank">Handler_delete</a>
 * <a href="http://dev.mysql.com/doc/refman/5.1/en/server-status-variables.html#statvar_Com_xxx" target="_blank">Com_xxx</a>
