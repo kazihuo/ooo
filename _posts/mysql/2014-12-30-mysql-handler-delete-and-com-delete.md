@@ -34,13 +34,16 @@ mysql> CREATE TABLE t2
     -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8;                                                                                    
 Query OK, 0 rows affected (0.07 sec)
 
-mysql> INSERT INTO t2(name, password, age) VALUES('robin', '123456', '18');
+mysql> INSERT INTO t2(name, password, age) \
+VALUES('robin', '123456', '18');
 Query OK, 1 row affected (0.00 sec)
 
-mysql> INSERT INTO t2(name, password, age) VALUES('jack', '123456', '18');
+mysql> INSERT INTO t2(name, password, age) \
+VALUES('jack', '123456', '18');
 Query OK, 1 row affected (0.05 sec)
 
-mysql> INSERT INTO t2(name, password, age) VALUES('keven', '123456', '18');
+mysql> INSERT INTO t2(name, password, age) \
+VALUES('keven', '123456', '18');
 Query OK, 1 row affected (0.00 sec)
 
 mysql> SELECT * FROM t2;
