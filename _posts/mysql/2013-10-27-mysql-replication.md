@@ -8,13 +8,10 @@ share: true
 
 ---
 
-
 目录
 
 * Table of Contents
 {:toc}
-
-## MySQL replication ##
 
 `文/温国兵`
 
@@ -1458,4 +1455,3 @@ mysql> select * from t2;
 题图来自：原创，By <a href="https://dbarobin.github.io/" target="_blank">Robin Wen</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
