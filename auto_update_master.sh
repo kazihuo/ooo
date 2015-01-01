@@ -3,7 +3,7 @@
 # Date: 11:52:23 2014-12-04.
 # Desc: Auto push after update the repo.
 
-while getopts :ac:pw ARGS
+while getopts :ac:p ARGS
 do
 case $ARGS in
     a)  
@@ -15,13 +15,8 @@ case $ARGS in
     p)  
 		git push origin master
         ;;
-    w)  
-		git add -A .
-		git commit -m "$OPTARG"
-		git push origin master
-        ;;
      *)  
-    	echo $"Usage: $0 {-a(express add)|-c(express commit) update_info|-p(express push)|-w(All in on) update_info}"
+    	echo $"Usage: $0 {-a(express add)|-c(express commit) update_info|-p(express push)}"
 		exit 2
         ;;
 esac
