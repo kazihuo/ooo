@@ -8,13 +8,8 @@ share: true
 
 ---
 
-
-目录
-
 * Table of Contents
 {:toc}
-
-## MySQL insert of high concurrency ##
 
 `文/温国兵`
 
