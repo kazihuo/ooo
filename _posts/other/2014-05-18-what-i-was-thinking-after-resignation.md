@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## What I was thinking after resignation ##
-
 `文/温国兵`
 
 2014年5月8日，正式辞职，离入职刚好两个月。
@@ -47,4 +39,3 @@ share: true
 题图来自：<a href="http://zrdavis.com/i-quit/" target="_blank"><img src="http://i.imgur.com/nh8cHh4.gif" title="Quit" border="0" alt="Quit" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
