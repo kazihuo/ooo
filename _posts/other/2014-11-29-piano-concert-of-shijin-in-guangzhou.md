@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Piano concert of shijin in GuangZhou ##
-
 `文/温国兵`
 
 石进的音乐对我们而言，还是很小众，相信这个名字对于读者来说很陌生。写这篇文章之前，介绍下「石进」。
@@ -61,4 +53,3 @@ share: true
 题图来自：第一张来自Google Images，第二张原创，摄影于音乐会现场
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
