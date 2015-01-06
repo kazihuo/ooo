@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The chapter four of hunting job ##
-
 `文/温国兵`
 
 周六，仍然在奔波。昨天一家公司已经联系我，今天要去面试，职位是BI数据分析工程师。
@@ -37,4 +29,3 @@ share: true
 题图来自：<a href="http://pariwisatadunia.blogspot.jp/2010/11/yosemite-national-park-yosemite.html" target="_blank"><img src="http://i.imgur.com/wOovOf1.png" title="pariwisatadunia" height="16px" width="16px" border="0" alt="pariwisatadunia" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
