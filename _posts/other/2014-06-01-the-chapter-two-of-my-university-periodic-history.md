@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The chapter two of my university periodic history ##
-
 `文/温国兵`
 
 惰性人皆有之，也算是人的一大天性。几日之前便构思好此文，怎奈每日杂事繁多，今日才提起笔，作下此文。本文谈谈我与数据库的故事。
@@ -47,4 +39,3 @@ share: true
 题图来自：<a href="http://blog.creaders.net/jesus4you/user_blog_diary.php?did=182866" target="_blank">creaders</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
