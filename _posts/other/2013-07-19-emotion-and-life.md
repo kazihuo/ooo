@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Emotion and life ##
-
 `文/温国兵`
 
 最近的生活劳累且充实，劳累是身体累而心不累，内心却是很快乐、很轻松的。我想活在当下的生活态度是很需要的。过去已走远，无需眷顾和留念；未来还未知，更无需困扰和担忧。只有当下才是最需要把握的。老子言顺其自然，或许是看透了人世沉浮。老子又言知者不言，言者不知，我不是圣人，而且知不知，所以我所说的都是错的。
@@ -37,4 +29,3 @@ share: true
 题图来自：<a href="http://www.wikihow.com/Gain-Control-of-Your-Emotions" target="_blank"><img src="http://i.imgur.com/jKrofsc.png" title="wikihow" height="16px" width="16px" border="0" alt="wikihow" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
