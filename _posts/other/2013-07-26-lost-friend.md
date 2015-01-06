@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Lost friend ##
-
 `文/温国兵`
 
 我在用迷失的文字记录自己的青春，尝试着用诗人的视角临摹渐逝的流年，殊不知我只是沧海一粟，无名小卒，不能书写偌大的世界，只能挽腕独自长叹：不过如此。
@@ -41,4 +33,3 @@ share: true
 题图来自：<a href="http://smallscreenscoop.com/claire-kate-lost/37069/" target="_blank">SmallScreenScoop</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
