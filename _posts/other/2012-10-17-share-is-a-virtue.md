@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Share is a virtue ##
-
 `文/温国兵`
 
 一群人到市场上买了很多水果，而且每个人买的水果都不一样。这时有个人提议，为什么大家不分享出来呢？这样每个人都能吃到不同的水果。于是大家响应了这个提议。大家收获了不同的水果，享受了不同的美味，得到了更多的快乐。
@@ -35,4 +27,3 @@ share: true
 题图来自：<a href="http://venspired.com/you-are-what-you-share/" target="_blank"><img src="http://i.imgur.com/0pt33e6.gif" title="Share" height="16px" width="16px" border="0" alt="Share" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
