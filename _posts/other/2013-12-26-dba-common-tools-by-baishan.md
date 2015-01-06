@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## DBA common tools by baishan ##
-
 `整理/温国兵`
       
 **【了解作者】**
@@ -59,4 +51,3 @@ DBA 的电脑上需要安装什么软件？经常有人问老白，其实每个 
 题图来自：<a href="http://www.carolynhampe.com/253671/3313623/work/common-tools-commencement-show-branding" target="_blank"><img src="http://i.imgur.com/klUhMnG.png" title="" height="16px" width="16px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
