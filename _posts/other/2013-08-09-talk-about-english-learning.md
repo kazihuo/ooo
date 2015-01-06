@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Talk about english learning ##
-
 `文/温国兵`
 
 想了很久，这周谈谈什么呢？转念一想，既然有一件事情你坚持了那么久，为什么不和大家分享分享呢？本文谈谈英语学习。
@@ -43,4 +35,3 @@ share: true
 题图来自：<a href="http://www.gotmesh.org/category/dos-and-donts/" target="_blank">Gotmesh.org</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
