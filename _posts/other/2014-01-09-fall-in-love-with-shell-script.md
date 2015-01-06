@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Fall in love with shell script ##
-
 `文/温国兵`
 
 Shell脚本存在的价值，就是让工作更高效。
@@ -39,4 +31,3 @@ Shell脚本存在的价值，就是让工作更高效。
 题图来自：<a href="https://www.iconfinder.com/icons/79962/application_shellscript_icon" target="_blank"><img src="http://i.imgur.com/15kX0JP.png" title="" height="16px" width="16px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
