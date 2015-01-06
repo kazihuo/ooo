@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Rural family and great man ##
-
 `文/温国兵`
 
 相信读者大都看过这篇文章。如果没看过赶紧去天涯论坛看看或者关注鬼脚七阅读吧。天涯原文：寒门再难出贵子（修改版）；知乎相关话题：<a href="http://www.zhihu.com/question/21358190" target="_blank">「这个时代 寒门再难出贵子」如何看待？</a>
@@ -39,4 +31,3 @@ share: true
 题图来自：<a href="http://airsama.blogspot.jp/2014/03/blog-post_3.html" target="_blank"><img src="http://i.imgur.com/B1pMTMN.png" title="airsama" height="16px" width="16px" border="0" alt="airsama" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
