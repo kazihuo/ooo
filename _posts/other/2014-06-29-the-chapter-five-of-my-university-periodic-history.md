@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The chapter five of my university periodic history ##
-
 `文/温国兵`
 
 忙碌的大学生活总要有属于自己的娱乐方式，琴棋书画也好，游戏运动也罢。
@@ -43,4 +35,3 @@ share: true
 题图来自：<a href="http://blog.csdn.net/justdb/article/details/35778205" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="CUIT 银杏" height="16px" width="16px" border="0" alt="CUIT 银杏" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
