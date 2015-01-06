@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Joe Hisaishi in Budokan ##
-
 `文/温国兵`
 
 今天休息，看了08年的演奏会，《久石让在武道馆》，除了享受音乐盛宴的震撼外，更多的是为久石让和宫崎骏之间的友谊而感动。
@@ -78,4 +70,3 @@ share: true
 题图来自：Google Images
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
