@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Be yourself ##
-
 `文/温国兵`
 
 当我写下这篇文章的时候，正是度过这学期最忙的时候。繁重的复习终于告一段落，可以有时间做自己喜欢的事情，算是莫大的欣慰。
@@ -41,4 +33,3 @@ share: true
 题图来自：<a href="http://blogs.disney.com/oh-my-disney/2013/05/19/be-yourself/" target="_blank"><img src="http://i.imgur.com/fvxI0tC.png" title="disney" height="16px" width="16px" border="0" alt="disney" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
