@@ -8,11 +8,6 @@ share: true
 
 ---
 
-目录
-
-* Table of Contents
-{:toc}
-
 `文/温国兵`
 
 兴趣是学习的第一驱动力，我坚信。
