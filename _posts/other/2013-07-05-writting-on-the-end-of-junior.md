@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Writting on the end of junior ##
-
 `文/温国兵`
 
 > 不要因为走得太远，而忘记为什么出发。<br/>
@@ -48,4 +40,3 @@ share: true
 题图来自：<a href="http://www.cuit.edu.cn/" target="_blank"><img src="http://i.imgur.com/PrvUx6K.png" title="CUIT" height="16px" width="100px" border="0" alt="CUIT" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
