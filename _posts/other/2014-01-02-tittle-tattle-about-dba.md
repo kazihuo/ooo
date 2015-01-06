@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Tittle-tattle about dba ##
-
 `文/温国兵`
 
 人们一提起DBA，第一反应是这个职位多么的高端，殊不知DBA并不是你想象的那样。
@@ -37,4 +29,3 @@ share: true
 题图来自：Google Images
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
