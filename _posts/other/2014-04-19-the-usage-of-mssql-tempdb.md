@@ -13,8 +13,6 @@ share: true
 * Table of Contents
 {:toc}
 
-## The usage of mssql tempdb ##
-
 `文/温国兵`
 
 ## 场景现象 ##
