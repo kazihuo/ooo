@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Oracle Performance Tuning Tools ##
-
 `文/温国兵`
 
 Oracle性能调整在工作中经常遇到，比如TopSQL的出现导致系统资源浪费严重、物理读过多导致IO出现瓶颈、独占锁导致事务不能提交、索引建立不合理导致查询速度极慢、PGA或者SGA设置不合理导致内存不足、PCTFREE值设置不合理导致的行链接、热点块等等。作为一个DBA应该实时的监控系统，然后找出问题，再分析问题，最后解决。真正有难度的是找出问题所在，对于大多数的问题，只要经验足够都是很好解决的。有经验和没经验主要区别就在于定位问题的速度。
@@ -42,4 +34,3 @@ Oracle性能调整在工作中经常遇到，比如TopSQL的出现导致系统�
 题图来自：Google Images
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
