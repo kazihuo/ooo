@@ -55,15 +55,6 @@
 </div><!-- /#main -->
 
 <div class="footer-wrapper">
-  <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/archives/">View all posts</a>)</small></h4>
-    <ul>
-    {% for post in site.related_posts limit:5 %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
   <footer role="contentinfo" class="entry-wrapper">
     {% include footer.html %}
   </footer>
