@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Regarding blog and ideology ##
-
 `文/温国兵`
 
 写在前面：如果你看到这篇文章，那是缘分。如果你因为这篇文章有所收获，那是我莫大的欣慰。请读者静下心来，认真看完本文，阅毕肯定会有不一样的感受。
@@ -84,4 +76,3 @@ share: true
 题图来自：<a href="http://allfookedup.com/in-which-you-dont-care/the-thinker/" target="_blank"><img src="http://i.imgur.com/iHpCuCs.png" title="allfookedup" height="16px" width="16px" border="0" alt="allfookedup" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
