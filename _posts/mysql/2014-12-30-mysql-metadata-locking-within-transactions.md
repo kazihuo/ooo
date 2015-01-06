@@ -199,7 +199,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 也就是说，5.5中表的“元数据锁”一直到整个”事务”全部完成后才会释放，而5.1中，一个事务请求表的“元数据锁”直到“语句”执行完毕。这个特性的好处在于可以避免复制过程中日志顺序错误的问题。
 
-## 参考资料  ##
+**参考资料**
 
 <a href="http://dev.mysql.com/doc/refman/5.5/en/metadata-locking.html" target="_blank">8.10.4 Metadata Locking</a>
 
