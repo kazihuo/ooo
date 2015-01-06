@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Project management ##
-
 `文/温国兵`
 
 现在我来谈项目管理可能太唐突，自己根本没有资本来谈论这个话题。毕竟自己做的项目不是很多，而且作为管理者也很少。但是今天自己突然想在这个话题上说点什么。
@@ -45,4 +37,3 @@ share: true
 题图来自：<a href="http://www.denizon.com/project-management/" target="_blank"><img src="http://i.imgur.com/wFkNs3K.jpg" title="denizon" height="16px" width="16px" border="0" alt="denizon" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
