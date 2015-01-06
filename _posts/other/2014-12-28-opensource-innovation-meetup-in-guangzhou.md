@@ -8,13 +8,6 @@ share: true
 
 ---
 
-目录
-
-* Table of Contents
-{:toc}
-
-## OpenSource Innovation Meetup in GuangZhou ##
-
 `文/温国兵`
 
 > 2014年12月27日，广州，网易大厦。天微阴，雨滴漫天飞舞。
@@ -50,4 +43,3 @@ share: true
 题图来自：<a href="http://www.oschina.net/question/28_60390" target="_blank"><img src="http://i.imgur.com/ZRkdggf.png" title="OSC" height="16px" width="16px" border="0" alt="OSC" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
