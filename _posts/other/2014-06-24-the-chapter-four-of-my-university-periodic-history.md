@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The chapter four of my university periodic history ##
-
 `文/温国兵`
 
 身处IT行业，博客也好，知识管理工具也罢，明智的IT从业者总有一个良好的习惯，那就是通过博客或者知识管理工具形成自己的知识库。
@@ -53,4 +45,3 @@ share: true
 题图来自：<a href="http://blog.web20classroom.org/2013/04/soyou-wanna-use-blogs-in-classroom.html" target="_blank"><img src="http://i.imgur.com/B1pMTMN.png" title="web20classroom" height="16px" width="16px" border="0" alt="web20classroom" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
