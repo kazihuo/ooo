@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The Great Gatsby ##
-
 `文/温国兵`
 
 在没看这部电影之前，就从很多地方了解到这部电影。豆瓣影评、同学之间的议论、自媒体人的提及……但因为时间关系最近才看了这部电影。
@@ -37,4 +29,3 @@ share: true
 题图来自：Google Images
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
