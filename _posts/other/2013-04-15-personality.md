@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Personality ##
-
 `文/温国兵`
 
 很久以前看到过一段话，大意是这样：**下等人无能力有脾气，中等人有能力有脾气，上等人有能力无脾气。**
@@ -39,4 +31,3 @@ share: true
 题图来自：<a href="http://www.freshkisgen.com/do-you-have-personality/" target="_blank"><img src="http://i.imgur.com/Q2zbnyp.png" title="freshkisgen" height="16px" width="16px" border="0" alt="freshkisgen" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
