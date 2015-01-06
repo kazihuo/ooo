@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Trial and error psychology on the database ##
-
 `文/温国兵`
 
 如果我们习惯试错，将会收获更多。
@@ -81,4 +73,3 @@ mysql> SELECT id,name FROM test WHERE id=(SELECT max(id) FROM test);
 题图来自：<a href="http://fineartamerica.com/featured/trial-and-error-larry-mulvehill.html" target="_blank"><img src="http://i.imgur.com/c9ZcLir.png" title="" height="16px" width="100px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
