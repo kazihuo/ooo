@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Memory with Jay ##
-
 `文/温国兵`
 
 作为曾经的杰迷，看到这个题目，想写篇文章，谨以此文祭奠那些逝去的青春。文章稍长。
@@ -71,4 +63,3 @@ share: true
 题图来自：Google Images
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
