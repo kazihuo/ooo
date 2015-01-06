@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The chapter one of my university periodic history ##
-
 `文/温国兵`
 
 想了很久，还是决定写一系列文章来祭奠下逝去的青春。至于怎么组织，还是决定以话题的形式。如果你要问我为什么取名《大学断代史》，这可得益于高中语文老师。可敬的语文老师写了一本书，名字就叫做《大学断代史》，当时我们以极低的价格从老师那里买来，花了几天的时间拜读完了。那是年少，手捧一本新书，作者离我们那么近，喜悦之情溢于言表。阅毕，感慨这样的大学生活才叫大学，心想以后我也要写下大学的点点滴滴，取名也叫做《大学断代史》，如今美梦成真，我定会好好珍惜，努力真诚地写下这一段历史。
@@ -39,4 +31,3 @@ share: true
 题图来自：<a href="http://yb.cuit.edu.cn/" target="_blank"><img src="http://i.imgur.com/PrvUx6K.png" title="CUIT" height="16px" width="100px" border="0" alt="CUIT" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
