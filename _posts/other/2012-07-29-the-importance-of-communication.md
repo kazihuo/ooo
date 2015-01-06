@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## The importance of communication##
-
 `文/温国兵`
 
 一个优秀的IT综合型人才不仅表现在技术方面，其他的素质也很重要。本文就从沟通交流、表达能力说起。
@@ -39,4 +31,3 @@ share: true
 题图来自：<a href="http://blog.ogroup.com.au/effective-communication-take-business-forward/" target="_blank"><img src="http://i.imgur.com/VKft3Yx.jpg" title="" border="0" alt="" height="16px" width="50px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
