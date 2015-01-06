@@ -6,7 +6,7 @@ title: About this blog
 
 ## 关于我 ##
 
-> 网络ID：Wentasy。英文名：Robin Wen。数据库爱好者，pythoner，mysqler，vim党，电子迷，打杂的CSDN专家。会写点代码，懂丁点数据库和服务器，自认为是个不称职的DBA，懂点音乐，爱好文学，闲时阅读写作，喜欢跑步和打羽毛球，追求简单而极致的美。
+> 网络ID：Wentasy。英文名：Robin Wen。数据库爱好者，pythoner，mysqler，vim党，电子迷，打杂的CSDN博客专家。会写点代码，懂丁点数据库和服务器，MySQL DBA，懂点音乐，爱好文学，闲时阅读写作，喜欢跑步和打羽毛球，追求简单而极致的美。
 
 ## 寄语 ##
 
