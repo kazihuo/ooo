@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Undoubted ocm ##
-
 `文/温国兵`
 
 前段时间有位好友拿着一本OCP的书啃，我拿来翻了翻，内容还将就，特别震惊的是该书的作者是一位从业30多年的数据库大牛，别人拥有的也只是一个OCP证书。
@@ -37,4 +29,3 @@ share: true
 题图来自：Google Images
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
