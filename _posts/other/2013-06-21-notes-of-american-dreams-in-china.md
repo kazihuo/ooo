@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Notes of american dreams in china ##
-
 `文/温国兵`
 
 写在前面：**上周因为时间关系，所以没更新，致歉！**
@@ -79,4 +71,3 @@ share: true
 题图来自：<a href="http://sugarmonkey.hatenablog.com/entry/2013/09/08/%E3%80%90%E4%B8%AD%E5%9B%BD%E7%94%9F%E6%B4%BB%E3%80%91_%E5%A4%A7%E3%83%92%E3%83%83%E3%83%88%E6%98%A0%E7%94%BB%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%90%88%E4%BC%99%E4%BA%BA(American_dreams_in_China)" target="_blank"><img src="http://i.imgur.com/hLYOs9z.png" title="" height="16px" width="16px" border="0" alt="http://i.imgur.com/Ja3bFT1.png" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
