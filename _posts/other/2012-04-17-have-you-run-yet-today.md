@@ -8,11 +8,6 @@ share: true
 
 ---
 
-目录
-
-* Table of Contents
-{:toc}
-
 `文/温国兵`
 
 突然之间有种想跑步的冲动，于是我开始了我的旅程。
