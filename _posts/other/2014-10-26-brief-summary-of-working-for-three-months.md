@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## Brief summary of work for three months ##
-
 `文/温国兵`
 
 经常有网友问我在哪家公司工作，坦言，我现在所处的公司是一家初创公司，没有光环，没有炫耀，有的是踏实和认真。也正是因为这样，我才有更多机会。
@@ -45,4 +37,3 @@ share: true
 题图来自：<a href="http://muir-way.com/blogs/news/14735641-happy-birthday-yosemite" target="_blank"><img src="http://i.imgur.com/KF9SQWy.png" title="Yosemite" height="16px" width="16px" border="0" alt="Yosemite" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
