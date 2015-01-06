@@ -8,11 +8,6 @@ share: true
 
 ---
 
-目录
-
-* Table of Contents
-{:toc}
-
 `文/温国兵`
 
 我一直认为一个人谦逊很重要。
