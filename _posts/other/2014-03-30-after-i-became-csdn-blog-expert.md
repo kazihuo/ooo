@@ -8,14 +8,6 @@ share: true
 
 ---
 
-
-目录
-
-* Table of Contents
-{:toc}
-
-## After I became csdn blog expert ##
-
 `文/温国兵`
 
 2014年3月10日，这是我成为CSDN博客专家的日子。
@@ -49,4 +41,3 @@ share: true
 题图来自：<a href="http://jimsmarketingblog.com/2010/07/30/business-blogging-experts/" target="_blank"><img src="http://i.imgur.com/sUIhtkt.png" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
-
