@@ -38,11 +38,11 @@ MySQL Proxy最强大的一项功能是实现“读写分离(Read/Write Splitting
 * 分摊读取。假如我们有1主3从，不考虑上述1中提到的从库单方面设置，假设现在1分钟内有10条写入，150条读取。那么，1主3从相当于共计40条写入，而读取总数没变，因此平均下来每台服务器承担了10条写入和50条读取（主库不承担读取操作）。因此，虽然写入没变，但是读取大大分摊了，提高了系统性能。另外，当读取被分摊后，又间接提高了写入的性能。所以，总体性能提高了，说白了就是拿机器和带宽换性能。MySQL官方文档中有相关演算公式：<a href="http://dev.mysql.com/doc/refman/5.1/en/replication.html" target="_blank">官方文档</a> 见6.9FAQ之“MySQL复制能够何时和多大程度提高系统性能”
 * MySQL复制另外一大功能是增加冗余，提高可用性，当一台数据库服务器宕机后能通过调整另外一台从库来以最快的速度恢复服务，因此不能光看性能，也就是说1主1从也是可以的。
 
-四 读写分离示意图
+## 四 读写分离示意图 ##
 
 ![读写分离示意图](http://i.imgur.com/wytqs5M.jpg)
 
-五 读写分离模拟
+## 五 读写分离模拟 ##
 
 实验环境简介
 
@@ -563,9 +563,9 @@ mysql> select * from larrydb.user;
 5 rows in set (0.00 sec)
 {% endhighlight %}
 
-六 参考资料
+## 六 参考资料 ##
 <a href="http://www.itpub.net/thread-1184103-1-1.html" target="_blank"><img src="http://i.imgur.com/luz6LB6.png" title="ITPUB" height="16px" width="16px" border="0" alt="ITPUB" /></a> <br/>
-<a href="http://segmentfault.com/q/1010000000304576" target="_blank"><img src="http://imgur.com/mf0AZ2m" title="segmentfault" height="16px" width="16px" border="0" alt="segmentfault" /></a>
+<a href="http://segmentfault.com/q/1010000000304576" target="_blank"><img src="http://i.imgur.com/mf0AZ2m.png" title="segmentfault" height="16px" width="16px" border="0" alt="segmentfault" /></a>
 
 –EOF–
 
