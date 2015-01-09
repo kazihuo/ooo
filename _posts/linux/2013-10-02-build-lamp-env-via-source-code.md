@@ -18,6 +18,11 @@ share: true
 ## 一 关于LAMP ##
 
 > LAMP：Linux、Apache、MySQL、PHP的组合。目前企业使用较多。
+
+除了LAMP，LNMP使用也很频繁。LNMP只是把Apache换成了Nginx。
+
+另外，还有一个组合叫做WAMP。如下：
+
 > WAMP：Windows、 Apache、MySQL、PHP的组合。
 
 安装顺序：首先MySQL，然后Apache，最后PHP。**注意：本文所有操作以root用户运行。**
