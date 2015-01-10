@@ -41,10 +41,15 @@ mysql -uroot -proot -Ne 'show create table test.t' | grep CHARSET | awk -F' ' '{
 **第二种方法：**
 
 {% highlight bash %}
-mysql -uroot -proot -Ne 'show create table test.t' > file; sed 's/$/ROBIN/g' -i file; awk '{sub(/^.*DEFAULT /, ""); sub(/ROBIN.*/, ""); print}' file
+mysql -uroot -proot -Ne 'show create table test.t' > file; \
+sed 's/$/ROBIN/g' -i file; awk '{sub(/^.*DEFAULT /, ""); \
+sub(/ROBIN.*/, ""); print}' file
 CHARSET=utf8
 
-mysql -uroot -proot -Ne 'show create table test.t' > file; sed 's/$ROBIN/g' -i file; awk '{sub(/^.*DEFAULT CHARSET=/, ""); sub(/ROBIN.*/, ""); print}' file > newfile;echo CHARSET=\`cat newfile\`
+mysql -uroot -proot -Ne 'show create table test.t' > file; \
+sed 's/$ROBIN/g' -i file; \
+awk '{sub(/^.*DEFAULT CHARSET=/, ""); sub(/ROBIN.*/, ""); print}' file > newfile; \
+echo CHARSET=\`cat newfile\`
 CHARSET=utf8
 {% endhighlight %}
 
