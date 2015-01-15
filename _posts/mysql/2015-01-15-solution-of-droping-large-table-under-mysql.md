@@ -154,11 +154,9 @@ cat -n /tmp/city.txt
 
 该文件包括 1000W 行数据。内容如下：
 
-{% highlight bash %}
-1              "GuangZhou","GuangDong","GZ","Wechat","Netease"
-......
-10000000 "GuangZhou","GuangDong","GZ","Wechat","Netease"
-{% endhighlight %}
+> 1              "GuangZhou","GuangDong","GZ","Wechat","Netease"
+> ......
+> 10000000 "GuangZhou","GuangDong","GZ","Wechat","Netease"
 
 编辑导入数据脚本。
 
@@ -208,7 +206,7 @@ mysql> source /tmp/load_to_user.sql
 
 {% highlight sql %}
 mysql> SHOW TABLE STATUS LIKE 'user' \G;
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* 1. row \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+*************************** 1. row ***************************
            Name: user
          Engine: InnoDB
         Version: 10
@@ -321,7 +319,7 @@ sudo ls -FGlAhp test
 
 {% highlight sql %}
 mysql> SHOW TABLE STATUS LIKE 'city' \G;
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* 1. row \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+*************************** 1. row ***************************
            Name: city
          Engine: InnoDB
         Version: 10
@@ -387,9 +385,9 @@ Enjoy!
 
 ## 五 Ref ##
 
-<a href="http://dev.mysql.com/doc/refman/5.1/en/load-data.html" target="_blank">13.2.6 LOAD DATA INFILE Syntax</a>
-<a href="http://pangge.blog.51cto.com/6013757/1303893" target="_blank">MySQL 数据库存储引擎</a>
-<a href="http://dev.mysql.com/doc/refman/5.1/en/innodb-multiple-tablespaces.html" target="_blank">14.6.4.2 Using Per-Table Tablespaces</a>
+* <a href="http://dev.mysql.com/doc/refman/5.1/en/load-data.html" target="_blank">13.2.6 LOAD DATA INFILE Syntax</a>
+* <a href="http://pangge.blog.51cto.com/6013757/1303893" target="_blank">MySQL 数据库存储引擎</a>
+* <a href="http://dev.mysql.com/doc/refman/5.1/en/innodb-multiple-tablespaces.html" target="_blank">14.6.4.2 Using Per-Table Tablespaces</a>
 
 –EOF–
 
