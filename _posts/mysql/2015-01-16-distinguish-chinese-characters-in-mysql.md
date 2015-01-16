@@ -25,6 +25,7 @@ share: true
 
 ### 2.1 环境 ###
 
+{% highlight sql %}
 mysql> SHOW VARIABLES LIKE "%version%";
 +-------------------------+------------------------------+
 | Variable_name           | Value                        |
@@ -36,6 +37,7 @@ mysql> SHOW VARIABLES LIKE "%version%";
 | version_compile_os      | apple-darwin10.3.0           |
 +-------------------------+------------------------------+
 5 rows in set (0.00 sec)
+{% endhighlight %}
 
 ### 2.2 创建测试表和插入测试数据 ###
 
