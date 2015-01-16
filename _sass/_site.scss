@@ -195,7 +195,7 @@ figcaption {
 blockquote {
 	font-family: $alt-font;
 	font-style: normal;
-	@include font-size(11);
+	@include font-size(10);
 	padding-left: 15px;
 	border-left: 4px solid #DDD;
 	color: #777;
@@ -220,7 +220,7 @@ tt, code, kbd, samp, pre {
 p,
 li { 
 	code {
-		@include font-size(10);
+		@include font-size(11);
 		font-family: $code-font;
 		white-space: nowrap;
 		margin: 0 2px;
@@ -231,7 +231,7 @@ li {
 	}
 }
 pre {
-	@include font-size(10);
+	@include font-size(11);
 	overflow-x: auto;
 }
 
