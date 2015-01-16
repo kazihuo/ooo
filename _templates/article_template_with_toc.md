@@ -2,7 +2,7 @@
 layout: post
 title: ""
 category: mysql
-tags: [mysql]
+tags: [MySQL]
 comments: true
 share: true
 
