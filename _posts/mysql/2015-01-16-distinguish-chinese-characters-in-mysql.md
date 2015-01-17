@@ -101,7 +101,7 @@ name: 温国兵
 2 rows in set (0.00 sec)
 
 mysql> SELECT name,
-    ->     CASE name REGEXP "[u0391-uFFE5]"
+    ->     CASE name REGEXP "[\u0391-\uFFE5]"
     ->         WHEN 1 THEN "不是中文字符"
     ->         ELSE "是中文字符"
     ->     END AS "判断是否是中文字符"
@@ -114,7 +114,7 @@ mysql> SELECT name,
 +-----------+-----------------------------+
 2 rows in set (0.00 sec)
 
-mysql> SELECT name FROM user WHERE NOT (name REGEXP "[u0391-uFFE5]");
+mysql> SELECT name FROM user WHERE NOT (name REGEXP "[\u0391-\uFFE5]");
 +-----------+
 | name      |
 +-----------+
@@ -146,7 +146,7 @@ mysql> SELECT name FROM user WHERE length(name) <> char_length(name);
 
 ## 四 总结 ##
 
-方法一中，`[u0391-uFFE5]` 匹配中文以外的字符。
+方法一中，`[\u0391-\uFFE5]` 匹配中文以外的字符。
 
 方法二中，当字符集为UTF-8，并且字符为中文时，`length()` 和 `char_length()` 两个方法返回的结果不相同。
 
