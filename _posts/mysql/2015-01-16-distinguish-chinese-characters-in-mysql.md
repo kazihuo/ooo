@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL 判断中文字符"
 category: mysql
-tags: [MySQL, 中文字符, 经验总结, 技巧]
+tags: [MySQL, 中文字符, 经验总结, 技巧, 实战]
 comments: true
 share: true
 
@@ -162,7 +162,7 @@ mysql> SELECT name FROM user WHERE length(name) <> char_length(name);
 
 ## 五 Ref ##
 
-<a href="http://dev.mysql.com/doc/refman/5.1/en/string-functions.html" target="_blank">12.5 String Functions</a>
+* <a href="http://dev.mysql.com/doc/refman/5.1/en/string-functions.html" target="_blank">12.5 String Functions</a>
 
 –EOF–
 
