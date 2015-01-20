@@ -191,7 +191,7 @@ cat -n /tmp/load_to_city.sql
 > TERMINATED BY ',' \
 > LINES TERMINATED BY '\n';
 > ......
-> 20  LOAD DATA INFILE '/tmp/city.txt'0 \
+> 20  LOAD DATA INFILE '/tmp/city.txt' \
 > INTO TABLE city FIELDS \
 > TERMINATED BY ',' \
 > LINES TERMINATED BY '\n';
