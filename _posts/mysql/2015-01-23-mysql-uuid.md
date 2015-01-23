@@ -33,8 +33,6 @@ MySQL 实现了 UUID，并且提供 UUID() 函数方便用户生成 UUID。在 M
 
 ## 二 MySQL UUID() 函数 ##
 
-### 2.1 演示 ###
-
 {% highlight bash %}
 mysql -uroot -proot
 {% endhighlight %}
@@ -169,11 +167,12 @@ VALUES(UUID(), "robin", "dba", "GZ");
 Query OK, 1 row affected, 1 warning (0.01 sec)
 
 mysql> SHOW WARNINGS;
-+-------+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Level | Code | Message                                                                                                                                                                                                  |
-+-------+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Note  | 1592 | Unsafe statement written to the binary log using statement format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because it uses a system function that may return a different value on the slave. |
-+-------+------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Level | Code | Message |
++-------+------+-----------------------------------------------------+
+| Note  | 1592 | Unsafe statement written to the binary log using statement \
+format since BINLOG_FORMAT = STATEMENT. Statement is unsafe because \
+it uses a system function that may return a different value on the slave. |
++-------+------+-----------------------------------------------------+
 1 row in set (0.00 sec)
 
 mysql> SELECT * FROM user \G
@@ -337,7 +336,11 @@ mysql> SELECT UUID_SHORT();
 
 ## 五 小结##
 
-在复制环境中，使用到 UUID() 函数，则一定要使用基于行或者基于混合模式复制方式。
+* 同一个 SQL 语句中，多处调用 UUID() 函数得到的值不相同，多次调用或执行得到的后两组值相同。
+* 同一台服务器，重启 MySQL 前后的 UUID() 第四组值发生变化，第五组值不变；
+* MySQL 中，utf8 字符集下，生成的 UUID 长度为 36 位；
+* 不同机器生成的 UUID 不同，包括第五组值；
+* 在复制环境中，使用到 UUID() 函数，则一定要使用基于行或者基于混合模式复制方式；
 
 ## 六 Ref ##
 
