@@ -127,7 +127,7 @@ useradd -u 500 -g 500 -r -M -s /sbin/nologin mysql
 {% highlight bash %}
 cp support-files/my-medium.cnf /etc/my.cnf
 cp support-files/mysql.server /etc/init.d/mysqld
-chmod a+x/etc/init.d/mysqld
+chmod a+x /etc/init.d/mysqld
 ls /usr/local/mysql/data/
 {% endhighlight %}
 
@@ -143,7 +143,7 @@ datadir         =/usr/local/mysql/data
 第十一步，修改mysql_install_db的权限，使其可执行，并进行初始化操作。
 
 {% highlight bash %}
-chmod a+xscripts/mysql_install_db
+chmod a+x scripts/mysql_install_db
 ./scripts/mysql_install_db --user=mysql \
 --datadir=/usr/local/mysql/data/ \
 --basedir=/usr/local/mysql/
