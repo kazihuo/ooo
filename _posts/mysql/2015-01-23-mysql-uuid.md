@@ -344,11 +344,8 @@ mysql> SELECT UUID_SHORT();
 
 ## 六 Ref ##
 
-UUID()
-http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_uuid
-
-Universally unique identifier
-http://en.wikipedia.org/wiki/Universally_unique_identifier
+* <a href="http://dev.mysql.com/doc/refman/5.5/en/miscellaneous-functions.html#function_uuid" target="_blank">UUID()</a><br/>
+* <a href="http://en.wikipedia.org/wiki/Universally_unique_identifier" target="_blank">Universally unique identifier</a>
 
 –EOF–
 
