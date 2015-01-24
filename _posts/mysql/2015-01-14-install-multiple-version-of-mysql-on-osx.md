@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Mac OSX 运行多个版本 MySQL 之解决方案"
+title: "Mac OS X 运行多个版本 MySQL 之解决方案"
 category: mysql
-tags: [MySQL, Mac, OSX, 解决方案, 分享]
+tags: [MySQL, Mac, OS X, 解决方案, 分享]
 comments: true
 share: true
 
@@ -12,7 +12,7 @@ share: true
 
 **环境**
 
-OS: Mac OSX 10.9.5
+OS: Mac OS X 10.9.5
 MySQL: 5.1.73/5.5.40/5.6.21
 
 **解决思路**
