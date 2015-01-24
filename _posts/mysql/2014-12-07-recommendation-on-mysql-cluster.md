@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL集群建议"
 category: mysql
-tags: [other, MySQL, MySQL Cluster, MySQL集群, 建议]
+tags: [other, MySQL, MySQL Cluster, MySQL 集群, 建议]
 comments: true
 share: true
 
