@@ -6,7 +6,7 @@ title: About this blog
 
 ## 关于我 ##
 
-> 网络ID：Wentasy。英文名：Robin Wen。数据库爱好者，pythoner，mysqler，vim党，电子迷，打杂的CSDN博客专家。会写点代码，懂丁点数据库和服务器，MySQL DBA，懂点音乐，爱好文学，闲时阅读写作，喜欢跑步和打羽毛球，追求简单而极致的美。
+> 网络ID：Wentasy。英文名：Robin Wen。数据库爱好者，pythoner，mysqler，vim党，电子迷，打杂的CSDN博客专家。会写点代码，懂丁点数据库和服务器，MySQL DBA，懂点音乐，爱好文学，闲时阅读写作，做得一手好菜，喜欢跑步和打羽毛球，追求简单而极致的美。
 
 > 我希望我的墓碑上写上司汤达的墓志铭：活过，爱过，写过。也许再加上一行：骑士，诗人，自由思想家。
 
