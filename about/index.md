@@ -36,7 +36,7 @@ title: About this blog
 **Mail 1**
 
 {% highlight sql %}
-mysql -uroot -proot -S /tmp/mysql_5173.sock -Ne "SELECT reverse('moc.liamg@newniborabd');"
+mysql -uroot -p -S /tmp/mysql_5540.sock -Ne "SELECT reverse('moc.liamg@newniborabd');"
 {% endhighlight %}
 
 **Mail 2**
