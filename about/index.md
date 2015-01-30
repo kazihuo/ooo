@@ -33,6 +33,14 @@ title: About this blog
 
 ## 联系方式 ##
 
+**Mail 1**
+
+{% highlight sql %}
+mysql -uroot -proot -S /tmp/mysql_5173.sock -Ne "SELECT reverse('moc.liamg@newniborabd');"
+{% endhighlight %}
+
+**Mail 2**
+
 {% highlight bash %}
-echo "ZGJhcm9iaW53ZW5AZ21haWwuY29tCg==" | base64 --decode
+echo "d2VudGFzeUBxcS5jb20K" | base64 --decode
 {% endhighlight %}
