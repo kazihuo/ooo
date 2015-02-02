@@ -2,7 +2,7 @@
 layout: post
 title: "失控"
 category: other
-tags: [失控, KK, 凯文·凯利, 书评, 老子, 道, 无为]
+tags: [other, 失控, KK, 凯文·凯利, 书评, 老子, 道, 无为]
 comments: true
 share: true
 
