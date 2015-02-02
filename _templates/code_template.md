@@ -10,3 +10,6 @@
 
 # Href Templat
 <a href="" target="_blank"></a>
+
+# Special character, middle bracket.
+「」
