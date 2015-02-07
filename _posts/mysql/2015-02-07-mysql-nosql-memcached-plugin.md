@@ -147,7 +147,7 @@ tcp        0      0 :::3306                     :::*                        LIST
 [root@mysql memcache]# cat test1.php
 {% endhighlight %}
 
-**译者注：原文是 new Memcached()，此处改为 new Memcache()。**
+**译者注：原文是 new Memcached()，此处改为 new Memcache()，以下的 PHP 脚本均为 new Memcache()。**
 
 {% highlight php %}
 <?php
