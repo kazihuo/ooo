@@ -379,7 +379,9 @@ fsuid=27 egid=27 sgid=27 fsgid=27 tty=(none) ses=4294967295 comm="mysqld" \
 exe="/usr/sbin/mysqld" subj=system_u:system_r:mysqld_t:s0 key=(null)
 
 [root@mysql ~]# audit2why < /var/log/audit/audit.log
-type=AVC msg=audit(1423266535.066:5): avc:  denied  { name_bind } for  pid=1123 comm="mysqld" src=11211 scontext=system_u:system_r:mysqld_t:s0 tcontext=system_u:object_r:memcache_port_t:s0 tclass=tcp_socket
+type=AVC msg=audit(1423266535.066:5): avc:  denied  { name_bind } for  \
+pid=1123 comm="mysqld" src=11211 scontext=system_u:system_r:mysqld_t:s0 \
+tcontext=system_u:object_r:memcache_port_t:s0 tclass=tcp_socket
 
     Was caused by:
         Missing type enforcement (TE) allow rule.
