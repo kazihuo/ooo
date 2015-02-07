@@ -29,6 +29,7 @@ share: true
 {% highlight bash %}
 yum install libevent -y
 yum install php -y
+yum install policycoreutils-python -y
 {% endhighlight %}
 
 **译者注：我的操作系统版本是 RHEL 6.5，而作者的 OS 版本为 CentOS。以下是我的 MySQL 版本。**
@@ -364,27 +365,74 @@ Value of key1 is:Entry modified  directly on MySQL
 
 在 SELinux 启用的环境中，会阻止 Memcached 和 MySQL 集成，因为不允许监听 Memcached 端口，下面是一个怎样允许监听 Memcached 端口的例子（我使用 CentOS Linux 分发版）：
 
-在 /var/log/audit/audit.log 中查找包含 mysqld 和 dinied 关键字的条目，如果你能找到，输入如下的命令来创建一个新的 SELinux 模块来允许：
+在 /var/log/audit/audit.log 中查找包含 mysqld 和 denied 关键字的条目，如果你能找到，输入如下的命令来创建一个新的 SELinux 模块来允许：
 
 {% highlight bash %}
 
-type=AVC msg=audit(1421080542.433:31): avc:  denied  { name_bind } for  \
-pid=1360 comm="mysqld" src=11211 scontext=unconfined_u:system_r:mysqld_t:s0 \
+type=AVC msg=audit(1423266535.066:5): avc:  denied  { name_bind } for  \
+pid=1123 comm="mysqld" src=11211 scontext=system_u:system_r:mysqld_t:s0 \
 tcontext=system_u:object_r:memcache_port_t:s0 tclass=tcp_socket
-type=SYSCALL msg=audit(1421080542.433:31): arch=c000003e syscall=49 \
-success=no exit=-13 a0=2d a1=7f5fcc0409a0 a2=10 a3=7f5fe0ee275c \
-items=0 ppid=1123 pid=1360 auid=0 uid=27 gid=27 euid=27 suid=27 fsuid=27 \
-egid=27 sgid=27 fsgid=27 tty=pts0 ses=2 comm="mysqld" exe="/usr/sbin/mysqld" \
-subj=unconfined_u:system_r:mysqld_t:s0 key=(null)
+type=SYSCALL msg=audit(1423266535.066:5): arch=c000003e syscall=49 \
+success=no exit=-13 a0=2f a1=7f3aec043230 a2=10 a3=7f3af61fa75c \
+items=0 ppid=999 pid=1123 auid=4294967295 uid=27 gid=27 euid=27 suid=27 \
+fsuid=27 egid=27 sgid=27 fsgid=27 tty=(none) ses=4294967295 comm="mysqld" \
+exe="/usr/sbin/mysqld" subj=system_u:system_r:mysqld_t:s0 key=(null)
 
-audit2why < /var/log/audit/audit.log
+[root@mysql ~]# audit2why < /var/log/audit/audit.log
+type=AVC msg=audit(1423266535.066:5): avc:  denied  { name_bind } for  pid=1123 comm="mysqld" src=11211 scontext=system_u:system_r:mysqld_t:s0 tcontext=system_u:object_r:memcache_port_t:s0 tclass=tcp_socket
 
-cd /root/
-mkdir selinux-custom
-cd selinux-custom
-audit2allow -a -M mysql-memcache
+    Was caused by:
+        Missing type enforcement (TE) allow rule.
+
+        You can use audit2allow to generate a loadable module to allow this access.
+
+[root@mysql ~]# cd /root/
+[root@mysql ~]# mkdir selinux-custom
+[root@mysql ~]# cd selinux-custom
+[root@mysql selinux-custom]# audit2allow -a -M mysql-memcache
+******************** IMPORTANT ***********************
+To make this policy package active, execute:
+
 semodule -i mysql-memcache.pp
+[root@mysql selinux-custom]# semodule -i mysql-memcache.pp
 
+{% endhighlight %}
+
+ **译者注：以下为译者添加，用于测试在 SELinux 环境下，MySQL 和 Memcached 的集成。**
+
+{% highlight bash %}
+[root@mysql selinux-custom]# sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /selinux
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy version:                 24
+Policy from config file:        targeted
+[root@mysql selinux-custom]# getenforce
+Enforcing
+[root@mysql selinux-custom]# /etc/init.d/mysql restart
+Shutting down MySQL....                                    [  OK  ]
+Starting MySQL.                                            [  OK  ]
+[root@mysql memcache]# cd ~/memcache
+[root@mysql memcache]# cat test6.php
+{% endhighlight %}
+
+{% highlight php %}
+<?php
+    $m = new Memcache();
+    $m->addServer('localhost', 11211);
+    echo 'Value of key1 is:' . $m->get('key1') . "\n";
+?>
+
+{% endhighlight %}
+
+{% highlight bash %}
+[root@mysql selinux-custom]# netstat -tunap | grep LIST | grep mysql
+tcp        0      0 0.0.0.0:11211               0.0.0.0:*                   LISTEN      7820/mysqld
+tcp        0      0 :::11211                    :::*                        LISTEN      7820/mysqld
+tcp        0      0 :::3306                     :::*                        LISTEN      7820/mysqld
+[root@mysql memcache]# php test6.php
+Value of key1 is:Entry modified  directly on MySQL
 {% endhighlight %}
 
 ## Memcached 选项 ##
