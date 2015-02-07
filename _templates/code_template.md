@@ -8,6 +8,16 @@
 
 {% endhighlight %}
 
+# PHP Code Template
+{% highlight php %}
+
+{% endhighlight %}
+
+# Python Code Template
+{% highlight python %}
+
+{% endhighlight %}
+
 # Href Templat
 <a href="" target="_blank"></a>
 
