@@ -92,7 +92,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> SET profiling=1;
+mysql> SET profiling = 1;
 Query OK, 0 rows affected (0.00 sec)
 
 mysql> call proc_loop_test();
