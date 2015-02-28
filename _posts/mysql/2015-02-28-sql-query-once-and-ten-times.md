@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MySQL 一条数据查询十次与一次查询十条数据之间的区别"
+title: "MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别"
 category: mysql
 tags: [MySQL, 查询, 实战]
 comments: true
