@@ -9,8 +9,8 @@ timezone: Asia/Chongqing
 
 # Jekyll configuration
 permalink: /:categories/:title/
-markdown: pygments
-highlighter: rouge
+markdown: kramdown
+highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
