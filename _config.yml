@@ -9,7 +9,7 @@ timezone: Asia/Chongqing
 
 # Jekyll configuration
 permalink: /:categories/:title/
-markdown: kramdown
+markdown: pygments
 highlighter: rouge
 sass:
   sass_dir: _sass
