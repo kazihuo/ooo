@@ -1,42 +1,61 @@
-# Site wide configuration
-title: DBA@Robin's Blog-Focus on database.
-locale: zh_CN
+### Site info:
+title: DBA@Robin's Blog
+tagline: Focus on database.
+author: Robin Wen
+email: dbarobinwen@gmail.com 
 description: Above all, don't lose hope.
-logo: site-logo.png
-search: true
-url: http://dbarobin.com
-timezone: Asia/Chongqing
+keywords: "MySQL, Linux, Python, Reading"
+url: "http://dbarobin.com" # the base hostname & protocol for your site
 
-# Jekyll configuration
-permalink: /:categories/:title/
+### Personal info and site tools info:
+twitter_username: dbarobin
+github_username:  dbarobin
+disqus_shortname: dbarobin
+favicon:     "/images/favicon.ico"
+aboutme: Robin Wen, MySQL DBA.
+aboutme_photo: "/images/bio-photo.jpg"
+
+### Site setting:
+ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown where ShowContactInfo == True
+default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
+default_locale: "en" # blog sidebar language set, only include: English(en) and Chinese (cn)
+
+locales:
+    en:
+      Aboutme: "About Me"
+      Archives: "Archives"
+      Blogroll: "Blogroll"
+      Categories: "Categories"
+      Copyright_Notice: "Copyright Notice"
+      Resent_Posts: "Resent Posts"
+      Tags: "Tags"
+      Previous: "Older"
+      Next: "Newer"
+      PostedInCategories: "Posted in"
+      Taggedwith: "and tagged"  
+      PostDate: "on "
+    cn:
+      Aboutme: "关于我"
+      Archives: "存档"
+      Blogroll: "Blogroll"        
+      Categories: "分类目录"    
+      Copyright_Notice: "版权声明"
+      Resent_Posts: "近期文章"
+      Tags: "标签" 
+      Previous: "前一页"
+      Next: "后一页"
+      PostedInCategories: "目录:"   
+      Taggedwith: "| 标签:"
+      PostDate: "| 发表时间: "
+
+
+### your Blogroll info, only name can shown on the page.
+Blogroll:
+    - name: DBA@Robin
+      href: http://dbarobin.com
+      title: MySQL DBA
+
+### Build settings
 markdown: kramdown
 highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
-
-# Site owner
-owner:
-  name: Robin Wen
-  avatar: bio-photo.jpg
-  email: dbarobinwen@gmail.com
-  disqus_shortname: dbarobin
-  github: dbarobin
-  twitter: dbarobin
-  facebook: dbarobin
-  google:
-    analytics: UA-57297247-1
+paginate: 5

@@ -2,10 +2,14 @@
 layout: post
 title: "「译」MySQL & NoSQL – Memcached 插件"
 category: mysql
-tags: [MySQL, NoSQL, Memcached, 插件, Plugin, 译文]
-comments: true
-share: true
-
+author: Robin Wen
+tags:
+- MySQL
+- NoSQL
+- Memcached
+- 插件
+- Plugin
+- 译文
 ---
 
 ## 目录 ##

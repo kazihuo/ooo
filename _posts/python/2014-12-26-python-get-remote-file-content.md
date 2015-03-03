@@ -2,10 +2,11 @@
 layout: post
 title: "Python获取远程文件内容"
 category: python
-tags: [Python, 远程, Fabric]
-comments: true
-share: true
-
+author: Robin Wen
+tags: 
+- Python
+- 远程
+- Fabric
 ---
 
 * Table of Contents

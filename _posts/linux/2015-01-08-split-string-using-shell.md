@@ -2,10 +2,13 @@
 layout: post
 title: "Shell截取字符串"
 category: linux
-tags: [Linux, Shell, 截取字符串, 技巧, 经验总结]
-comments: true
-share: true
-
+author: Robin Wen
+tags:
+- Linux
+- Shell
+- 截取字符串
+- 技巧
+- 经验总结
 ---
 
 `文/温国兵`
