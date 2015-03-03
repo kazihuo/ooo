@@ -52,9 +52,9 @@ locales:
 
 ### your Blogroll info, only name can shown on the page.
 Blogroll:
-    - name: DBA@Robin
-      href: http://dbarobin.com
-      title: MySQL DBA
+    - name: DBA@DevOps
+      href: http://blog.csdn.net/dba_waterbin
+      title: DBA@DevOps
 
 ### Build settings
 permalink: /:categories/:title/
