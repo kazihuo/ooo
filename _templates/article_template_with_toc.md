@@ -1,11 +1,12 @@
 ---
+published: true
 layout: post
 title: ""
-category: mysql
-tags: [MySQL]
-comments: true
-share: true
-
+category: MySQL
+author: Robin Wen
+summary: ""
+tags: 
+- MySQL
 ---
 
 ## 目录 ##
