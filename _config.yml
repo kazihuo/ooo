@@ -14,6 +14,7 @@ disqus_shortname: dbarobin
 favicon:     "/images/favicon.ico"
 aboutme: Robin Wen, MySQL DBA.
 aboutme_photo: "/images/bio-photo.jpg"
+google_analytics_key: UA-57297247-1
 
 ### Site setting:
 ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown where ShowContactInfo == True
