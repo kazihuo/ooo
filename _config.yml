@@ -56,6 +56,7 @@ Blogroll:
       title: MySQL DBA
 
 ### Build settings
+permalink: /:categories/:title/
 markdown: kramdown
 highlighter: pygments
 paginate: 5
