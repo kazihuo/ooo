@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shell截取字符串"
-category: linux
+category: Linux
 author: Robin Wen
 tags:
 - Linux

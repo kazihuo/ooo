@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "「译」MySQL & NoSQL – Memcached 插件"
-category: mysql
+category: MySQL
 author: Robin Wen
 tags:
 - MySQL

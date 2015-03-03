@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python获取远程文件内容"
-category: python
+category: Python
 author: Robin Wen
 tags: 
 - Python

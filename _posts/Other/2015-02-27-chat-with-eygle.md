@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "恩墨有约分享"
-category: other
+category: Other
 author: Robin Wen
 tags:
-- other
+- Other
 - Eygle
 - 盖国强
 - 恩墨有约
