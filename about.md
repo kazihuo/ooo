@@ -17,10 +17,10 @@ permalink: /about/
 
 ## 相关网站 ##
 
-* <a href="http://about.me/dbarobin" target="_blank">Robin Wen's AboutMe</a>
-* <a href="http://blog.csdn.net/justdb" target="_blank">DBA@Robin's CSDN</a>
-* <a href="http://www.zhihu.com/people/wentasy" target="_blank">Robin's Zhihu</a>
-* <a href="http://www.douban.com/people/wentasy/" target="_blank">Robin's DouBan</a>
+* <a href="http://about.me/dbarobin" target="_blank">AboutMe</a>
+* <a href="http://blog.csdn.net/justdb" target="_blank">CSDN</a>
+* <a href="http://www.zhihu.com/people/wentasy" target="_blank">Zhihu</a>
+* <a href="http://www.douban.com/people/wentasy/" target="_blank">DouBan</a>
 * <a href="http://weibo.com/wentasy" target="_blank"><i class="fa fa-weibo"></i></a>
 * <a href="https://github.com/dbarobin" target="_blank"><i class="fa fa-github"></i></a>
 * <a href="https://twitter.com/dbarobin" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -37,7 +37,8 @@ permalink: /about/
 **Mail 1**
 
 {% highlight sql %}
-mysql -uroot -p -S /tmp/mysql_5540.sock -Ne "SELECT reverse('moc.liamg@newniborabd');"
+mysql -uroot -p -S /tmp/mysql_5540.sock \
+-Ne "SELECT reverse('moc.liamg@newniborabd');"
 {% endhighlight %}
 
 **Mail 2**
