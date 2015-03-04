@@ -17,7 +17,7 @@ permalink: /about/
 
 ### 相关网站 ###
 
-* <a href="http://about.me/dbarobin" target="_blank"><img src="http://i.imgur.com/i2rzbE6.png" title="Robin Wen's AboutMe" alt="Robin Wen's AboutMe" style="width:16px;height:16px;vertical-align:top;float:left;"/></a>
+* <a href="http://about.me/dbarobin" target="_blank"><img src="http://i.imgur.com/i2rzbE6.png" title="Robin Wen's AboutMe" alt="Robin Wen's AboutMe" style="width:16px;height:16px;vertical-align:bottom;"/></a>
 * <a href="http://blog.csdn.net/justdb" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="DBA@Robin's CSDN" alt="DBA@Robin's CSDN" style="width:16px;height:16px;vertical-align:top;"/></a>
 * <a href="http://www.zhihu.com/people/wentasy" target="_blank"><img src="http://i.imgur.com/VktTAvi.png" title="Robin's Zhihu" alt="Robin's Zhihu" style="width:16px;height:16px;vertical-align:top;"/></a>
 * <a href="http://www.douban.com/people/wentasy/" target="_blank"><img src="http://i.imgur.com/GoilVod.png" title="Robin's Douban" alt="Robin's Douban" style="width:16px;height:16px;vertical-align:top;"/></a>
