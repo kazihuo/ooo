@@ -18,7 +18,7 @@ permalink: /about/
 ### 相关网站 ###
 
 * <a href="http://about.me/dbarobin" target="_blank">A.M</a>
-* <a href="http://blog.csdn.net/justdb" target="_blank">CSDN/a>
+* <a href="http://blog.csdn.net/justdb" target="_blank">CSDN</a>
 * <a href="http://www.zhihu.com/people/wentasy" target="_blank">Zhihu</a>
 * <a href="http://www.douban.com/people/wentasy/" target="_blank">Douban</a>
 * <a href="http://weibo.com/wentasy" target="_blank"><i class="fa fa-weibo"></i></a>
