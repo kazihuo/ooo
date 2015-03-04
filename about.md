@@ -17,7 +17,7 @@ permalink: /about/
 
 ### 相关网站 ###
 
-* <a href="http://about.me/dbarobin" target="_blank">AboutMe</a>
+* <a href="http://about.me/dbarobin" target="_blank"><img src="http://i.imgur.com/i2rzbE6.png" title="Robin Wen's AboutMe" height="16px" width="16px" border="0" alt="Robin Wen's AboutMe" /></a>
 * <a href="http://blog.csdn.net/justdb" target="_blank">CSDN</a>
 * <a href="http://www.zhihu.com/people/wentasy" target="_blank">Zhihu</a>
 * <a href="http://www.douban.com/people/wentasy/" target="_blank">DouBan</a>
