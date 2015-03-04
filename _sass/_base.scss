@@ -197,22 +197,51 @@ blockquote{
  * Code formatting
  */
 pre code {
-  margin: 0;
+  display: inline;
+  max-width: initial;
   padding: 0;
-  font-size: 13px;
-  white-space: pre;
-  border: none;
-  background: transparent; 
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 16px;
   overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; 
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.highlight {
+  margin-bottom: 16px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
 }
 
 pre code, pre tt {
