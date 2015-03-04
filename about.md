@@ -18,9 +18,9 @@ permalink: /about/
 ### 相关网站 ###
 
 * <a href="http://about.me/dbarobin" target="_blank"><img src="http://i.imgur.com/i2rzbE6.png" title="Robin Wen's AboutMe" height="16px" width="16px" border="0" alt="Robin Wen's AboutMe" /></a>
-* <a href="http://blog.csdn.net/justdb" target="_blank">CSDN</a>
-* <a href="http://www.zhihu.com/people/wentasy" target="_blank">Zhihu</a>
-* <a href="http://www.douban.com/people/wentasy/" target="_blank">DouBan</a>
+* <a href="http://blog.csdn.net/justdb" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px" width="16px" border="0" alt="DBA@Robin's CSDN" /></a>
+* <a href="http://www.zhihu.com/people/wentasy" target="_blank"><img src="http://i.imgur.com/VktTAvi.png" title="Robin's Zhihu" border="0" alt="Robin's Zhihu" height="16px" width="16px" /></a>
+* <a href="http://www.douban.com/people/wentasy/" target="_blank"><img src="http://i.imgur.com/GoilVod.png" title="Robin's Douban" border="0" alt="Robin's Douban" height="16px" width="16px" /></a>
 * <a href="http://weibo.com/wentasy" target="_blank"><i class="fa fa-weibo"></i></a>
 * <a href="https://github.com/dbarobin" target="_blank"><i class="fa fa-github"></i></a>
 * <a href="https://twitter.com/dbarobin" target="_blank"><i class="fa fa-twitter"></i></a>
