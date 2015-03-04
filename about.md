@@ -17,25 +17,16 @@ permalink: /about/
 
 ### 相关网站 ###
 
-<a href="http://about.me/dbarobin" target="_blank"><img src="http://i.imgur.com/i2rzbE6.png" title="Robin Wen's AboutMe" alt="Robin Wen's AboutMe" style="width:16px;height:16px;"/></a>
-<br/>
-<a href="http://blog.csdn.net/justdb" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="DBA@Robin's CSDN" alt="DBA@Robin's CSDN" style="width:16px;height:16px;"/></a>
-<br/>
-<a href="http://www.zhihu.com/people/wentasy" target="_blank"><img src="http://i.imgur.com/VktTAvi.png" title="Robin's Zhihu" alt="Robin's Zhihu" style="width:16px;height:16px;"/></a>
-<br/>
-<a href="http://www.douban.com/people/wentasy/" target="_blank"><img src="http://i.imgur.com/GoilVod.png" title="Robin's Douban" alt="Robin's Douban" style="width:16px;height:16px;"/></a>
-<br/>
-<a href="http://weibo.com/wentasy" target="_blank"><i class="fa fa-weibo"></i></a>
-<br/>
-<a href="https://github.com/dbarobin" target="_blank"><i class="fa fa-github"></i></a>
-<br/>
-<a href="https://twitter.com/dbarobin" target="_blank"><i class="fa fa-twitter"></i></a>
-<br/>
-<a href="https://www.facebook.com/dbarobin" target="_blank"><i class="fa fa-facebook"></i></a>
-<br/>
-<a href="https://www.linkedin.com/in/dbarobin" target="_blank"><i class="fa fa-linkedin"></i></a>
-<br/>
-<a href="https://www.flickr.com/photos/dbarobin" target="_blank"><i class="fa fa-flickr"></i></a>
+* <a href="http://about.me/dbarobin" target="_blank"><img src="http://i.imgur.com/i2rzbE6.png" title="Robin Wen's AboutMe" alt="Robin Wen's AboutMe" style="width:16px;height:16px;vertical-align:middle;"/></a>
+* <a href="http://blog.csdn.net/justdb" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="DBA@Robin's CSDN" alt="DBA@Robin's CSDN" style="width:16px;height:16px;vertical-align:middle;"/></a>
+* <a href="http://www.zhihu.com/people/wentasy" target="_blank"><img src="http://i.imgur.com/VktTAvi.png" title="Robin's Zhihu" alt="Robin's Zhihu" style="width:16px;height:16px;vertical-align:middle;"/></a>
+* <a href="http://www.douban.com/people/wentasy/" target="_blank"><img src="http://i.imgur.com/GoilVod.png" title="Robin's Douban" alt="Robin's Douban" style="width:16px;height:16px;vertical-align:middle;"/></a>
+* <a href="http://weibo.com/wentasy" target="_blank"><i class="fa fa-weibo"></i></a>
+* <a href="https://github.com/dbarobin" target="_blank"><i class="fa fa-github"></i></a>
+* <a href="https://twitter.com/dbarobin" target="_blank"><i class="fa fa-twitter"></i></a>
+* <a href="https://www.facebook.com/dbarobin" target="_blank"><i class="fa fa-facebook"></i></a>
+* <a href="https://www.linkedin.com/in/dbarobin" target="_blank"><i class="fa fa-linkedin"></i></a>
+* <a href="https://www.flickr.com/photos/dbarobin" target="_blank"><i class="fa fa-flickr"></i></a>
 
 ### 微信平台 ###
 
