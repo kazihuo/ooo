@@ -26,6 +26,7 @@ title: Subscribe
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
       </item>
+    {% include feed-footer.html %}
     {% endfor %}
   </channel>
 </rss>
