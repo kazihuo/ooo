@@ -25,8 +25,8 @@ title: Subscribe
         {% for cat in post.categories %}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
+        {% include feed-footer.html %}
       </item>
-    {% include feed-footer.html %}
     {% endfor %}
   </channel>
 </rss>
