@@ -1,0 +1,6 @@
+.mytotop {
+   position: fixed;
+   bottom: 150px;
+   right: 50px;
+   cursor: pointer;
+}
