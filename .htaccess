@@ -1,5 +1,12 @@
-IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|xml|gz)$">
-    Header append Vary: Accept-Encoding
-  </FilesMatch>
+# Specify a 'Vary: Accept-Encoding' header
+<IfModule mod_headers.c>
+   <FilesMatch "\.(js|css|xml|gz)$">
+      Header append Vary: Accept-Encoding
+   </FilesMatch>
 </IfModule>
+
+# Set a far future cache policy in 2 requests
+#Expire Header
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
+   ExpiresDefault "access plus 2 hours"
+</FilesMatch>
