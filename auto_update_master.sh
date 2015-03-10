@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: Robin Wen
-# Date: 11:52:23 2014-12-04.
-# Desc: Auto push after update the repo.
+# Date: 11:44:56 2015-03-10.
+# Desc: Auto push after update the repo using bash.
 
 while getopts :ac:p ARGS
 do
