@@ -21,5 +21,8 @@
 # Href Templat
 <a href="" target="_blank"></a>
 
+# Img Template
+<img src="" title="" height="16px" width="16px" border="0" alt=""/>
+
 # Special character, middle bracket.
 「」
