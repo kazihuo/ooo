@@ -45,7 +45,7 @@ mysql -uroot -p -S /tmp/mysql_5173.sock -Ne "SELECT reverse('moc.qq@ysatnew');"
 echo "d2VudGFzeUBxcS5jb20K" | base64 --decode
 {% endhighlight %}
 
-本来想写个关于页面，却写成了一篇杂乱得文章。信息量过大，但如果您能耐心地看完，想必一定会受益匪浅。如您所见，这篇关于页面是模仿 <a href="http://dbanotes.net/" target="_blank">Fenng</a> 的，因为觉得他写得有意思。
+本来想写个关于页面，却写成了一篇杂乱的文章。信息量过大，但如果您能耐心地看完，想必一定会受益匪浅。如您所见，这篇关于页面是模仿 <a href="http://dbanotes.net/" target="_blank">Fenng</a> 的，因为觉得他写得有意思。
 
 这里不仅仅是一个博客。
 
