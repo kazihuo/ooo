@@ -5,8 +5,6 @@ comments: yes
 permalink: /about/
 ---
 
-<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
-
 这里是 Wentasy 的个人站点。
 
 目前就职于某创业公司，担任运维工程师一职，兼任 MySQL DBA。当然，以后的发展不止是运维和 DBA。
