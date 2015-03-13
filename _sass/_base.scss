@@ -43,7 +43,6 @@ ul, ol, dl, figure,
  * Set main page style
  */
 .container {
-  p { margin: 20px 0; }
   min-height:100%;
   max-width: -webkit-calc(#{$page-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$page-width} - (#{$spacing-unit} * 2));
