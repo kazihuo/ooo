@@ -350,7 +350,7 @@ exit $RETVAL
 
 ## 四 参考资料 ##
 
-<a href="http://baike.baidu.com/subview/3385614/9338179.htm" target    ="_blank"><img src="http://i.imgur.com/yvMcMOD.png" title="baike" border="0" alt="baike" height="16px" width="16px" /></a>
+MongoDB（分布式文档存储数据库） <a href="http://baike.baidu.com/subview/3385614/9338179.htm" target    ="_blank"><img src="http://i.imgur.com/yvMcMOD.png" title="baike" border="0" alt="baike" height="16px" width="16px" /></a>
 
 –EOF–
 
