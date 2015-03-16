@@ -35,7 +35,7 @@ permalink: /about/
 
 Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_blank"><img src="http://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 160px;margin-top: -20px;vertical-align: baseline;"/></a>
 
-可以通过电子邮件和我联系: dbarobinwen@gmail.com。如果 Gmail 哪天彻底不能访问，您可以通过此如下两种方式获得我的国内邮箱：
+可以通过电子邮件和我联系: dbarobinwen@gmail.com。如果 Gmail 哪天彻底不能访问，您可以通过如下两种方式获得我的国内邮箱：
 
 {% highlight sql %}
 mysql -uroot -p -S /tmp/mysql_5173.sock -Ne "SELECT reverse('moc.qq@ysatnew');"
