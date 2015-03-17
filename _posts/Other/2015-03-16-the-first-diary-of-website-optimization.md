@@ -65,7 +65,7 @@ tags:
 
 #### 3.3.3 Set a lang for your page ####
 
-为了网站的可读性，应该为网站设置 lang 属性。修复这个也很简单，只需要在 head.html 中添加该属性即可。可以参考我的 GitHub Commits：<a href="https://github.com/dbarobin/dbarobin.github.io/commit/572842d5d37f9d871f92c542bde85148d6f9bb35" target="_blank">[Optimize] Set a lang for my page</a>。
+为了网站的可读性，应该为网站设置 lang 属性。修复这个也很简单，只需要在 head.html 中添加该属性即可。可以参考我的 GitHub Commits：<a href="https://github.com/dbarobin/dbarobin.github.io/commit/d19eb85363c92a6a0fe12227d27e9fbc6dfffb62" target="_blank">[Optimize] Set a lang for my page</a>。
 
 #### 3.3.4 Defer parsing of JavaScript ####
 
