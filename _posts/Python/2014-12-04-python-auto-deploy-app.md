@@ -10,8 +10,6 @@ tags:
 - 自动化部署
 ---
 
-# Python自动化打包业务和认证平台 V2.0-Release #
-
 相关代码：[@GitHub](https://github.com/dbarobin/python-auto-deploy)
 
 目录
