@@ -57,7 +57,7 @@ Blogroll:
       title: DBA@DevOps
 
 ### Build settings.
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:year/:month/:day/:title
 markdown: kramdown
 highlighter: pygments
 paginate: 5
