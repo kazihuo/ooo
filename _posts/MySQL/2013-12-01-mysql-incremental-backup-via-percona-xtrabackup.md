@@ -24,7 +24,7 @@ tags:
 
 ## 一 文章回顾 ##
 
-在上一篇文章，我们讲到<a href="http://dbarobin.com/mysql/the-usage-of-percona-xtrabackup/" target="_blank">percona-xtrabackup软件的使用</a>，这一篇文章我们讲解percona-xtrabackup实现增量备份及恢复。
+在上一篇文章，我们讲到<a href="http://dbarobin.com/2013/12/01/the-usage-of-percona-xtrabackup/" target="_blank">percona-xtrabackup软件的使用</a>，这一篇文章我们讲解percona-xtrabackup实现增量备份及恢复。
 
 ## 二 增量备份示意图 ##
 
