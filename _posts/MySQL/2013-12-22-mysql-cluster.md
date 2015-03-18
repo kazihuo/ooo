@@ -23,7 +23,7 @@ tags:
 
 ## 一 MySQL集群简介 ##
 
-上一篇文章我们提到<a href="http://dbarobin.com/mysql/mysql-proxy/" target="_blank">MySQL 读写分离</a>，这篇文章我们讲解MySQL集群。我们提到的集群，是指多台机器完成一个工作，最主要的场景是数据库服务器和Web服务器，但是集群环境不适合大规模计算。前面我们有提到<a href="http://dbarobin.com/mysql/mysql-replication/" target="_blank">MySQL AB复制</a>，因为MySQL AB复制不适合大规模运用，要解决这个问题，我们可以使用MySQL集群。
+上一篇文章我们提到<a href="http://dbarobin.com/2013/12/15/mysql-proxy/" target="_blank">MySQL 读写分离</a>，这篇文章我们讲解MySQL集群。我们提到的集群，是指多台机器完成一个工作，最主要的场景是数据库服务器和Web服务器，但是集群环境不适合大规模计算。前面我们有提到<a href="http://dbarobin.com/2013/10/27/mysql-replication/" target="_blank">MySQL AB复制</a>，因为MySQL AB复制不适合大规模运用，要解决这个问题，我们可以使用MySQL集群。
 
 MySQL集群分为三类节点：管理节点、SQL节点、存储节点。管理节点的功能是管理其他节点，负责调度不同的SQL节点和存储节点。SQL节点作用是用户和该节点进行交互，用户发送SQL语句到该节点，进行读写请求。存储节点负责到磁盘中读数据和写数据。MySQL集群中采用一种特殊存储引擎，名叫NDB。NDB负责对数据进行读写，并保证节点之间的数据一致性，存储节点没有必要使用共享存储，因为第一存储节点本身的数据互为镜像，本身已经对数据做了备份。其中，管理节点只需要一个，SQL节点根据业务需要可以有多个，存储节点同理。
 
