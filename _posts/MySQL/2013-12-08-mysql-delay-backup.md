@@ -27,7 +27,7 @@ tags:
 
 ## 一 为什么需要延时备份 ##
 
-在上一篇文章中，我们讲到<a href="http://dbarobin.com/mysql/mysql-incremental-backup-via-percona-xtrabackup/" target="_blank">MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复</a>，percona-xtrabackup是一个优秀的用于增量备份的工具。今天我们讲到的延时备份也是使用他们的产品。
+在上一篇文章中，我们讲到<a href="http://dbarobin.com/2013/12/01/mysql-incremental-backup-via-percona-xtrabackup/" target="_blank">MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复</a>，percona-xtrabackup是一个优秀的用于增量备份的工具。今天我们讲到的延时备份也是使用他们的产品。
 
 以前在MySQL AB复制一文中提到了AB复制。我们首先回顾下MySQL复制的相关要点。AB复制又称主从复制，实现的是数据同步。经过以下步骤：
 
