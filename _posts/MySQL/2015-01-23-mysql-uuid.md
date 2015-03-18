@@ -130,7 +130,7 @@ CHAR_LENGTH(UUID()): 36
 
 ### 3.2 搭建复制环境 ###
 
-在此不赘述，请参考：<a href="http://dbarobin.com/mysql/mysql-replication/" target="_blank">MySQL AB 复制</a>
+在此不赘述，请参考：<a href="http://dbarobin.com/2013/10/27/mysql-replication/" target="_blank">MySQL AB 复制</a>
 
 ### 3.3 基于 STATEMENT 模式###
 
