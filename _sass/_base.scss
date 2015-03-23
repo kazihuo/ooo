@@ -124,7 +124,7 @@ li {
 
 
 
-**
+/**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
@@ -349,9 +349,13 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
  */
 
 hr{
-  margin-bottom: 30px;
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
   border: 0;
-  border-bottom: 1px dotted #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
 }
 
 cite{ 
