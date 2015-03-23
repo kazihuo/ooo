@@ -44,7 +44,7 @@ tags:
 以下是 GitHub 中的 Commits：
 
 * <a href="https://github.com/dbarobin/dbarobin.github.io/commit/aa260fb6bda1bfc4c711ff4797e29ac4b00938b1" target="_blank">[Enhance] Remove Google Analytics Support temporarily</a>
-* <a href="https://github.com/dbarobin/dbarobin.github.io/commit/ae8f08004d41b27813e8ff658140b8008220361d" target="_blank">[Enhance] Add Baidu Analytics Support</a>
+* <a href="https://github.com/dbarobin/dbarobin.github.io/commit/ae8f08004d41b27813e8ff658140b8008220361d" target="_blank">[Enhance] Add Baidu Analytics Support</a>  
 
 ### 3.2 使用 Dareboost 进行网站质量和性能分析 ###
 
@@ -60,7 +60,7 @@ tags:
 
 * <a href="https://developers.google.com/speed/docs/insights/OptimizeImages" target="_blank">Optimize Images</a>
 * <a href="http://jpegclub.org/" target="_blank">jpegtran</a>
-* <a href="http://optipng.sourceforge.net/" target="_blank">OptiPNG</a>
+* <a href="http://optipng.sourceforge.net/" target="_blank">OptiPNG</a>  
 
 #### 3.3.2 Specify a 'Vary: Accept-Encoding' header ####
 
