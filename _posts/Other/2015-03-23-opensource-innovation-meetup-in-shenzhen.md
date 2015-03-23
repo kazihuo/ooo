@@ -44,14 +44,20 @@ tags:
 ## 2015年 硅谷 Stata Conf 大数据行业见闻分享 ##
 ***
 
-演讲嘉宾是王涛老师，有幸在广州源创会就已经领略过前辈的风采。此外，早些天我在 <a href="http://www.csdn.net/article/2015-03-19/2824266" target="_blank">CSDN</a> 就已经看过这个主题。不过，王涛老师以亲身经历现场分享，还是很值得一听。SequoiaDB 是 Strata Conference 上唯一的本土参展商，这一点还是为国产数据库感到欣慰。当得知腾讯有全球最大的 Spark 集群，节点数量达到 8000 个，不得不为之震撼。大数据方面，王涛老师提到了很多流行或者新兴的技术，比如 Hadoop、Cloudera、Spark、MemSQL、Snowflake、Caspida 等等，深感当今的 IT 技术变革太快，新兴的技术层出不穷。IT 技术带来的经济效益和全球产业变革，是以往任何时代都不能与之媲美的。大航海时代给我们希望，工业革命给我们带来发展的基石，互联网时代给我们带来未来。或许，我们活在一个最好的时代，每个人都可以用自己的专长让自己在社会中占有一席之地。接着王老师分享了 SequoiaDB 云数据库。之前盖老师也和我分享了这个，云数据库将是未来的趋势，SequoiaDB 也看到了这个契机，不过相比国外成熟的 AWS 和国内的 UCloud、阿里云，SequoiaDB 还有很长的路要走。线下打开 SequoiaDB 云数据库的<a href="http://cloud.sequoiadb.com/" target="_blank">注册页面</a>，目前还需要 Invite Code，暂时还不能试用他们的产品。
+演讲嘉宾是王涛老师，有幸在广州源创会就已经领略过前辈的风采。此外，早些天我在 <a href="http://www.csdn.net/article/2015-03-19/2824266" target="_blank">CSDN</a> 就已经看过这个主题。不过，王涛老师以亲身经历现场分享，还是很值得一听。SequoiaDB 是 Strata Conference 上唯一的本土参展商，这一点还是为国产数据库感到欣慰。当得知腾讯有全球最大的 Spark 集群，节点数量达到 8000 个，不得不为之震撼。大数据方面，王涛老师提到了很多流行或者新兴的技术，比如 Hadoop、Cloudera、Spark、MemSQL、Snowflake、Caspida 等等，深感当今的 IT 技术变革太快，新兴的技术层出不穷。IT 技术带来的经济效益和全球产业变革，是以往任何时代都不能与之媲美的。大航海时代给我们希望，工业革命给我们带来发展的基石，互联网时代给我们带来未来。或许，我们活在一个最好的时代，每个人都可以用自己的专长让自己在社会中占有一席之地。接着王老师分享了 SequoiaDB 云数据库。之前盖老师也和我分享了这个，云数据库将是未来的趋势，SequoiaDB 也看到了这个契机，不过相比国外成熟的 AWS 和国内的 UCloud、阿里云，SequoiaDB 还有很长的路要走。线下打开 SequoiaDB 云数据库的<a href="http://cloud.sequoiadb.com/" target="_blank">注册页面</a>，准备试用下。需要注意的是，邀请码不是必填项目。
+
+上两张王涛老师的照片，来自 Fangfang，感谢。
+
+![rsz_wangtao-cto-2](http://dbarobin.com/images/wangtao-cto-2.png)
+
+![rsz_wangtao-cto-1](http://dbarobin.com/images/rsz_wangtao-cto-1.png)
 
 ## MySQL 开源社区的协作模式 ##
 ***
 
 第二个主题是讲 MySQL 开源的。了解 MySQL 时间长了，想必都不会对彭老师（彭立勋，阿里云核心系统部数据库专家，负责维护阿里云 RDS MySQL 版本分支。国内唯一的 MariaDB 源码提交者，国内为数不多的 MySQL 源码贡献者）陌生。MySQL 目前有如下的主要分支：Oracle 官方维护版本、以优化 InnoDB 和出产工具为长的 Percona、MySQL 原班人马打造的 MariaDB、阿里云的 RDS MySQL 和各大互联网公司共同维护的 WebScaleSQL。彭老师针对以上几个分之做了详细的阐述，并且对比以上几个分支，把各大分支的价值、优缺点说得很清楚。比如，官方维护的版本优势在于商业支持完善、测试流程严格，但 TestCase 不完全开放、发布版本相对较慢、不直接接受社区补丁等等；Percona 的优势在于优化 InnoDB 和提供强大的工具，但问题在于不够稳定；MariaDB 优势在于优化器模块；RDS MySQL 的优势在于特定场合对 MySQL 的优化，但问题在于涵盖的平台不够广；WebScaleSQL 的优势在于足够开放，技术前沿，但问题在于测试流程不严格。经过如上的简单描述，对于企业选择哪个分支有指导性意义。
 
-上一张图，彭老师在尽情地演讲。PS：拍照能力有限，拍了好几张都拍得不好，就传这一张表示下吧。
+上一张图，彭老师在尽情地演讲。PS：拍照能力有限，拍了好几张都拍得不好，就传这一张表示下吧。题图来自：By Robin.
 
 ![MySQL-Plinux](http://i.imgur.com/oqMmehp.png)
 
@@ -96,7 +102,5 @@ tags:
 * <a href="http://pan.baidu.com/s/1mgmSyZe" target="_blank">PPT-2015年 硅谷 Stata Conf 大数据行业见闻分享</a>
 
 **其中，思维导图来自「戴维（David WANG）」，感谢。PPT 来自 SequoiaDB 论坛，感谢。**
-
-题图来自：By Robin.
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
