@@ -34,8 +34,7 @@ tags:
 * 根据 Dareboost 报告逐次优化；
 * 使用百度云加速。
 
-<p style="margin: 20px 0">
-</p>
+<br/>
 
 ## 三 优化细节 ##
 ***
@@ -49,8 +48,7 @@ tags:
 * <a href="https://github.com/dbarobin/dbarobin.github.io/commit/aa260fb6bda1bfc4c711ff4797e29ac4b00938b1" target="_blank">[Enhance] Remove Google Analytics Support temporarily</a>
 * <a href="https://github.com/dbarobin/dbarobin.github.io/commit/ae8f08004d41b27813e8ff658140b8008220361d" target="_blank">[Enhance] Add Baidu Analytics Support</a>
 
-<p style="margin: 20px 0">
-</p>
+<br/>
 
 ### 3.2 使用 Dareboost 进行网站质量和性能分析 ###
 
@@ -68,8 +66,7 @@ tags:
 * <a href="http://jpegclub.org/" target="_blank">jpegtran</a>
 * <a href="http://optipng.sourceforge.net/" target="_blank">OptiPNG</a>
 
-<p style="margin: 20px 0">
-</p>
+<br/>
 
 #### 3.3.2 Specify a 'Vary: Accept-Encoding' header ####
 
