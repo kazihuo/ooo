@@ -118,7 +118,7 @@ ul, ol {
 li {
   > ul, 
   > ol {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -351,7 +351,7 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
 
 hr{
   display: block;
-  margin: 1em 0;
+  margin: 1px 0;
   padding: 0;
   height: 1px;
   border: 0;
