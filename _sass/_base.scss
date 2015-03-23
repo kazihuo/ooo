@@ -116,12 +116,11 @@ ul, ol {
 }
 
 li {
-  > ul, 
+  > ul,
   > ol {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
-
 
 
 
