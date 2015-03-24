@@ -10,7 +10,7 @@ tags:
 - 开源中国
 - OSC
 - 源创会
-- OpenSourc Innovation Meetup
+- OpenSource Innovation Meetup
 - 分享
 - SequoiaDB
 - 自动化运维
