@@ -18,11 +18,14 @@
 
 {% endhighlight %}
 
-# Href Templat
+# Href Template
 <a href="" target="_blank"></a>
 
 # Img Template
 <img src="" title="" height="16px" width="16px" border="0" alt=""/>
+
+# Hr Template
+***
 
 # Special character, middle bracket.
 「」
