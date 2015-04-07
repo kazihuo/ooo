@@ -6,6 +6,7 @@ email: dbarobinwen@gmail.com
 description: Robin Wen, MySQL DBA, Liberalist. Record every step about my fighting. Above all, do not lose hope.
 keywords: "MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学"
 url: "http://dbarobin.com" # The base hostname & protocol for your site
+locale: en_US
 
 ### Personal info and site tools info.
 twitter_username: dbarobin
