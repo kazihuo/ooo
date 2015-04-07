@@ -15,6 +15,13 @@
 <meta property="og:url" content="http://dbarobin.com/" />
 <meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
 
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
 <link rel="icon" href="{{site.favicon| prepend:site.baseurl}}">
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
