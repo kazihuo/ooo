@@ -17,7 +17,10 @@ layout: default
     <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }} </a>{% unless page.tags.last == tag %}, {% endunless %}
     {% endfor %}
     {% endif %}
-    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}
+    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
     </p>
   </header>
 
@@ -25,6 +28,7 @@ layout: default
     {{ content }}
   </article>
   <hr />
+
 </div>
 
 
