@@ -1,10 +1,10 @@
----
+r---
 published: true
 author: Robin Wen
 layout: post
 title: "开源中国深圳源创会分享"
 category: Other
-summary: "2015 年 3 月 21 日，深圳，科兴科学园。此次深圳源创会有如下几个主题：「Big Data & NoSQL – 2015 年硅谷 Stata Conf 大数据行业见闻分享」、「MySQL 开源社区的协作模式」、「腾讯自动化工具与开发的思路」、「深入分析 Docker Container 内部进程」和 「海思 poplar 单板介绍」。多向这些前辈靠拢，可以学到很多，或许可以给自己的发展道路树立大大小小的路标。就像永和老师在会议开场白中所言，这些分享或许会给你打开一扇窗，看到更远更宽阔的世界。"
+summary: "2015 年 3 月 21 日，深圳，科兴科学园。此次深圳源创会有如下几个主题：「Big Data & NoSQL – 2015 年硅谷 Strata Conf 大数据行业见闻分享」、「MySQL 开源社区的协作模式」、「腾讯自动化工具与开发的思路」、「深入分析 Docker Container 内部进程」和 「海思 poplar 单板介绍」。多向这些前辈靠拢，可以学到很多，或许可以给自己的发展道路树立大大小小的路标。就像永和老师在会议开场白中所言，这些分享或许会给你打开一扇窗，看到更远更宽阔的世界。"
 tags: 
 - 开源中国
 - OSC
@@ -37,11 +37,11 @@ tags:
 
 这就是源创会开始之前我的所有状态。我带着所有的期待和满心的欢喜来到深圳，不胜言语。
 
-此次深圳源创会有如下几个主题：「Big Data & NoSQL – 2015 年硅谷 Stata Conf 大数据行业见闻分享」、「MySQL 开源社区的协作模式」、「腾讯自动化工具与开发的思路」、「深入分析 Docker Container 内部进程」和 「海思 poplar 单板介绍」。其中前四个主题都是我感兴趣的，最后一个只能当时扩充知识。
+此次深圳源创会有如下几个主题：「Big Data & NoSQL – 2015 年硅谷 Strata Conf 大数据行业见闻分享」、「MySQL 开源社区的协作模式」、「腾讯自动化工具与开发的思路」、「深入分析 Docker Container 内部进程」和 「海思 poplar 单板介绍」。其中前四个主题都是我感兴趣的，最后一个只能当时扩充知识。
 
 两点微过，会场早已人山人海，人气早已甩开广州源创会几条街。主持人还是永和前辈，还是那张面孔，还是如此亲切。只言片语，些许寒暄，会议正式开始。
 
-## 2015年 硅谷 Stata Conf 大数据行业见闻分享 ##
+## 2015年 硅谷 Strata Conf 大数据行业见闻分享 ##
 ***
 
 演讲嘉宾是王涛老师，有幸在广州源创会就已经领略过前辈的风采。此外，早些天我在 <a href="http://www.csdn.net/article/2015-03-19/2824266" target="_blank">CSDN</a> 就已经看过这个主题。不过，王涛老师以亲身经历现场分享，还是很值得一听。SequoiaDB 是 Strata Conference 上唯一的本土参展商，这一点还是为国产数据库感到欣慰。当得知腾讯有全球最大的 Spark 集群，节点数量达到 8000 个，不得不为之震撼。大数据方面，王涛老师提到了很多流行或者新兴的技术，比如 Hadoop、Cloudera、Spark、MemSQL、Snowflake、Caspida 等等，深感当今的 IT 技术变革太快，新兴的技术层出不穷。IT 技术带来的经济效益和全球产业变革，是以往任何时代都不能与之媲美的。大航海时代给我们希望，工业革命给我们带来发展的基石，互联网时代给我们带来未来。或许，我们活在一个最好的时代，每个人都可以用自己的专长让自己在社会中占有一席之地。接着王老师分享了 SequoiaDB 云数据库。之前盖老师也和我分享了这个，云数据库将是未来的趋势，SequoiaDB 也看到了这个契机，不过相比国外成熟的 AWS 和国内的 UCloud、阿里云，SequoiaDB 还有很长的路要走。线下打开 SequoiaDB 云数据库的<a href="http://cloud.sequoiadb.com/" target="_blank">注册页面</a>，准备试用下。需要注意的是，邀请码不是必填项目。
@@ -99,7 +99,7 @@ tags:
 ***
 
 * <a href="http://pan.baidu.com/s/1eQ6H3IM" target="_blank">思维导图-【深圳】OSC 源创会</a>
-* <a href="http://pan.baidu.com/s/1mgmSyZe" target="_blank">PPT-2015年 硅谷 Stata Conf 大数据行业见闻分享</a>
+* <a href="http://pan.baidu.com/s/1mgmSyZe" target="_blank">PPT-2015年 硅谷 Strata Conf 大数据行业见闻分享</a>
 
 **其中，思维导图来自「戴维（David WANG）」，感谢。PPT 来自 SequoiaDB 论坛，感谢。**
 
