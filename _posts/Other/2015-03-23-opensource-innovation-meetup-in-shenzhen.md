@@ -1,4 +1,4 @@
-r---
+---
 published: true
 author: Robin Wen
 layout: post
