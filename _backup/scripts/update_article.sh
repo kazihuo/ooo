@@ -4,6 +4,7 @@
 # Desc: Auto push after update the repo.
 # Update: Update Commit info at 2015-03-04 17:17:10
 # Update: Test Git Config at 2015-03-07 09:32:09.
+# Update: Optimize display.
 
 git add -A .
 git commit -m "[Post] Update article."
