@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>MySQL中同时存在创建和上次更新时间戳字段解决方法浅析</title>
+<meta name="description" content="目录">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="MySQL中同时存在创建和上次更新时间戳字段解决方法浅析">
+<meta name="twitter:description" content="目录">
+<meta name="twitter:url" content="http://dbarobin.com/2014/09/01/the-solution-of-created-and-last-updated-timestamp-exist-simultaneously/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2014/09/01/the-solution-of-created-and-last-updated-timestamp-exist-simultaneously/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">MySQL中同时存在创建和上次更新时间戳字段解决方法浅析</h1>
+    <meta itemprop="keywords" content="Database,MySQL,数据库,MySQL 基础管理,MySQL Basic Management,时间戳,Timestamp,解决方案,浅析" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#mysql">Mysql</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Database" title="Database">Database </a>, 
+    
+    <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+    
+    <a href="/tags/#数据库" title="数据库">数据库 </a>, 
+    
+    <a href="/tags/#MySQL 基础管理" title="MySQL 基础管理">MySQL 基础管理 </a>, 
+    
+    <a href="/tags/#MySQL Basic Management" title="MySQL Basic Management">MySQL Basic Management </a>, 
+    
+    <a href="/tags/#时间戳" title="时间戳">时间戳 </a>, 
+    
+    <a href="/tags/#Timestamp" title="Timestamp">Timestamp </a>, 
+    
+    <a href="/tags/#解决方案" title="解决方案">解决方案 </a>, 
+    
+    <a href="/tags/#浅析" title="浅析">浅析 </a>
+    
+    
+    on Sep 1, 2014. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <h2 id="section">目录</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">目录</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">问题重现</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">解决方案一</a></li>
+  <li><a href="#section-3" id="markdown-toc-section-3">解决方案二</a></li>
+  <li><a href="#section-4" id="markdown-toc-section-4">解决方案三</a></li>
+  <li><a href="#section-5" id="markdown-toc-section-5">解决方案四</a></li>
+  <li><a href="#section-6" id="markdown-toc-section-6">总结</a></li>
+</ul>
+
+<p><code>文/温国兵</code></p>
+
+<h2 id="section-1">问题重现</h2>
+
+<p>在写这篇文章之前，明确我的MySQL版本。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">VERSION</span><span class="p">();</span>
+<span class="o">+</span><span class="c1">------------+</span>
+<span class="o">|</span> <span class="k">VERSION</span><span class="p">()</span>  <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------+</span>
+<span class="o">|</span> <span class="mi">5</span><span class="p">.</span><span class="mi">5</span><span class="p">.</span><span class="mi">29</span><span class="o">-</span><span class="n">log</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>现在有这样的需求，一张表中有一个字段created_at记录创建该条记录的时间戳，另一个字段updated_at记录更新该条记录的时间戳。<br />
+我们尝试以下几个语句。</p>
+
+<p>第一个，测试通过。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">temp</span>
+<span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">updated_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="err">\</span>
+    <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span></code></pre></div>
+
+<p>第二个，测试不通过。报ERROR 1293 (HY000)错误。（完整错误信息：ERROR 1293 (HY000): Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause）</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">temp</span>
+<span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">created_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="err">\</span>
+    <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span></code></pre></div>
+
+<p>MySQL 5.5.29中有这样的奇葩限制，不明白为什么。既然有这样的限制，那么只有绕道而行，现在尝试给出如下几种解决办法。</p>
+
+<h2 id="section-2">解决方案一</h2>
+
+<p><strong>第一种，created_at使用DEFAULT CURRENT_TIMESTAMP或者DEFAULT now()，updated_at使用触发器。</strong></p>
+
+<p>具体解决方法如下：<br />
+1.temp表结构如下：</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">temp</span>
+<span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">created_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="k">timestamp</span> <span class="k">NULL</span>
+<span class="p">);</span></code></pre></div>
+
+<p>2.插入测试数据：</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">created_at</span><span class="p">,</span><span class="n">updated_at</span><span class="p">)</span> <span class="err">\</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">,</span><span class="n">now</span><span class="p">(),</span><span class="n">now</span><span class="p">());</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">03</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">created_at</span><span class="p">,</span><span class="n">updated_at</span><span class="p">)</span> <span class="err">\</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;wentasy&#39;</span><span class="p">,</span><span class="n">now</span><span class="p">(),</span><span class="n">now</span><span class="p">());</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>    <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robin</span>   <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">39</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">39</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">11</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">11</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>3.在temp上创建触发器，实现更新时记录更新时间；</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">delimiter</span> <span class="o">|</span>
+<span class="k">DROP</span> <span class="k">TRIGGER</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">tri_temp_updated_at</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TRIGGER</span> <span class="n">tri_temp_updated_at</span> <span class="k">BEFORE</span> <span class="k">UPDATE</span> <span class="k">ON</span> <span class="n">temp</span>
+<span class="k">FOR</span> <span class="k">EACH</span> <span class="k">ROW</span>
+<span class="k">BEGIN</span>
+    <span class="k">SET</span> <span class="k">NEW</span><span class="p">.</span><span class="n">updated_at</span> <span class="o">=</span> <span class="n">now</span><span class="p">();</span>
+<span class="k">END</span><span class="p">;</span>
+<span class="o">|</span>
+<span class="k">delimiter</span> <span class="p">;</span></code></pre></div>
+
+<p>4.测试。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">temp</span> <span class="k">SET</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;robinwen&#39;</span> <span class="k">WHERE</span> <span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+<span class="k">Rows</span> <span class="n">matched</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Changed</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Warnings</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="c1">-- 可以看到已经记录了第一条数据的更新时间</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>     <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robinwen</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">39</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">03</span><span class="p">:</span><span class="mi">05</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span>  <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">11</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mi">11</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<h2 id="section-3">解决方案二</h2>
+
+<p><strong>第二种，created_at使用触发器，updated_at使用DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP或者DEFAULT now() ON UPDATE now()；</strong></p>
+
+<p>具体解决方法如下：<br />
+1.temp表结构如下：</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">temp</span>
+<span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">created_at</span> <span class="k">timestamp</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="err">\</span>
+    <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span></code></pre></div>
+
+<p>2.在temp上创建触发器，实现插入数据记录创建时间；</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">delimiter</span> <span class="o">|</span>
+<span class="k">DROP</span> <span class="k">TRIGGER</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">tri_temp_created_at</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TRIGGER</span> <span class="n">tri_temp_created_at</span> <span class="k">BEFORE</span> <span class="k">INSERT</span> <span class="k">ON</span> <span class="n">temp</span>
+<span class="k">FOR</span> <span class="k">EACH</span> <span class="k">ROW</span>
+<span class="k">BEGIN</span>
+    <span class="n">IF</span> <span class="k">new</span><span class="p">.</span><span class="n">created_at</span> <span class="k">IS</span> <span class="k">NULL</span>
+    <span class="k">THEN</span>
+        <span class="k">SET</span> <span class="k">new</span><span class="p">.</span><span class="n">created_at</span><span class="o">=</span><span class="n">now</span><span class="p">();</span>
+    <span class="k">END</span> <span class="n">IF</span><span class="p">;</span>
+<span class="k">END</span><span class="p">;</span>
+<span class="o">|</span>
+<span class="k">delimiter</span> <span class="p">;</span></code></pre></div>
+
+<p>3.插入测试数据：</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">created_at</span><span class="p">,</span><span class="n">updated_at</span><span class="p">)</span> <span class="err">\</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">,</span><span class="n">now</span><span class="p">(),</span><span class="n">now</span><span class="p">());</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">created_at</span><span class="p">,</span><span class="n">updated_at</span><span class="p">)</span> <span class="err">\</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;wentasy&#39;</span><span class="p">,</span><span class="n">now</span><span class="p">(),</span><span class="n">now</span><span class="p">());</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>    <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robin</span>   <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">36</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">36</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">44</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">44</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>4.测试。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">temp</span> <span class="k">SET</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;robinwen&#39;</span> <span class="k">WHERE</span> <span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+<span class="k">Rows</span> <span class="n">matched</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Changed</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Warnings</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="c1">-- 可以看到已经记录了第一条数据的更新时间</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>     <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robinwen</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">36</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">09</span><span class="p">:</span><span class="mi">09</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span>  <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">44</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">08</span><span class="p">:</span><span class="mi">44</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<h2 id="section-4">解决方案三</h2>
+
+<p><strong>第三种，created_at指定timestamp DEFAULT ‘0000-00-00 00:00:00’，updated_at指定DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP或者timestamp DEFAULT now() ON UPDATE now()；</strong></p>
+
+<p>具体解决方法如下：<br />
+1.temp表结构如下：</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">temp</span>
+<span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">created_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="s1">&#39;0000-00-00 00:00:00&#39;</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="err">\</span>
+    <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span></code></pre></div>
+
+<p>2.插入测试数据：</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">created_at</span><span class="p">,</span><span class="n">updated_at</span><span class="p">)</span> <span class="err">\</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">,</span><span class="n">now</span><span class="p">(),</span><span class="n">now</span><span class="p">());</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">created_at</span><span class="p">,</span><span class="n">updated_at</span><span class="p">)</span> <span class="err">\</span>
+<span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;wentasy&#39;</span><span class="p">,</span><span class="n">now</span><span class="p">(),</span><span class="n">now</span><span class="p">());</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>    <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robin</span>   <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">43</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">43</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>3.测试。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">temp</span> <span class="k">SET</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;robinwen&#39;</span> <span class="k">WHERE</span> <span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+<span class="k">Rows</span> <span class="n">matched</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Changed</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Warnings</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="c1">-- 可以看到已经记录了第一条数据的更新时间</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>     <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robinwen</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">43</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">11</span><span class="p">:</span><span class="mi">24</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span>  <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">14</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<h2 id="section-5">解决方案四</h2>
+
+<p><strong>第四种，更换MySQL版本，MySQL 5.6已经去除了此限制。</strong></p>
+
+<p>我们可以看下MySQL 5.5和5.6帮助文档对于这个问题的解释。</p>
+
+<p><strong>From the MySQL 5.5 documentation:</strong><br />
+One TIMESTAMP column in a table can have the current timestamp as the default value for initializing the column, as the auto-update value, or both. It is not possible to have the current timestamp be the default value for one column and the auto-update value for another column.<br />
+Changes in MySQL 5.6.5:<br />
+Previously, at most one TIMESTAMP column per table could be automatically initialized or updated to the current date and time. This restriction has been lifted. Any TIMESTAMP column definition can have any combination of DEFAULT CURRENT_TIMESTAMP and ON UPDATE CURRENT_TIMESTAMP clauses. In addition, these clauses now can be used with DATETIME column definitions. For more information, see Automatic Initialization and Updating for TIMESTAMP and DATETIME.</p>
+
+<p>我们确定下MySQL的版本。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">VERSION</span><span class="p">();</span>
+<span class="o">+</span><span class="c1">---------------------------------------+</span>
+<span class="o">|</span> <span class="k">VERSION</span><span class="p">()</span>                             <span class="o">|</span>
+<span class="o">+</span><span class="c1">---------------------------------------+</span>
+<span class="o">|</span> <span class="mi">5</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">20</span><span class="o">-</span><span class="n">enterprise</span><span class="o">-</span><span class="n">commercial</span><span class="o">-</span><span class="n">advanced</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">---------------------------------------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>我们把文首测试不通过的SQL语句在MySQL 5.6下执行，可以看到没有任何错误。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">temp</span>
+<span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+    <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">created_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="k">timestamp</span> <span class="k">NULL</span> <span class="err">\</span>
+    <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="err">\</span>
+    <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">28</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>接着我们插入测试语句，并作测试。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">07</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;wentasy&#39;</span><span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>    <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robin</span>   <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">06</span><span class="p">:</span><span class="mi">02</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">06</span><span class="p">:</span><span class="mi">02</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+---------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">temp</span> <span class="k">SET</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;robinwen&#39;</span> <span class="k">WHERE</span> <span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">02</span> <span class="n">sec</span><span class="p">)</span>
+<span class="k">Rows</span> <span class="n">matched</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Changed</span><span class="p">:</span> <span class="mi">1</span>  <span class="n">Warnings</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="c1">-- 可以看到已经记录了第一条数据的更新时间</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">temp</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span> <span class="n">id</span> <span class="o">|</span> <span class="n">name</span>     <span class="o">|</span> <span class="n">created_at</span>          <span class="o">|</span> <span class="n">updated_at</span>          <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span> <span class="n">robinwen</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">05</span><span class="p">:</span><span class="mi">57</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">06</span><span class="p">:</span><span class="mi">45</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span> <span class="n">wentasy</span>  <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">06</span><span class="p">:</span><span class="mi">02</span> <span class="o">|</span> <span class="mi">2014</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">01</span> <span class="mi">15</span><span class="p">:</span><span class="mi">06</span><span class="p">:</span><span class="mi">02</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">----+----------+---------------------+---------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<h2 id="section-6">总结</h2>
+
+<p>本文介绍的方法归根结底，就两条，<strong>一是建表语句指定默认值和更新动作，二是使用触发器插入默认值和更新时间。</strong>面对当前无法更改的事实，只能采取折中的办法或者牺牲更多来弥补。还有一条值得注意的是，遇到问题多想想不同的解决办法，尽可能地列出所有可能或者可行的方案，这样一来让自己学到更多，二来可以锻炼思维的广度，三来多种方案可以弥补某种方案在特定环境下不可行的不足。</p>
+
+<p>–EOF–</p>
+
+<p>原文地址：<a href="http://blog.csdn.net/justdb/article/details/38981477" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL中同时存在创建和上次更新时间戳字段解决方法浅析" height="16px" width="16px" border="0" alt="MySQL中同时存在创建和上次更新时间戳字段解决方法浅析" /></a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2014/08/02/configuring-mongodb-strategy-under-linux/" title="深入理解MongoDB（一）Linux下配置MongoDB全攻略">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2014/10/19/poetic-life/" title="诗意的人生">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>程序员的奋斗史（一）浅谈几种主要编程语言</title>
+<meta name="description" content="目录">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="程序员的奋斗史（一）浅谈几种主要编程语言">
+<meta name="twitter:description" content="目录">
+<meta name="twitter:url" content="http://dbarobin.com/2012/04/04/breif-talk-on-primary-programming-language/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2012/04/04/breif-talk-on-primary-programming-language/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">程序员的奋斗史（一）浅谈几种主要编程语言</h1>
+    <meta itemprop="keywords" content="Other,程序员的奋斗史,Fighting,编程语言" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#other">Other</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Other" title="Other">Other </a>, 
+    
+    <a href="/tags/#程序员的奋斗史" title="程序员的奋斗史">程序员的奋斗史 </a>, 
+    
+    <a href="/tags/#Fighting" title="Fighting">Fighting </a>, 
+    
+    <a href="/tags/#编程语言" title="编程语言">编程语言 </a>
+    
+    
+    on Apr 4, 2012. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <h2 id="section">目录</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">目录</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">写在前面</a></li>
+  <li><a href="#c" id="markdown-toc-c">C语言</a></li>
+  <li><a href="#c-1" id="markdown-toc-c-1">C++</a></li>
+  <li><a href="#java" id="markdown-toc-java">Java</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">写在后面</a></li>
+</ul>
+
+<h2 id="section-1">写在前面</h2>
+
+<p><code>文/温国兵</code></p>
+
+<p>经常听到有人在抱怨这个语言哪里哪里不好，那个语言又是如何的优秀。对于这样的牢骚，我只是一笑而过。</p>
+
+<p>就我而言，语言只是工具，没有好坏之分。只要你采用相应的语言，完成对应的工作，那你的目标就完成了。我们无需抱怨这种语言的缺点，而是应该抱有接受的态度。任何语言的存在都有它的合理性，如果不合理是不会经受住时间的考验的。世间之物都具有双面性，只是看利多还是弊大。如果一个东西是十全十美的，那我毫不犹豫的告诉你，一种情况是它不存在，另一种情况是你还没发现它的缺点。</p>
+
+<p>每种语言都有自己得天独厚的优势，当然缺点同时伴存。C语言是计算机界的常青藤。C语言执行效率高，用于写底层的驱动那是再适合不过。指针是C语言的精华。而C++是很强大的，只要你是个高手，你几乎可以利用C++完成任何事情。当然虚函数是C++的精华。Java取消了指针，这是应该喜还是忧。喜的是，没有C或者C++那种对内存繁琐的操作，而且也降低了很多致命性的错误发生的概率。忧的是，效率大打折扣，采用虚拟机的方式使得Java有跨平台的特性，必然会使得效率降低。另外一个方面，你借别人的东西使用（内存），是不是应该还回去呢？从这一方面考虑，C或者C++的设计思想更有意义。经常关注TIOBE世界编程语言排行榜，Java已经有很久排名第一，我觉得这样的排名只是看看而已，无需过多的信奉。下面看看几种主要语言的优缺点。</p>
+
+<h2 id="c">C语言</h2>
+
+<p><strong>C语言的优点：</strong></p>
+
+<ul>
+  <li>简洁紧凑、灵活方便</li>
+  <li>运算符丰富</li>
+  <li>数据结构丰富</li>
+  <li>C是结构式语言</li>
+  <li>C语法限制不太严格，程序设计自由度大</li>
+  <li>C语言允许直接访问物理地址，可以直接对硬件进行操作</li>
+  <li>C语言程序生成代码质量高，程序执行效率高</li>
+  <li>C语言适用范围大，可移植性好</li>
+  <li>C语言有一个突出的优点就是适合于多种操作系统,如DOS、UNIX,也适用于多种机型</li>
+  <li>有效地将一个较复杂的程序系统设计任务分解成许多易于控制和处理的子任务，便于开发和维护</li>
+</ul>
+
+<p><strong>C语言的缺点：</strong></p>
+
+<ul>
+  <li>C语言的缺点主要是表现在数据的封装性上，这一点使得C在数据的安全性上做的有很大缺陷，这也是C和C++的一大区别。</li>
+  <li>C语言的语法限制不太严格，对变量的类型约束不严格，影响程序的安全性，对数组下标越界不作检查等。从应用的角度，C语言比其他高级语言较难掌握。</li>
+  <li>可重用性差</li>
+  <li>数据安全性差</li>
+  <li>难以开发大型软件和图形界面的应用软件</li>
+  <li>把数据和处理数据的过程分离为相互独立的实体</li>
+  <li>当数据结构改变时，所有相关的处理过程都要进行相应的修改</li>
+  <li>每一种相对于老问题的新方法都要带来额外的开销</li>
+  <li>图形用户界面的应用程序，很难用过程来描述和实现，开发和维护也都很困难</li>
+</ul>
+
+<h2 id="c-1">C++</h2>
+
+<p><strong>C++优点：</strong></p>
+
+<ul>
+  <li>可扩展性强</li>
+  <li>高效 简洁 快速</li>
+  <li>可移植性</li>
+  <li>面向对象的特性</li>
+  <li>强大而灵活的表达能力和不输于C的效率</li>
+  <li>支持硬件开发</li>
+  <li>程序模块间的关系更为简单，程序模块的独立性、数据的安全性就有了良好的保障</li>
+  <li>通过继承与多态性，可以大大提高程序的可重用性，使得软件的开发和维护都更为方便</li>
+</ul>
+
+<p><strong>C++缺点：</strong></p>
+
+<ul>
+  <li>比较底层，易用性不是很好</li>
+  <li>多重继承和友元机制</li>
+  <li>标准库涵盖范围不足</li>
+  <li>开发周期长</li>
+  <li>非并行</li>
+  <li>掌握有难度</li>
+  <li>粒度封装不够</li>
+</ul>
+
+<h2 id="java">Java</h2>
+
+<p><strong>Java的优点：</strong></p>
+
+<ul>
+  <li>简单性</li>
+  <li>面向对象性（面向对象的程度可以达到95%）</li>
+  <li>健壮性</li>
+  <li>跨平台性</li>
+  <li>高性能（自动垃圾回收机制）</li>
+  <li>多线程</li>
+  <li>动态性</li>
+  <li>安全性</li>
+</ul>
+
+<p><strong>Java的缺点：</strong></p>
+
+<ul>
+  <li>跨平台是它最大的优点也是最大的缺点</li>
+  <li>复杂性（做一个项目需要很多的知识，涉及面广）</li>
+</ul>
+
+<h2 id="section-2">写在后面</h2>
+
+<p>很多时候，一种语言的优点很可能是它的缺点，缺点又可能是它的优点。这主要看你是从哪方面去考虑。这就印证了那句话，凡事没有必然。</p>
+
+<p>不管是哪种语言，就像文章开头所言，只要你采用他达到你想要的，那就成功了。无需过多在意它的缺点，更无需赞扬它的优点。所以网上那些关于哪种语言更好的口水仗，我只能说这样的争斗毫无意义。</p>
+
+<p><strong>语言只是工具，没有好坏之分。</strong></p>
+
+<p>–EOF–</p>
+
+<p>原文地址：<a href="http://blog.csdn.net/justdb/article/details/7425698" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（一）浅谈几种主要编程语言" height="16px" width="16px" border="0" alt="程序员的奋斗史（一）浅谈几种主要编程语言" /></a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="disabled"><a>&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2012/04/17/have-you-run-yet-today/" title="程序员的奋斗史（二）今天你跑步了吗">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

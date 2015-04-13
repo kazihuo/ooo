@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>Oracle的学习疑惑</title>
+<meta name="description" content="文/温国兵">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="Oracle的学习疑惑">
+<meta name="twitter:description" content="文/温国兵">
+<meta name="twitter:url" content="http://dbarobin.com/2013/12/29/puzzle-in-oracle-learning/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2013/12/29/puzzle-in-oracle-learning/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">Oracle的学习疑惑</h1>
+    <meta itemprop="keywords" content="Other,疑惑,Oracle,Puzzle,建议,Oracle 学习,Oracle Learning" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#other">Other</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Other" title="Other">Other </a>, 
+    
+    <a href="/tags/#疑惑" title="疑惑">疑惑 </a>, 
+    
+    <a href="/tags/#Oracle" title="Oracle">Oracle </a>, 
+    
+    <a href="/tags/#Puzzle" title="Puzzle">Puzzle </a>, 
+    
+    <a href="/tags/#建议" title="建议">建议 </a>, 
+    
+    <a href="/tags/#Oracle 学习" title="Oracle 学习">Oracle 学习 </a>, 
+    
+    <a href="/tags/#Oracle Learning" title="Oracle Learning">Oracle Learning </a>
+    
+    
+    on Dec 29, 2013. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <p><code>文/温国兵</code></p>
+
+<p><strong>【问题描述】</strong></p>
+
+<p>大家好，本人今年大4，自学oracle3年了，目前在实习，但是oracle的学习上一直感觉进步很慢，希望圈内前辈们指点一下？</p>
+
+<p>有的时候真的很累，都不知道自己活着到底是为了什么？大学很差4流本科，非计算机专业，自知没有天资，只能靠拼命努力，所以从大一到大三，我一直全身心的在学习oracle，除了白天要上学校的的课外，平时就一直窝在图书馆学习oracle，在杭州快4年了，不要说去逛下西湖，就是去逛下下沙都没有。同学关系也不理想，在大家眼里，我只是一只‘学霸’。我到底哪里出了问题？算了，不写了。。</p>
+
+<p><img src="http://i.imgur.com/4UejF4X.jpg" alt="Puzzle in oracle learning" /></p>
+
+<p><strong>【我的回答】</strong></p>
+
+<p>自学Oracle三年，首先赞扬下为题主的这份坚持。</p>
+
+<p>看完你的叙述和你的回答，下面我依次回答。</p>
+
+<p>1.自学Oracle三年，想必那么长的时间对Oracle体系结构、一些基本的原理、备份和恢复、DG、RAC等等有了比较好的掌握和理解，至于进度慢，我推测第一是没有找对方法，走了很多弯路；第二是孤军奋战，遇到问题不能及时解决从而产生挫败感；第三，学习仿若赵括，没有实际环境演练；</p>
+
+<p>2.题主提到现在已近实习了，如果从事的是数据库相关的工作，进度和深度不是问题，最多只是时间和精力的问题；</p>
+
+<p>3.题主最大的问题是“死读书”，可能学习过程中很少想为什么，还有最关键的是没有把所学运用于实际。当然，要运用，还得有环境，在实际环境中磨练才是真正成为一名合格DBA的前提，否则都是瞎谈；</p>
+
+<p>4.确实现在已经过了Oracle的黄金期，Oracle的技术已经趋于成熟。至于资料，不缺。比如国内技术大牛的技术分享（可以看下ACOUG成员的博客）、国外牛人的博客等等。</p>
+
+<p>分享两位前辈的博客：</p>
+
+<p><a href="http://www.eygle.com/" target="_blank">Oracle Life - 提供专业的技术支持,性能调整及 Oracle 数据恢复服务</a><br /><br />
+<a href="http://blog.csdn.net/tianlesoftware" target="_blank">David Dai –Focus on Oracle</a></p>
+
+<p>5.下面把你的回答摘抄下来，然后我试着回答你其中提到的一些问题。</p>
+
+<p>有的时候真的很累，都不知道自己活着到底是为了什么？大学很差4流本科，非计算机专业，自知没有天资，只能靠拼命努力，所以从大一到大三，我一直全身心的在学习oracle，除了白天要上学校的的课外，平时就一直窝在图书馆学习oracle，在杭州快4年了，不要说去逛下西湖，就是去逛下下沙都没有。同学关系也不理想，在大家眼里，我只是一只‘学霸’。我到底哪里出了问题？算了，不写了。。</p>
+
+<p><strong>5.1 有的时候真的很累，都不知道自己活着到底是为了什么？</strong><br />
+这里不谈人生，也不谈活着的意义。但至少有一点，能在时间的长河中留下一点点印记，哪怕微不足道，足矣。</p>
+
+<p><strong>5.2 大学很差4流本科，非计算机专业，自知没有天资，只能靠拼命努力。</strong><br />
+学校不是那么重要，专业不重要。我们以后从事的工作大多和所学无关，你的未来很多程度上不是取决于你的专业，这里有非计算机专业还能在IT行业叱咤风云的例子，比如@Fenng（冯大辉前辈）。数据库行业是非创新型行业，努力够，方法对，遇到和解决的问题多，再加上坚持，最终还是能在这个行业站得住脚，至少生计不愁。至于要想在这个行业有所作为，天资还是需要的。最近不是流行一句话吗：“以大多数人的努力程度之低，根本轮不到拼天赋”，不说这句话正确与否，至少可以静下心来好好想想这句话。</p>
+
+<p><strong>5.3 在杭州快4年了，不要说去逛下西湖，就是去逛下下沙都没有</strong><br />
+一个人的发展空间不仅仅是技术，很多技术之外的东西往往比技术更重要。你的技术水平越往上提升一个层次，就会对你自身伤害一个层次。学习之外还有很多事情可以做，比如跑步、骑车出去走走、弹弹吉他、读点杂书、背着背包远行、练字、写文章、给父母聊天……有句话是这样的：“要么读书，要么旅行，身体和灵魂总有一条在路上”，旅行的意义不必多说。如果条件允许的话，来一场恋爱有何不可。生活如此美好，何必死磕。</p>
+
+<p><strong>5.4 同学关系也不理想，在大家眼里，我只是一只‘学霸’。我到底哪里出了问题？</strong><br />
+如果从自身发展的角度，这个世界上除了自身本领重要，还有什么重要？答案是人脉。如果和同学关系也搞不好，怎么能搞定同事关系？至于怎么搞好人际关系，还是留着自己摸索吧。这是一本很大很厚的“书”。至于同学为什么这样看待，我想还是自身有原因吧，大多数人不喜欢死读书的人。不过，成为自己想成为的自己，做自己，最真实。借用杨绛说过的一句话，“你的主要问题在于读书不多而想的太多”。注意，这里的书不是你提到的在图书馆死磕技术书，而是“杂”书。</p>
+
+<p><strong>最后，祝题主早日做回自信的自己。</strong></p>
+
+<p>–EOF–</p>
+
+<p>原文地址：微信公众号文章</p>
+
+<p>题图来自：Google Images</p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2013/12/26/dba-common-tools-by-baishan/" title="白鳝前辈分享的DBA常用软件">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2014/01/02/tittle-tattle-about-dba/" title="DBA杂谈">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

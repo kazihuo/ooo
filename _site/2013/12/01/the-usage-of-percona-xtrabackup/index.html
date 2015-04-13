@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>MySQL备份与恢复之percona-xtrabackup软件的使用</title>
+<meta name="description" content="目录">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="MySQL备份与恢复之percona-xtrabackup软件的使用">
+<meta name="twitter:description" content="目录">
+<meta name="twitter:url" content="http://dbarobin.com/2013/12/01/the-usage-of-percona-xtrabackup/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2013/12/01/the-usage-of-percona-xtrabackup/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">MySQL备份与恢复之percona-xtrabackup软件的使用</h1>
+    <meta itemprop="keywords" content="Database,MySQL,数据库,备份与恢复,Percona-xtrabackup,Backup and Recovery,使用手册,Manual" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#mysql">Mysql</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Database" title="Database">Database </a>, 
+    
+    <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+    
+    <a href="/tags/#数据库" title="数据库">数据库 </a>, 
+    
+    <a href="/tags/#备份与恢复" title="备份与恢复">备份与恢复 </a>, 
+    
+    <a href="/tags/#Percona-xtrabackup" title="Percona-xtrabackup">Percona-xtrabackup </a>, 
+    
+    <a href="/tags/#Backup and Recovery" title="Backup and Recovery">Backup and Recovery </a>, 
+    
+    <a href="/tags/#使用手册" title="使用手册">使用手册 </a>, 
+    
+    <a href="/tags/#Manual" title="Manual">Manual </a>
+    
+    
+    on Dec 1, 2013. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <h2 id="section">目录</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">目录</a></li>
+  <li><a href="#percona-xtrabackup" id="markdown-toc-percona-xtrabackup">一 使用percona-xtrabackup的原因</a></li>
+  <li><a href="#percona-xtrabackup-1" id="markdown-toc-percona-xtrabackup-1">二 什么是percona-xtrabackup</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">三 软件及文档获取</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">四 软件使用讲解</a></li>
+  <li><a href="#section-3" id="markdown-toc-section-3">五 参考资料</a></li>
+</ul>
+
+<p><code>文/温国兵</code></p>
+
+<h2 id="percona-xtrabackup">一 使用percona-xtrabackup的原因</h2>
+
+<p>在前面，我们讲到MySQL冷备、热备、mysqldump、热拷贝、保证数据的一致性。因为mysql冷备、mysqldump、mysql热拷贝均不能实现增量备份，在实际环境中增量备份是使用较多的，percona-xtrabackup就是为实现增量备份而生，因此我们需要使用percona-xtrabackup。</p>
+
+<p>本文讲解percona-xtrabackup软件的使用，下一篇文章讲解percona-xtrabackup实现增量备份及恢复。</p>
+
+<h2 id="percona-xtrabackup-1">二 什么是percona-xtrabackup</h2>
+
+<blockquote>
+  <p>Percona XtraBackup is an open-source hot backup utility for MySQL -based servers that doesn’t lock your database during the backup.</p>
+
+  <p>It can back up data from <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-innodb" target="_blank">InnoDB</a>, <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-xtradb" target="_blank">XtraDB</a>,and <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-myisam" target="_blank">MyISAM</a> tableson MySQL 5.1 <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/#n-1" target="_blank">[1]</a>, 5.5 and5.6 servers, as well as Percona Server with <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-xtradb" target="_blank">XtraDB</a>. For a high-level overview of many of its advanced features, including a featurecomparison, please see <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/intro.html" target="_blank">About Percona Xtrabackup</a>.</p>
+
+  <p>Whether it is a 24x7 highly loaded server or alow-transaction-volume environment, Percona XtraBackup isdesigned to make backups a seamless procedure without disrupting theperformance of the server in a production environment.<a href="http://www.percona.com/services/mysql-support" target="_blank">Commercial support contracts areavailable</a>.</p>
+
+  <p>Percona XtraBackup is a combination of the <strong>xtrabackup</strong> C program,and the <strong>innobackupex</strong> Perl script. The <strong>xtrabackup</strong> programcopies and manipulates <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-innodb" target="_blank">InnoDB</a> and <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-xtradb" target="_blank">XtraDB</a> datafiles, and the Perl script enables enhanced functionality,such as interacting with a running MySQL server and backing up <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-myisam" target="_blank">MyISAM</a> tables.</p>
+</blockquote>
+
+<h2 id="section-1">三 软件及文档获取</h2>
+
+<p><strong>软件获取</strong></p>
+
+<p><a href="http://www.percona.com/software/percona-xtrabackup/downloads" target="_blank"><img src="http://i.imgur.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a> <br /><br />
+<a href="http://download.csdn.net/detail/wentasy/6638171" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a></p>
+
+<p><strong>文档获取</strong></p>
+
+<p><a href="http://www.percona.com/doc/percona-xtrabackup/2.1/" target="_blank"><img src="http://i.imgur.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a> <br /><br />
+<a href="http://download.csdn.net/detail/wentasy/6638029" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a></p>
+
+<h2 id="section-2">四 软件使用讲解</h2>
+
+<p><strong>注：本文采用的percona-xtrabackup版本为2.0.2，操作系统版本为RHEL 6.1 Server，MySQL版本为5.1</strong></p>
+
+<p>第一步，准备文件并拷贝文件</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ll percona-xtrabackup-2.0.2-461.rhel6.x86_64.rpm
+scp percona-xtrabackup-2.0.2-461.rhel6.x86_64.rpm 192.168.1.11:/opt</code></pre></div>
+
+<p>第二步，该软件需要依赖MySQL客户端，所以使用yum安装。注意，此处安装的只是MySQL的客户端，和本身使用源码安装的MySQL不冲突。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">yum install percona-xtrabackup-2.0.2-461.rhel6.x86_64.rpm -y
+Installed:
+  percona-xtrabackup.x86_64 0:2.0.2-461.rhel6
+Dependency Installed:
+  mysql.x86_64 0:5.1.52-1.el6_0.1</code></pre></div>
+
+<p>第三步，初始化备份。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">innobackupex --user<span class="o">=</span>root --password<span class="o">=</span><span class="m">123456</span> /databackup/
+InnoDB Backup Utility v1.5.1-xtrabackup<span class="p">;</span> Copyright 2003, <span class="m">2009</span> Innobase Oy
+and Percona Inc 2009-2012.  All Rights Reserved.
+
+……
+innobackupex: Backup created in directory <span class="s1">&#39;/databackup/2013-09-10_21-49-44&#39;</span>
+innobackupex: MySQL binlog position: filename <span class="s1">&#39;mysql-bin.000001&#39;</span>, position 7312
+<span class="m">130910</span> 21:50:03  innobackupex: completed OK!</code></pre></div>
+
+<p>第四步，这样的备份文件无法使用，我们需要做统一检查。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls
+2013-09-10_21-49-44
+
+<span class="c"># 做统一检查</span>
+innobackupex --apply-log /databackup/2013-09-10_21-49-44/
+
+InnoDB Backup Utility v1.5.1-xtrabackup<span class="p">;</span> Copyright 2003, <span class="m">2009</span> Innobase Oy
+and Percona Inc 2009-2012.  All Rights Reserved.
+……
+xtrabackup: starting shutdown with <span class="nv">innodb_fast_shutdown</span> <span class="o">=</span> 1
+<span class="m">130910</span> 21:51:52  InnoDB: Starting shutdown...
+<span class="m">130910</span> 21:51:56  InnoDB: Shutdown completed<span class="p">;</span> log sequence number 2098188
+<span class="m">130910</span> 21:51:56  innobackupex: completed OK!</code></pre></div>
+
+<p>第五步，模拟数据丢失。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rm -rf /usr/local/mysql/data/*
+ll /usr/local/mysql/data/</code></pre></div>
+
+<p>第六步，恢复数据。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">innobackupex --copy-back /databackup/2013-09-10_21-49-44/
+InnoDB Backup Utility v1.5.1-xtrabackup<span class="p">;</span> Copyright 2003, <span class="m">2009</span> Innobase Oy
+and Percona Inc 2009-2012.  All Rights Reserved.
+……
+innobackupex: Starting to copy InnoDB system tablespace
+innobackupex: in <span class="s1">&#39;/databackup/2013-09-10_21-49-44&#39;</span>
+innobackupex: back to original InnoDB data directory <span class="s1">&#39;/usr/local/mysql/data&#39;</span>
+innobackupex: Copying file <span class="s1">&#39;/databackup/2013-09-10_21-49-44/ibdata1&#39;</span>
+
+innobackupex: Starting to copy InnoDB log files
+innobackupex: in <span class="s1">&#39;/databackup/2013-09-10_21-49-44&#39;</span>
+innobackupex: back to original InnoDB log directory <span class="s1">&#39;/usr/local/mysql/data&#39;</span>
+innobackupex: Finished copying back files.
+
+<span class="m">130910</span> 22:02:29  innobackupex: completed OK!</code></pre></div>
+
+<p>第七步，重启mysql服务，发现报错，pkill掉，然后启动一切正常。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">/etc/init.d/mysqld restart
+ ERROR! MySQL server PID file could not be found!
+Starting MySQL. ERROR! The server quit without updating PID file 
+<span class="o">(</span>/usr/local/mysql/data/serv01.host.com.pid<span class="o">)</span>.</code></pre></div>
+
+<p>查看恢复的数据目录，拥有者和所属组不是mysql用户，我们更改拥有者和所属组。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ll /usr/local/mysql/data/
+chown mysql.mysql /usr/local/mysql/data/ -R</code></pre></div>
+
+<p>再次启动，仍然失败，我们杀掉进程，再次启动mysql，正常。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">/etc/init.d/mysqld restart
+ ERROR! MySQL server PID file could not be found!
+Starting MySQL.. ERROR! The server quit without updating PID file 
+<span class="o">(</span>/usr/local/mysql/data/serv01.host.com.pid<span class="o">)</span>.
+
+ps -ef <span class="p">|</span> grep mysql
+pkill -9 mysql
+
+/etc/init.d/mysqld start
+Starting MySQL.. SUCCESS!</code></pre></div>
+
+<p>登录到MySQL。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span> <span class="o">-</span><span class="n">uroot</span> <span class="o">-</span><span class="n">p123456</span>
+<span class="n">Server</span> <span class="k">version</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">5</span><span class="p">.</span><span class="mi">29</span><span class="o">-</span><span class="n">log</span> <span class="k">Source</span> <span class="n">distribution</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">databases</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="k">Database</span>           <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="n">information_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">game</span>               <span class="o">|</span>
+<span class="o">|</span> <span class="n">hello</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">larrydb</span>            <span class="o">|</span>
+<span class="o">|</span> <span class="n">mnt</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">mysql</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">performance_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">test</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="mi">8</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<h2 id="section-3">五 参考资料</h2>
+
+<p>Percona 文档：<a href="http://www.percona.com/doc/percona-xtrabackup/2.1/" target="_blank"><img src="http://i.imgur.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a></p>
+
+<p>–EOF–</p>
+
+<p>原文地址：<a href="" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之percona-xtrabackup软件的使用" height="16px" width="16px" border="0" alt="MySQL备份与恢复之percona-xtrabackup软件的使用" /></a></p>
+
+<p>题图来自：原创，By <a href="http://dbarobin.com/" target="_blank">Robin Wen</a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2013/12/01/mysql-incremental-backup-via-percona-xtrabackup/" title="MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2013/12/08/collection-of-recent-wechat-updates/" title="程序员的奋斗史（三十）近期微信公众平台更新文章集锦">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>
