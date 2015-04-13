@@ -103,7 +103,6 @@
 
 }
 
-
 /**
  * Sidebar
  */
@@ -123,7 +122,6 @@
 
 }
 
-
 /**
  * Site footer
  */
@@ -137,8 +135,6 @@
   padding: $spacing-unit 0;
   font-size: 14px;
 }
-
-
 
 /**
  * Page content
@@ -162,8 +158,6 @@
   display: block;
   font-size: 28px;//42px;
 }
-
-
 
 /**
  * Posts
@@ -226,7 +220,6 @@
   }
 }
 
-
 /**
  * Pagination Style
  */
@@ -240,7 +233,6 @@
   li.next a{float:right;}
   li.disabled {display:none;}
 }
-
 
 /**
  * Tags and Categories Style
@@ -257,15 +249,12 @@
   }
 }
 
-
 /*time style of tages and categories*/
 
 time{
   margin-left: 15px;
   font-style: italic;
 }
-
-
 
 /**
  * Aboutme photo Style
@@ -281,8 +270,6 @@ time{
   }
 }
 
-
-
 /**
  * New style for quotation.
  */
@@ -297,4 +284,3 @@ q:after {
   color: #DD1144;
   font-weight:bold;
 }
-
