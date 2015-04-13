@@ -23,4 +23,3 @@ permalink: /categories/
 <span>No posts</span>
 {% endif %}
 </ul>
-
