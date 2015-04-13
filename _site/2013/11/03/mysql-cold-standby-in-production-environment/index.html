@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>MySQL备份与恢复之真实环境使用冷备</title>
+<meta name="description" content="目录">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="MySQL备份与恢复之真实环境使用冷备">
+<meta name="twitter:description" content="目录">
+<meta name="twitter:url" content="http://dbarobin.com/2013/11/03/mysql-cold-standby-in-production-environment/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2013/11/03/mysql-cold-standby-in-production-environment/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">MySQL备份与恢复之真实环境使用冷备</h1>
+    <meta itemprop="keywords" content="Database,MySQL,数据库,备份与恢复,冷备,Cold Standby,Backup and Recovery,生产环境" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#mysql">Mysql</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Database" title="Database">Database </a>, 
+    
+    <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+    
+    <a href="/tags/#数据库" title="数据库">数据库 </a>, 
+    
+    <a href="/tags/#备份与恢复" title="备份与恢复">备份与恢复 </a>, 
+    
+    <a href="/tags/#冷备" title="冷备">冷备 </a>, 
+    
+    <a href="/tags/#Cold Standby" title="Cold Standby">Cold Standby </a>, 
+    
+    <a href="/tags/#Backup and Recovery" title="Backup and Recovery">Backup and Recovery </a>, 
+    
+    <a href="/tags/#生产环境" title="生产环境">生产环境 </a>
+    
+    
+    on Nov 3, 2013. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <h2 id="section">目录</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#section" id="markdown-toc-section">目录</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">一 真实环境使用冷备</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">二 示意图</a></li>
+  <li><a href="#section-3" id="markdown-toc-section-3">三 真实环境使用冷备模拟</a></li>
+</ul>
+
+<p><code>文/温国兵</code></p>
+
+<h2 id="section-1">一 真实环境使用冷备</h2>
+
+<p>在上一篇文章（<a href="http://dbarobin.com/2013/11/02/mysql-cold-standby/" target="_blank">MySQL备份与恢复之冷备</a>）中，我们提到了冷备。但是有个问题，我们存储的数据文件是保存在当前本地磁盘的，如果这个磁盘挂掉，那我们存储的数据不就丢失了，这样备份数据不就功亏一篑，劳而无功。所以真实环境中我们多准备几块磁盘，然后再在这些磁盘上搭建LVM，把MySQL的数据目录挂载到LVM上，这样数据就不是存储在当前磁盘上，就可以保证数据的安全性。</p>
+
+<h2 id="section-2">二 示意图</h2>
+
+<p><img src="http://i.imgur.com/xdwARPo.jpg" alt="真实环境使用冷备示意图" /></p>
+
+<h2 id="section-3">三 真实环境使用冷备模拟</h2>
+
+<p>第一步，需要提前规划好磁盘，这里做模拟，添加两磁盘。</p>
+
+<p>第二步，对磁盘进行分区。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">fdisk /dev/sdb
+fdisk /dev/sdc
+ll /dev/sd<span class="o">[</span>bc<span class="o">]</span>1</code></pre></div>
+
+<p>第三步，yum安装lvm2。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">yum install lvm2 -y</code></pre></div>
+
+<p>第四步，创建物理卷。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">pvcreate /dev/sdb1 /dev/sdc1
+  Physical volume <span class="s2">&quot;/dev/sdb1&quot;</span> successfully created
+  Physical volume <span class="s2">&quot;/dev/sdc1&quot;</span> successfully created</code></pre></div>
+
+<p>第五步，创建卷组</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">vgcreate data /dev/sdb1 /dev/sdc1
+  Volume group <span class="s2">&quot;data&quot;</span> successfully created</code></pre></div>
+
+<p>第六步，创建逻辑卷</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">lvcreate -L 2G -n mydata data
+  Logical volume <span class="s2">&quot;mydata&quot;</span> created</code></pre></div>
+
+<p>第七步，格式化磁盘。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">mkfs.ext4 /dev/data/mydata
+mke2fs 1.41.12 <span class="o">(</span>17-May-2010<span class="o">)</span>
+Filesystem <span class="nv">label</span><span class="o">=</span>
+OS <span class="nb">type</span>: Linux
+Block <span class="nv">size</span><span class="o">=</span><span class="m">4096</span> <span class="o">(</span><span class="nv">log</span><span class="o">=</span>2<span class="o">)</span>
+Fragment <span class="nv">size</span><span class="o">=</span><span class="m">4096</span> <span class="o">(</span><span class="nv">log</span><span class="o">=</span>2<span class="o">)</span>
+<span class="nv">Stride</span><span class="o">=</span><span class="m">0</span> blocks, Stripe <span class="nv">width</span><span class="o">=</span><span class="m">0</span> blocks
+<span class="m">131072</span> inodes, <span class="m">524288</span> blocks
+<span class="m">26214</span> blocks <span class="o">(</span>5.00%<span class="o">)</span> reserved <span class="k">for</span> the super user
+First data <span class="nv">block</span><span class="o">=</span>0
+Maximum filesystem <span class="nv">blocks</span><span class="o">=</span>536870912
+<span class="m">16</span> block groups
+<span class="m">32768</span> blocks per group, <span class="m">32768</span> fragments per group
+<span class="m">8192</span> inodes per group
+Superblock backups stored on blocks:
+  32768, 98304, 163840, 229376, 294912
+
+Writing inode tables: <span class="k">done</span>
+Creating journal <span class="o">(</span><span class="m">16384</span> blocks<span class="o">)</span>: <span class="k">done</span>
+Writing superblocks and filesystem accounting information: <span class="k">done</span>
+
+This filesystem will be automatically checked every <span class="m">28</span> mounts or
+<span class="m">180</span> days, whichever comes first.  Use tune2fs -c or -i to override.</code></pre></div>
+
+<p>第八步，冷备</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ls /usr/local/mysql/data/
+
+tar -cvPzf mysql01.tar.gz /usr/local/mysql/data/</code></pre></div>
+
+<p>第九步，删除数据库文件。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rm -rf /usr/local/mysql/data/*</code></pre></div>
+
+<p>第十步，挂载。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">mount /dev/data/mydata /usr/local/mysql/data/
+
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda2             9.7G  2.4G  6.8G  27% /
+tmpfs                 188M     <span class="m">0</span>  188M   0% /dev/shm
+/dev/sda1             194M   25M  160M  14% /boot
+/dev/sda5             4.0G  160M  3.7G   5% /opt
+/dev/sr0              3.4G  3.4G     <span class="m">0</span> 100% /iso
+/dev/mapper/data-mydata
+                      2.0G   67M  1.9G   4% /usr/local/mysql/data</code></pre></div>
+
+<p>[root@serv01 ~]#</p>
+
+<p>第十一步，将挂载信息写入配置文件。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">&quot;/dev/mapper/data-mydata /usr/local/mysql/data ext4 defaults 1 2&quot;</span> &gt;&gt; /etc/fstab
+tail -n1 /etc/fstab
+/dev/mapper/data-mydata /usr/local/mysql/data ext4 defaults <span class="m">1</span> 2</code></pre></div>
+
+<p>第十二步，停掉数据库。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">/etc/init.d/mysqld stop
+ ERROR! MySQL server PID file could not be found!
+ps -ef <span class="p">|</span> grep mysqld
+pkill -9 mysql
+ps -ef <span class="p">|</span> grep mysqld
+
+chown mysql.mysql /usr/local/mysql/data/ -R
+ll /usr/local/mysql/data/
+ll /usr/local/mysql/data/ -d</code></pre></div>
+
+<p>第十三步，恢复数据。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">tar -xPvf mysql01.tar.gz</code></pre></div>
+
+<p>第十四步，启动数据库，登录MySQL，然后查看数据是否丢失。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">/etc/init.d/mysqld start
+Starting MySQL SUCCESS!
+
+mysql
+Welcome to the MySQL monitor.  Commands end with <span class="p">;</span> or <span class="se">\g</span>.
+Your MySQL connection id is 1
+Server version: 5.5.29-log Source distribution</code></pre></div>
+
+<p>查看数据。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">larrydb</span><span class="p">;</span>
+<span class="k">Database</span> <span class="n">changed</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">tables</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">-------------------+</span>
+<span class="o">|</span> <span class="n">Tables_in_larrydb</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------------+</span>
+<span class="o">|</span> <span class="k">class</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="n">stu</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">class</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------+--------+</span>
+<span class="o">|</span> <span class="n">cid</span>  <span class="o">|</span> <span class="n">cname</span>  <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+--------+</span>
+<span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span> <span class="n">linux</span>  <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">2</span> <span class="o">|</span> <span class="n">oracle</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+--------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">stu</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------+---------+------+</span>
+<span class="o">|</span> <span class="n">sid</span>  <span class="o">|</span> <span class="n">sname</span>   <span class="o">|</span> <span class="n">cid</span>  <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+---------+------+</span>
+<span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span> <span class="n">larry01</span> <span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">2</span> <span class="o">|</span> <span class="n">larry02</span> <span class="o">|</span>    <span class="mi">2</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+---------+------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>第十五步，使用LVS的快照功能创建快照，快照不需要格式化。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">lvcreate -L 100M -s -n smydata /dev/data/mydata
+  Logical volume <span class="s2">&quot;smydata&quot;</span> created</code></pre></div>
+
+<p>第十六步，挂载。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">mount /dev/data/smydata /mnt
+
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda2             9.7G  2.4G  6.8G  27% /
+tmpfs                 188M     <span class="m">0</span>  188M   0% /dev/shm
+/dev/sda1             194M   25M  160M  14% /boot
+/dev/sda5             4.0G  161M  3.7G   5% /opt
+/dev/sr0              3.4G  3.4G     <span class="m">0</span> 100% /iso
+/dev/mapper/data-mydata
+                      2.0G   98M  1.8G   6% /usr/local/mysql/data
+/dev/mapper/data-smydata
+                      2.0G   98M  1.8G   6% /mnt</code></pre></div>
+
+<p>第十七步，模拟数据丢失和验证快照的数据不会受本身数据的影响。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /mnt
+ls
+
+<span class="c"># 进入数据目录，创建一个文件</span>
+<span class="nb">cd</span> /usr/local/mysql/data/
+touch aa01.txt
+
+<span class="c"># 进入快照挂载目录，发现没有这个文件</span>
+ls aa01.txt
+ls: cannot access aa01.txt: No such file or directory</code></pre></div>
+
+<p>第十八步，备份数据。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /databackup/
+ll
+total 976
+-rw-r--r--. <span class="m">1</span> root root <span class="m">995761</span> Sep <span class="m">10</span> 17:47 mysql01.tar.gz
+
+/etc/init.d/mysqld status
+ SUCCESS! MySQL running <span class="o">(</span>2198<span class="o">)</span>
+
+tar -cvzf mysql02.tar.gz /mnt</code></pre></div>
+
+<p>模拟数据丢失。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">rm -rf /usr/local/mysql/data/*
+
+etc/init.d/mysqld stop
+ ERROR! MySQL server PID file could not be found!
+
+pkill -9 mysql
+ps -ef <span class="p">|</span> grep mysqld <span class="p">|</span> grep grep -v
+
+<span class="nb">cd</span> /usr/local/mysql/data/
+ll
+total 0</code></pre></div>
+
+<p>第十九步，恢复数据，启动数据库，登录MySQL，然后查看数据是否丢失。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">tar -xvf /databackup/mysql02.tar.gz
+ls
+mnt
+
+<span class="nb">cd </span>mnt/
+mv ./* ../
+
+<span class="nb">cd</span> ..
+ls
+
+/etc/init.d/mysqld start
+Starting MySQL SUCCESS!
+
+mysql</code></pre></div>
+
+<p>查看数据。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">larrydb</span><span class="p">;</span>
+<span class="k">Database</span> <span class="n">changed</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">class</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------+--------+</span>
+<span class="o">|</span> <span class="n">cid</span>  <span class="o">|</span> <span class="n">cname</span>  <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+--------+</span>
+<span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span> <span class="n">linux</span>  <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">2</span> <span class="o">|</span> <span class="n">oracle</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+--------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">stu</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------+---------+------+</span>
+<span class="o">|</span> <span class="n">sid</span>  <span class="o">|</span> <span class="n">sname</span>   <span class="o">|</span> <span class="n">cid</span>  <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+---------+------+</span>
+<span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span> <span class="n">larry01</span> <span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span>    <span class="mi">2</span> <span class="o">|</span> <span class="n">larry02</span> <span class="o">|</span>    <span class="mi">2</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+---------+------+</span>
+<span class="mi">2</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>–EOF–</p>
+
+<p>原文地址：<a href="" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之真实环境使用冷备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之真实环境使用冷备" /></a></p>
+
+<p>题图来自：原创，By <a href="http://dbarobin.com/" target="_blank">Robin Wen</a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2013/11/02/mysql-cold-standby/" title="MySQL备份与恢复之冷备">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2013/11/09/mysql-hot-standby/" title="MySQL备份与恢复之热备">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

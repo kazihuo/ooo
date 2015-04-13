@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>大数据一体机的实质</title>
+<meta name="description" content="文/温国兵">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="大数据一体机的实质">
+<meta name="twitter:description" content="文/温国兵">
+<meta name="twitter:url" content="http://dbarobin.com/2014/04/27/the-essence-of-big-data-appliance/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2014/04/27/the-essence-of-big-data-appliance/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">大数据一体机的实质</h1>
+    <meta itemprop="keywords" content="Other,大数据一体机,Big Data Appliance,实质,Essence,大数据,Big Data" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#other">Other</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Other" title="Other">Other </a>, 
+    
+    <a href="/tags/#大数据一体机" title="大数据一体机">大数据一体机 </a>, 
+    
+    <a href="/tags/#Big Data Appliance" title="Big Data Appliance">Big Data Appliance </a>, 
+    
+    <a href="/tags/#实质" title="实质">实质 </a>, 
+    
+    <a href="/tags/#Essence" title="Essence">Essence </a>, 
+    
+    <a href="/tags/#大数据" title="大数据">大数据 </a>, 
+    
+    <a href="/tags/#Big Data" title="Big Data">Big Data </a>
+    
+    
+    on Apr 27, 2014. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <p><code>文/温国兵</code></p>
+
+<p><strong>【知乎问题】</strong></p>
+
+<p>oracle的exadata好像全球销量并不高。现在国内很多厂商喊着去IOE和基础架构国产化的口号一窝蜂推出所谓的“大数据一体机”，我对数据分析不是很了解，请问在大数据一体机的实质是什么？大数据分析领域这种一体机真的有市场吗？兼容多种数据库，能够达到从O向非O数据库平滑过渡的技术含量很高吗？谢谢！</p>
+
+<p><strong>【我的回答】</strong></p>
+
+<p><strong>1.回答问题之前概述下大数据一体机。</strong><br />
+百度百科说道：</p>
+
+<blockquote>
+  <p>大数据一体机是面向大数据存储、处理、展现全环节、软硬一体化的方案型产品。目前的大数据一体机主要有Oracle的Exadata、IBM的PureData、华为的FusionCube、浪潮的云海、曙光的Xdata。大数据一体机有很多优势和劣势，优势表现在缩短用户系统上线时间、最大限度提高兼容性、便捷的维护；劣势体现在更容易被厂商捆绑、相匹配软硬件较少、扩容问题；</p>
+</blockquote>
+
+<p><strong>2.大数据一体机的实质是什么？</strong><br />
+个人理解，大数据一体机的实质就是围绕大数量做的简化，集成产生和维护数据所需的各种资源。我们对世界的认识有一种简化机制，大数据一体机也是一种简化；</p>
+
+<p><img src="http://i.imgur.com/DzU9EdA.jpg" alt="The essence of Big Data Appliance" /></p>
+
+<p><strong>3.大数据分析领域这种一体机真的有市场吗？</strong><br />
+对大数据分析领域不是非常的了解，但数据分析不也是基于大数据量所做的应用？大数据一体机最核心的也就是围绕着大数据量，传统的数据分析在数据量过大时很可能不再奏效，那大数据一体机很可能契合了这种需求，所以个人认为在此领域大数据一体机还是有市场的；</p>
+
+<p><strong>4.兼容多种数据库，能够达到从O向非O数据库平滑过渡的技术含量很高吗？</strong><br />
+从O到非O平滑过渡，也就是去O，转投其他数据库怀抱。<br />
+去O的数据难点在于：<br />
+1. 数据一致性（看业务需求，但运营商核心系统往往有强一致性要求）；<br />
+2. 复杂查询支持；<br />
+3. 单机的Scalability；<br />
+4.Optimizer的成熟度；<br />
+大数据一体机的设计有一部分是为了兼容多种数据库，所以向非O过渡主要难点在于把去O的难点攻破，技术含量是非常高的。想想阿里去O的艰辛过程，没有强大的技术团队支撑和大量的资金投入，大量使用O的场景去O是不太现实的。阿里能做的事，绝大多数公司都没法做；</p>
+
+<p><strong>5.说点题外话，关于Exadata的销量，</strong>题主说Oracle的Exadata好像全球销量并不高，题主是怎么定义高的呢？2011年6月OracleExadata在全球部署超过1000台，何况现在是14年了。Exadata的销量相比Oracle那肯定是没法比，能用的上Exadata的公司是能用得起Oracle的公司中的凤毛麟角。还有关于大数据的定义，什么才能叫大数据，这也是个值得探讨的问题。众说纷纭，正是由于无法标准的定义，才涌现一大批理论超过实质的大数据概念，想想云计算也是如此。不过现在大数据和云计算慢慢有了清晰的发展前景了。</p>
+
+<p><strong>6.关于去O，引用一篇文章。</strong><br />
+浙江移动信息技术部业务支撑中心副主任王晓征前段时间写了篇文章，标题叫做《运营商去O之我见》，从多个角度分析了影响去O的因素，并给出了似对非对的对策，引用部分内容，如下：</p>
+
+<blockquote>
+  <p>上面分析了运营商环境下去O的各种因素，那么我们究竟该如何是好呢？我考虑了以下一些对策。</p>
+
+  <p><strong>一，没有金刚钻，别揽瓷器活。</strong><br />
+去O有风险，同志需谨慎。不能被互联网的人云山雾罩地一吹就晕，简单照搬互联网公司的做法，简单粗暴地快速全面去O,很容易搬起石头砸自己的脚。这里没有对互联网公司的兄弟不敬的意思，个人以为他们很多人都是中国人的骄傲，也在干着很有意义的事业。只是，大家场景不同，还是要实事求是，因地制宜，不能脱离实际去搞大跃进。听说某次某传统行业技术交流，当着很多老专家的面，某著名互联网公司的某人叫嚣你们不去O就是民族的罪人，这种话就别拿出来忽悠了，大家当笑话听听就好。</p>
+
+  <p><strong>二，如果一定要在运营商环境下去O咋办？别怕，知己知彼，百战不殆。</strong><br />
+实事求是因地制宜，去O有办法。首先，请记住我的话，我认为，在运营商环境下，去O不能简单理解成去O的产品，而应该理解成去O的服务。为什么？请参考第一篇的内容，你懂的。我们应该把精力花在局方和第三方Oracle技术支持力量的培养上。</p>
+
+  <p>某运营商当年培养出了亚太第一批OCM,为什么今天我们就不能在技术人员培养和激励机制上再创辉煌，再培养一批？市场上有那么多专业的第三方合作伙伴，我们为什么一定要把服务吊死在原厂团队上？</p>
+
+  <p>全国一盘棋，是否能在技术支援体制上做文章，改变现有的各省烟囱式技术团队的现状，运营商内部好的甲乙方技术力量是否可以复用创造更大的效益？我们有那么好的管理机制，某些运营商集团每层面每年都实实在在搞应急容灾演练，难道我们的容灾切换整体水平在业界拿不出手？这一点我估计至少部分运营商目前整体水平要高于互联网行业！甚至我在想，能不能充分利用几个大省较强大的技术力量，基础技术平台的管理可以全国大区集中化管理……只要以上几点做到位了，我相信Oracle原厂的服务不会成为我们的什么瓶颈，根本不必拿出来说事。如果我们做不到位的话，去O换成任何一种数据库，我们都要面临同样的技术保障问题，而且只会更加严重。逆水行舟不进则退啊。</p>
+
+  <p><strong>三，抛开第二点服务之路去O不论，继续深入下去谈产品去O。</strong><br />
+如果确实要这么干,那么应该从对数据的强一致性，数据库的可扩展性，安全性要求相对不高的系统入手，逐渐积累经验，锻炼队伍，逐步深入，或许有那么一天，我们能把产品去O的手伸进我们的核心系统，但这一天应该不会马上到来。要知道，技术掌控力远强于我们的阿里，目前真正涉及到钱的支付宝核心系统，仍然在Oracle上！或许明年吧，阿里真能实现支付宝去O,但可以看到阿里的去O进程也是由浅入深，由外向内的。这一点值得我们借鉴。</p>
+
+  <p><strong>四，产品去O，产品本身应该如何选择。</strong><br />
+很多人觉得奇怪，这还有什么可以选择的吗？难道去O不是直接上MySQL吗？个人以为，错！产品的选择不是儿戏，不能简单抄袭，还是那句话，环境不同，别人适合的东西不一定你适合，反之亦然。</p>
+
+  <p>此外，选择产品本身也可能涉及到技术路线的选择，这是个很大的事情！现在我来深入解释一下这一点。大家知道，MySQL和Oracle相比功能要简单得多，很多复杂查询不支持，数据结构很多需要转换，SQL语法差别较大，也就是说，如果把程序从Oracle割接到MySQL,数据倒换代价不说，代码基本上可以肯定兼容性较低，需要重写的部分占比应该很高了。</p>
+
+  <p>现实情况是，运营商对业务连续性的要求是很变态的，同时技术掌控力又是不如阿里，这种情况下，想象一下我们的系统去O会面临什么样的挑战？我们很可能要做到灰度割接(举个例子我的一个系统按地市分成四个库，我先去掉一个库，后面逐步再去，以此类推……)，两种数据库在一个系统内部的会有较长时间的并存用以观察系统的状态。而且，就算割接上去，我们的体制文化下谁敢保证用新的数据库就不会长时间宕库或者丢数据？就算合作伙伴胸脯拍肿我们都不敢。所以，必须要做到割接上去还有回头路，这一点我们和互联网公司比还是有一些差别的。</p>
+</blockquote>
+
+<p><strong>7.关于去O的圈内声音</strong></p>
+
+<blockquote>
+  <p><strong>@Eygle：</strong>从实际出发，理性分析和决策，让去IOE更具可操作性。我的理解，在未来的数据库应用领域，应该让各产品充分发挥其技术优势，在各自擅长的领域发挥作用，形成一个复合的生态环境。任何不以技术和业务驱动的全盘否定都不可取。<br /><br />
+<strong>@Joehan100：</strong>分析得很全面，阿里的去IOE, 不具备普适性，需要大幅修改应用系统的去O, 代价与风险很难控制，容易造成项目失败。<br /><br />
+<strong>@新疆武新：</strong>非常务实！核心技术问题不是靠喊口号可以解决的。<br /><br />
+<strong>@电动蜗牛：</strong>是结合实际去考虑的专家吐槽文字。有意思<br /><br />
+<strong>@绿色数据中心：</strong>去IOE不能看着热闹就上，还要具体问题具体分析<br /><br />
+<strong>@XuYuanzhen：</strong>不能强行的去模仿去O，毕竟如果使用开源的关系型数据库需要有维护代码和二次开发经验的团队。<br /><br />
+<strong>@秋风_SJQ：</strong>明白人，技术是为业务服务的，如果一味跟风追求所谓最新技术，反而忽略了业务的创新，最后也会自食其果。</p>
+</blockquote>
+
+<p><strong>8.综上所述，个人认为大数据一体机不是噱头，而是未来的发展趋势；</strong></p>
+
+<p><strong>9.除引用内容外，个人拙见，仅供参考。</strong></p>
+
+<p><strong>参考资料：</strong></p>
+
+<p>1.<a href="http://www.doserv.com/subject/serv20130820/" target="_blank">解析大数据一体机</a><br />
+2.<a href="http://baike.baidu.com/link?url=sdxAArL7llBkf2nA7L1jl1bROHoUp6vBIzR8eR1WDpi8ADOuMnm-pgzR-OVOhCVefRyXAAxv8uEUmiQdx7oNvq" target="_blank">大数据一体机_百度百科</a><br />
+3.《运营商去O之我见》浙江移动信息技术部业务支撑中心副主任王晓征</p>
+
+<p>–EOF–</p>
+
+<p>原文地址：微信公众号文章</p>
+
+<p>题图来自：<a href="https://www.oracle.com/engineered-systems/big-data-appliance/index.html" target="_blank"><img src="http://i.imgur.com/mvKAMvm.png" title="The essence of Big Data Appliance" border="0" alt="The essence of Big Data Appliance" height="16px" width="16px" /></a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2014/04/26/skill-of-intercepting-string-and-processing-chinese-character-in-mssql/" title="SQL Server截取字符串和处理中文技巧">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2014/05/04/mysql-insert-of-high-concurrency/" title="高并发Insert Ignore存储引擎的选择">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

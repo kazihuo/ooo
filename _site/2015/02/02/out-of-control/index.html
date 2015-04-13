@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>失控</title>
+<meta name="description" content="文/温国兵">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="失控">
+<meta name="twitter:description" content="文/温国兵">
+<meta name="twitter:url" content="http://dbarobin.com/2015/02/02/out-of-control/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2015/02/02/out-of-control/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">失控</h1>
+    <meta itemprop="keywords" content="Other,失控,KK,凯文·凯利,书评,老子,道,无为" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#other">Other</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Other" title="Other">Other </a>, 
+    
+    <a href="/tags/#失控" title="失控">失控 </a>, 
+    
+    <a href="/tags/#KK" title="KK">KK </a>, 
+    
+    <a href="/tags/#凯文·凯利" title="凯文·凯利">凯文·凯利 </a>, 
+    
+    <a href="/tags/#书评" title="书评">书评 </a>, 
+    
+    <a href="/tags/#老子" title="老子">老子 </a>, 
+    
+    <a href="/tags/#道" title="道">道 </a>, 
+    
+    <a href="/tags/#无为" title="无为">无为 </a>
+    
+    
+    on Feb 2, 2015. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <p><code>文/温国兵</code></p>
+
+<p>最近看完了凯文·凯利的《失控》，给我带来的震撼是前所未有的。作者从蜂群开始谈起，娓娓道来很多我们之前没有强烈意识到的问题。</p>
+
+<p><img src="http://i.imgur.com/gYiyeSh.jpg" alt="ButterflyEffect-CreativeCommons-Hellisp" /></p>
+
+<p><strong>凯文·凯利，《连线》杂志的创始人之一，曾被誉为“互联网预言家”。</strong>这本 1994 年出版的书可以说影响深远，90 年代的预言在现在看来豪不过时，不得不佩服作者的学识，如此具有前瞻性的巨作要怎样的沉淀才能达到，实在难以想象。这本书对世人具有很强的指导性，很多国内外的大家都深受其影响，比如《长尾理论》作者克里斯·安德森，史蒂夫·乔布斯，《信息焦虑》作者理查德·沃尔曼，Reddit 联合创始人、互联网之子、对维基有巨大贡献、却英年早逝的亚伦·斯沃茨，《黑客帝国》导演沃卓斯基兄弟，史蒂夫·斯皮尔伯格，马化腾，张小龙，傅盛，雷军，转折点作者许维，罗辑思维创始人、互联网推崇者罗振宇……可以这样说，再怎么给予这本书多高的评价都不为过。</p>
+
+<p>人类的发展就是一个不断涌现、不断进步的过程。人类有几次飞跃，带来的影响都是划时代的，大航海时代、第一次工业革命、第二次工业革命，可以预见，如今的互联网时代在人类的史册中也会和上述几次飞跃有同等重要的地位。人类有几次间断，哥白尼排除了地球和物理宇宙之间的间断，达尔文排除了人类和有机世界其他部分之间的间断，弗洛伊德排除了自我的理性世界和无意识的非理性之间的间断，那现在呢，第四个间断就是人类和机器之间的间断。我们习以为常的蜂群，却从个体的无意识演化成群体有意识，最后演化成群体智慧，不得不赞叹自然、生物的神奇，高高在上的人类在他们眼里又算得什么呢？就像庄周梦蝶，是他梦见蝴蝶，还是蝴蝶梦见他，分不清楚。他醒来，发现回到真实世界，确实是自己梦到蝴蝶，蝴蝶在他的梦里，但怎么能确定不是蝴蝶梦见他，他只是在蝴蝶的梦里呢？或许我们在笑话蜜蜂愚蠢，蜗牛迟钝，蚂蚁渺小，它们也正在笑话我们：多么愚蠢的人类啊！其中提到的蝴蝶效应也很有意思，一丁点的变化和聚集可能会带来指数级爆炸性的变化和聚集，这也是为什么热点事件会在一刹那就产生十分强大效应的原因。作者提到网络化的几个要点：分布式、去中心化、协作、可适应性，这个观点可以说具有颠覆性的作用。作者反复提到分布式，强调未来会以小胜大。作者在书中提到的很多概念：大众智慧、云计算、物联网、虚拟现实、敏捷开发、协作、双赢、共生、共同进化、网络社区、网络经济、电子货币，这不正是我们现在很火或者正在兴起的吗？作者还用一章的内容阐述后达尔文主义，其中提到达尔文的进化论未必正确，现在仍然对达尔文主义有很大的争议。自然选择揭示了群体性的规律，却没有阐明个体性的变化，更要命的是，不能证伪。</p>
+
+<p><img src="http://i.imgur.com/WRFbyMR.jpg" alt="chaos" /></p>
+
+<p>书中在「上帝的游戏」一章中提到了一个情节，结合我后来看的一部电影，《安德的游戏》，原来作者在 90 年代就道出了其中的奥妙，感慨颇深啊！全书涉及的专业术语、人名、地名太多，最开始会觉得生硬晦涩，但到最后一定会有醍醐灌顶的感觉。这本书值得拥有，也值得常看，是一本难得的好书。作者曾经是记者，也是主编，科技和人文结合得如此巧妙，佩服至极。当然，也不能全盘接受，其中的一些观点我也持怀疑态度。</p>
+
+<p>KK 的思想和老子的思想有很多类似的地方，如果时光交错，老子回到当代，相信他们会成为挚友，两个白胡子老头相对而坐，谈笑风生，想必十分有趣。在《失控》的第七章末尾，KK 写道：</p>
+
+<blockquote>
+  <p>Intelligent control appears as uncontrol or freedom.<br />
+And for that reason it is genuinely intelligent control.<br />
+Unintelligent control appears as external domination.<br />
+And for that reason it is really unintelligent control.<br />
+Intelligent control exerts influence without appearing to do so.<br />
+Unintelligent control tries to influence by making a show of force.</p>
+</blockquote>
+
+<p>翻译为中文如下：</p>
+
+<blockquote>
+  <p>智能控制体现为无控制或自由，<br />
+因此它是不折不扣的智能控制；<br />
+愚蠢的控制体现为外来的辖制，<br />
+因此它是不折不扣的愚蠢控制。<br />
+智能控制施加的是无形的影响，<br />
+愚蠢的控制以炫耀武力造势。</p>
+</blockquote>
+
+<p>你会发现很有意思。KK 的思想和老子的思想如出一辙。老子讲：<strong>「人法地，地法天，天法道，道法自然」</strong>，道家的思想在于自然和无为。老子讲顺其自然，庄子讲安身立命，讲的都是接受自然发生的一切，顺应自然的就是美的，顺应自然的就是符合道的。老子的无为思想不是讲无所为，而是顺应自然、无妄为，无为而治乃是最高管理的最高境界。罗胖在「总统是怎么被扒光的」一期节目中提到，美国先进的不是制度， 而是制度下里的每一个人。每一个人都各司其职，尽所己能地做好自己地本份工作，不妄为，这本身就是无为思想地一种体现。《失控》的最后一章，KK 总结了<strong>九律</strong>：分布式（Distribute being）、自下而上的控制（Control from the bottom up）、递增收益（Cultivate increasing returns）、模块化生长（Grow by chunking）、边界最大化（Maximize the fringes）、鼓励范错误（Honor your errors）、不求最优化，但求多目标（Pursue no optima, have multiple goals）、谋求持久的不均衡态（Seek persistent disequilibrium）合变自生变（Change changes itself），这和老子的思想有着异曲同工之妙。</p>
+
+<p>互联网思维带来的世界观和方法论，人类的文明形态也会发生天翻地覆的变化。<strong>或许，我们活在一个最好的时代。</strong></p>
+
+<p>–EOF–</p>
+
+<p>题图 1 来自：<a href="http://www.evolutionnews.org/2011/12/the_butterfly_e054321.html" target="_blank"><img src="http://i.imgur.com/YTFhH41.jpg" title="" height="16px" width="100px" border="0" alt="" /></a></p>
+
+<p>题图 2 来自：<a href="https://mindnutquest.wordpress.com/2012/07/09/a-parable-on-nature/" target="_blank"><img src="http://i.imgur.com/zw1PWFn.png" title="" height="16px" width="16px" border="0" alt="" /></a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2015/01/27/innodb-lock-wait-under-mysql-5.5/" title="MySQL 5.5 InnoDB 锁等待">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2015/02/07/mysql-nosql-memcached-plugin/" title="「译」MySQL & NoSQL – Memcached 插件">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

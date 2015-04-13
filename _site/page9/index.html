@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>DBA@Robin</title>
+<meta name="description" content="Robin Wen, MySQL DBA, Liberalist. Record every step about my fighting. Above all, do not lose hope.">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="DBA@Robin">
+<meta name="twitter:description" content="Robin Wen, MySQL DBA, Liberalist. Record every step about my fighting. Above all, do not lose hope.">
+<meta name="twitter:url" content="http://dbarobin.com/page9/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/page9/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="home">
+  <div class="post">
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2014/06/07/a-dialogue-on-the-mysql/">一个关于MySQL的对话</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+      
+      <a href="/tags/#对话" title="对话">对话 </a>, 
+      
+      <a href="/tags/#建议" title="建议">建议 </a>
+      
+      
+      on Jun 7, 2014
+      </p>
+    </header>
+
+    <article class="post-content">
+      关于 MySQL，知友问题以及我的回答。
+      <p><a href="/2014/06/07/a-dialogue-on-the-mysql/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2014/06/01/the-chapter-two-of-my-university-periodic-history/">程序员的奋斗史（三十八）大学断代史（二）我与数据库的故事</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#程序员的奋斗史" title="程序员的奋斗史">程序员的奋斗史 </a>, 
+      
+      <a href="/tags/#Fighting" title="Fighting">Fighting </a>, 
+      
+      <a href="/tags/#大学" title="大学">大学 </a>, 
+      
+      <a href="/tags/#断代史" title="断代史">断代史 </a>, 
+      
+      <a href="/tags/#大学断代史" title="大学断代史">大学断代史 </a>, 
+      
+      <a href="/tags/#数据库" title="数据库">数据库 </a>, 
+      
+      <a href="/tags/#故事" title="故事">故事 </a>
+      
+      
+      on Jun 1, 2014
+      </p>
+    </header>
+
+    <article class="post-content">
+      惰性人皆有之，也算是人的一大天性。几日之前便构思好此文，怎奈每日杂事繁多，今日才提起笔，作下此文。本文谈谈我与数据库的故事。
+      <p><a href="/2014/06/01/the-chapter-two-of-my-university-periodic-history/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2014/05/24/the-chapter-one-of-my-university-periodic-history/">程序员的奋斗史（三十七）大学断代史（一）开篇</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#程序员的奋斗史" title="程序员的奋斗史">程序员的奋斗史 </a>, 
+      
+      <a href="/tags/#Fighting" title="Fighting">Fighting </a>, 
+      
+      <a href="/tags/#大学" title="大学">大学 </a>, 
+      
+      <a href="/tags/#断代史" title="断代史">断代史 </a>, 
+      
+      <a href="/tags/#大学断代史" title="大学断代史">大学断代史 </a>, 
+      
+      <a href="/tags/#开篇" title="开篇">开篇 </a>
+      
+      
+      on May 24, 2014
+      </p>
+    </header>
+
+    <article class="post-content">
+      断代史，顾名思义，也就是记录一朝或者一段时期的历史。我试着用拙劣的笔写下大学四年的过往，不求华丽，但求真实。回想我的大学，也没有多少丰功伟绩，也没有多少值得可圈可点之处。但是，从进入大学的第一天开始，我就对自己说，一定要让自己在大学的每一天都过得充实，现在看来，我做到了。以前总以为时间还很多，当走向某一个阶段的终点，不禁感叹岁月犹如白驹过隙。
+      <p><a href="/2014/05/24/the-chapter-one-of-my-university-periodic-history/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2014/05/18/what-i-was-thinking-after-resignation/">辞职后我在想些什么</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#辞职" title="辞职">辞职 </a>, 
+      
+      <a href="/tags/#思考" title="思考">思考 </a>
+      
+      
+      on May 18, 2014
+      </p>
+    </header>
+
+    <article class="post-content">
+      三个辞职的原因，三个我正在想的大问题。好像我有点喜欢3这个数字，就写到这里吧。
+      <p><a href="/2014/05/18/what-i-was-thinking-after-resignation/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2014/05/04/mysql-insert-of-high-concurrency/">高并发Insert Ignore存储引擎的选择</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#mysql">Mysql</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#高并发" title="高并发">高并发 </a>, 
+      
+      <a href="/tags/#High concurrency" title="High concurrency">High concurrency </a>, 
+      
+      <a href="/tags/#Insert Ignore" title="Insert Ignore">Insert Ignore </a>, 
+      
+      <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+      
+      <a href="/tags/#存储引擎" title="存储引擎">存储引擎 </a>, 
+      
+      <a href="/tags/#InnoDB" title="InnoDB">InnoDB </a>, 
+      
+      <a href="/tags/#MyISAM" title="MyISAM">MyISAM </a>
+      
+      
+      on May 4, 2014
+      </p>
+    </header>
+
+    <article class="post-content">
+      如果不是对事务要求非常的强，高并发写推荐选择MyISAM。
+      <p><a href="/2014/05/04/mysql-insert-of-high-concurrency/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+  </div>
+</div>
+
+    <section class="pager">
+  
+  
+  <li class="previous"><a href="/page8/" title="Newer">&larr; Newer</a></li>
+  
+  
+  
+  <li class="next"><a href="/page10/" title="Older">Older &rarr;</a></li>
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

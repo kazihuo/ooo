@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>MySQL备份与恢复之MySQL 延时备份</title>
+<meta name="description" content="目录">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="MySQL备份与恢复之MySQL 延时备份">
+<meta name="twitter:description" content="目录">
+<meta name="twitter:url" content="http://dbarobin.com/2013/12/08/mysql-delay-backup/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/2013/12/08/mysql-delay-backup/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">MySQL备份与恢复之MySQL 延时备份</h1>
+    <meta itemprop="keywords" content="Database,MySQL,数据库,备份与恢复,Backup and Recovery,延时备份,Delay Backup,Percona Toolkit" />
+    <p class="post-meta">
+    Posted in
+    
+    <a href="/categories/#mysql">Mysql</a>&nbsp;
+     
+    
+    and tagged
+    
+    <a href="/tags/#Database" title="Database">Database </a>, 
+    
+    <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+    
+    <a href="/tags/#数据库" title="数据库">数据库 </a>, 
+    
+    <a href="/tags/#备份与恢复" title="备份与恢复">备份与恢复 </a>, 
+    
+    <a href="/tags/#Backup and Recovery" title="Backup and Recovery">Backup and Recovery </a>, 
+    
+    <a href="/tags/#延时备份" title="延时备份">延时备份 </a>, 
+    
+    <a href="/tags/#Delay Backup" title="Delay Backup">Delay Backup </a>, 
+    
+    <a href="/tags/#Percona Toolkit" title="Percona Toolkit">Percona Toolkit </a>
+    
+    
+    on Dec 8, 2013. 
+    <span id="container_page_counter">
+      Viewd <span id="value_page_counter"></span> times.
+    </span>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    <p>目录</p>
+
+<ul id="markdown-toc">
+  <li><a href="#mysql-delay-backup" id="markdown-toc-mysql-delay-backup">MySQL delay backup</a></li>
+  <li><a href="#section" id="markdown-toc-section">一 为什么需要延时备份</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">二 延时备份示意图</a></li>
+  <li><a href="#section-2" id="markdown-toc-section-2">四 附延时备份脚本</a></li>
+  <li><a href="#section-3" id="markdown-toc-section-3">五 资源下载</a></li>
+</ul>
+
+<h2 id="mysql-delay-backup">MySQL delay backup</h2>
+
+<p><code>文/温国兵</code></p>
+
+<h2 id="section">一 为什么需要延时备份</h2>
+
+<p>在上一篇文章中，我们讲到<a href="http://dbarobin.com/2013/12/01/mysql-incremental-backup-via-percona-xtrabackup/" target="_blank">MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复</a>，percona-xtrabackup是一个优秀的用于增量备份的工具。今天我们讲到的延时备份也是使用他们的产品。</p>
+
+<p>以前在MySQL AB复制一文中提到了AB复制。我们首先回顾下MySQL复制的相关要点。AB复制又称主从复制，实现的是数据同步。经过以下步骤：</p>
+
+<blockquote>
+  <p>1)主服务器把数据更改记录到二进制日志中，这个操作叫做二进制日志事件；<br />
+2)从服务器把主服务器的二进制日志事件拷贝到自己的中继日志（relay log）中；<br />
+3)从服务器执行中继日志中的事件，把更改应用到自己的数据上。</p>
+</blockquote>
+
+<p>在生产中，我们在使用 mysql  AB 复制技术不但可以起到数据库层面负载均衡的能力，还可以起到备份数据的功能，但有的时候我们可能由于不小心误操作导致数据被删除，这这个时候 slave服务器上的数据也会同时被删除，如果我们能够能是的其中的一台 slave 延时备份的话， 这样就可以从 slave服务器上找回被误删的数据了。</p>
+
+<p>从服务器到主服务器中拷贝二进制日志文件，如果在并发量高，网络延时严重的情况下，会对主服务器造成相当大的压力，负载高，必定会出现很多问题，比如访问延迟，IO瓶颈，网络拥塞等等。服务器压力过大是我们都不愿看到的情况，那有没有方案缓解这种情况呢？有，这就是本文讲到的延时备份。延时备份通过第三方工具，将检查同步和真正同步的时间控制在一定的范围内，而不是主服务器数据发生变化，从服务器立即去同步二进制事件到自己的中继日志中，这样的话可以大大减轻主服务器的压力，并且基于AB复制的优点，可以达到备份数据的目的。</p>
+
+<p>好了，看下延时备份的示意图。</p>
+
+<h2 id="section-1">二 延时备份示意图</h2>
+
+<p><img src="http://i.imgur.com/UYBSKEN.jpg" alt="MySQL备份与恢复之MySQL" /><br />
+MySQL备份与恢复之MySQL 延时备份示意图</p>
+
+<p>三 延时备份模拟</p>
+
+<p>网络拓扑图</p>
+
+<p><img src="http://i.imgur.com/4uaZGAF.jpg" alt="MySQL备份与恢复之MySQL" /><br />
+MySQL备份与恢复之MySQL 延时备份网络拓扑图</p>
+
+<p>实验环境简介。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">主机</th>
+      <th style="text-align: left">IP地址</th>
+      <th style="text-align: left">主机名</th>
+      <th style="text-align: left">备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">serv01</td>
+      <td style="text-align: left">192.168.1.11</td>
+      <td style="text-align: left">serv01.host.com</td>
+      <td style="text-align: left">主服务器</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">serv08</td>
+      <td style="text-align: left">192.168.1.18</td>
+      <td style="text-align: left">serv08.host.com</td>
+      <td style="text-align: left">及时同步服务器</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">serv09</td>
+      <td style="text-align: left">192.168.1.19</td>
+      <td style="text-align: left">serv09.host.com</td>
+      <td style="text-align: left">延时同步服务器</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>操作系统版本</strong><br />
+RHEL Server6.1 64位系统</p>
+
+<p><strong>使用到的软件包版本</strong></p>
+
+<ul>
+  <li>mysql-5.5.29-linux2.6-x86_64.tar.gz</li>
+  <li>percona-toolkit-2.1.7-1.noarch.rpm</li>
+</ul>
+
+<p>第一步，搭建环境。修改配置文件，注意每台的server-id不一致。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># serv01</span>
+cat /etc/my.cnf <span class="p">|</span> grep server-id
+server-id <span class="o">=</span> 1
+<span class="c">#server-id       = 2</span>
+/etc/init.d/mysqld start
+Starting MySQL SUCCESS!
+
+<span class="c"># serv08</span>
+cat /etc/my.cnf <span class="p">|</span> grep server-id
+server-id <span class="o">=</span> 2
+<span class="c">#server-id       = 2</span>
+/etc/init.d/mysqld start
+Starting MySQL SUCCESS!
+
+<span class="c"># serv09</span>
+cat /etc/my.cnf <span class="p">|</span> grep server-id
+server-id <span class="o">=</span> 3
+<span class="c">#server-id       = 2</span>
+/etc/init.d/mysqld start
+Starting MySQL SUCCESS!</code></pre></div>
+
+<p>第二步，serv01、serv08、serv09清空日志。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="c1">--serv01</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="nb">binary</span> <span class="n">logs</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">Log_name</span>         <span class="o">|</span> <span class="n">File_size</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span> <span class="o">|</span>       <span class="mi">683</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">reset</span> <span class="n">master</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="nb">binary</span> <span class="n">logs</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">Log_name</span>         <span class="o">|</span> <span class="n">File_size</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span> <span class="o">|</span>       <span class="mi">107</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="c1">--serv08</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">reset</span> <span class="n">master</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">02</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="nb">binary</span> <span class="n">logs</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">Log_name</span>         <span class="o">|</span> <span class="n">File_size</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span> <span class="o">|</span>       <span class="mi">107</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="c1">--serv09</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="nb">binary</span> <span class="n">logs</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">Log_name</span>         <span class="o">|</span> <span class="n">File_size</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span> <span class="o">|</span>       <span class="mi">107</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">reset</span> <span class="n">master</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="nb">binary</span> <span class="n">logs</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">Log_name</span>         <span class="o">|</span> <span class="n">File_size</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="o">|</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span> <span class="o">|</span>       <span class="mi">107</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------+-----------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>第三步，主服务器serv01创建授权用户。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">grant</span> <span class="n">replication</span> <span class="n">client</span><span class="p">,</span> <span class="err">\</span>
+<span class="n">replication</span> <span class="n">slave</span> <span class="k">on</span> <span class="o">*</span><span class="p">.</span><span class="o">*</span> <span class="k">to</span> <span class="s1">&#39;larry&#39;</span><span class="o">@</span><span class="s1">&#39;192.168.1.%&#39;</span> <span class="err">\</span>
+<span class="n">identified</span> <span class="k">by</span> <span class="s1">&#39;larry&#39;</span><span class="p">;</span></code></pre></div>
+
+<p>第四步，serv08修改master设置，开启slave，查看slave状态。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="n">change</span> <span class="n">master</span> <span class="k">to</span>
+    <span class="o">-&gt;</span> <span class="n">master_host</span><span class="o">=</span><span class="s1">&#39;192.168.1.11&#39;</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="n">master_user</span><span class="o">=</span><span class="s1">&#39;larry&#39;</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="n">master_password</span><span class="o">=</span><span class="s1">&#39;larry&#39;</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="n">master_port</span><span class="o">=</span><span class="mi">3306</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="n">master_log_file</span><span class="o">=</span><span class="s1">&#39;mysql-bin.000001&#39;</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="n">master_log_pos</span><span class="o">=</span><span class="mi">107</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">03</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">start</span> <span class="n">slave</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">slave</span> <span class="n">status</span> <span class="err">\</span><span class="k">G</span><span class="p">;</span>
+<span class="o">***************************</span> <span class="mi">1</span><span class="p">.</span> <span class="k">row</span> <span class="o">***************************</span>
+               <span class="n">Slave_IO_State</span><span class="p">:</span> <span class="n">Waiting</span> <span class="k">for</span> <span class="n">master</span> <span class="k">to</span> <span class="n">send</span> <span class="n">event</span>
+                  <span class="n">Master_Host</span><span class="p">:</span> <span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">11</span>
+                  <span class="n">Master_User</span><span class="p">:</span> <span class="n">larry</span>
+                  <span class="n">Master_Port</span><span class="p">:</span> <span class="mi">3306</span>
+                <span class="n">Connect_Retry</span><span class="p">:</span> <span class="mi">60</span>
+              <span class="n">Master_Log_File</span><span class="p">:</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span>
+          <span class="n">Read_Master_Log_Pos</span><span class="p">:</span> <span class="mi">107</span>
+               <span class="n">Relay_Log_File</span><span class="p">:</span> <span class="n">serv08</span><span class="o">-</span><span class="n">relay</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000002</span>
+                <span class="n">Relay_Log_Pos</span><span class="p">:</span> <span class="mi">253</span>
+        <span class="n">Relay_Master_Log_File</span><span class="p">:</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span>
+             <span class="o">**</span><span class="n">Slave_IO_Running</span><span class="p">:</span> <span class="n">Yes</span><span class="o">**</span>
+            <span class="o">**</span><span class="n">Slave_SQL_Running</span><span class="p">:</span> <span class="n">Yes</span><span class="o">**</span>
+              <span class="n">Replicate_Do_DB</span><span class="p">:</span>
+          <span class="n">Replicate_Ignore_DB</span><span class="p">:</span>
+           <span class="n">Replicate_Do_Table</span><span class="p">:</span>
+       <span class="n">Replicate_Ignore_Table</span><span class="p">:</span>
+      <span class="n">Replicate_Wild_Do_Table</span><span class="p">:</span>
+  <span class="n">Replicate_Wild_Ignore_Table</span><span class="p">:</span>
+                   <span class="n">Last_Errno</span><span class="p">:</span> <span class="mi">0</span>
+                   <span class="n">Last_Error</span><span class="p">:</span>
+                 <span class="n">Skip_Counter</span><span class="p">:</span> <span class="mi">0</span>
+          <span class="n">Exec_Master_Log_Pos</span><span class="p">:</span> <span class="mi">107</span>
+              <span class="n">Relay_Log_Space</span><span class="p">:</span> <span class="mi">410</span>
+              <span class="n">Until_Condition</span><span class="p">:</span> <span class="k">None</span>
+               <span class="n">Until_Log_File</span><span class="p">:</span>
+                <span class="n">Until_Log_Pos</span><span class="p">:</span> <span class="mi">0</span>
+           <span class="n">Master_SSL_Allowed</span><span class="p">:</span> <span class="k">No</span>
+           <span class="n">Master_SSL_CA_File</span><span class="p">:</span>
+           <span class="n">Master_SSL_CA_Path</span><span class="p">:</span>
+              <span class="n">Master_SSL_Cert</span><span class="p">:</span>
+            <span class="n">Master_SSL_Cipher</span><span class="p">:</span>
+               <span class="n">Master_SSL_Key</span><span class="p">:</span>
+        <span class="n">Seconds_Behind_Master</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Master_SSL_Verify_Server_Cert</span><span class="p">:</span> <span class="k">No</span>
+                <span class="n">Last_IO_Errno</span><span class="p">:</span> <span class="mi">0</span>
+                <span class="n">Last_IO_Error</span><span class="p">:</span>
+               <span class="n">Last_SQL_Errno</span><span class="p">:</span> <span class="mi">0</span>
+               <span class="n">Last_SQL_Error</span><span class="p">:</span>
+  <span class="n">Replicate_Ignore_Server_Ids</span><span class="p">:</span>
+             <span class="n">Master_Server_Id</span><span class="p">:</span> <span class="mi">1</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">ERROR</span><span class="p">:</span>
+<span class="k">No</span> <span class="n">query</span> <span class="n">specified</span></code></pre></div>
+
+<p>第五步，serv09延时服务器修改master状态，开启slave，查看slave状态。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="n">change</span> <span class="n">master</span> <span class="k">to</span> <span class="err">\</span>
+<span class="n">master_host</span><span class="o">=</span><span class="s1">&#39;192.168.1.11&#39;</span><span class="p">,</span> <span class="err">\</span>
+<span class="n">master_user</span><span class="o">=</span><span class="s1">&#39;larry&#39;</span><span class="p">,</span> <span class="err">\</span>
+<span class="n">master_password</span><span class="o">=</span><span class="s1">&#39;larry&#39;</span><span class="p">,</span> <span class="err">\</span>
+<span class="n">master_port</span><span class="o">=</span><span class="mi">3306</span><span class="p">,</span> <span class="err">\</span>
+<span class="n">master_log_file</span><span class="o">=</span><span class="s1">&#39;mysql-bin.000001&#39;</span><span class="p">,</span> <span class="err">\</span>
+<span class="n">master_log_pos</span><span class="o">=</span><span class="mi">107</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">02</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">start</span> <span class="n">slave</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">slave</span> <span class="n">status</span> <span class="err">\</span><span class="k">G</span><span class="p">;</span>
+<span class="o">***************************</span> <span class="mi">1</span><span class="p">.</span> <span class="k">row</span> <span class="o">***************************</span>
+               <span class="n">Slave_IO_State</span><span class="p">:</span> <span class="n">Waiting</span> <span class="k">for</span> <span class="n">master</span> <span class="k">to</span> <span class="n">send</span> <span class="n">event</span>
+                  <span class="n">Master_Host</span><span class="p">:</span> <span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">11</span>
+                  <span class="n">Master_User</span><span class="p">:</span> <span class="n">larry</span>
+                  <span class="n">Master_Port</span><span class="p">:</span> <span class="mi">3306</span>
+                <span class="n">Connect_Retry</span><span class="p">:</span> <span class="mi">60</span>
+              <span class="n">Master_Log_File</span><span class="p">:</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span>
+          <span class="n">Read_Master_Log_Pos</span><span class="p">:</span> <span class="mi">107</span>
+               <span class="n">Relay_Log_File</span><span class="p">:</span> <span class="n">serv09</span><span class="o">-</span><span class="n">relay</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000002</span>
+                <span class="n">Relay_Log_Pos</span><span class="p">:</span> <span class="mi">253</span>
+        <span class="n">Relay_Master_Log_File</span><span class="p">:</span> <span class="n">mysql</span><span class="o">-</span><span class="n">bin</span><span class="p">.</span><span class="mi">000001</span>
+             <span class="o">**</span><span class="n">Slave_IO_Running</span><span class="p">:</span> <span class="n">Yes</span><span class="o">**</span>
+            <span class="o">**</span><span class="n">Slave_SQL_Running</span><span class="p">:</span> <span class="n">Yes</span><span class="o">**</span>
+              <span class="n">Replicate_Do_DB</span><span class="p">:</span>
+          <span class="n">Replicate_Ignore_DB</span><span class="p">:</span>
+           <span class="n">Replicate_Do_Table</span><span class="p">:</span>
+       <span class="n">Replicate_Ignore_Table</span><span class="p">:</span>
+      <span class="n">Replicate_Wild_Do_Table</span><span class="p">:</span>
+  <span class="n">Replicate_Wild_Ignore_Table</span><span class="p">:</span>
+                   <span class="n">Last_Errno</span><span class="p">:</span> <span class="mi">0</span>
+                   <span class="n">Last_Error</span><span class="p">:</span>
+                 <span class="n">Skip_Counter</span><span class="p">:</span> <span class="mi">0</span>
+          <span class="n">Exec_Master_Log_Pos</span><span class="p">:</span> <span class="mi">107</span>
+              <span class="n">Relay_Log_Space</span><span class="p">:</span> <span class="mi">410</span>
+              <span class="n">Until_Condition</span><span class="p">:</span> <span class="k">None</span>
+               <span class="n">Until_Log_File</span><span class="p">:</span>
+                <span class="n">Until_Log_Pos</span><span class="p">:</span> <span class="mi">0</span>
+           <span class="n">Master_SSL_Allowed</span><span class="p">:</span> <span class="k">No</span>
+           <span class="n">Master_SSL_CA_File</span><span class="p">:</span>
+           <span class="n">Master_SSL_CA_Path</span><span class="p">:</span>
+              <span class="n">Master_SSL_Cert</span><span class="p">:</span>
+            <span class="n">Master_SSL_Cipher</span><span class="p">:</span>
+               <span class="n">Master_SSL_Key</span><span class="p">:</span>
+        <span class="n">Seconds_Behind_Master</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Master_SSL_Verify_Server_Cert</span><span class="p">:</span> <span class="k">No</span>
+                <span class="n">Last_IO_Errno</span><span class="p">:</span> <span class="mi">0</span>
+                <span class="n">Last_IO_Error</span><span class="p">:</span>
+               <span class="n">Last_SQL_Errno</span><span class="p">:</span> <span class="mi">0</span>
+               <span class="n">Last_SQL_Error</span><span class="p">:</span>
+  <span class="n">Replicate_Ignore_Server_Ids</span><span class="p">:</span>
+             <span class="n">Master_Server_Id</span><span class="p">:</span> <span class="mi">1</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">ERROR</span><span class="p">:</span>
+<span class="k">No</span> <span class="n">query</span> <span class="n">specified</span></code></pre></div>
+
+<p>第六步，在没有使用延时服务器时，serv01创建测试数据库，可以看到同步服务器serv08和延时服务器serv09已经同步了。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="c1">--serv01</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">create</span> <span class="k">database</span> <span class="n">justdb</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">databases</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="k">Database</span>           <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="n">information_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">crm</span>                <span class="o">|</span>
+<span class="o">|</span> <span class="n">justdb</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="n">larry</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">larrydb</span>            <span class="o">|</span>
+<span class="o">|</span> <span class="n">mysql</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">performance_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">test</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="mi">8</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="c1">--serv08</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">databases</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="k">Database</span>           <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="n">information_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">justdb</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="n">larrydb</span>            <span class="o">|</span>
+<span class="o">|</span> <span class="n">mysql</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">performance_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">test</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="mi">6</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">03</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="c1">--serv09</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">show</span> <span class="n">databases</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="k">Database</span>           <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="o">|</span> <span class="n">information_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">justdb</span>             <span class="o">|</span>
+<span class="o">|</span> <span class="n">larry</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">larrydb</span>            <span class="o">|</span>
+<span class="o">|</span> <span class="n">mysql</span>              <span class="o">|</span>
+<span class="o">|</span> <span class="n">performance_schema</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">test</span>               <span class="o">|</span>
+<span class="o">+</span><span class="c1">--------------------+</span>
+<span class="mi">7</span> <span class="k">rows</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>第七步，拷贝percona-toolkit-2.1.7-1.noarch.rpm。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">scp percona-toolkit-2.1.7-1.noarch.rpm 192.168.1.11:/opt</code></pre></div>
+
+<p>第八步，主服务器中通过yum安装percona-toolkit-2.1.7-1.noarch.rpm。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">yum install percona-toolkit-2.1.7-1.noarch.rpm -y</code></pre></div>
+
+<p>第九步，使用pt-slave-delay工具进行延时设置。可以先查看帮助。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">pt-slave-delay --help</code></pre></div>
+
+<p>第十步，serv09延时服务器中创建授权用户</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">grant</span> <span class="k">all</span> <span class="k">on</span> <span class="o">*</span><span class="p">.</span><span class="o">*</span> <span class="k">to</span> <span class="s1">&#39;rep&#39;</span><span class="o">@</span><span class="s1">&#39;192.168.1.%&#39;</span> <span class="n">identified</span> <span class="k">by</span> <span class="s1">&#39;larry&#39;</span><span class="p">;</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<p>第十一步，实现功能。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">pt-slave-delay --user<span class="o">=</span><span class="s1">&#39;rep&#39;</span> <span class="se">\</span>
+--password<span class="o">=</span><span class="s1">&#39;larry&#39;</span> <span class="se">\</span>
+--delay<span class="o">=</span>3m <span class="se">\</span>
+--interval<span class="o">=</span>20s <span class="se">\</span>
+--run-time<span class="o">=</span>30m <span class="se">\</span>
+192.168.1.19
+2013-10-06T19:43:30 slave running <span class="m">0</span> seconds behind
+2013-10-06T19:43:30 STOP SLAVE <span class="k">until</span> 2013-10-06T19:46:30 
+at master position mysql-bin.000001/199</code></pre></div>
+
+<p><strong>命令解释</strong></p>
+
+<blockquote>
+  <p>–user=’rep’：延时服务器中授权用户的用户名，这里设置为rep <br /><br />
+–password=’larry’：延时服务器中授权用户的密码，这里设置为larry <br /><br />
+–delay=3m：延时同步的时间，这里设置为3分钟 <br /><br />
+–interval=20s：检查同步的时间，这里设置为20s <br /><br />
+–run-time=30m：pt-slave-delay的运行时间，这里设置为30分钟 <br /><br />
+192.168.1.19：延时服务器的IP地址</p>
+</blockquote>
+
+<p>第十二步，测试，主服务器serv01创建测试数据库，可以发现同步服务器立马更新，而延时同步服务器要等3分钟之后才更新。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="c1">--serv01</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">justdb</span><span class="p">;</span>
+<span class="k">Database</span> <span class="n">changed</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">create</span> <span class="k">table</span> <span class="n">test</span><span class="p">(</span><span class="n">id</span> <span class="nb">int</span><span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">01</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">insert</span> <span class="k">into</span> <span class="n">test</span> <span class="k">values</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="c1">--serv08</span>
+  <span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">justdb</span><span class="p">.</span><span class="n">test</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------+</span>
+<span class="o">|</span> <span class="n">id</span>   <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+</span>
+<span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+
+<span class="c1">--serv09</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">justdb</span><span class="p">.</span><span class="n">test</span><span class="p">;</span>
+<span class="n">ERROR</span> <span class="mi">1146</span> <span class="p">(</span><span class="mi">42</span><span class="n">S02</span><span class="p">):</span> <span class="k">Table</span> <span class="s1">&#39;justdb.test&#39;</span> <span class="n">doesn</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">exist</span></code></pre></div>
+
+<p>三分钟过后查看延时服务器已经同步成功。</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">pt-slave-delay --user<span class="o">=</span><span class="s1">&#39;rep&#39;</span> <span class="se">\</span>
+--password<span class="o">=</span><span class="s1">&#39;larry&#39;</span> <span class="se">\</span>
+--delay<span class="o">=</span>3m <span class="se">\</span>
+--interval<span class="o">=</span>20s <span class="se">\</span>
+--run-time<span class="o">=</span>30m <span class="se">\</span>
+192.168.1.19
+
+2013-10-06T19:43:30 slave running <span class="m">0</span> seconds behind
+2013-10-06T19:43:30 STOP SLAVE <span class="k">until</span> 2013-10-06T19:46:30 
+at master position mysql-bin.000001/199
+2013-10-06T19:43:50 slave stopped at master position mysql-bin.000001/199
+2013-10-06T19:44:10 slave stopped at master position mysql-bin.000001/199
+2013-10-06T19:44:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:44:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:45:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:45:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:45:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:46:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:46:30 no new binlog events
+2013-10-06T19:46:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:47:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:47:30 START SLAVE <span class="k">until</span> master 2013-10-06T19:44:30 mysql-bin.000001/492
+**2013-10-06T19:47:50 slave running <span class="m">0</span> seconds behind**
+**2013-10-06T19:47:50 STOP SLAVE <span class="k">until</span> 2013-10-06T19:50:50 
+at master position mysql-bin.000001/492**
+2013-10-06T19:48:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:48:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:48:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:49:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:49:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:49:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:50:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:50:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:50:50 no new binlog events
+2013-10-06T19:51:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:51:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:51:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:52:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:52:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:52:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:53:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:53:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:53:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:54:10 no new binlog events
+2013-10-06T19:54:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:54:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:55:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:55:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:55:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:56:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:56:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:56:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:57:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:57:30 no new binlog events
+2013-10-06T19:57:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:58:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:58:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:58:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:59:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:59:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T19:59:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:00:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:00:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:00:50 no new binlog events
+2013-10-06T20:01:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:01:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:01:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:02:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:02:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:02:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:03:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:03:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:03:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:04:10 no new binlog events
+2013-10-06T20:04:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:04:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:05:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:05:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:05:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:06:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:06:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:06:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:07:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:07:30 no new binlog events
+2013-10-06T20:07:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:08:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:08:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:08:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:09:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:09:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:09:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:10:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:10:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:10:50 no new binlog events
+2013-10-06T20:11:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:11:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:11:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:12:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:12:30 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:12:50 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:13:10 slave stopped at master position mysql-bin.000001/492
+2013-10-06T20:13:30 slave stopped at master position mysql-bin.000001/492
+**2013-10-06T20:13:30 Setting slave to run normally**</code></pre></div>
+
+<p>延时服务器登录查看。</p>
+
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">justdb</span><span class="p">.</span><span class="n">test</span><span class="p">;</span>
+<span class="o">+</span><span class="c1">------+</span>
+<span class="o">|</span> <span class="n">id</span>   <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+</span>
+<span class="o">|</span>    <span class="mi">1</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------+</span>
+<span class="mi">1</span> <span class="k">row</span> <span class="k">in</span> <span class="k">set</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span></code></pre></div>
+
+<h2 id="section-2">四 附延时备份脚本</h2>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="c">#</span>
+<span class="c"># chkconfig: - 88 12</span>
+<span class="c"># description: the mysql ab delay scripts</span>
+
+<span class="nv">host</span><span class="o">=</span>192.168.100.54
+<span class="nv">user</span><span class="o">=</span>rep
+<span class="nv">password</span><span class="o">=</span>larry
+
+<span class="nv">delay</span><span class="o">=</span>2m
+<span class="nv">in</span><span class="o">=</span>15s
+
+<span class="nv">prog</span><span class="o">=</span>/usr/bin/pt-slave-delay
+
+. /etc/init.d/functions
+
+start<span class="o">()</span> <span class="o">{</span>
+    <span class="nb">echo</span> -n <span class="s2">&quot;Starting `basename $prog`...&quot;</span>
+    daemon <span class="nv">$prog</span> --host<span class="o">=</span><span class="nv">$host</span> --user<span class="o">=</span><span class="nv">$user</span> <span class="se">\</span>
+    --password<span class="o">=</span><span class="nv">$password</span> <span class="se">\</span>
+    --delay<span class="o">=</span><span class="nv">$delay</span> <span class="se">\</span>
+    --interval<span class="o">=</span><span class="nv">$in</span> <span class="se">\</span>
+    --daemonize <span class="se">\</span>
+    --log<span class="o">=</span>/var/log/mysql-delay.log
+    <span class="nb">echo</span>
+<span class="o">}</span>
+
+stop<span class="o">()</span> <span class="o">{</span>
+    <span class="nb">echo</span> -n <span class="s2">&quot;Stopping `basename $prog`...&quot;</span>
+    killproc  <span class="nv">$prog</span>
+    <span class="nb">echo</span>
+<span class="o">}</span>
+
+<span class="k">case</span> <span class="s2">&quot;$1&quot;</span> in
+    start<span class="o">)</span>
+        start
+        <span class="p">;;</span>
+    stop<span class="o">)</span>
+        stop
+        <span class="p">;;</span>
+    restart<span class="o">)</span>
+        stop
+        start
+        <span class="p">;;</span>
+    *<span class="o">)</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Usage: $0 {start|stop|restart}&quot;</span>
+        <span class="nb">exit </span>1
+<span class="k">esac</span></code></pre></div>
+
+<h2 id="section-3">五 资源下载</h2>
+
+<p>percona-toolkit-2.1.7-1.noarch.rpm：<a href="http://download.csdn.net/detail/wentasy/6679233" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="percona-toolkit-2.1.7-1.noarch.rpm" height="16px" width="16px" border="0" alt="percona-toolkit-2.1.7-1.noarch.rpm" /></a></p>
+
+<p>–EOF–</p>
+
+<p>原文地址：<a href="http://blog.csdn.net/justdb/article/details/17201097" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之MySQL" height="16px" width="16px" border="0" alt="MySQL备份与恢复之MySQL" /></a></p>
+
+<p>题图来自：原创，By <a href="http://dbarobin.com/" target="_blank">Robin Wen</a></p>
+
+<p>版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a></p>
+
+  </article>
+  <hr />
+
+</div>
+
+
+<section class="pager">
+  <ul>
+    
+    <li class="previous"><a href="/2013/12/08/collection-of-recent-wechat-updates/" title="程序员的奋斗史（三十）近期微信公众平台更新文章集锦">&larr; Older</a></li>
+    
+    
+    <li class="next"><a href="/2013/12/10/dba-under-remove-ioe-tendency/" title="互联网企业去IOE化，DBA应该何去何从">Newer &rarr;</a></li>
+    
+  </ul>
+</section>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+
+  var disqus_developer = 1;
+
+var disqus_shortname ='dbarobin';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+    <section class="pager">
+  
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>

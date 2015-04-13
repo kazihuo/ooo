@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cmn-Hans" xml:lang="zh-cmn-Hans">
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="content-language" content="zh">
+<meta name="Content-Security-Policy" content="">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>DBA@Robin</title>
+<meta name="description" content="Robin Wen, MySQL DBA, Liberalist. Record every step about my fighting. Above all, do not lose hope.">
+<meta name="keywords" content="MySQL, Linux, Python, Reading, DBA, Muisc, 阅读, 音乐, 钢琴, 文学">
+<meta property="og:title" content="DBA@Robin, MySQL DBA" />
+<meta property="og:type" content="Blog, Focus on Database." />
+<meta property="og:url" content="http://dbarobin.com/" />
+<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dbarobin">
+<meta name="twitter:creator" content="@dbarobin">
+<meta name="twitter:title" content="DBA@Robin">
+<meta name="twitter:description" content="Robin Wen, MySQL DBA, Liberalist. Record every step about my fighting. Above all, do not lose hope.">
+<meta name="twitter:url" content="http://dbarobin.com/page18/">
+
+<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/assets/awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fonts-open-sans.css">
+<link rel="canonical" href="http://dbarobin.com/page18/">
+<link rel="alternate" type="application/atom+xml" title="DBA@Robin" href="http://dbarobin.com/feed.xml" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?385d238b95fb1e2bd25f6510cc28b7a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+
+  <div class="wrapper">
+
+    <h1 class="site-title"><a href="/">DBA@Robin</a></h1>
+    <h3 class="site-meta">Focus on database.</h3>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+        
+        <a class="page-link" href="/">Home</a>
+        
+        
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        
+        
+        <a class="page-link" href="/categories/">Categories</a>
+        
+        
+        
+        <a class="page-link" href="/archives/">Archives</a>
+        
+        
+        
+        <a class="page-link" href="/tags/">Tags</a>
+        
+        
+        
+        <a class="page-link" href="/guestbook/">GuestBook</a>
+        
+        
+        
+        <a class="page-link" href="/feed.xml">Subscribe</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    
+
+  <div class="page-content col-sm-8">
+    <div class="home">
+  <div class="post">
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2013/10/08/how-to-master-mysql-systematically/">如何系统学习MySQL?</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#mysql">Mysql</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+      
+      <a href="/tags/#系统学习" title="系统学习">系统学习 </a>, 
+      
+      <a href="/tags/#建议" title="建议">建议 </a>, 
+      
+      <a href="/tags/#掌握" title="掌握">掌握 </a>
+      
+      
+      on Oct 8, 2013
+      </p>
+    </header>
+
+    <article class="post-content">
+      如何“系统”学习mysql？比如需要看哪些书籍，哪些资料？我曾研读过以下几本书：《高性能mysql》，简朝阳的mysql优化，innodb存储引擎。我个人感觉前两本是告诉读者知其然，第三本是告诉读者所以然。这三本书是有一种渐进的关系的，如果没有前两本的积累和一定的工作经验，直接看第三本的效果是不太好的。学习数据库知识，或者狭义说学习mysql，其学习过程比较曲折，没人谁能告诉你，只要看过某几本书，掌握好哪些知识就算是精通、掌握mysql了。知识面是非常广，知识点是零散的，不像学习编程语言那么系统、那么直接明了。
+      <p><a href="/2013/10/08/how-to-master-mysql-systematically/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2013/10/03/share-my-time-management-method/">程序员的奋斗史（二十九）分享我的时间管理-半小时管理法</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#程序员的奋斗史" title="程序员的奋斗史">程序员的奋斗史 </a>, 
+      
+      <a href="/tags/#Fighting" title="Fighting">Fighting </a>, 
+      
+      <a href="/tags/#时间管理" title="时间管理">时间管理 </a>, 
+      
+      <a href="/tags/#半小时管理法" title="半小时管理法">半小时管理法 </a>
+      
+      
+      on Oct 3, 2013
+      </p>
+    </header>
+
+    <article class="post-content">
+      时间管理方法适合自己才是最重要的。我们没有必要给未来设定计划，因为未来变化莫测，本身就是不可计划的。我们应该就近，在短时间内给一个安排就行。和复杂的方法相比，我更喜欢简单、束缚小的方法，谁叫我是射手座。对时间的管理其实就是最生命的管理，对时间的把握可以反映你对生命的态度。本文分享的半小时管理法，希望对大家有所帮助。
+      <p><a href="/2013/10/03/share-my-time-management-method/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2013/10/02/build-lamp-env-via-source-code/">搭建 LAMP 环境(源码方式)</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#linux">Linux</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+      
+      <a href="/tags/#Linux" title="Linux">Linux </a>, 
+      
+      <a href="/tags/#Apache" title="Apache">Apache </a>, 
+      
+      <a href="/tags/#PHP" title="PHP">PHP </a>, 
+      
+      <a href="/tags/#源码" title="源码">源码 </a>, 
+      
+      <a href="/tags/#环境搭建" title="环境搭建">环境搭建 </a>
+      
+      
+      on Oct 2, 2013
+      </p>
+    </header>
+
+    <article class="post-content">
+      LAMP：Linux、Apache、MySQL、PHP 的组合。目前企业使用较多。本文提供采用源码搭建 LAMP 环境的方法。
+      <p><a href="/2013/10/02/build-lamp-env-via-source-code/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2013/10/01/the-great-gatsby/">了不起的盖茨比</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#了不起的盖茨比" title="了不起的盖茨比">了不起的盖茨比 </a>, 
+      
+      <a href="/tags/#影评" title="影评">影评 </a>
+      
+      
+      on Oct 1, 2013
+      </p>
+    </header>
+
+    <article class="post-content">
+      与其说盖茨比在事业上了不起，不如说他对爱情的执着牛逼。还是以那句经典结尾：“我们继续奋力向前，逆水行舟，被不断地向后推，直至回到往昔岁月”。
+      <p><a href="/2013/10/01/the-great-gatsby/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+    <header class="post-header">
+      <h1 class="post-title">
+        <a class="post-link" href="/2013/09/26/mariadb-vs-oracle/">MariaDB, Replacement for MySQL, 此时Oracle态度</a>
+      </h1>
+      <p class="post-meta">
+      Posted in
+      
+      <a href="/categories/#other">Other</a>&nbsp;
+      
+      
+      and tagged
+      
+      <a href="/tags/#Other" title="Other">Other </a>, 
+      
+      <a href="/tags/#MariaDB" title="MariaDB">MariaDB </a>, 
+      
+      <a href="/tags/#MySQL" title="MySQL">MySQL </a>, 
+      
+      <a href="/tags/#Oracle" title="Oracle">Oracle </a>
+      
+      
+      on Sep 26, 2013
+      </p>
+    </header>
+
+    <article class="post-content">
+      众说纷纭，不过对企业、用户来说未尝不是好事，数据库技术肯定是不断地向前发展，企业、用户也会有更多的选择。
+      <p><a href="/2013/09/26/mariadb-vs-oracle/">Read more</a></p>
+    </article> <hr />
+    
+    
+  
+  </div>
+</div>
+
+    <section class="pager">
+  
+  
+  <li class="previous"><a href="/page17/" title="Newer">&larr; Newer</a></li>
+  
+  
+  
+  <li class="next"><a href="/page19/" title="Older">Older &rarr;</a></li>
+  
+</section>
+
+
+  </div>
+  <div class="col-sm-2">
+<div class="sidebar-module about">
+  <h4>About Me</h4>
+  <img title="Robin Wen" src="/images/wentasy.png" alt="Robin Wen"/>
+
+  <span>Robin Wen, MySQL DBA.</span>
+  <br />
+
+  WeChat: dbtalk
+  <br />
+
+  
+
+  You can contact me via:
+
+  
+  <a href="mailto:dbarobinwen@gmail.com" title="mailto: dbarobinwen@gmail.com" target="_blank">Email</a> /
+  
+  
+  <a href="https://github.com/dbarobin" title="GithubID: dbarobin" target="_blank">GitHub</a> /
+  
+  
+  <a href="https://twitter.com/dbarobin" title="TwitterID: dbarobin" target="_blank">Twitter</a>
+  
+
+  
+
+</div>
+
+<div class="sidebar-module"> <!-- sidebar-module-inset">-->
+  <h4>Copyright Notice</h4>
+
+  
+
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+    <img alt="Copyright Notice" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png">
+  </a>
+  <br />
+  <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs</a>
+
+  
+
+</div>
+
+<div class="sidebar-module">
+  <h4>Recent Posts</h4>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/04/07/mydumper/" title="mydumper 完全参考手册" rel="bookmark">mydumper 完全参考手册</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/23/opensource-innovation-meetup-in-shenzhen/" title="开源中国深圳源创会分享" rel="bookmark">开源中国深圳源创会分享</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/16/the-first-diary-of-website-optimization/" title="网站优化日记（一）" rel="bookmark">网站优化日记（一）</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/03/08/lucky-money-of-wechat-and-alipay/" title="我看微信红包和支付宝红包" rel="bookmark">我看微信红包和支付宝红包</a>
+  </li>
+  
+  <li>
+  <a href="http://dbarobin.com/2015/02/28/sql-query-once-and-ten-times/" title="MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别" rel="bookmark">MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别</a>
+  </li>
+  
+</div>
+
+<div class="sidebar-module">
+  <h4>Categories</h4>
+  
+  <li><a href="/categories/#other" title="other" rel="92">Other (92)</a></li>
+  
+  <li><a href="/categories/#linux" title="linux" rel="3">Linux (3)</a></li>
+  
+  <li><a href="/categories/#mysql" title="mysql" rel="28">Mysql (28)</a></li>
+  
+  <li><a href="/categories/#python" title="python" rel="2">Python (2)</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Blogroll</h4>
+  
+  <li><a href="http://blog.csdn.net/dba_waterbin" title="DBA@DevOps" target="_blank">DBA@DevOps</a></li>
+  
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+
+  
+  
+  
+  
+  
+  <li id="2015" > <a href="/archives/#2015">2015</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2014" > <a href="/archives/#2014">2014</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2013" > <a href="/archives/#2013">2013</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li id="2012" > <a href="/archives/#2012">2012</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+
+</div>
+
+
+  
+
+  <footer class="site-footer">
+  <link rel="stylesheet" type="text/css" href="/assets/css/robin.css">
+  <p> &copy; 2015 Robin Wen. All Rights Reserved.</p>
+   <div id="totop" class="mytotop">
+      <a title="Back To Top"><img alt="Scrollup to home page of dbarobin.com" src="/images/scrollup.png"/></a>
+   </div>
+
+<script type="text/javascript" defer="defer" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" defer="defer" src="//dn-lbstatics.qbox.me/lbservice/busuanzi/1.0/busuanzi.mini.js"/></script>
+<script type="text/javascript" defer="defer" src="/assets/js/totop.js"></script>
+</footer>
+
+
+</div>
+
+</body>
+
+</html>
