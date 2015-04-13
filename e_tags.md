@@ -4,6 +4,7 @@ title: Tags
 permalink: /tags/
 ---
 
+<!-- Optimze tags display style. -->
 <ul class="tags-box">
 {% if site.posts != empty %}
 	{% for tag in site.tags %}
