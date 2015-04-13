@@ -29,3 +29,6 @@
 
 # Special character, middle bracket.
 「」
+
+# HTML Comments Template.
+<!--   -->
