@@ -5,4 +5,4 @@ comments: yes
 permalink: /guestbook/
 ---
 
-Hi, I am Robin, welcome to leave a message here. :)
+Hi, I am Robin, MySQL DBA at Canton. Welcome to leave a message here. :)
