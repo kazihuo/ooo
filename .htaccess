@@ -1,9 +1,7 @@
 # Specify a 'Vary: Accept-Encoding' header
-<IfModule mod_headers.c>
-   <FilesMatch "\.(js|css|xml|gz)$">
-      Header append Vary: Accept-Encoding
-   </FilesMatch>
-</IfModule>
+<FilesMatch "\.(js|css|xml|gz)$">
+   Header append Vary: Accept-Encoding
+</FilesMatch>
 
 # Set a far future cache policy in 2 requests
 #Expire Header
