@@ -129,7 +129,7 @@ tags:
 * [MongoDB 权威指南](http://book.douban.com/subject/6068947/) MongoDB 经典书籍；
 * [深入学习 MongoDB](http://book.douban.com/subject/10439364/) MongoDB 深入好帮手；
 * [MongoDB 实战](http://book.douban.com/subject/19977785/) 实战教程；
-* [Oracle 相关书籍](http://www.eygle.com/archives/my_life/books/)
+* [Oracle 相关书籍](http://www.eygle.com/archives/my_life/books/) Oracle 的书籍就不额外推荐了，相信你找得到好书的。
 
 说明：
 
