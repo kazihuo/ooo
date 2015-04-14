@@ -101,7 +101,7 @@ tags:
 * [知乎周刊](http://zhuanlan.zhihu.com/Weekly) 充电的好网站；
 * [码农周刊](http://weekly.manong.io/) 还是应该关注编程；
 * [Startup News](http://news.dbanotes.net/) 冯老师做的；
-* [极客头条](http://geek.csdn.net/) 关注互联网动态；
+* [极客头条](http://geek.csdn.net/) 关注互联网动态。
 
 **书籍**
 
