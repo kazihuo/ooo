@@ -71,6 +71,8 @@ tags:
 
 技术发展道路上，能做到架构级别已经相当不容易了。系统开发和开发 DBA 需要极强的开发功底，大多数的人都是望而止步的。
 
+![2015-04-14-operation-and-maintenance-engineer-tips](http://i.imgur.com/2EpIX7H.jpg)
+
 ### 工作场景 ###
 ***
 
@@ -201,3 +203,5 @@ PS：为什么我上学那会没看到这篇文章呢？读者都太幸运了，
 –EOF–
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+
+题图来自 [ardentpartners.com](http://payablesplace.ardentpartners.com/2014/06/ap-skill-sets-must-evolve-with-automation/), By Andrew Bartolini.
