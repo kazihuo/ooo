@@ -34,5 +34,7 @@ layout: default
 
 
 {% include page_pagination.html%}
-{% include comments.html %}
 
+{% if post.comments %}
+{% include comments.html %}
+{% endif %}
