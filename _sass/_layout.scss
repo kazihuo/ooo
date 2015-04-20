@@ -106,11 +106,10 @@
 /**
  * Sidebar
  */
-
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
-  font-size: 14px;
+  font-size: 16px;
   h4{
     font-size: $base-font-size;
     font-weight: bold;
@@ -125,7 +124,6 @@
 /**
  * Site footer
  */
-
 .site-footer {
   clear: both;
   text-align: center;
@@ -181,41 +179,58 @@
 }
 
 .post-content {
-  p { margin: 20px 0; }
   margin-bottom: $spacing-unit;
-  font-size: 14px;
+  font-size: 16px;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+  }
+
   h1 { 
-    font-size: 38px;
-    line-height:1em;
+    font-size: 2em;
+
     @include media-query($on-laptop){
-      font-size: 36px;
+      font-size: 1.8em;
     }
 
   }
   h2 {
-    font-size: 32px;
-    line-height:1em;
+    font-size: 1.8em;
 
     @include media-query($on-laptop) {
-      font-size: 28px;
+      font-size: 1.6em;
     }
   }
 
   h3 {
-    font-size: 26px;
-    line-height:1em;
+    font-size: 1.6em;
 
     @include media-query($on-laptop) {
-      font-size: 22px;
+      font-size: 1.4em;
     }
   }
 
   h4 {
-    font-size: 20px;
-    line-height:1em;
+    font-size: 1.4em;
 
     @include media-query($on-laptop) {
-      font-size: 18px;
+      font-size: 1.2em;
+    }
+  }
+
+  h5 {
+    font-size: 1.2em;
+
+    @include media-query($on-laptop) {
+      font-size: 1em;
+    }
+  }
+
+  h6 {
+    font-size: 1.2em;
+
+    @include media-query($on-laptop) {
+      font-size: 1em;
     }
   }
 }
