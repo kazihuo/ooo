@@ -377,3 +377,45 @@ cite{
   font-style: italic;
   text-decoration: none;
 }
+
+.searchform .field {
+    padding:                5px;
+    width:                  200px;
+    border:                 solid 1px #dddddd;
+}
+
+.searchform .submit {
+    width:                  28px;
+    height:                 28px;
+    background:             url(http://taosay.net/wp-content/themes/montezuma/images/searchicon.png) 0 -5px no-repeat;
+    overflow:               hidden;
+    border:                 none;
+    margin-left:            3px;
+}
+
+#post-0 .searchform {
+    position:               relative;
+    margin:                 30px 0;
+    width:                  90%;
+}
+
+#post-0 .searchform .field {
+    width:                  95%;
+    max-width:              100%;
+}
+
+.widget .searchform {
+    position:               relative;
+    top:                    0;
+    left:                   0;
+}
+
+.widget .submit {
+    display:                none;
+}
+
+.widget .searchform .field {
+    width:                  100%;
+    max-width:              300px;
+    background:             url(http://taosay.net/wp-content/themes/montezuma/images/searchicon.png) right center no-repeat;
+}

@@ -30,6 +30,7 @@ locales:
       Categories: "Categories"
       Copyright_Notice: "Copyright Notice"
       Recent_Posts: "Recent Posts"
+      Search: "Search"
       Tags: "Tags"
       Previous: "Older"
       Next: "Newer"
@@ -43,6 +44,7 @@ locales:
       Categories: "分类目录"    
       Copyright_Notice: "版权声明"
       Recent_Posts: "近期文章"
+      Search: "搜索"
       Tags: "标签" 
       Previous: "前一页"
       Next: "后一页"
@@ -73,3 +75,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: false
+
+### Custom gems.
+gems: ['jekyll-lunr-js-search']
