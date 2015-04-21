@@ -6,7 +6,7 @@ title: "运维工程师指北"
 category: Linux
 comments: no
 summary: "应网友邀请，写的运维工程师参考。目前运维工程师现状：国内一线城市紧缺，特别是互联网公司。小公司的运维工程师负责事情较多，基本上服务器沾边的工作都是你在做。大公司的运维人才要求较高。当然，国内的运维人才很难符合企业的实际要求，人才分布符合二八原则，大多数的人技术平庸，很多都源自培训机构。还有一个不争的事实，那大部分的人期望的工资远远高于他能为公司创造的价值。可以这样说，国内大多数的运维人才都处于一个较低的层次，他们会写脚本，会做一些基础工作，但基本上都是照葫芦画瓢，看文档，找参考，而没有去挖掘底层或者更上层的东西。"
-tags: 
+tags:
 - Linux
 - 运维工程师
 - 技能
@@ -53,7 +53,7 @@ tags:
 * 安排并实施相关业务的第三方技术服务合作;
 * 负责整体把握运维服务质量，数据分析质量，资源规划等。
 
-以上摘自[百度百科](http://t.cn/RAoieDx)。
+以上摘自 [百度百科](http://t.cn/RAoieDx) 。
 
 ### 职业现状 ###
 ***
@@ -65,7 +65,7 @@ tags:
 * 运维应用-->系统架构-->运维开发-->系统开发；
 * 运维应用-->应用 DBA-->架构 DBA-->开发 DBA。
 
-来自[老男孩](http://oldboy.blog.51cto.com/2561410/1361536)。
+来自 [老男孩](http://oldboy.blog.51cto.com/2561410/1361536) 。
 
 基础的运维实际上相对简单，做好的前提下应该考虑更长远的发展。
 
@@ -92,7 +92,7 @@ tags:
 ***
 
 * Linux 基础。比如操作系统基础知识、熟悉 Vi 编辑器、至少熟悉一个发行版（Ubuntu 入门，CentOS 进阶）等；4
-* Linux 基础命令。这是刚需，命令都会不爱熟练运用，不用往下谈了。BTW，grep、sed、awk  这几个命令非常重要；5
+* Linux 基础命令。这是刚需，命令都会不爱熟练运用，不用往下谈了。BTW，grep、sed、awk 这几个命令非常重要；5
 * 基础服务，如 DNS、Samba、Postfix、DHCP、FTP、NTP、 LAMP/LNMP…… 这一部分需要达到熟练，最好能够理解原理；4
 * Shell 脚本，当然会 Python、Perl 更好。脚本非常重要，切记！5
 * 运维平台工具，比如 Nagios、Zabbix、Puppet 等。这一部分可以提高不少效率和便利；3
@@ -182,7 +182,7 @@ PS：博客就分享那么多，其他的博客需要您发现了。
 说明：
 
 * 以上书籍没有全部看完，有些在看，有些在规划中，且当做个列表吧；
-* 关于数据库的书籍，参考 [MySQL DBA Tips](http://dbarobin.com/2015/04/14/mysql-dba-tips/)，在此不赘述。
+* 关于数据库的书籍，参考 [MySQL DBA Tips](http://dbarobin.com/2015/04/14/mysql-dba-tips/) ，在此不赘述。
 
 **资源**
 
@@ -198,10 +198,10 @@ ID：Wentasy，英文名 Robin Wen，真实姓名是温国兵。目前就职于�
 ### 额外 ###
 ***
 
-PS：为什么我上学那会没看到这篇文章呢？读者都太幸运了，哈哈。其他该说的话，都在我的博客。[DBA@Robin](http://dbarobin.com/)
+PS：为什么我上学那会没看到这篇文章呢？读者都太幸运了，哈哈。其他该说的话，都在我的博客。 [DBA@Robin](http://dbarobin.com/)
 
 –EOF–
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
 
-题图来自 [ardentpartners.com](http://payablesplace.ardentpartners.com/2014/06/ap-skill-sets-must-evolve-with-automation/), By Andrew Bartolini.
+题图来自 [ardentpartners.com](http://payablesplace.ardentpartners.com/2014/06/ap-skill-sets-must-evolve-with-automation/) , By Andrew Bartolini.
