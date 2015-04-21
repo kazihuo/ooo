@@ -36,7 +36,6 @@ ul, ol, dl, figure,
 */
 p {
   font-family: "Open Sans", "Helvetica", "Arial", "Hiragino Sans GB", "Noto Sans CJK SC", "Heiti SC", "Microsoft YaHei", "WenQuanYi Microhei", serif;
-  margin: 20px 0;
   line-height: 1.7em;
   margin-bottom: 1.7em;
   word-break: break-all;
@@ -238,7 +237,7 @@ pre {
 pre>code {
   padding: 0;
   margin: 0;
-  font-size: 100%;
+  font-size: 12px;
   word-break: normal;
   white-space: pre;
   background: transparent;
@@ -276,7 +275,7 @@ code, tt {
 /**
  * Wrapper
  */
-.wrapper {
+   .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
