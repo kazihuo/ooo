@@ -15,7 +15,11 @@ layout: default
       <p class="post-meta">
       {{ site.locales[site.default_locale].PostedInCategories }}
       {% for cat in post.categories %}
-      <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat | capitalize}}</a>&nbsp;
+      {% if cat == 'mysql' %}
+         <a href="{{site.baseurl}}/categories/#{{ cat }}">MySQL</a>&nbsp;
+      {% else %}
+         <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat | capitalize}}</a>&nbsp;
+      {% endif %}
       {% endfor %}
       {% if post.tags != empty %}
       {{ site.locales[site.default_locale].Taggedwith }}
