@@ -1,23 +1,6 @@
 <div class="sidebar-module">
   <h4>{{ site.locales[site.default_locale].Search }}</h4>
-  <form method="get" class="searchform" action="/index.html">
-      <input title="Search for posts" type="text" class="field" name="q" placeholder="Search" autocomplete="off" value="" />
+  <form method="get" class="searchform" action="/search/index.html" data-search-form>
+      <input title="Search for posts" class="field" type="text" name="q" id="q" placeholder="Search" value="" autocomplete="off" data-search-input />
   </form>
 </div>
-
-<script type="text/javascript">
-  $(function() {
-    $('#search-query').lunrSearch({
-      index:    '/js/index.json',
-      results:  '#search-results',
-      entries:  '.entries',
-      template: '#search-results-template'
-    });
-  });
-</script>
-
-<section id="search-results" style="display: none;">
-  <p>Search results</p>
-  <div class="entries">
-  </div>
-</section>

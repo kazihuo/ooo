@@ -77,4 +77,3 @@ kramdown:
   use_coderay: false
 
 ### Custom gems.
-gems: ['jekyll-lunr-js-search']
