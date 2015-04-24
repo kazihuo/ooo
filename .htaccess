@@ -4,7 +4,7 @@
 </FilesMatch>
 
 # Set a far future cache policy in 2 requests
-#Expire Header
+# Expire Header
 <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
    ExpiresDefault "access plus 2 hours"
 </FilesMatch>
