@@ -8,3 +8,30 @@
 <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
    ExpiresDefault "access plus 2 hours"
 </FilesMatch>
+
+# The X-Frame-Options response header
+X-Frame-Options: SAMEORIGIN
+
+# Content-Type
+Content-Type: text/html;charset=utf-8
+
+# Strict-Transport-Security
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# X-Content-Type-Options
+X-Content-Type-Options: nosniff
+
+# X-XSS-Protection
+X-XSS-Protection: 1; mode=block
+
+# Cache-Control
+Cache-Control: no-cache, no-store, must-revalidate
+
+# Pragma
+Pragma: no-cache
+
+# Expires
+Expires: -1
+
+# X-Permitted-Cross-Domain-Policies  
+X-Permitted-Cross-Domain-Policies: master-only
