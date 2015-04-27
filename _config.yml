@@ -64,6 +64,7 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 highlighter: pygments
 paginate: 5
+excerpt_separator: <!--more-->
 
 ### Kramdown settings.
 kramdown:
