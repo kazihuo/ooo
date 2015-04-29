@@ -37,6 +37,8 @@ locales:
       PostedInCategories: "Posted in"
       Taggedwith: "and tagged"  
       PostDate: "on "
+      WechatDBTalk: "WeChat"
+      WechatDonate: "Donate"
     cn:
       Aboutme: "关于我"
       Archives: "存档"
@@ -51,6 +53,8 @@ locales:
       PostedInCategories: "目录:"   
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
+      WechatDBTalk: "微信公众平台"
+      WechatDonate: "微信捐赠"
 
 
 ### Blogroll info, only name can shown on the page.
