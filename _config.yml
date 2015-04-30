@@ -37,7 +37,7 @@ locales:
       PostedInCategories: "Posted in"
       Taggedwith: "and tagged"  
       PostDate: "on "
-      WechatDBTalk: "WeChat"
+      WechatDBTalk: "WeChat Official Account"
       WechatDonate: "Donate"
     cn:
       Aboutme: "关于我"
@@ -53,7 +53,7 @@ locales:
       PostedInCategories: "目录:"   
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
-      WechatDBTalk: "微信公众平台"
+      WechatDBTalk: "微信公众号"
       WechatDonate: "微信捐赠"
 
 
