@@ -41,14 +41,14 @@ tags:
 
 ## 二 延时备份示意图 ##
 
-! [MySQL备份与恢复之MySQL](http://i.imgur.com/UYBSKEN.jpg)
+![MySQL备份与恢复之MySQL](http://i.imgur.com/UYBSKEN.jpg)
 MySQL备份与恢复之MySQL 延时备份示意图
 
 三 延时备份模拟
 
 网络拓扑图
 
-! [MySQL备份与恢复之MySQL](http://i.imgur.com/4uaZGAF.jpg)
+![MySQL备份与恢复之MySQL](http://i.imgur.com/4uaZGAF.jpg)
 MySQL备份与恢复之MySQL 延时备份网络拓扑图
 
 实验环境简介。
@@ -379,11 +379,11 @@ at master position mysql-bin.000001/199
 
 **命令解释**
 
-> --user='rep'：延时服务器中授权用户的用户名，这里设置为rep <br/>
-> --password='larry'：延时服务器中授权用户的密码，这里设置为larry <br/>
-> --delay=3m：延时同步的时间，这里设置为3分钟 <br/>
-> --interval=20s：检查同步的时间，这里设置为20s <br/>
-> --run-time=30m：pt-slave-delay的运行时间，这里设置为30分钟 <br/>
+> --user='rep'：延时服务器中授权用户的用户名，这里设置为rep
+> --password='larry'：延时服务器中授权用户的密码，这里设置为larry
+> --delay=3m：延时同步的时间，这里设置为3分钟
+> --interval=20s：检查同步的时间，这里设置为20s
+> --run-time=30m：pt-slave-delay的运行时间，这里设置为30分钟
 > 192.168.1.19：延时服务器的IP地址
 
 
