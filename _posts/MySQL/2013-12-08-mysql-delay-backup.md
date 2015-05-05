@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之MySQL 延时备份"
 category: MySQL
 summary: "在上一篇文章中，我们讲到MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复，percona-xtrabackup是一个优秀的用于增量备份的工具。今天我们讲到的延时备份也是使用他们的产品。"
-tags: 
+tags:
 - Database
 - MySQL
 - 数据库
@@ -21,8 +21,6 @@ tags:
 * Table of Contents
 {:toc}
 
-## MySQL delay backup ##
-
 `文/温国兵`
 
 ## 一 为什么需要延时备份 ##
@@ -35,7 +33,7 @@ tags:
 > 2)从服务器把主服务器的二进制日志事件拷贝到自己的中继日志（relay log）中；
 > 3)从服务器执行中继日志中的事件，把更改应用到自己的数据上。
 
-在生产中，我们在使用 mysql  AB 复制技术不但可以起到数据库层面负载均衡的能力，还可以起到备份数据的功能，但有的时候我们可能由于不小心误操作导致数据被删除，这这个时候 slave服务器上的数据也会同时被删除，如果我们能够能是的其中的一台 slave 延时备份的话， 这样就可以从 slave服务器上找回被误删的数据了。
+在生产中，我们在使用 mysql AB 复制技术不但可以起到数据库层面负载均衡的能力，还可以起到备份数据的功能，但有的时候我们可能由于不小心误操作导致数据被删除，这这个时候 slave服务器上的数据也会同时被删除，如果我们能够能是的其中的一台 slave 延时备份的话， 这样就可以从 slave服务器上找回被误删的数据了。
 
 从服务器到主服务器中拷贝二进制日志文件，如果在并发量高，网络延时严重的情况下，会对主服务器造成相当大的压力，负载高，必定会出现很多问题，比如访问延迟，IO瓶颈，网络拥塞等等。服务器压力过大是我们都不愿看到的情况，那有没有方案缓解这种情况呢？有，这就是本文讲到的延时备份。延时备份通过第三方工具，将检查同步和真正同步的时间控制在一定的范围内，而不是主服务器数据发生变化，从服务器立即去同步二进制事件到自己的中继日志中，这样的话可以大大减轻主服务器的压力，并且基于AB复制的优点，可以达到备份数据的目的。
 
@@ -43,24 +41,24 @@ tags:
 
 ## 二 延时备份示意图 ##
 
-![MySQL备份与恢复之MySQL](http://i.imgur.com/UYBSKEN.jpg)
+! [MySQL备份与恢复之MySQL](http://i.imgur.com/UYBSKEN.jpg)
 MySQL备份与恢复之MySQL 延时备份示意图
 
 三 延时备份模拟
 
 网络拓扑图
 
-![MySQL备份与恢复之MySQL](http://i.imgur.com/4uaZGAF.jpg)
+! [MySQL备份与恢复之MySQL](http://i.imgur.com/4uaZGAF.jpg)
 MySQL备份与恢复之MySQL 延时备份网络拓扑图
 
 实验环境简介。
 
 |----------+------------+-----------------+-----------|
-| 主机           | IP地址             |主机名                      | 备注              |
+| 主机 | IP地址 |主机名 | 备注 |
 |:----------:|:------------|:-----------------|:-----------|
-|serv01   |192.168.1.11     | serv01.host.com  | 主服务器            |
-|serv08   |192.168.1.18     | serv08.host.com  | 及时同步服务器    |
-|serv09   |192.168.1.19     | serv09.host.com  | 延时同步服务器    |
+|serv01 |192.168.1.11 | serv01.host.com | 主服务器 |
+|serv08 |192.168.1.18 | serv08.host.com | 及时同步服务器 |
+|serv09 |192.168.1.19 | serv09.host.com | 延时同步服务器 |
 |----------+------------+-----------------+-----------|
 
 **操作系统版本**
@@ -77,21 +75,21 @@ RHEL Server6.1 64位系统
 # serv01
 cat /etc/my.cnf | grep server-id
 server-id = 1
-#server-id       = 2
+#server-id = 2
 /etc/init.d/mysqld start
 Starting MySQL SUCCESS!
 
 # serv08
 cat /etc/my.cnf | grep server-id
 server-id = 2
-#server-id       = 2
+#server-id = 2
 /etc/init.d/mysqld start
 Starting MySQL SUCCESS!
 
 # serv09
 cat /etc/my.cnf | grep server-id
 server-id = 3
-#server-id       = 2
+#server-id = 2
 /etc/init.d/mysqld start
 Starting MySQL SUCCESS!
 {% endhighlight %}
@@ -102,9 +100,9 @@ Starting MySQL SUCCESS!
 --serv01
 mysql> show binary logs;
 +------------------+-----------+
-| Log_name         | File_size |
+| Log_name | File_size |
 +------------------+-----------+
-| mysql-bin.000001 |       683 |
+| mysql-bin.000001 | 683 |
 +------------------+-----------+
 1 row in set (0.01 sec)
 
@@ -113,9 +111,9 @@ Query OK, 0 rows affected (0.01 sec)
 
 mysql> show binary logs;
 +------------------+-----------+
-| Log_name         | File_size |
+| Log_name | File_size |
 +------------------+-----------+
-| mysql-bin.000001 |       107 |
+| mysql-bin.000001 | 107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
 
@@ -125,18 +123,18 @@ Query OK, 0 rows affected (0.02 sec)
 
 mysql> show binary logs;
 +------------------+-----------+
-| Log_name         | File_size |
+| Log_name | File_size |
 +------------------+-----------+
-| mysql-bin.000001 |       107 |
+| mysql-bin.000001 | 107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
 
 --serv09
 mysql> show binary logs;
 +------------------+-----------+
-| Log_name         | File_size |
+| Log_name | File_size |
 +------------------+-----------+
-| mysql-bin.000001 |       107 |
+| mysql-bin.000001 | 107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
 
@@ -145,9 +143,9 @@ Query OK, 0 rows affected (0.00 sec)
 
 mysql> show binary logs;
 +------------------+-----------+
-| Log_name         | File_size |
+| Log_name | File_size |
 +------------------+-----------+
-| mysql-bin.000001 |       107 |
+| mysql-bin.000001 | 107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
 {% endhighlight %}
@@ -295,45 +293,45 @@ Query OK, 1 row affected (0.01 sec)
 
 mysql> show databases;
 +--------------------+
-| Database           |
+| Database |
 +--------------------+
 | information_schema |
-| crm                |
-| justdb             |
-| larry              |
-| larrydb            |
-| mysql              |
+| crm |
+| justdb |
+| larry |
+| larrydb |
+| mysql |
 | performance_schema |
-| test               |
+| test |
 +--------------------+
 8 rows in set (0.00 sec)
 
 --serv08
 mysql> show databases;
 +--------------------+
-| Database           |
+| Database |
 +--------------------+
 | information_schema |
-| justdb             |
-| larrydb            |
-| mysql              |
+| justdb |
+| larrydb |
+| mysql |
 | performance_schema |
-| test               |
+| test |
 +--------------------+
 6 rows in set (0.03 sec)
 
 --serv09
 mysql> show databases;
 +--------------------+
-| Database           |
+| Database |
 +--------------------+
 | information_schema |
-| justdb             |
-| larry              |
-| larrydb            |
-| mysql              |
+| justdb |
+| larry |
+| larrydb |
+| mysql |
 | performance_schema |
-| test               |
+| test |
 +--------------------+
 7 rows in set (0.00 sec)
 {% endhighlight %}
@@ -375,7 +373,7 @@ pt-slave-delay --user='rep' \
 --run-time=30m \
 192.168.1.19
 2013-10-06T19:43:30 slave running 0 seconds behind
-2013-10-06T19:43:30 STOP SLAVE until 2013-10-06T19:46:30 
+2013-10-06T19:43:30 STOP SLAVE until 2013-10-06T19:46:30
 at master position mysql-bin.000001/199
 {% endhighlight %}
 
@@ -404,9 +402,9 @@ Query OK, 1 row affected (0.00 sec)
 --serv08
   mysql> select * from justdb.test;
 +------+
-| id   |
+| id |
 +------+
-|    1 |
+| 1 |
 +------+
 1 row in set (0.00 sec)
 
@@ -426,7 +424,7 @@ pt-slave-delay --user='rep' \
 192.168.1.19
 
 2013-10-06T19:43:30 slave running 0 seconds behind
-2013-10-06T19:43:30 STOP SLAVE until 2013-10-06T19:46:30 
+2013-10-06T19:43:30 STOP SLAVE until 2013-10-06T19:46:30
 at master position mysql-bin.000001/199
 2013-10-06T19:43:50 slave stopped at master position mysql-bin.000001/199
 2013-10-06T19:44:10 slave stopped at master position mysql-bin.000001/199
@@ -441,7 +439,7 @@ at master position mysql-bin.000001/199
 2013-10-06T19:47:10 slave stopped at master position mysql-bin.000001/492
 2013-10-06T19:47:30 START SLAVE until master 2013-10-06T19:44:30 mysql-bin.000001/492
 **2013-10-06T19:47:50 slave running 0 seconds behind**
-**2013-10-06T19:47:50 STOP SLAVE until 2013-10-06T19:50:50 
+**2013-10-06T19:47:50 STOP SLAVE until 2013-10-06T19:50:50
 at master position mysql-bin.000001/492**
 2013-10-06T19:48:10 slave stopped at master position mysql-bin.000001/492
 2013-10-06T19:48:30 slave stopped at master position mysql-bin.000001/492
@@ -528,9 +526,9 @@ at master position mysql-bin.000001/492**
 {% highlight sql %}
 mysql> select * from justdb.test;
 +------+
-| id   |
+| id |
 +------+
-|    1 |
+| 1 |
 +------+
 1 row in set (0.00 sec)
 {% endhighlight %}
@@ -567,7 +565,7 @@ start() {
 
 stop() {
     echo -n "Stopping `basename $prog`..."
-    killproc  $prog
+    killproc $prog
     echo
 }
 
