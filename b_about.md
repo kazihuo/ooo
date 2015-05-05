@@ -13,7 +13,7 @@ permalink: /about/
 
 2014 年 毕业，第一份实习工作是 SQL Server DBA，第二份工作就是目前的工作。身为 90 后，还很年轻，所以谈不上有哪些技术背景。只能说自己在 Linux 和 MySQL 两方面有过人的能力，其他的 SQL Server 和 Oracle 只是略懂。关注 MySQL、NoSQL 技术，平时浏览的网站无出其右地围绕这两块。
 
-我是 [CSDN 博客专家](http://blog.csdn.net/justdb) 和 [DB2 中国社区社区专家](http://www.db2china.net/home/space.php?uid=159593)，负责「MySQL 数据库管理与运维」模块。除此之外，我的 51CTO 博客还被评为推荐博客。自命英文名：Robin Wen，可以叫我 Robin，当然，沾一点李彦宏前辈的喜气。自认为自己是个数据库爱好者，对数据和数字敏感。编辑器喜欢 Vim，编程语言喜欢 Python 和 Shell。喜欢一切简洁的东西，比如，此站点的所有文章采用 Markdown 编写，比如衷爱苹果系列产品，比如自己是一个微信重度使用者。
+我是 [CSDN 博客专家](http://blog.csdn.net/justdb) 和 [DB2 中国社区社区专家](http://www.db2china.net/home/space.php?uid=159593)，负责「MySQL 数据库管理与运维」版块。除此之外，我的 51CTO 博客还被评为推荐博客。自命英文名：Robin Wen，可以叫我 Robin，当然，沾一点李彦宏前辈的喜气。自认为自己是个数据库爱好者，对数据和数字敏感。编辑器喜欢 Vim，编程语言喜欢 Python 和 Shell。喜欢一切简洁的东西，比如，此站点的所有文章采用 Markdown 编写，比如衷爱苹果系列产品，比如自己是一个微信重度使用者。
 
 懂点音乐，喜欢钢琴曲、小提琴曲和大提琴曲。推荐的音乐人如下：班得瑞、林海、David Garrett、Maksim Mrvica、石进、喜多郎、谭盾、川井宪次、Hans Zimmer、James Horner、梁邦彦、Itzhak Perlman、The Piano Guys、矶村由纪子、久石让。另外，听歌用虾米，偶尔使用网易云音乐。尼采曾说：「如果没有音乐，生活就是一个错误」，音乐已然成为我生活中不可或缺的一部分。我相信，我们不仅可以通过音乐陶冶情操，释放压力，还能培养感知力。
 
