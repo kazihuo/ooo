@@ -84,7 +84,7 @@ tags:
 
 加错活佛跟七哥说道，一般我们去禅修，这些住持、活佛不会最开始就讲什么“放下”、什么“色即是空，空即是色”，要做的就是安静打坐。经常教导别人放下的，他肯定也有很多牵挂，肯定也不能放下。所以真正的放下是经历过后的释然，是看透人生百味的豁达，岂是泛泛之辈可以做到的？放下，不是那么容易的。
 
-! [Take a glance of guijiaoqi](http://i.imgur.com/Ftx38e9.jpg)
+![Take a glance of guijiaoqi](http://i.imgur.com/Ftx38e9.jpg)
 
 **【关于老子】**
 
@@ -129,7 +129,7 @@ tags:
 
 前面讲到，我给七哥留了个礼物，所以在跟他留影的时候，把礼物送给他了，礼物虽然不贵重，但一定很用心，希望七哥能喜欢。（附图片一张，字有点丑，哈哈）
 
-! [Take a glance of guijiaoqi](http://i.imgur.com/RiyyIGI.jpg)
+![Take a glance of guijiaoqi](http://i.imgur.com/RiyyIGI.jpg)
 
 **【关于连珠】**
 
