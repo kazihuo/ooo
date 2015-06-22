@@ -9,7 +9,7 @@ permalink: /about/
 
 目前处于自由状态。
 
-我曾经是 [CSDN 博客专家](http://blog.csdn.net/justdb) 、[DB2 中国社区专家](http://www.db2china.net/home/space.php?uid=159593) 和 InfoQ 高效运维核心编辑。除此之外，我的 51CTO 博客是推荐博客。自命英文名：Robin Wen，可以叫我 Robin，当然，沾一点李彦宏前辈的喜气。喜欢一切简洁的东西，比如，此站点的所有文章采用 Markdown 编写，比如衷爱苹果系列产品，比如自己是一个微信重度使用者。
+我曾经是 [CSDN 博客专家](http://blog.csdn.net/justdb) 、[DB2 中国社区专家](http://www.db2china.net/home/space.php?uid=159593) 和 [InfoQ 高效运维核心编辑](http://www.greatops.net/)。除此之外，我的 51CTO 博客是推荐博客。自命英文名：Robin Wen，可以叫我 Robin，当然，沾一点李彦宏前辈的喜气。喜欢一切简洁的东西，比如，此站点的所有文章采用 Markdown 编写，比如衷爱苹果系列产品，比如自己是一个微信重度使用者。
 
 懂点音乐，喜欢钢琴曲、小提琴曲和大提琴曲。推荐的音乐人如下：班得瑞、林海、David Garrett、Maksim Mrvica、石进、喜多郎、谭盾、川井宪次、Hans Zimmer、James Horner、梁邦彦、Itzhak Perlman、The Piano Guys、矶村由纪子、久石让。另外，听歌主要用虾米，偶尔用网易云音乐。尼采曾说：「如果没有音乐，生活就是一个错误。」音乐已然成为我生活中不可或缺的一部分。我相信，我们不仅可以通过音乐陶冶情操，释放压力，还能培养感知力。
 
