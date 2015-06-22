@@ -62,6 +62,9 @@ Blogroll:
     - name: DBA@DevOps
       href: http://blog.csdn.net/dba_waterbin
       title: DBA@DevOps
+    - name: GreatOps
+      href: http://www.greatops.net/
+      title: GreatOps
 
 ### Build settings.
 permalink: /:year/:month/:day/:title/
