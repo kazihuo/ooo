@@ -5,4 +5,4 @@ comments: no
 permalink: /guestbook/
 ---
 
-Hi, I am Robin, MySQL DBA at Canton. I removed disqus comments, please contact me via Gmail: dbarobinwen@gmail.com
+Hi, I am Robin. I removed disqus comments, please contact me via Gmail: dbarobinwen@gmail.com
