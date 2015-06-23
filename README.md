@@ -1,4 +1,4 @@
-DBA@Robin's Personal Blog. See at: http://dbarobin.com
+Robin's Personal Blog. See at: http://dbarobin.com
 
 Email: dbarobinwen@gmail.com
 
