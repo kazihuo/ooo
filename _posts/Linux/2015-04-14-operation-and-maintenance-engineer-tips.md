@@ -183,18 +183,6 @@ PS：博客就分享那么多，其他的博客需要您发现了。
 
 * [免费的编程中文书籍索引-GitHub](https://github.com/justjavac/free-programming-books-zh_CN)
 
-### 编辑者背景 ###
-***
-
-ID：Wentasy，英文名 Robin Wen，真实姓名是温国兵。目前就职于某创业公司，担任运维工程师一职，兼任 MySQL DBA。
-
-联系方式：dbarobinwen@gmail.com
-
-### 额外 ###
-***
-
-PS：为什么我上学那会没看到这篇文章呢？读者都太幸运了，哈哈。其他该说的话，都在我的博客。 [DBA@Robin](http://dbarobin.com/)
-
 –EOF–
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
