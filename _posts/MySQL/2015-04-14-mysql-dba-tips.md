@@ -161,18 +161,6 @@ tags:
 * [推荐 15 个有价值的 MySQL 教程网站](http://blog.jobbole.com/1093/)
 * [我的知乎回答](http://www.zhihu.com/people/wentasy/answers?order_by=vote_num)
 
-### 编辑者背景 ###
-***
-
-ID：Wentasy，英文名 Robin Wen，真实姓名是温国兵。目前就职于某创业公司，担任运维工程师一职，兼任 MySQL DBA。
-
-联系方式：dbarobinwen@gmail.com
-
-### 额外 ###
-***
-
-PS：为什么我上学那会没看到这篇文章呢？读者都太幸运了，哈哈。其他该说的话，都在我的博客。[DBA@Robin](http://dbarobin.com/)
-
 –EOF–
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
