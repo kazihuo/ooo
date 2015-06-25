@@ -7,7 +7,7 @@ permalink: /about/
 
 这里是 Wentasy 的个人站点。
 
-目前处于自由状态。
+目前就职于酷狗，担任 DBA。
 
 我曾经是 [CSDN 博客专家](http://blog.csdn.net/justdb) 、[DB2 中国社区专家](http://www.db2china.net/home/space.php?uid=159593) 和 [InfoQ 高效运维核心编辑](http://www.greatops.net/)。除此之外，我的 51CTO 博客是推荐博客。自命英文名：Robin Wen，可以叫我 Robin，当然，沾一点李彦宏前辈的喜气。喜欢一切简洁的东西，比如，此站点的所有文章采用 Markdown 编写，比如衷爱苹果系列产品，比如自己是一个微信重度使用者。
 
