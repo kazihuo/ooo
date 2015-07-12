@@ -87,7 +87,7 @@ for i in `cat mysql_slow.txt`
 do
   /usr/local/mysql/bin/mysql -uroot -p'XXX' -e "kill $i"
 done
-{% endhighlight %}`
+{% endhighlight %}
 
 当然也可以使用如下 SQL 拼接 kill 语句：
 
