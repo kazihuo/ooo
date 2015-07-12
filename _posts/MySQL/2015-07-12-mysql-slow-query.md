@@ -94,7 +94,7 @@ done
 {% highlight sql %}
 SELECT concat('kill ',id,';')
 FROM information_schema.processlist
-WHERE info like 'XXX';
+WHERE info LIKE 'XXX';
 {% endhighlight %}
 
 祝开心。
