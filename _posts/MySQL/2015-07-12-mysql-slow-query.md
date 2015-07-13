@@ -97,7 +97,7 @@ FROM information_schema.processlist
 WHERE info LIKE 'XXX';
 {% endhighlight %}
 
-祝开心。
+Enjoy!
 
 –EOF–
 
