@@ -9,6 +9,8 @@ permalink: /categories/
       {% for cat in site.categories %}
          {% if cat[0] == 'mysql' %}
          <a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">MySQL<span class="size"> {{ cat[1].size }}</span></a>
+         {% elsif cat[0] == 'nosql' %}
+         <a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">NoSQL<span class="size"> {{ cat[1].size }}</span></a>
          {% else %}
          <a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] | join: "/" | capitalize }}<span class="size"> {{ cat[1].size }}</span></a>
          {% endif %}
@@ -19,6 +21,8 @@ permalink: /categories/
    {% for cat in site.categories %}
       {% if cat[0] == 'mysql' %}
          <li id="{{ cat[0] }}">MySQL</li>
+      {% elsif cat[0] == 'nosql' %}
+         <li id="{{ cat[0] }}">NoSQL</li>
       {% else %}
          <li id="{{ cat[0] }}">{{ cat[0] | capitalize }}</li>
       {% endif %}
