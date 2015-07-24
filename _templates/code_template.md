@@ -18,6 +18,11 @@
 
 {% endhighlight %}
 
+# Cpp Code Template
+{% highlight cpp %}
+
+{% endhighlight %}
+
 # Href Template
 <a href="" target="_blank"></a>
 
