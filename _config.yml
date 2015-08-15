@@ -59,11 +59,23 @@ locales:
 
 ### Blogroll info, only name can shown on the page.
 Blogroll:
+    - name: DBA Notes
+      href: http://dbanotes.net
+      title: DBA Notes
+    - name: MacTalk
+      href: http://macshuo.com
+      title: MacTalk
+    - name: Taosay
+      href: http://www1.taosay.net
+      title: Taosay
+    - name: Yurii
+      href: http://www.luanxiang.org/blog
+      title: Yurii
     - name: DBA@DevOps
       href: http://blog.csdn.net/dba_waterbin
       title: DBA@DevOps
     - name: GreatOps
-      href: http://www.greatops.net/
+      href: http://www.greatops.net
       title: GreatOps
 
 ### Build settings.
