@@ -30,6 +30,10 @@
   margin-bottom: 0;
   text-align:left; 
   color: $grey-color;
+
+  @include media-query($on-laptop) {
+      font-size: 14px;
+  }  
 }
 
 .site-nav {
