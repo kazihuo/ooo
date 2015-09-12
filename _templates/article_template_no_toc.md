@@ -5,7 +5,7 @@ layout: post
 title: ""
 category: MySQL
 summary: ""
-tags: 
+tags:
 - MySQL
 ---
 
