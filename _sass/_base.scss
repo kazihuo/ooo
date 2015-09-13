@@ -119,7 +119,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: $spacing-unit + 17;
   margin-bottom: 1.25em;
   font-family: "Open Sans", "Helvetica", "Arial", "Hiragino Sans GB", "Noto Sans CJK SC", "Heiti SC", "Microsoft YaHei", "WenQuanYi Microhei", serif;
 }
