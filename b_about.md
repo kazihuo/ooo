@@ -38,7 +38,7 @@ Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_b
 可以通过电子邮件和我联系: dbarobinwen@gmail.com。如果 Gmail 哪天彻底不能访问，您可以通过如下两种方式获得我的墙内邮箱：
 
 {% highlight sql %}
-mysql -uroot -p -S /tmp/mysql_5173.sock -Ne "SELECT reverse('moc.qq@ysatnew');"
+mysql -uroot -p -S /tmp/mysql.sock -Ne "SELECT reverse('moc.qq@ysatnew');"
 {% endhighlight %}
 
 {% highlight bash %}
