@@ -28,7 +28,7 @@ tags:
 
 我们是幸运的，身处一个信息技术大爆发的时代。有趣的是，给这个时代带来深远影响的软件几乎都是那 1%（甚至远远低于 1%）最优秀的黑客所写。黑客这个词总给人一种神秘感。归根结底，之所以神秘，那是因为太稀缺。任何技术，只要你懂，在外人看来或许很神秘，在内行看来也就那么回事。这就是所谓的「外行看热闹，内行看门道」吧。
 
-提到黑客，一个不修边幅、邋里邋遢、愤世嫉俗、不合潮流、高傲自负、追求自由、质疑权威、聪明绝顶的形象浮现在我们的眼前。信息技术大爆发的时代，国外也好，国内也罢，都涌现一大批著名的黑客。比如 Richard Matthew Stallman、Dennis MacAlistair Ritchie、Kenneth Lane Thompson、Donald Ervin Knuth、Linus Benedict Torvalds、Eric Steven Raymond 等，再比如 goodwell、CoolFire、yuange、Frankie、PP、冰血封情、StyxFox、sunx、刺总、cos 等。毫不夸张地说，正是因为这些著名黑客（黑帽子、白帽子、灰帽子）的存在，才让我们如今的生活变得如此美好。
+提到黑客，一个不修边幅、邋里邋遢、愤世嫉俗、不合潮流、高傲自负、追求自由、质疑权威、聪明绝顶的形象浮现在我们的眼前。信息技术大爆发的时代，国外也好，国内也罢，都涌现一大批著名的黑客。比如 Richard Matthew Stallman、Dennis MacAlistair Ritchie、Kenneth Lane Thompson、Donald Ervin Knuth、Linus Benedict Torvalds、Eric Steven Raymond、Aaron Swartz 等，再比如 goodwell、CoolFire、yuange、Frankie、PP、冰血封情、StyxFox、sunx、刺总、cos 等。毫不夸张地说，正是因为这些著名黑客（黑帽子、白帽子、灰帽子）的存在，才让我们如今的生活变得如此美好。
 
 作者 Paul 给出了黑客价值观的核心原则：**分享、开放、民主、计算机的自由使用、进步**，并且提出了黑客行为必须包含三个特点：**好玩、高智商、探索精神**。之所以这本书取名为「黑客与画家」，那是因为作者认为：编程是一种艺术创作，黑客就是艺术家，开发软件与画家作画、雕塑家雕刻、建筑师设计房屋并没有本质不同。我们从精致漂亮的建筑和艺术品中可以体会到艺术之美，从优秀软件的代码中可以体验到技术之美。美的感知都是相通的。
 
