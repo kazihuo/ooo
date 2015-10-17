@@ -11,7 +11,7 @@ permalink: /about/
 
 我曾经是 [CSDN 博客](http://blog.csdn.net/justdb)专家、[DB2 中国社区](http://www.db2china.net/home/space.php?uid=159593)专家和 [InfoQ 高效运维](http://www.greatops.net/)核心编辑。自命英文名：Robin Wen，可以叫我 Robin。
 
-自由主义者，Google 重度使用者，Kindle 依赖者，一个敲键盘的，黑白和 Command 键盘（当然一个是弹，一个是码）。喜欢一切简洁的东西。
+自由主义者，Google 重度使用者，Kindle 依赖者，一个敲键盘的，黑白和 Command（当然一个是弹，一个是码）。喜欢一切简洁的东西。
 
 懂点音乐，喜欢钢琴曲、小提琴曲和大提琴曲。另外，听歌主要用虾米，偶尔用网易云音乐。另外，现在开始尝试 Apple Music。
 
