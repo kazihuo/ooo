@@ -37,3 +37,11 @@
 
 # HTML Comments Template.
 <!--  -->
+
+# Git reset.
+git reset --hard <commit_id>
+git push origin HEAD --force
+
+# Git delete branch.
+git branch -d the_local_branch
+git push origin :the_remote_branch
