@@ -7,6 +7,7 @@ description: Robin Wen, 自由主义者，爱好音乐和文学。这个站点�
 keywords: "Reading, Muisc, 阅读, 音乐, 钢琴, 文学, 互联网, 科技"
 url: "http://dbarobin.com" # The base hostname & protocol for your site
 locale: en_US
+encoding: UTF-8
 
 ### Personal info and site tools info.
 twitter_username: dbarobin
