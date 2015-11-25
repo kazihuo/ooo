@@ -73,12 +73,9 @@ Blogroll:
     - name: Yurii
       href: http://www.luanxiang.org/blog
       title: Yurii
-    - name: DBA@DevOps
+    - name: X7
       href: http://blog.csdn.net/dba_waterbin
-      title: DBA@DevOps
-    - name: GreatOps
-      href: http://www.greatops.net
-      title: GreatOps
+      title: X7
 
 ### Build settings.
 permalink: /:year/:month/:day/:title/
