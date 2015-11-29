@@ -21,3 +21,4 @@ Hi, I am Robin. Donate via WeChat, thanks.
 * fers\*\*\*(WeChat)
 * fanfan\*\*\*\*(WeChat)
 * spider\*\*(WeChat)
+* xinl\*\*\*\*\*(WeChat)
