@@ -18,6 +18,6 @@ Hi, I am Robin. Donate via WeChat, thanks.
 
 **Donate List:**
 
-* fers*** (WeChat)
-* fanfan**** (WeChat)
-* spider** (WeChat)
+* fers\*\*\*(WeChat)
+* fanfan\*\*\*\*(WeChat)
+* spider\*\*(WeChat)
