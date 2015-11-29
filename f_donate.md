@@ -6,4 +6,18 @@ permalink: /donate/
 ---
 
 Hi, I am Robin. Donate via WeChat, thanks.
-<img title="WeChat Donate" alt="WeChat Donate" src="/images/wechat-donate.jpg" style="height: 236px;width: 200px;" align="left" />
+
+<img title="WeChat Donate" alt="WeChat Donate" src="/images/wechat-donate-none-border.jpg" style="height: 186px;width: 155px;border-radius: 0;" align="left" />
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+***
+
+**Donate List:**
+
+* fers*** (WeChat)
+* fanfan**** (WeChat)
+* spider** (WeChat)
