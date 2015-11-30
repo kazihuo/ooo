@@ -17,6 +17,13 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/1829395?v=3&s=73'
     content: '&#x4F5C;&#x8005;&#x5199;&#x7684;&#x4E1C;&#x4E1C;&#x5F88;&#x8D5E;&#xFF0C;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#x662F;hexo&#x751F;&#x6210;&#x7684;&#x5427;&#xFF0C;&#x548B;&#x6CA1;&#x5F00;&#x542F;feed&#xFF1F;&#x597D;&#x60F3;&#x8BA2;&#x9605;&#x4E0B;~'
     date: 2015-11-30T02:04:11.426Z
+  - author:
+      type: full
+      displayName: JamesPan
+      url: 'https://github.com/JamesPan'
+      picture: 'https://avatars.githubusercontent.com/u/1175306?v=3&s=73'
+    content: '@sphenginx &#x76EE;&#x6D4B;&#x4E0D;&#x662F;hexo&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x76F4;&#x63A5;&#x7528;Jekyll&#x751F;&#x6210;&#x7684;&#x3002;'
+    date: 2015-11-30T11:40:45.020Z
 
 ---
 
