@@ -37,6 +37,8 @@ comments:
 
 
 
+
+
       * &#x535A;&#x5BA2;&#x7528;&#x7684; GitHub Pages&#xFF0C;&#x4F7F;&#x7528;
       Jekyll &#x751F;&#x6210;&#xFF0C;&#x800C;&#x4E0D;&#x662F; Hexo&#xFF1B;
 
@@ -45,10 +47,19 @@ comments:
 
 
 
+
+
       Sincerely,
 
       Robin
     date: 2015-11-30T11:46:33.290Z
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars.githubusercontent.com/u/3949252?v=3&s=73'
+    content: '@JamesPan You&apos;re right. :)'
+    date: 2015-11-30T11:47:21.264Z
 
 ---
 
