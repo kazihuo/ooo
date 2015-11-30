@@ -32,25 +32,14 @@ comments:
     content: >-
       @sphenginx
 
-
       &#x975E;&#x5E38;&#x611F;&#x8C22;&#x60A8;&#x7684;&#x8BA4;&#x53EF;&#x3002;
-
-
-
-
 
       * &#x535A;&#x5BA2;&#x7528;&#x7684; GitHub Pages&#xFF0C;&#x4F7F;&#x7528;
       Jekyll &#x751F;&#x6210;&#xFF0C;&#x800C;&#x4E0D;&#x662F; Hexo&#xFF1B;
-
       *
       &#x535A;&#x5BA2;&#x63D0;&#x4F9B;&#x4E86;&#x8BA2;&#x9605;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x5BFC;&#x822A;&#x680F;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#xFF0C;&#x5730;&#x5740;&#x662F;&#xFF1A;http://dbarobin.com/feed.xml
 
-
-
-
-
       Sincerely,
-
       Robin
     date: 2015-11-30T11:46:33.290Z
   - author:
