@@ -37,11 +37,15 @@ comments:
 
 
 
+
+
       * &#x535A;&#x5BA2;&#x7528;&#x7684; GitHub Pages&#xFF0C;&#x4F7F;&#x7528;
       Jekyll &#x751F;&#x6210;&#xFF0C;&#x800C;&#x4E0D;&#x662F; Hexo&#xFF1B;
 
       *
       &#x535A;&#x5BA2;&#x63D0;&#x4F9B;&#x4E86;&#x8BA2;&#x9605;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x5BFC;&#x822A;&#x680F;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#xFF0C;&#x5730;&#x5740;&#x662F;&#xFF1A;http://dbarobin.com/feed.xml
+
+
 
 
 
@@ -63,6 +67,16 @@ comments:
       picture: 'https://pbs.twimg.com/profile_images/657388618692976641/aOrzTJZL_bigger.png'
     content: '&#x5DF2;&#x8BA2;&#x9605;rss'
     date: 2015-12-05T05:15:22.682Z
+  - author:
+      type: github
+      displayName: wony-zheng
+      url: 'https://github.com/wony-zheng'
+      picture: 'https://avatars.githubusercontent.com/u/5218603?v=3&s=73'
+    content: >
+      &#x535A;&#x4E3B;&#x8BF4;&#x4E86;&#x534A;&#x5929;&#x4ED8;&#x8D39;&#x4E60;&#x60EF;&#xFF0C;&#x5BF9;&#x514D;&#x8D39;&#x6700;&#x8D35;&#x5E76;&#x6CA1;&#x6709;&#x5B9E;&#x8D28;&#x89E3;&#x7B54;&#xFF0C;&#x4EFF;&#x4F5B;&#x5982;&#x5B97;&#x6559;&#x4F20;&#x9053;&#x58EB;&#x81EA;&#x8BF4;&#x81EA;&#x8BDD;&#xFF0C;&#x66F4;&#x591A;&#x662F;&#x53D1;&#x6CC4;&#x60C5;&#x7EEA;&#x3002;
+
+      &#x5546;&#x4E1A;&#x793E;&#x4F1A;&#x8BB2;&#x81EA;&#x613F;&#x4EA4;&#x6362;&#xFF0C;&#x522B;&#x4EBA;&#x7ED9;&#x4F60;&#x4E1C;&#x897F;&#x5FC5;&#x8981;&#x6C42;&#x56DE;&#x62A5;&#x3002;&#x8FD9;&#x4E2A;&#x56DE;&#x62A5;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x91D1;&#x94B1;&#xFF0C;&#x66F4;&#x8C08;&#x4E0D;&#x4E0A;&#x6700;&#x8D35;&#x3002;
+    date: 2015-12-05T06:02:02.824Z
 
 ---
 
