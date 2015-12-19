@@ -20,8 +20,8 @@
 <meta name="keywords" content="{{ site.keywords }}">
 <meta property="og:title" content="DBA@Robin, MySQL DBA" />
 <meta property="og:type" content="Blog, Focus on Database." />
-<meta property="og:url" content="http://dbarobin.com/" />
-<meta property="og:image" content="http://dbarobin.com/images/wentasy.png" />
+<meta property="og:url" content="https://dbarobin.com/" />
+<meta property="og:image" content="https://dbarobin.com/images/wentasy.png" />
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
@@ -50,6 +50,15 @@ var _hmt = _hmt || [];
 </script>
 <noscript>Your browser doesn't support JavaScript or you have disabled JavaScript!</noscript>
 -->
+
+<!--
+Force using https.
+-->
+<script type="text/javascript">
+    var host = "dbarobin.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
 
 <div style="display:none">
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256776130'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256776130' type='text/javascript'%3E%3C/script%3E"));
