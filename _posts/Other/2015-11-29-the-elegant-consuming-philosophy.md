@@ -36,11 +36,13 @@ comments:
       &#x975E;&#x5E38;&#x611F;&#x8C22;&#x60A8;&#x7684;&#x8BA4;&#x53EF;&#x3002;
 
 
+
       * &#x535A;&#x5BA2;&#x7528;&#x7684; GitHub Pages&#xFF0C;&#x4F7F;&#x7528;
       Jekyll &#x751F;&#x6210;&#xFF0C;&#x800C;&#x4E0D;&#x662F; Hexo&#xFF1B;
 
       *
       &#x535A;&#x5BA2;&#x63D0;&#x4F9B;&#x4E86;&#x8BA2;&#x9605;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x5BFC;&#x822A;&#x680F;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#xFF0C;&#x5730;&#x5740;&#x662F;&#xFF1A;http://dbarobin.com/feed.xml
+
 
 
       Sincerely,
@@ -71,6 +73,13 @@ comments:
 
       &#x5546;&#x4E1A;&#x793E;&#x4F1A;&#x8BB2;&#x81EA;&#x613F;&#x4EA4;&#x6362;&#xFF0C;&#x522B;&#x4EBA;&#x7ED9;&#x4F60;&#x4E1C;&#x897F;&#x5FC5;&#x8981;&#x6C42;&#x56DE;&#x62A5;&#x3002;&#x8FD9;&#x4E2A;&#x56DE;&#x62A5;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x91D1;&#x94B1;&#xFF0C;&#x66F4;&#x8C08;&#x4E0D;&#x4E0A;&#x6700;&#x8D35;&#x3002;
     date: 2015-12-05T06:02:02.824Z
+  - author:
+      type: github
+      displayName: fengchao
+      url: 'https://github.com/fengchao'
+      picture: 'https://avatars.githubusercontent.com/u/1313849?v=3&s=73'
+    content: '&#x4E0D;&#x77E5;&#x9053; Free software &#x5728;&#x535A;&#x4E3B;&#x773C;&#x91CC;&#x662F;&#x81EA;&#x7531;&#x8F6F;&#x4EF6;&#x8FD8;&#x662F;&#x514D;&#x8D39;&#x8F6F;&#x4EF6;&#x3002;&#x6BCF;&#x6B21;&#x770B;&#x8FD9;&#x79CD;&#x6587;&#x7AE0;&#x90FD;&#x4F1A;&#x60F3;&#x8D77;&#x4E00;&#x53E5;&#x8BDD;&#xFF1A;&ldquo;&#x5728;&#x4E00;&#x4E2A;&#x7F3A;&#x5C11;&#x81EA;&#x7531;&#x8A00;&#x8BBA;&#x7684;&#x56FD;&#x5BB6;&#xFF0C;&#x6709;&#x591A;&#x5C11;&#x4EBA;&#x771F;&#x6B63;&#x7406;&#x89E3;&#x81EA;&#x7531;&#x8F6F;&#x4EF6;&#x7684;&#x610F;&#x4E49;&#xFF1F;&rdquo;'
+    date: 2015-12-19T10:47:18.806Z
 
 ---
 
