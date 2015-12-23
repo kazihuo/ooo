@@ -17,6 +17,13 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/2032390?v=3&s=73'
     content: '&#x5927;&#x795E;&#xFF0C;&#x57FA;&#x4E8E;mysql&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x505A;&#x7684;&#x5440;'
     date: 2015-12-23T06:19:30.042Z
+  - author:
+      type: full
+      displayName: leijian
+      url: 'https://github.com/leijian'
+      picture: 'https://avatars.githubusercontent.com/u/2032390?v=3&s=73'
+    content: '&#x5927;&#x795E;&#xFF0C;&#x6587;&#x7AE0;&#x662F;&#x57FA;&#x4E8E;mysql&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x5440;'
+    date: 2015-12-23T06:20:01.199Z
 
 ---
 
