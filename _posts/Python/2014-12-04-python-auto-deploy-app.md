@@ -5,7 +5,7 @@ layout: post
 title: "Python自动化打包业务和认证平台 V2.0-Release"
 category: python
 summary: "Python 自动化打包业务和认证平台，本机只需执行脚本，远程即可自动部署。脚本采用Python编写，远程调用使用Fabric实现。"
-tags: 
+tags:
 - Python
 - 自动化部署
 ---
@@ -81,9 +81,10 @@ tags:
 本软件包括两个目录，其中auto_deploy_app_v2为Linux版本。auto_deploy_app_windows为Windows版本。Linux版本包括两个Python脚本以及一个配置文件。Windows版本包括两个Python脚本以及两个配置文件。
 
 Linux目录结构如下：
-{% highlight bash %}
+
+``` bash
 	tree auto_deploy_app_v2
-{% endhighlight %}
+```
 
 > auto_deploy_app_v2
 > |\-\- auto_deploy_app_remote.py
@@ -95,9 +96,10 @@ Linux目录结构如下：
 其中，「auto_deploy_app_remote.py」是主执行脚本，用于显示帮助以及调用相应函数。「auto_deploy_app_v_final.py」是核心执行脚本，实现所有的相关功能。「config.conf」是脚本的配置文件。
 
 Windows版本目录结构如下：
-{% highlight bash %}
+
+``` bash
 	tree auto_deploy_app_windows
-{% endhighlight %}
+```
 
 > auto_deploy_app_windows
 > |\-\- auto_deploy_app_remote.py
@@ -124,14 +126,15 @@ Windows版本目录结构如下：
 ### 5.2 脚本帮助 ###
 
 我们通过如下命令可以获得该脚本的帮助。
-{% highlight bash %}
-	./auto_deploy_app_remote.py -h
-{% endhighlight %}
 
-{% highlight bash %}
+``` bash
+	./auto_deploy_app_remote.py -h
+```
+
+``` bash
 Auto deploy application to the remote web server. Write in Python.
  Version 1.0. By Robin Wen. Email:dbarobinwen@gmail.com
- 
+
  Usage auto_deploy_app.py [-hcustrakgdwp]
    [-h | --help] Prints this help and usage message
    [-p | --deploy-prepare] Deploy prepared. Run as root
@@ -146,7 +149,7 @@ Auto deploy application to the remote web server. Write in Python.
    [-d | --deploy-core-platform] Deploy core platform via mvn
    [-w | --deploy-auth-platform] Deploy auth platform via mvn
    [-x | --update-database-setting] Update the database setting
-{% endhighlight %}
+```
 
 在脚本名后加上「-h 或者 --help」表示打印帮助。
 同理，加上「-p | --deploy-prepare」表示部署准备，加上「-c | --svn-co」表示检出项目，加上「-u | --svn-update」表示更新项目，加上「-s | --shutdown-core」表示关闭业务平台，加上「-t | --startup-core」表示启动业务平台，加上「-r | --restart-core」表示重启业务平台，加上「-a | --shutdown-auth」表示关闭认证平台，加上「--startup-auth」表示启动认证平台，加上「-g | --restart-auth」表示重启认证平台，加上「-d | --deploy-core-platform」表示部署业务平台，加上「-w | --deploy-auth-platform」表示部署认证平台，加上[-x | --update-database-setting]表示修改数据库配置。
@@ -180,7 +183,8 @@ Auto deploy application to the remote web server. Write in Python.
 **主执行脚本**
 
 主执行脚本内容如下：
-{% highlight python %}
+
+``` python
 #!/usr/bin/env python
 #encoding:utf-8
 # Author: Robin Wen
@@ -240,7 +244,7 @@ def main(argv):
         if len(argv) == 0:
             usage()
             sys.exit()
-        
+
         # Receive the command line arguments. The execute the corresponding function.
         if sys.argv[1] == "-h" or sys.argv[1] == "--help":
             usage()
@@ -266,7 +270,7 @@ def main(argv):
         elif sys.argv[1] == "-d" or sys.argv[1] == "--deploy-core-platform":
             deploy_core_platform()
         elif sys.argv[1] == "-w" or sys.argv[1] == "--deploy-auth-platform":
-            deploy_auth_platform() 
+            deploy_auth_platform()
         elif sys.argv[1] == "-x" or sys.argv[1] == "--update-database-setting":
             update_database_setting()
         else:
@@ -274,7 +278,7 @@ def main(argv):
             print ''
             usage()
     except getopt.GetoptError, msg:
-        # If an error happens print the usage and exit with an error       
+        # If an error happens print the usage and exit with an error
         usage()
         sys.exit(errno.EIO)
 
@@ -329,7 +333,7 @@ def svn_update():
 
 # Shutdown the core platform via the stop.sh scripts function.
 def shutdown_core():
-    
+
     print green('Shutdown the core platform via the stop.sh scripts.')
     print 'Logs output to the '+log_path+'/shutdown_core.log'
 
@@ -459,14 +463,15 @@ def update_database_setting():
 # The entrance of program.
 if __name__=='__main__':
     main(sys.argv[1:])
-{% endhighlight %}
+```
 
 **核心执行脚本**
 
 方法和主执行脚本基本一致，相同的不赘述。核心执行脚本还提供getConfig()方法，用于读取配置文件。
 
 核心执行脚本内容如下：
-{% highlight python %}
+
+``` python
 #!/usr/bin/env python
 #encoding:utf-8
 # Author: Robin Wen
@@ -507,7 +512,7 @@ except importError:
 # Configuration file name.
 config_file='config.conf'
 
-# Get configuration from the Config 
+# Get configuration from the Config
 def getConfig(section, key):
     config = ConfigParser.ConfigParser()
     path = os.path.split(os.path.realpath(__file__))[0] + '/'+config_file
@@ -650,7 +655,7 @@ Revision: 1.0
 # Checkout the newarkstg repo via svn function.
 def svn_co():
     print green('Checkout the newarkstg repo via svn.')
-    
+
     # Create necessary directory
     run('mkdir -p '+svn_ns_dir+' 2>/dev/null >/dev/null')
 
@@ -675,7 +680,7 @@ def svn_update():
 # Shutdown the core platform via the stop.sh scripts function.
 def shutdown_core():
     print green('Shutdown the core platform via the stop.sh scripts.')
-    
+
     ret = run("ps -ef|grep newark-core-platform|grep -v grep|cut -c 9-15")
 
     if ret:
@@ -754,7 +759,7 @@ def startup_auth():
 # Restart the auth platform via the startup.sh scripts function.
 def restart_auth():
     print green('Restart the core platform via the restart.sh scripts.')
-    
+
     ret = run("ps -ef|grep cmms-auth|grep -v grep|cut -c 9-15")
 
     if ret:
@@ -839,7 +844,7 @@ def deploy_core_platform():
         # Print waiting info.
         print ''
         print red('Please wait the deploy process until it automatically exit...')
- 
+
         # Install the necessary jar.
 
         # Clear the core platform deploy log.
@@ -855,7 +860,7 @@ def deploy_core_platform():
         run('rm -rf '+svn_core_platform_target_path+'/'+'classes')
         run('rm -rf '+svn_core_platform_target_path+'/'+'maven-archiver')
         run('rm -rf '+svn_core_platform_target_path+'/'+'maven-status')
-    
+
     # Copy the packed core platform to the deploy directory.
     run('cp -rv '+svn_core_platform_target_path+'/'+'* '+core_platform_path+' 2>/dev/null >/dev/null')
 
@@ -880,7 +885,7 @@ def deploy_auth_platform():
 
     # Change the privileges of scripts. Make it executable.
     run("chmod +x "+auth_path+"/"+"*.sh")
-    
+
     # Update the bundels dir
     run("sed -i 's/^platform\.bundles\.root\.dir=.*$/platform\.bundles\.root\.dir="+auth_platform_bundles_path+"/g' "+auth_platform_config_path+"/osgi-container.properties")
 
@@ -949,7 +954,7 @@ def update_database_setting():
 
 def deploy_prepare():
     print green('Deploy prepared. Run as root.')
-    
+
     # Install jdk 1.8.25.
     print red('This program require jdk 1.8.25. Make sure jdk and tomcat work out before all of your operations.')
 
@@ -963,9 +968,9 @@ def deploy_prepare():
     run("source /etc/profile")
     run("rm -rf apache-maven-3.2.3-bin.zip apache-maven-3.2.3")
     run("mvn -version")
-    
+
     log_path='~/logs'
-    
+
     run('mkdir -p '+log_path+' 2>/dev/null >/dev/null')
 
     # Clear the install_requirement.log
@@ -977,13 +982,13 @@ def deploy_prepare():
 
     print green('Deploy prepared finished.')
 
-{% endhighlight %}
+```
 
 ### 5.4 配置文件概述 ###
 
 完整配置文件内容如下：
 
-{% highlight bash %}
+``` bash
 # Database config section.
 [database]
 # Database address.
@@ -1023,7 +1028,7 @@ svn_core_platform_dao_path=
 # Svn core platform target path.
 svn_core_platform_target_path=
 
-# SVN configuration section. 
+# SVN configuration section.
 [svn]
 svn_username=
 svn_password=
@@ -1078,7 +1083,7 @@ auth_platform_jar=
 core_jar=
 # Auth jar
 auth_jar=
-{% endhighlight %}
+```
 
 接下来，我逐一进行讲解。
 
@@ -1137,7 +1142,8 @@ auth_jar=
 ## 6.脚本使用 ##
 
 如果您是第一次使用该脚本打包，请依次执行如下命令：
-{% highlight bash %}
+
+``` bash
 # 第一步，编辑配置文件；
 vim config.conf
 
@@ -1164,13 +1170,14 @@ vim config.conf
 
 # 第九布，启动业务平台
 ./auto_deploy_app_remote.py -t
-{% endhighlight %}
+```
 
 
 **注：第八步可以使用「./auto_deploy_app_remote.py -g」代替，第九步可以使用「./auto_deploy_app_remote.py -r」代替。**
 
 如果您是使用该脚本更新项目，请依次执行如下命令：
-{% highlight bash %}
+
+``` bash
 # 第一步，如有需要，编辑配置文件；
 vim config.conf
 
@@ -1200,7 +1207,7 @@ vim config.conf
 
 # 第十布，启动业务平台
 ./auto_deploy_app_remote.py -t
-{% endhighlight %}
+```
 
 **注：第九步可以使用「./auto_deploy_app_remote.py -g」代替，第十步可以使用「./auto_deploy_app_remote.py -r」代替。**
 

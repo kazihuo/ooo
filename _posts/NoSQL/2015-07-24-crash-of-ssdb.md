@@ -41,7 +41,7 @@ SSDB 底层采用 Google 的 LevelDB，并支持 Redis 协议。一些用于支�
 
 173 服务器：
 
-{% highlight bash %}
+``` bash
 server:
  ip: xxx.xxx.xxx.173
  port: xxxx
@@ -57,11 +57,11 @@ replication:
  type: mirror
  ip: xxx.xxx.xxx.174
  port: xxxx
-{% endhighlight %}
+```
 
 174 服务器：
 
-{% highlight bash %}
+``` bash
 server:
  ip: xxx.xxx.xxx.174
  port: xxxx
@@ -73,7 +73,7 @@ replication:
  type: mirror
  ip: xxx.xxx.xxx.xxx.173
  port: xxxx
-{% endhighlight %}
+```
 
 经过调研以及讨论，决定尝试关闭压缩参数，以改善内存占用情况。首先去掉 174 的压缩参数，重启，一切正常。然后把 173 上的业务切换到 174。晚上，更改 173 的配置，去掉压缩参数。但重启之后，日志中发现了 copy_count，并且从 0 开始，这就已经出现了问题。然后立即把 173 中连接到 233 的配置去掉，重启后仍然从 0 开始 copy，不过是从 174 拷贝，这也是个问题。
 
@@ -86,7 +86,7 @@ replication:
 
 首先，搞明白 compression 参数是怎么读取的。在 **ssdb/options.cpp** 源文件中，有 load 函数，里面定义了 compression 参数，源码如下：
 
-{% highlight cpp %}
+``` cpp
 void Options::load(const Config &conf){
     cache_size = (size_t)conf.get_num("leveldb.cache_size");
     max_open_files = (size_t)conf.get_num("leveldb.max_open_files");
@@ -126,11 +126,11 @@ void Options::load(const Config &conf){
         }
     }
 }
-{% endhighlight %}
+```
 
 客户端和服务端建立连接，这是我们已知的，具体可以参考 slave.cpp 和 serv.cpp。由于我们的故障是发生 copy，因此可以定位到 **slave.cpp** 中的 proc_copy 函数，源码如下：
 
-{% highlight cpp %}
+``` cpp
 int Slave::proc_copy(const Binlog &log, const std::vector<Bytes> &req){
     switch(log.cmd()){
         case BinlogCommand::BEGIN:
@@ -153,11 +153,11 @@ int Slave::proc_copy(const Binlog &log, const std::vector<Bytes> &req){
     }
     return 0;
 }
-{% endhighlight %}
+```
 
 至于日志是怎么写入文件的，可以参考 **util/log.cpp**。在该源文件中，通过 rotate 函数轮询写入日志文件，源码如下：
 
-{% highlight cpp %}
+``` cpp
 void Logger::rotate(){
     fclose(fp);
     char newpath[PATH_MAX];
@@ -183,11 +183,11 @@ void Logger::rotate(){
     }
     stats.w_curr = 0;
 }
-{% endhighlight %}
+```
 
 接着我们可以查看 **util/config.cpp** 文件，其中的 load 函数负责加载参数文件中的配置。在 serv.cpp 中，可以看到和 slave 的交互，源码如下：
 
-{% highlight cpp %}
+``` cpp
 SSDBServer::SSDBServer(SSDB *ssdb, SSDB *meta, const Config &conf, NetworkServer *net){
     this->ssdb = (SSDBImpl *)ssdb;
     this->meta = meta;
@@ -255,7 +255,7 @@ SSDBServer::SSDBServer(SSDB *ssdb, SSDB *meta, const Config &conf, NetworkServer
         str_escape(this->kv_range_e).c_str()
         );
 }
-{% endhighlight %}
+```
 
 至此，我们可以知道，replication 中 slaveof 的配置跟顺序有关，比如 173 上有两个 slaveof，和 233 之间是 sync，174 之间是 mirror，意味着和 233 之间的 sync 比和 174 之间的 mirror 先生效。发生故障时，只有去 233 同步数据，而不是 174。正确的做法是，在同步完 233 的数据之后，应该断掉它们的关系，从而让 173 和 173 之间的双主关系稳健。
 

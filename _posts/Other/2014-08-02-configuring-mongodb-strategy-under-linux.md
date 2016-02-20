@@ -76,7 +76,7 @@ tags:
 
 然后，做配置MongoDB之前的准备工作；
 
-{% highlight bash %}
+``` bash
 # 创建MongoDB主目录
 mkdir /usr/local/mongodb/
 # 解压MongoDB包到MongoDB主目录
@@ -85,10 +85,10 @@ tar -xvf mongodb-linux-x86_64-2.6.3.tgz -C /usr/local/mongodb/
 mkdir /usr/local/mongodb/data/
 # 创建MongoDB日志目录，建议放到var目录下
 mkdir /usr/local/mongodb/log/
-{% endhighlight %}
+```
 
 接着，我们使用mongod命令启动MongoDB，再打开另一个终端，使用mongo命令连接到MongoDB；
-{% highlight bash %}
+``` bash
 # 进入MongoDB的bin目录，启动之
 cd /usr/local/mongodb/bin/
 ./mongod --dbpath=/usr/local/mongodb/data/ --logpath=/usr/local/mongodb/log/mongo.log
@@ -98,11 +98,11 @@ cd /usr/local/mongodb/bin/
 MongoDB shell version: 2.6.3
 connecting to: test
 >
-{% endhighlight %}
+```
 
 接着，配置环境变量；
 
-{% highlight bash %}
+``` bash
 # 查看当前路径
 pwd
 /usr/local/mongodb/bin
@@ -115,11 +115,11 @@ PATH=$PATH:$HOME/bin:/usr/local/mongodb/bin
 export PATH
 # 使配置生效
 source !$
-{% endhighlight %}
+```
 
 为了更方便的启动和关闭MongoDB，我们可以使用Shell写脚本，当然也可以加入到service中；
 
-{% highlight bash %}
+``` bash
 cp ssh mongodb
 vim mongodb
 cat mongodb
@@ -164,11 +164,11 @@ case "$1" in
     *)
         echo $"Usage: $0 {start|stop}"
 esac
-{% endhighlight %}
+```
 
 我们可以测试编写脚本的正确性；
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mongodb start
 about to fork child process, waiting until server is ready for connections.
 forked process: 1347
@@ -177,11 +177,11 @@ MongoDB is running background...
 
 /etc/init.d/mongodb stop
 Terminated
-{% endhighlight %}
+```
 
 当然，更好的方式是采用配置文件，把MongoDB需要的参数写入配置文件，然后在脚本中引用；
 
-{% highlight bash %}
+``` bash
 vim mongodb.conf
 cat mongodb.conf
 #代表端口号，如果不指定则默认为27017
@@ -192,11 +192,11 @@ dbpath=/usr/local/mongodb/data
 logpath=/usr/local/mongodb/log/mongo.log
 #日志文件自动累加
 logappend=true
-{% endhighlight %}
+```
 
 编写好配置文件后，我们需要修改启动脚本；
 
-{% highlight bash %}
+``` bash
 vim mongodb
 cat mongodb
 
@@ -234,21 +234,21 @@ case "$1" in
     *)
         echo $"Usage: $0 {start|stop}"
 esac
-{% endhighlight %}
+```
 
 编写完成后，再次测试脚本的正确性。
 
-{% highlight bash %}
+``` bash
 # /etc/init.d/mongodb start
 MongoDB is running background...
 
 # /etc/init.d/mongodb stop
 Terminated
-{% endhighlight %}
+```
 
 优化过的MongoDB启动脚本，如下：
 
-{% highlight bash %}
+``` bash
 #!/bin/bash
 # Author: Robin Wen
 # Date: 16:20:50 2014-12-12
@@ -342,7 +342,7 @@ case "$1" in
 esac
 
 exit $RETVAL
-{% endhighlight %}
+```
 
 ## 三 后记 ##
 

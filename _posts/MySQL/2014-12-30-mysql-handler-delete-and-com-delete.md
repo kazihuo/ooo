@@ -15,11 +15,11 @@ tags:
 
 首先看一个示例。
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql5173.sock -uroot -p
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 mysql> SELECT VERSION();
 +-----------+
 | VERSION() |
@@ -83,7 +83,7 @@ mysql> SHOW GLOBAL STATUS LIKE '%delete%';
 | Innodb_rows_deleted | 3     |
 +---------------------+-------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 翻了下官方文档，原来这两个变量有不同之处。
 

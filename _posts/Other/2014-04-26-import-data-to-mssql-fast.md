@@ -33,7 +33,7 @@ SQL Server快速导入数据，可以尝试的方法如下：**CTE、OpenRowSet/
 
 示例如下：
 
-{% highlight sql %}
+``` bash
 USE AdventureWorks2008R2;
 GO
 -- Define the CTE expression name and column list.
@@ -53,7 +53,7 @@ FROM Sales_CTE
 GROUP BY SalesYear, SalesPersonID
 ORDER BY SalesPersonID, SalesYear;
 GO
-{% endhighlight %}
+```
 
 ## 2.OpenRowSet/OpenDataSource ##
 
@@ -62,7 +62,7 @@ OpenRowSet和OpenDataSource都可以访问远程的数据库，但具体表现�
 
 示例如下：
 
-{% highlight sql %}
+``` bash
 --启用Ad Hoc Distributed Queries
 EXEC SP_CONFIGURE 'show advanced options',1
 RECONFIGURE
@@ -79,7 +79,7 @@ EXEC SP_CONFIGURE 'Ad Hoc Distributed Queries',0
 RECONFIGURE
 EXEC SP_CONFIGURE  'show advanced options',0
 RECONFIGURE
-{% endhighlight %}
+```
 
 ## 3.BULK INSERT ##
 
@@ -87,7 +87,7 @@ BULK INSERT允许用户以其指定的格式将数据文件导入到数据库表
 
 示例如下：
 
-{% highlight sql %}
+``` bash
 --定义导入目的和导入源
 BULK INSERT IMP_DATA.dbo.t_goods FROM 'E:/Report1.txt'
 WITH (
@@ -96,7 +96,7 @@ WITH (
   --行分隔符
   ROWTERMINATOR = '\n'
 )
-{% endhighlight %}
+```
 
 ## 4.bcp ##
 
@@ -105,7 +105,7 @@ bcp 实用工具可以在 Microsoft SQL Server 实例和用户指定格式的数
 
 示例如下：
 
-{% highlight sql %}
+``` bash
 --打开高级选项
 EXEC SP_CONFIGURE 'show advanced options', 1;
 RECONFIGURE;
@@ -115,7 +115,7 @@ RECONFIGURE;
 
 --指定导入目的和导入源
 EXEC master..xp_cmdshell 'BCP IMP_DATA.dbo.t_goods in E:\report.txt -c -T'
-{% endhighlight %}
+```
 
 ## 5.Shell ##
 

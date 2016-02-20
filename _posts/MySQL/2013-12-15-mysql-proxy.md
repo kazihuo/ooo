@@ -75,7 +75,7 @@ RHEL Server6.1 64位系统
 
 第二步，拷贝mysql-proxy-0.8.2-linux-glibc2.3-x86-64bit.tar.gz文件，解压文件。
 
-{% highlight bash %}
+``` bash
 scp mysql-proxy-0.8.2-linux-glibc2.3-x86-64bit.tar.gz 192.168.1.11:/opt
 tar -xvf mysql-proxy-0.8.2-linux-glibc2.3-x86-64bit.tar.gz -C /usr/local/
 cd /usr/local/
@@ -84,11 +84,11 @@ ll mysql-proxy/
 
 # 可以查看帮助
 ./mysql-proxy --help-all
-{% endhighlight %}
+```
 
 第三步，serv08主服务器创建用户，serv09从服务器创建用户，注意用户名和密码一致。
 
-{% highlight sql %}
+``` bash
 --serv08
 mysql> grant all on *.* to 'larry'@'192.168.1.%' identified by 'larry';
 Query OK, 0 rows affected (0.00 sec)
@@ -96,11 +96,11 @@ Query OK, 0 rows affected (0.00 sec)
 --serv09
 mysql> grant all on *.* to 'larry'@'192.168.1.%' identified by 'larry';
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 第四步，serv09从服务器更改设置，开启slave，查看slave状态。创建测试数据库，插入测试数据。
 
-{% highlight sql %}
+``` bash
 --serv09
 mysql> change master to  \
 master_host='192.168.1.18',  \
@@ -195,36 +195,36 @@ mysql> select * from larrydb.user;
 |    2 | wentasy  |
 +------+----------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第五步，为了查看现象，serv09从服务器关闭slave。
 
-{% highlight sql %}
+``` bash
 mysql> stop slave;
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第六步，serv 01查看是否有MySQL用户，修改rw-splitting.lua文件，修改如下几个参数。
 
-{% highlight bash %}
+``` bash
 id mysql
 vim rw-splitting.lua
 cat rw-splitting.lua | grep -e min_idle_connections -e max_idle_connections -e is_debug
     min_idle_connections = 1,--最小空闲连接数，为了测试，这里设置为1
     max_idle_connections = 1,--最大空闲连接数，为了测试，这里设置为1
     is_debug = true--是否打开Debug调试，为了查看调试信息，这里设置为true
-{% endhighlight %}
+```
 
 第七步，启动mysql-proxy。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysql-proxy start
 Starting mysql-proxy:
-{% endhighlight %}
+```
 
 先确定是否可以连接。
 
-{% highlight bash %}
+``` bash
 mysql -ularry -plarry -h 192.168.1.18
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 6
@@ -238,11 +238,11 @@ Your MySQL connection id is 8
 Server version: 5.5.29-log Source distribution
 mysql> exit
 Bye
-{% endhighlight %}
+```
 
 第八步，查看现象。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysql-proxy start
 Starting mysql-proxy:
 
@@ -330,11 +330,11 @@ mysql> insert into user values(3,'jsutdb');
     in_calc_found   : false
     COM_QUERY       : true
 Query OK, 1 row affected (0.00 sec)
-{% endhighlight %}
+```
 
 查看数据。
 
-{% highlight sql %}
+``` bash
 --serv08
 mysql> select * from user;
 +------+----------+
@@ -355,18 +355,18 @@ mysql> select * from larrydb.user;
 |    3 | jsutdb   |
 +------+----------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第九步，以上的测试虽有效果，但不是预期。排查原因，重新配置。发现proxy-read-only-backend-addresses和proxy-backend-addresses参数配置出错，proxy-read-only-backend-addresses应该配置成从服务器的IP地址，proxy-backend-addresses应该配置成主服务器的IP地址。
 
-{% highlight bash %}
+``` bash
 vim /etc/init.d/mysql-proxy
 cat /etc/init.d/mysql-proxy
-{% endhighlight %}
+```
 
 脚本内容如下：
 
-{% highlight bash %}
+``` bash
 #!/bin/sh
 #
 # mysql-proxy This script starts and stops the mysql-proxy daemon
@@ -456,11 +456,11 @@ case "$1" in
 esac
 
 exit $RETVAL
-{% endhighlight %}
+```
 
 第十步，测试。插入数据，可以发现连接的是主服务器，查询的时候也是主服务器。说明主服务器和从服务器均有读的的功能。
 
-{% highlight bash %}
+``` bash
 mysql -ularry -plarry -h 192.168.1.11
 
 [connect_server] 192.168.1.11:57891
@@ -520,11 +520,11 @@ mysql> select * from user;
     in_trans        : false
     in_calc_found   : false
     COM_QUERY       : true
-{% endhighlight %}
+```
 
 serv08主服务器查看数据，可以查询到，说明主服务器可以写。
 
-{% highlight sql %}
+``` bash
 mysql> select * from larrydb.user;
 +------+----------+
 | id   | name     |
@@ -534,11 +534,11 @@ mysql> select * from larrydb.user;
 |    5 | test     |
 +------+----------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 serv09从服务器查询数据，发现不可查询到，说明从服务器只读。
 
-{% highlight sql %}
+``` bash
 mysql> mysql> select * from larrydb.user;
 +------+----------+
 | id   | name     |
@@ -549,12 +549,12 @@ mysql> mysql> select * from larrydb.user;
 |    4 | db       |
 +------+----------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 
 第十一步，开启slave。发现数据同步成功。
 
-{% highlight sql %}
+``` bash
 mysql> start slave;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -569,7 +569,7 @@ mysql> select * from larrydb.user;
 |    5 | test     |
 +------+----------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 六 参考资料 ##
 <a href="http://www.itpub.net/thread-1184103-1-1.html" target="_blank"><img src="http://i.imgur.com/luz6LB6.png" title="ITPUB" height="16px" width="16px" border="0" alt="ITPUB" /></a> <br/>

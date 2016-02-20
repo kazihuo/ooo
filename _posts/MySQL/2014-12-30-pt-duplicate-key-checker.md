@@ -17,11 +17,11 @@ tags:
 
 在MySQL中是允许在同一个列上创建多个索引的，示例如下：
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql5173.sock -uroot -p
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> SELECT VERSION();
 +-----------+
 | VERSION() |
@@ -62,11 +62,11 @@ mysql> SELECT * FROM temp;
 |  3 | rose  | 123456   |   20 |
 +----+-------+----------+------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 接着在name列上创建两个相同的索引。
 
-{% highlight sql %}
+``` bash
 mysql> CREATE INDEX idx_test_temp_name ON test.temp(name);
 Query OK, 3 rows affected (0.07 sec)
 Records: 3  Duplicates: 0  Warnings: 0
@@ -74,20 +74,20 @@ Records: 3  Duplicates: 0  Warnings: 0
 mysql> CREATE INDEX idx_test_temp_name_new ON test.temp(name);
 Query OK, 3 rows affected (0.11 sec)
 Records: 3  Duplicates: 0  Warnings: 0
-{% endhighlight %}
+```
 
 我们使用`pt-duplicate-key-checker`工具检查是否有重复的索引。根据结果，我们可以看出重复的索引信息，包括索引定义，列的数据类型，以及修复建议。
 
-{% highlight bash %}
+``` bash
 pt-duplicate-key-checker --user=root \
 --password=xxxx \
 --host=localhost \
 --socket=/tmp/mysql5173.sock 
-{% endhighlight %}
+```
 
 输出结果。
 
-{% highlight sql %}
+``` bash
 # ########################################################################
 # test.temp                                                               
 # ########################################################################
@@ -108,32 +108,32 @@ ALTER TABLE `test`.`temp` DROP INDEX `idx_test_temp_name`;
 # Size Duplicate Indexes   189
 # Total Duplicate Indexes  1
 # Total Indexes            32
-{% endhighlight %}
+```
 
 我们根据修复建议，删除重复的索引。
 
-{% highlight sql %}
+``` bash
 mysql> ALTER TABLE `test`.`temp` DROP INDEX `idx_test_temp_name`;
 Query OK, 3 rows affected (0.13 sec)
 Records: 3  Duplicates: 0  Warnings: 0
-{% endhighlight %}
+```
 
 再次使用`pt-duplicate-key-checker`工具检查是否有重复的索引。根据输出结果，可以看出已经没有重复的索引了。
 
-{% highlight bash %}
+``` bash
 pt-duplicate-key-checker --user=root \
 --password=xxxx \
 --host=localhost \
 --socket=/tmp/mysql5173.sock 
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 # ########################################################################
 # Summary of indexes                                                      
 # ########################################################################
 
 # Total Indexes  31
-{% endhighlight %}
+```
 
 **总结**
 

@@ -46,49 +46,49 @@ tags:
 
 1.安装Development tools和ncurses-devel。
 
-{% highlight bash %}
+``` bash
 yum grouplist | grep Devel
 yum groupinstall "Development tools" -y
 yum install ncurses-devel -y
-{% endhighlight %}
+```
 
 2.解压。
 
-{% highlight bash %}
+``` bash
 tar -xf mysql-5.1.58.tar.gz -C /usr/src/
 cd /usr/src/mysql-5.1.58/
-{% endhighlight %}
+```
 
 3.配置。
 
-{% highlight bash %}
+``` bash
 ./configure --prefix=/usr/local/mysql \
 --with-extra-charsets=gbk,gb2312 \
 —with-plugins=partition,innobase,innodb_plugin,myisam
-{% endhighlight %}
+```
 
 4.编译。
 
-{% highlight bash %}
+``` bash
 make
-{% endhighlight %}
+```
 
 5.安装。
-{% highlight bash %}
+``` bash
 make install
-{% endhighlight %}
+```
 
 6.拷贝配置文件和执行脚本。
 
-{% highlight bash %}
+``` bash
 cp support-files/my-medium.cnf /etc/my.cnf
 cp support-files/mysql.server /etc/init.d/mysqld
 chmod a+x/etc/init.d/mysqld
-{% endhighlight %}
+```
 
 7.创建数据文件的存放路径，并修改my.cnf和mysqld文件。
 
-{% highlight bash %}
+``` bash
 mkdir /usr/local/mysql/data
 vim /etc/my.cnf
 grep "^datadir" /etc/my.cnf -n
@@ -97,25 +97,25 @@ vim /etc/init.d/mysqld
 sed "46,47p" /etc/init.d/mysqld -n
 basedir=/usr/local/mysql
 datadir=/usr/local/mysql/data
-{% endhighlight %}
+```
 
 8.新增用户，并加入MySQL的用户组。然后执行mysql_install_db脚本。
 
-{% highlight bash %}
+``` bash
 groupadd mysql
 useradd -g mysql mysql
 ./scripts/mysql_install_db --user=mysql
-{% endhighlight %}
+```
 
 9.启动MySQL，进入/usr/local/mysql/bin/，执行mysql，查询MySQL版本。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 cd /usr/local/mysql/bin/
 ./mysql
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> select version();
 +------------+
 | version() |
@@ -173,59 +173,59 @@ mysql> select * from t_log;
 1 row in set (0.00 sec)
 mysql> exit
 Bye
-{% endhighlight %}
+```
 
 10.修改mysql目录的所有者和组拥有者。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql
 chown -R mysql .
 chgrp -R mysql .
-{% endhighlight %}
+```
 
 第二步，安装Apache。
 
 1.解压。
 
-{% highlight bash %}
+``` bash
 tar -xf httpd-2.2.21.tar.gz -C /usr/src
-{% endhighlight %}
+```
 
 2.进入安装目录，检查配置。
 
-{% highlight bash %}
+``` bash
 cd /usr/src/httpd-2.2.21/
 ./configure--help
 ./configure--prefix=/usr/local/apache \
 --enable-modules=all \
 --enable-mods-shared=all--enable-so \
 --with-mpm=worker
-{% endhighlight %}
+```
 
 如果出现zlib not found，安装zlib-devel。
 
-{% highlight bash %}
+``` bash
 yum install zlib-devel -y
-{% endhighlight %}
+```
 
 3.编译。
 
-{% highlight bash %}
+``` bash
 make
-{% endhighlight %}
+```
 
 4.安装。
 
-{% highlight bash %}
+``` bash
 make install
-{% endhighlight %}
+```
 
 5.进入/usr/local/apache/bin/目录，启动。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/apache/bin/
 ./apachectl -k start
-{% endhighlight %}
+```
 
 如果出现如下问题：
 
@@ -236,21 +236,21 @@ cd /usr/local/apache/bin/
 
 如下：
 
-{% highlight bash %}
+``` bash
 vim ../conf/httpd.conf
 grep "ServerName" /usr/local/apache/conf/httpd.conf
 ServerName serv02.host.com
 echo "192.168.1.12 serv02.host.com" >> /etc/hosts
 tail -n1 /etc/hosts
 192.168.1.12 serv02.host.com
-{% endhighlight %}
+```
 
 再次启动，查看端口。
 
-{% highlight bash %}
+``` bash
 ./apachectl -k start
 netstat -langput | grep httpd
-{% endhighlight %}
+```
 
 6.测试。
 
@@ -260,20 +260,20 @@ netstat -langput | grep httpd
 
 1.解压。
 
-{% highlight bash %}
+``` bash
 tar -xf php-5.3.6.tar.bz2 -C /usr/src/
-{% endhighlight %}
+```
 
 2.进入/usr/src/php-5.3.6/目录，配置。
 
-{% highlight bash %}
+``` bash
 cd /usr/src/php-5.3.6/
 ./configure —help
 ./configure--prefix=/usr/local/php5 \
 --with-apxs2=/usr/local/apache/bin/apxs \
 --with-mysql-sock=/tmp/mysql.sock \
 --with-mysql=/usr/local/mysql/
-{% endhighlight %}
+```
 
 如果出现如下错误，安装libxml2。
 
@@ -281,9 +281,9 @@ cd /usr/src/php-5.3.6/
 > checking for xml2-config path...
 > configure: error: xml2-config not found.Please check your libxml2 installation.
 
-{% highlight bash %}
+``` bash
 yum install libxml2*-y
-{% endhighlight %}
+```
 
 如果出现如下文本，则证明配置成功。
 
@@ -296,44 +296,44 @@ yum install libxml2*-y
 
 3.编译。
 
-{% highlight bash %}
+``` bash
 make
-{% endhighlight %}
+```
 
 4.安装。
 
-{% highlight bash %}
+``` bash
 make install
-{% endhighlight %}
+```
 
 5.拷贝php.ini文件，修改httpd.conf文件。
 
-{% highlight bash %}
+``` bash
 cp php.ini-development /usr/local/php5/lib/php.ini
 grep -e "AddHandler" -e "AddType" /usr/local/apache/conf/httpd.conf
   AddHandler php5-script .php
   AddType text/html .php
-{% endhighlight %}
+```
 
 ## 三 测试 ##
 
 1.修改root用户密码，创建测试数据库和表。
 
-{% highlight sql %}
+``` bash
 ./mysql
 mysql> set password=password("helloworld");
 Query OK, 0 rows affected (0.00 sec)
 
 mysql> exit
 Bye
-{% endhighlight %}
+```
 
 修改密码成功后，重新登录。
-{% highlight bash %}
+``` bash
 ./mysql -uroot -phelloworld
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> use larry
 Database changed
 mysql> show tables;
@@ -354,37 +354,37 @@ mysql> select * from t_user;
 |  3 |wgb      |
 +----+----------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 2.新建测试php文件。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/apache/htdocs/
 vim index.php
 cat index.php
-{% endhighlight %}
+```
 
 脚本内容如下：
 
-{% highlight php %}
+``` php
 <?php
        phpinfo();
 ?>
-{% endhighlight %}
+```
 
 新建测试LAMP整合脚本。
 
-{% highlight bash %}
+``` bash
 vim user_list.php
 pwd
 /usr/local/apache/htdocs
 vim user_list.php
 cat user_list.php
-{% endhighlight %}
+```
 
 脚本内容如下：
 
-{% highlight php %}
+``` php
 <?php
        $conn=mysql_connect("localhost","root", "helloworld");
        mysql_select_db("larry",$conn);
@@ -395,7 +395,7 @@ cat user_list.php
        }
        mysql_close();
 ?>
-{% endhighlight %}
+```
 
 3.浏览器输入http://192.168.1.12/index.php，如果出现php相关的配置信息，则证明LAMP环境配置成功。输入http://192.168.1.12/user_list.php，如果能出现以下的信息，则证明PHP、MySQL、Apache整合成功。
 

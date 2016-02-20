@@ -57,24 +57,24 @@ tags:
 
 第一步，准备文件并拷贝文件
 
-{% highlight bash %}
+``` bash
 ll percona-xtrabackup-2.0.2-461.rhel6.x86_64.rpm
 scp percona-xtrabackup-2.0.2-461.rhel6.x86_64.rpm 192.168.1.11:/opt
-{% endhighlight %}
+```
 
 第二步，该软件需要依赖MySQL客户端，所以使用yum安装。注意，此处安装的只是MySQL的客户端，和本身使用源码安装的MySQL不冲突。
 
-{% highlight bash %}
+``` bash
 yum install percona-xtrabackup-2.0.2-461.rhel6.x86_64.rpm -y
 Installed:
   percona-xtrabackup.x86_64 0:2.0.2-461.rhel6
 Dependency Installed:
   mysql.x86_64 0:5.1.52-1.el6_0.1
-{% endhighlight %}
+```
 
 第三步，初始化备份。
 
-{% highlight bash %}
+``` bash
 innobackupex --user=root --password=123456 /databackup/
 InnoDB Backup Utility v1.5.1-xtrabackup; Copyright 2003, 2009 Innobase Oy
 and Percona Inc 2009-2012.  All Rights Reserved.
@@ -83,11 +83,11 @@ and Percona Inc 2009-2012.  All Rights Reserved.
 innobackupex: Backup created in directory '/databackup/2013-09-10_21-49-44'
 innobackupex: MySQL binlog position: filename 'mysql-bin.000001', position 7312
 130910 21:50:03  innobackupex: completed OK!
-{% endhighlight %}
+```
 
 第四步，这样的备份文件无法使用，我们需要做统一检查。
 
-{% highlight bash %}
+``` bash
 ls
 2013-09-10_21-49-44
 
@@ -101,18 +101,18 @@ xtrabackup: starting shutdown with innodb_fast_shutdown = 1
 130910 21:51:52  InnoDB: Starting shutdown...
 130910 21:51:56  InnoDB: Shutdown completed; log sequence number 2098188
 130910 21:51:56  innobackupex: completed OK!
-{% endhighlight %}
+```
 
 第五步，模拟数据丢失。
 
-{% highlight bash %}
+``` bash
 rm -rf /usr/local/mysql/data/*
 ll /usr/local/mysql/data/
-{% endhighlight %}
+```
 
 第六步，恢复数据。
 
-{% highlight bash %}
+``` bash
 innobackupex --copy-back /databackup/2013-09-10_21-49-44/
 InnoDB Backup Utility v1.5.1-xtrabackup; Copyright 2003, 2009 Innobase Oy
 and Percona Inc 2009-2012.  All Rights Reserved.
@@ -128,26 +128,26 @@ innobackupex: back to original InnoDB log directory '/usr/local/mysql/data'
 innobackupex: Finished copying back files.
 
 130910 22:02:29  innobackupex: completed OK!
-{% endhighlight %}
+```
 
 第七步，重启mysql服务，发现报错，pkill掉，然后启动一切正常。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld restart
  ERROR! MySQL server PID file could not be found!
 Starting MySQL. ERROR! The server quit without updating PID file 
 (/usr/local/mysql/data/serv01.host.com.pid).
-{% endhighlight %}
+```
 
 查看恢复的数据目录，拥有者和所属组不是mysql用户，我们更改拥有者和所属组。
-{% highlight bash %}
+``` bash
 ll /usr/local/mysql/data/
 chown mysql.mysql /usr/local/mysql/data/ -R
-{% endhighlight %}
+```
 
 再次启动，仍然失败，我们杀掉进程，再次启动mysql，正常。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld restart
  ERROR! MySQL server PID file could not be found!
 Starting MySQL.. ERROR! The server quit without updating PID file 
@@ -158,11 +158,11 @@ pkill -9 mysql
 
 /etc/init.d/mysqld start
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
 登录到MySQL。
 
-{% highlight sql %}
+``` bash
 mysql -uroot -p123456
 Server version: 5.5.29-log Source distribution
 mysql> show databases;
@@ -180,7 +180,7 @@ mysql> show databases;
 +--------------------+
 8 rows in set (0.00 sec)
 
-{% endhighlight %}
+```
 
 ## 五 参考资料 ##
 

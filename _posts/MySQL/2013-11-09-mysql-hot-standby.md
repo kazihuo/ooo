@@ -38,39 +38,39 @@ tags:
 
 第一步，移除LVM快照。（**如果没有创建，忽略此步**）
 
-{% highlight bash %}
+``` bash
 lvremove /dev/data/smydata
 Do you really want to remove active logical volume smydata? [y/n]: y
   Logical volume "smydata" successfully removed
-{% endhighlight %}
+```
 
 第二步，设置MySQL的密码。
 
-{% highlight sql %}
+``` bash
 mysql> set password=password("123456");
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 第三步，查看MySQL是否启动。因为是热备，所以要求MySQL服务启动。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld status
  SUCCESS! MySQL running (2664)
-{% endhighlight %}
+```
 
 
 第四步，导出单个数据库。
 
-{% highlight bash %}
+``` bash
 cd /databackup/
 
 # 本质是导出为SQL
 mysqldump -uroot -p123456 --database larrydb
-{% endhighlight %}
+```
 
 脚本内容如下：
 
-{% highlight sql %}
+``` bash
 -- MySQL dump 10.13  Distrib 5.5.29, for Linux (x86_64)
 --
 -- Host: localhost    Database: larrydb
@@ -154,17 +154,17 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
   Dump completed on 2013-09-10 18:56:06
-{% endhighlight %}
+```
 
 将输出结果保存到文件中。
 
-{% highlight bash %}
+``` bash
 mysqldump -uroot -p123456 --database larrydb > larrydb.sql
-{% endhighlight %}
+```
 
 第五步，模拟数据丢失，进入MySQL，删除数据库。
 
-{% highlight sql %}
+``` bash
 mysql -uroot -p123456
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 4
@@ -206,17 +206,17 @@ mysql> show databases;
 
 mysql> exit
 Bye
-{% endhighlight %}
+```
 [root@serv01 data]#
 
 第六步，导入数据。
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p123456 <larrydb.sql
-{% endhighlight %}
+```
 
 第七步，登录MySQL，查看数据是否正常。
-{% highlight sql %}
+``` bash
 mysql -uroot -p123456
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 6
@@ -257,13 +257,13 @@ mysql> select * from stu;
 |    2 | larry02 |    2 |
 +------+---------+------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 **对多个库进行备份**
 
 第一步，查看有哪些数据库。
 
-{% highlight sql %}
+``` bash
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -303,18 +303,18 @@ mysql> select * from country;
 |  60 | 魏国    | 洛阳     |
 +-----+---------+----------+
 6 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第二步，备份多个库。
 
-{% highlight bash %}
+``` bash
 mysqldump -uroot -p123456 --databases larrydb game > larrydb_game.sql
 ll larrydb_game.sql
-{% endhighlight %}
+```
 
 第三步，模拟数据丢失。
 
-{% highlight sql %}
+``` bash
 mysql> drop database game;
 Query OK, 3 rows affected (0.01 sec)
 
@@ -335,17 +335,17 @@ Empty set (0.00 sec)
 
 mysql> drop database crm;
 Query OK, 1 row affected (0.00 sec)
-{% endhighlight %}
+```
 
 第四步，恢复数据。
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p123456 < larrydb_game.sql
-{% endhighlight %}
+```
 
 第五步，查看数据是否正常。
 
-{% highlight sql %}
+``` bash
 mysql -uroot -p123456
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 9
@@ -391,11 +391,11 @@ mysql> select * from class;
 |    2 | oracle |
 +------+--------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 **备份所有的库**
 
-{% highlight bash %}
+``` bash
 mysqldump --help | grep all-database
 OR     mysqldump [OPTIONS] --all-databases [OPTIONS]
   -A, --all-databases Dump all the databases. This will be same as --databases
@@ -406,20 +406,20 @@ all-databases                     FALSE
 mysqldump -uroot -p123456 --all-databases > all_databases.sql
 
 ll all_databases.sql -h
-{% endhighlight %}
+```
 
 **备份某张表或者某几张表**
 
 第一步，备份某张表和某几张表
 
-{% highlight bash %}
+``` bash
 mysqldump game hero country -uroot -p123456 > game_hero_country.sql
 ll game_hero_country.sql
-{% endhighlight %}
+```
 
 第二步，模拟数据丢失。
 
-{% highlight sql %}
+``` bash
 mysql> use game;
 Database changed
 mysql> show tables;
@@ -437,11 +437,11 @@ Query OK, 0 rows affected (0.00 sec)
 
 mysql> drop table country;
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 第三步，查看数据是否正常。
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p123456 --database game < game_hero_country.sql
 
 mysql -uroot -p123456 -e "select * from game.country"
@@ -455,7 +455,7 @@ mysql -uroot -p123456 -e "select * from game.country"
 |  50 | beisong | kaifeng  |
 |  60 | 魏国    | 洛阳     |
 +-----+---------+----------+
-{% endhighlight %}
+```
 
 –EOF–
 

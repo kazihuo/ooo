@@ -39,7 +39,7 @@ tags:
 
 查询语句未指定删选条件，语句如下：
 
-{% highlight sql %}
+``` bash
 --得到流水，因数据敏感问题，已将字段使用’xx’代替。
 IF EXISTS (SELECT *
            FROM   tempdb..sysobjects
@@ -63,7 +63,7 @@ IF NOT EXISTS (SELECT *
               AND tsvr.xx = bsl.xx
               AND tsvr.xx = bsl.xx
               AND bsl.xx > 0;
-{% endhighlight %}
+```
 
 ## 总结 ##
 

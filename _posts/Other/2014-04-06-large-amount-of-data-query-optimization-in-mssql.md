@@ -27,11 +27,11 @@ tags:
 ## 问题描述 ##
 
 生产库中一张表的数据10亿级别，另一张表数据100亿级别，还有其他表的数据也是相当地庞大。入职之前不知道这些表有那么大的数据量，于是习惯了使用count(*)来统计表的记录数。但这一执行就不得了，跑了30多分钟都没出结果，最后只有取消查询。后来采取了另一种办法查询记录数。首先说明下解决的办法，使用如下SQL：
-{% highlight sql %}
+``` bash
 SELECT object_name(id) as TableName,indid,rows,rowcnt
 FROM sys.sysindexes WHERE id = object_id('TableName')
 and indid in (0,1);
-{% endhighlight %}
+```
 
 ## 问题模拟 ##
 
@@ -40,7 +40,7 @@ and indid in (0,1);
 我们做模拟之前首先要得测试数据。所以我创建一个了测试表，并且插入测试数据。这里插入1亿条数据。
 创建测试表的语句如下：
 
-{% highlight sql %}
+``` bash
 DROP TABLE count_Test;
 CREATE TABLE count_Test
 (
@@ -48,11 +48,11 @@ CREATE TABLE count_Test
        name VARCHAR(20),
        phoneNo VARCHAR(11)
 );
-{% endhighlight %}
+```
 
 由于插入大量数据，我们肯定不能手动来。于是我写了一个存储过程，插入1亿条数据。为了模拟出数据的复杂性，数据我采用随机字符串的形式。插入测试数据的存储过程如下：
 
-{% highlight sql %}
+``` bash
 CREATE PROCEDURE pro_Count_Test
 AS
 BEGIN
@@ -84,18 +84,18 @@ BEGIN
     SET STATISTICS IO OFF ;
     SET STATISTICS TIME OFF;
 END
-{% endhighlight %}
+```
 
 接着我们执行此存储过程，插入测试数据。SQL Server Management Studio在输出窗口的右下角记录了操作的时间。为了更直观，我们手动写了个记录时间的语句，如下：
 
-{% highlight sql %}
+``` bash
 DECLARE @d datetime
 SET @d=getdate()
 print '开始执行存储过程...'
 EXEC pro_Count_Test;
 
 SELECT [存储过程执行花费时间(毫秒)]=datediff(ms,@d,getdate())
-{% endhighlight %}
+```
 
 好了，等待47分29秒，数据插入完毕，插入数据的统计信息如图一，占用数据空间如图二，我们开始测试count(*)和sysindexes在效率上的差别。
 
@@ -107,12 +107,12 @@ SELECT [存储过程执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 在没有任何索引的情况下使用count(*)测试，语句如下：
 
-{% highlight sql %}
+``` bash
 DECLARE @d datetime
 SET @d=getdate()
 SELECT COUNT(*) FROM count_Test;
 SELECT [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
-{% endhighlight %}
+```
 
 测试时内存使用率一度飙到96%，可见效率是极低的。测试结果用时1分42秒，如图三，我们查看此时的执行计划，如图四。可以清晰地看到此时走的是全表扫描，并且绝大多数的开销都花销在这上面。
 
@@ -124,14 +124,14 @@ SELECT [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 在没有任何索引的情况下使用sysindexes测试，语句如下：
 
-{% highlight sql %}
+``` bash
 DECLARE @d datetime
 SET @d=getdate()
 SELECT object_name(id) as TableName,indid,rows,rowcnt
 FROM sys.sysindexes WHERE id = object_id('count_Test')
 and indid in(0,1);
 SELECT [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
-{% endhighlight %}
+```
 
 测试结果用时450毫秒，如图五。我们查看此时的执行计划，如图六。可以看到此时走的是聚集索引扫描，并且全部的开销都在此。
 
@@ -143,9 +143,9 @@ SELECT [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 在没有索引的情况下测试完毕，我们开始测试有索引的情况。首先，我们在ID列上建立普通索引。语句如下：
 
-{% highlight sql %}
+``` bash
 CREATE INDEX idx_nor_count_test_id ON count_Test(id);
-{% endhighlight %}
+```
 
 建立普通索引时内存使用率、CPU利用率都相当地高，一读达到97%。创建普通索引用时34分58秒，数据文件磁盘占用空间为6.71G (7046208K),日志文件无变化。执行计划如图七：
 
@@ -164,10 +164,10 @@ CREATE INDEX idx_nor_count_test_id ON count_Test(id);
 
 普通索引测试完毕，现在我们测试聚集索引。删除普通索引，在id列上建立聚集索引，语句如下：
 
-{% highlight sql %}
+``` bash
 DROP INDEX idx_nor_count_test_id ON count_Test;
 CREATE CLUSTERED INDEX idx_clu_count_test_id ON count_Test(id);
-{% endhighlight %}
+```
 
 创建聚集索引用时25分53秒。数据文件占用9.38G（9839680K）。
 
@@ -183,10 +183,10 @@ CREATE CLUSTERED INDEX idx_clu_count_test_id ON count_Test(id);
 
 聚集索引测试完毕，现在我们开始测试非聚集索引。删除聚集索引，建立非聚集索引，语句如下：
 
-{% highlight sql %}
+``` bash
 DROP INDEX idx_clu_count_test_id ON count_Test.id;
 CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
-{% endhighlight %}
+```
 
 删除聚集索引用时16分37秒。创建非聚集索引用时时40分20秒，数据文件占用空间9.38G （9839680K）。
 
@@ -202,11 +202,11 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 接着我们做一个组合测试，包括有普通索引和聚集索引的情况、有普通索引和非聚集索引的情况、有普通索引、聚集索引和非聚集索引的情况。首先测试有普通索引和聚集索引的情况，我们首先删除非聚集索引，然后建立普通索引和聚集索引，语句如下：
 
-{% highlight sql %}
+``` bash
 DROP INDEX idx_nonclu_count_test ON count_Test.id;
 CREATE INDEX idx_nor_count_test_id ON count_Test(id);
 CREATE CLUSTERED INDEX idx_clu_count_test_id ON count_Test(id);
-{% endhighlight %}
+```
 
 删除用时1秒，空间不变。创建聚集索引和普通索引索引用时1:57:27，数据文件占用空间12.9G （13541440 ）。
 
@@ -222,10 +222,10 @@ CREATE CLUSTERED INDEX idx_clu_count_test_id ON count_Test(id);
 
 接着测试有普通索引和非聚集索引的情况，我们删除聚集索引，建立非聚集索引，语句如下：
 
-{% highlight sql %}
+``` bash
 DROP INDEX idx_clu_count_test_id ON count_Test.id;
 CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
-{% endhighlight %}
+```
 
 删除普通索引用时1:23:10，创建非聚集索引用时6分50秒，数据文件空间占用12.9G。
 
@@ -241,9 +241,9 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 最后，测试有普通索引、聚集索引和非聚集索引的情况。我们创建普通索引，语句如下：
 
-{% highlight sql %}
+``` bash
 CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
-{% endhighlight %}
+```
 
 创建普通索引用时1:11:21，数据文件占用空间16.3G（17116224KB）。
 

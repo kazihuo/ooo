@@ -38,9 +38,9 @@ A 项目采集其它项目生成的数据，数据保存一定时间，并且不
 
 程序中使用了如下设置：
 
-{% highlight lua %}
+``` lua
 set_keepalive(5000, 20)
-{% endhighlight %}
+```
 
 其中第一个参数表示 max_idle_timeout，第二个参数表示 pool_size。这个方法是为每个 Nginx 工作进程设置的。也就是说，最终建立的连接计算公式如下：
 
@@ -96,7 +96,7 @@ Twemproxy 的代码组成如下：事件处理、多种 Hash 函数、协议、�
 
 fnv1a_64 Hash 算法的实现，我们可以用如下 Python 代码（来自 [ning](https://github.com/idning)）模拟：
 
-{% highlight python %}
+``` python
 def hash_fnv1a_64(s):
     UINT32_MAX=2**32
     FNV_64_INIT = 0xcbf29ce484222325 % UINT32_MAX
@@ -107,7 +107,7 @@ def hash_fnv1a_64(s):
         hval = hval ^ ord(c)
         hval = (hval * FNV_64_PRIME) % UINT32_MAX
     return hval
-{% endhighlight %}
+```
 
 Key 重复率越高，根据一致性函数处理后，转发到相同机器的概率就会越高。
 

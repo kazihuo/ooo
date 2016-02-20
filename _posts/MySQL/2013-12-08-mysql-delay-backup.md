@@ -71,7 +71,7 @@ RHEL Server6.1 64位系统
 
 第一步，搭建环境。修改配置文件，注意每台的server-id不一致。
 
-{% highlight bash %}
+``` bash
 # serv01
 cat /etc/my.cnf | grep server-id
 server-id = 1
@@ -92,11 +92,11 @@ server-id = 3
 #server-id = 2
 /etc/init.d/mysqld start
 Starting MySQL SUCCESS!
-{% endhighlight %}
+```
 
 第二步，serv01、serv08、serv09清空日志。
 
-{% highlight sql %}
+``` bash
 --serv01
 mysql> show binary logs;
 +------------------+-----------+
@@ -148,19 +148,19 @@ mysql> show binary logs;
 | mysql-bin.000001 | 107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 第三步，主服务器serv01创建授权用户。
 
-{% highlight sql %}
+``` bash
 mysql> grant replication client, \
 replication slave on *.* to 'larry'@'192.168.1.%' \
 identified by 'larry';
-{% endhighlight %}
+```
 
 第四步，serv08修改master设置，开启slave，查看slave状态。
 
-{% highlight sql %}
+``` bash
 mysql> change master to
     -> master_host='192.168.1.11',
     -> master_user='larry',
@@ -219,11 +219,11 @@ Master_SSL_Verify_Server_Cert: No
 
 ERROR:
 No query specified
-{% endhighlight %}
+```
 
 第五步，serv09延时服务器修改master状态，开启slave，查看slave状态。
 
-{% highlight sql %}
+``` bash
 mysql> change master to \
 master_host='192.168.1.11', \
 master_user='larry', \
@@ -282,11 +282,11 @@ Master_SSL_Verify_Server_Cert: No
 
 ERROR:
 No query specified
-{% endhighlight %}
+```
 
 第六步，在没有使用延时服务器时，serv01创建测试数据库，可以看到同步服务器serv08和延时服务器serv09已经同步了。
 
-{% highlight sql %}
+``` bash
 --serv01
 mysql> create database justdb;
 Query OK, 1 row affected (0.01 sec)
@@ -334,38 +334,38 @@ mysql> show databases;
 | test |
 +--------------------+
 7 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 
 第七步，拷贝percona-toolkit-2.1.7-1.noarch.rpm。
 
-{% highlight bash %}
+``` bash
 scp percona-toolkit-2.1.7-1.noarch.rpm 192.168.1.11:/opt
-{% endhighlight %}
+```
 
 
 第八步，主服务器中通过yum安装percona-toolkit-2.1.7-1.noarch.rpm。
 
-{% highlight bash %}
+``` bash
 yum install percona-toolkit-2.1.7-1.noarch.rpm -y
-{% endhighlight %}
+```
 
 第九步，使用pt-slave-delay工具进行延时设置。可以先查看帮助。
 
-{% highlight bash %}
+``` bash
 pt-slave-delay --help
-{% endhighlight %}
+```
 
 第十步，serv09延时服务器中创建授权用户
 
-{% highlight sql %}
+``` bash
 mysql> grant all on *.* to 'rep'@'192.168.1.%' identified by 'larry';
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 第十一步，实现功能。
 
-{% highlight bash %}
+``` bash
 pt-slave-delay --user='rep' \
 --password='larry' \
 --delay=3m \
@@ -375,7 +375,7 @@ pt-slave-delay --user='rep' \
 2013-10-06T19:43:30 slave running 0 seconds behind
 2013-10-06T19:43:30 STOP SLAVE until 2013-10-06T19:46:30
 at master position mysql-bin.000001/199
-{% endhighlight %}
+```
 
 **命令解释**
 
@@ -389,7 +389,7 @@ at master position mysql-bin.000001/199
 
 第十二步，测试，主服务器serv01创建测试数据库，可以发现同步服务器立马更新，而延时同步服务器要等3分钟之后才更新。
 
-{% highlight sql %}
+``` bash
 --serv01
 mysql> use justdb;
 Database changed
@@ -411,11 +411,11 @@ Query OK, 1 row affected (0.00 sec)
 --serv09
 mysql> select * from justdb.test;
 ERROR 1146 (42S02): Table 'justdb.test' doesn't exist
-{% endhighlight %}
+```
 
 三分钟过后查看延时服务器已经同步成功。
 
-{% highlight bash %}
+``` bash
 pt-slave-delay --user='rep' \
 --password='larry' \
 --delay=3m \
@@ -519,11 +519,11 @@ at master position mysql-bin.000001/492**
 2013-10-06T20:13:10 slave stopped at master position mysql-bin.000001/492
 2013-10-06T20:13:30 slave stopped at master position mysql-bin.000001/492
 **2013-10-06T20:13:30 Setting slave to run normally**
-{% endhighlight %}
+```
 
 延时服务器登录查看。
 
-{% highlight sql %}
+``` bash
 mysql> select * from justdb.test;
 +------+
 | id |
@@ -531,11 +531,11 @@ mysql> select * from justdb.test;
 | 1 |
 +------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 四 附延时备份脚本 ##
 
-{% highlight bash %}
+``` bash
 #!/bin/bash
 #
 # chkconfig: - 88 12
@@ -584,7 +584,7 @@ case "$1" in
         echo "Usage: $0 {start|stop|restart}"
         exit 1
 esac
-{% endhighlight %}
+```
 
 ## 五 资源下载 ##
 

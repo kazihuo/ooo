@@ -83,7 +83,7 @@ So Simple Theme 默认提供的字体太大，于是我揣摩修改字体。但�
 
 默认的 BlockQuote 样式很丑，看着很难受。于是我根据 GitHub 提供的默认 BlockQuote CSS 样式修改，比如修改成这样：
 
-{% highlight css %}
+``` css
 // Blockquotes
 // --------------------------------------------------
 
@@ -95,7 +95,7 @@ blockquote {
     border-left: 4px solid #DDD;
     color: #777;
 }
-{% endhighlight %}
+```
 
 这样的效果比较满意，赞。
 

@@ -34,7 +34,7 @@ tags:
 
 第一步，创建测试数据库，插入测试数据。
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -123,55 +123,55 @@ mysql> select * from stu;
 |    1 | larry01 |    1 |
 |    2 | larry02 |    2 |
 +------+---------+------+
-{% endhighlight %}
+```
 
 第二步，停掉MySQL。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld stop
 Shutting down MySQL... SUCCESS!
-{% endhighlight %}
+```
 
 第三步，创建备份目录，并修改拥有者和所属组。
 
-{% highlight bash %}
+``` bash
 mkdir /databackup
 chown mysql.mysql /databackup/ -R
 ll /databackup/ -d
 cd /databackup/
-{% endhighlight %}
+```
 
 第四步，冷备（使用tar命令）。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql/data/
 tar -cvPzf mysql01.tar.gz
-{% endhighlight %}
+```
 
 第五步，测试冷备的数据是否正常，我们删除掉data下的所有数据。
 
-{% highlight bash %}
+``` bash
 rm -rf /usr/local/mysql/data/*
-{% endhighlight %}# 
+```# 
 
 第六步，删除所有数据后数据库不能启动。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL.. ERROR! \
 The server quit without updating PID file \
  (/usr/local/mysql/data/serv01.host.com.pid).
-{% endhighlight %}
+```
 
 第七步，恢复数据（使用tar命令）。
 
-{% highlight bash %}
+``` bash
 tar -xvPf mysql01.tar.gz
-{% endhighlight %}
+```
 
 第八步，启动MySQL，然后登录MySQL，查看数据是否丢失，如果数据正常代表冷备成功。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL.. SUCCESS!
 
@@ -179,11 +179,11 @@ mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 1
 Server version: 5.5.29-log Source distribution
-{% endhighlight %}
+```
 
 查看数据。
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> select * from class;
@@ -203,7 +203,7 @@ mysql> select * from stu;
 |    2 | larry02 |    2 |
 +------+---------+------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 –EOF–
 

@@ -32,13 +32,13 @@ MySQL 5.5 中，information_schema 库中新增了三个关于锁的表，亦即
 
 登录 MySQL 5.5。
 
-{% highlight bash %}
+``` bash
 mysql -S /tmp/mysql_5540.sock -uroot -proot
-{% endhighlight %}
+```
 
 这是我的 MySQL 版本信息。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%version%';
 +-------------------------+------------------------------+
 | Variable_name           | Value                        |
@@ -52,14 +52,14 @@ mysql> SHOW VARIABLES LIKE '%version%';
 | version_compile_os      | osx10.6                      |
 +-------------------------+------------------------------+
 7 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 查看 innodb_trx 表结构。
 
-{% highlight sql %}
+``` bash
 mysql> USE information_schema;
 mysql> DESC innodb_trx;
-{% endhighlight %}
+```
 
 下面对 innodb_trx 表的每个字段进行解释：
 
@@ -88,9 +88,9 @@ mysql> DESC innodb_trx;
 
 查看 innodb_locks 表结构。
 
-{% highlight sql %}
+``` bash
 mysql> DESC innodb_locks;
-{% endhighlight %}
+```
 
 下面对 innodb_locks 表的每个字段进行解释：
 
@@ -107,9 +107,9 @@ mysql> DESC innodb_locks;
 
 查看 innodb_lock_waits 表结构。
 
-{% highlight sql %}
+``` bash
 mysql> DESC innodb_lock_waits;
-{% endhighlight %}
+```
 
 下面对 innodb_lock_waits 表的每个字段进行解释：
 
@@ -124,7 +124,7 @@ mysql> DESC innodb_lock_waits;
 
 创建测试表，录入测试数据。
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 
 mysql> CREATE TABLE user
@@ -151,13 +151,13 @@ Query OK, 1 row affected (0.00 sec)
 
 mysql> COMMIT;
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.2 模拟锁等待 ###
 
 Session 1 开始事务。
 
-{% highlight sql %}
+``` bash
 mysql> START TRANSACTION;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -198,24 +198,24 @@ Empty set (0.00 sec)
 
 mysql> SELECT * FROM information_schema.innodb_lock_waits \G
 Empty set (0.00 sec)
-{% endhighlight %}
+```
 
 Session 2 更新数据。
 
-{% highlight bash %}
+``` bash
 mysql -S /tmp/mysql_5540.sock -uroot -proot
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 mysql> UPDATE user SET name="lock_waits" WHERE ID = 2;
-{% endhighlight %}
+```
 
 Session 1 查看 innodb_trx 表、innodb_locks 表和 innodb_lock_waits 表，可以查看到数据。
 
 在 innodb_trx 表的第一行，trx_id 为 360F 表示第二个事务，状态为等待状态，请求的锁 ID 为 360F:243:3:3，线程 ID 为 2，事务用到的表为 1，有 1 个表被锁。第二行中，trx_id 为 360E 表示第一个事务。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM information_schema.innodb_trx \G
 *************************** 1. row ***************************
                     trx_id: 360F
@@ -297,7 +297,7 @@ requested_lock_id: 360F:243:3:3
   blocking_trx_id: 360E
  blocking_lock_id: 360E:243:3:3
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 由于默认的 `innodb_lock_wait_timeout` 是 50 秒，所以 50 秒过后，Session 2 出现如下提示：
 
@@ -308,7 +308,7 @@ requested_lock_id: 360F:243:3:3
 
 再次模拟锁等待之前，把 `innodb_lock_wait_timeout` 设置为 10 分钟，方便后面的演示。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%innodb_lock_wait%';
 +--------------------------+-------+
 | Variable_name            | Value |
@@ -330,14 +330,14 @@ mysql> SHOW VARIABLES LIKE '%innodb_lock_wait%';
 | innodb_lock_wait_timeout | 600   |
 +--------------------------+-------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 再次开启一个 Session，此时的 Session 姑且命名为 Session 3。然后再次更新数据，由于 Session 1 未提交，所以会发生锁等待。
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 mysql> UPDATE user SET name="lock_waits" WHERE ID = 2;
-{% endhighlight %}
+```
 
 ### 3.4 查询锁等待 ###
 
@@ -345,7 +345,7 @@ mysql> UPDATE user SET name="lock_waits" WHERE ID = 2;
 
 ### 3.4.1 直接查看 innodb_lock_waits 表 ###
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM innodb_lock_waits \G
 *************************** 1. row ***************************
 requesting_trx_id: 3612
@@ -353,11 +353,11 @@ requested_lock_id: 3612:243:3:3
   blocking_trx_id: 360E
  blocking_lock_id: 360E:243:3:3
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.4.2 innodb_locks 表和 innodb_lock_waits 表结合  ###
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * \
         >  FROM innodb_locks \
         >  WHERE lock_trx_id \
@@ -374,11 +374,11 @@ lock_trx_id: 360E
    lock_rec: 3
   lock_data: 2
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.4.3 innodb_locks 表 JOIN innodb_lock_waits 表  ###
 
-{% highlight sql %}
+``` bash
 mysql> SELECT innodb_locks.* \
         >  FROM innodb_locks \
         >  JOIN innodb_lock_waits \
@@ -395,13 +395,13 @@ lock_trx_id: 360E
    lock_rec: 3
   lock_data: 2
 1 row in set (0.01 sec)
-{% endhighlight %}
+```
 
 ### 3.4.4 指定 innodb_locks 表的 lock_table 属性  ###
 
 需要注意 `lock_table` 值的写法。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM innodb_locks \
         >  WHERE lock_table = '`test`.`user`' \G
 *************************** 1. row ***************************
@@ -427,11 +427,11 @@ lock_trx_id: 360E
    lock_rec: 3
   lock_data: 2
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.4.5 查询 innodb_trx 表  ###
 
-{% highlight sql %}
+``` bash
 mysql> SELECT trx_id, trx_requested_lock_id, trx_mysql_thread_id, trx_query \
         >  FROM innodb_trx \
         >  WHERE trx_state = 'LOCK WAIT' \G
@@ -441,17 +441,17 @@ trx_requested_lock_id: 3612:243:3:3
   trx_mysql_thread_id: 9
             trx_query: UPDATE user SET name="lock_waits" WHERE ID = 2
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.4.6 SHOW ENGINE INNODB STATUS  ###
 
-{% highlight sql %}
+``` bash
 mysql> SHOW ENGINE INNODB STATUS \G
-{% endhighlight %}
+```
 
 在输出结果的最后，我们看到如下信息：
 
-{% highlight sql %}
+``` bash
 --------------
 ROW OPERATIONS
 --------------
@@ -465,11 +465,11 @@ END OF INNODB MONITOR OUTPUT
 ============================
 
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.4.7 SHOW PROCESSLIST ###
 
-{% highlight sql %}
+``` bash
 mysql> SHOW PROCESSLIST \G
 *************************** 1. row ***************************
      Id: 1
@@ -490,7 +490,7 @@ Command: Query
   State: Updating
    Info: UPDATE user SET name="lock_waits" WHERE ID = 2
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 3.5 解决锁等待 ##
 
@@ -498,16 +498,16 @@ Command: Query
 
 Session 1 中 KILL 掉发生锁等待的线程。
 
-{% highlight sql %}
+``` bash
 mysql> kill 9;
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 Session 3 中可以看到锁等待消除。
 
-{% highlight sql %}
+``` bash
 mysql> UPDATE user SET name="lock_waits" WHERE ID = 2;
-{% endhighlight %}
+```
 
 有如下输出：
 
@@ -515,7 +515,7 @@ mysql> UPDATE user SET name="lock_waits" WHERE ID = 2;
 
 Session 1 中再次查看 PROCESSLIST，可以看到没有相关的信息了。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW PROCESSLIST \G
 *************************** 1. row ***************************
      Id: 1
@@ -527,11 +527,11 @@ Command: Query
   State: NULL
    Info: SHOW PROCESSLIST
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 模拟完成后，我们提交，此时 innodb_trx 表、innodb_locks 表和 innodb_lock_waits 表中都没有数据。
 
-{% highlight sql %}
+``` bash
 mysql> COMMIT;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -543,11 +543,11 @@ Empty set (0.00 sec)
 
 mysql> SELECT * FROM information_schema.innodb_lock_waits \G
 Empty set (0.00 sec)
-{% endhighlight %}
+```
 
 把 `innodb_lock_wait` 还原为默认值。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%innodb_lock_wait%';
 +--------------------------+-------+
 | Variable_name            | Value |
@@ -569,7 +569,7 @@ mysql> SHOW VARIABLES LIKE '%innodb_lock_wait%';
 | innodb_lock_wait_timeout | 50    |
 +--------------------------+-------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 四  小结 ##
 

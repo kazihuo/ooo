@@ -19,11 +19,11 @@ tags:
 
 首先看两个例子:
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> SELECT VERSION();
 +-----------+
 | VERSION() |
@@ -75,15 +75,15 @@ mysql> SELECT SLEEP(30);
 +-----------+
 1 row in set (30.00 sec)
 
-{% endhighlight %}
+```
 
 在Sleep中，打开另一个窗口，开始另一个会话。
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 # Session 2
 mysql> USE test;
 
@@ -91,33 +91,33 @@ Database changed
 
 mysql> DROP TABLE t1;
 # 发生锁等待
-{% endhighlight %}
+```
 
 Session 1 Sleep完成后，Commit。
 
-{% highlight sql %}
+``` bash
 # Session 1
 mysql> COMMIT;
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 此时可以看到Session 2中的删表操作完成。
 
-{% highlight sql %}
+``` bash
 mysql> DROP TABLE t1;
 Query OK, 0 rows affected (24.17 sec)
-{% endhighlight %}
+```
 
 同样，在MySQL 5.1中做相同的测试。
-{% highlight bash %}
+``` bash
 /usr/local/mysql_5.1/bin/mysqld_multi \
 --defaults-extra-file=/etc/my_mutli.cnf \
 start 5173
 
 mysql --socket=/tmp/mysql5173.sock -uroot -p
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> SELECT VERSION();
 +-----------+
 | VERSION() |
@@ -169,15 +169,15 @@ mysql> SELECT SLEEP(30);
 +-----------+
 1 row in set (30.00 sec)
 
-{% endhighlight %}
+```
 
 在Sleep中，打开另一个窗口，开始另一个会话。
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql5173.sock -uroot -p
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 # Session 2
 mysql> USE test;
 Database changed
@@ -185,15 +185,15 @@ Database changed
 #  不会发生锁等待，直接删除。
 mysql> DROP TABLE t1;
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 Session 1 Sleep完成后，Commit。
 
-{% highlight sql %}
+``` bash
 # Session 1
 mysql> COMMIT;
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 可以删除，MySQL 5.1和MySQL 5.5在元数据锁中的实现略有不同，5.1删表不会发生锁等待，而5.5会。
 

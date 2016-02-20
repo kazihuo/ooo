@@ -75,17 +75,17 @@ mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz
 
 第一步，拷贝文件。
 
-{% highlight bash %}
+``` bash
 scp mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz 192.168.1.11:/opt/
 scp mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz 192.168.1.12:/opt/
 scp mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz 192.168.1.13:/opt/
 scp mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz 192.168.1.14:/opt/
 scp mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz 192.168.1.15:/opt/
-{% endhighlight %}
+```
 
 第二步，修改主机名。
 
-{% highlight bash %}
+``` bash
 # serv01
 hostname mgmd.host.com
 vim /etc/sysconfig/network
@@ -135,11 +135,11 @@ NETWORKING=yes
 HOSTNAME=ndb02.host.com
 hostname
 ndb02.host.com
-{% endhighlight %}
+```
 
 第三步，确定IP地址。
 
-{% highlight bash %}
+``` bash
 # mgmd
 ifconfig | grep eth -A1
 eth0      Link encap:Ethernet  HWaddr 00:0C:29:07:DD:3B
@@ -164,44 +164,44 @@ eth0      Link encap:Ethernet  HWaddr 00:0C:29:0F:1A:09
 ifconfig | grep eth -A1
 eth0      Link encap:Ethernet  HWaddr 00:0C:29:77:CB:2F
           inet addr:192.168.1.15  Bcast:192.168.1.255  Mask:255.255.255.0
-{% endhighlight %}
+```
 
 ### 4.5 管理节点搭建 ###
 
 第一步，添加mysql组和用户。
 
-{% highlight bash %}
+``` bash
 groupadd -g 27 mysql
 useradd -u 27 -g 27 -r -M -s /sbin/nologin mysql
 id mysql
-{% endhighlight %}
+```
 
 第二步，解压二进制包。
 
-{% highlight bash %}
+``` bash
 tar -xvf mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz -C /usr/local/
 cd /usr/local/
-{% endhighlight %}
+```
 
 第三步，重命名安装目录，修改所有者和所属组。
 
-{% highlight bash %}
+``` bash
 mv mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23/ mysql
 chown mysql. mysql/ -R
 ll mysql/ -d
 ll mysql/
-{% endhighlight %}
+```
 
 第四步，拷贝配置文件，编辑该文件。
 
-{% highlight bash %}
+``` bash
 cp /usr/local/mysql/support-files/ndb-config-2-node.ini /etc/ndb-config.ini
 vim /etc/ndb-config.ini
 cat /etc/ndb-config.ini
-{% endhighlight %}
+```
 
 脚本内容如下。
-{% highlight bash %}
+``` bash
 # Example Ndbcluster storage engine config file.
 #
 [ndbd default]
@@ -242,19 +242,19 @@ HostName= 192.168.1.13
 # will be used
 [tcp default]
 PortNumber= 63132
-{% endhighlight %}
+```
 
 第五步，创建数据目录，修改所有者和所属组。
 
-{% highlight bash %}
+``` bash
 mkdir /var/lib/mysql-cluster
 chown mysql. /var/lib/mysql-cluster/ -R
 ll -d /var/lib/mysql-cluster/
-{% endhighlight %}
+```
 
 第六步，启动ndb_mgmd。
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/ndb_mgmd -f /etc/ndb-config.ini
 2013-11-04 23:46:12 [MgmtSrvr] INFO     -- 
 NDB Cluster Management Server. mysql-5.1.44 ndb-7.1.4b
@@ -271,18 +271,18 @@ at line 39: [tcp] PortNumber is depricated, use Port used for this transporter i
 Reading cluster configuration from '/etc/ndb-config.ini'
 2013-11-04 23:46:13 [MgmtSrvr] WARNING  -- 
 at line 39: [tcp] PortNumber is depricated, use Port used for this transporter instead
-{% endhighlight %}
+```
 
 确定进程和端口号。
 
-{% highlight bash %}
+``` bash
 ps -ef | grep mgm | grep -v grep
 netstat -langput | grep mgm
-{% endhighlight %}
+```
 
 查看状态。
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/ndb_mgm
 -- NDB Cluster -- Management Client --
 ndb_mgm> show
@@ -299,47 +299,47 @@ id=1  @192.168.1.11  (mysql-5.1.44 ndb-7.1.4)
 [mysqld(API)] 2 node(s)
 id=4 (not connected, accepting connect from 192.168.1.12)
 id=5 (not connected, accepting connect from 192.168.1.13)
-{% endhighlight %}
+```
 
 ### 4.6 存储节点搭建 ###
 
 第一步，ndb01添加mysql组和用户。
 
-{% highlight bash %}
+``` bash
 groupadd -g 27 mysql
 useradd -u 27 -g 27 -r -M -s /sbin/nologin mysql
 id mysql
 cd /opt/
-{% endhighlight %}
+```
 
 第二步，ndb01解压二进制包。
 
-{% highlight bash %}
+``` bash
  tar -xvf mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz -C /usr/local/
  cd /usr/local/
-{% endhighlight %}
+```
 
 第三步，ndb01重命名安装目录，修改所有者和所属组。
 
-{% highlight bash %}
+``` bash
 mv mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23/ mysql
 chown mysql. mysql/ -R
 ll -d mysql/
 ll mysql/
-{% endhighlight %}
+```
 
 第四步，ndb01进入mysql目录，拷贝模板文件，修改该文件，
 
-{% highlight bash %}
+``` bash
 cd mysql/
 cp support-files/my-medium.cnf /etc/my.cnf
 cp: overwrite `/etc/my.cnf'? y
 vim /etc/my.cnf
-{% endhighlight %}
+```
 
 配置文件内容如下。
 
-{% highlight bash %}
+``` bash
 grep "^#\|^$" /etc/my.cnf -v
 [client]
 port    = 3306
@@ -376,27 +376,27 @@ ndb_connectstring=192.168.1.11
 
 # 下划线或者横线都可以
 # ndb-connectstring=192.168.1.11
-{% endhighlight %}
+```
 
 第五步，ndb01创建数据目录，修改所有者和所属组。
 
-{% highlight bash %}
+``` bash
 mkdir /var/lib/mysql-cluster
 chown mysql.mysql !$ -R
  ll -d /var/lib/mysql-cluster/
-{% endhighlight %}
+```
 
 第六步，ndb01初始化ndbd。
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/ndbd --initial
 2013-11-04 23:57:06 [ndbd] INFO     -- Configuration fetched from 
 '192.168.1.11:1186', generation: 1
-{% endhighlight %}
+```
 
 查看状态。
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/ndb_mgm
 -- NDB Cluster -- Management Client --
 ndb_mgm> show
@@ -413,11 +413,11 @@ id=1  @192.168.1.11  (mysql-5.1.44 ndb-7.1.4)
 [mysqld(API)] 2 node(s)
 id=4 (not connected, accepting connect from 192.168.1.12)
 id=5 (not connected, accepting connect from 192.168.1.13)
-{% endhighlight %}
+```
 
 第七步，ndb02和ndb01执行相同的操作，如下：
 
-{% highlight bash %}
+``` bash
 groupadd -g 27 mysql
 useradd -u 27 -g 27 -r -M -s /sbin/nologin mysql
 id mysql
@@ -491,47 +491,47 @@ id=1  @192.168.1.11  (mysql-5.1.44 ndb-7.1.4)
 [mysqld(API)] 2 node(s)
 id=4 (not connected, accepting connect from 192.168.1.12)
 id=5 (not connected, accepting connect from 192.168.1.13)
-{% endhighlight %}
+```
 
 ### 4.7 SQL节点搭建 ###
 
 第一步，sql01添加mysql组和用户。
 
-{% highlight bash %}
+``` bash
 groupadd -g 27 mysql
 useradd -u 27 -g 27 -r -M -s /sbin/nologin mysql
 id mysql
 cd /opt/
-{% endhighlight %}
+```
 
 第二步，sql01解压二进制包。
 
-{% highlight bash %}
+``` bash
 tar -xvf mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23.tar.gz -C /usr/local/
-{% endhighlight %}
+```
 
 第三步，sql01重命名安装目录，修改所有者和所属组。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/
 mv mysql-cluster-gpl-7.1.4b-linux-x86_64-glibc23/ mysql
 chown mysql. mysql/ -R
 ll -d mysql/
 ll mysql/
-{% endhighlight %}
+```
 
 第四步，sql01拷贝配置文件，并修改。
 
-{% highlight bash %}
+``` bash
 cd mysql/
 cp support-files/my-medium.cnf /etc/my.cnf
 cp: overwrite `/etc/my.cnf'? y
 vim /etc/my.cnf
-{% endhighlight %}
+```
 
 修改脚本如下。
 
-{% highlight bash %}
+``` bash
 grep "^#\|^$" !$ -v
 grep "^#\|^$" /etc/my.cnf -v
 [client]
@@ -569,33 +569,33 @@ write_buffer = 2M
 interactive-timeout
 [mysql_cluster]
 ndb_connectstring=192.168.1.11
-{% endhighlight %}
+```
 
 第五步，sql01拷贝运行脚本，添加可执行权限。
 
-{% highlight bash %}
+``` bash
 cp support-files/mysql.server /etc/init.d/mysqld
 chmod +x /etc/init.d/mysqld
-{% endhighlight %}
+```
 
 第六步，sql01创建数据目录，修改所有者和所属组。
 
-{% highlight bash %}
+``` bash
 mkdir /var/lib/mysql-cluster
 chown mysql. !$ -R
 ll -d /var/lib/mysql-cluster/
-{% endhighlight %}
+```
 
 第七步，sql01初始化数据库。
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/scripts/mysql_install_db --user=mysql
-{% endhighlight %}
+```
 [root@sql01 mysql]# 
 
 第八步，sql01启动mysql，并加入ndb
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL. SUCCESS!
 
@@ -615,11 +615,11 @@ id=1  @192.168.1.11  (mysql-5.1.44 ndb-7.1.4)
 [mysqld(API)] 2 node(s)
 id=4  @192.168.1.12  (mysql-5.1.44 ndb-7.1.4)
 id=5 (not connected, accepting connect from 192.168.1.13)
-{% endhighlight %}
+```
 
 第九步，sql02执行和sql01相同的操作，如下：
 
-{% highlight bash %}
+``` bash
 groupadd -g 27 mysql
 useradd -u 27 -g 27 -r -M -s /sbin/nologin mysql
 id mysql
@@ -700,21 +700,21 @@ id=1  @192.168.1.11  (mysql-5.1.44 ndb-7.1.4)
 [mysqld(API)] 2 node(s)
 id=4  @192.168.1.12  (mysql-5.1.44 ndb-7.1.4)
 id=5  @192.168.1.13  (mysql-5.1.44 ndb-7.1.4)
-{% endhighlight %}
+```
 
 ### 4.8 测试 ###
 
 第一步，sql02创建测试数据库，sql01可以发现。
 
-{% highlight bash %}
+``` bash
 # sql02
 /usr/local/mysql/bin/mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 2
 Server version: 5.1.44-ndb-7.1.4b-cluster-gpl-log MySQL Cluster Server (GPL)
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 -- sql02
 mysql> create database larrydb;
 Query OK, 1 row affected (0.21 sec)
@@ -731,11 +731,11 @@ mysql> show databases;
 | test               |
 +--------------------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第二步，sql01创建测试表，插入测试数据，sql02可以发现变化。
 
-{% highlight sql %}
+``` bash
 -- sql01
 mysql> use larrydb;
 Database changed
@@ -753,11 +753,11 @@ mysql> select * from larrydb.user;
 |    1 | larry |
 +------+-------+
 1 row in set (0.04 sec)
-{% endhighlight %}
+```
 
 如果只能使用三台服务器，可以这样配置：sql节点和ndb节点放在一起。管理节点做如下配置：
 
-{% highlight bash %}
+``` bash
 # 管理节点
 [ndb_mgmd]
 Id=1
@@ -778,7 +778,7 @@ Id= 4
 Id= 5
 
 # 其他节点做sql节点的配置即可
-{% endhighlight %}
+```
 
 ## 五 参考资料 ##
 

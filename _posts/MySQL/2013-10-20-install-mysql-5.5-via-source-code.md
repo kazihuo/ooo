@@ -26,29 +26,29 @@ MySQL 5.5的安装方法和5.1略有 不同，主要区别在配置环境，MySQ
 
 第一步，真实机拷贝MySQL 5.5源码包到虚拟机下。
 
-{% highlight bash %}
+``` bash
 yum install /usr/bin/scp -y
 scp mysql-5.5.29.tar.gz 192.168.1.11:/opt
-{% endhighlight %}
+```
 
 第二步，对源码进行编译需要make等命令，所以我们安装开发工具包。
 
-{% highlight bash %}
+``` bash
 yum grouplist | grep Devel
 yum groupinstall "Development tools" -y
-{% endhighlight %}
+```
 
 第三步，解压源码包到/usr/src目录，/usr/src是建议路径。
 
-{% highlight bash %}
+``` bash
 tar -xvf mysql-5.5.29.tar.gz -C /usr/src/
-{% endhighlight %}
+```
 
 第四步，进入MySQL的解压目录。
 
-{% highlight bash %}
+``` bash
 cd /usr/src/mysql-5.5.29/
-{% endhighlight %}
+```
 
 INSTALL-SOURCE是安装帮助文档，可以参考这个文件进行安装。
 
@@ -75,14 +75,14 @@ INSTALL-SOURCE是安装帮助文档，可以参考这个文件进行安装。
 
 第五步，因为配置环境需要使用到cmake，且MySQL依赖ncurses-devel包，所以我们安装cmake和ncurses-devel。
 
-{% highlight bash %}
+``` bash
 yum install cmake-y
 yum install ncurses-devel -y
-{% endhighlight %}
+```
 
 第六步，关键步骤，这一步也是和MySQL 5.1的不同之处，使用cmake命令配置环境，如下
 
-{% highlight bash %}
+``` bash
 cmake .  \
 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
 -DWITH_INNOBASE_STORAGE_ENGINE=1  \
@@ -94,7 +94,7 @@ cmake .  \
 -DMYSQL_TCP_PORT=3306  \
 -DMYSQL_UNIX_ADDR=/tmp/mysql.sock  \
 -DMYSQL_DATADIR=/usr/local/mysql/data
-{% endhighlight %}
+```
 
 **解释：**
 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql：MySQL安装目录，推荐安装到此目录
@@ -110,75 +110,75 @@ cmake .  \
 
 第七步，编译安装。
 
-{% highlight bash %}
+``` bash
 make && make install
-{% endhighlight %}
+```
 
 安装完成后，确定MySQL目录存在。
 
-{% highlight bash %}
+``` bash
 ls /usr/local/mysql/
-{% endhighlight %}
+```
 
 第八步，添加mysql组和用户。
 
-{% highlight bash %}
+``` bash
 groupadd -g 500 mysql
 useradd -u 500 -g 500 -r -M -s /sbin/nologin mysql
-{% endhighlight %}
+```
 
 第九步，拷贝配置文件和启动脚本，并修改启动脚本的执行权限。
 
-{% highlight bash %}
+``` bash
 cp support-files/my-medium.cnf /etc/my.cnf
 cp support-files/mysql.server /etc/init.d/mysqld
 chmod a+x /etc/init.d/mysqld
 ls /usr/local/mysql/data/
-{% endhighlight %}
+```
 
 第十步，改变mysql目录的拥有者和所属组，并修改my.cnf文件，添加data目录。
 
-{% highlight bash %}
+``` bash
 chown mysql.mysql/usr/local/mysql/ -R
 vim /etc/my.cnf
 cat /etc/my.cnf |grep datadir
 datadir         =/usr/local/mysql/data
-{% endhighlight %}
+```
 
 第十一步，修改mysql_install_db的权限，使其可执行，并进行初始化操作。
 
-{% highlight bash %}
+``` bash
 chmod a+x scripts/mysql_install_db
 ./scripts/mysql_install_db --user=mysql \
 --datadir=/usr/local/mysql/data/ \
 --basedir=/usr/local/mysql/
-{% endhighlight %}
+```
 
 第十二步，启动MySQL，如果出现SUCCESS，恭喜您，MySQL启动成功；如果出错，不要着急，根据日志排查错误。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL.. SUCCESS!
 ll /usr/local/mysql/data/ -d
-{% endhighlight %}
+```
 [root@serv01 mysql-5.5.29]#
 
 第十三步，添加环境变量，并使其生效。
-{% highlight bash %}
+``` bash
 vim~/.bash_profile
 cat ~/.bash_profile| grep PATH
 PATH=/usr/local/mysql/bin/:$PATH:$HOME/bin
 export PATH
 . !$
-{% endhighlight %}
+```
 
 第十四步，登录mysql，查看版本，如果出现版本号，则证明安装成功。
 
-{% highlight bash %}
+``` bash
 mysql
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> select version();
 +------------+
 | version() |
@@ -189,15 +189,15 @@ mysql> select version();
 
 mysql> exit
 Bye
-{% endhighlight %}
+```
 
 如果需要安装多个MySQL，需要修改端口和修改sock文件。
 
-{% highlight bash %}
+``` bash
 cat /etc/my.cnf |grep -e sock -e port
 port              =3306
 socket           =/tmp/mysql.sock
-{% endhighlight %}
+```
 
 –EOF–
 

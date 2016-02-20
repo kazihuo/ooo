@@ -40,7 +40,7 @@ SQL Server 2012 + CentOS 6.3
 
 **Step 1**，首先把源数据（Excel中的数据）拷贝出来，或者另存为csv文件（以逗号作为分隔），然后重命名后缀为txt。这里的文件名假设为source.txt，然后把行首标题去掉；
 
-{% highlight bash %}
+``` bash
 6789,Robin,朱二,成都
 1234,justdb,张三,泸州
 4567,HelloWorld,李四,广州
@@ -48,21 +48,21 @@ SQL Server 2012 + CentOS 6.3
 1331,Wen,邓六,深圳
 3142,Wentasy,徐七,长沙
 4131,Fantasy,燕八,昆明
-{% endhighlight %}
+```
 
 **Step 2**，源数据准备好了，那现在我们切换到Linux环境下开始对数据进行处理。观察源数据中有四列数据，那么我们需要分隔数据。这里采用awk处理。代码如下：
 
-{% highlight bash %}
+``` bash
 # -F表示以逗号作为分隔，把源数据中的每列分别保存为新的四个文件
 awk -F","'{print $1}' source.txt > source1.txt
 awk -F","'{print $2}' source.txt > source2.txt
 awk -F","'{print $3}' source.txt > source3.txt
 awk -F","'{print $4}' source.txt > source4.txt
-{% endhighlight %}
+```
 
 源数据如下：
 
-{% highlight bash %}
+``` bash
 cat source.txt
 1234,justdb,张三,泸州
 4567,HelloWorld,李四,广州
@@ -70,11 +70,11 @@ cat source.txt
 1331,Wen,邓六,深圳
 3142,Wentasy,徐七,长沙
 4131,Fantasy,燕八,昆明
-{% endhighlight %}
+```
 
 操作结果：
 
-{% highlight bash %}
+``` bash
 cat source1.txt
 1234
 4567
@@ -82,7 +82,7 @@ cat source1.txt
 1331
 3142
 4131
-{% endhighlight %}
+```
 
 效果如图2：
 ![图2 Step 2 效果图](http://i.imgur.com/1VKz8ft.png)
@@ -90,7 +90,7 @@ cat source1.txt
 
 **Step 3**，考虑到这些数据都是基于文本存储的，那么INSERT插入时需要在值的首尾加上单引号或者双引号。代码如下：
 
-{% highlight bash %}
+``` bash
 # ^表示行首，此行代码表示在每行的行首加上yy，注意此处添加的内容不要和正文文本相同；
 sed 's/^/yy/g'source1.txt –i
 # $表示行尾，此行代码表示在每行的行尾加上zz，同理，意此处添加的内容不要和正文文本相同
@@ -103,11 +103,11 @@ sed"s/zz/\'/g" source1.txt –i
 # 说明：读者也可以把行尾和行首替换为相同的内容
 # 那把替换后的内容再替换为单引号就只需要执行一行代码即可。
 # 这里只演示一个文本，其余文本操作方法相同。
-{% endhighlight %}
+```
 
 操作结果如下：
 
-{% highlight bash %}
+``` bash
 cat source1.txt
 yy1234zz
 yy4567zz
@@ -123,7 +123,7 @@ cat source1.txt
 '1331'
 '3142'
 '4131'
-{% endhighlight %}
+```
 
 效果如图3：
 ![图 3 Step 3效果图](http://i.imgur.com/3PP3uNb.png)
@@ -131,14 +131,14 @@ cat source1.txt
 
 **Step 4**，我们得到每列带单引号的文本，但是我们需要把这四个文件的每列放到一个文件中，就像炒青椒肉丝，把切好的瘦肉丝、佐料、青椒放到锅里炒一样。我们可以采用如下方法合并文件，使用paste命令，命令如下：
 
-{% highlight bash %}
+``` bash
 # 此命令表示以逗号作为分隔，合并经过上述处理的四个文件，并保存到结果文件
 paste -d ","source1.txt source2.txt source3.txt source4.txt > result.txt
-{% endhighlight %}
+```
 
 操作结果如下：
 
-{% highlight bash %}
+``` bash
 cat result.txt
 '1234','justdb','张三','泸州'
 '4567','HelloWorld','李四','广州'
@@ -146,7 +146,7 @@ cat result.txt
 '1331','Wen','邓六','深圳'
 '3142','Wentasy','徐七','长沙'
 '4131','Fantasy','燕八','昆明'
-{% endhighlight %}
+```
 
 效果如图4：
 ![图4 Step 4效果图](http://i.imgur.com/qlYzL3U.png)
@@ -154,14 +154,14 @@ cat result.txt
 
 **Step 5**，将得到的结果进行最后的处理。我们在行尾加入INSERT语句，这里假设后面创建的临时表名称为##temp，在行尾加上括号和分号，语句如下：
 
-{% highlight bash %}
+``` bash
 sed 's/^/INSERT INTO ##tempVALUES(/g' result.txt -i
 sed 's/$/);/g'result.txt -i
-{% endhighlight %}
+```
 
 操作结果如下：
 
-{% highlight bash %}
+``` bash
 cat result.txt
 INSERT INTO ##temp VALUES('1234','justdb','张三','泸州');
 INSERT INTO ##temp VALUES('4567','HelloWorld','李四','广州');
@@ -169,7 +169,7 @@ INSERT INTO ##temp VALUES('5678','CSDN Blog','王五','中山');
 INSERT INTO ##temp VALUES('1331','Wen','邓六','深圳');
 INSERT INTO ##temp VALUES('3142','Wentasy','徐七','长沙');
 INSERT INTO ##temp VALUES('4131','Fantasy','燕八','昆明');
-{% endhighlight %}
+```
 
 效果如图5：
 ![图5 Step 5效果图](http://i.imgur.com/riTuoDD.png)
@@ -177,7 +177,7 @@ INSERT INTO ##temp VALUES('4131','Fantasy','燕八','昆明');
 
 **Step 6**，创建临时表，语句如下：
 
-{% highlight sql %}
+``` bash
 CREATE TABLE ##temp
 (
        ID CHAR(16) NOT NULL,
@@ -185,7 +185,7 @@ CREATE TABLE ##temp
        CName VARCHAR(40),
        City VARCHAR(20)
 );
-{% endhighlight %}
+```
 
 **Step 7**，打开SQLServer的查询分析器，然后执行创建临时表的语句和插入数据的语句。
 
@@ -206,7 +206,7 @@ sed 's/^M//g'source_4.txt –i
 
 **最终的一键脚本**
 
-{% highlight bash %}
+``` bash
 #!/bin/bash
 #FileName:auto_import_data.sh
 #Desc:Auto Import DataTo MS SQL
@@ -247,7 +247,7 @@ paste -d ","source1.txt source2.txt source3.txt source4.txt > result.txt
 #4.拼接为最终的插入语句
 sed 's/^/INSERT INTO ##tempVALUES(/g' result.txt -i
 sed 's/$/);/g'result.txt -i
-{% endhighlight %}
+```
 
 –EOF–
 

@@ -34,9 +34,9 @@ tags:
 
 第一步，热拷贝。
 
-{% highlight bash %}
+``` bash
 mysqlhotcopy -uroot -p123456 --database larrydb > larrydb_hostcopy.sql
-{% endhighlight %}
+```
 
 第二步，报错。因为这个命令是用perl写的或者此命令需要perl支持，所以需要perl支持。
 如果出现如下错误：
@@ -49,13 +49,13 @@ mysqlhotcopy -uroot -p123456 --database larrydb > larrydb_hostcopy.sql
 
 那么安装perl相关包。
 
-{% highlight bash %}
+``` bash
 yum install perl* -y
-{% endhighlight %}
+```
 
 第三步，对数据库larrydb热拷贝。
 
-{% highlight bash %}
+``` bash
 mysqlhotcopy --help
 
 # 第一种写法
@@ -69,15 +69,15 @@ Copying 5 files...
 Copying indices for 0 files...
 Unlocked tables.
 mysqlhotcopy copied 2 tables (5 files) in 0 seconds (0 seconds overall).
-{% endhighlight %}
+```
 
 第四步，模拟数据丢失。
 
-{% highlight bash %}
+``` bash
 ll larrydb
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -118,18 +118,18 @@ Query OK, 0 rows affected (0.01 sec)
 
 mysql> show tables;
 Empty set (0.00 sec)
-{% endhighlight %}
+```
 
 **注意：这样删除会出错，不要这样删除**
 
-{% highlight bash %}
+``` bash
 rm -rf /usr/local/mysql/data/larrydb/*
 rm -rf /usr/local/mysql/data/larrydb/
-{% endhighlight %}
+```
 
 第五步，恢复数据。
 
-{% highlight bash %}
+``` bash
 cp larrydb /usr/local/mysql/data/ -arvf
 `larrydb' -> `/usr/local/mysql/data/larrydb'
 `larrydb/stu.MYI' -> `/usr/local/mysql/data/larrydb/stu.MYI'
@@ -137,9 +137,9 @@ cp larrydb /usr/local/mysql/data/ -arvf
 `larrydb/stu.frm' -> `/usr/local/mysql/data/larrydb/stu.frm'
 `larrydb/db.opt' -> `/usr/local/mysql/data/larrydb/db.opt'
 `larrydb/class.frm' -> `/usr/local/mysql/data/larrydb/class.frm'
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -164,15 +164,15 @@ mysql> select * from stu;
 
 mysql> drop database larrydb;
 Query OK, 2 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 再次导入。
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p123456 < larrydb.sql
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -201,7 +201,7 @@ mysql> select * from class;
 |    2 | oracle |
 +------+--------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 –EOF–
 

@@ -32,15 +32,15 @@ tags:
 
 命令如下：
 
-{% highlight bash %}
+``` bash
 yum install libevent -y
 yum install php -y
 yum install policycoreutils-python -y
-{% endhighlight %}
+```
 
 **译者注：我的操作系统版本是 RHEL 6.5，而作者的 OS 版本为 CentOS。以下是我的 MySQL 版本。**
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%version%';
 +-------------------------+------------------------------+
 | Variable_name           | Value                        |
@@ -54,13 +54,13 @@ mysql> SHOW VARIABLES LIKE '%version%';
 | version_compile_os      | Linux                        |
 +-------------------------+------------------------------+
 7 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 安装 ##
 
 安装 Memcached 支持，我们需要创建一些为 MySQL 和 Memcached 集成服务的表。MySQL 已经包含了创建这些表的文件（`innodb_memcached_config.sql`），你可以在你的 basedir 子目录中找到这个文件。为了找到你的 basedir 在什么地方，运行如下命令：
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE 'basedir';
 +---------------+-------+
 | Variable_name | Value |
@@ -68,7 +68,7 @@ mysql> SHOW VARIABLES LIKE 'basedir';
 | basedir       | /usr  |
 +---------------+-------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 如果你通过发行版仓库安装 MySQL，这个文件的路径如下：
 
@@ -82,7 +82,7 @@ mysql> SHOW VARIABLES LIKE 'basedir';
 
 **译者注：操作日志中的时间可能跟原文不同，以下日志来自自己的实验。**
 
-{% highlight sql %}
+``` bash
 mysql> CREATE DATABASE IF NOT EXISTS test;
 Query OK, 1 row affected (0.00 sec)
 
@@ -110,11 +110,11 @@ Query OK, 0 rows affected (0.03 sec)
 Query OK, 1 row affected (0.00 sec)
 
 mysql>
-{% endhighlight %}
+```
 
 现在，让我们创建我们自己的表，用于存放 Memcached 数据：
 
-{% highlight sql %}
+``` bash
 mysql> CREATE DATABASE IF NOT EXISTS memcached;
 Query OK, 1 row affected (0.00 sec)
 
@@ -128,51 +128,51 @@ Rows matched: 1  Changed: 1  Warnings: 0
 
 mysql> DROP DATABASE test;
 Query OK, 1 row affected (0.09 sec)
-{% endhighlight %}
+```
 
 下一步是在 MySQL 中安装 Memcached 插件。为了实现这个功能，我们将会使用 `INSTALL PLUGIN` 命令：
 
-{% highlight sql %}
+``` bash
 mysql> INSTALL PLUGIN daemon_memcached soname "libmemcached.so";
 Query OK, 0 rows affected (0.03 sec)
-{% endhighlight %}
+```
 
 验证此插件是否成功安装，我们可以运行如下命令：
 
-{% highlight sql %}
+``` bash
 mysql> \! netstat -tunap | grep LIST | grep mysql
 tcp        0      0 0.0.0.0:11211               0.0.0.0:*                   LISTEN      1858/mysqld
 tcp        0      0 :::11211                    :::*                        LISTEN      1858/mysqld
 tcp        0      0 :::3306                     :::*                        LISTEN      1858/mysqld
-{% endhighlight %}
+```
 
 ## 配置和使用 ##
 
 现在，我们将会通过一种编程语言——PHP，比如使用这种方式：
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# cat test1.php
-{% endhighlight %}
+```
 
 **译者注：原文是 new Memcached()，此处改为 new Memcache()，以下的 PHP 脚本均为 new Memcache()。**
 
-{% highlight php %}
+``` php
 <?php
     $m = new Memcache();
     $m->addServer('localhost', 11211);
     $m->set('key1', 'Testing memcached');
     echo 'Value of key1 is:' . $m->get('key1') . "\n";
 ?>
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# php test1.php
 Value of key1 is:Testing memcached
-{% endhighlight %}
+```
 
 现在，让我们看看在 MySQL 中存储了些什么？
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM memcached.dados;
 +------+-------------------+------+------+------+
 | c1   | c2                | c3   | c4   | c5   |
@@ -180,39 +180,40 @@ mysql> SELECT * FROM memcached.dados;
 | key1 | Testing memcached |    0 |    1 |    0 |
 +------+-------------------+------+------+------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 如果我们在 MySQL 中手动更改一个记录，会发生什么？
-{% highlight sql %}
+
+``` bash
 mysql> UPDATE memcached.dados \
     -> SET c2 = 'Entry modified  directly on MySQL';
 Query OK, 1 row affected (0.03 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# cat test2.php
-{% endhighlight %}
+```
 
-{% highlight php %}
+``` php
 <?php
     $m = new Memcache();
     $m->addServer('localhost', 11211);
     echo 'Value of key1 is:' . $m->get('key1') . "\n";
 ?>
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# php test2.php
 Value of key1 is:Entry modified  directly on MySQL
 
 [root@mysql memcache]#
-{% endhighlight %}
+```
 
 如果我们想存放条目到不同的 MySQL 表，那么又会怎样？
 我们仅仅需要创建一个新的表，添加一个新的容器，并且使用在 innodb_memcache 数据库的 config_options 表定义的分隔符。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM innodb_memcache.config_options \
     -> WHERE name = 'table_map_delimiter';
 +---------------------+-------+
@@ -230,29 +231,29 @@ mysql> INSERT INTO innodb_memcache.containers(name, db_schema, db_table,\
     -> unique_idx_name_on_key) \
     -> VALUES('bbb', 'memcached', 'dados2', 'c1', 'c2', 'c3','c4','c5','PRIMARY');
 Query OK, 1 row affected (0.06 sec)
-{% endhighlight %}
+```
 
 我们已经创建一个名为 dados2 的新表，并且添加了一个新的名为 bbb 的容器指向那个表，现在我们仅仅需要在 Memcached 中使用它作为前缀即可。
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# cat test3.php
-{% endhighlight %}
+```
 
-{% highlight php %}
+``` php
 <?php
     $m = new Memcache();
     $m->addServer('localhost', 11211);
     $m->set('@@bbb.key1', 'Should be stored on dados2 table');
     echo 'Value of bbb.key1 is:' . $m->get('@@bbb.key1') . "\n";
 ?>
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# php test3.php
 Value of bbb.key1 is:Should be stored on dados2 table
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM memcached.dados2;
 +------+----------------------------------+------+------+------+
 | c1   | c2                               | c3   | c4   | c5   |
@@ -260,11 +261,11 @@ mysql> SELECT * FROM memcached.dados2;
 | key1 | Should be stored on dados2 table |    0 |    2 |    0 |
 +------+----------------------------------+------+------+------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 我们也可以映射这个表，将存储的值分为单独的域。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM innodb_memcache.config_options \
     -> WHERE name = 'separator';
 +-----------+-------+
@@ -273,11 +274,11 @@ mysql> SELECT * FROM innodb_memcache.config_options \
 | separator | |     |
 +-----------+-------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 我们将会使用这个字符来把值存储到不同的列中。让我们创建一个表，添加到一个新的容器中（我们将会指定新的分隔符——逗号','，来存放我们的数据）：
 
-{% highlight sql %}
+``` bash
 mysql> CREATE TABLE products \
     -> (id varchar(128), \
     -> name varchar(255), \
@@ -294,15 +295,15 @@ mysql> INSERT INTO innodb_memcache.containers \
     -> VALUES ('products', 'memcached', 'products', 'id', 'name,value', \
     -> 'c3','c4','c5','PRIMARY');
 Query OK, 1 row affected (0.06 sec)
-{% endhighlight %}
+```
 
 现在，让我们创建一个产品数组，然后添加这些数据到 Memcached 中。
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# cat test4.php
-{% endhighlight %}
+```
 
-{% highlight php %}
+``` php
 <?php
     $m = new Memcache();
     $m->addServer('localhost', 11211);
@@ -314,19 +315,19 @@ Query OK, 1 row affected (0.06 sec)
     );
 
     foreach($products as $product)
-    {   
+    {
         $key = '@@products.' . $product[0];
         $value = $product[1] . '|' . $product[2];
         $m->set($key, $value);
     }
 ?>
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# php test4.php
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM memcached.products;
 +----+-------+---------+------+------+------+
 | id | name  | value   | c3   | c4   | c5   |
@@ -337,33 +338,33 @@ mysql> SELECT * FROM memcached.products;
 | 4  | Chair | 99,00   |    0 |    6 |    0 |
 +----+-------+---------+------+------+------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 服务器/服务 重启 ##
 
 让我们看看如果我们重启 MySQL 服务（重启服务器通用适用）会发生什么？
 这些存储在 Memcached 中的数据在 MySQL 服务重启之后仍然会存在吗？
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# service mysql restart
 Shutting down MySQL...... SUCCESS!
 Starting MySQL. SUCCESS!
 
 [root@mysql memcache]# cat test5.php
-{% endhighlight %}
+```
 
-{% highlight php %}
+``` php
 <?php
     $m = new Memcache();
     $m->addServer('localhost', 11211);
     echo 'Value of key1 is:' . $m->get('key1') . "\n";
 ?>
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql memcache]# php test5.php
 Value of key1 is:Entry modified  directly on MySQL
-{% endhighlight %}
+```
 
 换句话说！即使服务重启或者服务器重启，这些数据仍然会存在。
 
@@ -373,7 +374,7 @@ Value of key1 is:Entry modified  directly on MySQL
 
 在 /var/log/audit/audit.log 中查找包含 mysqld 和 denied 关键字的条目，如果你能找到，输入如下的命令来创建一个新的 SELinux 模块来允许：
 
-{% highlight bash %}
+``` bash
 
 type=AVC msg=audit(1423266535.066:5): avc:  denied  { name_bind } for  \
 pid=1123 comm="mysqld" src=11211 scontext=system_u:system_r:mysqld_t:s0 \
@@ -404,11 +405,11 @@ To make this policy package active, execute:
 semodule -i mysql-memcache.pp
 [root@mysql selinux-custom]# semodule -i mysql-memcache.pp
 
-{% endhighlight %}
+```
 
  **译者注：以下为译者添加，用于测试在 SELinux 环境下，MySQL 和 Memcached 的集成。**
 
-{% highlight bash %}
+``` bash
 [root@mysql selinux-custom]# sestatus
 SELinux status:                 enabled
 SELinuxfs mount:                /selinux
@@ -423,25 +424,25 @@ Shutting down MySQL....                                    [  OK  ]
 Starting MySQL.                                            [  OK  ]
 [root@mysql memcache]# cd ~/memcache
 [root@mysql memcache]# cat test6.php
-{% endhighlight %}
+```
 
-{% highlight php %}
+``` php
 <?php
     $m = new Memcache();
     $m->addServer('localhost', 11211);
     echo 'Value of key1 is:' . $m->get('key1') . "\n";
 ?>
 
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 [root@mysql selinux-custom]# netstat -tunap | grep LIST | grep mysql
 tcp        0      0 0.0.0.0:11211               0.0.0.0:*                   LISTEN      7820/mysqld
 tcp        0      0 :::11211                    :::*                        LISTEN      7820/mysqld
 tcp        0      0 :::3306                     :::*                        LISTEN      7820/mysqld
 [root@mysql memcache]# php test6.php
 Value of key1 is:Entry modified  directly on MySQL
-{% endhighlight %}
+```
 
 ## Memcached 选项 ##
 

@@ -148,9 +148,9 @@ A 项目 MySQL 主从关系如图一：
 
 具体的做法如下，需要注意的是，请根据实际情况做调整，比如你的系统中磁盘很可能不是 sda。
 
-{% highlight bash %}
+``` bash
 echo "noop" > /sys/block/sda/queue/scheduler
-{% endhighlight %}
+```
 
 如果想永久生效，需要更改 /etc/grup.conf，添加 elevator，示例如下：
 
@@ -173,9 +173,9 @@ echo "noop" > /sys/block/sda/queue/scheduler
 
 修改方法如下：
 
-{% highlight sql %}
+``` bash
 SET GLOBAL innodb_io_capacity = 4000;
-{% endhighlight %}
+```
 
 网络上的文章，针对 SSD 的优化，MySQL 方面需要把 innodb_io_capacity 设置为 4000，或者更高。然而实际上，此业务 UPDATE 较多，每次的修改量大概有 20K，并且基本上都是离散写。innodb_io_capacity 达到 4000，SSD 并没有给整个系统带来很大的性能提升。相反，反而使  IO 压力过大，until 甚至达到 80% 以上。
 
@@ -183,9 +183,9 @@ SET GLOBAL innodb_io_capacity = 4000;
 
 修改方法如下：
 
-{% highlight sql %}
+``` bash
 SET GLOBAL innodb_max_dirty_pages_pct = 25;
-{% endhighlight %}
+```
 
 修改之后的 MySQL 配置：
 
@@ -235,9 +235,9 @@ I/O 持续出现波动，我们接着继续下调 innodb_io_capacity，调整为
 
 修改方法如下：
 
-{% highlight sql %}
+``` bash
 SET GLOBAL innodb_adaptive_flushing = OFF;
-{% endhighlight %}
+```
 
 修改之后的 MySQL 配置：
 
@@ -255,9 +255,9 @@ SET GLOBAL innodb_adaptive_flushing = OFF;
 
 修改方法如下：
 
-{% highlight sql %}
+``` bash
 SET GLOBAL innodb_adaptive_flushing = ON;
-{% endhighlight %}
+```
 
 修改之后的 MySQL 配置：
 

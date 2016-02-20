@@ -27,17 +27,17 @@ tags:
 
 **SQL  Server**
 
-{% highlight bash %}
+``` bash
 PRINT @@VERSION
 MicrosoftSQLServer2012-11.0.2100.60(X64)
 Feb10201219:39:15
 Copyright(c)MicrosoftCorporation
 EnterpriseEdition:Core-basedLicensing(64-bit)onWindowsNT6.1(Build7601:ServicePack1)
-{% endhighlight %}
+```
 
 **操作系统**
 
-{% highlight bash %}
+``` bash
 ------------------
 System Information
 ------------------
@@ -46,7 +46,7 @@ Service Pack 1 (7601.win7sp1_gdr.130828-1532)
 System Model: Aspire E1-471G
 Processor: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz (4 CPUs), ~2.6GHz
 Memory: 4096MB RAM
-{% endhighlight %}
+```
 
 ## 二 实现功能 ##
 
@@ -56,7 +56,7 @@ Memory: 4096MB RAM
 
 首先，我们准备测试数据，注意，这里的数据全部都是模拟数据，无实际含义。语句如下：
 
-{% highlight sql %}
+``` bash
 CREATE TABLE #temp
 (
    name VARCHAR(80)
@@ -115,17 +115,17 @@ VALUES     ('新城3075');
 
 INSERT INTO #temp
 VALUES     ('水井沟3076');
-{% endhighlight %}
+```
 
 然后，我们观察数据，发现这些数据都有规律，编号是数字，占4个字符。数字前面包含店、场、心、市、都、月、区、城、沟共9个字符。
 我们试着采用SQL Server内置的函数Substring、Charindex、Rtrim、Ltrim过滤掉出现次数最多（店）的字符串。
 语句如下：
 
-{% highlight sql %}
+``` bash
 SELECT Rtrim(Ltrim(Substring(name, Charindex('店', name) + 1, Len(name)))) AS name
 INTO   #t1
 FROM   #temp
-{% endhighlight %}
+```
 
 以下是这几个函数的使用说明：
 
@@ -199,7 +199,7 @@ FROM   #temp
 
 好了，我们查看处理完后的结果，可以看到包含店的字符串已经全部过滤出编号。
 
-{% highlight sql %}
+``` bash
 SELECT * FROM #t1
 3059
 3060
@@ -219,11 +219,11 @@ SELECT * FROM #t1
 旧区3074
 新城3075
 水井沟3076
-{% endhighlight %}
+```
 
 接着我们依次处理包含场、心、市、都、月、区、城、沟的字符串，语句和处理结果如下：
 
-{% highlight sql %}
+``` bash
 SELECT *
 FROM   #t1
 WHERE  name LIKE N'%[一-龥]%' COLLATE Chinese_PRC_BIN
@@ -321,11 +321,11 @@ SELECT *
 FROM   #t9
 WHERE  name LIKE N'%[一-龥]%' COLLATE Chinese_PRC_BIN
 --无记录
-{% endhighlight %}
+```
 
 这是最终的处理结果，过滤出编号后，我就可以利用这些编号和数据库表进行关联，获得想要的数据。
 
-{% highlight sql %}
+``` bash
 SELECT *
 INTO   #result
 FROM   #t9
@@ -357,25 +357,25 @@ FROM   xx s
        JOIN #result r
          ON s.xxx = r.name
 WHERE  s.xxx = 0;
-{% endhighlight %}
+```
 
 ## 四 总结 ##
 
 本文过滤编号实际上核心代码就两个，第一个是利用SQL Server的内置函数过滤出指定编号，语句如下：
 
-{% highlight sql %}
+``` bash
 SELECT Rtrim(Ltrim(Substring(name, Charindex('店', name) + 1, Len(name)))) AS name
 INTO   #t1
 FROM   #temp
-{% endhighlight %}
+```
 
 第二个是判断是否包含中文，语句如下：
 
-{% highlight sql %}
+``` bash
 SELECT *
 FROM   #t1
 WHERE  name LIKE N'%[一-龥]%' COLLATE Chinese_PRC_BIN
-{% endhighlight %}
+```
 
 **在工作中，发现和总结这些小技巧会让你的工作事半功倍。**
 

@@ -62,22 +62,22 @@ CPU 平均使用率，如图：
 
 首先使用如下语句分析出有问题的 SQL：
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/mysql -uroot -p'XXX' \
 -e "SHOW FULL PROCESSLIST;" | more
-{% endhighlight %}
+```
 
 然后将 SHOW FULL PROCESSLIST 的结果保存到一个文件：
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/mysql -uroot -p'XXX' \
 -e "SHOW FULL PROCESSLIST;" | \
 grep "XXX" | awk '{print $1}' > mysql_slow.txt
-{% endhighlight %}
+```
 
 最后使用如下简单的 Shell 脚本 kill 掉相关会话：
 
-{% highlight bash %}
+``` bash
 #!/bin/bash
 # Author: Robin Wen
 # Date: 2015-07-09 18:37:29
@@ -87,15 +87,15 @@ for i in `cat mysql_slow.txt`
 do
   /usr/local/mysql/bin/mysql -uroot -p'XXX' -e "kill $i"
 done
-{% endhighlight %}
+```
 
 当然也可以使用如下 SQL 拼接 kill 语句：
 
-{% highlight sql %}
+``` bash
 SELECT concat('kill ',id,';')
 FROM information_schema.processlist
 WHERE info LIKE 'XXX';
-{% endhighlight %}
+```
 
 Enjoy!
 

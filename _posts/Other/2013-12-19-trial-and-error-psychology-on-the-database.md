@@ -19,7 +19,7 @@ tags:
  
 以下是操作日志：
 
-{% highlight sql %}
+``` bash
 mysql> SELECT max(id) FROM test;
 +---------+
 | max(id) |
@@ -40,11 +40,11 @@ mysql> SELECT max(id) FROM test;
 |   49133 |
 +---------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 同理，UPDATE类似。
 
-{% highlight sql %}
+``` bash
 mysql> UPDATE test SET name='LARRY' WHERE id=(SELECT max(id) FROM test);
 ERROR 1093 (HY000): You can'tspecify target table 'test' for update in FROM clause
 mysql> UPDATE test SET name='LARRY' WHERE id=(SELECT max(id) FROM (SELECT * FROM
@@ -59,7 +59,7 @@ mysql> SELECT id,name FROM test WHERE id=(SELECT max(id) FROM test);
 | 49133 | LARRY |
 +-------+-------+
 1 row in set (0.03 sec)
-{% endhighlight %}
+```
 
 我就是一个在学习过程喜欢尝试，喜欢试错的人，这样带给我的好处就是可以遇到更多的问题，学习到更多知识。同样一个问题，在不同的软件版本，不同的实验环境结果是不一样的。如果你尝试在排列组合允许的范围内模拟各种问题，那样你的成长会相当地快。同理，把试错心理运用在生活中，你可能会遇到更多的问题，这样你会尝试使用更多的办法来解决。年轻人不要怕犯错，害怕犯错的人是很难取得成长的。
 

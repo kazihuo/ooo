@@ -6,7 +6,7 @@ title: "Python获取远程文件内容"
 category: Python
 summary: "最近需要实现一个功能，使用Jmeter自动生成测试报告。Jmeter脚本存放在Git仓库，现在需要实现在脚本发生更新时才自动生成测试报告。
 我的思路是这样的：在拉取Git项目之前通过git rev-list --count HEAD命令记录一个版本号，然后在拉取项目完成生成之后生成测试报告之前再通过此命令获取另一个版本号。比较这两个版本号，如果相同，则不自动生成测试报告，如果不同，则自动生成测试报告。"
-tags: 
+tags:
 - Python
 - 远程
 - Fabric
@@ -32,7 +32,7 @@ tags:
 
 首先写一个脚本，获取Git项目的版本号。
 
-{% highlight python %}
+``` python
 #!/usr/bin/env python
 # Author: Robin Wen
 # Date: 18:15:25 2014-12-24
@@ -44,11 +44,11 @@ import subprocess, os
 os.chdir('YOUR_PATH')
 lcmd='git rev-list --count HEAD'
 res=subprocess.call(lcmd, shell=True)
-{% endhighlight %}
+```
 
 然后写一个测试脚本，内容如下：
 
-{% highlight python %}
+``` python
 #!/usr/bin/env python
 # Author: Robin Wen
 # Date: 18:16:54 2014-12-24
@@ -76,7 +76,7 @@ if old == new:
     print "equal"
 else:
     print "not"
-{% endhighlight %}
+```
 
 脚本使用方法：首先在拉取之前获得一次版本号，然后在拉取之后再获得一次版本号，就可以判断出项目是否发生更新了。
 
@@ -92,7 +92,8 @@ GitHub地址：<a href="https://github.com/fabric/fabric" target="_blank"><i cla
 下面，谈到本文的核心了。**使用Fabric读取远程文件需要使用StringIO模块和get()方法，通过StringIO模块的getvalue()方法获取文件内容。**
 
 下面是脚本的核心代码：
-{% highlight python %}
+
+``` python
 #!/usr/bin/env python
 #encoding:utf-8
 # Author: Robin Wen
@@ -125,7 +126,7 @@ def git_pull():
 def auto_gen():
 
     print green('Auto generate testing reports.')
-    
+
     run('python '+script_dir+'/get_git_version.py > '+script_dir+'/new.log')
 
     fd = StringIO()
@@ -141,7 +142,7 @@ def auto_gen():
     else:
         run('ant -buildfile '+script_dir+'/build.xml gen-testing-report')
         print green('Auto generate testing reports finished!')
-{% endhighlight %}
+```
 
 在远程服务器调用该脚本即可，具体使用方法可以参考<a href="https://github.com/dbarobin/python-auto-deploy/tree/master/auto_gen_testing_reports" target="_blank">此处</a>，该项目已经托管在GitHub上。
 

@@ -30,7 +30,7 @@ tags:
 
 ### 2.1 环境 ###
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE "%version%";
 +-------------------------+------------------------------+
 | Variable_name           | Value                        |
@@ -42,17 +42,17 @@ mysql> SHOW VARIABLES LIKE "%version%";
 | version_compile_os      | apple-darwin10.3.0           |
 +-------------------------+------------------------------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 2.2 创建测试表和插入测试数据 ###
 
-{% highlight bash %}
+``` bash
 mysql -S /tmp/mysql_5173.sock -uroot -proot
-{% endhighlight %}
+```
 
 创建测试表和插入测试数据。
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 Database changed
 
@@ -91,13 +91,13 @@ Query OK, 1 row affected (0.01 sec)
 
 mysql> INSERT INTO user VALUES('温国兵');
 Query OK, 1 row affected (0.00 sec)
-{% endhighlight %}
+```
 
 ## 三 实现 ##
 
 ### 3.1 方法一 正则表达式 ###
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM user \G;
 *************************** 1. row ***************************
 name: robin
@@ -126,11 +126,11 @@ mysql> SELECT name FROM user WHERE NOT (name REGEXP "[\u0391-\uFFE5]");
 | 温国兵 |
 +-----------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.2 方法二 length() 和 char_length() ###
 
-{% highlight sql %}
+``` bash
 mysql> SELECT name, length(name), char_length(name) FROM user;
 +-----------+--------------+-------------------+
 | name      | length(name) | char_length(name) |
@@ -147,7 +147,7 @@ mysql> SELECT name FROM user WHERE length(name) <> char_length(name);
 | 温国兵 |
 +-----------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 四 总结 ##
 

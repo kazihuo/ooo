@@ -35,7 +35,7 @@ tags:
 
 首先查看从库状态：
 
-{% highlight sql %}
+``` bash
 mysql> SHOW SLAVE STATUS \G
 *************************** 1. row ***************************
                Slave_IO_State: Queueing master event to the relay log
@@ -79,13 +79,13 @@ Master_SSL_Verify_Server_Cert: No
   Replicate_Ignore_Server_Ids:
              Master_Server_Id: masterID
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 此时的 Slave_IO_State 为 Queueing master event to the relay log，而不是正常状态下的 Waiting for master to send event。刷新多次，状态没有任何变化，**Exec_Master_Log_Pos** 不变，从而导致 **Seconds_Behind_Master** 一直不变。
 
 接下来查看 PROCESSLIST 状态：
 
-{% highlight sql %}
+``` bash
 mysql> SHOW FULL PROCESSLIST;
 +--------+-------------+------------------+--------------------+---------+---------+---------------+------------------+
 | Id     | User        | Host             | db                 | Command | Time    | State           | Info                  |
@@ -103,7 +103,7 @@ mysql> SHOW FULL PROCESSLIST;
 | 106766 | userA     | xxx.xxx.xxx.xxx:17960 | databaseA | Sleep   |      64 |       | NULL                |
 +--------+-------------+------------------+--------------------+---------+---------+---------------+------------------+
 11 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 从以上的结果来看，没有任何异常。
 
@@ -111,14 +111,14 @@ mysql> SHOW FULL PROCESSLIST;
 
 分析日志我们可以使用 mysqlbinlog 命令，指定 start-position 为夯住的那个点，并重定向到文件。
 
-{% highlight bash %}
+``` bash
 /usr/local/mysql/bin/mysqlbinlog --no-defaults -v --start-position="594374863" \
 binlog.000283 > /XXX/binlog.sql
-{% endhighlight %}
+```
 
 查看输出结果，发现端倪了，以下是摘抄的部分结果：
 
-{% highlight sql %}
+``` bash
 /*!40019 SET @@session.max_insert_delayed_threads=0*/;
 /*!50003 SET @OLD_COMPLETION_TYPE=@@COMPLETION_TYPE,COMPLETION_TYPE=0*/;
 DELIMITER /*!*/;
@@ -165,7 +165,7 @@ BEGIN
 # at 594395340
 # at 594396336
 # at 594397332
-{% endhighlight %}
+```
 
 从以上输出中，我们可以知道，从夯住的那个点开始，binlog 记录的信息就出现了异常，可以推测在主库有大操作。另外，针对出现问题库，查看主库和从库的表数量，发现从库的表数量多于主库，有几个临时表出现。可以推测的，主库有删表的操作，从库同步夯住，导致同步异常，主库删表的操作还没来得及同步到从库。
 
@@ -180,7 +180,7 @@ BEGIN
 
 为了保险起见，我们在主库加大 expire_logs_days 参数，避免 binlog 丢失。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%expire%';
 +------------------+-------+
 | Variable_name    | Value |
@@ -199,13 +199,13 @@ mysql> SHOW VARIABLES LIKE '%expire%';
 | expire_logs_days | 5     |
 +------------------+-------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 接着修改从库的配置文件：
 
-{% highlight bash %}
+``` bash
 vim /xxx/xxxx/xxx/my.cnf
-{% endhighlight %}
+```
 
 在 mysqld 后，加入如下配置：
 
@@ -216,13 +216,13 @@ vim /xxx/xxxx/xxx/my.cnf
 
 然后重启 MySQL：
 
-{% highlight bash %}
+``` bash
 /xxx/xxx/xxx/xxx/mysqld restart
-{% endhighlight %}
+```
 
 登录 MySQL 从库，查看从库状态，并定时刷新状态，我们可以看到的是，**Exec_Master_Log_Pos** 在递增，**Seconds_Behind_Master** 在递减，证明问题已经解决了。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW SLAVE STATUS \G
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
@@ -266,7 +266,7 @@ Master_SSL_Verify_Server_Cert: No
   Replicate_Ignore_Server_Ids:
              Master_Server_Id: masterID
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 需要注意的是，待同步完成后，需要把从库配置文件中增加的 **replicate-ignore-table** 参数注释，并重启 MySQL。
 

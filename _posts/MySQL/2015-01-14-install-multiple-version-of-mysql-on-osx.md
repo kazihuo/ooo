@@ -28,7 +28,7 @@ MySQL 中允许运行多个实例，举一反三，也可以同时运行多个�
 
 创建 MySQL 主目录，解压不同版本的 MySQL 到 该目录。
 
-{% highlight bash %}
+``` bash
 sudo mkdir /usr/local/mysql
 sudo tar -zxvf ~/Downloads/mysql-5.1.73-osx10.6-x86_64.tar.gz \
 -C /usr/local/mysql/
@@ -37,30 +37,30 @@ sudo tar -zxvf ~/Downloads/mysql-5.5.40-osx10.6-x86_64.tar.gz \
 sudo tar -zxvf ~/Downloads/mysql-5.6.21-osx10.9-x86_64.tar.gz \
 -C /usr/local/mysql/
 ll /usr/local/mysql
-{% endhighlight %}
+```
 
 创建多个版本的 MySQL 的数据目录。
 
-{% highlight bash %}
+``` bash
 sudo mkdir /usr/local/mysql/data
 sudo mkdir /usr/local/mysql/data/5.1
 sudo mkdir /usr/local/mysql/data/5.5
 sudo mkdir /usr/local/mysql/data/5.6
-{% endhighlight %}
+```
 
 修改权限。
 
-{% highlight bash %}
+``` bash
 id mysql
 sudo chown -R mysql:mysql /usr/local/mysql
-{% endhighlight %}
+```
 
 添加环境变量。
 
-{% highlight bash %}
+``` bash
 vim ~/.bash_profile 
 grep mysql-5.1.73 ~/.bash_profile
-{% endhighlight %}
+```
 
 内容如下：
 
@@ -68,40 +68,40 @@ grep mysql-5.1.73 ~/.bash_profile
 
 使配置生效。
 
-{% highlight bash %}
+``` bash
 source ~/.bash_profile 
-{% endhighlight %}
+```
 
 安装 MySQL 5.1.73。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql/mysql-5.1.73-osx10.6-x86_64/
 sudo scripts/mysql_install_db --user=mysql \
 --datadir=/usr/local/mysql/data/5.1
-{% endhighlight %}
+```
 
 安装 MySQL 5.5.40。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql/mysql-5.5.40-osx10.6-x86_64/
 sudo scripts/mysql_install_db --user=mysql \
 --datadir=/usr/local/mysql/data/5.5o
-{% endhighlight %}
+```
 
 安装 MySQL 5.6.21。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql/mysql-5.6.21-osx10.8-x86_64/
 sudo scripts/mysql_install_db --user=mysql \
 --datadir=/usr/local/mysql/data/5.6
-{% endhighlight %}
+```
 
 配置 MySQL Multi。
 
-{% highlight bash %}
+``` bash
 sudo vim /etc/my.cnf
 cat /etc/my.cnf 
-{% endhighlight %}
+```
 
 内容如下：
 
@@ -140,9 +140,9 @@ cat /etc/my.cnf
 
 再次修改环境变量，设置启动和关闭数据库的别名。
 
-{% highlight bash %}
+``` bash
 vim ~/.bash_profile
-{% endhighlight %}
+```
 
 内容如下：
 
@@ -176,25 +176,25 @@ vim ~/.bash_profile
 
 使配置生效。
 
-{% highlight bash %}
+``` bash
 source ~/.bash_profile 
-{% endhighlight %}
+```
 
 **测试**
 
 依次启动 MySQL 5.1.73、MySQL 5.5.40、MySQL 5.6.12。
 
-{% highlight bash %}
+``` bash
 sta-5.1
 sta-5.5
 sta-5.6
-{% endhighlight %}
+```
 
 依次测试连接是否成功。
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql_5173.sock -e "SELECT version();"
-{% endhighlight %}
+```
 
 > +-----------+
 > | version() |
@@ -202,9 +202,9 @@ mysql --socket=/tmp/mysql_5173.sock -e "SELECT version();"
 > | 5.1.73    |
 > +-----------+
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql_5540.sock -e "SELECT version();"
-{% endhighlight %}
+```
 
 > +-----------+
 > | version() |
@@ -212,9 +212,9 @@ mysql --socket=/tmp/mysql_5540.sock -e "SELECT version();"
 > | 5.5.40    |
 > +-----------+
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql_5612.sock -e "SELECT version();"
-{% endhighlight %}
+```
 
 > +-----------+
 > | version() |
@@ -224,11 +224,11 @@ mysql --socket=/tmp/mysql_5612.sock -e "SELECT version();"
 
 依次关闭 MySQL 5.1.73、MySQL 5.5.40、MySQL 5.6.12。
 
-{% highlight bash %}
+``` bash
 sto-5.1
 sto-5.5
 sto-5.6
-{% endhighlight %}
+```
 
 文中涉及的配置文件：<a href="https://github.com/dbarobin/configfiles" target="_blank">configfiles</a>
 

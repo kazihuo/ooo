@@ -25,27 +25,27 @@ MySQL：5.1
 
 首先创建测试库，测试表：
 
-{% highlight sql %}
+``` bash
 CREATE DATABASE TEST DEFAULT CHARACTER SET UTF8;
 
 USE test;
 
 CREATE TABLE t(id INT, name VARCHAR(20)) CHARSET UTF8;
-{% endhighlight %}
+```
 
 接着实现功能：
 
 **第一种方法：**
 
-{% highlight bash %}
+``` bash
 mysql -uroot -proot -Ne 'show create table test.t' | grep CHARSET | awk -F' ' '{print $16}'
-{% endhighlight %}
+```
 
 这种方法的缺陷是：每张表的大小不一样，这样 `$16` 获得的数据不一定是 CHARSET 了。
 
 **第二种方法：**
 
-{% highlight bash %}
+``` bash
 mysql -uroot -proot -Ne 'show create table test.t' > file; \
 sed 's/$/ROBIN/g' -i file; awk '{sub(/^.*DEFAULT /, ""); \
 sub(/ROBIN.*/, ""); print}' file
@@ -56,7 +56,7 @@ sed 's/$ROBIN/g' -i file; \
 awk '{sub(/^.*DEFAULT CHARSET=/, ""); sub(/ROBIN.*/, ""); print}' file > newfile; \
 echo CHARSET=\`cat newfile\`
 CHARSET=utf8
-{% endhighlight %}
+```
 
 这种方法的基本思路是：保存文件，追加内容，再截取字符串之间的东西，也就是那个CHARSET。
 
@@ -64,9 +64,9 @@ CHARSET=utf8
 
 **最简单的方法：**
 
-{% highlight bash %}
+``` bash
 mysql -uroot -proot -Ne 'show create table test.t' | awk -F 'CHARSET=' '{print $2}'
-{% endhighlight %}
+```
 
 这种方法结合上述两种方法的优点。赞。
 

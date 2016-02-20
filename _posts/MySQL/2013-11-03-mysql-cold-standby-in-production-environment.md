@@ -37,43 +37,43 @@ tags:
 
 第二步，对磁盘进行分区。
 
-{% highlight bash %}
+``` bash
 fdisk /dev/sdb
 fdisk /dev/sdc
 ll /dev/sd[bc]1
-{% endhighlight %}
+```
 
 第三步，yum安装lvm2。
 
-{% highlight bash %}
+``` bash
 yum install lvm2 -y
-{% endhighlight %}
+```
 
 第四步，创建物理卷。
 
-{% highlight bash %}
+``` bash
 pvcreate /dev/sdb1 /dev/sdc1
   Physical volume "/dev/sdb1" successfully created
   Physical volume "/dev/sdc1" successfully created
-{% endhighlight %}
+```
 
 第五步，创建卷组
 
-{% highlight bash %}
+``` bash
 vgcreate data /dev/sdb1 /dev/sdc1
   Volume group "data" successfully created
-{% endhighlight %}
+```
 
 第六步，创建逻辑卷
 
-{% highlight bash %}
+``` bash
 lvcreate -L 2G -n mydata data
   Logical volume "mydata" created
-{% endhighlight %}
+```
 
 第七步，格式化磁盘。
 
-{% highlight bash %}
+``` bash
 mkfs.ext4 /dev/data/mydata
 mke2fs 1.41.12 (17-May-2010)
 Filesystem label=
@@ -97,25 +97,25 @@ Writing superblocks and filesystem accounting information: done
 
 This filesystem will be automatically checked every 28 mounts or
 180 days, whichever comes first.  Use tune2fs -c or -i to override.
-{% endhighlight %}
+```
 
 第八步，冷备
 
-{% highlight bash %}
+``` bash
 ls /usr/local/mysql/data/
 
 tar -cvPzf mysql01.tar.gz /usr/local/mysql/data/
-{% endhighlight %}
+```
 
 第九步，删除数据库文件。
 
-{% highlight bash %}
+``` bash
 rm -rf /usr/local/mysql/data/*
-{% endhighlight %}
+```
 
 第十步，挂载。
 
-{% highlight bash %}
+``` bash
 mount /dev/data/mydata /usr/local/mysql/data/
 
 df -h
@@ -127,20 +127,20 @@ tmpfs                 188M     0  188M   0% /dev/shm
 /dev/sr0              3.4G  3.4G     0 100% /iso
 /dev/mapper/data-mydata
                       2.0G   67M  1.9G   4% /usr/local/mysql/data
-{% endhighlight %}
+```
 [root@serv01 ~]# 
 
 第十一步，将挂载信息写入配置文件。
 
-{% highlight bash %}
+``` bash
 echo "/dev/mapper/data-mydata /usr/local/mysql/data ext4 defaults 1 2" >> /etc/fstab
 tail -n1 /etc/fstab
 /dev/mapper/data-mydata /usr/local/mysql/data ext4 defaults 1 2
-{% endhighlight %}
+```
 
 第十二步，停掉数据库。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld stop
  ERROR! MySQL server PID file could not be found!
 ps -ef | grep mysqld
@@ -151,17 +151,17 @@ chown mysql.mysql /usr/local/mysql/data/ -R
 ll /usr/local/mysql/data/
 ll /usr/local/mysql/data/ -d
 
-{% endhighlight %}
+```
 
 第十三步，恢复数据。
 
-{% highlight bash %}
+``` bash
 tar -xPvf mysql01.tar.gz
-{% endhighlight %}
+```
 
 第十四步，启动数据库，登录MySQL，然后查看数据是否丢失。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL SUCCESS!
 
@@ -169,11 +169,11 @@ mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 1
 Server version: 5.5.29-log Source distribution
-{% endhighlight %}
+```
 
 查看数据。
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -202,19 +202,19 @@ mysql> select * from stu;
 |    2 | larry02 |    2 |
 +------+---------+------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 
 第十五步，使用LVS的快照功能创建快照，快照不需要格式化。
 
-{% highlight bash %}
+``` bash
 lvcreate -L 100M -s -n smydata /dev/data/mydata
   Logical volume "smydata" created
-{% endhighlight %}
+```
 
 第十六步，挂载。
 
-{% highlight bash %}
+``` bash
 mount /dev/data/smydata /mnt
 
 df -h
@@ -228,11 +228,11 @@ tmpfs                 188M     0  188M   0% /dev/shm
                       2.0G   98M  1.8G   6% /usr/local/mysql/data
 /dev/mapper/data-smydata
                       2.0G   98M  1.8G   6% /mnt
-{% endhighlight %}
+```
 
 第十七步，模拟数据丢失和验证快照的数据不会受本身数据的影响。
 
-{% highlight bash %}
+``` bash
 cd /mnt
 ls
 
@@ -243,11 +243,11 @@ touch aa01.txt
 # 进入快照挂载目录，发现没有这个文件
 ls aa01.txt
 ls: cannot access aa01.txt: No such file or directory
-{% endhighlight %}
+```
 
 第十八步，备份数据。
 
-{% highlight bash %}
+``` bash
 cd /databackup/
 ll
 total 976
@@ -257,11 +257,11 @@ total 976
  SUCCESS! MySQL running (2198)
 
 tar -cvzf mysql02.tar.gz /mnt
-{% endhighlight %}
+```
 
 模拟数据丢失。
 
-{% highlight bash %}
+``` bash
 rm -rf /usr/local/mysql/data/*
 
 etc/init.d/mysqld stop
@@ -273,11 +273,11 @@ ps -ef | grep mysqld | grep grep -v
 cd /usr/local/mysql/data/
 ll
 total 0
-{% endhighlight %}
+```
 
 第十九步，恢复数据，启动数据库，登录MySQL，然后查看数据是否丢失。
 
-{% highlight bash %}
+``` bash
 tar -xvf /databackup/mysql02.tar.gz
 ls
 mnt
@@ -292,11 +292,11 @@ ls
 Starting MySQL SUCCESS!
 
 mysql
-{% endhighlight %}
+```
 
 查看数据。
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> select * from class;
@@ -316,7 +316,7 @@ mysql> select * from stu;
 |    2 | larry02 |    2 |
 +------+---------+------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 –EOF–
 

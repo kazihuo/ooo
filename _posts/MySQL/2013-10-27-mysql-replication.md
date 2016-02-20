@@ -40,53 +40,53 @@ AB复制又称主从复制，实现的是数据同步。如果要做MySQL AB复�
 在正式介绍MySQL AB复制之前，介绍怎样打包MySQL和快速安装MySQL。
 
 第一步，制作文件。
-{% highlight bash %}
+``` bash
 find /usr/local/mysql/ /etc/my.cnf /etc/init.d/mysqld > mysql
-{% endhighlight %}
+```
 
 第二步，打包。
 
-{% highlight bash %}
+``` bash
 tar -cPvzf mysql-5.5.29-linux2.6-x86_64.tar.gz -T mysql
 ll -h
-{% endhighlight %}
+```
 
 第三步，拷贝文件到实体机。
 
-{% highlight bash %}
+``` bash
 scp mysql-5.5.29-linux2.6-x86_64.tar.gz 192.168.1.1:/home/Wentasy/software/
-{% endhighlight %}
+```
 
 第四步，拷贝文件到serv01。
 
-{% highlight bash %}
+``` bash
 yum install /usr/bin/scp -y
 scp /home/Wentasy/software/mysql-5.5.29-linux2.6-x86_64.tar.gz 192.168.1.11:/opt
-{% endhighlight %}
+```
 
 第五步，解压。
 
-{% highlight bash %}
+``` bash
 tar -xPvf mysql-5.5.29-linux2.6-x86_64.tar.gz
-{% endhighlight %}
+```
 
 第六步，创建组和用户，注意编号和安装好数据库的机器上的用户一致。
 
-{% highlight bash %}
+``` bash
 groupadd -g 500 mysql
 useradd -u 500 -g 500 -r -M -s /sbin/nologin mysql
 id mysql
-{% endhighlight %}
+```
 
 第七步，改变MySQL安装目录的拥有者和所属组。
 
-{% highlight bash %}
+``` bash
 chown mysql.mysql /usr/local/mysql/ -R
-{% endhighlight %}
+```
 
 第八步，启动MySQL，做测试。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL.. SUCCESS!
 
@@ -97,7 +97,7 @@ mysql
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql>
-{% endhighlight %}
+```
 
 ## MySQL AB单向复制 ##
 
@@ -123,7 +123,7 @@ mysql>
 
 第一步，主服务器创建用户并清空日志。
 
-{% highlight sql %}
+``` bash
 mysql> show privileges;
 mysql> grant replication client, \
 replication slave on *.* to 'larry'@'192.168.1.%' \
@@ -162,11 +162,11 @@ mysql> show binary logs;
 | mysql-bin.000001 |       107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 第二步，修改从服务器的server-id。
 
-{% highlight bash %}
+``` bash
 cat /etc/my.cnf | grep server-id
 server-id = 1
 #server-id       = 2
@@ -183,11 +183,11 @@ Starting MySQL.. SUCCESS!
 #可以查看从服务器中的数据文件
 cd /usr/local/mysql/data/
 ll
-{% endhighlight %}
+```
 
 第三步，从服务器清空日志。
 
-{% highlight sql %}
+``` bash
 mysql> show binary logs;
 ERROR 2006 (HY000): MySQL server has gone away
 No connection. Trying to reconnect...
@@ -218,11 +218,11 @@ mysql> show binary logs;
 
 mysql> show slave status;
 Empty set (0.00 sec)
-{% endhighlight %}
+```
 
 第四步，从服务器通过change master to命令修改设置。
 
-{% highlight sql %}
+``` bash
 mysql> change master to
     -> master_host='192.168.1.11',
     -> master_user='larry',
@@ -231,11 +231,11 @@ mysql> change master to
     -> master_log_file='mysql-bin.000001',
     -> master_log_pos=107;
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第五步，开启slave。
 
-{% highlight sql %}
+``` bash
 mysql> show slave status \G;
 *************************** 1. row ***************************
                Slave_IO_State:
@@ -285,11 +285,11 @@ No query specified
 
 mysql> start slave;
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第六步，从服务器查看是否和主服务器通信成功。如果出现 Slave_IO_Running和Slave_SQL_Running都是yes，则证明配置成功。
 
-{% highlight sql %}
+``` bash
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
                   Master_Host: 192.168.1.11
@@ -335,12 +335,12 @@ Master_SSL_Verify_Server_Cert: No
 
 ERROR:
 No query specified
-{% endhighlight %}
+```
 mysql> show slave status \G;
 
 第七步，从服务器查看数据文件的更改.
 
-{% highlight bash %}
+``` bash
 ll
 total 28724
 -rw-rw----. 1 mysql mysql 18874368 Oct  5 19:45 ibdata1
@@ -373,11 +373,11 @@ mysql-bin.000001
 larry
 larry
 3306
-{% endhighlight %}
+```
 
 第八步，测试。
 
-{% highlight sql %}
+``` bash
 --serv08查看数据库
 mysql> show databases;
 +--------------------+
@@ -446,11 +446,11 @@ mysql> select * from test;
 |    1 |
 +------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 第九步，查看进程状态。
 
-{% highlight sql %}
+``` bash
 --serv01查看进程状态
 mysql> show processlist;
 +----+-------+--------------------+---------+-------------+------+-----------------------------------------------------------------------+------------------+
@@ -471,7 +471,7 @@ mysql> show processlist;
 |  3 | system user |           | NULL    | Connect |   65 | Slave has read all relay log; waiting for the slave I/O thread to update it | NULL             |
 +----+-------------+-----------+---------+---------+------+-----------------------------------------------------------------------------+------------------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## MySQLAB双向复制 ##
 
@@ -496,16 +496,16 @@ mysql> show processlist;
 
 第一步，serv08创建授权用户。
 
-{% highlight sql %}
+``` bash
 mysql> grant replication client, \
 replication slave on *.* to 'larry'@'192.168.1.%' \
 identified by 'larry';
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第二步，serv08清空日志。
 
-{% highlight sql %}
+``` bash
 mysql> show binary logs;
 +------------------+-----------+
 | Log_name         | File_size |
@@ -524,11 +524,11 @@ mysql> show binary logs;
 | mysql-bin.000001 |       107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 第三步，serv01使用change master to命令修改从服务器设置。
 
-{% highlight sql %}
+``` bash
 mysql> show slave status;
 Empty set (0.00 sec)
 
@@ -540,11 +540,11 @@ mysql> change master to
     -> master_log_file='mysql-bin.000001',
     -> master_log_pos=107;
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第四步，serv01开启slave。
 
-{% highlight sql %}
+``` bash
 mysql> start slave;
 Query OK, 0 rows affected (0.01 sec)
 
@@ -594,11 +594,11 @@ Master_SSL_Verify_Server_Cert: No
 
 ERROR:
 No query specified
-{% endhighlight %}
+```
 
 第五步，测试。
 
-{% highlight sql %}
+``` bash
 --serv01查看数据
 mysql> use larrydb;
 Database changed
@@ -659,7 +659,7 @@ mysql> select * from test;
 |    3 |
 +------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## MySQL多级主从复制 ##
 
@@ -687,7 +687,7 @@ mysql> select * from test;
 
 第一步，断开双向关系。A只作为主服务器。
 
-{% highlight sql %}
+``` bash
 --停止slave
 mysql> stop slave;
 Query OK, 0 rows affected (0.00 sec)
@@ -738,11 +738,11 @@ Master_SSL_Verify_Server_Cert: No
 
 ERROR:
 No query specified
-{% endhighlight %}
+```
 
 进入data目录，删除以下文件：master.info relay-log.info serv01-relay-bin.*。
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql/data
 
 ll
@@ -767,17 +767,17 @@ drwx------. 2 mysql mysql     4096 Oct  5 18:15 performance_schema
 drwxr-xr-x. 2 mysql mysql     4096 Oct  5 18:12 test
 
 rm -rf master.info relay-log.info serv01-relay-bin.*
-{% endhighlight %}
+```
 
 第二步，serv01重启服务，再次查看slave信息，发现已经不存在。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld restart
 Shutting down MySQL.... SUCCESS!
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 1
@@ -787,11 +787,11 @@ mysql> show slave status \G;
 Empty set (0.00 sec)
 ERROR:
 No query specified
-{% endhighlight %}
+```
 
 第三步，serv08查看slave状态。
 
-{% highlight sql %}
+``` bash
 mysql> show slave status \G;
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
@@ -838,29 +838,29 @@ Master_SSL_Verify_Server_Cert: No
 
 ERROR:
 No query specified
-{% endhighlight %}
+```
 
 如果查看slave状态出错，我们重启服务。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld restart
 Shutting down MySQL.. SUCCESS!
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
 第四步，serv09搭建相同版本的MySQL，修改server-id，启动服务。
 
-{% highlight bash %}
+``` bash
 vim /etc/my.cnf
 cat /etc/my.cnf | grep server-id
 server-id = 3
 /etc/init.d/mysqld start
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
 第五步，serv01插入数据。
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> select * from t2;
@@ -877,32 +877,32 @@ mysql> select * from t2;
 
 mysql> insert into t2(name) values('larry07');
 Query OK, 1 row affected (0.01 sec)
-{% endhighlight %}
+```
 
 第六步，serv08查看serv01插入的数据是否记录到日志文件。可以发现，和serv01建立关系的延时日志文件中有相关记录，而主日志文件mysql-bin.000003中没有相关记录。
 
-{% highlight bash %}
+``` bash
 mysqlbinlog serv08-relay-bin.000009 | grep insert -i --color
 /*!40019 SET @@session.max_insert_delayed_threads=0*/;
 SET INSERT_ID=9/*!*/;
 insert into t2(name) values('larry07')
 
 mysqlbinlog mysql-bin.000003 | grep larry07
-{% endhighlight %}
+```
 
 第七步，我们要把serv08的数据同步到serv09，因为serv08中的mysql-bin.000003文件没有相关记录，所以不能通过日志文件同步，我们只有先serv08导出数据，然后serv09导入数据，再把log_slave_updates打开
 
-{% highlight bash %}
+``` bash
 # 导出数据
 mysqldump --help --verbose | grep database
 mysqldump --databases larrydb > larrydb.sql
 # 拷贝数据文件
 scp larrydb.sql 192.168.1.19:/opt
-{% endhighlight %}
+```
 
 serv09导入数据。
 
-{% highlight sql %}
+``` bash
 mysql> source /opt/larrydb.sql;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -1008,11 +1008,11 @@ mysql> select * from t2;
 |  9 | larry07 |
 +----+---------+
 6 rows in set (0.01 sec)
-{% endhighlight %}
+```
 
 serv08修改配置文件，打开log_slave_updates，重启MySQL服务。
 
-{% highlight sql %}
+``` bash
 mysql> show variables like '%update%';
 +-----------------------------------------+-------+
 | Variable_name                           | Value |
@@ -1024,22 +1024,22 @@ mysql> show variables like '%update%';
 | sql_safe_updates                        | OFF   |
 +-----------------------------------------+-------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 增加log_slave_updates参数。
 
-{% highlight bash %}
+``` bash
 vim /etc/my.cnf
 cat /etc/my.cnf | grep log_slave_updates
 log_slave_updates=1
 /etc/init.d/mysqld restart
 Shutting down MySQL.... SUCCESS!
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
 查看参数是否生效。
 
-{% highlight sql %}
+``` bash
 --serv08
 mysql> show variables like "%update%";
 +-----------------------------------------+-------+
@@ -1052,11 +1052,11 @@ mysql> show variables like "%update%";
 | sql_safe_updates                        | OFF   |
 +-----------------------------------------+-------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第八步，serv01插入测试数据，我们看到打开这个参数后mysql-bin.000004和serv08-relay-bin.000011都有相关的插入数据的记录。
 
-{% highlight sql %}
+``` bash
 mysql> insert into t2(name) values('larry08');
 Query OK, 1 row affected (0.00 sec)
 
@@ -1073,10 +1073,10 @@ mysql> select * from t2;
 | 11 | larry08 |
 +----+---------+
 7 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 
-{% highlight bash %}
+``` bash
 mysqlbinlog mysql-bin.000004 | grep larry
 use `larrydb`/*!*/;
 insert into t2(name) values('larry08')
@@ -1084,11 +1084,11 @@ insert into t2(name) values('larry08')
 mysqlbinlog serv08-relay-bin.000011 | grep larry
 use `larrydb`/*!*/;
 insert into t2(name) values('larry08')
-{% endhighlight %}
+```
 
 第九步，serv08创建授权用户。
 
-{% highlight sql %}
+``` bash
 mysql> select user,password,host from mysql.user where user='larry';
 ERROR 2006 (HY000): MySQL server has gone away
 No connection. Trying to reconnect...
@@ -1112,11 +1112,11 @@ mysql> show binary logs;
 | mysql-bin.000004 |       335 |
 +------------------+-----------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第十步，serv09通过change master to修改slave配置，然后启动slave，查看slave状态，查看数据，发现已经从serv08更新过来。
 
-{% highlight sql %}
+``` bash
 mysql> change master to
     -> master_host='192.168.1.18',
     -> master_user='larry',
@@ -1237,11 +1237,11 @@ mysql> select * from larrydb.t2;
 | 11 | larry08 |
 +----+---------+
 7 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第十一步，serv01插入数据，可以看到serv08 serv09都已经同步过去了
 
-{% highlight sql %}
+``` bash
 --serv01
 mysql> insert into t2(name) values('larry09');
 Query OK, 1 row affected (0.00 sec)
@@ -1291,7 +1291,7 @@ mysql> select * from larrydb.t2;
 | 13 | larry09 |
 +----+---------+
 8 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 解决AB双向复制主键冲突 ##
 
@@ -1299,7 +1299,7 @@ mysql> select * from larrydb.t2;
 
 第一步，serv08创建测试表，插入数据，查看数据。
 
-{% highlight sql %}
+``` bash
 mysql> create table t2(id int auto_increment primary key,name varchar(30));
 Query OK, 0 rows affected (0.00 sec)
 
@@ -1326,11 +1326,11 @@ mysql> select * from t2;
 |  2 | larry02 |
 +----+---------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第二步，serv01查看数据。
 
-{% highlight sql %}
+``` bash
 mysql> select * from t2;
 +----+---------+
 | id | name    |
@@ -1342,11 +1342,11 @@ mysql> select * from t2;
 
 mysql> drop table t2;
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第二步，serv01和serv08修改配置文件，并重启服务。
 
-{% highlight bash %}
+``` bash
 # serv01操作
 vim /etc/my.cnf
 cat /etc/my.cnf | grep auto_incre
@@ -1365,11 +1365,11 @@ auto_increment_offset=2
 /etc/init.d/mysqld restart
 Shutting down MySQL. SUCCESS!
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
 第三步，serv01再次模拟数据
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -1452,7 +1452,7 @@ mysql> select * from t2;
 |  7 | larry05 |
 +----+---------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 –EOF–
 

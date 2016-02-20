@@ -35,7 +35,7 @@ tags:
 
 **环境**
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%version%';
 +-------------------------+------------------------------+
 | Variable_name           | Value                        |
@@ -47,7 +47,7 @@ mysql> SHOW VARIABLES LIKE '%version%';
 | version_compile_os      | apple-darwin10.3.0           |
 +-------------------------+------------------------------+
 5 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 2.2 添加 innodb_file_per_table 参数###
 
@@ -95,13 +95,13 @@ mysql> SHOW VARIABLES LIKE '%version%';
 
 接着登录到 MySQL。
 
-{% highlight bash %}
+``` bash
 mysql --socket=/tmp/mysql_5173.sock -uroot -proot
-{% endhighlight %}
+```
 
 创建测试表。
 
-{% highlight sql %}
+``` bash
 mysql> SET storage_engine=INNODB;
 Query OK, 0 rows affected (0.00 sec)
 
@@ -134,16 +134,16 @@ mysql> CREATE TABLE city
        -> comb VARCHAR(10)
        -> ) DEFAULT CHARSET utf8 ENGINE = INNODB;
 Query OK, 0 rows affected (0.08 sec)
-{% endhighlight %}
+```
 
 **说明：**实验主要使用 city 表。user 表只是用于测试 `LOAD DATA INFILE` 的速度。
 
 创建数据文本。
 
-{% highlight bash %}
+``` bash
 vim /tmp/user.txt
 cat -n /tmp/user.txt
-{% endhighlight %}
+```
 
 该文件包括 100W 行数据。内容如下：
 
@@ -151,10 +151,10 @@ cat -n /tmp/user.txt
 > ......
 > 1000000  "robin",19,"M","GuangZhou","DBA"
 
-{% highlight bash %}
+``` bash
 vim /tmp/city.txt
 cat -n /tmp/city.txt
-{% endhighlight %}
+```
 
 该文件包括 1000W 行数据。内容如下：
 
@@ -164,10 +164,10 @@ cat -n /tmp/city.txt
 
 编辑导入数据脚本。
 
-{% highlight bash %}
+``` bash
 vim /tmp/load_to_user.sql
 cat -n /tmp/load_to_user.sql
-{% endhighlight %}
+```
 
 该文件包括 10 行相同的导入数据命令。成功导入到 user 表后，会有 1000W 的数据。内容如下：
 
@@ -183,10 +183,10 @@ cat -n /tmp/load_to_user.sql
 
 导入到 city 表的操作类似。
 
-{% highlight bash %}
+``` bash
 vim /tmp/load_to_city.sql
 cat -n /tmp/load_to_city.sql
-{% endhighlight %}
+```
 
 该文件包括 20 行相同的导入数据命令。成功导入到 city 表后，会有两亿条数据。内容如下：
 
@@ -202,13 +202,13 @@ cat -n /tmp/load_to_city.sql
 
 导入数据到 MySQL。
 
-{% highlight sql %}
+``` bash
 mysql> source /tmp/load_to_user.sql
-{% endhighlight %}
+```
 
 其中导入到 user 表共耗时 84.63 秒。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW TABLE STATUS LIKE 'user' \G;
 *************************** 1. row ***************************
            Name: user
@@ -238,25 +238,25 @@ mysql> SELECT count(*) FROM user;
 | 10000000 |
 +----------+
 1 row in set (7.06 sec)
-{% endhighlight %}
+```
 
 接着导入数据到 city 表。
 
-{% highlight sql %}
+``` bash
 mysql> source /tmp/load_to_city.sql
 Query OK, 10000000 rows affected (1 min 45.95 sec)
 Records: 10000000  Deleted: 0  Skipped: 0  Warnings: 0
 ......
-{% endhighlight %}
+```
 
 总共耗时：
 
-{% highlight bash %}
+``` bash
 bc <<< 105.95+113.84+114.89+111.83+\
 116.20+128.12+131.41+118.94+115.5+\
 122.63+116.12+119.87+140.83+148.78+\
 126.61+129.62+116.2+103.37+108.52+105.07
-{% endhighlight %}
+```
 
 共计 2394.30 秒，亦即 39.905 分钟。
 
@@ -264,9 +264,9 @@ bc <<< 105.95+113.84+114.89+111.83+\
 
 我们查看数据目录，可以看到该表占用空间为 15G。
 
-{% highlight bash %}
+``` bash
 sudo ls -FGlAhp test
-{% endhighlight %}
+```
 
 > total 15699980
 > -rw-rw----  1 _mysql  _mysql   8.5K Jan 15 16:46 city.frm
@@ -274,14 +274,14 @@ sudo ls -FGlAhp test
 
 删除表，耗时 1.08 秒。当然，这里数据量还不够大，所以速度还是挺快。
 
-{% highlight sql %}
+``` bash
 mysql> DROP TABLE city;
 Query OK, 0 rows affected (1.08 sec)
-{% endhighlight %}
+```
 
 接下来，我们重新创建表，导入数据。
 
-{% highlight sql %}
+``` bash
 mysql> CREATE TABLE city
        -> (name VARCHAR(20),
        -> province VARCHAR(20),
@@ -292,25 +292,25 @@ mysql> CREATE TABLE city
 Query OK, 0 rows affected (0.06 sec)
 
 mysql> source /tmp/load_to_city.sql
-{% endhighlight %}
+```
 
 导入数据耗时跟之前相差不多，不做计算。
 
 ### 2.5 第二次删除表，使用硬链接 ###
 
 创建硬链接。
-{% highlight bash %}
+``` bash
 sudo ls -FGlAhp test
-{% endhighlight %}
+```
 
 > total 15699980
 > -rw-rw----  1 _mysql  _mysql   8.5K Jan 15 17:35 city.frm
 > -rw-rw----  1 _mysql  _mysql    15G Jan 15 18:13 city.ibd
 
-{% highlight bash %}
+``` bash
 sudo ln test/city.ibd test/city.ibd.hl
 sudo ls -FGlAhp test
-{% endhighlight %}
+```
 
 > total 31399948
 > -rw-rw----  1 _mysql  _mysql   8.5K Jan 15 17:35 city.frm
@@ -321,7 +321,7 @@ sudo ls -FGlAhp test
 
 再次删除。
 
-{% highlight sql %}
+``` bash
 mysql> SHOW TABLE STATUS LIKE 'city' \G;
 *************************** 1. row ***************************
            Name: city
@@ -354,20 +354,20 @@ mysql> SELECT count(*) FROM city;
 
 mysql> DROP TABLE city;
 Query OK, 0 rows affected (0.90 sec)
-{% endhighlight %}
+```
 
 最后，把硬链接文件删除。
 
-{% highlight bash %}
+``` bash
 sudo ls -FGlAhp test
-{% endhighlight %}
+```
 
 > total 15699968
 > -rw-rw----  1 _mysql  _mysql    15G Jan 15 18:13 city.ibd.hl
 
-{% highlight bash %}
+``` bash
 sudo rm -rf test/city.ibd.hl
-{% endhighlight %}
+```
 
 ## 三 实验结果 ##
 

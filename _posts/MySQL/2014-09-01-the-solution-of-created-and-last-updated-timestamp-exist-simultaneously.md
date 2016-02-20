@@ -28,7 +28,7 @@ tags:
 
 在写这篇文章之前，明确我的MySQL版本。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT VERSION();
 +------------+
 | VERSION()  |
@@ -36,14 +36,14 @@ mysql> SELECT VERSION();
 | 5.5.29-log |
 +------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 现在有这样的需求，一张表中有一个字段created_at记录创建该条记录的时间戳，另一个字段updated_at记录更新该条记录的时间戳。
 我们尝试以下几个语句。
 
 第一个，测试通过。
 
-{% highlight sql %}
+``` bash
 CREATE TABLE temp
 (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -52,11 +52,11 @@ CREATE TABLE temp
     DEFAULT CURRENT_TIMESTAMP \
     ON UPDATE CURRENT_TIMESTAMP
 );
-{% endhighlight %}
+```
 
 第二个，测试不通过。报ERROR 1293 (HY000)错误。（完整错误信息：ERROR 1293 (HY000): Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause）
 
-{% highlight sql %}
+``` bash
 CREATE TABLE temp
 (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -67,7 +67,7 @@ CREATE TABLE temp
     DEFAULT CURRENT_TIMESTAMP \
     ON UPDATE CURRENT_TIMESTAMP
 );
-{% endhighlight %}
+```
 
 MySQL 5.5.29中有这样的奇葩限制，不明白为什么。既然有这样的限制，那么只有绕道而行，现在尝试给出如下几种解决办法。
 
@@ -78,7 +78,7 @@ MySQL 5.5.29中有这样的奇葩限制，不明白为什么。既然有这样�
 具体解决方法如下：
 1.temp表结构如下：
 
-{% highlight sql %}
+``` bash
 CREATE TABLE temp
 (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -87,11 +87,11 @@ CREATE TABLE temp
     DEFAULT CURRENT_TIMESTAMP,
     updated_at timestamp NULL
 );
-{% endhighlight %}
+```
 
 2.插入测试数据：
 
-{% highlight sql %}
+``` bash
 mysql> INSERT INTO temp(name,created_at,updated_at) \
 VALUES('robin',now(),now());
 Query OK, 1 row affected (0.03 sec)
@@ -108,11 +108,11 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy | 2014-09-01 14:01:11 | 2014-09-01 14:01:11 |
 +----+---------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 3.在temp上创建触发器，实现更新时记录更新时间；
 
-{% highlight sql %}
+``` bash
 delimiter |
 DROP TRIGGER IF EXISTS tri_temp_updated_at;
 CREATE TRIGGER tri_temp_updated_at BEFORE UPDATE ON temp
@@ -122,11 +122,11 @@ BEGIN
 END;
 |
 delimiter ;
-{% endhighlight %}
+```
 
 4.测试。
 
-{% highlight sql %}
+``` bash
 mysql> UPDATE temp SET name='robinwen' WHERE id=1;
 Query OK, 1 row affected (0.01 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
@@ -140,7 +140,7 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy  | 2014-09-01 14:01:11 | 2014-09-01 14:01:11 |
 +----+----------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 解决方案二 ##
 
@@ -149,7 +149,7 @@ mysql> SELECT * FROM temp;
 具体解决方法如下：
 1.temp表结构如下：
 
-{% highlight sql %}
+``` bash
 CREATE TABLE temp
 (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -159,11 +159,11 @@ CREATE TABLE temp
     DEFAULT CURRENT_TIMESTAMP \
     ON UPDATE CURRENT_TIMESTAMP
 );
-{% endhighlight %}
+```
 
 2.在temp上创建触发器，实现插入数据记录创建时间；
 
-{% highlight sql %}
+``` bash
 delimiter |
 DROP TRIGGER IF EXISTS tri_temp_created_at;
 CREATE TRIGGER tri_temp_created_at BEFORE INSERT ON temp
@@ -176,11 +176,11 @@ BEGIN
 END;
 |
 delimiter ;
-{% endhighlight %}
+```
 
 3.插入测试数据：
 
-{% highlight sql %}
+``` bash
 mysql> INSERT INTO temp(name,created_at,updated_at) \
 VALUES('robin',now(),now());
 Query OK, 1 row affected (0.01 sec)
@@ -197,11 +197,11 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy | 2014-09-01 14:08:44 | 2014-09-01 14:08:44 |
 +----+---------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 4.测试。
 
-{% highlight sql %}
+``` bash
 mysql> UPDATE temp SET name='robinwen' WHERE id=1;
 Query OK, 1 row affected (0.01 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
@@ -215,7 +215,7 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy  | 2014-09-01 14:08:44 | 2014-09-01 14:08:44 |
 +----+----------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 解决方案三 ##
 
@@ -224,7 +224,7 @@ mysql> SELECT * FROM temp;
 具体解决方法如下：
 1.temp表结构如下：
 
-{% highlight sql %}
+``` bash
 CREATE TABLE temp
 (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -235,11 +235,11 @@ CREATE TABLE temp
     DEFAULT CURRENT_TIMESTAMP \
     ON UPDATE CURRENT_TIMESTAMP
 );
-{% endhighlight %}
+```
 
 2.插入测试数据：
 
-{% highlight sql %}
+``` bash
 mysql> INSERT INTO temp(name,created_at,updated_at) \
 VALUES('robin',now(),now());
 Query OK, 1 row affected (0.01 sec)
@@ -256,11 +256,11 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy | 2014-09-01 14:10:57 | 2014-09-01 14:10:57 |
 +----+---------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 3.测试。
 
-{% highlight sql %}
+``` bash
 mysql> UPDATE temp SET name='robinwen' WHERE id=1;
 Query OK, 1 row affected (0.01 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
@@ -274,7 +274,7 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy  | 2014-09-01 14:10:57 | 2014-09-01 14:10:57 |
 +----+----------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 解决方案四 ##
 
@@ -289,7 +289,7 @@ Previously, at most one TIMESTAMP column per table could be automatically initia
 
 我们确定下MySQL的版本。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT VERSION();
 +---------------------------------------+
 | VERSION()                             |
@@ -297,11 +297,11 @@ mysql> SELECT VERSION();
 | 5.6.20-enterprise-commercial-advanced |
 +---------------------------------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 我们把文首测试不通过的SQL语句在MySQL 5.6下执行，可以看到没有任何错误。
 
-{% highlight sql %}
+``` bash
 CREATE TABLE temp
 (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
@@ -313,11 +313,11 @@ CREATE TABLE temp
     ON UPDATE CURRENT_TIMESTAMP
 );
 Query OK, 0 rows affected (0.28 sec)
-{% endhighlight %}
+```
 
 接着我们插入测试语句，并作测试。
 
-{% highlight sql %}
+``` bash
 mysql> INSERT INTO temp(name) VALUES('robin');
 Query OK, 1 row affected (0.07 sec)
 
@@ -346,7 +346,7 @@ mysql> SELECT * FROM temp;
 |  2 | wentasy  | 2014-09-01 15:06:02 | 2014-09-01 15:06:02 |
 +----+----------+---------------------+---------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 总结 ##
 

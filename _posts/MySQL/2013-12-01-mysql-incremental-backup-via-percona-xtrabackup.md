@@ -38,13 +38,13 @@ tags:
 
 第一步，全备。
 
-{% highlight bash %}
+``` bash
 innobackupex --user=root --password=123456 /databackup/
-{% endhighlight %}
+```
 
 第二步，查看数据。
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> select * from class;
@@ -64,11 +64,11 @@ mysql> select * from stu;
 |    1 | larry007 |    1 |
 +------+----------+------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 第三步，更新数据。
 
-{% highlight sql %}
+``` bash
 mysql> insert into stu values(2,'larry02',1);
 Query OK, 1 row affected (0.00 sec)
 
@@ -80,11 +80,11 @@ mysql> select * from stu;
 |    2 | larry02  |    1 |
 +------+----------+------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第四步，增量备份，进行了全备和第一次增量备份，所以有两个备份文件夹。我们每次增量备份都是针对上一次备份。
 
-{% highlight bash %}
+``` bash
 # --incremental：增量备份的文件夹
 # --incremental-dir：针对哪个做增量备份
 innobackupex --user=root --password=123456 \
@@ -101,11 +101,11 @@ innobackupex: MySQL binlog position: filename 'mysql-bin.000004', position 353
 ls
 2013-09-10_22-12-50
 2013-09-10_22-15-45
-{% endhighlight %}
+```
 
 第五步，再次插入数据。
 
-{% highlight sql %}
+``` bash
 mysql> insert into stu values(3,'larry03',1);
 Query OK, 1 row affected (0.00 sec)
 
@@ -118,11 +118,11 @@ mysql> select * from stu;
 |    3 | larry03  |    1 |
 +------+----------+------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第六步，再次增量备份。
 
-{% highlight bash %}
+``` bash
 ls
 2013-09-10_22-12-50
 2013-09-10_22-15-45
@@ -130,11 +130,11 @@ ls
 innobackupex --user=root --password=123456 \
 --incremental /databackup/ \
 --incremental-dir /databackup/2013-09-10_22-15-45/
-{% endhighlight %}
+```
 
 第七步，再次插入数据。
 
-{% highlight sql %}
+``` bash
 mysql> insert into stu values(4,'larry04',1);
 Query OK, 1 row affected (0.00 sec)
 
@@ -148,11 +148,11 @@ mysql> select * from stu;
 |    4 | larry04  |    1 |
 +------+----------+------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第八步，再次增量备份。一次全备，三次增量备份，所以有四个备份文件夹。
 
-{% highlight bash %}
+``` bash
 innobackupex --user=root --password=123456 \
 --incremental /databackup/ \
 --incremental-dir /databackup/2013-09-10_22-19-21/
@@ -162,18 +162,18 @@ ls
 2013-09-10_22-15-45
 2013-09-10_22-19-21
 2013-09-10_22-21-42
-{% endhighlight %}
+```
 
 第九步，模拟数据丢失。
 
-{% highlight sql %}
+``` bash
 mysql> drop database larrydb;
 Query OK, 2 rows affected (0.02 sec)
-{% endhighlight %}
+```
 
 第十步，对全部的数据进行检查。可以看到增量备份和全备的文件占用磁盘大小有很大的差别，显然全备占用磁盘空间多，增量备份占用磁盘空间少。
 
-{% highlight bash %}
+``` bash
 innobackupex --apply-log --redo-only /databackup/2013-09-10_22-12-50/
 
 InnoDB Backup Utility v1.5.1-xtrabackup; Copyright 2003, 2009 Innobase Oy
@@ -189,11 +189,11 @@ du -sh ./*
 1.5M  ./2013-09-10_22-15-45
 1.5M  ./2013-09-10_22-19-21
 1.5M  ./2013-09-10_22-21-42
-{% endhighlight %}
+```
 
 第十一步，对第一次做的增量备份数据进行合并到全备份中去。
 
-{% highlight bash %}
+``` bash
 innobackupex --apply-log --redo-only \
 --incremental /databackup/2013-09-10_22-12-50/ \
 --incremental-dir=/databackup/2013-09-10_22-15-45/
@@ -204,36 +204,36 @@ and Percona Inc 2009-2012.  All Rights Reserved.
 innobackupex: Copying '/databackup/2013-09-10_22-15-45/hello/db.opt' to 
 '/databackup/2013-09-10_22-12-50/hello/db.opt'
 130910 22:32:26  innobackupex: completed OK!
-{% endhighlight %}
+```
 
 第十二步，对第二次做的增量备份数据进行合并到全备份中去
 
-{% highlight bash %}
+``` bash
 innobackupex --apply-log --redo-only \
 --incremental /databackup/2013-09-10_22-12-50/ \
 --incremental-dir=/databackup/2013-09-10_22-19-21/
-{% endhighlight %}
+```
 
 第十三步，对第三次做的增量备份数据进行合并到全备份中去
 
-{% highlight bash %}
+``` bash
 innobackupex --apply-log --redo-only \
 --incremental /databackup/2013-09-10_22-12-50/ \
 --incremental-dir=/databackup/2013-09-10_22-21-42/
-{% endhighlight %}
+```
 
 第十四步，恢复时需要停掉MySQL，所以我们停掉MySQL
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld stop
  ERROR! MySQL server PID file could not be found!
 
 pkill -9 mysql
-{% endhighlight %}
+```
 
 第十五步，恢复数据。注意这里指定的文件夹是2013-09-10_22-12-50。
 
-{% highlight bash %}
+``` bash
 innobackupex --copy-back /databackup/2013-09-10_22-12-50/
 
 InnoDB Backup Utility v1.5.1-xtrabackup; Copyright 2003, 2009 Innobase Oy
@@ -247,37 +247,37 @@ IMPORTANT: Please check that the copy-back run completes successfully.
            prints "completed OK!".
 
 Original data directory is not empty! at /usr/bin/innobackupex line 571.
-{% endhighlight %}
+```
 
 报以上错需要删除数据目录下的东西。
 
-{% highlight bash %}
+``` bash
 pwd
 /usr/local/mysql/data
 
 ls
 rm -rf  *
-{% endhighlight %}
+```
 
 再次恢复数据，并更改数据库数据目录的拥有者和所属组。
 
-{% highlight bash %}
+``` bash
 innobackupex --copy-back /databackup/2013-09-10_22-12-50/
 
 ll
 chown mysql.mysql /usr/local/mysql/data/ -R
-{% endhighlight %}
+```
 
 第十六步，启动服务。
 
-{% highlight bash %}
+``` bash
 /etc/init.d/mysqld start
 Starting MySQL.. SUCCESS!
-{% endhighlight %}
+```
 
 第十七步，登录数据库，然后查看数据。
 
-{% highlight sql %}
+``` bash
 mysql -uroot -p123456
 mysql> show databases;
 +--------------------+
@@ -314,7 +314,7 @@ mysql> select * from larrydb.stu;
 |    4 | larry04  |    1 |
 +------+----------+------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 –EOF–
 

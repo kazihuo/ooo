@@ -82,7 +82,7 @@ Blogroll:
 ### Build settings.
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 paginate: 5
 excerpt_separator: <!--more-->
 
@@ -96,5 +96,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   use_coderay: false
+  syntax_highlighter: rouge
 
 ### Custom gems.

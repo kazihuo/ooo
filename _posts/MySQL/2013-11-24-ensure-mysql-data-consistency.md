@@ -33,12 +33,12 @@ tags:
 
 第一步，验证数据。
 
-{% highlight bash %}
+``` bash
 rm -rf *
 ls
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> show tables;
@@ -67,18 +67,18 @@ mysql> select * from stu;
 |    2 | larry02 |    2 |
 +------+---------+------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第二步，备份数据。
 
-{% highlight bash %}
+``` bash
 mysqldump -uroot -p123456 --database larrydb > larrydb.sql
 ll larrydb.sql
-{% endhighlight %}
+```
 
 第三步，清空日志，因为已经做了备份，所以不需要以前的日志。
 
-{% highlight sql %}
+``` bash
 mysql> show binary logs;
 +------------------+-----------+
 | Log_name         | File_size |
@@ -114,12 +114,12 @@ mysql> show binary logs;
 | mysql-bin.000001 |       107 |
 +------------------+-----------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 
 第四步，更新数据。
 
-{% highlight sql %}
+``` bash
 mysql> insert into class values(3,'Devel');
 Query OK, 1 row affected (0.01 sec)
 
@@ -160,21 +160,21 @@ mysql> select * from stu;
 |    1 | larry007 |    1 |
 +------+----------+------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 记录当前时间。
-{% highlight bash %}
+``` bash
 date
 Tue Sep 10 19:38:24 CST 2013
-{% endhighlight %}
+```
 
 第五步，模拟数据丢失，删除库。
 
-{% highlight bash %}
+``` bash
 rm -rf /usr/local/mysql/data/larrydb/
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -188,16 +188,16 @@ mysql> show databases;
 | test               |
 +--------------------+
 7 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 cd /usr/local/mysql/data/
 
 # 可以使用mysqlbinlog命令查看日志文件
 mysqlbinlog mysql-bin.000001
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -214,15 +214,15 @@ mysql> show databases;
 
 mysql> drop database larrydb;
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 第六步，导入更新之前的数据。
 
-{% highlight bash %}
+``` bash
 mysql -uroot -p123456 < larrydb.sql
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> use larrydb;
 Database changed
 mysql> select * from stu;
@@ -242,16 +242,16 @@ mysql> select * from class;
 |    2 | oracle |
 +------+--------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 第七步，根据日志恢复数据。
 
-{% highlight bash %}
+``` bash
 mysqlbinlog --stop-datetime "2013-09-10 19:37:45" \
 mysql-bin.000001 | mysql -uroot -p123456
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> select * from stu;
 +------+---------+------+
 | sid  | sname   | cid  |
@@ -269,16 +269,16 @@ mysql> select * from class;
 |    3 | Devel |
 +------+-------+
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 一般规律：恢复的时间点（或者是Commit之后的那个时间点）是发生事故的那个点再加上一秒。
 
-{% highlight bash %}
+``` bash
 mysqlbinlog --stop-datetime "2013-09-10 19:37:46" \
 mysql-bin.000001 | mysql -uroot -p123456
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> select * from stu;
 +------+----------+------+
 | sid  | sname    | cid  |
@@ -297,15 +297,15 @@ mysql> select * from class;
 |    3 | Devel |
 +------+-------+
 4 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 查看日志文件内容。
 
-{% highlight bash %}
+``` bash
 mysqlbinlog mysql-bin.000001
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 # at 7131
 #130910 19:37:45 server id 1  end_log_pos 7240  
 Query thread_id=20  exec_time=996 error_code=0
@@ -322,7 +322,7 @@ DELIMITER ;
 # End of log file
 ROLLBACK /* added by mysqlbinlog */;
 /*!50003 SET COMPLETION_TYPE=@OLD_COMPLETION_TYPE*/;
-{% endhighlight %}
+```
 
 –EOF–
 

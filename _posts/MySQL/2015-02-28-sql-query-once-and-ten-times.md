@@ -25,7 +25,7 @@ tags:
 
 在做模拟之前，得有数据。所以我创建了一组测试数据，如下：
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 Database changed
 
@@ -57,17 +57,17 @@ mysql> INSERT INTO user(name, age, sex, city, work) \
     -> ("robin15",19,"M","GuangZhou","DBA");
 Query OK, 15 rows affected (0.03 sec)
 Records: 15  Duplicates: 0  Warnings: 0
-{% endhighlight %}
+```
 
 接着，为了模拟一条数据查询十次，我写了一个存储过程。这个存储过程也很简单，如下：
 
 **说明：这里的模拟如果这样会更好：不用循环，写十条 SQL，ID 不同。查询相同的数据会受查询缓存的影响，多少有些偏差。数据少，差别不是太大，所以这里还是这样模拟了。**
 
-{% highlight bash %}
+``` bash
 vim /tmp/proc_loop.sql
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 delimiter //
 DROP PROCEDURE IF EXISTS proc_loop_test;
 CREATE PROCEDURE proc_loop_test()
@@ -85,11 +85,11 @@ BEGIN
 END //
 
 delimiter ;
-{% endhighlight %}
+```
 
 然后，执行此外部 SQL。在调用此存储过程之前，我设置了 profiling ＝ 1，目的是统计 SQL 执行时间（只截取了需要的数据）。数据量比较少，耗费时间都是毫秒级，甚至更少。所以采用了这个笨办法。如下：
 
-{% highlight sql %}
+``` bash
 mysql> source /tmp/proc_loop.sql
 Query OK, 0 rows affected (0.00 sec)
 
@@ -116,11 +116,11 @@ mysql> SHOW PROFILES;
 |       22 | 0.00009300 | SELECT * FROM user WHERE id = 7 |
 +----------+------------+---------------------------------+
 15 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 再接着，利用分页一条 SQL 查询 10 条数据，并且查询所用时间（只截取了需要的数据）。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM user LIMIT 0,10;
 +----+---------+------+------+-----------+------+
 | id | name    | age  | sex  | city      | work |
@@ -145,11 +145,11 @@ mysql> SHOW PROFILES;
 |        1 | 0.00030400 | SELECT * FROM user LIMIT 0,10 |
 +----------+------------+-------------------------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 最后，统计每次查询一条数据查询 10 此所需时间，完成后，计算和一次查询 10 条数据耗费时间的比值，可以看到，每次查询一条数据，查询 10 次耗费时间为 0.00127300 秒，一次查询 10 条数据耗费时间为 0.00030400 秒，他们之间的比值为 4.1875。如果数据量够大，数据够复杂，这个比值会更大的。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT 0.00019700 + 0.00009800 + 0.00016200 + \
        -> 0.00016100 + 0.00012100 + 0.00014500 + 0.00010000 \
        -> + 0.00010300 + 0.00009300 + 0.00009300 \
@@ -168,7 +168,7 @@ mysql> SELECT 0.00127300/0.00030400 AS times;
 | 4.187500000000 |
 +----------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 三 分析 ##
 

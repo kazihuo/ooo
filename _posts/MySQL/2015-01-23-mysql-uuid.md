@@ -38,11 +38,11 @@ MySQL 实现了 UUID，并且提供 UUID() 函数方便用户生成 UUID。在 M
 
 ## 二 MySQL UUID() 函数 ##
 
-{% highlight bash %}
+``` bash
 mysql -uroot -proot
-{% endhighlight %}
+```
 
-{% highlight sql %}
+``` bash
 mysql> SHOW VARIABLES LIKE '%version%';
 +-------------------------+------------------------------+
 | Variable_name           | Value                        |
@@ -72,23 +72,23 @@ mysql> SELECT UUID(), UUID(), LENGTH(UUID()), CHAR_LENGTH(UUID()) \G
      LENGTH(UUID()): 36
 CHAR_LENGTH(UUID()): 36
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 可以看到，同一个 SQL 语句中，多处调用 UUID() 函数得到的值不相同。也就是说每次调用 UUD 函数都会生成一个唯一的值。并且多次调用或执行得到的后两组值相同。另外，本身 UUID 是 32 位，因为 MySQL 生成的 UUID 有四个中划线，所以在 utf8 字符集里，长度为 36 位。
 
 我们关闭 MySQL，然后启动。
 
-{% highlight sql %}
+``` bash
 /etc/init.d/mysqld stop
 Shutting down MySQL.                                       [  OK  ]
 
 /etc/init.d/mysqld start
 Starting MySQL..                                           [  OK  ]
-{% endhighlight %}
+```
 
 再次调用 UUID() 函数。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT UUID(), UUID(), LENGTH(UUID()), CHAR_LENGTH(UUID()) \G
 *************************** 1. row ***************************
              UUID(): 586546b2-a298-11e4-b0fc-08002735e4a4
@@ -96,13 +96,13 @@ mysql> SELECT UUID(), UUID(), LENGTH(UUID()), CHAR_LENGTH(UUID()) \G
      LENGTH(UUID()): 36
 CHAR_LENGTH(UUID()): 36
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 可以看到，第四组的值与重启之前发生变化，直到下一次重启 MySQL。
 
 我们连接到另一台服务器，再次调用 UUID() 函数。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT UUID(), UUID(), LENGTH(UUID()), CHAR_LENGTH(UUID()) \G
 *************************** 1. row ***************************
              UUID(): 8fa81275-a298-11e4-8302-0800276f77f9
@@ -110,7 +110,7 @@ mysql> SELECT UUID(), UUID(), LENGTH(UUID()), CHAR_LENGTH(UUID()) \G
      LENGTH(UUID()): 36
 CHAR_LENGTH(UUID()): 36
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 可以看到跟之前的数据不同，包括第五组数据。因为第五组的值跟机器相关，所以，同一台机器第五组值不变，不同机器则变。
 
@@ -136,27 +136,27 @@ CHAR_LENGTH(UUID()): 36
 
 rhel-01 中做如下设置，设置为 STATEMENT 模式。
 
-{% highlight sql %}
+``` bash
 mysql> SET tx_isolation="REPEATABLE-READ";
 Query OK, 0 rows affected (0.00 sec)
 
 mysql> SET binlog_format="STATEMENT";
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-02 也做如下设置：
 
-{% highlight sql %}
+``` bash
 mysql> SET tx_isolation="REPEATABLE-READ";
 Query OK, 0 rows affected (0.00 sec)
 
 mysql> SET binlog_format="STATEMENT";
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-01 创建测试表，插入测试数据。在插入数据之后，还可以看到一个警告。
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 Database changed
 mysql> CREATE TABLE user
@@ -187,11 +187,11 @@ en_name: robin
     job: dba
    addr: GZ
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-02 查看复制的数据。
 
-{% highlight sql %}
+``` bash
 mysql> USE test;
 Database changed
 
@@ -202,7 +202,7 @@ en_name: robin
     job: dba
    addr: GZ
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 可以看到，rhel-01 中的 UUID 值为`24d785a2-a29c-11e4-b0fc-08002735e4a4`，rhel-02 中的值为 `24cd38fe-a29c-11e4-8302-0800276f77f9`，两个值居然不相同，亦即主从不一致。那这样的复制是没有什么意义的。因为 UUID() 函数属于不确定函数，所以不支持 **STATEMENT** 模式。
 
@@ -210,21 +210,21 @@ en_name: robin
 
 rhel-01 中做如下设置，设置为 MIXED 模式。
 
-{% highlight sql %}
+``` bash
 mysql> SET binlog_format="MIXED";
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-02 中做如下设置：
 
-{% highlight sql %}
+``` bash
 mysql> SET binlog_format="MIXED";
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-01 插入测试数据。
 
-{% highlight sql %}
+``` bash
 mysql> INSERT INTO user(name, en_name, job, addr) \
 VALUES(UUID(), "Wentasy", "dba", "GZ");
 Query OK, 1 row affected (0.06 sec)
@@ -241,11 +241,11 @@ en_name: Wentasy
     job: dba
    addr: GZ
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-02 查看复制的数据。可以看到 **MIXED** 模式下，两台服务器的 UUID 相同，亦即主从一致。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM user \G
 *************************** 1. row ***************************
    name: 24cd38fe-a29c-11e4-8302-0800276f77f9
@@ -258,26 +258,26 @@ en_name: Wentasy
     job: dba
    addr: GZ
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### 3.5 基于 ROW 模式###
 
 rhel-01 中做如下设置，设置为 ROW 模式。
 
-{% highlight sql %}
+``` bash
 mysql> SET binlog_format="ROW";
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-02 也做如下设置，
-{% highlight sql %}
+``` bash
 mysql> SET binlog_format="ROW";
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-01 插入测试数据。
 
-{% highlight sql %}
+``` bash
 mysql> INSERT INTO user(name, en_name, job, addr) \
 VALUES(UUID(), "dbarobin", "dba", "GZ");
 Query OK, 1 row affected (0.00 sec)
@@ -299,11 +299,11 @@ en_name: dbarobin
     job: dba
    addr: GZ
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 rhel-02 查看复制的测试数据。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT * FROM user \G
 *************************** 1. row ***************************
    name: 24cd38fe-a29c-11e4-8302-0800276f77f9
@@ -321,7 +321,7 @@ en_name: dbarobin
     job: dba
    addr: GZ
 3 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 可以看到，在 **ROW** 模式下，复制的数据和主服务器相同，亦即主从一致。
 
@@ -329,7 +329,7 @@ en_name: dbarobin
 
 在 MySQL 5.1 之后的版本，提供 UUID_SHORT() 函数，生成一个 64 位无符号整数。另外，需要注意的是，`server_id` 的范围必须为 0-255，并且不支持 STATEMENT 模式复制。
 
-{% highlight sql %}
+``` bash
 mysql> SELECT UUID_SHORT();
 +-------------------+
 | UUID_SHORT()      |
@@ -337,7 +337,7 @@ mysql> SELECT UUID_SHORT();
 | 95914352036544514 |
 +-------------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ## 五 小结##
 
