@@ -45,3 +45,15 @@ git push origin HEAD --force
 # Git delete branch.
 git branch -d the_local_branch
 git push origin :the_remote_branch
+
+# Replace highlighter to rouge
+sed -i '' 's/{% endhighlight %}/```/' *.md
+sed -i '' 's/{% highlight bash %}/``` bash/' *.md
+sed -i '' 's/{% highlight sql %}/``` bash/' *.md
+sed -i '' 's/{% highlight python %}/``` python/' *.md
+sed -i '' 's/{% highlight lua %}/``` lua/' *.md
+sed -i '' 's/{% highlight cpp %}/``` cpp/' *.md
+sed -i '' 's/{% highlight php %}/``` php/' *.md
+sed -i '' 's/{% highlight css %}/``` css/' *.md
+grep endhighlight ./*
+grep highlight ./*
