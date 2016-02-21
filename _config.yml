@@ -78,6 +78,9 @@ Blogroll:
     - name: X7
       href: http://blog.csdn.net/dba_waterbin
       title: X7
+    - name: Ri Xu
+      href: https://xuri.me
+      title: Ri Xu
 
 ### Build settings.
 permalink: /:year/:month/:day/:title/
