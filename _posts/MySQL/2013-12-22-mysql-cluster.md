@@ -5,7 +5,7 @@ layout: post
 title: "MySQL 集群"
 category: MySQL
 summary: "上一篇文章我们提到MySQL 读写分离，这篇文章我们讲解MySQL集群。我们提到的集群，是指多台机器完成一个工作，最主要的场景是数据库服务器和Web服务器，但是集群环境不适合大规模计算。前面我们有提到MySQL AB复制，因为MySQL AB复制不适合大规模运用，要解决这个问题，我们可以使用MySQL集群。"
-tags: 
+tags:
 - Database
 - MySQL
 - 数据库
@@ -201,6 +201,7 @@ cat /etc/ndb-config.ini
 ```
 
 脚本内容如下。
+
 ``` bash
 # Example Ndbcluster storage engine config file.
 #
@@ -256,20 +257,20 @@ ll -d /var/lib/mysql-cluster/
 
 ``` bash
 /usr/local/mysql/bin/ndb_mgmd -f /etc/ndb-config.ini
-2013-11-04 23:46:12 [MgmtSrvr] INFO     -- 
+2013-11-04 23:46:12 [MgmtSrvr] INFO     --
 NDB Cluster Management Server. mysql-5.1.44 ndb-7.1.4b
-2013-11-04 23:46:12 [MgmtSrvr] INFO     -- 
-The default config directory '/usr/local/mysql/mysql-cluster' does not exist. 
+2013-11-04 23:46:12 [MgmtSrvr] INFO     --
+The default config directory '/usr/local/mysql/mysql-cluster' does not exist.
 Trying to create it...
-2013-11-04 23:46:12 [MgmtSrvr] INFO     -- 
+2013-11-04 23:46:12 [MgmtSrvr] INFO     --
 Sucessfully created config directory
-2013-11-04 23:46:12 [MgmtSrvr] INFO     -- 
+2013-11-04 23:46:12 [MgmtSrvr] INFO     --
 Reading cluster configuration from '/etc/ndb-config.ini'
-2013-11-04 23:46:12 [MgmtSrvr] WARNING  -- 
+2013-11-04 23:46:12 [MgmtSrvr] WARNING  --
 at line 39: [tcp] PortNumber is depricated, use Port used for this transporter instead
-2013-11-04 23:46:13 [MgmtSrvr] INFO     -- 
+2013-11-04 23:46:13 [MgmtSrvr] INFO     --
 Reading cluster configuration from '/etc/ndb-config.ini'
-2013-11-04 23:46:13 [MgmtSrvr] WARNING  -- 
+2013-11-04 23:46:13 [MgmtSrvr] WARNING  --
 at line 39: [tcp] PortNumber is depricated, use Port used for this transporter instead
 ```
 
@@ -390,7 +391,7 @@ chown mysql.mysql !$ -R
 
 ``` bash
 /usr/local/mysql/bin/ndbd --initial
-2013-11-04 23:57:06 [ndbd] INFO     -- Configuration fetched from 
+2013-11-04 23:57:06 [ndbd] INFO     -- Configuration fetched from
 '192.168.1.11:1186', generation: 1
 ```
 
@@ -473,7 +474,7 @@ interactive-timeout
 ndb_connectstring=192.168.1.11
 
 /usr/local/mysql/bin/ndbd --initial
-2013-11-05 00:02:18 [ndbd] INFO     -- Configuration fetched from 
+2013-11-05 00:02:18 [ndbd] INFO     -- Configuration fetched from
 '192.168.1.11:1186', generation: 1
 [root@ndb02 mysql]# /usr/local/mysql/bin/ndb_mgm
 -- NDB Cluster -- Management Client --
@@ -591,7 +592,7 @@ ll -d /var/lib/mysql-cluster/
 ``` bash
 /usr/local/mysql/scripts/mysql_install_db --user=mysql
 ```
-[root@sql01 mysql]# 
+[root@sql01 mysql]#
 
 第八步，sql01启动mysql，并加入ndb
 
