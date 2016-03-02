@@ -23,6 +23,16 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/3821183?v=3&s=73'
     content: '&#x8D5E;&#xFF1F;'
     date: 2016-02-20T06:39:01.174Z
+  - author:
+      type: github
+      displayName: johnwatsondev
+      url: 'https://github.com/johnwatsondev'
+      picture: 'https://avatars.githubusercontent.com/u/12760754?v=3&s=73'
+    content: >-
+      &#x4E00;&#x76F4;&#x575A;&#x6301;&ldquo;&#x80FD;&#x7528;&#x94B1;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x90FD;&#x4E0D;&#x662F;&#x95EE;&#x9898;&rdquo;&#x8FD9;&#x6761;&#x539F;&#x5219;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x548C;&#x4F18;&#x79C0;&#x7684;&#x4EBA;&#x5728;&#x4E00;&#x8D77;&#x505A;&#x4E8B;&#x624D;&#x591F;&#x8212;&#x5FC3;&#xFF5E;
+
+      &#x9898;&#x4E3B;&#x603B;&#x7ED3;&#x53CD;&#x601D;&#x7684;&#x4E60;&#x60EF;&#x503C;&#x5F97;&#x5B66;&#x4E60;&#x3002;
+    date: 2016-03-02T02:07:03.829Z
 
 ---
 
