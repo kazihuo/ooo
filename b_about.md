@@ -35,7 +35,7 @@ permalink: /about/
 
 Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
 
-科学上网利器点击：<a href="https://duotai.org" target="_blank"><img src="/images/duotai_16x16.png" alt="科学上网必备利器，多态，值得拥有" style="border: 0px;height: 16px;width: 16px;position: absolute;margin-left: 140px;margin-top: -22px;vertical-align: baseline;"/></a>
+科学上网利器点击：<a href="https://duotai.org" target="_blank"><img src="/images/duotai_16x16.png" alt="科学上网必备利器，多态，值得拥有" style="border: 0px;height: 16px;width: 16px;position: absolute;margin-left: 140px;margin-top: -22px;vertical-align: baseline;"/></a>&nbsp;&nbsp;&nbsp;&nbsp;(之前推荐的土行孙已不能注册，Fuck GFW!)
 
 可以通过电子邮件和我联系: dbarobinwen@gmail.com。如果 Gmail 哪天彻底不能访问，您可以通过如下两种方式获得我的墙内邮箱：
 
