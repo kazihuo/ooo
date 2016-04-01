@@ -17,10 +17,20 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/7981111?v=3&s=73'
     content: >-
       &#x770B;&#x5230;&#x535A;&#x4E3B;&#x63A8;&#x8350;&#xFF0C;&#x6628;&#x5929;&#x770B;&#x5230;&#x4E86
+
        &#x300C;&#x706B;&#x8F66;&#x7968;&#x4EF7;&#x8FD8;&#x4E0D;&#x591F;&#x9AD8;&#x300D;&#xFF0C;&#x89C9;&#x5F97;&#x4F5C;&#x8005;&#x7684;&#x63A8;&#x8BBA;&#x300C;&#x9EC4;&#x725B;&#x73B0;&#x8C61;&#x7684;&#x5B58;&#x5728;&#x80FD;&#x4F50;&#x8BC1;&#x7968;&#x4EF7;&#x4E0D;&#x591F;&#x9AD8;&#x300D;&#x5E76;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x6216;&#x8005;&#x5B9E;&#x9A8C;&#x652F;&#x6301;&#xFF0C;&#x6216;&#x8005;&#x6CA1;&#x6709;&#x9644;&#x5230;&#x6587;&#x7AE0;&#x4E2D;&#x3002;&#x4E5F;&#x8BB8;&#x9EC4;&#x725B;&#x73B0;&#x8C61;&#x53EA;&#x662F;&#x67D0;&#x79CD;&#x6DF1;&#x5C42;&#x539F;&#x56E0;&#x7684;&#x8868;&#x8C61;&#x3002;
+
 
       &#x770B;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x7ADF;&#x7136;&#x4E0D;&#x592A;&#x60F3;&#x770B;&#x4E0B;&#x53BB;&#x4E86;&#x3002;
     date: 2016-02-24T05:52:32.065Z
+  - author:
+      type: github
+      displayName: jaywcjlove
+      url: 'https://github.com/jaywcjlove'
+      picture: 'https://avatars.githubusercontent.com/u/1680273?v=3&s=73'
+    content: >
+      &#x8FD9;&#x4E2A;&#x8BC4;&#x8BBA;&#x5982;&#x4F55;&#x52A0;&#x4E0A;&#x5462;&#xFF1F;
+    date: 2016-04-01T15:44:29.267Z
 
 ---
 
