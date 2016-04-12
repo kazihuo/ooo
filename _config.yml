@@ -81,6 +81,9 @@ Blogroll:
     - name: Ri Xu
       href: https://xuri.me
       title: Ri Xu
+    - name: Korin
+      href: http://zkorin.com
+      title: Korin, PM
 
 ### Build settings.
 permalink: /:year/:month/:day/:title/
