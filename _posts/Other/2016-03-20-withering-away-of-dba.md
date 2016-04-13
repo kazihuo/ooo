@@ -16,6 +16,13 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/12680874?v=3&s=73'
     content: '&#x611F;&#x89C9;&#x53D7;&#x76CA;&#x532A;&#x6D45;~'
     date: 2016-03-28T09:26:43.952Z
+  - author:
+      type: github
+      displayName: nutto
+      url: 'https://github.com/nutto'
+      picture: 'https://avatars.githubusercontent.com/u/5317202?v=3&s=73'
+    content: '&#x611F;&#x89C9;&#x5199;&#x5F97;&#x4E0D;&#x9519;'
+    date: 2016-04-13T05:59:42.308Z
 
 ---
 
