@@ -23,6 +23,13 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/5317202?v=3&s=73'
     content: '&#x611F;&#x89C9;&#x5199;&#x5F97;&#x4E0D;&#x9519;'
     date: 2016-04-13T05:59:42.308Z
+  - author:
+      type: github
+      displayName: nutto
+      url: 'https://github.com/nutto'
+      picture: 'https://avatars.githubusercontent.com/u/5317202?v=3&s=73'
+    content: '&#x672C;&#x6765;&#x8FD8;&#x60F3;&#x505A;&#x4E00;&#x4E0B;DBA&#x65B9;&#x9762;&#x7684;&#x5C1D;&#x8BD5;,&#x4F46;&#x662F;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x5FF5;&#x5934;&#x6709;&#x70B9;&#x52A8;&#x6447;&#x4E86;'
+    date: 2016-04-13T06:00:41.519Z
 
 ---
 
