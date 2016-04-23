@@ -215,7 +215,7 @@ xxd -r \
 
 这一步没啥好讲解的，因为在 3.1 节我们就讨论过了。具体可以参考脚本：「[auto_recovery_data_postfix.sh](https://github.com/dbarobin/ibd-recovery/blob/master/auto_recovery_data_postfix.sh)」。
 
-### 3.5 修改 innodb_force_recovery，并重启
+### 3.5 修改 innodb_force_recovery 并重启
 
 > 注：此小节对应恢复步骤的 9。
 
