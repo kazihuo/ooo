@@ -4,6 +4,8 @@ title: Categories
 permalink: /categories/
 ---
 
+***
+
 <ul class="tags-box">
    {% if site.posts != empty %}
       {% for cat in site.categories %}

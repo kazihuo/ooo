@@ -4,6 +4,8 @@ title: Archives
 permalink: /archives/
 ---
 
+***
+
 <ul class="tags-box">
    {% if site.posts != empty %}
       {% for post in site.posts %}
