@@ -15,7 +15,7 @@ layout: default
     {% elsif cat == 'nosql' %}
       <a href="{{site.baseurl}}/categories/#{{ cat }}">NoSQL</a>&nbsp;
     {% else %}
-      <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat | capitalize}}</a>&nbsp;
+      <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat | capitalize}}</a>
     {% endif %}
     {% endfor %}
     {% if page.tags != empty %}
