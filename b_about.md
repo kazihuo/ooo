@@ -21,7 +21,7 @@ permalink: /about/
 
 关于我的更多足迹，可以在我的 [About Me](http://about.me/dbarobin) 名片中看到。另外，我的所有文章，可以在 [归档](http://dbarobin.com/archives/) 中找到。
 
-Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin"target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif"alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
+Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
 
 有任何问题想和我交流，可以通过电子邮件和我联系: **dbarobinwen@gmail.com**。
 
