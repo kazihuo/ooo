@@ -2,18 +2,29 @@
 published: true
 author: Robin Wen
 layout: post
-title: "建站分享"
+title: 建站分享
 category: Other
-summary: "这次建站经历于我而言是相当宝贵的，很多看似简单的问题，真正实施的时候未必如此。常言知易行难，这次感触颇深。把整个建站过程分享给大家，希望能给读者丁点启示，实乃欣慰。更希望我在自己的小屋里好好写作，静心而为，大放异彩。"
-tags: 
-- Other
-- 建站
-- GoDaddy
-- DNSPod
-- GitHub Pages
-- Jekyll
-- So Simple Theme
-- dbarobin.com
+summary: >-
+  这次建站经历于我而言是相当宝贵的，很多看似简单的问题，真正实施的时候未必如此。常言知易行难，这次感触颇深。把整个建站过程分享给大家，希望能给读者丁点启示，实乃欣慰。更希望我在自己的小屋里好好写作，静心而为，大放异彩。
+tags:
+  - Other
+  - 建站
+  - GoDaddy
+  - DNSPod
+  - GitHub Pages
+  - Jekyll
+  - So Simple Theme
+  - dbarobin.com
+comments:
+  - author:
+      type: github
+      displayName: dslztx
+      url: 'https://github.com/dslztx'
+      picture: 'https://avatars.githubusercontent.com/u/7435805?v=3&s=73'
+    content: >-
+      &#x8BF7;&#x95EE;&#xFF0C;&#x4F60;&#x7684;&#x56FE;&#x7247;&#x662F;&#x653E;&#x5728;&#x54EA;&#x91CC;&#x7684;&#x5462;&#xFF1F;&#x6211;&#x7684;&#x90AE;&#x7BB1;&#x662F;dslztx@gmail.com
+    date: 2016-06-23T06:08:02.991Z
+
 ---
 
 ## 目录 ##
