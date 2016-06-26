@@ -22,14 +22,6 @@ comments:
       url: 'https://github.com/dslztx'
       picture: 'https://avatars.githubusercontent.com/u/7435805?v=3&s=73'
     content: >-
-      &#x8BF7;&#x95EE;&#xFF0C;&#x4F60;&#x7684;&#x56FE;&#x7247;&#x662F;&#x653E;&#x5728;&#x54EA;&#x91CC;&#x7684;&#x5462;&#xFF1F;&#x6211;&#x7684;&#x90AE;&#x7BB1;&#x662F;dslztx@gmail.com
-    date: 2016-06-23T06:08:02.991Z
-  - author:
-      type: github
-      displayName: dslztx
-      url: 'https://github.com/dslztx'
-      picture: 'https://avatars.githubusercontent.com/u/7435805?v=3&s=73'
-    content: >-
       &#x4F60;&#x597D;&#xFF0C;&#x53EF;&#x4EE5;&#x9EBB;&#x70E6;&#x5E2E;&#x6211;&#x628A;&#x4E0A;&#x4E00;&#x6761;&#x6211;&#x7684;&#x8BC4;&#x8BBA;&#x5220;&#x6389;&#x5417;&#xFF0C;&#x66B4;&#x9732;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x6015;&#x6210;&#x4E3A;&#x5783;&#x573E;&#x90AE;&#x4EF6;&#x63A5;&#x6536;&#x8005;&#x4E86;
     date: 2016-06-26T03:53:47.271Z
 
