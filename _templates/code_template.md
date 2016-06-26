@@ -57,3 +57,7 @@ sed -i '' 's/{% highlight php %}/``` php/' *.md
 sed -i '' 's/{% highlight css %}/``` css/' *.md
 grep endhighlight ./*
 grep highlight ./*
+
+# Footnotes
+[^1]
+[^1]: [关于离线，离线官网](https://the-offline.com/about)
