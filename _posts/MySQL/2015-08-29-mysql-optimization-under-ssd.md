@@ -4,7 +4,11 @@ author: Robin Wen
 layout: post
 title: SSD 下的 MySQL IO 优化
 category: MySQL
-summary: A 项目，因 I/O 出现规律性地剧烈波动，调整了 MySQL InnoDB 参数。为了保险起见，A 项目方面决定采用配有 SSD 的机型，对主库进行迁移，同时对 24 的从库 27 进行迁移。待迁移完成后，在新的主库 39 上，针对 SSD 以及 MySQL InnoDB 参数进行优化。待程序切换完成后，再次对针对 SSD 以及 MySQL InnoDB 参数进行优化。也就是说在上线前后进行优化，观察 I/O 状态。网络文章介绍的方法有局限性和场景性，不能亲信，不能盲从，做任何调整都要以业务优先。保证业务的平稳运行才是最重要的，性能都是其次；任何一个调整，都要建立在数据的支撑和严谨的分析基础上，否则都是空谈；这类调优是非常有意义的，是真正能带来价值的，所以需要多下功夫，并且尽可能地搞明白为什么要这么调整。
+summary: >-
+  A 项目，因 I/O 出现规律性地剧烈波动，调整了 MySQL InnoDB 参数。为了保险起见，A 项目方面决定采用配有 SSD
+  的机型，对主库进行迁移，同时对 24 的从库 27 进行迁移。待迁移完成后，在新的主库 39 上，针对 SSD 以及 MySQL InnoDB
+  参数进行优化。待程序切换完成后，再次对针对 SSD 以及 MySQL InnoDB 参数进行优化。也就是说在上线前后进行优化，观察 I/O
+  状态。网络文章介绍的方法有局限性和场景性，不能亲信，不能盲从，做任何调整都要以业务优先。保证业务的平稳运行才是最重要的，性能都是其次；任何一个调整，都要建立在数据的支撑和严谨的分析基础上，否则都是空谈；这类调优是非常有意义的，是真正能带来价值的，所以需要多下功夫，并且尽可能地搞明白为什么要这么调整。
 tags:
   - MySQL
   - SSD
@@ -15,15 +19,25 @@ comments:
       displayName: leijian
       url: 'https://github.com/leijian'
       picture: 'https://avatars.githubusercontent.com/u/2032390?v=3&s=73'
-    content: '&#x5927;&#x795E;&#xFF0C;&#x57FA;&#x4E8E;mysql&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x505A;&#x7684;&#x5440;'
+    content: >-
+      &#x5927;&#x795E;&#xFF0C;&#x57FA;&#x4E8E;mysql&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x505A;&#x7684;&#x5440;
     date: 2015-12-23T06:19:30.042Z
   - author:
       type: full
       displayName: leijian
       url: 'https://github.com/leijian'
       picture: 'https://avatars.githubusercontent.com/u/2032390?v=3&s=73'
-    content: '&#x5927;&#x795E;&#xFF0C;&#x6587;&#x7AE0;&#x662F;&#x57FA;&#x4E8E;mysql&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x5440;'
+    content: >-
+      &#x5927;&#x795E;&#xFF0C;&#x6587;&#x7AE0;&#x662F;&#x57FA;&#x4E8E;mysql&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x5440;
     date: 2015-12-23T06:20:01.199Z
+  - author:
+      type: full
+      displayName: tenyks
+      url: 'https://github.com/tenyks'
+      picture: 'https://avatars.githubusercontent.com/u/3964982?v=3&s=73'
+    content: >-
+      LZ&#xFF0C;&#x56FE;&#x4E8C;&#x7684;&#x6570;&#x636E;&#x662F;&#x7528;&#x4EC0;&#x4E48;&#x5DE5;&#x5177;&#x6536;&#x96C6;&#x7684;&#xFF1F;
+    date: 2016-07-18T11:39:10.179Z
 
 ---
 
