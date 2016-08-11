@@ -2,15 +2,24 @@
 published: true
 author: Robin Wen
 layout: post
-title: "程序员的奋斗史（二十五）情绪与生活"
+title: 程序员的奋斗史（二十五）情绪与生活
 category: Other
-summary: "拥有一颗平和的心态，保持良好的情绪，活在当下，享受生命的精彩。"
-tags: 
-- Other
-- 程序员的奋斗史
-- Fighting
-- 情绪
-- 生活
+summary: 拥有一颗平和的心态，保持良好的情绪，活在当下，享受生命的精彩。
+tags:
+  - Other
+  - 程序员的奋斗史
+  - Fighting
+  - 情绪
+  - 生活
+comments:
+  - author:
+      type: github
+      displayName: zhaodawei
+      url: 'https://github.com/zhaodawei'
+      picture: 'https://avatars.githubusercontent.com/u/3748452?v=3&s=73'
+    content: '&#x8D5E;&#x540C;'
+    date: 2016-08-11T10:09:11.164Z
+
 ---
 
 `文/温国兵`
