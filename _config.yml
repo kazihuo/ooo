@@ -89,6 +89,7 @@ Blogroll:
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
+gems: [jekyll-paginate]
 paginate: 5
 excerpt_separator: <!--more-->
 
