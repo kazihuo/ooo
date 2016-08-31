@@ -59,6 +59,24 @@ locales:
       PostDate: "| 发表时间: "
       WechatDBTalk: "微信公众号"
       WechatDonate: "微信捐赠"
+    jp:
+      Aboutme: " 著者 "
+      Archives: " アーカイブ "
+      Blogroll: " ブログロール "
+      Categories: " カテゴリー "
+      Copyright_Notice: " 著作権表示 "
+      Recent_Posts: " 最近の投稿 "
+      Tags: " タグ "
+      Previous: " 前の記事 "
+      Next: " 次の記事 "
+      PostedInCategories: " カテゴリー："
+      Taggedwith: "| タグ："
+      PostDate: "| 投稿日時: "
+      Google_search: " サイト内検索 "
+      Home: " ホーム "
+      About: " このブログについて "
+      Guestbook: " メッセージ "
+      Subscribe: " 購読 "
 
 
 ### Blogroll info, only name can shown on the page.
