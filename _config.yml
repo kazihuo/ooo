@@ -77,6 +77,24 @@ locales:
       About: " このブログについて "
       Guestbook: " メッセージ "
       Subscribe: " 購読 "
+    pl:
+      Aboutme: "O mnie"
+      Archives: "Archiwum"
+      Blogroll: "Odnośniki"
+      Categories: "Kategorie"
+      Copyright_Notice: "Prawa autorskie"
+      Recent_Posts: "Najnowsze wpisy"
+      Tags: "Tagi"
+      Previous: "Starsze"
+      Next: "Nowsze"
+      PostedInCategories: "Kategoria"
+      Taggedwith: "tagi"
+      PostDate: "on "
+      Google_search: "Wyszukiwarka"
+      Home: "Strona główna"
+      About: "O mnie"
+      Guestbook: "Księga gości"
+      Subscribe: "Subskrypcja"
 
 
 ### Blogroll info, only name can shown on the page.
