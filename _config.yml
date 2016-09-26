@@ -102,6 +102,9 @@ Blogroll:
     - name: DBA Notes
       href: http://dbanotes.net
       title: DBA Notes
+    - name: KeNengBa
+      href: https://kenengba.com
+      title: KeNengBa
     - name: MacTalk
       href: http://macshuo.com
       title: MacTalk
@@ -111,9 +114,6 @@ Blogroll:
     - name: Yurii
       href: http://www.luanxiang.org/blog
       title: Yurii
-    - name: KeNengBa
-      href: https://kenengba.com
-      title: KeNengBa
     - name: X7
       href: http://blog.csdn.net/dba_waterbin
       title: X7
