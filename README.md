@@ -1,8 +1,8 @@
-# Personal Blog
+# Blog
 
 Personal blog, see at: [https://dbarobin.com](https://dbarobin.com)
 
-Powered by Jekyll based on freshman21. Thanks Lijia Yu.
+Powered by [Jekyll](https://jekyllrb.com) based on [freshman21](https://github.com/yulijia/freshman21). Thanks [Lijia Yu](https://github.com/yulijia).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Installation via git clone or download this repo.
 1. Git clone or download zip
 2. Remove the article of the `_posts` directory
 3. Update `_config.yml`
-4. Update CNAME
+4. Update `CNAME`
 5. Adjust theme by yourself
 6. Enjoy writting!
 
@@ -37,13 +37,11 @@ Installation via git clone or download this repo.
 
 ## Preview
 
-Screenshots:
-
 ![Screenshots of dbarobin.com at 2016.07.31](https://dbarobin.com/images/dbarobin.com.screenshots.160731.png)
 
 ## Contact
 
-[Robin Wen](https://twitter.com/dbarobin), dbarobinwen@gmail.com
+dbarobinwen@gmail.com
 
 ## License
 
