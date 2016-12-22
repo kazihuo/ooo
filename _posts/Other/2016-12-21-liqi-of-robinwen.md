@@ -49,6 +49,7 @@ tags:
 * [Sublime Text 3](https://www.sublimetext.com)，用了好几年了，轻量，好用，主题依然是 [Solarized Light](https://github.com/braver/Solarized)
 * [CotEditor](https://coteditor.com)，免费，文本编辑器
 * [Visual Studio Code](https://code.visualstudio.com)，免费，微软官方提供，阅读源码比较便捷
+* [GitHub Pages](https://pages.github.com)，程序员记录必备，博客静态生成器使用 [Jekyll](https://jekyllrb.com)，个人博客地址：[https://dbarobin.com](https://dbarobin.com)
 
 #### 系统相关
 
