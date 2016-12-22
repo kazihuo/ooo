@@ -181,8 +181,8 @@ tags:
 
 #### 写作
 
-* Day One for iOS，¥30，又是坑爹的升级
-* Day One 2 for iOS，¥30，Day One iOS 版，日记专用，颜值高
+* Day One for iOS，¥30，Day One iOS 版，日记专用，颜值高
+* Day One 2 for iOS，¥30，又是坑爹的升级
 * TextExpander，¥30，提升输入效率
 
 #### 生活
@@ -239,6 +239,8 @@ tags:
 整理这份清单，真得很耗功夫。不过这样整理之后，顿时清爽了。回过头来看看 Wish List，更有购买的欲望。
 
 这般折腾，这些花费，皆为打造高效的环境。马克思所谓「经济基础决定上层建筑」，这里换用下，**基础设施决定上层建筑**，不牺牲，不付出，怎能获得，你说是吧？
+
+GitHub 地址：[https://github.com/dbarobin/liqi](https://github.com/dbarobin/liqi)，本文同步更新。
 
 © 2016 Robin Wen
 
