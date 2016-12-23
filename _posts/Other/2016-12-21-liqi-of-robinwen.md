@@ -30,6 +30,22 @@ comments:
     content: >-
       &#x5F88;&#x597D;&#x3002;&#x6709;&#x4F18;&#x5316;&#x7A7A;&#x95F4;&#xFF0C;&#x6709;&#x4E9B;&#x573A;&#x666F;&#x7684;&#x5DE5;&#x5177;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#xFF0C;&#x6211;&#x73B0;&#x5728;&#x5BF9;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x5F88;&#x611F;&#x5174;&#x8DA3;&#x3002;
     date: 2016-12-23T03:04:10.770Z
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars.githubusercontent.com/u/3949252?v=3&s=73'
+    content: >-
+      &#x8BF4;&#x660E;&#x51E0;&#x70B9;&#xFF1A;
+
+      1&#x3001;&#x540E;&#x7EED;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4F18;&#x5316;&#x8FD9;&#x4E2A;&#x6E05;&#x5355;
+
+      2&#x3001;iOS
+      &#x514D;&#x8D39;&#x7248;&#xFF0C;&#x4E5F;&#x6709;&#x5FC5;&#x8981;&#x6574;&#x7406;&#x4E00;&#x4EFD;&#xFF0C;&#x628A;&#x6700;&#x5E38;&#x7528;&#x6700;&#x80FD;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x7684;&#x6574;&#x7406;&#x5C31;&#x597D;
+
+      3&#x3001;&#x5173;&#x4E8E; @xbot
+      &#x63D0;&#x5230;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#xFF0C;&#x4E5F;&#x4F1A;&#x6709;&#x7684;&#xFF0C;&#x5F88;&#x591A;&#x8F6F;&#x4EF6;&#x529F;&#x80FD;&#x786E;&#x5B9E;&#x6709;&#x91CD;&#x590D;&#xFF0C;&#x4E5F;&#x9700;&#x8981;&#x65AD;&#x820D;&#x79BB;
+    date: 2016-12-23T07:20:22.045Z
 
 ---
 
