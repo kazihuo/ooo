@@ -22,6 +22,14 @@ comments:
       :)
       &#x611F;&#x89C9;&#x88AB;&#x5B89;&#x5229;&#x4E86;&#x4E00;&#x5927;&#x6CE2;&#xFF0C;&#x53EF;&#x4EE5;&#x56DE;&#x53BB;&#x597D;&#x597D;&#x7814;&#x7A76;&#x4E00;&#x756A;&#x4E86;
     date: 2016-12-22T12:57:09.787Z
+  - author:
+      type: github
+      displayName: xbot
+      url: 'https://github.com/xbot'
+      picture: 'https://avatars.githubusercontent.com/u/1068265?v=3&s=73'
+    content: >-
+      &#x5F88;&#x597D;&#x3002;&#x6709;&#x4F18;&#x5316;&#x7A7A;&#x95F4;&#xFF0C;&#x6709;&#x4E9B;&#x573A;&#x666F;&#x7684;&#x5DE5;&#x5177;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#xFF0C;&#x6211;&#x73B0;&#x5728;&#x5BF9;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x5F88;&#x611F;&#x5174;&#x8DA3;&#x3002;
+    date: 2016-12-23T03:04:10.770Z
 
 ---
 
