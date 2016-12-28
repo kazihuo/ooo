@@ -46,6 +46,14 @@ comments:
       3&#x3001;&#x5173;&#x4E8E; @xbot
       &#x63D0;&#x5230;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#xFF0C;&#x4E5F;&#x4F1A;&#x6709;&#x7684;&#xFF0C;&#x5F88;&#x591A;&#x8F6F;&#x4EF6;&#x529F;&#x80FD;&#x786E;&#x5B9E;&#x6709;&#x91CD;&#x590D;&#xFF0C;&#x4E5F;&#x9700;&#x8981;&#x65AD;&#x820D;&#x79BB;
     date: 2016-12-23T07:20:22.045Z
+  - author:
+      type: github
+      displayName: regulusun
+      url: 'https://github.com/regulusun'
+      picture: 'https://avatars.githubusercontent.com/u/2269415?v=3&s=73'
+    content: >-
+      &#x5C45;&#x7136;&#x6CA1;&#x6709;MOU&#xFF0C;&#x8FD8;&#x6709;&#x6BD4;&#x7F51;&#x6613;&#x4E91;&#x97F3;&#x4E50;&#x66F4;&#x597D;&#x7684;&#xFF1F;
+    date: 2016-12-28T02:58:24.036Z
 
 ---
 
