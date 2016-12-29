@@ -54,6 +54,14 @@ comments:
     content: >-
       &#x5C45;&#x7136;&#x6CA1;&#x6709;MOU&#xFF0C;&#x8FD8;&#x6709;&#x6BD4;&#x7F51;&#x6613;&#x4E91;&#x97F3;&#x4E50;&#x66F4;&#x597D;&#x7684;&#xFF1F;
     date: 2016-12-28T02:58:24.036Z
+  - author:
+      type: github
+      displayName: zhoudean
+      url: 'https://github.com/zhoudean'
+      picture: 'https://avatars.githubusercontent.com/u/14845335?v=3&s=73'
+    content: >-
+      &#x54C7;&#x585E;&#xFF0C;&#x611F;&#x89C9;&#x77AC;&#x95F4;&#x4E0A;&#x6863;&#x6B21;&#xFF0C;&#x54C8;&#x54C8;
+    date: 2016-12-29T02:49:01.280Z
 
 ---
 
