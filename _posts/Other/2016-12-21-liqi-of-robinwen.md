@@ -62,6 +62,16 @@ comments:
     content: >-
       &#x54C7;&#x585E;&#xFF0C;&#x611F;&#x89C9;&#x77AC;&#x95F4;&#x4E0A;&#x6863;&#x6B21;&#xFF0C;&#x54C8;&#x54C8;
     date: 2016-12-29T02:49:01.280Z
+  - author:
+      type: github
+      displayName: jinking
+      url: 'https://github.com/jinking'
+      picture: 'https://avatars.githubusercontent.com/u/6762940?v=3&s=73'
+    content: |+
+      &#x7FFB;&#x5899;&#x662F;&#x4E2A;&#x5934;&#x75BC;&#x7684;&#x95EE;&#x9898;
+
+
+    date: 2016-12-31T05:52:41.654Z
 
 ---
 
