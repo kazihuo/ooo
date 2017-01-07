@@ -4,8 +4,7 @@
 # Desc: Auto push after update the repo.
 # Test GitHub sync to GitCafe.
 
-alias fuckgfw='proxychains4'
 git add -A .
 git commit -m "$1"
-fuckgfw git push origin master
+proxychains4 git push origin master
 # git push gitcafe master:gitcafe-pages
