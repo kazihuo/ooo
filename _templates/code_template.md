@@ -61,3 +61,6 @@ grep highlight ./*
 # Footnotes
 [^1]
 [^1]: [关于离线，离线官网](https://the-offline.com/about)
+
+# Copyright info
+©
