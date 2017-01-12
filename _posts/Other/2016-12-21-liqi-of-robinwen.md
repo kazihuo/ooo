@@ -80,6 +80,15 @@ comments:
     content: |
       &#x63A8;&#x8350;&#x4E00;&#x4E0B;Quiver&#x5199;&#x4F5C;
     date: 2016-12-31T07:51:30.642Z
+  - author:
+      type: github
+      displayName: cloudroc
+      url: 'https://github.com/cloudroc'
+      picture: 'https://avatars.githubusercontent.com/u/3135295?v=3&s=73'
+    content: >-
+      hello
+      &#x4F60;&#x8FD9;&#x4E2A;gitpages&#x7684;&#x4E3B;&#x9898;&#x53EB;&#x4EC0;&#x4E48;&#x554A;&#xFF0C;&#x770B;&#x7740;&#x5F88;&#x597D;&#x5F88;&#x5F3A;&#x5927;
+    date: 2017-01-12T09:03:05.463Z
 
 ---
 
