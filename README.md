@@ -38,7 +38,7 @@ Installation via git clone or download this repo.
 
 ## Preview
 
-![Screenshots of dbarobin.com at 2016.10.11](https://dbarobin.com/images/dbarobin.com.screenshots.161011.png)
+![Screenshots of dbarobin.com at 2017.01.13](https://dbarobin.com/images/dbarobin.com.screenshots.170113.png)
 
 ## Contact
 
