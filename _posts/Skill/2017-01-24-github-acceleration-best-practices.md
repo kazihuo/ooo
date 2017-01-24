@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: "GitHub 加速最佳实践"
 category: Skill
-summary: "GitHub 简称 GayHub，又称世界上最大的同性交友平台，还称程序员的左右手。但由于众所周知的原因，GitHub 在没有翻墙的前提下，访问速度就像乌龟在漫步，让追求效率的程序员痛苦不堪，恨不得肉身翻墙，享受优质互联网服务的同时晒晒太阳，吹吹海风。熟练的程序员基本上都使用 Terminal 或者命令行访问 GitHub。那么问题来了，怎么优雅地使用 GitHub 呢？我觉得应该分享分享。终端加速 GitHub 方法的前置条件，一是购买了加速服务或者租用 VPS 搭建加速服务，二是系统是 macOS，三是终端是 iTerm，四是 Shell 是 zsh。终端加速 GitHub，需要明确的是，http_proxy 和 https_proxy 的方法是无效的。最佳实践有两种方法，一是使用 proxychains，二是为 Git 配置代理。终端可以呼呼地使用 GitHub，那网页呢，也很简单，且听。网页加速 GitHub 方法的前置条件，一是购买了加速服务或者租用 VPS 搭建加速服务，二是系统是 macOS 或者 Win，三是浏览器是 Chrome。"
+summary: "GitHub 简称 GayHub，又称世界上最大的同性交友平台，还称程序员的左右手。但由于众所周知的原因，GitHub 在没有翻墙的前提下，访问速度就像乌龟在漫步，让追求效率的程序员痛苦不堪，恨不得肉身翻墙，享受优质互联网服务的同时晒晒太阳，吹吹海风。熟练的程序员基本上都使用 Terminal 或者命令行访问 GitHub。那么问题来了，怎么优雅地使用 GitHub 呢？我觉得应该分享分享。终端加速 GitHub 方法的前置条件，一是购买了加速服务或者租用 VPS 搭建加速服务，二是系统是 macOS，三是终端是 iTerm，四是 Shell 是 zsh。终端加速 GitHub，需要明确的是，http_proxy 和 https_proxy 的方法是无效的。最佳实践有两种方法，一是使用 proxychains，二是为 Git 配置代理。终端可以呼呼地使用 GitHub，那网页呢，也很简单，且听。网页加速 GitHub 方法的前置条件，一是购买了加速服务或者租用 VPS 搭建加速服务，二是系统是 macOS 或者 Win，三是浏览器是 Chrome。最后，为自由付费是值得的。最近工信部颁文：未经批准不得自建或租用 VPN，以后的墙只会越来越高，自由的成本也会越来越高，珍重！"
 tags:
 - 生产力
 - 效率
