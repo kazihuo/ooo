@@ -69,8 +69,6 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/6762940?v=3&s=73'
     content: |+
       &#x7FFB;&#x5899;&#x662F;&#x4E2A;&#x5934;&#x75BC;&#x7684;&#x95EE;&#x9898;
-
-
     date: 2016-12-31T05:52:41.654Z
   - author:
       type: github
