@@ -9,7 +9,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.8.0)
     colorator (0.1)
     execjs (2.4.0)
     fast-stemmer (1.0.2)
@@ -67,4 +67,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script-source (= 1.8.0)
   jekyll
+
+BUNDLED WITH
+   1.13.6
