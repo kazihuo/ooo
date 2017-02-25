@@ -27,6 +27,12 @@ Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_b
 
 有任何问题想和我交流，可以通过电子邮件和我联系: **dbarobinwen@gmail.com**。
 
+<iframe src="https://dbarobin.com/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
+
+<!--
+<iframe src="http://127.0.0.1:4000/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
+-->
+
 –EOF–
 
 <p class="post-meta">
