@@ -67,8 +67,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script-source (= 1.8.0)
   jekyll
+  jekyll-paginate
 
 BUNDLED WITH
    1.13.6
