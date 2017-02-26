@@ -27,6 +27,16 @@ Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_b
 
 有任何问题想和我交流，可以通过电子邮件和我联系: **dbarobinwen@gmail.com**。
 
+**PGP**
+
+* [0xE40BA25F](http://pgp.mit.edu/pks/lookup?op=get&search=0xE40BA25F)
+
+**公钥**
+
+* [robin.pub](https://dbarobin.com/download/robin.pub)
+
+> ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyGcxjfybx2GUxrmUSRHC3SsdXSctiUbr8kiZqf9IZORSk6gexhBVgvSeYdaJSiG4ZsSus6tUsewjzEtHB5GvQfeU+pu0wHLTMsav1wYfYmtH+HI8gL4WK2ea6HGvEGQRNr95cePaCvNRhGS6XaGv35d49boLkZBqb1Ze0pewENeTs9PelsVmY0JCPGRl6d8y7cHzjdLrN0VVNEkltIf+BB2ghCu0PqqCoCJXXzwzSqIxkRlIwZRkXcLHzevoj2x1K4mk8fIQY5dxO0sGyizVKDM8KEgnNEjA/XVZ5bC0XejFZfZ+mOtttb+aaxbdRjbdxcdVDEwl3eqmEwpnYYgIJ robinwen@MacBook-Pro.lan
+
 <iframe src="https://dbarobin.com/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
 
 <!--
