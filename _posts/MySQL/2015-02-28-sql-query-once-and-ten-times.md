@@ -191,4 +191,4 @@ MySQL 中，每一次查询要经过如下过程：
 
 题图来自：<a href="http://www.oracle.com/technetwork/articles/javase/figure2-large-145676.jpg" target="_blank"><img src="http://i.imgur.com/mvKAMvm.png" title="MySQL Architecture" height="16px" width="16px" border="0" alt="MySQL Architecture" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

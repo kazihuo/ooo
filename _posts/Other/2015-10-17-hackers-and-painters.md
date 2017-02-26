@@ -71,4 +71,4 @@ Paul 认为，财富和金钱并不相同。金钱只是用来交易财富的一
 
 题图来自：<a href="http://blog.capacityacademy.com/2014/10/29/hackers-pintores-los-ensayos-de-paul-graham-en-espanol/" target="_blank">The Tower of Babel</a>, By Pieter Bruegel the Elder.
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

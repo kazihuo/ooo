@@ -76,4 +76,4 @@ DBA 在多年以前是一个很风光的行业，那时会搭 DG 都是件特别
 
 题图：© Vincent Willem van Gogh/A Wheatfield, with Cypresses/Wikipedia
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

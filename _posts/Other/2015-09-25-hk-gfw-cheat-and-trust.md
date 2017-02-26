@@ -84,4 +84,4 @@ comments:
 
 图二：From <a href="http://guidecosmos.blogspot.com/2013/04/vpn-to-use-with-chinas-gfw.html" target="_blank">blogspot.com</a>, By Peter Aziz.
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

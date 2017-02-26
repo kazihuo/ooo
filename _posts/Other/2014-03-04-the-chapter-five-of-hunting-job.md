@@ -37,4 +37,4 @@ tags:
 
 题图来自：<a href="http://senior-care-central.com/tips-for-nursing-students-the-successful-interview/" target="_blank"><img src="http://i.imgur.com/wxB8WzZ.png" title="senior-care-central" height="16px" width="16px" border="0" alt="senior-care-central" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

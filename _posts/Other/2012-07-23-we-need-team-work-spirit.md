@@ -35,4 +35,4 @@ IT行业是个人才辈出的行业，纵观这些人才，无不是综合能力
 
 题图来自：<a href="http://www.conocophillips.com/Pages/default.aspx" target="_blank"><img src="http://i.imgur.com/N5KoNMw.png" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

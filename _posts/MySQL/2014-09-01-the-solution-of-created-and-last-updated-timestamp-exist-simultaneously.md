@@ -356,4 +356,4 @@ mysql> SELECT * FROM temp;
 
 原文地址：<a href="http://blog.csdn.net/justdb/article/details/38981477" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL中同时存在创建和上次更新时间戳字段解决方法浅析" height="16px" width="16px" border="0" alt="MySQL中同时存在创建和上次更新时间戳字段解决方法浅析" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -32,4 +32,4 @@ DBA从业人员大多性格极好，这不仅是工作性质决定的，更是�
 
 题图来自：<a href="http://www.transartdesign.com/page/dba/1" target="_blank"><img src="http://i.imgur.com/nWokFK4.png" title="DBA" height="16px" width="16px" border="0" alt="DBA" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

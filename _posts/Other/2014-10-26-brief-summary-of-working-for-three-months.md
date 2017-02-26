@@ -42,4 +42,4 @@ tags:
 
 题图来自：<a href="http://muir-way.com/blogs/news/14735641-happy-birthday-yosemite" target="_blank"><img src="http://i.imgur.com/KF9SQWy.png" title="Yosemite" height="16px" width="16px" border="0" alt="Yosemite" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

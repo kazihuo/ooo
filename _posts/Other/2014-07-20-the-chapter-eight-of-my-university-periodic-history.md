@@ -49,4 +49,4 @@ G同学用三个字形容最贴切不过：文艺范。他的身上，随处可�
 
 题图来自：<a href="http://what-buddha-said.net/drops/Selfless_Friendship_is_Sweetest.htm" target="_blank"><img src="http://i.imgur.com/7cj4dwE.png" title="what-buddha-said" height="16px" width="16px" border="0" alt="what-buddha-said" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

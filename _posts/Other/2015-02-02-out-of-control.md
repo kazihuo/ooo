@@ -58,4 +58,4 @@ KK 的思想和老子的思想有很多类似的地方，如果时光交错，�
 
 题图 2 来自：<a href="https://mindnutquest.wordpress.com/2012/07/09/a-parable-on-nature/" target="_blank"><img src="http://i.imgur.com/zw1PWFn.png" title="" height="16px" width="16px" border="0" alt="" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

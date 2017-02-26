@@ -356,4 +356,4 @@ MongoDB（分布式文档存储数据库） <a href="http://baike.baidu.com/subv
 
 原文地址：<a href="http://blog.csdn.net/justdb/article/details/38345537" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="深入理解MongoDB（一）Linux下配置MongoDB全攻略" height="16px" width="16px" border="0" alt="深入理解MongoDB（一）Linux下配置MongoDB全攻略" /></a>
 
-版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">（创意共享3.0许可证）</a>
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
