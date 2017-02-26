@@ -30,6 +30,7 @@ Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_b
 **PGP**
 
 * [0xE40BA25F](http://pgp.mit.edu/pks/lookup?op=get&search=0xE40BA25F)
+* Fingerprint: D834 9E03 333C 658B D5C1  C019 962F 0DBF E40B A25F
 
 **公钥**
 
