@@ -35,7 +35,7 @@ Installation via git clone or download this repo.
 * [freshman21, Lijia Yu](https://github.com/yulijia/freshman21)
 * [busuanzi, Bruce Sha](http://ibruce.info/2015/04/04/busuanzi)
 * [commentit, Guillaume Roye](https://github.com/guilro/commentit)
-* [Donate, LILIAN](http://lilian.info/blog/2016/12/AddPayFunction.html)
+* [Donate Page, Kaiyuan Xie](https://github.com/Kaiyuan/donate-page)
 
 ## Preview
 
