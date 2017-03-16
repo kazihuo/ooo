@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "美团点评开源 SQL 优化工具 SQLAdvisor 测试报告"
-CATE: Test
+category: Test
 summary: "SQLAdvisor 是由美团点评公司北京 DBA 团队开发维护的 SQL 优化工具：输入 SQL，输出索引优化建议。它基于 MySQL 原生词法解析，再结合 SQL 中的 where 条件以及字段选择度、聚合条件、多表 Join 关系等最终输出最优的索引优化建议。目前 SQLAdvisor 在美团公司内部大量使用，较为成熟、稳定。美团点评开源 SQL 优化工具 SQLAdvisor 得到的优化建议比较满意，建议在线上试用一段时间。这个工具的成本在于需要在线上 DB 安装相关依赖，如果确认采用，可以考虑在初始化 DB 服务器时部署此工具。"
 tags:
 - MySQL
