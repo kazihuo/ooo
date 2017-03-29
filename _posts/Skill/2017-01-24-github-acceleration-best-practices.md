@@ -25,6 +25,15 @@ comments:
         https://pbs.twimg.com/profile_images/680719979092692992/rQF8oyZD_bigger.png
     content: ' ProxyCommand /usr/bin/nc -X connect -x 127.0.0.1:1235 %h %p doesn&apos;t work for me.'
     date: 2017-02-12T17:25:37.944Z
+  - author:
+      type: github
+      displayName: heaventear
+      url: 'https://github.com/heaventear'
+      picture: 'https://avatars1.githubusercontent.com/u/2443840?v=3&s=73'
+    content: >-
+      &#x5176;&#x5B9E;&#x4E0D;&#x7528;&#x8FD9;&#x4E48;&#x9EBB;&#x70E6;&#xFF0C;&#x6302;&#x4E2A;&#x5916;&#x7F51;&#x52A0;&#x901F;&#x5668;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x6211;&#x7528;&#x7684;&#x662F;&#x5929;&#x8DEF;&#x52A0;&#x901F;&#x5668;&#xFF0C;&#x6548;&#x679C;&#x633A;&#x597D;&#x7684;,
+      https://91tianlu.com
+    date: 2017-03-29T07:47:08.527Z
 
 ---
 
