@@ -27,7 +27,7 @@ Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_b
 
 有任何问题想和我交流，可以通过电子邮件和我联系: **dbarobinwen@gmail.com**。
 
-另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时麻烦简单介绍下自己，并注明来自 dbarobin.com。
+另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时简单介绍下自己，并注明来自 dbarobin.com。
 
 **PGP**
 
