@@ -325,8 +325,8 @@ a.current_query
 ***
 
 * [1] 何勇 陈晓峰. 2014-10. Greenplum 企业应用实战. 北京. 机械工业出版社. 第 13 章 数据库扩容. P299.
-* [2] darkbaby123 (2017-02). 用 PostgreSQL 的 COPY 导入导出 CSV. Retrieved from https://ruby-china.org/topics/32293.
-* [3] Greenplum 官方 (2016-01). Expanding a Greenplum System. Retrieved from https://gpdb.docs.pivotal.io/4370/admin_guide/expand/expand-main.html.
+* [2] darkbaby123 (2017-02). 用 PostgreSQL 的 COPY 导入导出 CSV. Retrieved from [https://ruby-china.org/topics/32293](https://ruby-china.org/topics/32293).
+* [3] Greenplum 官方 (2016-01). Expanding a Greenplum System. Retrieved from [https://gpdb.docs.pivotal.io/4370/admin_guide/expand/expand-main.html](https://gpdb.docs.pivotal.io/4370/admin_guide/expand/expand-main.html).
 
 –EOF–
 
