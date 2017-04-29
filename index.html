@@ -15,7 +15,7 @@ layout: default
       <p class="post-meta">
       {{ site.locales[site.default_locale].PostedInCategories }}
       {% for cat in post.categories %}
-	     {{cat}}{% unless page.categories.last == cat %}, {% endunless %}
+	     {{cat}}{% unless page.categories.last == cat %} {% endunless %}
       {% endfor %}
       {% if post.tags != empty %}
          {{ site.locales[site.default_locale].Taggedwith }}
