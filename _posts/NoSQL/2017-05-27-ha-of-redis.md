@@ -266,6 +266,8 @@ From: [https://github.com/CodisLabs/codis](https://github.com/CodisLabs/codis)
 
 附 PPT 下载：[https://github.com/dbarobin/slides](https://github.com/dbarobin/slides)
 
+视频回放：[Redis 高可用架构最佳实践](http://www.itdks.com/dakashuo/detail/1437)
+
 ## 0x06 致谢
 ***
 
@@ -276,7 +278,7 @@ From: [https://github.com/CodisLabs/codis](https://github.com/CodisLabs/codis)
 
 * [1] jyzhou (2016-06-12). Redis 复制、Sentinel 的搭建和原理说明. Retrieved from [http://www.cnblogs.com/zhoujinyi/p/5570024.html](http://www.cnblogs.com/zhoujinyi/p/5570024.html).
 
-## 0x08 关于听云和运维帮
+## 0x08 关于活动方
 ***
 
 **[听云](http://www.tingyun.com)**
@@ -286,6 +288,11 @@ From: [https://github.com/CodisLabs/codis](https://github.com/CodisLabs/codis)
 **[运维帮](http://www.yunweibang.com)**
 
 > 互联网技术分享平台，分享的力量。帮主一直坚信技术可以改变世界，从毕业到现在干了 15 年运维，有许多话要和你说。
+
+**[IT 大咖说](http://itdks.com)**
+
+> IT 大咖说，践行 “开源是一种态度”，通过线上线下开放模式分享大咖干货。 技术大会在线直播点播，在线直播知识分享平台，让不在现场的程序猿、
+攻城狮不再遗憾，随时随地都能获得大咖的精彩分享。IT 大咖说，让智慧流动起来！
 
 ## 0x09 关于我
 ***
