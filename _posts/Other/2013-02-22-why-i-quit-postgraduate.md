@@ -2,14 +2,24 @@
 published: true
 author: Robin Wen
 layout: post
-title: "程序员的奋斗史（十三）我为什么不考研"
+title: 程序员的奋斗史（十三）我为什么不考研
 category: Other
-summary: "很多认识我的知道我不考研后都可惜地说：你那么“优秀”，不考研浪费了。我只想说每个人都有自己的选择，虽然自己选择的不一定是最优的，但却是自己最适应自己的。那么多难题中不一定需要最优解。"
-tags: 
-- Other
-- 程序员的奋斗史
-- Fighting
-- 考研
+summary: >-
+  很多认识我的知道我不考研后都可惜地说：你那么“优秀”，不考研浪费了。我只想说每个人都有自己的选择，虽然自己选择的不一定是最优的，但却是自己最适应自己的。那么多难题中不一定需要最优解。
+tags:
+  - Other
+  - 程序员的奋斗史
+  - Fighting
+  - 考研
+comments:
+  - author:
+      type: github
+      displayName: tianshuang
+      url: 'https://github.com/tianshuang'
+      picture: 'https://avatars1.githubusercontent.com/u/10725601?v=3&s=73'
+    content: '&#x1F44D;'
+    date: 2017-06-12T01:36:16.941Z
+
 ---
 
 `文/温国兵`
