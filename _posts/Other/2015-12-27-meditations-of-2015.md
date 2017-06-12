@@ -27,6 +27,13 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/20981458?v=3&s=73'
     content: '&#x671F;&#x5F85;&#x4F60;&#x7684;2016&#x603B;&#x7ED3;'
     date: 2017-01-10T08:41:31.008Z
+  - author:
+      type: github
+      displayName: tianshuang
+      url: 'https://github.com/tianshuang'
+      picture: 'https://avatars1.githubusercontent.com/u/10725601?v=3&s=73'
+    content: '&#x1F44D;'
+    date: 2017-06-12T01:46:50.698Z
 
 ---
 
