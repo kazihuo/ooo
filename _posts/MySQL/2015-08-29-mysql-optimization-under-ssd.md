@@ -38,6 +38,17 @@ comments:
     content: >-
       LZ&#xFF0C;&#x56FE;&#x4E8C;&#x7684;&#x6570;&#x636E;&#x662F;&#x7528;&#x4EC0;&#x4E48;&#x5DE5;&#x5177;&#x6536;&#x96C6;&#x7684;&#xFF1F;
     date: 2016-07-18T11:39:10.179Z
+  - author:
+      type: github
+      displayName: toontong
+      url: 'https://github.com/toontong'
+      picture: 'https://avatars0.githubusercontent.com/u/416141?v=3&s=73'
+    content: >-
+      LevelDB &#x7684;&#x8BBE;&#x8BA1;&#x5B8C;&#x5168;&#x662F;&#x8D34;&#x5408;
+      SSD &#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#x7684;&#x3002;----
+      &#x8FD9;&#x53E5;&#x8BDD;&#xFF0C;&#x4F60;&#x786E;&#x5B9A;&#x662F;&#x6B63;&#x786E;&#xFF1F;
+      level&#x662F;&#x9760;&#x987A;&#x5E8F;&#x5199;&#xFF0C;&#x5229;&#x7528;&#x7684;&#x673A;&#x68B0;&#x786C;&#x76D8;&#x987A;&#x5E8F;IO&#x9AD8;&#x6548;&#x4E8E;&#x79BB;&#x6563;IO&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x800C;SSD&#x79BB;&#x6563;IO&#x4E0E;&#x987A;&#x5E8F;IO&#x662F;&#x6CA1;&#x591A;&#x5927;&#x5DEE;&#x522B;&#x7684;&#x3002;
+    date: 2017-06-15T03:49:06.175Z
 
 ---
 
