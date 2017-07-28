@@ -52,6 +52,15 @@ comments:
       &#x5176;&#x5B9E;&#x4E0D;&#x7528;&#x8FD9;&#x4E48;&#x9EBB;&#x70E6;&#xFF0C;&#x6302;&#x4E2A;&#x5916;&#x7F51;&#x52A0;&#x901F;&#x5668;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x6211;&#x7528;&#x7684;&#x662F;&#x6CB3;&#x5BF9;&#x5CB8;&#x52A0;&#x901F;&#x5668;&#xFF0C;&#x6548;&#x679C;&#x633A;&#x597D;&#x7684;,
       &#x8;http://heduian.com
     date: 2017-07-28T01:50:42.750Z
+  - author:
+      type: github
+      displayName: holyen
+      url: 'https://github.com/holyen'
+      picture: 'https://avatars3.githubusercontent.com/u/2010669?v=4&s=73'
+    content: >-
+      &#x5176;&#x5B9E;&#x4E0D;&#x7528;&#x8FD9;&#x4E48;&#x9EBB;&#x70E6;&#xFF0C;&#x6302;&#x4E2A;&#x5916;&#x7F51;&#x52A0;&#x901F;&#x5668;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x6211;&#x7528;&#x7684;&#x662F;&#x6CB3;&#x5BF9;&#x5CB8;&#x52A0;&#x901F;&#x5668;&#xFF0C;&#x6548;&#x679C;&#x633A;&#x597D;&#x7684;,
+      &#x8;http://heduian.com
+    date: 2017-07-28T01:51:15.216Z
 
 ---
 
