@@ -114,7 +114,7 @@ shell> cd /data/mysql/3306 && bash start.sh
 
 6、连接测试查询
 
-``` sql
+``` bash
 #使用web_37com登录
 /usr/local/mysql/bin/mysql -uweb_37com -h127.0.0.1 -p -P3306
 
@@ -134,7 +134,7 @@ mysql> SELECT * FROM AuditDB.access_log;
 
 1、 进行模拟操作，下列操作可由多个连接进行。
 
-``` sql
+``` bash
 #root用户登录
 /usr/local/mysql/bin/mysql -uroot -p
 mysql> USE 37com;
