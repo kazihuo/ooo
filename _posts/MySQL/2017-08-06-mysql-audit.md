@@ -13,6 +13,7 @@ tags:
 `文/温国兵`
 
 ## 目录
+***
 
 * Table of Contents
 {:toc}
@@ -23,10 +24,12 @@ tags:
   2017/07/13 | 温国兵 |  MySQL 社区版审计方案 | v1.1 | 增加测试数据
 
 ## 0x00 前言
+***
 
 为生产环境数据库提供审计功能是非常重要的，一方面，敏感操作和误操作有据可循，简化运维复杂度；另一方面，提高 DBA 以及相关使用方的风险意识。
 
 ## 0x01 审计方案
+***
 
 MySQL 提供了 3 种方式实现审计功能：
 
@@ -45,6 +48,7 @@ general log 会记录详细的 SQL 执行记录，但是生产环境如果业务
 © Ivailo Nikolov / Purple Scene / fineartamerica.com
 
 ## 0x02 实现步骤
+***
 
 ### 2.1 init-connect 配置
 
@@ -190,6 +194,7 @@ mysql> SELECT * FROM AuditDB.access_log where ConnectionID=38;
 ```
 
 ## 0x03 性能测试
+***
 
 1、添加 init-connect 参数之前的测试。此处采用 sysbench 进行基准测试。 [^2]
 
@@ -322,6 +327,7 @@ Threads fairness:
 可以看到，开启 init_connect 参数之后，平均响应时间从之前的 2.98ms 增加到 3.01ms，性能略有影响。
 
 ## 0x04 小结
+***
 
 1. 理论上，只会在用户每次连接时往数据库里插入一条记录，不会对数据库产生很大影响。除非连接频率非常高
 2. 如果数据库连接数量很大的话，建议一定时间做一次数据导出，然后清表。[^3]
@@ -332,10 +338,19 @@ Threads fairness:
 7. 此方案在新业务中适用，旧业务不做变更。
 
 ## 0x05 参考
+***
 
-* [^1] svoid (2015-04-27). MySQL 审计功能. Retrieved from http://blog.itpub.net/29733787/viewspace-1604392.
-* [^2] 叶金荣 (2014-10-17). sysbench 安装、使用、结果解读. Retrieved from http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml.
-* [^3] 卢钧轶 (2012-05-09). 通过 init-connect + binlog 实现 MySQL 审计功能. Retrieved from http://www.cnblogs.com/cenalulu/archive/2012/05/09/2491736.html
+* [^1] svoid (2015-04-27). MySQL 审计功能. Retrieved from [http://blog.itpub.net/29733787/viewspace-1604392](http://blog.itpub.net/29733787/viewspace-1604392).
+* [^2] 叶金荣 (2014-10-17). sysbench 安装、使用、结果解读. Retrieved from [http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml](http://imysql.com/2014/10/17/sysbench-full-user-manual.shtml).
+* [^3] 卢钧轶 (2012-05-09). 通过 init-connect + binlog 实现 MySQL 审计功能. Retrieved from [http://www.cnblogs.com/cenalulu/archive/2012/05/09/2491736.html](http://www.cnblogs.com/cenalulu/archive/2012/05/09/2491736.html).
+
+## 0x06 其他
+***
+
+因不可抗拒因素，我们的网络状况日益紧缩，故建立了一个 TG 群和 TG Channel。TG 群方便交流，TG Channel 分享心得以及阅读的好文章。
+
+> TG 群：[https://t.me/robinwenio](https://t.me/robinwenio)
+> TG Channel：[https://t.me/fuckgfwio](https://t.me/fuckgfwio)
 
 –EOF–
 
