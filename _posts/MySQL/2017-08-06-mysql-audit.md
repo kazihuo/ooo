@@ -347,10 +347,10 @@ Threads fairness:
 ## 0x06 其他
 ***
 
-因不可抗拒因素，我们的网络状况日益紧缩，故建立了一个 TG 群和 TG Channel。TG 群方便交流，TG Channel 分享心得以及阅读的好文章。
+因不可抗拒因素，我们的网络状况日益紧缩，故建立了一个 Telegram 群和 Telegram Channel。Telegram 群方便交流，Telegram Channel 分享心得以及阅读的好文章。
 
-> TG 群：[https://t.me/robinwenio](https://t.me/robinwenio)
-> TG Channel：[https://t.me/fuckgfwio](https://t.me/fuckgfwio)
+> Telegram 群：[https://t.me/robinwenio](https://t.me/robinwenio)
+> Telegram Channel：[https://t.me/fuckgfwio](https://t.me/fuckgfwio)
 
 –EOF–
 
