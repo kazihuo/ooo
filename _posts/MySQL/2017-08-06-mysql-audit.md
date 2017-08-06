@@ -115,10 +115,10 @@ shell> cd /data/mysql/3306 && bash start.sh
 6、连接测试查询
 
 ``` sql
-# 使用 web_37com 登录
+#使用web_37com登录
 /usr/local/mysql/bin/mysql -uweb_37com -h127.0.0.1 -p -P3306
 
-# 使用 root 登录，可以看到 access_log 记录了登录信息
+#使用root登录，可以看到access_log记录了登录信息
 /usr/local/mysql/bin/mysql -uroot -p
 mysql> SELECT * FROM AuditDB.access_log;
 +----+--------------+---------------------+---------------------+---------------------+
@@ -135,14 +135,14 @@ mysql> SELECT * FROM AuditDB.access_log;
 1、 进行模拟操作，下列操作可由多个连接进行。
 
 ``` sql
-# root 用户登录
+#root用户登录
 /usr/local/mysql/bin/mysql -uroot -p
 mysql> USE 37com;
 Database changed
 mysql> CREATE TABLE t(ID INT, NAME VARCHAR(20));
 Query OK, 0 rows affected (0.03 sec)
 
-# web_37com 用户登录
+#web_37com用户登录
 /usr/local/mysql/bin/mysql -uweb_37com -h127.0.0.1 -p -P3306
 
 mysql> USE 37com;
@@ -164,7 +164,7 @@ mysqlbinlog --start-datetime='2017-07-13 10:30:00' --stop-datetime='2017-07-13 1
 /data/mysql/3306/binlog/mysql-bin.000007 | grep -B 5 DELETE
 CREATE DATABASE 37com
 /*!*/;
-# at 192
+#at 192
 #170713 10:35:03 server id 204138  end_log_pos 372      Query   thread_id=1     \
 exec_time=0     error_code=0
 SET TIMESTAMP=1499913303/*!*/;
@@ -173,7 +173,7 @@ IDENTIFIED BY ''
 --
 BEGIN
 /*!*/;
-# at 1944
+#at 1944
 #170713 10:53:23 server id 204138  end_log_pos 2021     Query   thread_id=38    \
 exec_time=0     error_code=0
 SET TIMESTAMP=1499914403/*!*/;
@@ -199,7 +199,7 @@ mysql> SELECT * FROM AuditDB.access_log where ConnectionID=38;
 1、添加 init-connect 参数之前的测试。此处采用 sysbench 进行基准测试。 [^2]
 
 ``` bash
-# 准备测试环境
+#准备测试环境
 ./sysbench ---mysql-host=127.0.0.1 --mysql-port=3306 --mysql-user=root \
 --mysql-password=ROOT_PWD --test=tests/db/oltp.lua --oltp_tables_count=10 \
 --oltp-table-size=100000 --rand-init=on prepare
@@ -227,7 +227,7 @@ Inserting 100000 records into 'sbtest9'
 Creating table 'sbtest10'...
 Inserting 100000 records into 'sbtest10'
 
-# 持续 10 分钟基准测试
+#持续10分钟基准测试
 ./sysbench --mysql-host=127.0.0.1 --mysql-port=3306 --mysql-user=root \
 --mysql-password=ROOT_PWD --test=tests/db/oltp.lua --oltp_tables_count=10 \
 --oltp-table-size=10000000 --num-threads=8 --oltp-read-only=off \
