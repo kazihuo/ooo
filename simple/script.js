@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
 	var QRBox	=	$('#QRBox');
 	var MainBox	=	$('#MainBox');
-	var BTCQR	=	'images/BTCQR.png';	// 二维码路径
+	var BTCQR	=	'images/BTCQR.jpeg';
 	var AliPayQR	=	'images/AliPayQR.png';
-	var WeChanQR	=	'images/WeChanQR.png';
+	var WeChatQR	=	'images/WeChatQR.png';
 
 	
 
@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
 		} else if (thisID === 'AliPay') {
 			showQR(AliPayQR);
 		} else if (thisID === 'WeChat') {
-			showQR(WeChanQR);
+			showQR(WeChatQR);
 		}
 	});
 
