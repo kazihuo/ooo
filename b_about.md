@@ -31,8 +31,6 @@ Telegram Group: [点击加入](https://t.me/robinwenio)
 
 另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时简单介绍下自己，并注明来自 dbarobin.com。
 
-<img src="https://raw.githubusercontent.com/dbarobin/dbarobin.github.io/master/images/Wechat.JPG" alt="Add Wechat Via scan barcode"/>
-
 <iframe src="https://dbarobin.com/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
 
 <!--
