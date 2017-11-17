@@ -81,9 +81,9 @@ Time Machine 可以说是 Mac 平台目前最好的备份方案。Time Machine �
 
 ![知识星球](https://i.imgur.com/9dhXNpn.jpg)
 
-* [^1]: [Time Machine 使用教程（一）：设置 Time Machine 备份你的 Mac](https://sspai.com/post/30550)
-* [^2]: [为什么在贵州？苹果中国首家数据中心有这些考量](http://tech.sina.com.cn/it/2017-07-13/doc-ifyiamif2743406.shtml)
-* [^3]: [做一个病毒卷土重来时代的幸存者](https://mp.weixin.qq.com/s?__biz=MjM5MTE4Nzk1NA==&mid=2650741750&idx=1&sn=4b9ce4c4a5b019a29c8592e6186f2da7)
+[^1]: [Time Machine 使用教程（一）：设置 Time Machine 备份你的 Mac](https://sspai.com/post/30550)
+[^2]: [为什么在贵州？苹果中国首家数据中心有这些考量](http://tech.sina.com.cn/it/2017-07-13/doc-ifyiamif2743406.shtml)
+[^3]: [做一个病毒卷土重来时代的幸存者](https://mp.weixin.qq.com/s?__biz=MjM5MTE4Nzk1NA==&mid=2650741750&idx=1&sn=4b9ce4c4a5b019a29c8592e6186f2da7)
 
 –EOF–
 
