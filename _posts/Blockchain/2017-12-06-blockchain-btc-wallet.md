@@ -87,7 +87,7 @@ tags:
 
 * BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
 * ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
-* PayPal: https://www.paypal.me/robinwen
+* PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
 ![Wechat](https://i.imgur.com/SzoNl5b.jpg)
