@@ -11,7 +11,7 @@ tags:
 
 `文/温国兵`
 
-> 本文由币乎社区（bihu.com）内容支持计划赞助。
+> 本文由币乎社区（bihu.com）内容支持计划奖励。
 
 回顾近现代几次工业革命，人类的发展随着技术的变革而突飞猛进。第一次工业革命革命，以工作机的诞生为开始，以蒸汽机作为动力机被广泛使用为标志。人类生产逐渐转向新的制造过程，出现了以机器取代人力、兽力的趋势，以大规模的工厂生产取代个体工场手工生产。第二次工业革命，以电力的大规模应用为代表，电灯的发明为标志。第二次工业革命极大的推动了社会生产力的发展，对人类社会的经济、政治、文化、军事、科技和生产力产生了深远的影响。第三次工业革命发生在第二次世界大战后，因计算机和电子数据的普及和推广而在各行各业发生的从机械和模拟电路到数字电路的变革。每一次的技术变革，都契合了时代发展的诉求。时光回到 2007 年，一场全球性的金融危机席卷而来，2008 年开始全面爆发。刚好是这一年，中本聪（英语：Satoshi Nakamoto）发表了一篇名为《比特币：一种点对点式的电子现金系统》（Bitcoin: A Peer-to-Peer Electronic Cash System）的论文，描述了一种被他称为 “比特币” 的电子货币及其算法。2009 年 1 月 3 日，他发布了首个比特币软件，并正式启动了比特币金融系统。
 
@@ -41,6 +41,15 @@ tags:
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
+
+原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
+
+* BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
+* ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
+* PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
+* 微信打赏二维码
+
+![Wechat](https://i.imgur.com/SzoNl5b.jpg)
 
 **货币的本质就是信任，从今天开启新的序幕。**
 
