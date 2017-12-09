@@ -17,7 +17,10 @@ permalink: /about/
 
 对设计感兴趣，喜欢简洁。追求高品质生活，喜欢提升幸福感的利器。
 
-个人公众号：「温国兵」（微信号：**robinwenio**）。
+个人公众号：
+
+* 「温国兵」（微信号：**robinwenio**）
+* 「区块链技术指北」（微信号：**BlockchainAge**）
 
 建议用 RSS 订阅本博客。一方面，迄今为止，还找不到比 RSS 更优雅的互联网阅读方式；另一方面，公众号的各种限制违背了互联网的初衷。
 
@@ -32,10 +35,6 @@ Telegram Group: [点击加入](https://t.me/robinwenio)
 另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时简单介绍下自己，并注明来自 dbarobin.com。
 
 <iframe src="https://dbarobin.com/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
-
-<!--
-<iframe src="http://127.0.0.1:4000/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
--->
 
 –EOF–
 
