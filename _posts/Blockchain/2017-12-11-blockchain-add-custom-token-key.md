@@ -46,7 +46,8 @@ tags:
 ``` java
 string public constant name = "Token Name";
 string public constant symbol = "SYM";
-uint8 public constant decimals = 18;  // 18 is the most common number of decimal places
+// 18 is the most common number of decimal places
+uint8 public constant decimals = 18;
 ```
 
 Token Contract Address 表示合约地址，Token Symbol 表示 Token 的代号。比如以太坊的名字是 Ethereum，代号是 ETH。Decimals 表示 Token 精确到小数点后几位。18 是大多数 Token 使用的精度。通过 MEW 的 **[换算页面](https://www.myetherwallet.com/helpers.html)** 显示，1 ether = 10^18 wei，1 ether = 10^9 gwei，可以说 Decimals 等于 18 是精度最高的 Token 了。
