@@ -33,11 +33,11 @@ tags:
 
 **Token Symbol** 输入 `KEY`。
 
-**Decimals** 输入 `18`，点击 save 保存。
+**Decimals** 输入 `18`，点击 Save 保存。
 
 ![Bihu Contract Address](https://i.imgur.com/s77ukaM.png)
 
-最后 Load Token 即可看到添加的币乎代币 KEY。
+最后 **Load Tokens** 即可看到添加的币乎代币 KEY。
 
 笔者讲解下 Token Contract Address、Token Symbol 和 Decimals 分别表示什么。
 
