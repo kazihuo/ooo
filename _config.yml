@@ -2,8 +2,8 @@
 title: 温国兵的随想录
 tagline: 万物之中，希望至美；至美之物，永不凋零。
 author: Robin Wen
-email: dbarobinwen@gmail.com 
-description: Robin Wen, 自由主义者，爱好音乐和文学。这个站点是我求真思考的场所，希望能对其他人有点用。当然，也会发一点关于互联网的文章。本站基于 GitHub Pages，域名买自 GoDaddy，发文章改博客只需要 Vim 和 Git，尽可能把写作成本降到最低。如您所知，本人发布的文章与评论内容仅代表本人观点。「万物之中，希望至美；至美之物，永不凋零。」太阳照常升起，生活依然继续。这里不仅仅是一个博客。
+email: dbarobinwen@gmail.com
+description: 温国兵, 自由主义者，区块链爱好者和布道者，「区块链技术指北」作者。热爱 Google，热爱互联网，热爱科技。推崇逻辑和理性，用数据说话，用理工科思维理解世界。这个站点是我求真思考的场所，希望对您有用。本站基于 GitHub Pages，域名买自 GoDaddy，后续做了不少优化。如您所知，本人发布的文章与评论内容仅代表本人观点。「万物之中，希望至美；至美之物，永不凋零。」
 keywords: "Reading, Muisc, 阅读, 音乐, 钢琴, 文学, 互联网, 科技"
 # url: "http://dbarobin.com" # The base hostname & protocol for your site
 url: "https://dbarobin.com" # The base hostname & protocol for your site
@@ -39,22 +39,22 @@ locales:
       Previous: "Older"
       Next: "Newer"
       PostedInCategories: "Posted in"
-      Taggedwith: "and tagged"  
+      Taggedwith: "and tagged"
       PostDate: "on "
       WechatDBTalk: "Official WeChat"
       WechatDonate: "Donate"
     cn:
       Aboutme: "关于我"
       Archives: "存档"
-      Blogroll: "Blogroll"        
-      Categories: "分类目录"    
+      Blogroll: "Blogroll"
+      Categories: "分类目录"
       Copyright_Notice: "版权声明"
       Recent_Posts: "近期文章"
       Google_Search: "搜索"
-      Tags: "标签" 
+      Tags: "标签"
       Previous: "前一页"
       Next: "后一页"
-      PostedInCategories: "目录:"   
+      PostedInCategories: "目录:"
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
       WechatDBTalk: "微信公众号"
@@ -134,7 +134,7 @@ excerpt_separator: <!--more-->
 
 ### Kramdown settings.
 kramdown:
-  input: GFM 
+  input: GFM
   hard_wrap: true
   auto_ids: true
   footnote_nr: 1
