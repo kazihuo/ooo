@@ -83,7 +83,7 @@ Ticker (Specific Currency) 的调用方法如下：
 
 笔者查看 Ticker 方法，发现如下的调用可以获取所有的 Ticker（limit=0 表示没有限制）。
 
-> curl -G https://api.coinmarketcap.com/v1/ticker/\?limit\=0 ~/Downloads/ticker
+> curl -G https://api.coinmarketcap.com/v1/ticker/\?limit\=0 > ~/Downloads/ticker
 
 通过 Terminal 终端请求之后，得到了一个叫做 ticker 的文件，使用 sed + vim 进行文本处理后，可以得到 1355 个 Ticker 的 ID 的 `ticker_id.txt ` 文本文件，也即是说目前 CoinMarketCap 收录了 1355 种 Token。笔者对 ticker 文件进行二次处理，得到了一个叫做 `ticker_id_full.txt` 的文件，除了 Ticker ID 之外，还有 name 和 symbol。
 
