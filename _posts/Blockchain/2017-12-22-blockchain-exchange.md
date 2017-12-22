@@ -64,9 +64,9 @@ tags:
 
 10、邀请注册
 
-* 币安，[https://www.binance.com/?ref=11190872](https://www.binance.com/?ref=11190872)
-* OTCBTC 是目前最流畅、最靠谱、最好用的场外交易平台，支持支付宝、微信、银行卡支付购买 BTC、ETH、EOS、USDT、QTUM、ZEC、GXS、BCH 等数字币。现在注册，即可领取比特币红包！ [https://otcbtc.com/referrals/ROBINWENIO](https://otcbtc.com/referrals/ROBINWENIO)
-* OKEx，[https://www.okex.com/share/invite/3956Ew.do](https://www.okex.com/share/invite/3956Ew.do)
+* **币安**，[https://www.binance.com/?ref=11190872](https://www.binance.com/?ref=11190872)
+* **OTCBTC** 是目前最流畅、最靠谱、最好用的场外交易平台，支持支付宝、微信、银行卡支付购买 BTC、ETH、EOS、USDT、QTUM、ZEC、GXS、BCH 等数字币。现在注册，即可领取比特币红包！ [https://otcbtc.com/referrals/ROBINWENIO](https://otcbtc.com/referrals/ROBINWENIO)
+* **OKEx**，[https://www.okex.com/share/invite/3956Ew.do](https://www.okex.com/share/invite/3956Ew.do)
 
 11、补充一下 OTCBTC 相关的信息。
 
