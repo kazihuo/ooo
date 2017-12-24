@@ -50,6 +50,9 @@ permalink: /blockchain/
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
 
+#### Donate
+***
+
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
 * BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
