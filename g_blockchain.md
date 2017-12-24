@@ -9,6 +9,7 @@ permalink: /blockchain/
 ### Archive
 
 <ul class="tags-box">
+{% if site.posts != empty %}
     {% for tag in site.tags %}
         {% if tag[1].size > 1%}
             <li  id="{{ tag[0] }}">{{ tag[0] }}</li>
@@ -24,4 +25,3 @@ permalink: /blockchain/
 <span>No posts</span>
 {% endif %}
 </ul>
-
