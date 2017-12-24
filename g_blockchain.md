@@ -13,7 +13,7 @@ permalink: /blockchain/
     {% for tag in site.tags %}
         {% if tag[1].size > 1%}
             <li  id="{{ tag[0] }}">{{ tag[0] }}</li>
-            {% if tag[0] == 'Blockchain' }
+            {% if tag[0] == 'Blockchain' %}
                 {% for post in tag[1] %}
                     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
                     <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
@@ -22,6 +22,6 @@ permalink: /blockchain/
         {% endif %}
     {% endfor %}
 {% else %}
-<span>No posts</span>
+    <span>No posts</span>
 {% endif %}
 </ul>
