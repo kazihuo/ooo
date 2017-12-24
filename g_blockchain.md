@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blockchain
-permalink: /share/
+permalink: /blockchain/
 ---
 
 ***
