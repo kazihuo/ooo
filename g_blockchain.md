@@ -6,7 +6,7 @@ permalink: /blockchain/
 
 ***
 
-### Archive
+**Archive**
 
 <ul class="tags-box">
 {% if site.posts != empty %}
