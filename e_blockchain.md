@@ -36,6 +36,16 @@ permalink: /blockchain/
 * [BlockchainAge](https://github.com/dbarobin/BlockchainAge)
 * [mycrypto](https://github.com/dbarobin/mycrypto)
 
+#### Referrals
+***
+
+* **币安**，[https://www.binance.com/?ref=11190872](https://www.binance.com/?ref=11190872)
+* **OTCBTC** 是目前最流畅、最靠谱、最好用的场外交易平台，支持支付宝、微信、银行卡支付购买 BTC、ETH、EOS、USDT、QTUM、ZEC、GXS、BCH 等数字币。现在注册，即可领取比特币红包！ [https://otcbtc.com/referrals/ROBINWENIO](https://otcbtc.com/referrals/ROBINWENIO)
+* **OKEx**，[https://www.okex.com/share/invite/3956Ew.do](https://www.okex.com/share/invite/3956Ew.do)
+* **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
+* **BeeChat**，[https://in.ibeechat.com/spread/364159](https://in.ibeechat.com/spread/364159)
+* **Mixin**，[https://mixin.one/enroll/369082](https://mixin.one/enroll/369082)
+
 #### Media
 ***
 
