@@ -363,7 +363,7 @@ Paxos、Raft、Zab 和 VR 都是解决一致性问题的协议，Paxos 协议原
 
 * [1] 维基百科 (2017-09-20). 共识机制. Retrieved from [https://goo.gl/KFnuRi](https://goo.gl/KFnuRi).
 * [2] bangerlee (2016-03-14). 分布式系统理论基础 - 一致性、2PC 和 3PC. Retrieved from [https://goo.gl/6uzyd5](https://goo.gl/6uzyd5).
-* [3] bangerlee (2016-04-04). 分布式系统理论基础 - CAP. Retrieved from [https://goo.gl/P7r5Qh]([https://goo.gl/P7r5Qh).
+* [3] bangerlee (2016-04-04). 分布式系统理论基础 - CAP. Retrieved from [https://goo.gl/P7r5Qh](https://goo.gl/P7r5Qh).
 * [4] bangerlee (2016-08-21). 分布式系统理论基础 - 选举、多数派和租约. Retrieved from [https://goo.gl/PnU4T6](https://goo.gl/PnU4T6).
 * [5] 李笑来 (2017-06-13). INBlockchain 的开源区块链 ICO 投资原则. Retrieved from [https://goo.gl/8bSyKc](https://goo.gl/8bSyKc).
 * [6] 维基百科 (2008-08-01). 拜占庭将军问题. Retrieved from [https://goo.gl/AtZHzW](https://goo.gl/AtZHzW)
