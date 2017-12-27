@@ -65,8 +65,8 @@ permalink: /blockchain/
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
-* BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
-* ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
-* PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
+* **BTC**: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
+* **ERC20 Token**: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
+* **PayPal**: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 
 © Robin Wen
