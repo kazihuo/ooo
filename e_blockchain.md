@@ -45,6 +45,7 @@ permalink: /blockchain/
 * **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
 * **BeeChat**，[https://in.ibeechat.com/spread/364159](https://in.ibeechat.com/spread/364159)
 * **Mixin**，[https://mixin.one/enroll/369082](https://mixin.one/enroll/369082)
+* **JEX**，[https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF](https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF)
 
 #### Media
 ***
