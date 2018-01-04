@@ -63,7 +63,7 @@ tags:
 
 另外，关于分布式数据库，可以看下 PingCAP 创始人刘奇作品 [怎样打造一个分布式数据库](http://www.infoq.com/cn/articles/how-to-build-a-distributed-database)。
 
-「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
+「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
 ![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
 
