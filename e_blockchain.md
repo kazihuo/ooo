@@ -31,6 +31,7 @@ permalink: /blockchain/
 </ul>
 
 #### Community
+***
 
 * [区块链技术指北，bcage.one](https://bcage.one)
 
