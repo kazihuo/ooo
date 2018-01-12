@@ -63,7 +63,7 @@ Fenng 早已是数据库行业的 [专家](http://dbanotes.net/siteinfo.html)，
 
 1、如果不是特别看好的项目，谨慎 ICO，况且现在 ICO 成本已经很高了。
 2、好的项目一定是落地的，经过应用场景和用户检验的。如果只是一味地传销，而没有产品产出，最终只会淘汰。产品也是需要时间打磨的。
-3、**投资基础链、优质应用链、优质交易所代币**，这些才有可能给你带来极高的收益。项目不用太多，参考 [巴菲特的价值投资原则](http://wiki.mbalib.com/wiki/%E4%BB%B7%E5%80%BC%E6%8A%95%E8%B5%84%E7%90%86%E8%AE%BA)。当然，怎么样算是优质项目呢？参考 [INBlockchain 的开源区块链 ICO 投资原则](https://github.com/xiaolai/INB-Principles/blob/master/Chinese.md)，务必不懂。
+3、**投资基础链、优质应用链、优质交易所代币**，这些才有可能给你带来极高的收益。项目不用太多，参考 [巴菲特的价值投资原则](http://wiki.mbalib.com/wiki/%E4%BB%B7%E5%80%BC%E6%8A%95%E8%B5%84%E7%90%86%E8%AE%BA)。当然，怎么样算是优质项目呢？参考 [INBlockchain 的开源区块链 ICO 投资原则](https://github.com/xiaolai/INB-Principles/blob/master/Chinese.md)，务必读懂。
 4、剩下的就是好好工作，好好生活，如果有能力可以研究区块链技术，或者有相应的文章、工具、项目产出。新兴行业机会非常多，就看自己能否抓住。
 
 **希望我们在区块链时代自由地行走。**
