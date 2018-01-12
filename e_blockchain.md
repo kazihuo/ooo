@@ -40,6 +40,7 @@ permalink: /blockchain/
 
 * [BlockchainAge](https://github.com/dbarobin/BlockchainAge)
 * [mycrypto](https://github.com/dbarobin/mycrypto)
+* [blockchain-whitepaper](https://github.com/dbarobin/blockchain-whitepaper)
 
 #### Referrals
 ***
