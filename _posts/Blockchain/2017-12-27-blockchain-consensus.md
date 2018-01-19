@@ -16,7 +16,7 @@ tags:
 
 这是「区块链技术指北」的第 13 篇文章。
 
-> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。
+> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
 
 ## 0x00 共识机制
 ***
@@ -378,16 +378,22 @@ Paxos、Raft、Zab 和 VR 都是解决一致性问题的协议，Paxos 协议原
 * [15] jerry81333 (2017-07-04). 区块链共识算法 PBFT（拜占庭容错）、PAXOS、RAFT 简述. Retrieved from [https://goo.gl/azGbks](https://goo.gl/azGbks).
 * [16] bangerlee (2016-04-04). 分布式系统理论进阶 - Paxos. Retrieved from [https://goo.gl/6ggDHz](https://goo.gl/6ggDHz)
 
-「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
+「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
 ![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
 
-「区块链技术指北」同名 Telegram Channel：[https://t.me/BlockchainAge](https://t.me/BlockchainAge)，欢迎订阅。
+「区块链技术指北」相关资讯渠道：
+
+* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+* 官方社区，[https://bcage.one](https://bcage.one)
+* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
 * 个人博客，[https://dbarobin.com](https://dbarobin.com)
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)

@@ -15,7 +15,7 @@ tags:
 
 这是「区块链技术指北」的第 9 篇文章。
 
-> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。
+> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
 
 ### Zcash 是什么？
 ***
@@ -85,16 +85,22 @@ Zcash 采用的 zk-SNARKs 零知识证明解决了比特币半匿名性的问题
 
 本文不构成投资建议。笔者以后会针对某个币做系列文章，关注区块链背后的技术。
 
-「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
+「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
 ![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
 
-「区块链技术指北」同名 Telegram Channel：[https://t.me/BlockchainAge](https://t.me/BlockchainAge)，欢迎订阅。
+「区块链技术指北」相关资讯渠道：
+
+* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+* 官方社区，[https://bcage.one](https://bcage.one)
+* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
 * 个人博客，[https://dbarobin.com](https://dbarobin.com)
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
