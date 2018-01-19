@@ -13,6 +13,10 @@ tags:
 
 > 本文由币乎社区（bihu.com）内容支持计划奖励。
 
+这是「区块链技术指北」的第 1 篇文章。
+
+> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
+
 回顾近现代几次工业革命，人类的发展随着技术的变革而突飞猛进。第一次工业革命革命，以工作机的诞生为开始，以蒸汽机作为动力机被广泛使用为标志。人类生产逐渐转向新的制造过程，出现了以机器取代人力、兽力的趋势，以大规模的工厂生产取代个体工场手工生产。第二次工业革命，以电力的大规模应用为代表，电灯的发明为标志。第二次工业革命极大的推动了社会生产力的发展，对人类社会的经济、政治、文化、军事、科技和生产力产生了深远的影响。第三次工业革命发生在第二次世界大战后，因计算机和电子数据的普及和推广而在各行各业发生的从机械和模拟电路到数字电路的变革。每一次的技术变革，都契合了时代发展的诉求。时光回到 2007 年，一场全球性的金融危机席卷而来，2008 年开始全面爆发。刚好是这一年，中本聪（英语：Satoshi Nakamoto）发表了一篇名为《比特币：一种点对点式的电子现金系统》（Bitcoin: A Peer-to-Peer Electronic Cash System）的论文，描述了一种被他称为 “比特币” 的电子货币及其算法。2009 年 1 月 3 日，他发布了首个比特币软件，并正式启动了比特币金融系统。
 
 比特币迄今为止最为成功的区块链项目，也是市值排名第一的虚拟货币。**比特币只是区块链技术的运用，而技术是为了解决特定的问题。** 纵观币圈，这里诞生了无数的财富神话，然而绝大多数人连比特币的白皮书都没有看过，参与 ICO 项目也不会阅读该项目的白皮书。他们更多关注的是虚拟货币能换来多少法币，某个币能带来多少倍的收益，而鲜有关注区块链技术本身。他们追涨杀跌，听风是风，听雨是雨，早起晚睡，各交易所频繁买入卖出，恨不得 24 小时盯着电脑手机。是的，币圈一日，人间一年，区块链技术的应用如雨后春笋般兴起，他们为之狂欢鼓舞，为之呐喊助威。各类消息如狂风暴雨般席卷而来，他们为之欣喜疯狂，为之唏嘘不已。
@@ -27,16 +31,22 @@ tags:
 
 这个系列文章的名字（区块链技术指北）来源值得一提。最初的名字拟定是「区块链技术分享」，结果注册微信公众号时发现重名了，接着使用「区块链技术指南」，依然提示重名，只好戏虐地写了个「区块链技术指北」。另外，微信公众号的 ID 是「BlockchainAge」，**希望我们在区块链时代自由地行走。**
 
-「区块链技术指北」同名**知识星球**，二维码如下，欢迎加入。
+「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
 ![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
 
-「区块链技术指北」同名 Telegram Channel：[https://t.me/BlockchainAge](https://t.me/BlockchainAge)，欢迎订阅。
+「区块链技术指北」相关资讯渠道：
+
+* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+* 官方社区，[https://bcage.one](https://bcage.one)
+* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
 * 个人博客，[https://dbarobin.com](https://dbarobin.com)
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
