@@ -16,6 +16,8 @@ tags:
 
 这是「区块链技术指北」的第 3 篇文章。
 
+> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
+
 以太坊，[Ethereum](https://www.ethereum.org) 是一个分布式的计算机，有许多的节点，其中的每一个节点，都会执行字节码（其实就是智能合约），然后把结果存在区块链上。由于整个网络是分布式的，且应用就是一个个的状态组成，存储了状态就有了服务；所以它就能永不停机，没有一个中心化的结点（没有任何一个节点说了算，去中心化的），任何第三方不能干预。
 
 ![Ethereum](https://i.imgur.com/vW0Z1oB.jpg)
@@ -38,16 +40,22 @@ Mist 是一个全节点钱包，需要同步全部的以太坊区块信息。优
 
 下一篇文章是一篇译文，敬请期待。
 
-「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
+「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
 ![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
 
-「区块链技术指北」同名 Telegram Channel：[https://t.me/BlockchainAge](https://t.me/BlockchainAge)，欢迎订阅。
+「区块链技术指北」相关资讯渠道：
+
+* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+* 官方社区，[https://bcage.one](https://bcage.one)
+* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
 * 个人博客，[https://dbarobin.com](https://dbarobin.com)
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
