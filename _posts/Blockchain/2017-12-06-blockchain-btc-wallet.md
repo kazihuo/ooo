@@ -16,6 +16,8 @@ tags:
 
 这是「区块链技术指北」的第 2 篇文章。
 
+> 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
+
 **私钥即财富，这是区块链世界的金科定律。**
 
 首先我们来看币中之王 BTC。BTC 是迄今为止最为成功的区块链项目，也是市值排名第一的虚拟货币。比特币诞生源于神秘人物中本聪 2008 年的白皮书《比特币：一种点对点的电子货币系统。比特币总数固定在 2100 万个，没有发行方，去中心化，这些特性让比特币成为一种革命性货币。基于区块链技术，比特币的每个交易都经过全网广播，人人可见，可以查到任何交易历史，无法伪造、篡改交易记录，数字加密货币解决了网络去中心化、无主权货币、避免双重支付、可靠高效、廉价匿名等一系列过去觉得不可能解决的问题。
@@ -68,16 +70,22 @@ tags:
 
 本文简单阐述了什么是比特币，讲解了比特币钱包的组成以及不同分类维度，还给出了笔者的选择钱包标准。后续的文章还会讲解其他 Token 的钱包，还会有详细的安全攻略。
 
-「区块链技术指北」同名**知识星球**，二维码如下，欢迎加入。
+「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
 ![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
 
-「区块链技术指北」同名 Telegram Channel：[https://t.me/BlockchainAge](https://t.me/BlockchainAge)，欢迎订阅。
+「区块链技术指北」相关资讯渠道：
+
+* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+* 官方社区，[https://bcage.one](https://bcage.one)
+* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
 * 个人博客，[https://dbarobin.com](https://dbarobin.com)
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
