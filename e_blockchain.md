@@ -52,12 +52,14 @@ permalink: /blockchain/
 * **CoinEgg**，[http://www.coinegg.com/user/register?inv=fda35](http://www.coinegg.com/user/register?inv=fda35)
 * **Gate.io**，[https://gate.io/signup/619472](https://gate.io/signup/619472)
 * **EXX**，[https://www.exx.com/r/7c8280171c17784db32358d1c89559fc](https://www.exx.com/r/7c8280171c17784db32358d1c89559fc)
+* **JEX**，[https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF](https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF)
 * **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
 * **BeeChat**，[https://in.ibeechat.com/spread/364159](https://in.ibeechat.com/spread/364159)
 * **Mixin**，[https://mixin.one/enroll/369082](https://mixin.one/enroll/369082)
-* **JEX**，[https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF](https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF)
 * **Candy Box**，[https://candy.one/i/110090](https://candy.one/i/110090)
 * **MediShares**，[http://candy.medishares.org/user/register/?ref=001516584748](http://candy.medishares.org/user/register/?ref=001516584748)
+* **Lino Network**，[https://referral.lino.network?code=LM92e7nJ](https://referral.lino.network?code=LM92e7nJ)
+* **IOST**，[http://referral.iost.io/?code=XXtM6Mkb](http://referral.iost.io/?code=XXtM6Mkb)
 
 #### Media
 ***
