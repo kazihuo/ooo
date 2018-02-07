@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: "从 Git 到区块链"
 category: Blockchain
-summary: "GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。我们 GitHub 中的 Git repo 中还可以找到 2005 年 4 月 8 日 Linus Torvalds 提交的第一版代码。再者，区块链的特性是分布式的，而 Git 天然就是分布式的，不过 Git 是依赖文件系统。GitHub 助力全球化协作，并且代码或者文档一旦提交到 GitHub，这个操作将是无法撤销的。GitHub 本身会将其网站上的 repo 利用分布式存储做好容灾；如果某程序员 clone 该 repo，只要它不删除，将会永久存储在自身的电脑，除非自身电脑文件系统崩溃；如果某程序员 fork 该 repo，只要它的账户不被删除，这个 repo 将永久保留在它的账户之下；另外，某个 repo fork、clone 次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的 GitHub repo 将是野火烧不尽，春风吹又生。也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？"
+summary: "GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。我们在 GitHub 中的 Git repo 中还可以找到 2005 年 4 月 8 日 Linus Torvalds 提交的第一版代码。再者，区块链的特性是分布式的，而 Git 天然就是分布式的，不过 Git 是依赖文件系统。GitHub 助力全球化协作，代码或者文档一旦提交到 GitHub，这个操作将是无法撤销的。GitHub 本身会将其网站上的 repo 利用分布式存储做好容灾；如果某程序员 clone 该 repo，只要它不删除，将会永久存储在自身的电脑，除非自身电脑文件系统崩溃；如果某程序员 fork 该 repo，只要它的账户不被删除，这个 repo 将永久保留在它的账户之下；另外，某个 repo fork、clone 次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的 GitHub repo 将是野火烧不尽，春风吹又生。也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？"
 tags:
 - Blockchain
 ---
@@ -17,9 +17,9 @@ tags:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
 
-**GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。** 我们 GitHub 中的 Git repo 中还可以找到 2005 年 4 月 8 日 Linus Torvalds 提交的 [第一版](https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290) 代码。
+**GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。** 我们在 GitHub 中的 Git repo 中还可以找到 2005 年 4 月 8 日 Linus Torvalds 提交的 [第一版](https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290) 代码。
 
-正是 GitHub 网站在全球的成功运营，加密数字货币开源项目才会以爆发性的增长。这个世界上最顶尖的程序员都在为这些开源项目提交 PR，这种社区式连接的力量，是无法衡量的。我们可以在 GitHub 上看到 [Bitcoin](https://github.com/bitcoin/bitcoin)、[Ethereum](https://github.com/ethereum/go-ethereum)、[EOS](https://github.com/EOSIO/eos) 等项目的最新更新状态，每天都有无数的程序员为这些项目添砖加瓦。**加密数字货币的共识，很大一部分来自 GitHub 社区。**
+正是 GitHub 网站在全球的成功运营，加密数字货币开源项目才得以爆发性地增长。这个世界上最顶尖的程序员都在为这些开源项目提交 PR，这种社区式连接的力量，是无法衡量的。我们可以在 GitHub 上看到 [Bitcoin](https://github.com/bitcoin/bitcoin)、[Ethereum](https://github.com/ethereum/go-ethereum)、[EOS](https://github.com/EOSIO/eos) 等项目的最新更新状态，每天都有无数的程序员为这些项目添砖加瓦。**加密数字货币的共识，很大一部分来自 GitHub 社区。**
 
 ![2018-02-06-blockchain-vs-git](https://i.imgur.com/fgXyzdP.jpg)
 
@@ -37,9 +37,9 @@ tags:
 * git commit -m "[Blockchain] ..."
 * git push origin master
 
-简单讲就是，先本地提交，累积几次后再一次 push 到 remote。本次提交会关联到上一次提交，这跟区块链的 chain 是不是有些类似？比如本次提交的标志为 ab88b43，上一次提交的标志为 297f29a，那么本次提交的信息里就会有 parent commit 297f29a。这种类似链条的记录，是不是变得可追溯了啊？版本控制最重要的是什么，就是可追溯，如果某次错误提交，还可以回腿到历史版本。同样，**可追溯也是区块链的重要特性。**
+简单讲就是，先本地提交，累积几次后再一次 push 到 remote。本次提交会关联到上一次提交，这跟区块链的 chain 是不是有些类似？比如本次提交的标志为 ab88b43，上一次提交的标志为 297f29a，那么本次提交的信息里就会有 parent commit 297f29a 的信息。这种类似链条的记录，是不是变得可追溯了？版本控制最重要的是什么，就是可追溯，如果某次错误提交，还可以回退到历史版本。同样，**可追溯也是区块链的重要特性。**
 
-再者，**区块链的特性是分布式的，而 Git 天然就是分布式的**，不过 Git 是依赖文件系统。GitHub 助力全球化协作，并且代码或者文档一旦提交到 GitHub，这个操作将是无法撤销的。GitHub 本身会将其网站上的 repo 利用分布式存储做好容灾；如果某程序员 clone 该 repo，只要它不删除，将会永久存储在自身的电脑，除非自身电脑文件系统崩溃；如果某程序员 fork 该 repo，只要它的账户不被删除，这个 repo 将永久保留在它的账户之下；另外，某个 repo fork、clone 次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的 GitHub repo 将是 **野火烧不尽，春风吹又生**。
+再者，**区块链的特性是分布式的，而 Git 天然就是分布式的**，不过 Git 是依赖文件系统。GitHub 助力全球化协作，代码或者文档一旦提交到 GitHub，这个操作将是无法撤销的。GitHub 本身会将其网站上的 repo 利用分布式存储做好容灾；如果某程序员 clone 该 repo，只要它不删除，将会永久存储在自身的电脑，除非自身电脑文件系统崩溃；如果某程序员 fork 该 repo，只要它的账户不被删除，这个 repo 将永久保留在它的账户之下；另外，某个 repo fork、clone 次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的 GitHub repo 将是 **野火烧不尽，春风吹又生**。
 
 我的 [博客](https://dbarobin.com) 所有文章都存放在 GitHub，读者觉得我的文章还会被删吗？最近一天世界的一篇关于微信的文章很有趣，不妨 [看看](https://blog.yitianshijie.net/2018/02/02/wechat-equals-gfw)。
 
