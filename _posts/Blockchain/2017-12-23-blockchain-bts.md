@@ -93,6 +93,8 @@ BTS 引入的 **DPOS** 共识机制全称是委托权益证明，少量节点参
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
+* 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
+* 币乎，[https://beta.bihu.com/people/12109](https://beta.bihu.com/people/12109)
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
