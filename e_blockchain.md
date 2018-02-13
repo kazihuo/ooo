@@ -80,6 +80,8 @@ permalink: /blockchain/
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
+* 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
+* 币乎，[https://beta.bihu.com/people/12109](https://beta.bihu.com/people/12109)
 
 #### Donate
 ***
