@@ -4,7 +4,14 @@ author: Robin Wen
 layout: post
 title: 从 Git 到区块链
 category: Blockchain
-summary: "GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。我们在 GitHub 中的 Git repo 中还可以找到 2005 年 4 月 8 日 Linus Torvalds 提交的第一版代码。再者，区块链的特性是分布式的，而 Git 天然就是分布式的，不过 Git 是依赖文件系统。GitHub 助力全球化协作，代码或者文档一旦提交到 GitHub，这个操作将是无法撤销的。GitHub 本身会将其网站上的 repo 利用分布式存储做好容灾；如果某程序员 clone 该 repo，只要它不删除，将会永久存储在自身的电脑，除非自身电脑文件系统崩溃；如果某程序员 fork 该 repo，只要它的账户不被删除，这个 repo 将永久保留在它的账户之下；另外，某个 repo fork、clone 次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的 GitHub repo 将是野火烧不尽，春风吹又生。也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？"
+summary: >-
+  GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。我们在 GitHub 中的 Git repo 中还可以找到
+  2005 年 4 月 8 日 Linus Torvalds 提交的第一版代码。再者，区块链的特性是分布式的，而 Git 天然就是分布式的，不过 Git
+  是依赖文件系统。GitHub 助力全球化协作，代码或者文档一旦提交到 GitHub，这个操作将是无法撤销的。GitHub 本身会将其网站上的 repo
+  利用分布式存储做好容灾；如果某程序员 clone 该 repo，只要它不删除，将会永久存储在自身的电脑，除非自身电脑文件系统崩溃；如果某程序员 fork 该
+  repo，只要它的账户不被删除，这个 repo 将永久保留在它的账户之下；另外，某个 repo fork、clone
+  次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的
+  GitHub repo 将是野火烧不尽，春风吹又生。也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？
 tags:
   - Blockchain
 comments:
@@ -19,6 +26,17 @@ comments:
 
       https://www.jianshu.com/p/b96b98983df6
     date: 2018-02-06T13:06:16.274Z
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars1.githubusercontent.com/u/3949252?v=4&s=73'
+    content: >-
+      Git &#x548C;
+      &#x533A;&#x5757;&#x94FE;&#x7684;&#x76F8;&#x4F3C;&#x6027;&#x548C;&#x5DEE;&#x5F02;&#x6027;&#x6BD4;&#x8F83;
+
+      https://zhuanlan.zhihu.com/p/33927320
+    date: 2018-02-24T06:58:52.351Z
 
 ---
 
