@@ -2,11 +2,28 @@
 published: true
 author: Robin Wen
 layout: post
-title: "区块链太火，小心你的服务器被动挖矿"
+title: 区块链太火，小心你的服务器被动挖矿
 category: Blockchain
-summary: "某日，笔者收到 VPS 服务器 CPU 告警，上服务器一看，有个叫做 gpg-agentd 的进程占用大量的 CPU 资源。接着就是常规的排查，IO 情况、网络流量、内存情况、系统日志、crontab 等。本篇文章从一起服务器被黑事件说起，分析了挖矿脚本、被黑过程，以及从 Redis 、服务器、其他服务、日常用户等方面给出了防御方案。除了 Redis 的未授权访问漏洞，目前主要存在未授权访问漏洞的还有：NFS，Samba，LDAP，Rsync，FTP，GitLab，Jenkins，MongoDB，ZooKeeper，ElasticSearch，Memcache，CouchDB，Docker，Solr，Hadoop，Dubbo 等，安全重于泰山，读者千万不要掉以轻心。"
+summary: >-
+  某日，笔者收到 VPS 服务器 CPU 告警，上服务器一看，有个叫做 gpg-agentd 的进程占用大量的 CPU 资源。接着就是常规的排查，IO
+  情况、网络流量、内存情况、系统日志、crontab 等。本篇文章从一起服务器被黑事件说起，分析了挖矿脚本、被黑过程，以及从 Redis
+  、服务器、其他服务、日常用户等方面给出了防御方案。除了 Redis
+  的未授权访问漏洞，目前主要存在未授权访问漏洞的还有：NFS，Samba，LDAP，Rsync，FTP，GitLab，Jenkins，MongoDB，ZooKeeper，ElasticSearch，Memcache，CouchDB，Docker，Solr，Hadoop，Dubbo
+  等，安全重于泰山，读者千万不要掉以轻心。
 tags:
-- Blockchain
+  - Blockchain
+comments:
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars1.githubusercontent.com/u/3949252?v=4&s=73'
+    content: |-
+      &#x8FD9;&#x91CC;&#x6709;&#x7C7B;&#x4F3C;&#x7684;&#x6848;&#x4F8B;&#xFF1A;
+
+      * http://www.cnblogs.com/mobiwangyue/p/8431900.html
+    date: 2018-03-08T07:35:45.842Z
+
 ---
 
 `文/温国兵`
