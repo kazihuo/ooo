@@ -298,7 +298,7 @@ PermitEmptyPasswords no # 禁止空密码
 
 如果 VPS 服务器部署了 MySQL 等服务，这里也有很多安全措施。比如删除匿名账户、删除 test 库、权限最小化等。如果对 MySQL 安全感兴趣的可以参考 [此文](http://imysql.com/2016/03/15/sth-about-mysql-data-security.shtml)。
 
-#### 3.4 日常用户
+### 3.4 日常用户
 ***
 
 对于没有 VPS 服务器的群友，那怎么样做好安全呢？即使没有 VPS 服务器，你的 PC 或者 Mac 也有可能被黑，用于挖矿。之前写过一篇 [区块链资产安全攻略](https://dbarobin.com/2017/12/18/blockchain-security-notice/)，读者可以参考下。针对本文的案例，这里笔者提出几点建议：
