@@ -121,8 +121,8 @@ Options:
 
 CLEAN 函数也是一个毁灭性的函数。首先会修改 /etc/security/limits.conf 和 /etc/sysctl.conf 系统配置文件。加入如下配置：
 
-> * soft memlock 262144
-> * hard memlock 262144
+> \* soft memlock 262144
+> \* hard memlock 262144
 > vm.nr_hugepages = 256
 
 接下来删除 RMLIST 列表的文件，kill 掉 KILIST 列表的进程。KILIST 里有些什么呢？也是挖矿的钱包地址或者相关的进程。这位哥们只想自己获利，不关心兄弟的死活，呵呵。接下来执行疯狂的 kill，也是挖矿钱包地址或者相关的进程，不过这个列表就有点多了，在此不赘述。
@@ -191,6 +191,12 @@ file.close
 ```
 
 分析到此为止，我们可以从中得知，未授权漏洞是相当危险的，只要有这个口子，黑客可以做任何事情。
+
+就在最近，一个朋友的服务器也有类似的现象。脚本可以参考：[crack-mining v2](https://github.com/BlockchainOne/crack-mining/tree/master/v2)。脚本大同小异，不过用于挖矿的可执行文件做了手脚。除了 Usage 这里的名字不一样，其他都是一样的。
+
+![dump.db](https://i.imgur.com/oXJizEC.jpg)
+
+同样，上传到 [virscan.org](http://virscan.org)，得到的报告，点击 [此处](http://r.virscan.org/report/fc17f9c18266646045fcd0375279bf34) 阅读。
 
 ## 0x03 防御方案
 ***
@@ -280,6 +286,10 @@ rename-command CONFIG "XKGLx9LFl87mQQLVl0b7UI4VZJESG5iU"
 **第五，安全补丁**
 
 关注官方版本的变化以及漏洞列表，及时修补，必要时进行升级。
+
+**第六，业务隔离。**
+
+生产环境建议将 Redis 环境部署到内网，并且该服务器没有公网 IP。不过 VPS 一般都有公网 IP，如果 VPS 有 Redis 服务的，务必重视安全。
 
 ### 3.2 服务器方面
 ***
