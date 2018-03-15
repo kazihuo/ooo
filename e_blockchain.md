@@ -38,9 +38,12 @@ permalink: /blockchain/
 #### GitHub
 ***
 
-* [BlockchainAge](https://github.com/dbarobin/BlockchainAge)
+* [Chain One Community](https://github.com/BlockchainOne)
+* [Open-Translating](https://github.com/BlockchainOne/Open-Translating)
+* [WeChat](https://github.com/BlockchainOne/WeChat)
+* [awesome-blockchain](https://github.com/BlockchainOne/awesome-blockchain)
+* [crack-mining](https://github.com/BlockchainOne/crack-mining)
 * [mycrypto](https://github.com/dbarobin/mycrypto)
-* [blockchain-whitepaper](https://github.com/dbarobin/blockchain-whitepaper)
 
 #### Referrals
 ***
