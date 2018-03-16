@@ -23,6 +23,18 @@ comments:
 
       * http://www.cnblogs.com/mobiwangyue/p/8431900.html
     date: 2018-03-08T07:35:45.842Z
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars1.githubusercontent.com/u/3949252?v=4&s=73'
+    content: >-
+      &#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x811A;&#x672C;&#xFF1A;&#x6B22;&#x8FCE;&#x8;
+      clone&#x3002;
+
+
+      https://github.com/BlockchainOne/crack-mining
+    date: 2018-03-16T10:06:48.788Z
 
 ---
 
