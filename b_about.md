@@ -9,7 +9,7 @@ permalink: /about/
 
 这里是 Wentasy 的个人站点。
 
-我是温国兵，区块链技术指北（Chain One）社区发起人，[dbarobin.com](https://dbarobin.com) 博主，[bcage.one](https://bcage.one) 站长。
+我是温国兵，区块链技术指北（ChainONE）社区发起人，[dbarobin.com](https://dbarobin.com) 博主。
 
 热爱 Google，热爱互联网，热爱科技。推崇逻辑和理性，用数据说话，用理工科思维理解世界。
 
