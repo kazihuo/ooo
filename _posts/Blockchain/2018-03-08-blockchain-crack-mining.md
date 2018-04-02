@@ -35,6 +35,14 @@ comments:
 
       https://github.com/BlockchainOne/crack-mining
     date: 2018-03-16T10:06:48.788Z
+  - author:
+      type: github
+      displayName: zhoudean
+      url: 'https://github.com/zhoudean'
+      picture: 'https://avatars2.githubusercontent.com/u/14845335?v=4&s=73'
+    content: >-
+      &#x597D;&#x4E45;&#x6CA1;&#x6765;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x4E13;&#x6CE8;&#x4E8E;&#x7814;&#x7A76;&#x533A;&#x5757;&#x94FE;&#x4E86;&#xFF0C;&#x4E0D;&#x9519;&#x554A;
+    date: 2018-04-02T09:01:36.677Z
 
 ---
 
