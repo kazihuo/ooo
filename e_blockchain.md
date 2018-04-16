@@ -68,17 +68,19 @@ permalink: /blockchain/
 * Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
 * Telegram Group，[https://t.me/bcage](https://t.me/bcage)
 * Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* Facebook，[https://www.facebook.com/chainone.org](https://www.facebook.com/chainone.org)
 * 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
 * 官方博客，[https://blog.chainone.xyz](https://blog.chainone.xyz)
-* 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
-* Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
-* Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
+* 知乎专栏，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
+* 简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
+* Steemit，[https://steemit.com/@chainone](https://steemit.com/@chainone)
+* Medium，[https://medium.com/@chainone.org](https://medium.com/@chainone.org)
+* 币乎，[https://bihu.com/people/345886](https://bihu.com/people/345886)
 * 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
-* 币乎，[https://bihu.com/people/12109](https://bihu.com/people/12109)
 
 #### Referrals
 ***
