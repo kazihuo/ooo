@@ -110,4 +110,4 @@ permalink: /blockchain/
 * **ERC20 Token**: 0x5c8DEB48dC08b5dC60A0290B718690a801509Dd1
 * **PayPal**: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 
-© Chain One
+© ChainONE
