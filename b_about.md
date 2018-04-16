@@ -32,12 +32,12 @@ Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_b
 
 Telegram Group，点击加入：
 
-* [区块链技术指北](https://t.me/bcage)
-* [数据库杂谈](https://t.me/vrwio)
+* [ChainONE Official Group](https://t.me/bcage)
+* [温国兵的随想录](https://t.me/vrwio)
 
 Telegram Channel，点击订阅：
 
-* [区块链技术指北](https://t.me/BlockchainAge)
+* [ChainONE Official Channel](https://t.me/BlockchainAge)
 * [FuckGFW](https://t.me/fuckgfwio)
 
 另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时简单介绍下自己，并注明来自 dbarobin.com。
