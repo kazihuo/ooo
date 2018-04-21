@@ -2,13 +2,31 @@
 published: true
 author: SuperONE
 layout: post
-title: "SuperONE 团队竞选 EOS 超级节点"
+title: SuperONE 团队竞选 EOS 超级节点
 category: Blockchain
-summary: "SuperONE 团队在石墨烯技术领域有长达 4 年以上的深入研究和运营石墨烯节点的丰富经验，并且也有能力开发服务于社区的产品（SuperONE.io），是一个综合能力相当突出的团队。SuperONE 团队将结合自身的优势，参与 EOS 超级节点竞选。我们是最早期的区块链技术狂热爱好者，是一帮区块链领域的技术流、审美流，专注于区块链资产管理，智能合约方向。SuperONE 项目发起人（社区 ID：crazybit) 是 BitShares 社区的资深参与者，对石墨烯底层有深入的研究。作为社区领先的开发团队，针对商业应用的实用性和便捷性需求，开发了 SuperONE(superone.io) 钱包，为用户提供更加安全、更加透明、去中心化的链上交易和数字资产管理平台。凭借 SuperONE 团队雄厚的技术实力和运营能力，相信我们会是 EOS 超级节点的有力竞争者，顺祝 SuperONE 团队竞选成功，共同促进 EOS 生态的发展。"
+summary: >-
+  SuperONE 团队在石墨烯技术领域有长达 4
+  年以上的深入研究和运营石墨烯节点的丰富经验，并且也有能力开发服务于社区的产品（SuperONE.io），是一个综合能力相当突出的团队。SuperONE
+  团队将结合自身的优势，参与 EOS
+  超级节点竞选。我们是最早期的区块链技术狂热爱好者，是一帮区块链领域的技术流、审美流，专注于区块链资产管理，智能合约方向。SuperONE 项目发起人（社区
+  ID：crazybit) 是 BitShares
+  社区的资深参与者，对石墨烯底层有深入的研究。作为社区领先的开发团队，针对商业应用的实用性和便捷性需求，开发了 SuperONE(superone.io)
+  钱包，为用户提供更加安全、更加透明、去中心化的链上交易和数字资产管理平台。凭借 SuperONE 团队雄厚的技术实力和运营能力，相信我们会是 EOS
+  超级节点的有力竞争者，顺祝 SuperONE 团队竞选成功，共同促进 EOS 生态的发展。
 tags:
-- Blockchain
-- EOS
-- SuperONE
+  - Blockchain
+  - EOS
+  - SuperONE
+comments:
+  - author:
+      type: github
+      displayName: hmyixiu
+      url: 'https://github.com/hmyixiu'
+      picture: 'https://avatars0.githubusercontent.com/u/18661087?v=4&s=73'
+    content: >-
+      &#x65E0;&#x610F;&#x95F4;CSDN&#x70B9;&#x5F00;&#x4E86;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#xFF0C;&#x770B;&#x4E86;&#x4F60;&#x4E00;&#x4E9B;MySQL&#x7684;&#x6574;&#x7406;&#xFF0C;&#x975E;&#x5E38;&#x611F;&#x8C22;&#xFF01;&#x6211;&#x662F;&#x4ECA;&#x5E74;6&#x6708;&#x6BD5;&#x4E1A;&#xFF0C;&#x4ECA;&#x5E74;&#x5E74;&#x540E;&#x72EC;&#x81EA;&#x4E00;&#x4E2A;&#x4ECE;&#x5C71;&#x4E1C;&#x5230;&#x5E7F;&#x5DDE;&#x5B9E;&#x4E60;&#xFF0C;&#x4E5F;&#x662F;DBA&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x54C8;&#x54C8;&#x3002;&#x795D;&#x5F3A;&#x54E5;&#x5DE5;&#x4F5C;&#x987A;&#x5229;&#xFF01;&#x4E5F;&#x613F;&#x6211;&#x80FD;&#x591F;&#x7EE7;&#x7EED;&#x7559;&#x5728;&#x5E7F;&#x5DDE;&#xFF01;
+    date: 2018-04-21T07:25:39.480Z
+
 ---
 
 ![SuperONE](https://i.imgur.com/gGzpjed.jpg)
