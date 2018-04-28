@@ -26,6 +26,13 @@ comments:
     content: >-
       &#x65E0;&#x610F;&#x95F4;CSDN&#x70B9;&#x5F00;&#x4E86;&#x4F60;&#x7684;&#x535A;&#x5BA2;&#xFF0C;&#x770B;&#x4E86;&#x4F60;&#x4E00;&#x4E9B;MySQL&#x7684;&#x6574;&#x7406;&#xFF0C;&#x975E;&#x5E38;&#x611F;&#x8C22;&#xFF01;&#x6211;&#x662F;&#x4ECA;&#x5E74;6&#x6708;&#x6BD5;&#x4E1A;&#xFF0C;&#x4ECA;&#x5E74;&#x5E74;&#x540E;&#x72EC;&#x81EA;&#x4E00;&#x4E2A;&#x4ECE;&#x5C71;&#x4E1C;&#x5230;&#x5E7F;&#x5DDE;&#x5B9E;&#x4E60;&#xFF0C;&#x4E5F;&#x662F;DBA&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x54C8;&#x54C8;&#x3002;&#x795D;&#x5F3A;&#x54E5;&#x5DE5;&#x4F5C;&#x987A;&#x5229;&#xFF01;&#x4E5F;&#x613F;&#x6211;&#x80FD;&#x591F;&#x7EE7;&#x7EED;&#x7559;&#x5728;&#x5E7F;&#x5DDE;&#xFF01;
     date: 2018-04-21T07:25:39.480Z
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars1.githubusercontent.com/u/3949252?v=4&s=73'
+    content: '@hmyixiu Good Luck!'
+    date: 2018-04-28T12:39:20.697Z
 
 ---
 
