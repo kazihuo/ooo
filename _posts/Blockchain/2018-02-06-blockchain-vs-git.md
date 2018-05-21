@@ -37,6 +37,18 @@ comments:
 
       https://zhuanlan.zhihu.com/p/33927320
     date: 2018-02-24T06:58:52.351Z
+  - author:
+      type: twitter
+      displayName: HuCheung
+      url: 'https://twitter.com/HuCheung'
+      picture: >-
+        https://pbs.twimg.com/profile_images/467812487539093504/6e-2aacg_bigger.jpeg
+    content: >-
+      &#x522B;&#x95F9;&#x597D;&#x5417;&#xFF1F;&#xFF01;
+      &#x4E8C;&#x8005;&#x6709;&#x672C;&#x8D28;&#x7684;&#x533A;&#x522B;&#xFF0C;
+      &#x4E00;&#x4E2A;&#x662F;decentralized&#xFF0C;
+      &#x4E00;&#x4E2A;&#x4E0D;&#x662F;&#x3002;&#x8BF4;&#x9500;&#x6BC1;&#x4F60;&#x7684;repo&#xFF0C;github&#x5206;&#x5206;&#x949F;&#x949F;&#x4E8B;&#xFF0C;blockchain&#x5374;&#x51E0;&#x4E4E;&#x4E0D;&#x53EF;&#x80FD;&#xFF01;
+    date: 2018-05-21T01:01:24.216Z
 
 ---
 
