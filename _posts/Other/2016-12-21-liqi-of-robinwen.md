@@ -179,7 +179,7 @@ comments:
 * Terminal 用 [iTerm2](https://www.iterm2.com) + [zsh](https://en.wikipedia.org/wiki/Z_shell) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) 的组合，主题是 [Solarized Light](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized)
 * 用 [nvm](https://github.com/creationix/nvm) 管理 Node.js 版本
 * 用 [rvm](https://rvm.io) 管理 Ruby 版本
-* [Sublime Text 3](https://www.sublimetext.com)，用了好几年了，轻量，好用，主题依然是 [Solarized Light](https://github.com/braver/Solarized)
+* [Sublime Text 3](https://www.sublimetext.com)，$70，用了好几年了，轻量，好用，主题依然是 [Solarized Light](https://github.com/braver/Solarized)
 * [CotEditor](https://coteditor.com)，免费，文本编辑器
 * [Visual Studio Code](https://code.visualstudio.com)，免费，微软官方提供，阅读源码比较便捷
 * [GitHub Pages](https://pages.github.com)，程序员记录必备，博客静态生成器使用 [Jekyll](https://jekyllrb.com)，个人博客地址：[https://dbarobin.com](https://dbarobin.com)
