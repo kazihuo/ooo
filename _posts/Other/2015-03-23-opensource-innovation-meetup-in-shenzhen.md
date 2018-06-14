@@ -48,9 +48,9 @@ tags:
 
 上两张王涛老师的照片，来自 Fangfang，感谢。
 
-![rsz_wangtao-cto-2](http://dbarobin.com/images/wangtao-cto-2.png)
+![rsz_wangtao-cto-2](https://dbarobin.com/images/wangtao-cto-2.png)
 
-![rsz_wangtao-cto-1](http://dbarobin.com/images/rsz_wangtao-cto-1.png)
+![rsz_wangtao-cto-1](https://dbarobin.com/images/rsz_wangtao-cto-1.png)
 
 ## MySQL 开源社区的协作模式 ##
 ***

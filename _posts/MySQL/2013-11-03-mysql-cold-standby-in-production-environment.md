@@ -25,7 +25,7 @@ tags:
 
 ## 一 真实环境使用冷备 ##
 
-在上一篇文章（<a href="http://dbarobin.com/2013/11/02/mysql-cold-standby/" target="_blank">MySQL备份与恢复之冷备</a>）中，我们提到了冷备。但是有个问题，我们存储的数据文件是保存在当前本地磁盘的，如果这个磁盘挂掉，那我们存储的数据不就丢失了，这样备份数据不就功亏一篑，劳而无功。所以真实环境中我们多准备几块磁盘，然后再在这些磁盘上搭建LVM，把MySQL的数据目录挂载到LVM上，这样数据就不是存储在当前磁盘上，就可以保证数据的安全性。
+在上一篇文章（<a href="https://dbarobin.com/2013/11/02/mysql-cold-standby/" target="_blank">MySQL备份与恢复之冷备</a>）中，我们提到了冷备。但是有个问题，我们存储的数据文件是保存在当前本地磁盘的，如果这个磁盘挂掉，那我们存储的数据不就丢失了，这样备份数据不就功亏一篑，劳而无功。所以真实环境中我们多准备几块磁盘，然后再在这些磁盘上搭建LVM，把MySQL的数据目录挂载到LVM上，这样数据就不是存储在当前磁盘上，就可以保证数据的安全性。
 
 ## 二 示意图 ##
 
@@ -322,6 +322,6 @@ mysql> select * from stu;
 
 原文地址：<a href="" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之真实环境使用冷备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之真实环境使用冷备" /></a>
 
-题图来自：原创，By <a href="http://dbarobin.com/" target="_blank">Robin Wen</a>
+题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

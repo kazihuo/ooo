@@ -177,7 +177,7 @@ PS：博客就分享那么多，其他的博客需要您发现了。
 说明：
 
 * 以上书籍没有全部看完，有些在看，有些在规划中，且当做个列表吧；
-* 关于数据库的书籍，参考 [MySQL DBA Tips](http://dbarobin.com/2015/04/14/mysql-dba-tips/) ，在此不赘述。
+* 关于数据库的书籍，参考 [MySQL DBA Tips](https://dbarobin.com/2015/04/14/mysql-dba-tips/) ，在此不赘述。
 
 **资源**
 

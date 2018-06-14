@@ -99,10 +99,10 @@ SELECT [存储过程执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 好了，等待47分29秒，数据插入完毕，插入数据的统计信息如图一，占用数据空间如图二，我们开始测试count(*)和sysindexes在效率上的差别。
 
-![图一 插入1亿行数据统计信息](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-001.png)
+![图一 插入1亿行数据统计信息](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-001.png)
 图一 插入1亿行数据统计信息
 
-![图二 插入1亿行数据占用空间](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-002.png)
+![图二 插入1亿行数据占用空间](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-002.png)
 图二 插入1亿行数据占用空间
 
 在没有任何索引的情况下使用count(*)测试，语句如下：
@@ -116,10 +116,10 @@ SELECT [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 测试时内存使用率一度飙到96%，可见效率是极低的。测试结果用时1分42秒，如图三，我们查看此时的执行计划，如图四。可以清晰地看到此时走的是全表扫描，并且绝大多数的开销都花销在这上面。
 
-![图三 无索引使用count(\*)执行时间](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-003.png)
+![图三 无索引使用count(\*)执行时间](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-003.png)
 图三 无索引使用count(\*)执行时间
 
-![图四 无索引使用count(\*)执行计划](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-004.png)
+![图四 无索引使用count(\*)执行计划](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-004.png)
 图四 无索引使用count(\*)执行计划
 
 在没有任何索引的情况下使用sysindexes测试，语句如下：
@@ -135,10 +135,10 @@ SELECT [语句执行花费时间(毫秒)]=datediff(ms,@d,getdate())
 
 测试结果用时450毫秒，如图五。我们查看此时的执行计划，如图六。可以看到此时走的是聚集索引扫描，并且全部的开销都在此。
 
-![图五 无索引使用使用sysindexes执行时间](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-005.png)
+![图五 无索引使用使用sysindexes执行时间](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-005.png)
 图五 无索引使用使用sysindexes执行时间
 
-![图六 无索引使用使用sysindexes执行计划](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-006.png)
+![图六 无索引使用使用sysindexes执行计划](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-006.png)
 图六 无索引使用使用sysindexes执行计划
 
 在没有索引的情况下测试完毕，我们开始测试有索引的情况。首先，我们在ID列上建立普通索引。语句如下：
@@ -149,17 +149,17 @@ CREATE INDEX idx_nor_count_test_id ON count_Test(id);
 
 建立普通索引时内存使用率、CPU利用率都相当地高，一读达到97%。创建普通索引用时34分58秒，数据文件磁盘占用空间为6.71G (7046208K),日志文件无变化。执行计划如图七：
 
-![图七 创建普通索引执行计划](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-007.png)
+![图七 创建普通索引执行计划](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-007.png)
 图七 创建普通索引执行计划
 
 在有普通索引的情况下使用count(*)测试，语句和没有任何索引的情况下使用count(*)测试相同。测试结果用时1分09秒，比没有使用索引速度要快。我们查看此时的执行计划，如图八。可以看到此时走非聚集索引扫描，开销主要在此。
 
-![图八 普通索引使用count(\*)执行计划](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-008.png)
+![图八 普通索引使用count(\*)执行计划](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-008.png)
 图八 普通索引使用count(\*)执行计划
 
 在有普通索引的情况下使用sysindexes测试，语句和没有任何索引的情况下使用sysindexes测试相同。测试结果用时290毫秒，也比没有索引时用时少。我们查看此时的执行计划，如图九，可以看到执行计划未变。
 
-![图九 普通索引使用sysindexes执行计划](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-009.png)
+![图九 普通索引使用sysindexes执行计划](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-009.png)
 图九 普通索引使用sysindexes执行计划
 
 普通索引测试完毕，现在我们测试聚集索引。删除普通索引，在id列上建立聚集索引，语句如下：
@@ -173,12 +173,12 @@ CREATE CLUSTERED INDEX idx_clu_count_test_id ON count_Test(id);
 
 在有聚集索引的情况下，使用count(*)测试，语句和没有任何索引的情况下使用count(*)测试相同。测试结果用时4分08秒，我们查看此时的执行计划，如图十。可以看到此时走聚集索引，开销主要花销在此。
 
-![图十 聚集索引使用count(\*)测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-010.png)
+![图十 聚集索引使用count(\*)测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-010.png)
 图十 聚集索引使用count(\*)测试
 
 在有聚集索引的情况下，使用sysindexes测试。语句和没有任何索引的情况下使用sysindexes测试相同。测试结果用时790毫秒，我们查看此时的执行计划，如图十一。执行计划不变。
 
-![图十一 聚集索引使用sysindexes测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-011.png)
+![图十一 聚集索引使用sysindexes测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-011.png)
 图十一 聚集索引使用sysindexes测试
 
 聚集索引测试完毕，现在我们开始测试非聚集索引。删除聚集索引，建立非聚集索引，语句如下：
@@ -192,12 +192,12 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 在有非聚集索引的情况下，使用count(*)测试。语句和没有任何索引的情况下使用count(*)测试相同。测试结果用时6分59秒，我们查看此时的执行计划，如图十二。此时走非聚集索引，开销主要在此。
 
-![图十二 非聚集索引使用count(\*)测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-012.png)
+![图十二 非聚集索引使用count(\*)测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-012.png)
 图十二 非聚集索引使用count(\*)测试
 
 在有非聚集索引的情况下，使用sysindexes测试。语句和没有任何索引的情况下使用sysindexes测试相同。测试结果用时413毫秒，我们查看此时的执行计划，如图十三。执行计划不变。
 
-![图十三 非聚集索引使用sysindexes测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-013.png)
+![图十三 非聚集索引使用sysindexes测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-013.png)
 图十三 非聚集索引使用sysindexes测试
 
 接着我们做一个组合测试，包括有普通索引和聚集索引的情况、有普通索引和非聚集索引的情况、有普通索引、聚集索引和非聚集索引的情况。首先测试有普通索引和聚集索引的情况，我们首先删除非聚集索引，然后建立普通索引和聚集索引，语句如下：
@@ -212,12 +212,12 @@ CREATE CLUSTERED INDEX idx_clu_count_test_id ON count_Test(id);
 
 在有普通索引和聚集索引的情况下，使用count(*)测试。语句和没有任何索引的情况下使用count(*)测试相同。测试结果用时5分27秒，我们查看此时的执行计划，如图十四。此时走普通索引，开销主要在此。
 
-![图十四 聚集索引、普通索引使用count(\*)测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-014.png)
+![图十四 聚集索引、普通索引使用count(\*)测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-014.png)
 图十四 聚集索引、普通索引使用count(\*)测试
 
 在有普通索引和聚集索引的情况下，使用sysindexes测试。语句和没有任何索引的情况下使用sysindexes测试相同。测试结果用时200毫秒，我们查看此时的执行计划，如图十五，执行计划不变。
 
-![图十五 聚集索引、普通索引使用sysindexes测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-015.png)
+![图十五 聚集索引、普通索引使用sysindexes测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-015.png)
 图十五 聚集索引、普通索引使用sysindexes测试
 
 接着测试有普通索引和非聚集索引的情况，我们删除聚集索引，建立非聚集索引，语句如下：
@@ -231,12 +231,12 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 在有普通索引和非聚集索引的情况下，使用count(*)测试。语句和没有任何索引的情况下使用count(*)测试相同。测试结果用时52秒，我们查看此时的执行计划，如图十六。此时走非聚集索引，开销主要在此。
 
-![图十六 非聚集索引、普通索引使用count(\*)测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-016.png)
+![图十六 非聚集索引、普通索引使用count(\*)测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-016.png)
 图十六 非聚集索引、普通索引使用count(\*)测试
 
 在有普通索引和非聚集索引的情况下，使用sysindexes测试。语句和没有任何索引的情况下使用sysindexes测试相同。测试结果用时203毫秒，我们查看此时的执行计划，如图十七。执行计划不变。
 
-![图十七 非聚集索引、普通索引使用sysindexes测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-017.png)
+![图十七 非聚集索引、普通索引使用sysindexes测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-017.png)
 图十七 非聚集索引、普通索引使用sysindexes测试
 
 最后，测试有普通索引、聚集索引和非聚集索引的情况。我们创建普通索引，语句如下：
@@ -249,25 +249,25 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 在有普通索引、聚集索引和非聚集索引的情况下，使用count(*)测试。语句和没有任何索引的情况下使用count(*)测试相同。测试结果用时2分51秒，我们查看此时的执行计划，如图十八。此时走非聚集索引，开销主要在此。
 
-![图十八 普通索引、聚集索引、非聚集索引使用count(\*)测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-018.png)
+![图十八 普通索引、聚集索引、非聚集索引使用count(\*)测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-018.png)
 图十八 普通索引、聚集索引、非聚集索引使用count(\*)测试
 
 在有普通索引、聚集索引和非聚集索引的情况下，使用sysindexes测试。语句和没有任何索引的情况下使用sysindexes测试相同。测试结果用时203毫秒，我们查看此时的执行计划，如图十九。执行计划不变。
 
-![图十九 普通索引、聚集索引、非聚集索引使用sysindexes测试](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-019.png)
+![图十九 普通索引、聚集索引、非聚集索引使用sysindexes测试](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-019.png)
 图十九 普通索引、聚集索引、非聚集索引使用sysindexes测试
 
 加入indid大于1用时86毫秒，执行计划如图二十；加入indid等于1用时23毫秒，执行计划如图二十一。所有的测试完成后，数据文件和日志文件占用空间如图二十二。
 
-![图二十 加入indid大于1执行时间](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-020.png)
+![图二十 加入indid大于1执行时间](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-020.png)
 图二十 加入indid大于1执行时间
 
 
-![图二十一 加入indid等于1执行时间](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-021.png)
+![图二十一 加入indid等于1执行时间](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-021.png)
 图二十一 加入indid等于1执行时间
 
 
-![图二十二 所有的测试完成后，数据文件和日志文件占用空间](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-022.png)
+![图二十二 所有的测试完成后，数据文件和日志文件占用空间](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-022.png)
 图二十二 所有的测试完成后，数据文件和日志文件占用空间
 
 我们可以看出以上几种方式在效率上简直是天壤之别。count(*)不管在有什么索引的情况下都较慢，而sysindexes相对快多了。
@@ -280,7 +280,7 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 现在问题又来了，为什么使用sysindexes速度会很快？索引是为检索而存在的，就是说索引并不是一个表必须的。表索引由多个页面组成，这些页面一起组成了一个树形结构，即我们通常说的B树（平衡树），首先来看下表索引的组成部分：根极节点，root，它指向另外两个页，把一个表的记录从逻辑上分成非叶级节点Non-Leaf Level（枝），它指向了更加小的叶级节点Leaf Level（叶）。根节点、非叶级节点和叶级节点都位于索引页中，统称为索引叶节点，属于索引页的范筹。这些“枝”、“叶”最终指向数据页Page。根级节点和叶级节点之间的叶又叫数据中间页。根节点对应了sysindexes表的root字段，记载了非叶级节点的物理位置（即指针）；非叶级节点位于根节点和叶节点之间，记载了指向叶级节点的指针；而叶级节点则最终指向数据页，这就是最后的B树。sysindexes中我们需要关注root字段和indid字段。我们看下官方文档中对这两个字段的解释，如图二十三：
 
-![图二十三 官方文档对root字段和indid字段的解释](http://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-023.png)
+![图二十三 官方文档对root字段和indid字段的解释](https://dbarobin.com/images/large-amount-of-data-query-optimization-in-mssql-023.png)
 图二十三 官方文档对root字段和indid字段的解释
 
 从上图中我们知道，索引ID为0表示堆，也就是在没有索引下所做的全表扫描；为1是表示聚集索引，大于1表示非聚集索引。root字段在全表扫描时是不会使用到的，而只有在有索引的情况下才使用。聚集索引中，数据所在的数据页是叶级，索引数据所在的索引页是非叶级。由于记录是按聚集索引键值进行排序，即聚集索引的索引键值也就是具体的数据页。访问有聚集索引的表，步骤是这样的：首先在sysindexes表查询INDID值为1，说明表中建立了聚集索；然后从根出发，在非叶级节点中定位最接近1的值，也就是枝节点，再查到其位于叶级页面的第n页；在叶级页面第n页下搜寻值为1的条目，而这一条目就是数据记录本身；将该记录返回客户端。同样，我们查询某张表有多少记录数，我们使用到的删选条件是indid in (0,1)，也就是把普通表（这里指没有聚集索引的表）和有聚集索引的表都查找到。由于sysindexes记录了每张表的记录数，无论该表是普通表还是有聚集索引的表，都可以很快地把返回结果。如上所述，这个数值并不一定准确，至于你想获得真实记录数，还是初略记录数，这就看你获得记录数的需求是什么。
@@ -295,6 +295,6 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 
 原文地址：<a href="http://blog.csdn.net/justdb/article/details/23033291" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="SQL Server DBA调优日记（一）大数据量查询记录数优化及原理探讨" height="16px" width="16px" border="0" alt="SQL Server DBA调优日记（一）大数据量查询记录数优化及原理探讨" /></a>
 
-题图来自：原创，By <a href="http://dbarobin.com/" target="_blank">Robin Wen</a>
+题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

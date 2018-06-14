@@ -152,7 +152,7 @@ tags:
 说明：
 
 * 上述大部分书都看过，打算把其余的补齐，并且再温新经典；
-* Linux、Python、Perl、操作系统、算法等相关书籍，请参考：[运维工程师指北](http://dbarobin.com/2015/04/14/operation-and-maintenance-engineer-tips/)；
+* Linux、Python、Perl、操作系统、算法等相关书籍，请参考：[运维工程师指北](https://dbarobin.com/2015/04/14/operation-and-maintenance-engineer-tips/)；
 * 好书难免遗漏，还忘见谅，如有补充，欢迎留言；
 
 **资源**

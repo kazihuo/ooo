@@ -24,7 +24,7 @@ tags:
 
 ## 一 热备 ##
 
-在上两篇文章（<a href="http://dbarobin.com/2013/11/02/mysql-cold-standby/" target="_blank">MySQL备份与恢复之冷备</a>，<a href="http://dbarobin.com/2013/11/03/mysql-cold-standby-in-production-environment/" target="_blank">MySQL备份与恢复之真实环境使用冷备</a>）中，我们提到了冷备和真实环境中使用冷备。那从这篇文章开始我们看下热备。显然热备和冷备是两个相对的概念，冷备是把数据库服务，比如MySQL，Oracle停下来，然后使用拷贝、打包或者压缩命令对数据目录进行备份；那么我们很容易想到热备就是在MySQL或者其他数据库服务在运行的情况下进行备份。但是，这里存在一个问题，因为生产库在运行的情况下，有对该库的读写，读写频率有可能高，也可能低，不管频率高低，总会就会造成备份出来的数据和生产库中的数据不一致的情况。热备这段时间，其他人不可以操作是不现实的，因为你总不可能终止用户访问Web程序。要解决这个问题，可以采用指定备份策略，比如哪个时间段进行备份，备份哪些数据等等，总之，保证数据的完整性和一致性，切记，**备份重于一切！！！**
+在上两篇文章（<a href="https://dbarobin.com/2013/11/02/mysql-cold-standby/" target="_blank">MySQL备份与恢复之冷备</a>，<a href="https://dbarobin.com/2013/11/03/mysql-cold-standby-in-production-environment/" target="_blank">MySQL备份与恢复之真实环境使用冷备</a>）中，我们提到了冷备和真实环境中使用冷备。那从这篇文章开始我们看下热备。显然热备和冷备是两个相对的概念，冷备是把数据库服务，比如MySQL，Oracle停下来，然后使用拷贝、打包或者压缩命令对数据目录进行备份；那么我们很容易想到热备就是在MySQL或者其他数据库服务在运行的情况下进行备份。但是，这里存在一个问题，因为生产库在运行的情况下，有对该库的读写，读写频率有可能高，也可能低，不管频率高低，总会就会造成备份出来的数据和生产库中的数据不一致的情况。热备这段时间，其他人不可以操作是不现实的，因为你总不可能终止用户访问Web程序。要解决这个问题，可以采用指定备份策略，比如哪个时间段进行备份，备份哪些数据等等，总之，保证数据的完整性和一致性，切记，**备份重于一切！！！**
 
 热备采用的是使用mysqldump命令进行备份，此工具是MySQL内置的备份和恢复工具，功能强大，它可以对整个库进行备份，可以对多个库进行备份，可以对单张表或者某几张表进行备份。但是无法同时备份多个库多个表，只有分开备份。下面我们看下热备的示意图，并进行热备模拟。
 
@@ -461,6 +461,6 @@ mysql -uroot -p123456 -e "select * from game.country"
 
 原文地址：<a href="http://blog.csdn.net/justdb/article/details/14644549" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之热备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之热备" /></a>
 
-题图来自：原创，By <a href="http://dbarobin.com/" target="_blank">Robin Wen</a>
+题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

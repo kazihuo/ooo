@@ -133,7 +133,7 @@ Google的Gmail的用户可以用创建标签的方式来创建“待办事项”
 
 ## 拓展阅读 ##
 
-程序员的奋斗史（三）谈时间：<a href="http://dbarobin.com/2012/05/01/precious-time/" target="_blank"><img src="http://i.imgur.com/dEfMkyt.jpg" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
+程序员的奋斗史（三）谈时间：<a href="https://dbarobin.com/2012/05/01/precious-time/" target="_blank"><img src="http://i.imgur.com/dEfMkyt.jpg" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
  
 ## 参考资料 ##
 
