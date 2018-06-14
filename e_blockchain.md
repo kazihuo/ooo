@@ -42,14 +42,14 @@ permalink: /blockchain/
 #### Community
 ***
 
-* [区块链技术指北 \| Chain One 官网](https://chainone.xyz)
-* [区块链技术指北 \| Chain One 官方博客](https://blog.chainone.xyz)
-* [区块链技术指北 \| Chain One 官方社区](https://bcage.one)
+* [区块链技术指北 \| ChainONE 官网](https://chainone.xyz)
+* [区块链技术指北 \| ChainONE 官方博客](https://blog.chainone.xyz)
+* [区块链技术指北 \| ChainONE 官方社区](https://bcage.one)
 
 #### GitHub
 ***
 
-* [Chain One Community](https://github.com/BlockchainOne)
+* [ChainONE Community](https://github.com/BlockchainOne)
 * [Open-Translating](https://github.com/BlockchainOne/Open-Translating)
 * [WeChat](https://github.com/BlockchainOne/WeChat)
 * [awesome-blockchain](https://github.com/BlockchainOne/awesome-blockchain)
