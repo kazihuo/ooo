@@ -7,9 +7,9 @@ permalink: /about/
 
 ***
 
-这里是 Wentasy 的个人站点。
+这里是 robin 的个人站点。
 
-我是温国兵，区块链技术指北（ChainONE）社区发起人，[dbarobin.com](https://dbarobin.com) 博主。
+我是温国兵，区块链技术指北（ChainONE）社区发起人，[dbarobin.com](https://dbarobin.com) 博主，[SuperONE](https://superone.io) 团队成员，目前专注区块链产业。
 
 热爱 Google，热爱互联网，热爱科技。推崇逻辑和理性，用数据说话，用理工科思维理解世界。
 
@@ -26,7 +26,7 @@ permalink: /about/
 
 关于我的更多足迹，可以在我的 [About Me](https://about.me/dbarobin) 名片中看到。关于我在区块链技术上的产出，可以点击 [Blockchain](https://dbarobin.com/blockchain) 页面。另外，我的所有文章，可以在 [归档](https://dbarobin.com/archives) 中找到。
 
-Keep in touch: LinkedIn <a href="http://www.linkedin.com/in/dbarobin" target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
+Keep in touch: LinkedIn <a href="https://www.linkedin.com/in/dbarobin" target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
 
 有任何问题想和我交流，可以通过电子邮件和我联系: **dbarobinwen@gmail.com**。
 
