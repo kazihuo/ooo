@@ -43,7 +43,7 @@ Installation via git clone or download this repo.
 
 ## Contact
 
-dbarobinwen@gmail.com
+blockxyz@gmail.com
 
 ## License
 

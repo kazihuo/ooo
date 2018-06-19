@@ -28,7 +28,7 @@ permalink: /about/
 
 Keep in touch: LinkedIn <a href="https://www.linkedin.com/in/dbarobin" target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
 
-有任何问题想和我交流，可以通过电子邮件和我联系: **dbarobinwen@gmail.com**。
+有任何问题想和我交流，可以通过电子邮件和我联系: **blockxyz@gmail.com**。
 
 Telegram Group，点击加入：
 

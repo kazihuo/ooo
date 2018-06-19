@@ -262,7 +262,7 @@ From: [https://github.com/CodisLabs/codis](https://github.com/CodisLabs/codis)
 ## 0x05 小结
 ***
 
-此次活动分享了 Redis 高可用的必要性、Sentinel 原理、Redis 高可用常用架构和实战过程中总结出的最佳实践，希望对读者有所帮助，如果有需要后续交流的，可以添加我的微信（**Wentasy**），或者发邮件到：**dbarobinwen@gmail.com**
+此次活动分享了 Redis 高可用的必要性、Sentinel 原理、Redis 高可用常用架构和实战过程中总结出的最佳实践，希望对读者有所帮助，如果有需要后续交流的，可以添加我的微信（**Wentasy**），或者发邮件到：**blockxyz@gmail.com**
 
 附 PPT 下载：[https://github.com/dbarobin/slides](https://github.com/dbarobin/slides)
 
