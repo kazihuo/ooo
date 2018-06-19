@@ -1,6 +1,6 @@
 # Blog
 
-Personal blog, see at: [https://dbarobin.com](https://dbarobin.com)
+Personal blog, see at: [https://dbarobin.com](https://dbarobin.com).
 
 Powered by [Jekyll](https://jekyllrb.com) based on [freshman21](https://github.com/yulijia/freshman21). Thanks [Lijia Yu](https://github.com/yulijia).
 
