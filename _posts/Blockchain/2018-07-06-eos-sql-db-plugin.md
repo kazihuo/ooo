@@ -26,6 +26,7 @@ tags:
 早在 6 月 7 日，[kesar](https://github.com/kesar) 在 [EOSIO](https://github.com/EOSIO/eos) 提交了一个编号为 [#3882](https://github.com/EOSIO/eos/pull/3882) 的 PR，但直至目前仍处于未合并状态。团队做一些开发需要取 EOS 链上数据，但无法直接从 EOS 区块链中获取。#3882 提供 EOS 链上数据导入 MySQL，可以很方便的读取历史数据。但问题来了，该 PR 未合并，EOSIO 也没有一个 sql_db_plugin 相关的 branch 或 tag，所以无法使用 git 自动合并。
 
 ## 0x01 解决
+***
 
 SuperONE 团队将 #3882 提交的内容打包，提交了个一个 repo，链接如下：
 
@@ -34,6 +35,7 @@ SuperONE 团队将 #3882 提交的内容打包，提交了个一个 repo，链�
 接下来本文将讲解如何将 EOS 链上数据异构到 MySQL。
 
 ## 0x02 部署
+***
 
 部署的思路如下：
 
@@ -59,7 +61,7 @@ $ apt-get -y install mysql-client
 接下来我们安装 soci。soci 是 C++ 连接 MySQL 的 Library。Ubuntu 可以快速安装，命令如下：
 
 ``` bash
-apt-get -y install libsoci-dev
+$ apt-get -y install libsoci-dev
 ```
 
 当然，我们还可以源码编译，步骤如下：[1]
