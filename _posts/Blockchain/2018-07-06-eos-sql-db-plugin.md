@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: EOS 区块链数据实时异构到 MySQL
 category: Blockchain
-summary:
+summary: "早在 6 月 7 日，kesar 提交了一个编号为 #3882 的 PR，但直至目前仍处于未合并状态。团队做一些开发需要取 EOS 链上数据，但无法直接从 EOS 区块链中获取。#3882 提供 EOS 链上数据导入 MySQL，可以很方便的读取历史数据。但问题来了，该 PR 未合并，EOSIO 也没有一个 sql_db_plugin 相关的 branch 或 tag，所以无法使用 git 自动合并。目前 #3882 暂未合并，具体原因未从得知。EOS 链上数据和传统的关系型数据库结合，将会大大降低开发者成本。待 #3882 merge 之后，读者将会更便利的使用到这个功能。"
 tags:
   - Blockchain
   - EOS
