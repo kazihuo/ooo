@@ -156,7 +156,9 @@ $ cp eos-mainnet/*.sh mainnet
 $ chmod +x mainnet
 ```
 
-修改 config.ini 相关配置以及 start.sh 脚本，sql_db-uri 格式如下：
+修改 config.ini 相关配置，添加 `plugin = eosio::sql_db_plugin` 参数。
+
+修改 start.sh 脚本，sql_db-uri 格式如下：
 
 > sql_db-uri="mysql://db=YOURDB user=YOURUSER host=127.0.0.1 password='YOURPASS'
 
