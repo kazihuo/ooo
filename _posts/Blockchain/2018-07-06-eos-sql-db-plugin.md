@@ -207,15 +207,18 @@ account: eosio
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://i.imgur.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
 * 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+* 官网，[https://chainone.xyz](https://chainone.xyz)
+* 官方博客，[https://blog.chainone.xyz](https://blog.chainone.xyz)
 * 官方社区，[https://bcage.one](https://bcage.one)
 * Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
 * Telegram Group，[https://t.me/bcage](https://t.me/bcage)
 * Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+* Facebook，[https://www.facebook.com/chainone.org](https://www.facebook.com/chainone.org)
 * 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
@@ -223,6 +226,7 @@ account: eosio
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
 * 个人博客，[https://dbarobin.com](https://dbarobin.com)
 * 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
+* 简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
 * 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
