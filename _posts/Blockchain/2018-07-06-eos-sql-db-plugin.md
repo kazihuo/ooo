@@ -207,7 +207,7 @@ account: eosio
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-<img width="50%" height="50%" src="https://i.imgur.com/RBmpxTL.jpg"/>
+![区块链技术指北](https://i.imgur.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -239,7 +239,7 @@ account: eosio
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-<img width="50%" height="50%" src="https://i.imgur.com/SzoNl5b.jpg"/>
+![Wechat](https://i.imgur.com/SzoNl5b.jpg)
 
 –EOF–
 
