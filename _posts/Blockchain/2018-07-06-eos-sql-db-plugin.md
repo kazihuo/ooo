@@ -67,7 +67,7 @@ $ apt-get -y install libsoci-dev
 当然，我们还可以源码编译，步骤如下：[1]
 
 ``` bash
-$ git clone clone https://github.com/SOCI/soci.git
+$ git clone https://github.com/SOCI/soci.git
 $ cd soci && mkdir build && cd build
 $ cmake -DWITH_BOOST=ON -WITH_MYSQL=ON -MYSQL_INCLUDE_DIR=/usr/local/mysql/include -MYSQL_LIBRARIES=/usr/local/mysql/lib/libmysqlclient.a /data/tmp/robin/soci
 $ make
@@ -83,7 +83,7 @@ $ cd /data
 $ git clone https://github.com/EOSIO/eos --recursive
 $ cd /data/eos
 # 如果不想用 master 分支代码，可以使用 git checkout v1.0.8 使用其他分支
-$ git submodule update –init –recursive
+$ git submodule update --init --recursive
 ```
 
 然后更改 CMakeLists.txt，总共有两个 CMakeLists.txt 需要更改。
