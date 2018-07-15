@@ -2,7 +2,7 @@
 published: true
 author: Robin Wen
 layout: post
-title: 构建区块链浏览器
+title: 构建 EOS 区块链浏览器
 category: Blockchain
 summary: "前面的文章讲解了如何让 nodeos 支持将链上数据实时异构到 MySQL 以及如何部署开源的区块链浏览器 API，但问题来了，没有前端展示，对于用户而言不够直观。EOS 链上数据又了，API 也有了，剩下的就是前端了。EOSTracker 是较早开源的区块链浏览器，后端使用 PHP，前端使用 AngularJS，接下来我们讲解如何部署前端。连续更新 3 篇文章，可以让读者从 0 到 1 构建区块链浏览器。区块链的强大魅力之处在于所有数据公开透明，任何人都可以同步全节点数据，任何人都可以追溯链上数据。希望能给读者帮助。"
 tags:
