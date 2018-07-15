@@ -26,6 +26,7 @@ tags:
 前面的文章讲解了如何让 nodeos 支持将链上数据实时异构到 MySQL 以及如何部署开源的区块链浏览器 API，但问题来了，没有前端展示，对于用户而言不够直观。
 
 ## 0x01 部署
+***
 
 EOS 链上数据又了，API 也有了，剩下的就是前端了。EOSTracker 是较早开源的区块链浏览器，后端使用 PHP，前端使用 AngularJS，接下来我们讲解如何部署前端。
 
@@ -49,6 +50,7 @@ $ npm install -g @angular/cli
 ```
 
 ## 0x02 测试
+***
 
 接着我们执行如下命令访问 EOSTracker。
 
@@ -87,7 +89,7 @@ $ vim src/environments/environment.prod.ts
 * [Configuring a Web Server](https://symfony.com/doc/current/setup/web_server_configuration.html)
 * [How To Secure Nginx with Let's Encrypt on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 
-## 0x04 小结
+## 0x03 小结
 ***
 
 连续更新 3 篇文章，可以让读者从 0 到 1 构建区块链浏览器。区块链的强大魅力之处在于所有数据公开透明，任何人都可以同步全节点数据，任何人都可以追溯链上数据。希望能给读者带来帮助。
