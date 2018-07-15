@@ -28,7 +28,7 @@ tags:
 ## 0x01 部署
 ***
 
-EOS 链上数据又了，API 也有了，剩下的就是前端了。EOSTracker 是较早开源的区块链浏览器，后端使用 PHP，前端使用 AngularJS，接下来我们讲解如何部署前端。
+EOS 链上数据有了，API 也有了，剩下的就是前端了。EOSTracker 是较早开源的区块链浏览器，后端使用 PHP，前端使用 AngularJS，接下来我们讲解如何部署前端。
 
 首先我们需要安装 nodejs，命令如下：
 
