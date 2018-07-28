@@ -42,9 +42,9 @@ permalink: /blockchain/
 #### Community
 ***
 
-* [区块链技术指北 \| ChainONE 官网](https://chainone.xyz)
-* [区块链技术指北 \| ChainONE 官方博客](https://blog.chainone.xyz)
-* [区块链技术指北 \| ChainONE 官方社区](https://bcage.one)
+* [区块链技术指北 \| ChainONE 官网](https://chainon.io)
+* [区块链技术指北 \| ChainONE 官方博客](https://blog.chainon.io)
+* [区块链技术指北 \| ChainONE 官方社区](https://bbs.chainon.io)
 
 #### GitHub
 ***
@@ -62,9 +62,9 @@ permalink: /blockchain/
 「区块链技术指北」相关资讯渠道：
 
 * 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
-* 官网，[https://chainone.xyz](https://chainone.xyz)
-* 官方博客，[https://blog.chainone.xyz](https://blog.chainone.xyz)
-* 官方社区，[https://bcage.one](https://bcage.one)
+* 官网，[https://chainon.io](https://chainon.io)
+* 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
+* 官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
 * Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
 * Telegram Group，[https://t.me/bcage](https://t.me/bcage)
 * Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
@@ -74,7 +74,7 @@ permalink: /blockchain/
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
 * 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 官方博客，[https://blog.chainone.xyz](https://blog.chainone.xyz)
+* 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
 * 知乎专栏，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
 * 简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
 * Steemit，[https://steemit.com/@chainone](https://steemit.com/@chainone)
