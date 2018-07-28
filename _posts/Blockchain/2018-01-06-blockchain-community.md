@@ -2,7 +2,7 @@
 published: true
 author: Robin Wen
 layout: post
-title: 「区块链技术指北」官方社区 bcage.one 上线
+title: 「区块链技术指北」官方社区 bbs.chainon.io 上线
 category: Blockchain
 summary: >-
   从 2017 年 12 月 4
@@ -10,7 +10,7 @@ summary: >-
   Flarum，存储使用 MySQL，Web 服务器是 Nginx，VPS 采用 Vultr，服务器位于日本东京，域名购买自 GoDaddy，域名解析使用
   CloudFlare。网站支持 HTTPS，用户密码采用 bcrypt
   加密存储，所有话题、评论不做审核、不做删除。互联网本来的样子应该是开放的、自由的。兜兜转转写博客写了 7
-  年，该是建立社区的时候了。「区块链技术指北」官方社区 bcage.one 于 2018 年 1 月 6 日上线，欢迎试用。
+  年，该是建立社区的时候了。「区块链技术指北」官方社区 bbs.chainon.io 于 2018 年 1 月 6 日上线，欢迎试用。
 tags:
   - Blockchain
 comments:
@@ -50,7 +50,7 @@ comments:
 
 筹备社区不是一个让人省心的事情，OmniOutliner 列表如下：
 
-* 购买 bcage.one 域名
+* 购买 bbs.chainon.io 域名
 * 购买 VPS
 * 开源社区筛选
 * 部署环境
@@ -81,7 +81,7 @@ comments:
 
 互联网本来的样子应该是开放的、自由的。兜兜转转写博客写了 7 年，该是建立社区的时候了。
 
-「区块链技术指北」官方社区 **[bcage.one](https://bcage.one)** 于 2018 年 1 月 6 日上线，欢迎注册试用。
+「区块链技术指北」官方社区 **[bbs.chainon.io](https://bbs.chainon.io)** 于 2018 年 1 月 6 日上线，欢迎注册试用。
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
@@ -90,7 +90,7 @@ comments:
 「区块链技术指北」相关资讯渠道：
 
 * 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
-* 官方社区，[https://bcage.one](https://bcage.one)
+* 官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
 * Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
 * Telegram Group，[https://t.me/bcage](https://t.me/bcage)
 * Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
