@@ -82,7 +82,7 @@ $ cp eos-mainnet/*.sh .
 $ chmod +x *.sh
 ```
 
-解压 nodeos 备份数据，启动 nodeos 进程，建议以普通用户启动，例如本文的 eosio。
+解压 nodeos 备份数据，启动 nodeos 进程，建议以普通用户启动，例如本文的 eosio。另外，注意此处的 `--hard-replay-blockchain` 参数。
 
 ``` bash
 $ su - eosio -s /bin/bash
