@@ -35,7 +35,7 @@ tags:
 * [eosstore eos mainnet backup](phttps://s3-ap-northeast-1.amazonaws.com/eosstorebp)
 * [eoscleaner eos mainnet backup](http://eoscleaner.com/Project%20Detail.html)
 
-以 EOS Store 提供的服务为例，访问 https://s3-ap-northeast-1.amazonaws.com/eosstorebp 会获得 XML 格式的数据，Contents 中的 Key 表示文件名，LastModified 表示修改时间，Size 表示备份文件大小。EOS Store 每天备份两次，分别是 00:30 和 12:30，如果我们获得最新的一次备份，可以执行以下命令提供：
+以 EOS Store 提供的服务为例，访问 [https://s3-ap-northeast-1.amazonaws.com/eosstorebp](https://s3-ap-northeast-1.amazonaws.com/eosstorebp) 会获得 XML 格式的数据，Contents 中的 Key 表示文件名，LastModified 表示修改时间，Size 表示备份文件大小。EOS Store 每天备份两次，分别是 00:30 和 12:30，如果我们获得最新的一次备份，可以执行以下命令提供：
 
 ``` bash
 $ wget https://s3-ap-northeast-1.amazonaws.com/eosstorebp/2018-08-13-12_30_20.tar.gz
@@ -43,7 +43,7 @@ $ wget https://s3-ap-northeast-1.amazonaws.com/eosstorebp/2018-08-13-12_30_20.ta
 
 如果自己的服务器是国内云服务商提供，会发现无法访问，不着急，可以用一台国外 VPS 做中转。具体中转方法笔者可以后续提供。
 
-EOS Cleaner 提供的服务比较友好，访问 https://s3-ap-northeast-1.amazonaws.com/data.eos/index.html 可以看到一个文件下载链接，如果不想本地下载，浏览器右键拷贝下载链接即可。
+EOS Cleaner 提供的服务比较友好，访问 [https://s3-ap-northeast-1.amazonaws.com/data.eos/index.html](https://s3-ap-northeast-1.amazonaws.com/data.eos/index.html) 可以看到一个文件下载链接，如果不想本地下载，浏览器右键拷贝下载链接即可。
 
 ## 编译
 ***
