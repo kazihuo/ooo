@@ -92,7 +92,9 @@ $ mv state blocks ../data
 $ chown eosio:eosio -R /data/eos
 $ su - eosio -s /bin/bash
 $ cd /data/eos/build/programs/nodeos
-$ echo "nohup /data/eos/build/programs/nodeos/nodeos --hard-replay-blockchain --data-dir ./data --config-dir ./config > ./logs/eos.log 2>&1 &
+$ echo "nohup /data/eos/build/programs/nodeos/nodeos \
+--hard-replay-blockchain --data-dir ./data \
+--config-dir ./config > ./logs/eos.log 2>&1 &
 echo $! > eos.pid" > start.sh
 $ bash start.sh
 ```
