@@ -87,19 +87,8 @@ permalink: /blockchain/
 
 * **币安**，[https://www.binance.com/?ref=11190872](https://www.binance.com/?ref=11190872)
 * **OTCBTC** 是目前最流畅、最靠谱、最好用的场外交易平台，支持支付宝、微信、银行卡支付购买 BTC、ETH、EOS、USDT、QTUM、ZEC、GXS、BCH 等数字币。现在注册，即可领取比特币红包！ [https://otcbtc.com/referrals/ROBINWENIO](https://otcbtc.com/referrals/ROBINWENIO)
-* **OKEx**，[https://www.okex.com/share/invite/3956Ew.do](https://www.okex.com/share/invite/3956Ew.do)
-* **ZB.com**，[https://vip.zb.com/activity/joinbtc?tuijianid=3f381026f3e2092b6eebb97c2af16e2e](https://vip.zb.com/activity/joinbtc?tuijianid=3f381026f3e2092b6eebb97c2af16e2e)
-* **CoinEgg**，[http://www.coinegg.com/user/register?inv=fda35](http://www.coinegg.com/user/register?inv=fda35)
-* **Gate.io**，[https://gate.io/signup/619472](https://gate.io/signup/619472)
-* **EXX**，[https://www.exx.com/r/7c8280171c17784db32358d1c89559fc](https://www.exx.com/r/7c8280171c17784db32358d1c89559fc)
-* **JEX**，[https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF](https://www.jex.com/user/register.do?utmSource=5404F3BC9D429B1D7AF)
 * **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
-* **BeeChat**，[https://in.ibeechat.com/spread/364159](https://in.ibeechat.com/spread/364159)
-* **Mixin**，[https://mixin.one/enroll/369082](https://mixin.one/enroll/369082)
-* **Candy Box**，[https://candy.one/i/110090](https://candy.one/i/110090)
-* **MediShares**，[http://candy.medishares.org/user/register/?ref=001516584748](http://candy.medishares.org/user/register/?ref=001516584748)
-* **Lino Network**，[https://referral.lino.network?code=LM92e7nJ](https://referral.lino.network?code=LM92e7nJ)
-* **IOST**，[http://referral.iost.io/?code=XXtM6Mkb](http://referral.iost.io/?code=XXtM6Mkb)
+* **EOS LIVE**，[https://eos.live/register?inviteId=45](https://eos.live/register?inviteId=45)
 
 #### Donate
 ***
