@@ -24,7 +24,7 @@ permalink: /about/
 
 建议用 RSS 订阅本博客。一方面，迄今为止，还找不到比 RSS 更优雅的互联网阅读方式；另一方面，公众号的各种限制违背了互联网的初衷。
 
-关于我的更多足迹，可以在我的 [About Me](https://about.me/dbarobin) 名片中看到。关于我在区块链技术上的产出，可以点击 [Blockchain](https://dbarobin.com/blockchain) 页面。另外，我的所有文章，可以在 [归档](https://dbarobin.com/archives) 中找到。
+关于我的更多足迹，可以在我的 [About Me](https://about.me/dbarobin) 名片中看到。关于我在区块链技术上的产出，可以点击 [Blockchain](https://dbarobin.com/blockchain) 页面。另外，我的所有文章，可以在 [归档](https://dbarobin.com/archives) 中找到。不喜欢发朋友圈，关注我的日常动态，可以关注 [Twitter](https://twitter.com/vrwio)。
 
 Keep in touch: LinkedIn <a href="https://www.linkedin.com/in/dbarobin" target="_blank"><img src="https://dbarobin.com/images/linkedin_btn_profile_greytxt_80x15.gif" alt="View Robin Wen's profile on LinkedIn" style="border: 0px;height: 15px;width: 80px;position: absolute;margin-left: 180px;margin-top: -20px;vertical-align: baseline;"/></a>
 
