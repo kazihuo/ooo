@@ -30,7 +30,7 @@ Keep in touch: LinkedIn <a href="https://www.linkedin.com/in/dbarobin" target="_
 
 有任何问题想和我交流，可以通过电子邮件和我联系: **blockxyz@gmail.com**。
 
-当然，您也可以给我通过 PGP 和我联系，PGP KEY 点击 [此处](https://pgp.mit.edu/pks/lookup?search=0x9CD45A5A&op=index)。
+当然，您也可以给我通过 PGP 和我联系，PGP PUBLIC KEY 点击 [此处](https://pgp.mit.edu/pks/lookup?search=0x9CD45A5A&op=index)。
 
 Telegram Group，点击加入：
 
