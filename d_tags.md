@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tags
+title: 标签
 permalink: /tags/
 ---
 
@@ -13,7 +13,7 @@ permalink: /tags/
 		{% if tag[1].size > 1%}
 			<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}<span class="size"> {{ tag[1].size }}</span></a>
 		{% endif %}
-	
+
 	{% endfor %}
 </ul>
 

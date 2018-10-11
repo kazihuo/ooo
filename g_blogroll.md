@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blogroll
+title: 友链
 permalink: /blogroll/
 ---
 

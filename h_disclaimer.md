@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Disclaimer
+title: 免责声明
 comments: no
 permalink: /disclaimer/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blockchain
+title: 区块链
 permalink: /blockchain/
 ---
 
