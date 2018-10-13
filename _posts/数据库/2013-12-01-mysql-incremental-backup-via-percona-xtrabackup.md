@@ -6,12 +6,12 @@ title: "MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复"
 category: 数据库
 summary: "在上一篇文章，我们讲到 percona-xtrabackup软件的使用，这一篇文章我们讲解percona-xtrabackup实现增量备份及恢复。"
 tags: 
+- 数据库
 - Database
 - MySQL
-- 数据库
-- 备份与恢复
-- Percona-xtrabackup
-- 增量备份
+- 安全
+- Security
+- 数据安全
 ---
 
 ## 目录 ##
