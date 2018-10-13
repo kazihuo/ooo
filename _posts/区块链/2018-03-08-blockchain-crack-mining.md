@@ -11,8 +11,10 @@ summary: >-
   的未授权访问漏洞，目前主要存在未授权访问漏洞的还有：NFS，Samba，LDAP，Rsync，FTP，GitLab，Jenkins，MongoDB，ZooKeeper，ElasticSearch，Memcache，CouchDB，Docker，Solr，Hadoop，Dubbo
   等，安全重于泰山，读者千万不要掉以轻心。
 tags:
-  - Blockchain
   - 区块链
+  - Blockchain
+  - 安全
+  - Security
 comments:
   - author:
       type: github
