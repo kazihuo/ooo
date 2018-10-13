@@ -6,9 +6,9 @@ title: "MySQL Handler_delete and Com_delete"
 category: 数据库
 summary: "Handler_delete是删除的记录数，Com_delete是执行Delete命令的次数。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- 状态变量
-- 实战
 ---
 
 `文/温国兵`
