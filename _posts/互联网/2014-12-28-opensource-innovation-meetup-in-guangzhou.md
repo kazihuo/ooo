@@ -6,16 +6,11 @@ title: "开源中国广州源创会分享"
 category: 互联网
 summary: "2014年12月27日，广州，网易大厦，开源中国源创会。天微阴，雨滴漫天飞舞。此次大会共有四个主题，第一个是「NoSQL数据库的事务机制实现」，第二个是「自动化运维的私人订制」，第三个是「CoreOS – 探讨支持OSv云操作系统的可行性」，最后一个是「开源中国git系统迁移过程分享」。"
 tags: 
-- Other
+- 互联网
 - 开源中国
 - OSC
 - 源创会
-- OpenSource Innovation Meetup
 - 分享
-- SequoiaDB
-- 自动化运维
-- CoreOS
-- Git
 ---
 
 `文/温国兵`
