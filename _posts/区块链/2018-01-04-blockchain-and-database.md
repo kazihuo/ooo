@@ -10,6 +10,7 @@ tags:
 - Blockchain
 - 数据库
 - Database
+- 想法
 ---
 
 `文/温国兵`
