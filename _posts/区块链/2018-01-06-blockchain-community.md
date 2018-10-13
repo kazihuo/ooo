@@ -12,8 +12,9 @@ summary: >-
   加密存储，所有话题、评论不做审核、不做删除。互联网本来的样子应该是开放的、自由的。兜兜转转写博客写了 7
   年，该是建立社区的时候了。「区块链技术指北」官方社区 bbs.chainon.io 于 2018 年 1 月 6 日上线，欢迎试用。
 tags:
-  - Blockchain
   - 区块链
+  - Blockchain
+  - 社区
 comments:
   - author:
       type: twitter
