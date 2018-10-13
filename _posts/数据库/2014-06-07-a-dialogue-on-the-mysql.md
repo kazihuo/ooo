@@ -6,10 +6,9 @@ title: "一个关于MySQL的对话"
 category: 数据库
 summary: "关于 MySQL，知友问题以及我的回答。"
 tags: 
-- Other
+- 数据库
+- Database
 - MySQL
-- 对话
-- 建议
 ---
 
 `文/温国兵`
