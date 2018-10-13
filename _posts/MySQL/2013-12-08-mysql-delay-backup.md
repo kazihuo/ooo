@@ -10,7 +10,6 @@ tags:
 - MySQL
 - 数据库
 - 备份与恢复
-- Backup and Recovery
 - 延时备份
 - Delay Backup
 - Percona Toolkit

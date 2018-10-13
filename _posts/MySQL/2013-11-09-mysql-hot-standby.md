@@ -12,7 +12,6 @@ tags:
 - 备份与恢复
 - 热备
 - Hot Standby
-- Backup and Recovery
 ---
 
 ## 目录 ##

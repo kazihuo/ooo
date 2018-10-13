@@ -8,7 +8,6 @@ summary: "某项目研发 A 删除压测环境大表，等待时间较长，于�
 tags:
 - MySQL
 - 备份与恢复
-- Backup and Recovery
 ---
 
 `文/温国兵`

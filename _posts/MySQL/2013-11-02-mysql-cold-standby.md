@@ -12,7 +12,6 @@ tags:
 - 备份与恢复
 - 冷备
 - Cold Standby
-- Backup and Recovery
 ---
 
 ## 目录 ##

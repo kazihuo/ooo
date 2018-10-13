@@ -11,7 +11,6 @@ tags:
 - 数据库
 - 备份与恢复
 - Percona-xtrabackup
-- Backup and Recovery
 - 使用手册
 - Manual
 ---

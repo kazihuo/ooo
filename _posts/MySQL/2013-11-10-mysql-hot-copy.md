@@ -12,7 +12,6 @@ tags:
 - 备份与恢复
 - 热拷贝
 - Hot Copy
-- Backup and Recovery
 ---
 
 ## 目录 ##
