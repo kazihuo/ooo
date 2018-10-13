@@ -6,10 +6,9 @@ title: "MySQL检查重复索引工具-pt-duplicate-key-checker"
 category: 数据库
 summary: "重复的索引必定会浪费系统资源，势必找出重复索引，然后干掉它。pt-duplicate-key-checker工具是Percona Toolkit中的一员，是DBA进行维护的好帮手。顺便说下，Percona Toolkit是一组相当赞的MySQL维护管理工具，相当赞，强烈推荐使用。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- pt-duplicate-key-checker
-- Percona Toolkit
-- 索引
 - 工具
 ---
 
