@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: GitHub 加速最佳实践
-category: Skill
+category: 工具
 summary: >-
   GitHub 简称 GayHub，又称世界上最大的同性交友平台，还称程序员的左右手。但由于众所周知的原因，GitHub
   在没有翻墙的前提下，访问速度就像乌龟在漫步，让追求效率的程序员痛苦不堪，恨不得肉身翻墙，享受优质互联网服务的同时晒晒太阳，吹吹海风。熟练的程序员基本上都使用
