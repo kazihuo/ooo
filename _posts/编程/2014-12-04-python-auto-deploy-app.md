@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "Python自动化打包业务和认证平台 V2.0-Release"
-category: Python
+category: 编程
 summary: "Python 自动化打包业务和认证平台，本机只需执行脚本，远程即可自动部署。脚本采用Python编写，远程调用使用Fabric实现。"
 tags:
 - Python
