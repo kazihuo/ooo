@@ -6,12 +6,9 @@ title: "缺乏导入数据权限，SQL Server创建测试数据"
 category: 数据库
 summary: "只具有生产库的登录、查询、创建临时表权限，缺失导入数据（比如Excel文件、txt文档、sql脚本等等）权限，需要创建临时表，插入测试数据。"
 tags: 
-- Database
 - 数据库
+- Database
 - MSSQL
-- 导入数据
-- 测试数据
-- Linux
 ---
 
 `文/温国兵`
