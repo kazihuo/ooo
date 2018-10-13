@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "Greenplum 扩容测试报告"
-category: Greenplum
+category: 数据
 summary: "数据库在使用的过程中会随着数据量的增加而需要扩容，一般需要扩容的原因如下：历史数据量增加，磁盘空间不足；计算的数据量增加，计算性能跟不上（CPU 或磁盘 IO 吞吐限制）； 网络传输量增加，网卡限制。为了增加计算节点，Greenplum 提供了 gpexpand 扩容脚本。此次扩容遇到不少问题，总结如下：1. Greenplum 服务器不建议运行在非标准 SSH 端口上。2. root 和 gpadmin 用户都需要做 SSH 等效性验证。3. 扩容过程之前检测磁盘空间是否充裕、时间是否同步。4. 扩容过程中如果出现某张表没有分布，需要重新执行 gpexpand -d 60:00:00 -D gpexpand 命令。5. 扩容过程中，注意告警信息，包括 Greenplum 机器负载、流量和进程数。"
 tags:
 - Greenplum
