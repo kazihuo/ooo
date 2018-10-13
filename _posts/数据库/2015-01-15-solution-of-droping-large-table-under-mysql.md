@@ -6,10 +6,9 @@ title: MySQL Drop 大表解决方案
 category: 数据库
 summary: 本文介绍一个快速 `DROP TABLE` 的方法。使用本文提供的方法，不管该表数据量、占用空间有多大，都可以快速的删除。
 tags:
+  - 数据库
+  - Database
   - MySQL
-  - 大表
-  - 解决方案
-  - 实战
 comments:
   - author:
       type: twitter
