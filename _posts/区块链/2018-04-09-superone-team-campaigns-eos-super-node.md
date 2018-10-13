@@ -14,8 +14,8 @@ summary: >-
   钱包，为用户提供更加安全、更加透明、去中心化的链上交易和数字资产管理平台。凭借 SuperONE 团队雄厚的技术实力和运营能力，相信我们会是 EOS
   超级节点的有力竞争者，顺祝 SuperONE 团队竞选成功，共同促进 EOS 生态的发展。
 tags:
-  - Blockchain
   - 区块链
+  - Blockchain
   - EOS
   - SuperONE
 comments:
