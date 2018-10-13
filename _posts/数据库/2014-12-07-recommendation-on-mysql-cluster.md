@@ -6,10 +6,11 @@ title: "MySQL集群建议"
 category: 数据库
 summary: "基于以上分析，我给你的建议是：主主复制被动模式+Slave+MMM。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- MySQL Cluster
-- MySQL 集群
-- 建议
+- Cluster
+- 集群
 ---
 
 * Table of Contents
