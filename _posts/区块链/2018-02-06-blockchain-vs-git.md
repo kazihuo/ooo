@@ -13,8 +13,9 @@ summary: >-
   次数越多，被摧毁的概率也就越低；再者，某个 repo 即使最近一次操作清空了所有的代码，还可以通过 git log 恢复。这样一分析，科学上网的
   GitHub repo 将是野火烧不尽，春风吹又生。也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？
 tags:
-  - Blockchain
   - 区块链
+  - Blockchain
+  - 想法
 comments:
   - author:
       type: github
