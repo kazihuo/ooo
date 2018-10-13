@@ -6,11 +6,8 @@ title: 程序员的奋斗史（二十五）情绪与生活
 category: 回忆录
 summary: 拥有一颗平和的心态，保持良好的情绪，活在当下，享受生命的精彩。
 tags:
-  - Other
-  - 程序员的奋斗史
-  - Fighting
-  - 情绪
-  - 生活
+  - 程序
+  - 想法
 comments:
   - author:
       type: github
