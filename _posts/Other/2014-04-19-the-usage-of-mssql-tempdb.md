@@ -9,7 +9,6 @@ tags:
 - Database
 - 数据库
 - MSSQL
-- SQL Server
 - TempDB
 - 教训
 ---

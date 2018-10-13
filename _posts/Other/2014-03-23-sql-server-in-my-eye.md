@@ -7,7 +7,7 @@ category: Other
 summary: "我眼里的MSSQL是图形化界面数据库的翘楚，有着良好的交互，在整体上并不比Oracle、MySQL逊色多少。"
 tags: 
 - Other
-- SQL Server
+- MSSQL
 - 感悟
 ---
 

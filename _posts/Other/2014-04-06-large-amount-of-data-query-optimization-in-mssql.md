@@ -9,11 +9,8 @@ tags:
 - Database
 - 数据库
 - MSSQL
-- SQL Server
 - 调优日记
-- SQL Server DBA
 - 查询优化
-- Query Optimization
 - 原理探讨
 ---
 

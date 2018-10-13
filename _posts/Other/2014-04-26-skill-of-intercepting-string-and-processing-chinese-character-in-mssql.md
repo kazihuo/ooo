@@ -9,7 +9,6 @@ tags:
 - Database
 - 数据库
 - MSSQL
-- SQL Server
 - 技巧
 - 分享
 - 截取字符串

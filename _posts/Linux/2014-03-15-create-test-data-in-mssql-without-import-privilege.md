@@ -9,11 +9,9 @@ tags:
 - Database
 - 数据库
 - MSSQL
-- SQL Server
 - 导入数据
 - 测试数据
 - Linux
-- Linux Shell Programming
 ---
 
 `文/温国兵`
