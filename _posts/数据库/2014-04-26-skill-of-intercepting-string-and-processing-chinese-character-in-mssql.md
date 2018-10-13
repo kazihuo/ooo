@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "SQL Server截取字符串和处理中文技巧"
-category: Other
+category: 数据库
 summary: "在工作中，发现和总结这些小技巧会让你的工作事半功倍。"
 tags: 
 - Database

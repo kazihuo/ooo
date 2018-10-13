@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "SQL Server快速导入数据分享"
-category: Other
+category: 数据库
 summary: "SQL Server快速导入数据，可以尝试的方法如下：CTE、OpenRowSet/OpenDataSource、BULK INSERT、bcp、Shell。"
 tags: 
 - Database

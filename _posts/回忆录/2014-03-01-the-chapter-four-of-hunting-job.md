@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（三十四）人在囧途之应聘篇（四）"
-category: Other
+category: 回忆录
 summary: "应聘篇第四话就写到这里。一向胆大的我今天着实把我吓住了。这里给读者的提醒是：第一投简历一定要慎重，辨别清楚、查好资料后再决定是否投；第二出门在外不要跟陌生人说话，不要跟陌生人开门。外面的事情很复杂，凡事多留个心眼，不然吃亏了还不知道发生什么。"
 tags: 
 - Other

@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "爱上Shell脚本"
-category: Other
+category: 运维
 summary: "有这种说法，程序员除了自己熟练的编程语言外，一定要掌握一门脚本语言。是的，此言不差矣。这不仅是自我本领的提高，更是一种不错的时间管理方法。所以，再次强烈推荐读者利用额外时间掌握一门脚本语言，这会给你带来太多好处。"
 tags: 
 - Other

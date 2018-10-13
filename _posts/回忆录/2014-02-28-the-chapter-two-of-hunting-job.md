@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（三十二）人在囧途之应聘篇（二）"
-category: Other
+category: 回忆录
 summary: "人在囧途之应聘篇第二话就写到这里。至于后面的复试能否通过，尽力吧。现在还没有毕业，早些感受找工作和生活的艰辛何尝不是好事。这一话要给读者的提醒是：第一不能妥协，你内心不想的就不要妄然答应；第二凡事三思而后行；第三回答面试官的问题尽量做到完善。"
 tags: 
 - Other

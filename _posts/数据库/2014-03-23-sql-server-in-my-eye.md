@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "我眼里的SQL Server"
-category: Other
+category: 数据库
 summary: "我眼里的MSSQL是图形化界面数据库的翘楚，有着良好的交互，在整体上并不比Oracle、MySQL逊色多少。"
 tags: 
 - Other
