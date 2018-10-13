@@ -8,7 +8,7 @@ summary: "本文讲解如何快速打包和安装MySQL， MySQL AB复制，MySQL
 tags: 
 - Database
 - MySQL
-- MySQL Replication
+- Replication
 - 数据库
 - AB 复制
 - 高可用

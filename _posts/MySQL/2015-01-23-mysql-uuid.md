@@ -9,8 +9,8 @@ tags:
 - MySQL
 - UUID
 - 实战
-- MySQL 复制
-- MySQL Replication
+- 复制
+- Replication
 ---
 
 ## 目录 ##

@@ -10,9 +10,9 @@ tags:
 - MySQL
 - 数据库
 - 读写分离
-- MySQL Proxy
-- MySQL Replication
-- MySQL 复制
+- Proxy
+- Replication
+- 复制
 - 高可用
 ---
 
