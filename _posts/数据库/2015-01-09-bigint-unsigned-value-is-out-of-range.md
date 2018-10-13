@@ -6,10 +6,10 @@ title: "MySQL BIGINT UNSIGNED value is out of range"
 category: 数据库
 summary: "MySQL中，SMALLINT 有符号数的范围是 -32768 到 32767，无符号数的范围是 0 到 65535。因为创建表时，定义为无符号数，cola - 100 显然超过了它所表示的范围，所以会报错。我们在查询时，把无符号数转换为有符号数，就不会有这个问题了。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- BigInt
-- TroubleShooting
-- 经验总结
+- 故障排查
 ---
 
 `文/温国兵`
