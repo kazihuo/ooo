@@ -6,13 +6,9 @@ title: "高并发Insert Ignore存储引擎的选择"
 category: 数据库
 summary: "如果不是对事务要求非常的强，高并发写推荐选择MyISAM。"
 tags: 
-- 高并发
-- High concurrency
-- Insert Ignore
+- 数据库
+- Database
 - MySQL
-- 存储引擎
-- InnoDB
-- MyISAM
 ---
 
 * Table of Contents
