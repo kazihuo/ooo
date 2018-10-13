@@ -6,11 +6,11 @@ title: "MySQL 集群"
 category: 数据库
 summary: "上一篇文章我们提到MySQL 读写分离，这篇文章我们讲解MySQL集群。我们提到的集群，是指多台机器完成一个工作，最主要的场景是数据库服务器和Web服务器，但是集群环境不适合大规模计算。前面我们有提到MySQL AB复制，因为MySQL AB复制不适合大规模运用，要解决这个问题，我们可以使用MySQL集群。"
 tags:
+- 数据库
 - Database
 - MySQL
-- 数据库
-- MySQL 集群
-- MySQL Cluster
+- 集群
+- Cluster
 - 高可用
 ---
 
