@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: 利器
-category: Other
+category: 工具
 summary: >-
   人类跟动物最本质的区别，就是人会互联主观、联合想象、创造意义。个人认为，提升效率的利器，应该在经济承受范围以内毫不犹豫地拥有。工作以来，一贯的宗旨就是为美好的事物花费。这份清单，于己于人，或多或少有所帮助。倘若读者因此受益，实在是荣幸不已。本利器清单在不断更新中。另外，笔者还有一份
   Wish
