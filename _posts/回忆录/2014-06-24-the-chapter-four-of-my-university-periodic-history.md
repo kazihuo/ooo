@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（四十）大学断代史（四）我与博客"
-category: Other
+category: 回忆录
 summary: "如果说我比同龄人多了点什么，笔者认为就是坚持。常年累月的正确坚持定会让你在可预见的未来大放光芒。阅读和书写，让我成为了今天的我。希望大家能从阅读和书写中成为一个会思考的人。"
 tags: 
 - Other

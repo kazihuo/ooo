@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（三十八）大学断代史（二）我与数据库的故事"
-category: Other
+category: 回忆录
 summary: "惰性人皆有之，也算是人的一大天性。几日之前便构思好此文，怎奈每日杂事繁多，今日才提起笔，作下此文。本文谈谈我与数据库的故事。"
 tags: 
 - Other

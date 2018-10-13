@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "一个关于MySQL的对话"
-category: Other
+category: 回忆录
 summary: "关于 MySQL，知友问题以及我的回答。"
 tags: 
 - Other

@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（四十一）大学断代史（五）我的娱乐方式"
-category: Other
+category: 回忆录
 summary: "本篇文章轻描淡写的描述了我的娱乐方式，不管是SNS、游戏、出去走走，还是看电影、写作，我都希望我做的事情有那么一点意义。"
 tags: 
 - Other

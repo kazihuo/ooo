@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（四十四）大学断代史（八）大学的友谊"
-category: Other
+category: 回忆录
 summary: "得一知己真得很难。很庆幸在这似水流年里能认识他们，未来的路还很长，且行且珍惜。我想，我和他们的故事才刚刚开始。"
 tags: 
 - Other

@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "辞职后我在想些什么"
-category: Other
+category: 想法
 summary: "三个辞职的原因，三个我正在想的大问题。好像我有点喜欢3这个数字，就写到这里吧。"
 tags: 
 - Other
