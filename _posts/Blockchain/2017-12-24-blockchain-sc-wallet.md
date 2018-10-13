@@ -3,11 +3,12 @@ published: true
 author: Robin Wen
 layout: post
 title: "Siacoin 钱包浅谈"
-category: Blockchain
+category: 区块链
 summary: "Sia 最初的设计目的是：让云储存去中心化。在这个平台上，您可以存放和提取各种各样的文件，并不需要为您的文件隐私和安全担心。通过运用加密技术，加密合约，和重复备份，Sia 能够使一群互不信任的和互不了解的计算机节点联合起来成为一种有统一运行逻辑和程序的云储存平台。Sia 使用 Reed Solomon 编码技术（erasure coding），这意味着即使大量的主机离线也不会损坏文件。为避免从中心化的存储供应商那里租赁存储空间带来的诸多问题，Sia 提供 P2P 的空间租赁平台。Sia 只存储用户建立的合约。空间提供商若能提供合约证明则获得奖励，若丢失证明则受到惩罚。由于这些合约都被区块链所公开发表，因此存储合约的公信度被有效加强。"
 tags:
 - Blockchain
 - SiaCoin
+- 区块链
 ---
 
 `文/温国兵`

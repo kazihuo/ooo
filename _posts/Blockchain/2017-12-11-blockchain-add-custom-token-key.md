@@ -3,10 +3,11 @@ published: true
 author: Robin Wen
 layout: post
 title: "MyEtherWallet 手动添加币乎代币（KEY）"
-category: Blockchain
+category: 区块链
 summary: "币乎（bihu.com）是代币驱动的代币投资者垂直社区。在币乎，用户的付出和贡献将获得 相应的回报。币乎将引入币乎 ID，以实现平台的透明化运作。KEY 是币乎的区块链代币，代 表币乎及其周边生态的使用权。币乎是为币圈量身定制的垂直社区平台。币乎通过代币激励的方式，使得用户的付出获得相应的回报。币乎是代币投资者的信息集散地，也是各个“币官方”与“币友”交流的平台。本文比较基础，主要是给读者一个手动添加 Token 的指引，希望对读者有所帮助。"
 tags:
 - Blockchain
+- 区块链
 ---
 
 `文/温国兵`

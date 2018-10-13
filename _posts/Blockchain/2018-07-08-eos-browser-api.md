@@ -3,10 +3,11 @@ published: true
 author: Robin Wen
 layout: post
 title: 构建 EOS 区块链浏览器 API
-category: Blockchain
+category: 区块链
 summary: "在上一篇文章中笔者讲解了如何将 EOS 链上数据实时异构到 MySQL 数据库。数据既然有了，就要有用武之地。传统互联网获取数据的方式，最底层是数据层，然后有各种各种的 API，API 访问数据，再供前端展示。本文讲解如何使用开源的 EOSTracke-API 构建区块链浏览器 API。目前有较多的区块链浏览器，具体可以访问由 SuperONE 团队整理的 awesome-eos。EOSTracker 是较早开源的区块链浏览器，后端使用 PHP，前端使用 AngularJS，读者感兴趣可以阅读源码。"
 tags:
   - Blockchain
+  - 区块链
   - EOS
 ---
 

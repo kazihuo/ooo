@@ -3,10 +3,11 @@ published: true
 author: Robin Wen
 layout: post
 title: "ERC20 协议 Token 钱包浅谈"
-category: Blockchain
+category: 区块链
 summary: "以太坊，Ethereum 是一个分布式的计算机，有许多的节点，其中的每一个节点，都会执行字节码（其实就是智能合约），然后把结果存在区块链上。由于整个网络是分布式的，且应用就是一个个的状态组成，存储了状态就有了服务；所以它就能永不停机，没有一个中心化的结点（没有任何一个节点说了算，去中心化的），任何第三方不能干预。本文讲述了什么是以太坊，以及相关的一些概念，并给出相应的钱包选择和优劣对比。希望对读者有所帮助。"
 tags:
 - Blockchain
+- 区块链
 - Ethereum
 ---
 

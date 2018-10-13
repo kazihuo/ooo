@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: 「区块链技术指北」官方社区 bbs.chainon.io 上线
-category: Blockchain
+category: 区块链
 summary: >-
   从 2017 年 12 月 4
   号创建「区块链技术指北」专栏开始，陆续收到读者的反馈，于是在朋友的建议下建立微信群。运营微信群的过程中，越来越懂得有用户有读者的地方才有价值。于是有个想法，做个咱自己的社区。社区初衷：「区块链技术指北」官方社区。这里可以看到常见价值虚拟货币的相关的教程、区块链技术前沿信息、区块链技术好文品鉴和分享、区块链技术相关工具、区块链项目跟踪等。聚合区块链爱好者，创造持久价值，希望我们在区块链时代自由地行走。本站基于开源的
@@ -13,6 +13,7 @@ summary: >-
   年，该是建立社区的时候了。「区块链技术指北」官方社区 bbs.chainon.io 于 2018 年 1 月 6 日上线，欢迎试用。
 tags:
   - Blockchain
+  - 区块链
 comments:
   - author:
       type: twitter

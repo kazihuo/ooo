@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: 区块链太火，小心你的服务器被动挖矿
-category: Blockchain
+category: 区块链
 summary: >-
   某日，笔者收到 VPS 服务器 CPU 告警，上服务器一看，有个叫做 gpg-agentd 的进程占用大量的 CPU 资源。接着就是常规的排查，IO
   情况、网络流量、内存情况、系统日志、crontab 等。本篇文章从一起服务器被黑事件说起，分析了挖矿脚本、被黑过程，以及从 Redis
@@ -12,6 +12,7 @@ summary: >-
   等，安全重于泰山，读者千万不要掉以轻心。
 tags:
   - Blockchain
+  - 区块链
 comments:
   - author:
       type: github

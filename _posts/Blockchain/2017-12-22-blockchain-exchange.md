@@ -3,10 +3,11 @@ published: true
 author: Robin Wen
 layout: post
 title: "加密货币交易所浅谈"
-category: Blockchain
+category: 区块链
 summary: "目前交易过的平台有币安、OKEx、火币国际、比特儿国际、BigOne、OTCBTC 和 DEW。就体验来说，币安、OKEx、BigOne、OTCBTC、DEW 都是不错的，火币国际次之，比特儿国际最差。不过目前 BigOne 没有 App。如果是场外交易，推荐 OTCBTC。DEW 目前是刚上线阶段，可交易的币种较少。网站运营能力，目前来说币安和 OKEx 做得最好，火币国际次之。BigOne 就像那种低调发力的种子选手，期待后期发力。以上网站基本上要搭梯子才流畅，因为这些网站主要部署在香港、日本和美国。如果不是 100% 确认可靠，尽量不要找人担保交易，走交易所最好。目前大多数交易所都是币币交易，但也有场外交易平台可以选择。尽量选择 Top 20 交易所。大额的加密货币资产，建议放到钱包冷存储，交易所被黑客攻击丢币的事情屡见不鲜了。"
 tags:
 - Blockchain
+- 区块链
 ---
 
 `文/温国兵`

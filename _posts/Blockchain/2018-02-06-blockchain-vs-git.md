@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: 从 Git 到区块链
-category: Blockchain
+category: 区块链
 summary: >-
   GitHub 网站在程序员心目中的地位不言而喻，这个基于 Git 的托管网站可以说是开源的风向标。我们在 GitHub 中的 Git repo 中还可以找到
   2005 年 4 月 8 日 Linus Torvalds 提交的第一版代码。再者，区块链的特性是分布式的，而 Git 天然就是分布式的，不过 Git
@@ -14,6 +14,7 @@ summary: >-
   GitHub repo 将是野火烧不尽，春风吹又生。也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？
 tags:
   - Blockchain
+  - 区块链
 comments:
   - author:
       type: github

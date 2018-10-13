@@ -3,7 +3,7 @@ published: true
 author: SuperONE
 layout: post
 title: SuperONE 团队竞选 EOS 超级节点
-category: Blockchain
+category: 区块链
 summary: >-
   SuperONE 团队在石墨烯技术领域有长达 4
   年以上的深入研究和运营石墨烯节点的丰富经验，并且也有能力开发服务于社区的产品（SuperONE.io），是一个综合能力相当突出的团队。SuperONE
@@ -15,6 +15,7 @@ summary: >-
   超级节点的有力竞争者，顺祝 SuperONE 团队竞选成功，共同促进 EOS 生态的发展。
 tags:
   - Blockchain
+  - 区块链
   - EOS
   - SuperONE
 comments:

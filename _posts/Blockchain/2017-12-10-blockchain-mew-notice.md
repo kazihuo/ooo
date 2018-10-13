@@ -3,10 +3,11 @@ published: true
 author: Robin Wen
 layout: post
 title: "「译」MyEtherWallet 首页提示"
-category: Blockchain
+category: 区块链
 summary: "最近打开 MyEtherWallet 官网，发现有很长的提示，仔细阅读之后，觉得对于了解 ERC20 Token 甚至是区块链技术都有比较好的参考价值，于是心血来潮，把这些提示逐页拷贝下来，并做了翻译。把这篇文章翻译完之后，加深了对区块链和钱包的理解，有种相见恨晚的感觉。本篇文章比较浅显易懂，但不少提示都是我们容易忽视的。备份相当重要，不要等无法找回后再后悔莫及。"
 tags:
 - Blockchain
+- 区块链
 ---
 
 `文/温国兵`
