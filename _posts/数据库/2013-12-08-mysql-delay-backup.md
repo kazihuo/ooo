@@ -6,13 +6,11 @@ title: "MySQL备份与恢复之MySQL 延时备份"
 category: 数据库
 summary: "在上一篇文章中，我们讲到MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复，percona-xtrabackup是一个优秀的用于增量备份的工具。今天我们讲到的延时备份也是使用他们的产品。"
 tags:
+- 数据库
 - Database
 - MySQL
-- 数据库
-- 备份与恢复
-- 延时备份
-- Delay Backup
-- Percona Toolkit
+- 安全
+- Security
 ---
 
 目录
