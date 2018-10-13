@@ -6,8 +6,10 @@ title: "「译」保护你的个人资产"
 category: 区块链
 summary: "本文翻译来自 MyEtherWallet 官网文章 Protecting Yourself and Your Funds。本文提出了 20 点建议，比如购买 Ledger 或者 TREZOR 硬件钱包；为你的加密货币网站添加书签；安装 EAL Chrome 浏览器扩展程序或者 MetaMask Chrome 浏览器扩展程序，以便在进入加密货币钓鱼链接时发出警告；本地/离线使用 MEW；不要相信通过私信发送的消息、地址或者链接。始终验证信息是否是二手的；为所有的加密货币服务开启 Google 二次验证等。如果安全没有做到位，再多的资产都会化为乌有，这种基础工作，务必用心。"
 tags:
-- Blockchain
 - 区块链
+- Blockchain
+- 安全
+- Security
 ---
 
 `文/温国兵`
