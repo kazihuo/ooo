@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "那年杰伦"
-category: Other
+category: 音乐
 summary: "论唱功，不敢恭维；论演技，尚在襁褓；论导演，尚足过眼；论音乐才华，可以说是绝顶天才，乐坛神话，特别是他的作曲功力和对音乐风格的掌控力。涉足其他有人说是不务正业，歌坛生涯下跌有人说是江郎才尽，不管怎样，曾经神话过，不管怎样，人生多尝试，有何不可？期待杰伦带给我们的下一轮惊喜。"
 tags: 
 - Other

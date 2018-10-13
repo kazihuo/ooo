@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "真正的OCM"
-category: Other
+category: 数据库
 summary: "如果在一个行业不足五年，不要说你对你的方向有很深入的了解。如果没有大型项目经验和长期的积累坚持，不要说你懂Oracle。纸上学来终觉浅，绝知此事要躬行。纸上的东西没有运用还是一纸垃圾，没有项目经验的积累就在那侃侃而谈将会是下一个赵括。"
 tags: 
 - Other

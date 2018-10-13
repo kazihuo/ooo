@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "互联网企业去IOE化，DBA应该何去何从"
-category: Other
+category: 数据库
 summary: "DBA是一个大杂烩。从数据库，到网络，到存储，到操作系统，最后到上层应用，都要有一定的了解。DBA甚至对自身素质要求也很高，比如沟通交流，为人处事，正直严谨，诚恳真诚……听到过这样的言论：不会搞开发的DBA不是好DBA，不会搞运维的DBA不是好DBA。DBA真的是一个万金油。不管是否去IOE化，DBA都应当结合自身实际思考，至于未来的路，还是那句话，顺势而为吧。"
 tags: 
 - Other

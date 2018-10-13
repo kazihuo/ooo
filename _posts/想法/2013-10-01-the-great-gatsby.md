@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "了不起的盖茨比"
-category: Other
+category: 想法
 summary: "与其说盖茨比在事业上了不起，不如说他对爱情的执着牛逼。还是以那句经典结尾：“我们继续奋力向前，逆水行舟，被不断地向后推，直至回到往昔岁月”。"
 tags: 
 - Other

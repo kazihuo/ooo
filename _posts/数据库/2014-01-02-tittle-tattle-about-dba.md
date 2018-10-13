@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "DBA杂谈"
-category: Other
+category: 数据库
 summary: "DBA不应该把思维限制在什么数据库上，不论什么数据库，原理性的东西还是相通的，也不要因为别人运维Oracle，你运维SQLServer，就会感觉差很多档次。每个数据库的存在肯定有其合理性，没被市场淘汰说明它在某方面还是很有价值的。世界上没有完美的东西，数据库也是一样。应该根据具体需求选择你需要使用的数据库，至于你在运维什么数据库，很多时候真得没有那么重要。"
 tags: 
 - Other

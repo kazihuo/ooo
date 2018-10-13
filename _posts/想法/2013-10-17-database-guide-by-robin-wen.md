@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "一个即将毕业的大学生不是计算机专业的但想往数据库方向走，该怎么做？"
-category: Other
+category: 想法
 summary: "一个即将毕业的大学生不是计算机专业的但想往数据库方向走，该怎么做？一个知友在知乎上的提问以及我的回答。"
 tags: 
 - Other
