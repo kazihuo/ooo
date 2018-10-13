@@ -6,8 +6,8 @@ title: "从 0 到 1 构建加密货币价格走势图"
 category: 区块链
 summary: "最近看到一篇文章 Build a Cryptocurrency Price Tracker in 5 Minutes，笔者对加密数字货币价格走势不是特别关心，但这篇文章非常有趣，本文想从技术的角度分析下实现思路。实现原理如下：采用发布订阅的功能，使用 PubNub 做消息发布；发布器根据设定的规则调用 CryptoCompare API 接口，这个可以理解成服务端；订阅器接收发布器采集到的数据，然后用图表框架 EON 展示。这只是一个最小化的例子，CryptoCompare API 还有很多功能，订阅器也可以做美观优化，感兴趣的读者不妨试试。笔者根据原作者项目修改的源码已经上传到 GitHub。加密数字货币价格走势曲线图是交易所的核心功能之一。当然，线上业务比这复杂得多，本文只是提供了一个雏形供读者参考。"
 tags:
-- Blockchain
 - 区块链
+- Blockchain
 - Cryptocurrency
 ---
 
