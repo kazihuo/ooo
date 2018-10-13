@@ -6,11 +6,9 @@ title: "Mac OS X 运行多个版本 MySQL 之解决方案"
 category: 数据库
 summary: "MySQL 中允许运行多个实例，举一反三，也可以同时运行多个版本的 MySQL。每个版本的 MySQL 占有独立的数据目录、端口、Socket、PID 即可。有了这种思路，就不难实现了。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- Mac
-- OS X
-- 解决方案
-- 分享
 ---
 
 `文/温国兵` 
