@@ -10,6 +10,7 @@ tags:
 - Blockchain
 - 安全
 - Security
+- Cryptocurrency
 ---
 
 `文/温国兵`
