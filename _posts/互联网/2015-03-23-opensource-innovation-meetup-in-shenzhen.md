@@ -6,18 +6,11 @@ title: "开源中国深圳源创会分享"
 category: 互联网
 summary: "2015 年 3 月 21 日，深圳，科兴科学园。此次深圳源创会有如下几个主题：「Big Data & NoSQL – 2015 年硅谷 Strata Conf 大数据行业见闻分享」、「MySQL 开源社区的协作模式」、「腾讯自动化工具与开发的思路」、「深入分析 Docker Container 内部进程」和 「海思 poplar 单板介绍」。多向这些前辈靠拢，可以学到很多，或许可以给自己的发展道路树立大大小小的路标。就像永和老师在会议开场白中所言，这些分享或许会给你打开一扇窗，看到更远更宽阔的世界。"
 tags: 
+- 互联网
 - 开源中国
 - OSC
 - 源创会
-- OpenSource Innovation Meetup
 - 分享
-- BigData
-- NoSQL
-- SequoiaDB
-- MySQL
-- 自动化运维
-- Docker
-- 单板
 ---
 
 ## 目录 ##
