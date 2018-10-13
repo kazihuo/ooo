@@ -6,11 +6,11 @@ title: "MySQL AB复制"
 category: 数据库
 summary: "本文讲解如何快速打包和安装MySQL， MySQL AB复制，MySQL AB双向复制，MySQL多级主从复制，解决AB双向复制主键冲突。"
 tags: 
+- 数据库
 - Database
 - MySQL
+- 复制
 - Replication
-- 数据库
-- AB 复制
 - 高可用
 ---
 
