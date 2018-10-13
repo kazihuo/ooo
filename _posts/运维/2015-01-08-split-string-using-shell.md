@@ -6,11 +6,9 @@ category: 运维
 author: Robin Wen
 summary: "两种方法获取 MySQL 数据库表的字符集。"
 tags:
+- 运维
 - Linux
 - Shell
-- 截取字符串
-- 技巧
-- 经验总结
 ---
 
 `文/温国兵`
