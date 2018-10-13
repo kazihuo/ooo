@@ -6,8 +6,11 @@ title: "MySQL 社区版审计方案"
 category: 数据库
 summary: "为生产环境数据库提供审计功能是非常重要的，一方面，敏感操作和误操作有据可循，简化运维复杂度；另一方面，提高 DBA 以及相关使用方的风险意识。MySQL 提供了 3 种方式实现审计功能：audit_log.so 插件实现审计（企业版提供）、init-connect 参数 + access_log + binlog 实现审计、general log 记录所有操作。general log 会记录详细的 SQL 执行记录，但是生产环境如果业务量大，会产生大量的磁盘 IO 操作，严重降低数据库性能，所以生产环境一般不会开启 general log。除此之外，我们可以通过 init-connect 参数 + access_log + binlog 的方法进行 MySQL 的操作审计。由于 MySQL binlog 记录了所有对数据库产生实际修改的 SQL 语句、执行时间和 connection_id，但是却没有记录 connection_id 对应的详细用户信息。在后期审计进行行为追踪时，根据 binlog 记录的行为及对应的 connection_id，再加上之前连接记录进行分析，可以得出最后的结论。"
 tags:
+- 数据库
+- Database
+- 安全
+- Security
 - MySQL
-- 审计
 ---
 
 `文/温国兵`
