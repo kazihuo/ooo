@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: 建站分享
-category: Other
+category: 前端
 summary: >-
   这次建站经历于我而言是相当宝贵的，很多看似简单的问题，真正实施的时候未必如此。常言知易行难，这次感触颇深。把整个建站过程分享给大家，希望能给读者丁点启示，实乃欣慰。更希望我在自己的小屋里好好写作，静心而为，大放异彩。
 tags:

@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "失控"
-category: Other
+category: 互联网
 summary: "互联网思维带来的世界观和方法论，人类的文明形态也会发生天翻地覆的变化。或许，我们活在一个最好的时代。"
 tags: 
 - Other

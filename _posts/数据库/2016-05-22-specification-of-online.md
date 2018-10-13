@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: DBA 线上操作小谈
-category: Other
+category: 数据库
 summary: >-
   根据莫非定律：「凡是可能出错的事必定会出错，任何一个事件，只要具有大于零的机率，就不能够确定它不会发生。」这句看似箴言的话，想必每个运维从业人员感触非常深刻。本文从
   DBA

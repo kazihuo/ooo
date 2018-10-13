@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "程序员的奋斗史（四十七）工作三个月小结"
-category: Other
+category: 回忆录
 summary: "我已经很久没有更新文章，实际上工作确实比较忙，但我一定会保证每个月至少一篇文章。柴静所著《看见》中，提到陈虻所说的一句话：「不要因为走得太远，而忘记为什么出发」。或许，我们应该时不时停下匆忙的脚步，审视自己，反省自己。"
 tags: 
 - Other

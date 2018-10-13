@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: 信息的边界
-category: Other
+category: 互联网
 summary: >-
   互联网的诞生和蓬勃发展，让信息流动变得无与伦比地便捷。古时飞鸽传书，千里马加急，爱人等待的煎熬与苦楚，君臣等待的焦急和惶恐，我们再也无法亲身体会。飞鸽可能半路失踪，千里马可能中途搁浅，剩下的只有无尽的叹息。然而，互联网让两个人的距离，只有
   Enter

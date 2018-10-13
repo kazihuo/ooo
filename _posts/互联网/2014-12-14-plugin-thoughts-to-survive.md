@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "插件化生存"
-category: Other
+category: 互联网
 summary: "事实上，我们并需要或者并需要做一个大而全的东西，把插件化的思想使用好，受益无穷。"
 tags: 
 - Other

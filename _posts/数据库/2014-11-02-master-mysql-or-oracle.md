@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "专精 Oracle 还是 MySQL"
-category: Other
+category: 数据库
 summary: "至于专精MySQL还是Oracle，个人认为没有确切的答案。第一点，真正的数据库大牛是无所谓数据库，精通MySQL的在Oracle上的造诣不见得低，反之亦然。数据库技术大体上都是融会贯通的，精通一个，其他虽有不同，但思路大体相同。第二点，Oracle目前还是传统企业使用较多，很难撼动Oracle在这些行业的地位，而且这些行业也很难实现去O。第三点，Oracle现在已经过了发展的黄金时期，相反，MySQL、NoSQL、大数据平台等正是蓬勃的发展时期，充满太多的机遇和挑战。这些技术基本上都是开源，对于自己的提升往往比封闭的东西更多。"
 tags: 
 - Other

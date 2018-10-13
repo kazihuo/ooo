@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "深入理解MongoDB（一）Linux下配置MongoDB全攻略"
-category: Other
+category: 数据库
 summary: "这是深入理解MongoDB的第一篇文章，本篇文章简要地介绍了MongoDB，并把Linux下完整的配置过程呈现给读者。"
 tags: 
 - Other
