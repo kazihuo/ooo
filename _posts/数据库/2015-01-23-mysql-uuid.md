@@ -6,9 +6,9 @@ title: "MySQL UUID() 函数"
 category: 数据库
 summary: "MySQL 实现了 UUID，并且提供 UUID() 函数方便用户生成 UUID。在 MySQL 的 UUID() 函数中，前三组数字从时间戳中生成，第四组数字暂时保持时间戳的唯一性，第五组数字是一个 IEEE 802 节点标点值，保证空间唯一。使用 UUID() 函数，可以生成时间、空间上都独一无二的值。据说只要是使用了 UUID，都不可能看到两个重复的 UUID 值。当然，这个只是在理论情况下。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- UUID
-- 实战
 - 复制
 - Replication
 ---
