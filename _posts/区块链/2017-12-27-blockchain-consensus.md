@@ -9,6 +9,7 @@ tags:
 - 区块链
 - Blockchain
 - Consensus
+- Cryptocurrency
 ---
 
 `文/温国兵`
