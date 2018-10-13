@@ -7,9 +7,9 @@ category: 编程
 summary: "最近需要实现一个功能，使用Jmeter自动生成测试报告。Jmeter脚本存放在Git仓库，现在需要实现在脚本发生更新时才自动生成测试报告。
 我的思路是这样的：在拉取Git项目之前通过git rev-list --count HEAD命令记录一个版本号，然后在拉取项目完成生成之后生成测试报告之前再通过此命令获取另一个版本号。比较这两个版本号，如果相同，则不自动生成测试报告，如果不同，则自动生成测试报告。"
 tags:
+- 编程
+- DevOps
 - Python
-- 远程
-- Fabric
 ---
 
 * Table of Contents
