@@ -9,6 +9,7 @@ tags:
 - 区块链
 - Blockchain
 - 钱包
+- Wallet
 - Zcash
 ---
 

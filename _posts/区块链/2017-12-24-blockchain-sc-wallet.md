@@ -10,6 +10,7 @@ tags:
 - Blockchain
 - Siacoin
 - 钱包
+- Wallet
 ---
 
 `文/温国兵`

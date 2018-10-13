@@ -10,6 +10,7 @@ tags:
 - Blockchain
 - Bitcoin
 - 钱包
+- Wallet
 ---
 
 `文/温国兵`
