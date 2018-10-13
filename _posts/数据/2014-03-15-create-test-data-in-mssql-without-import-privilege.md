@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "缺乏导入数据权限，SQL Server创建测试数据"
-category: Linux
+category: 数据
 summary: "只具有生产库的登录、查询、创建临时表权限，缺失导入数据（比如Excel文件、txt文档、sql脚本等等）权限，需要创建临时表，插入测试数据。"
 tags: 
 - Database

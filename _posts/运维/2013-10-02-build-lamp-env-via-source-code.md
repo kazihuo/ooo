@@ -3,7 +3,7 @@ published: true
 author: Robin Wen
 layout: post
 title: "搭建 LAMP 环境(源码方式)"
-category: Linux
+category: 运维
 summary: "LAMP：Linux、Apache、MySQL、PHP 的组合。目前企业使用较多。本文提供采用源码搭建 LAMP 环境的方法。"
 tags: 
 - MySQL

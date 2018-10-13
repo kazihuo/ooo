@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "Shell截取字符串"
-category: Linux
+category: 运维
 author: Robin Wen
 summary: "两种方法获取 MySQL 数据库表的字符集。"
 tags:
