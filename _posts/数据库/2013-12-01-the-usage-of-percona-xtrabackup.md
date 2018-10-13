@@ -6,13 +6,12 @@ title: "MySQL备份与恢复之percona-xtrabackup软件的使用"
 category: 数据库
 summary: "在前面，我们讲到MySQL冷备、热备、mysqldump、热拷贝、保证数据的一致性。因为mysql冷备、mysqldump、mysql热拷贝均不能实现增量备份，在实际环境中增量备份是使用较多的，percona-xtrabackup就是为实现增量备份而生，因此我们需要使用percona-xtrabackup。在前面，我们讲到MySQL冷备、热备、mysqldump、热拷贝、保证数据的一致性。因为mysql冷备、mysqldump、mysql热拷贝均不能实现增量备份，在实际环境中增量备份是使用较多的，percona-xtrabackup就是为实现增量备份而生，因此我们需要使用percona-xtrabackup。"
 tags: 
+- 数据库
 - Database
 - MySQL
-- 数据库
-- 备份与恢复
-- Percona-xtrabackup
-- 使用手册
-- Manual
+- 安全
+- Security
+- 数据安全
 ---
 
 ## 目录 ##
