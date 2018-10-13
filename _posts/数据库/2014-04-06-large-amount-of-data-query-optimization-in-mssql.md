@@ -6,12 +6,10 @@ title: "SQL Server DBA调优日记（一）大数据量查询记录数优化及�
 category: 数据库
 summary: "count(*)在没有索引的情况下速度慢的原因是走的全表扫描，使用sysindexes速度快的原因是直接从该视图中得到记录数。"
 tags: 
-- Database
 - 数据库
+- Database
 - MSSQL
-- 调优日记
-- 查询优化
-- 原理探讨
+- 性能优化
 ---
 
 ## 目录 ##
