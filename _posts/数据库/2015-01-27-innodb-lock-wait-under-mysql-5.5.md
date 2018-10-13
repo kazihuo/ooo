@@ -7,12 +7,10 @@ category: 数据库
 summary: "MySQL 5.5 中，information_schema 库中新增了三个关于锁的表，亦即 innodb_trx、innodb_locks 和 innodb_lock_waits。
 其中 innodb_trx 表记录当前运行的所有事务，innodb_locks 表记录当前出现的锁，innodb_lock_waits 表记录锁等待的对应关系。"
 tags: 
+- 数据库
+- Database
 - MySQL
-- InnoDB
-- 锁等待
-- innodb_lock_wait
-- 技巧总结
-- 实践
+- 故障排查
 ---
 
 ## 目录 ##
