@@ -6,11 +6,10 @@ title: "MySQL 5.5源码安装"
 category: 数据库
 summary: "MySQL 5.5的安装方法和5.1略有 不同，主要区别在配置环境，MySQL 5.1的安装方法，参考搭建LAMP环境(源码方式)。本文讲解怎样在RedHat 6.1系统上安装MySQL 5.5。"
 tags: 
+- 数据库
 - Database
 - MySQL
-- MySQL Basic Management
-- 源码
-- 环境搭建
+- 运维
 ---
 
 ## 目录 ##
