@@ -6,13 +6,10 @@ title: "大数据一体机的实质"
 category: 数据库
 summary: "Oracle的exadata好像全球销量并不高。现在国内很多厂商喊着去IOE和基础架构国产化的口号一窝蜂推出所谓的“大数据一体机”，我对数据分析不是很了解，请问在大数据一体机的实质是什么？大数据分析领域这种一体机真的有市场吗？兼容多种数据库，能够达到从O向非O数据库平滑过渡的技术含量很高吗？谢谢！"
 tags: 
-- Other
-- 大数据一体机
-- Big Data Appliance
-- 实质
-- Essence
+- 数据库
+- Database
 - 大数据
-- Big Data
+- BigData
 ---
 
 `文/温国兵`
