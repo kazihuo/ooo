@@ -6,10 +6,12 @@ title: "MariaDB, Replacement for MySQL, 此时Oracle态度"
 category: 数据库
 summary: "众说纷纭，不过对企业、用户来说未尝不是好事，数据库技术肯定是不断地向前发展，企业、用户也会有更多的选择。"
 tags: 
-- Other
-- MariaDB
+- 数据库
+- Database
 - MySQL
+- MariaDB
 - Oracle
+- 想法
 ---
 
 `文/温国兵`
