@@ -6,15 +6,10 @@ title: "深入理解MongoDB（一）Linux下配置MongoDB全攻略"
 category: 数据库
 summary: "这是深入理解MongoDB的第一篇文章，本篇文章简要地介绍了MongoDB，并把Linux下完整的配置过程呈现给读者。"
 tags: 
-- Other
-- 深入理解
-- MongoDB
-- 深入理解MongoDB
 - 数据库
 - Database
-- MongoDB Basic Management
-- Linux
-- 攻略
+- MongoDB
+- 运维
 ---
 
 ## 目录 ##
