@@ -4,13 +4,28 @@ author: Robin Wen
 layout: post
 title: 区块链技术指北社区启用新域名 chainon.io
 category: 区块链
-summary: "2018 年 1 月 6 号，ChainONE 社区网站 bcage.one 上线。2 月 27 日，博客网站 blog.chainone.xyz 和主页 chainone.xyz 同时上线。至今为止，区块链技术指北博客积累了 62 篇文章，同时社区积累了 985 个帖子。由于 GA 统计添加比较晚，主页、博客、社区 3 个网址的 PV、UV 数据也不完整，不过从最近一周的数据分析，还是挺可观的，特别是社区网站。区块链技术指北社区还很年轻，笔者已经踏入区块链行业，相信会有十足的动力继续做下去。读者能够从中获得哪怕丁点的收获，笔者已经倍感荣幸。区块链世界，最困难而且最可贵的就是冷静和坚持。"
+summary: >-
+  2018 年 1 月 6 号，ChainONE 社区网站 bcage.one 上线。2 月 27 日，博客网站 blog.chainone.xyz 和主页
+  chainone.xyz 同时上线。至今为止，区块链技术指北博客积累了 62 篇文章，同时社区积累了 985 个帖子。由于 GA
+  统计添加比较晚，主页、博客、社区 3 个网址的 PV、UV
+  数据也不完整，不过从最近一周的数据分析，还是挺可观的，特别是社区网站。区块链技术指北社区还很年轻，笔者已经踏入区块链行业，相信会有十足的动力继续做下去。读者能够从中获得哪怕丁点的收获，笔者已经倍感荣幸。区块链世界，最困难而且最可贵的就是冷静和坚持。
 tags:
   - 区块链
   - Blockchain
   - ChainONE
   - 社区
   - Community
+comments:
+  - author:
+      type: github
+      displayName: gaoyoubo
+      url: 'https://github.com/gaoyoubo'
+      picture: 'https://avatars3.githubusercontent.com/u/2127168?v=4&s=73'
+    content: >-
+      https://bbs.chainon.io 
+      &#x8FD9;&#x4E2A;&#x793E;&#x533A;&#x662F;&#x4F60;&#x4EEC;&#x81EA;&#x5DF1;&#x7814;&#x53D1;&#x7684;&#x5417;&#xFF0C;&#x8FD8;&#x662F;&#x7528;&#x7684;&#x5F00;&#x6E90;&#x7CFB;&#x7EDF;&#xFF1F; 
+    date: 2018-10-30T07:28:28.843Z
+
 ---
 
 `文/温国兵`
