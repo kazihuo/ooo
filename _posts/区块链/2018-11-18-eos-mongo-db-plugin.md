@@ -30,8 +30,6 @@ tags:
 
 ![](https://i.imgur.com/O0w2yeu.jpg)
 
-<!--more-->
-
 ## 0x01 部署
 ***
 
