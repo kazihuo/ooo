@@ -2,13 +2,25 @@
 published: true
 author: Robin Wen
 layout: post
-title: "EOS 区块链数据实时异构到 MongoDB"
+title: EOS 区块链数据实时异构到 MongoDB
 category: 区块链
-summary: "之前介绍了将 EOS 主网数据同步到 MySQL，本文讲解了另一种同步到文档型数据库的方法。MySQL 和 MongoDB 最大的区别在于，MySQL 是传统的关系型数据库，支持 SQL 标准，而 MongoDB 是文档型数据库。MySQL 天生适用于结构化数据以及需要使用事务的场景，天生支持 SQL 标准，对开发者比较友好。"
+summary: >-
+  之前介绍了将 EOS 主网数据同步到 MySQL，本文讲解了另一种同步到文档型数据库的方法。MySQL 和 MongoDB 最大的区别在于，MySQL
+  是传统的关系型数据库，支持 SQL 标准，而 MongoDB 是文档型数据库。MySQL 天生适用于结构化数据以及需要使用事务的场景，天生支持 SQL
+  标准，对开发者比较友好。
 tags:
-- 区块链
-- Blockchain
-- EOS
+  - 区块链
+  - Blockchain
+  - EOS
+comments:
+  - author:
+      type: github
+      displayName: joepeak
+      url: 'https://github.com/joepeak'
+      picture: 'https://avatars3.githubusercontent.com/u/4530403?v=4&s=73'
+    content: '&#x8FD9;&#x4E2A;&#x7F51;&#x7AD9;&#x662F;&#x9759;&#x6001;&#x7684;&#x5417;'
+    date: 2018-11-25T12:51:35.881Z
+
 ---
 
 `文/温国兵`
