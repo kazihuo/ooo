@@ -2,13 +2,52 @@
 published: true
 author: Robin Wen
 layout: post
-title: "理解智能合约"
+title: 理解智能合约
 category: 区块链
-summary: "理解智能合约对理解区块链技术至关重要。智能合约概念并不是随着区块链技术诞生的。区块链技术天然给智能合约带来得天独厚的应用前提。如果说区块链落地应用，比特币和以太坊就是最大的应用了。本文介绍了智能合约，智能合约程序不只是一个可以自动执行的计算机程序：它自己就是一个系统参与者。它对接收到的信息进行回应，它可以接收和储存价值，也可以向外发送信息和价值。接着讲解了智能合约使用的编程语言 Solidity，接着介绍了 DAPP，然后给出了学习智能编程的步骤，最后给出了相关的资源，希望可以帮到读者。未来会有更多的 DAPP 进入我们的生活，如果读者是个开发者，不妨找个场景实现个 DAPP。"
+summary: >-
+  理解智能合约对理解区块链技术至关重要。智能合约概念并不是随着区块链技术诞生的。区块链技术天然给智能合约带来得天独厚的应用前提。如果说区块链落地应用，比特币和以太坊就是最大的应用了。本文介绍了智能合约，智能合约程序不只是一个可以自动执行的计算机程序：它自己就是一个系统参与者。它对接收到的信息进行回应，它可以接收和储存价值，也可以向外发送信息和价值。接着讲解了智能合约使用的编程语言
+  Solidity，接着介绍了 DAPP，然后给出了学习智能编程的步骤，最后给出了相关的资源，希望可以帮到读者。未来会有更多的 DAPP
+  进入我们的生活，如果读者是个开发者，不妨找个场景实现个 DAPP。
 tags:
-- 区块链
-- Blockchain
-- 智能合约
+  - 区块链
+  - Blockchain
+  - 智能合约
+comments:
+  - author:
+      type: github
+      displayName: zamalikamir
+      url: 'https://github.com/zamalikamir'
+      picture: 'https://avatars0.githubusercontent.com/u/45420958?v=4&s=73'
+    content: >-
+      Decentralized Apps has been a very innovative and efficient discovery on
+      Cryptocurrency and Blockchain.
+
+
+      DApps or decentralized application is one of the most intriguing terms
+      used in the blockchain space currently. The term DApp is coined by
+      combining two words decentalized and application. In simple terms, DApps
+      can be considered as applications, tools or programs that work on
+      decentralized Blockchains.
+
+
+      I want to share a platform where you can launch your own Dapp/Project too.
+
+
+      Dapp.com can help you launch your project! They are the largest community
+      of blockchain enthusiasts and are continually looking for interesting dapp
+      products.
+
+      Apply now to launch exclusively and get full access to their resources to
+      boost your user base.
+
+
+
+      You can visit their telegram channel too: t.me/dapp_com
+
+
+      Thank you!
+    date: 2018-11-28T13:38:44.314Z
+
 ---
 
 `文/温国兵`
