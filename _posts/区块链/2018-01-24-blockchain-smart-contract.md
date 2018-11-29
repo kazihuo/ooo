@@ -47,6 +47,27 @@ comments:
 
       Thank you!
     date: 2018-11-28T13:38:44.314Z
+  - author:
+      type: twitter
+      displayName: jemmergalve10
+      url: 'https://twitter.com/jemmergalve10'
+      picture: >-
+        https://pbs.twimg.com/profile_images/1067954749608157184/FfikLRRk_bigger.jpg
+    content: >-
+      The operating system designed for dapps, and high-speed blockchains
+      including NEO, Steem, and TRON, 
+
+      are aggressively expanding their dapp landscape.dapps were launched in Q3.
+      However, popular IPs and large companies/teams, including public listed
+
+      game companies like Animoca Brands and iCandy Group, are building quality
+      dapps with long-term operation goals.
+
+      We help everyone understand, create, and enjoy this exciting new
+      technology with enthusiasm check it out at Dapp.com 
+
+      and join there telegram official channel: https://t.me/dapp_com
+    date: 2018-11-29T04:25:08.908Z
 
 ---
 
