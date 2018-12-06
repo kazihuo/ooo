@@ -68,6 +68,18 @@ comments:
 
       and join there telegram official channel: https://t.me/dapp_com
     date: 2018-11-29T04:25:08.908Z
+  - author:
+      type: github
+      displayName: zamalikamir
+      url: 'https://github.com/zamalikamir'
+      picture: 'https://avatars0.githubusercontent.com/u/45420958?v=4&s=73'
+    content: >-
+      &#x5206;&#x6563;&#x5F0F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x662F;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x548C;&#x533A;&#x5757;&#x94FE;&#x4E0A;&#x975E;&#x5E38;&#x521B;&#x65B0;&#x548C;&#x9AD8;&#x6548;&#x7684;&#x53D1;&#x73B0;&#x3002;
+      DApps&#x6216;&#x5206;&#x6563;&#x5F0F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x662F;&#x76EE;&#x524D;&#x533A;&#x5757;&#x94FE;&#x7A7A;&#x95F4;&#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x672F;&#x8BED;&#x4E4B;&#x4E00;&#x3002;
+      DApp&#x4E00;&#x8BCD;&#x7531;&#x5206;&#x6563;&#x548C;&#x5E94;&#x7528;&#x534F;&#x8C03;&#x3002;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x3002;&#x6211;&#x60F3;&#x5206;&#x4EAB;&#x60A8;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4E2D;&#x542F;&#x52A8;&#x81EA;&#x5DF1;&#x7684;Dapp
+      / Project&#x3002;
+      Dapp.com&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x60A8;&#x542F;&#x52A8;&#x9879;&#x76EE;&#xFF01;&#x4ED6;&#x4EEC;&#x662F;&#x533A;&#x5757;&#x94FE;&#x7231;&#x597D;&#x8005;&#x6700;&#x5927;&#x7684;&#x793E;&#x533A;&#xFF0C;&#x5E76;&#x4E0D;&#x65AD;&#x5BFB;&#x627E;&#x6709;&#x8DA3;&#x7684;dapp&#x4EA7;&#x54C1;&#x3002;&#x83B7;&#x53D6;&#x60A8;&#x7684;&#x7528;&#x6237;&#x7FA4;&#x3002;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4ED6;&#x4EEC;&#x7684;&#x7535;&#x62A5;&#x9891;&#x9053;&#xFF1A;t.me/dapp_com&#x8C22;&#x8C22;&#xFF01;
+    date: 2018-12-06T14:17:21.307Z
 
 ---
 
