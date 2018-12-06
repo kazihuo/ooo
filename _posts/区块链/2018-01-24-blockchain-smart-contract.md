@@ -80,6 +80,20 @@ comments:
       / Project&#x3002;
       Dapp.com&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x60A8;&#x542F;&#x52A8;&#x9879;&#x76EE;&#xFF01;&#x4ED6;&#x4EEC;&#x662F;&#x533A;&#x5757;&#x94FE;&#x7231;&#x597D;&#x8005;&#x6700;&#x5927;&#x7684;&#x793E;&#x533A;&#xFF0C;&#x5E76;&#x4E0D;&#x65AD;&#x5BFB;&#x627E;&#x6709;&#x8DA3;&#x7684;dapp&#x4EA7;&#x54C1;&#x3002;&#x83B7;&#x53D6;&#x60A8;&#x7684;&#x7528;&#x6237;&#x7FA4;&#x3002;&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4ED6;&#x4EEC;&#x7684;&#x7535;&#x62A5;&#x9891;&#x9053;&#xFF1A;t.me/dapp_com&#x8C22;&#x8C22;&#xFF01;
     date: 2018-12-06T14:17:21.307Z
+  - author:
+      type: twitter
+      displayName: wellcent14
+      url: 'https://twitter.com/wellcent14'
+      picture: >-
+        https://pbs.twimg.com/profile_images/1023488629484605440/HVp4srCX_bigger.jpg
+    content: >-
+      I encourage you to do this project. With the Launch http://Dapp.com - the
+      Get your DAPP the hashtag # in a front of the community and their reach
+      Thousands of the users. Dapp.com is a space where you can transform the
+      world. #ImperialThrone They will help you understand, create, and enjoy.
+      Contact them at contact@dapp.com if interested. Website: www.dapp.com
+      Telegram: https://t.me/dapp_com
+    date: 2018-12-06T15:48:27.672Z
 
 ---
 
