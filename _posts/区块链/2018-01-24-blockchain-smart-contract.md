@@ -94,6 +94,30 @@ comments:
       Contact them at contact@dapp.com if interested. Website: www.dapp.com
       Telegram: https://t.me/dapp_com
     date: 2018-12-06T15:48:27.672Z
+  - author:
+      type: github
+      displayName: chehintog24
+      url: 'https://github.com/chehintog24'
+      picture: 'https://avatars0.githubusercontent.com/u/37724963?v=4&s=73'
+    content: >-
+      Absolutely great article! My interest about cryptocurrency increases more!
+      Please allow me also to introduce the Dapp.com. The largest platform for
+      sharing exciting dapps and valuable knowledge about decentralized
+      technology.
+
+
+      Have you also heard &ldquo; A table Yummies Presale?&rdquo;
+
+      &agrave; table! is the French equivalent of &ldquo;Come eat!&rdquo;.
+      &agrave; table! is a browser-based exploration game combining two of
+      everyone&rsquo;s favourites - animals and food. &ldquo;Yummy&rdquo; is an
+      original cute animal made of food-related items, represented by an ERC-721
+      token. More info here &#x25B6;&#xFE0F; bit.ly/2UbmTln 
+
+
+      Please visit website at Dapp.com and kindly join official telegram at
+      https://t.me/dapp_com
+    date: 2018-12-08T06:54:25.467Z
 
 ---
 
