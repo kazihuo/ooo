@@ -143,6 +143,36 @@ comments:
       Visit https://Dapp.com and join to their official telegram channel:
       https://t.me/dapp_com
     date: 2018-12-17T06:32:21.852Z
+  - author:
+      type: github
+      displayName: zamalikamir
+      url: 'https://github.com/zamalikamir'
+      picture: 'https://avatars0.githubusercontent.com/u/45420958?v=4&s=73'
+    content: >-
+      Dapp.com aims for creating an entire ecosystem to encourage dapp
+      (decentralized application) development, awareness, and usage. 
+
+
+      Dapp.com is the largest dedicated platform for sharing exciting dapps and
+      valuable knowledge about decentralized technology.
+
+      We help everyone understand, create, and enjoy this exciting new
+      technology with enthusiasm. 
+        
+      Prelaunch with Dapp.com 
+
+      Dapp.com can help you launch your project! We are the largest community of
+      blockchain enthusiasts and we&rsquo;re continually looking for interesting
+      dapp products. 
+
+      Apply now to launch exclusively with Dapp.com and get full access to our
+      resources to boost your user base. 
+
+
+      Website: https://Dapp.com
+
+      Telegram: t.me/dapp_com
+    date: 2018-12-17T07:10:57.450Z
 
 ---
 
