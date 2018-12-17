@@ -118,6 +118,31 @@ comments:
       Please visit website at Dapp.com and kindly join official telegram at
       https://t.me/dapp_com
     date: 2018-12-08T06:54:25.467Z
+  - author:
+      type: twitter
+      displayName: jenelyngalve1
+      url: 'https://twitter.com/jenelyngalve1'
+      picture: >-
+        https://pbs.twimg.com/profile_images/1063418918574780416/4FIkTT6A_bigger.jpg
+    content: >-
+      Very interesting article thanks for sharing this and I heard Dapp.com has
+      a New decentralized technology application games called Imperial throne is
+      a multi-player strategy war game based on the Ethereum. This games have
+
+      a exclusive giveaway and Pre-sale started on December 3d, 2018. All the
+      game&rsquo;s assets and gameplay are on the public blockchain.
+
+
+      Also Yummie application games is on Dapp.com blockchain game and
+      collectables publisher BitCrystals today announced that the presale of the
+      first characters (called &ldquo;Yummies&rdquo;) from forthcoming
+
+      blockchain-enabled game &agrave; table! will open at 10 am CET on December
+      5th
+
+      Visit https://Dapp.com and join to their official telegram channel:
+      https://t.me/dapp_com
+    date: 2018-12-17T06:32:21.852Z
 
 ---
 
