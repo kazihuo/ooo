@@ -173,6 +173,25 @@ comments:
 
       Telegram: t.me/dapp_com
     date: 2018-12-17T07:10:57.450Z
+  - author:
+      type: twitter
+      displayName: angelaImarie
+      url: 'https://twitter.com/angelaImarie'
+      picture: >-
+        https://pbs.twimg.com/profile_images/981479410384584705/qNcU1KS7_bigger.jpg
+    content: >
+      Get to know more about dapps . If you are interested please check our
+      dapps team . 
+
+
+      We help developers and blockchain companies reach a large scale of users
+      while providing a community-based platform that allows users to browse,
+      play and review dapps developed on any blockchain ecosystems. Our mission
+      is to speed up mainstream adoption
+
+
+      &lt;a href=&quot;https://www.dapp.com&quot;&gt;Dapp.com&lt;/a&gt;
+    date: 2018-12-19T14:00:04.690Z
 
 ---
 
