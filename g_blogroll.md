@@ -17,3 +17,4 @@ permalink: /blogroll/
 * <a href="http://www.choupangxia.com" title="secbr" target="_blank">丑胖侠的个人博客</a>
 * <a href="https://tianshimanbu.com" title="天使漫步" target="_blank">天使漫步</a>
 * <a href="https://www.starixk.com" title="xk" target="_blank">清风九里</a>
+* <a href="https://www.tiomg.org" title="太美博客" target="_blank">太美博客</a>
