@@ -35,6 +35,7 @@ tags:
 ![](https://i.imgur.com/O0w2yeu.jpg)
 
 ## 0x01 解决
+***
 
 查看 nodeos 日志，可以发现如下异常。
 
