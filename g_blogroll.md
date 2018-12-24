@@ -19,3 +19,4 @@ permalink: /blogroll/
 * <a href="https://www.starixk.com" title="xk" target="_blank">清风九里</a>
 * <a href="https://www.tiomg.org" title="太美博客" target="_blank">太美博客</a>
 * <a href="https://www.moidea.info" title="多思多金" target="_blank">多思多金</a>
+* <a href="https://igaojin.me" title="高金的博客" target="_blank">高金的博客</a>
