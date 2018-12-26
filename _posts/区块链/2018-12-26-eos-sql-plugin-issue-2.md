@@ -2,9 +2,9 @@
 published: true
 author: Robin Wen
 layout: post
-title: EOSIO MySQL 插件 issue 1
+title: EOSIO MySQL 插件 issue 2
 category: 区块链
-summary: 链上数据如何转化为 API 友好的数据，这是一个很重要的话题。因为能够转化为 API 友好的数据，对于开发者而言，可以极大地提高效率。目前 EOS 生态有很多插件，比如 MySQL 插件、ES 插件、Kafka 插件等等。
+summary: 链上数据如何转化为 API 友好的数据，这是一个很重要的话题。因为能够转化为 API 友好的数据，对于开发者而言，可以极大地提高效率。目前 EOS 生态有很多插件，比如 MySQL 插件、ES 插件、Kafka 插件等等。笔者在测试环境部署了基于 kesar 写的 MySQL 插件，结果同步数据时发现有如下的异常。上文提到了 amount 字段过短，来看看本文是什么问题吧。
 tags:
   - 区块链
   - Blockchain
@@ -13,7 +13,7 @@ tags:
 
 `文/温国兵`
 
-这是「区块链技术指北」的第 40 篇文章。
+这是「区块链技术指北」的第 41 篇文章。
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
@@ -26,35 +26,40 @@ tags:
 
 链上数据如何转化为 API 友好的数据，这是一个很重要的话题。因为能够转化为 API 友好的数据，对于开发者而言，可以极大地提高效率。目前 EOS 生态有很多插件，比如 MySQL 插件、ES 插件、Kafka 插件等等。
 
-笔者在测试环境部署了基于 [kesar](https://github.com/EOSIO/eos/pull/3882) 写的 MySQL 插件，结果同步数据时发现有如下的异常。
+笔者在测试环境部署了基于 [kesar](https://github.com/EOSIO/eos/pull/3882) 写的 MySQL 插件，结果同步数据时发现有如下的异常。上文提到了 amount 字段过短，来看看本文是什么问题吧。
 
 <!--more-->
 
 ![](https://i.imgur.com/O0w2yeu.jpg)
 
 ## 0x01 解决
-***
 
 查看 nodeos 日志，可以发现如下异常。
 
 ``` bash
-When sync to zhengjinhua1, and nodoes exit. The log as follows:
-
 terminate called after throwing an instance of 'soci::mysql_soci_error'
-  what():  Out of range value for column 'amount' at row 1 while executing "INSERT INTO tokens(account, amount, symbol) VALUES (:ac, :am, :as) " with :ac="zhengjinhua1", :am=1e+10, :as="UXB".
+  what():  Data too long for column 'public_key' at row 1 while executing "INSERT INTO accounts_keys(account, public_key, permission) VALUES (:ac, :ke, :pe) " with :ac="walletiphone", :ke="PUB_R1_81x8BXgDQGTWmcAaavfCDcVTTyzz1BeBYbje9yJomVMCJZbz86", :pe="owner".
 ```
 
-我们从日志中分析得出如下结论：
-
-> The amount filed of tokens table defines double(14,4), but 1e+10 means 10 billion, it exceed the maximum. It should change to double(64,4), the command as follows:
+我们查看表结构，可以得知 public_key 长度为 53。
 
 ``` sql
-ALTER TABLE tokens CHANGE amount amount double(64,4) DEFAULT NULL;
+[root@localhost][eos]> DESC accounts_keys;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| account    | varchar(12) | YES  | MUL | NULL    |       |
+| public_key | varchar(53) | YES  |     | NULL    |       |
+| permission | varchar(12) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
 ```
 
-In addition, I sync the data of maninnet using this sql_db_plugin.
+我们尝试将 public_key 改为 64，重新同步解决。
 
-Submit a pr, see at: https://github.com/NebulaProtocol/eos/pull/2
+``` sql
+ALTER TABLE accounts_keys CHANGE COLUMN public_key public_key varchar(64) DEFAULT NULL;
+```
 
 ## 0x02 小结
 ***
