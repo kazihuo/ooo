@@ -21,8 +21,6 @@ tags:
 
 > 题图来自: © ChainONE / Original / chainon.io
 
-`文/温国兵`
-
 ## 0x00 背景
 ***
 
