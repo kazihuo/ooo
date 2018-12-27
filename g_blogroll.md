@@ -21,3 +21,4 @@ permalink: /blogroll/
 * <a href="https://www.moidea.info" title="多思多金" target="_blank">多思多金</a>
 * <a href="https://igaojin.me" title="高金的博客" target="_blank">高金的博客</a>
 * <a href="https://www.jeffjade.com" title="晚晴幽草轩" target="_blank">晚晴幽草轩</a>
+* <a href="https://digitalimmigrant.org" title="数字移民" target="_blank">数字移民</a>
