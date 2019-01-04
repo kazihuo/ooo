@@ -46,22 +46,22 @@ EOS 生态有众多中心化交易所和去中心化交易所。怎么理解中�
 
 根据 [dappradar.com](https://dappradar.com/eos/category/exchanges) 数据以及目前我的认知，目前有如下的去中心化交易所（已剔除下线和无法访问的网站）：
 
-* https://www.eosfinex.com
-* https://newdex.io
-* https://whaleex.com
-* https://dexeos.io
-* http://offw.etdac.io
-* http://findex.pro
-* https://www.dexlize.org
-* https://btex.org
-* https://deltadex.io
-* https://onedexweb.haoduobi.com
-* https://eosdaq.com
-* https://akdex.io
-* https://www.mydex.win
-* https://www.eosex.com
-* https://eos.bancor.network
-* http://my.eoscoindex.cn
+* [https://www.eosfinex.com](https://www.eosfinex.com)
+* [https://newdex.io](https://newdex.io)
+* [https://whaleex.com](https://whaleex.com)
+* [https://dexeos.io](https://dexeos.io)
+* [http://offw.etdac.io](http://offw.etdac.io)
+* [http://findex.pro](http://findex.pro)
+* [https://www.dexlize.org](https://www.dexlize.org)
+* [https://btex.org](https://btex.org)
+* [https://deltadex.io](https://deltadex.io)
+* [https://onedexweb.haoduobi.com](https://onedexweb.haoduobi.com)
+* [https://eosdaq.com](https://eosdaq.com)
+* [https://akdex.io](https://akdex.io)
+* [https://www.mydex.win](https://www.mydex.win)
+* [https://www.eosex.com](https://www.eosex.com)
+* [https://eos.bancor.network](https://eos.bancor.network)
+* [http://my.eoscoindex.cn](http://my.eoscoindex.cn)
 
 ### 2.1 EOSfinex
 ***
