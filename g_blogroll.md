@@ -22,3 +22,4 @@ permalink: /blogroll/
 * <a href="https://igaojin.me" title="高金的博客" target="_blank">高金的博客</a>
 * <a href="https://www.jeffjade.com" title="晚晴幽草轩" target="_blank">晚晴幽草轩</a>
 * <a href="https://digitalimmigrant.org" title="数字移民" target="_blank">数字移民</a>
+* <a href="https://www.kooola.com" title="Kooola" target="_blank">Kooola</a>
