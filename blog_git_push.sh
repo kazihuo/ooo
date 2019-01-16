@@ -2,7 +2,6 @@
 # Author: Robin Wen
 # Date: 2015-03-10 11:43:27
 # Desc: Auto push after update the repo.
-# Test GitHub sync to GitCafe.
 
 git add -A .
 git commit -m "$1"
