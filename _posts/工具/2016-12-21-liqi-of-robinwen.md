@@ -387,6 +387,7 @@ comments:
 * Words Clock，$0.99，中文显示时间，很有创意
 * Kitsunebi Lite，$0.99，美区买的梯子，体验下产品
 * Quantumult，$4.99，美区买的梯子，体验下产品
+* 效率控 Pro，$0.99/year，工具集合
 
 #### 音视频
 
