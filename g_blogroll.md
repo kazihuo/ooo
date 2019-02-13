@@ -25,3 +25,4 @@ permalink: /blogroll/
 * <a href="https://www.kooola.com" title="Kooola" target="_blank">Kooola</a>
 * <a href="https://geekplux.com" title="GeekPlux" target="_blank">GeekPlux</a>
 * <a href="https://faydao.com/weblog" title="小刀周遠的日誌" target="_blank">小刀周遠的日誌</a>
+* <a href="https://jingwei.link" title="敬维" target="_blank">敬维</a>
