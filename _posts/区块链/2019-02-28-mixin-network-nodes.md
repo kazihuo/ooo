@@ -61,12 +61,14 @@ Mixin Network 是何方神圣呢？笔者简单介绍下：
 第二，93.33% 的节点都在使用 Google Cloud，这让笔者对 Mixin Network 的稳定性非常担忧。运营节点选择云服务商无可厚非，毕竟 IDC 服务成本过高，一般的节点团队完全没法承受。在全球市场，根据 Gartner 最新数据显示，亚马逊 AWS 占全球份额的 51.8%；微软 Azure 位列第二位，占比 13.3%；阿里云位列第三位，占比 4.6%；谷歌 Cloud 云服务占比 3.3%；随后是 IBM，占比 1.9%。[2] 为了避免某国不可抗力，大多数节点都会选择国外的云服务商，那可选项集中在亚马逊 AWS、微软 Azure、谷歌 Cloud 云服务。但有个非常严峻的事实是，云服务商高可用性并不能保证 100%。根据 InfoQ「[2018 年十大云宕机事故盘点：主流无一幸免！](https://www.infoq.cn/article/4pSNXHT4PuI4T*L8g1Sk)」一文，仅 2018 年，基本上市面上所有的云服务商都面临大大小小的宕机或者事故，造成了不等的经济损失。当然，Mixin Network 大多数的节点都在 Google Cloud，网络延时会相对较小，这也可能是集中的原因之一。就长远来看，这一定不是好事，节点应该把高可用性排在相当高的优先级，例如在其他云服务商部署备用节点等。
 
 ## 小结
+***
 
 本文根据公开的资料，对 Mixin Network 主网进行了溯源。节点过于集中，对生态好坏需要时间来检验。但是节点采用云服务商过于集中的问题，这个需要大力重视。
 
 Mixin 是我非常喜欢的应用，真心祝愿 Mixin Network 主网上线能够让 Mixin 生态逐渐成长。
 
 ## 参考资料
+***
 
 * [1] 金色财经 (2019-02-28). 动态 Mixin Network 主网今日启动. Retrieved from [https://www.jinse.com/lives/82559.htm](https://www.jinse.com/lives/82559.htm).
 * [2] InfoQ (2018-12-27). 2018 年十大云宕机事故盘点：主流无一幸免！. Retrieved from [http://bit.ly/2IGrrP2](http://bit.ly/2IGrrP2).
