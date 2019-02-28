@@ -105,10 +105,10 @@ Mixin Messager 是我非常喜欢的应用，真心祝愿 Mixin Network 主网�
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
-* BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
-* ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
-* PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
-* 微信打赏二维码
+BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
+ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
+PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
+微信打赏二维码
 
 ![Wechat](https://i.imgur.com/SzoNl5b.jpg)
 
