@@ -72,8 +72,8 @@ Mixin Messager 是我非常喜欢的应用，真心祝愿 Mixin Network 主网�
 ## 参考资料
 ***
 
-* [1] 金色财经 (2019-02-28). 动态 Mixin Network 主网今日启动. Retrieved from [https://www.jinse.com/lives/82559.htm](https://www.jinse.com/lives/82559.htm).
-* [2] InfoQ (2018-12-27). 2018 年十大云宕机事故盘点：主流无一幸免！. Retrieved from [http://bit.ly/2IGrrP2](http://bit.ly/2IGrrP2).
+[1] 金色财经 (2019-02-28). 动态 Mixin Network 主网今日启动. Retrieved from [https://www.jinse.com/lives/82559.htm](https://www.jinse.com/lives/82559.htm).
+[2] InfoQ (2018-12-27). 2018 年十大云宕机事故盘点：主流无一幸免！. Retrieved from [http://bit.ly/2IGrrP2](http://bit.ly/2IGrrP2).
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
@@ -81,27 +81,27 @@ Mixin Messager 是我非常喜欢的应用，真心祝愿 Mixin Network 主网�
 
 「区块链技术指北」相关资讯渠道：
 
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
-* 官网，[https://chainon.io](https://chainon.io)
-* 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
-* 官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
-* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
-* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
-* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
-* Facebook，[https://www.facebook.com/chainone.org](https://www.facebook.com/chainone.org)
-* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
+「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+官网，[https://chainon.io](https://chainon.io)
+官方博客，[https://blog.chainon.io](https://blog.chainon.io)
+官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
+Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+Facebook，[https://www.facebook.com/chainone.org](https://www.facebook.com/chainone.org)
+新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
-* 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 个人博客，[https://dbarobin.com](https://dbarobin.com)
-* 知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
-* 简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
-* Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
-* Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
-* 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
-* EOS LIVE，[https://eos.live/user/robin](https://eos.live/user/robin)
-* 币乎，[https://bihu.com/people/22207](https://bihu.com/people/22207)
+「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
+个人博客，[https://dbarobin.com](https://dbarobin.com)
+知乎，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
+简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
+Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
+Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
+掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
+EOS LIVE，[https://eos.live/user/robin](https://eos.live/user/robin)
+币乎，[https://bihu.com/people/22207](https://bihu.com/people/22207)
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
