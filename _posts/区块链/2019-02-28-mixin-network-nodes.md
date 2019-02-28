@@ -69,7 +69,7 @@ Mixin 是我非常喜欢的应用，真心祝愿 Mixin Network 主网上线能�
 ## 参考资料
 
 * [1] 金色财经 (2019-02-28). 动态 Mixin Network 主网今日启动. Retrieved from [https://www.jinse.com/lives/82559.htm](https://www.jinse.com/lives/82559.htm).
-* [2] InfoQ (2018-12-27). 2018 年十大云宕机事故盘点：主流无一幸免！. Retrieved from `https://www.infoq.cn/article/4pSNXHT4PuI4T*L8g1Sk`.
+* [2] InfoQ (2018-12-27). 2018 年十大云宕机事故盘点：主流无一幸免！. Retrieved from [http://bit.ly/2IGrrP2](http://bit.ly/2IGrrP2).
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
