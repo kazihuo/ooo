@@ -153,11 +153,11 @@ Renrenbit 是最近这两天上线的产品，据说某大佬加持。笔者第�
 ## 参考资料
 ***
 
-* [1] 维基百科 (2018-10-08). 平均成本法. Retrieved from [http://bit.ly/2RoO89s](http://bit.ly/2RoO89s).
-* [2] 投研说 FAIT (2018-11-02). 巴菲特为什么 10 次推荐指数基金？. Retrieved from [https://xueqiu.com/3741327330/116160352](https://xueqiu.com/3741327330/116160352).
-* [3] GBI 网站 (2018-12-31). 全球区块链指数（GBI）. Retrieved from [https://gbi.news/zh](https://gbi.news/zh).
-* [4] 海绵宝宝 1026 (2019-01-25). ExinOne 定投征文活动，坚定信心，定投未来. Retrieved from [https://www.jianshu.com/p/26f57d1db9be](https://www.jianshu.com/p/26f57d1db9be).
-* [5] 云定投 (2018-12-16). 如何使用云定投. Retrieved from [https://mp.weixin.qq.com/s/npr6kqv911FT5eDGaOmGUg](https://mp.weixin.qq.com/s/npr6kqv911FT5eDGaOmGUg).
+[1] 维基百科 (2018-10-08). 平均成本法. Retrieved from [http://bit.ly/2RoO89s](http://bit.ly/2RoO89s).
+[2] 投研说 FAIT (2018-11-02). 巴菲特为什么 10 次推荐指数基金？. Retrieved from [https://xueqiu.com/3741327330/116160352](https://xueqiu.com/3741327330/116160352).
+[3] GBI 网站 (2018-12-31). 全球区块链指数（GBI）. Retrieved from [https://gbi.news/zh](https://gbi.news/zh).
+[4] 海绵宝宝 1026 (2019-01-25). ExinOne 定投征文活动，坚定信心，定投未来. Retrieved from [https://www.jianshu.com/p/26f57d1db9be](https://www.jianshu.com/p/26f57d1db9be).
+[5] 云定投 (2018-12-16). 如何使用云定投. Retrieved from [https://mp.weixin.qq.com/s/npr6kqv911FT5eDGaOmGUg](https://mp.weixin.qq.com/s/npr6kqv911FT5eDGaOmGUg).
 
 –EOF–
 
