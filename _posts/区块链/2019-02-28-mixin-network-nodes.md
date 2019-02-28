@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: Mixin Network 主网节点分析
 category: 区块链
-summary: 测试。
+summary: 根据金色财经消息，北京时间 2 月 28 日上午 08:00:00（UTC 时间 00:00:00），Mixin Network 主网全球启动运营。本文根据公开的资料，对 Mixin Network 主网进行了溯源。节点过于集中，对生态好坏需要时间来检验。但是节点采用云服务商过于集中的问题，这个需要大力重视。Mixin 是我非常喜欢的应用，真心祝愿 Mixin Network 主网上线能够让 Mixin 生态逐渐成长。
 tags:
   - 区块链
   - Blockchain
