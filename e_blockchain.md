@@ -42,61 +42,59 @@ permalink: /blockchain/
 #### Community
 ***
 
-* [区块链技术指北 \| ChainONE 官网](https://chainon.io)
-* [区块链技术指北 \| ChainONE 官方博客](https://blog.chainon.io)
-* [区块链技术指北 \| ChainONE 官方社区](https://bbs.chainon.io)
+> [区块链技术指北 \| ChainONE 官网](https://chainon.io)
+> [区块链技术指北 \| ChainONE 官方博客](https://blog.chainon.io)
+> [区块链技术指北 \| ChainONE 官方社区](https://bbs.chainon.io)
 
 #### GitHub
 ***
 
-* [ChainONE Community](https://github.com/BlockchainOne)
-* [Open-Translating](https://github.com/BlockchainOne/Open-Translating)
-* [WeChat](https://github.com/BlockchainOne/WeChat)
-* [awesome-blockchain](https://github.com/BlockchainOne/awesome-blockchain)
-* [crack-mining](https://github.com/BlockchainOne/crack-mining)
-* [mycrypto](https://github.com/dbarobin/mycrypto)
+> [ChainONE Community](https://github.com/BlockchainOne)
+> [Open-Translating](https://github.com/BlockchainOne/Open-Translating)
+> [WeChat](https://github.com/BlockchainOne/WeChat)
+> [awesome-blockchain](https://github.com/BlockchainOne/awesome-blockchain)
+> [crack-mining](https://github.com/BlockchainOne/crack-mining)
+> [mycrypto](https://github.com/dbarobin/mycrypto)
 
 #### Media
 ***
 
 「区块链技术指北」相关资讯渠道：
 
-* 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
-* 官网，[https://chainon.io](https://chainon.io)
-* 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
-* 官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
-* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
-* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
-* Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
-* Facebook，[https://www.facebook.com/chainone.org](https://www.facebook.com/chainone.org)
-* 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
+> 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
+> 官网，[https://chainon.io](https://chainon.io)
+> 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
+> 官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
+> Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
+> Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+> Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
+> Facebook，[https://www.facebook.com/chainone.org](https://www.facebook.com/chainone.org)
+> 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
 同时，本系列文章会在以下渠道同步更新，欢迎关注：
 
-* 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
-* 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
-* 知乎专栏，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
-* 简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
-* Steemit，[https://steemit.com/@chainone](https://steemit.com/@chainone)
-* Medium，[https://medium.com/@chainone.org](https://medium.com/@chainone.org)
-* 币乎，[https://bihu.com/people/345886](https://bihu.com/people/345886)
-* 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
+> 「区块链技术指北」同名微信公众号（微信号：BlockchainAge）
+> 官方博客，[https://blog.chainon.io](https://blog.chainon.io)
+> 知乎专栏，[https://zhuanlan.zhihu.com/robinwen](https://zhuanlan.zhihu.com/robinwen)
+> 简书，[https://www.jianshu.com/c/a37698a12ba9](https://www.jianshu.com/c/a37698a12ba9)
+> Steemit，[https://steemit.com/@chainone](https://steemit.com/@chainone)
+> Medium，[https://medium.com/@chainone.org](https://medium.com/@chainone.org)
+> 币乎，[https://bihu.com/people/345886](https://bihu.com/people/345886)
+> 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
 
 #### Referrals
 ***
 
-* **币安**，[https://www.binance.com/?ref=11190872](https://www.binance.com/?ref=11190872)
-* **OTCBTC** 是目前最流畅、最靠谱、最好用的场外交易平台，支持支付宝、微信、银行卡支付购买 BTC、ETH、EOS、USDT、QTUM、ZEC、GXS、BCH 等数字币。现在注册，即可领取比特币红包！ [https://otcbtc.com/referrals/ROBINWENIO](https://otcbtc.com/referrals/ROBINWENIO)
-* **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
-* **EOS LIVE**，[https://eos.live/register?inviteId=45](https://eos.live/register?inviteId=45)
+> **币安**，[https://www.binance.com/?ref=11190872](https://www.binance.com/?ref=11190872)
+> **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
 
 #### Donate
 ***
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
-* **BTC**: 1HRZ7og2KjqpP3v3jskgueNu64kJrFU8GD
-* **ERC20 Token**: 0x5c8DEB48dC08b5dC60A0290B718690a801509Dd1
-* **PayPal**: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
+> **BTC**: 1HRZ7og2KjqpP3v3jskgueNu64kJrFU8GD
+> **ERC20 Token**: 0x5c8DEB48dC08b5dC60A0290B718690a801509Dd1
+> **PayPal**: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 
 © ChainONE
