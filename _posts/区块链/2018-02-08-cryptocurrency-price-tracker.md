@@ -8,7 +8,7 @@ summary: "最近看到一篇文章 Build a Cryptocurrency Price Tracker in 5 Min
 tags:
 - 区块链
 - Blockchain
-- Cryptocurrency
+- Crypto
 ---
 
 `文/温国兵`

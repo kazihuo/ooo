@@ -8,7 +8,7 @@ summary: "比特股（BitShares，简称 BTS）是一个建立在区块链技术
 tags:
 - 区块链
 - Blockchain
-- Cryptocurrency
+- Crypto
 - 去中心化交易所
 - DEX
 - BitShares

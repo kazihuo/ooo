@@ -8,7 +8,7 @@ summary: "目前交易过的平台有币安、OKEx、火币国际、比特儿国
 tags:
 - 区块链
 - Blockchain
-- Cryptocurrency
+- Crypto
 - 交易所
 - Exchange
 ---

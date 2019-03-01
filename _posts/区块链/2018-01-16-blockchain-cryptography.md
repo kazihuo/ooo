@@ -10,7 +10,7 @@ tags:
   - 区块链
   - Blockchain
   - Cryptography
-  - Cryptocurrency
+  - Crypto
 comments:
   - author:
       type: twitter

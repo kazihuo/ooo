@@ -8,7 +8,7 @@ summary: "对个人每一笔投资进行复盘是非常有必要的。投资过�
 tags:
 - 区块链
 - Blockchain
-- Cryptocurrency
+- Crypto
 ---
 
 `文/温国兵`
