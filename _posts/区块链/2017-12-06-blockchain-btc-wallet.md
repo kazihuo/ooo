@@ -8,6 +8,7 @@ summary: "BTC 是迄今为止最为成功的区块链项目，也是市值排名
 tags:
 - 区块链
 - Blockchain
+- 比特币
 - Bitcoin
 - 钱包
 - Wallet
