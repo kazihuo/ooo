@@ -37,7 +37,6 @@ RSS 阅读器的变迁也是一部互联网的进步史。曾经风靡一时的 
 **是的，RSS Never Die。**
 
 **参考资料**
-***
 
 > [1] 维基百科 (2019-02-28). RSS. Retrieved from [https://zh.wikipedia.org/wiki/RSS](https://zh.wikipedia.org/wiki/RSS).
 > [2] 维基百科 (2019-02-28). RSS. Retrieved from [https://zh.wikipedia.org/wiki/RSS](https://zh.wikipedia.org/wiki/RSS).
