@@ -20,7 +20,7 @@ RSS 的第一个版本为 RDF Site Summary，在 1999 年三月由美国网景�
 
 > 题图来自: © LibGuides / Current Awareness: RSS feeds / libguides.napier.ac.uk
 
-RSS 阅读器的变迁也是一部互联网的进步史。曾经风靡一时的 Google Reader 于 2013 年关闭。RSS 订阅在国内的先行者当属鲜果和抓虾，还有狗狗、看天下、周伯通，其中抓虾成立于 2005 年年底，2009 年被豆瓣收购，2015 年 8 月 20 日正式关闭，抓虾网最火爆的时候甚至被视为四大门户网站的颠覆者。[3]
+RSS 阅读器的变迁也是一部互联网的进步史。曾经风靡一时的 Google Reader 于 2013 年关闭。RSS 订阅在国内的先行者当属鲜果和抓虾，还有狗狗、看天下、周伯通，其中抓虾成立于 2005 年年底，2009 年被豆瓣收购，2015 年 8 月 20 日正式关闭，抓虾网最火爆的时候甚至被视为四大门户网站的颠覆者。[3] 关于 RSS 的兴衰，推荐读者阅读 [The Rise and Demise of RSS](https://motherboard.vice.com/en_us/article/a3mm4z/the-rise-and-demise-of-rss).
 
 时至今日，[Feedly](https://feedly.com) 和 [Inoreader](https://www.inoreader.com) 等此类服务在众多 RSS 服务中脱颖而出。笔者目前使用的是 Feedly + [Reeder](http://reederapp.com) 组合。此外，有一个叫做 [RSSHub](https://docs.rsshub.app) 的项目值得关注，此项目的 Slogan 是「**万物皆可 RSS**」。RSSHub 是一个轻量、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源。当然，喜欢折腾还可以使用 [Tiny Tiny RSS](https://tt-rss.org) 自架信息源抓取服务。此外，推荐一个网站，[FeedX](https://feedx.net)，这里有不少订阅源。
 
