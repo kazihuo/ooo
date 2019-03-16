@@ -21,6 +21,10 @@ tags:
 
 幸运的是，比特币生态有闪电网络。闪电网络，英文 Lighting Network，是工作在比特币上的 Layer 2 支付协议，目的是实现交易双方的及时交易。[比特币白皮书](https://bitcoin.org/bitcoin.pdf) 发表于 2009 年，[闪电网络白皮书](https://lightning.network/lightning-network-paper.pdf) 发表于 2016 年。闪电网络起源于比特币的扩容问题。闪电网络是基于微支付通道演进而来，创造性的设计出了两种类型的交易合约：序列到期可撤销合约 RSMC（Revocable Sequence Maturity Contract，哈希时间锁定合约 HTLC（Hashed Timelock Contract）。RSMC 解决了通道中币单向流动问题，HTLC 解决了币跨节点传递的问题。这两个类型的交易组合构成了闪电网络。
 
+![](https://i.imgur.com/SNzpY1G.png)
+
+> 题图来自: © Eric Grisholm / Bitcoin Lightning Network Nodes: Are They Profitable? / crushthestreet.com
+
 关于闪电网络的更多技术细节，读者可以阅读白皮书，以及从「区块链技术指北」社区 [闪电网络专题](https://bbs.chainon.io/t/lightning) 深入了解。
 
 这篇文章，笔者想给大家讲讲闪电网络初体验。
