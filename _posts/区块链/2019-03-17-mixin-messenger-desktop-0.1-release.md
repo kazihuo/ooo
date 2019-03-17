@@ -39,7 +39,7 @@ tags:
 
 ![](https://i.imgur.com/TKk9ssY.png)
 
-> 图片来自: © Robin / Mixin Main / original
+> 图片来自: © Robin / Mixin Messenger Desktop / original
 
 Enjoy！
 
