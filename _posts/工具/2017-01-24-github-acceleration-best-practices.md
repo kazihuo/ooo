@@ -178,7 +178,7 @@ host github.com
 
 **终端加速 GitHub 方法三：修改 hosts 文件**
 
-如果是 macOS 系统，向 hosts 文件增加如下内容：
+如果是 macOS 系统，向 hosts 文件增加如下内容。此外。读者可以使用一款开源的 Hosts 文件管理工具，名叫 [Gas Mask](https://github.com/2ndalpha/gasmask)。
 
 ``` bash
 # GitHub Start
