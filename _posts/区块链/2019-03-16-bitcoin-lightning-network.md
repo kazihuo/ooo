@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: 闪电网络初体验
 category: 区块链
-summary: 我们都知道，比特币交易需要确认时间，根据消耗的矿工费不同，确认时间也不同。从 BitInfoCharts 的 Bitcoin 平均交易确认时间图像我们可以得出，最近 3 个月平均交易确认时间在 10 分钟以内，但把时间维度扩大，最长平均交易时间到了 360 分钟。对比国内流行的支付宝、微信支付等秒级支付方式，比特币不确定的交易时间很难达到大规模利用，这也是比特币广为诟病的地方之一。闪电网络离比特币的 A Peer-to-Peer Electronic Cash System 又近了一步。闪电网络，未来已来。最后，本博客开通了闪电网络打赏，笔者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
+summary: 我们都知道，比特币交易需要确认时间，根据消耗的矿工费不同，确认时间也不同。从 BitInfoCharts 的 Bitcoin 平均交易确认时间图像我们可以得出，最近 3 个月平均交易确认时间在 10 分钟以内，但把时间维度扩大，最长平均交易时间到了 360 分钟。对比国内流行的支付宝、微信支付等秒级支付方式，比特币不确定的交易时间很难达到大规模利用，这也是比特币广为诟病的地方之一。闪电网络离比特币的 A Peer-to-Peer Electronic Cash System 又近了一步。闪电网络，未来已来。最后，本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 tags:
   - 区块链
   - Blockchain
@@ -53,7 +53,7 @@ tags:
 
 **闪电网络，未来已来。**
 
-最后，本博客开通了闪电网络打赏，笔者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
+最后，本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 
 <center><img title="Bitcoin Lightning Network Donate" width="180" height="180" src="https://lnd.hoo.com/api/generate?openid=TruSwjrK2q57V484Tf0u&isimg=1" alt="Bitcoin Lightning Network Donate"/></center>
 
