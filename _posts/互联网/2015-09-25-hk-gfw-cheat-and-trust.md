@@ -28,6 +28,13 @@ comments:
       &#x662F;&#x7684;
       &#x8089;&#x8EAB;&#x7FFB;&#x5899;&#x8DDF;&#x666E;&#x901A;&#x7FFB;&#x5899;&#x4F53;&#x9A8C;&#x8FD8;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF01;&#x8EAB;&#x5728;&#x4E00;&#x4E2A;&#x4E92;&#x8054;&#x7F51;&#x6CA1;&#x5899;&#x793E;&#x4F1A;&#x611F;&#x53D7;&#x5230;&#x7684;&#x5C31;&#x662F;&#x81EA;&#x7531;&#xFF01;
     date: 2019-03-03T09:27:06.804Z
+  - author:
+      type: github
+      displayName: xjliang2007
+      url: 'https://github.com/xjliang2007'
+      picture: 'https://avatars0.githubusercontent.com/u/9584000?v=4&s=73'
+    content: '&#x5199;&#x7684;&#x5F88;&#x597D;&#xFF0C;&#x540C;&#x611F;'
+    date: 2019-03-17T08:50:11.853Z
 
 ---
 
