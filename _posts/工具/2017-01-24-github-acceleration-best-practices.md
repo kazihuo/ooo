@@ -176,6 +176,40 @@ host github.com
 
 相应的配置完成后，git clone 就会使用代理了。
 
+**终端加速 GitHub 方法三：修改 hosts 文件**
+
+如果是 macOS 系统，向 hosts 文件增加如下内容：
+
+``` bash
+# GitHub Start
+192.30.255.113 github.com
+192.30.255.119 gist.github.com
+185.199.110.153 assets-cdn.github.com
+151.101.228.133 raw.githubusercontent.com
+151.101.228.133 gist.githubusercontent.com
+151.101.228.133 cloud.githubusercontent.com
+151.101.228.133 camo.githubusercontent.com
+151.101.228.133 avatars0.githubusercontent.com
+151.101.228.133 avatars1.githubusercontent.com
+151.101.228.133 avatars2.githubusercontent.com
+151.101.228.133 avatars3.githubusercontent.com
+151.101.228.133 avatars4.githubusercontent.com
+151.101.228.133 avatars5.githubusercontent.com
+151.101.228.133 avatars6.githubusercontent.com
+151.101.228.133 avatars7.githubusercontent.com
+151.101.228.133 avatars8.githubusercontent.com
+# GitHub End
+```
+
+接着终端以此执行如下两行命令：
+
+``` bash
+dscacheutil -flushcache
+sudo killall -HUP mDNSResponder
+```
+
+执行成功之后，GitHub 速度提升不少。读者可能会有疑问，如果 GitHub DNS 解析变了怎么办？没关系，笔者写了脚本，Python 执行即可获取最新的 IP 列表。代码点击 [此处](https://github.com/dbarobin/github/blob/master/github_hosts.py)。感谢此 [issue](https://github.com/chenxuhua/issues-blog/issues/3)。
+
 终端可以呼呼地使用 GitHub，那网页呢，也很简单，且听。
 
 > 网页加速 GitHub 方法的前置条件，一是购买了加速服务或者租用 VPS 搭建加速服务，二是系统是 macOS 或者 Win，三是浏览器是 Chrome。
