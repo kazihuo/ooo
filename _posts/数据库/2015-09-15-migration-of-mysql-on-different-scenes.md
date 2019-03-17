@@ -22,6 +22,16 @@ comments:
       4.2 &#x573A;&#x666F;&#x4E8C;
       &#x4E00;&#x4E3B;&#x4E00;&#x4ECE;&#x7ED3;&#x6784;&#x8FC1;&#x79FB;&#x6307;&#x5B9A;&#x5E93;.&#x4F7F;&#x7528;mysqldump&#x5BFC;&#x6570;&#x636E;&#x9700;&#x8981;&#x52A0;&#x9501;&#x5417;&#xFF1F;&#x8FD9;&#x6837;&#x4F1A;&#x5F71;&#x54CD;&#x7EBF;&#x4E0A;&#x4E1A;&#x52A1;&#x5427;
     date: 2016-09-26T16:08:57.665Z
+  - author:
+      type: github
+      displayName: xjliang2007
+      url: 'https://github.com/xjliang2007'
+      picture: 'https://avatars0.githubusercontent.com/u/9584000?v=4&s=73'
+    content: >-
+      &#x573A;&#x666F;4&#x611F;&#x89C9;&#x662F;&#x7ED5;&#x4E86;&#x4E00;&#x5708;&#xFF0C;&#x53EF;&#x4EE5;102
+      rync&#x5230; 103&#xFF0C;&#x7136;&#x540E;binlog
+      &#x540C;&#x6B65;101&#x5C31;&#x53EF;&#x4EE5;&#x4E86;
+    date: 2019-03-17T08:42:15.776Z
 
 ---
 
