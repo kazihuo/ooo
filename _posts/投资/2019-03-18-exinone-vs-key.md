@@ -16,6 +16,10 @@ tags:
 
 > 本文已参与 ExinOne 有奖征文，活动链接点击 [此处](https://mp.weixin.qq.com/s/BTU0qx3vEjxP8diXuWoI9g)。
 
+![](https://i.imgur.com/a9nBpkG.jpg)
+
+> 图片来自: © ExinOne / 重磅上线 KEY 交易对，狂撒 60W 代币奖励 / exinone.com
+
 ## 前言
 ***
 
