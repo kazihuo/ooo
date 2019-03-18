@@ -18,7 +18,7 @@ layout: default
     <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }} </a>{% unless page.tags.last == tag %}, {% endunless %}
     {% endfor %}
     {% endif %}
-    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}. 
+    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}.
     <span id="busuanzi_container_page_pv">
       Viewd <span id="busuanzi_value_page_pv"></span> times.
     </span>
@@ -35,6 +35,8 @@ layout: default
 <!--
 {% include dashang.html%}
 -->
+
+<iframe src="https://dbarobin.com/copyright/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
 
 <iframe src="https://dbarobin.com/simple/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
 
