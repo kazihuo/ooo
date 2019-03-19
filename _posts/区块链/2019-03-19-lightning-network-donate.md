@@ -35,7 +35,9 @@ Monero 作为对比，Dogecoin 目前 24 小时内的交易数已经比较低了
 笔者的博客采用 GitHub Pages，支持 Markdown。添加闪电网络收款码的代码如下：
 
 ``` js
-<center><img title="Bitcoin Lightning Network Donate" width="180" height="180" src="https://lnd.hoo.com/api/generate?openid=TruSwjrK2q57V484Tf0u&isimg=1" alt="Bitcoin Lightning Network Donate"/></center>
+<center>
+    <img title="Bitcoin Lightning Network Donate" width="180" height="180" src="https://lnd.hoo.com/api/generate?openid=TruSwjrK2q57V484Tf0u&isimg=1" alt="Bitcoin Lightning Network Donate"/>
+</center>
 ```
 
 openid 查找办法，打开 Hoo 钱包，切换到闪电网络钱包，点击顶部「三个点」，点击「通道账户」，输入 PIN 码，hoo://openid:xxxxxx，位于 // 和 : 之间的字符就是 openid。
