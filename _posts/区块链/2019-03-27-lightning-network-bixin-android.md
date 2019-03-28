@@ -19,6 +19,10 @@ tags:
 
 Bixin Android 最新版，版本号 3.6.0，目前正式支持闪电网络，下载地址点击 [此处](https://bixin.com/webapp)。
 
+![](https://i.imgur.com/swNyoA9.jpg)
+
+> 题图来自: © CoinTiger 币虎 / 0 费率、秒到账，CoinTiger 币信钱包互通啦 / xueqiu.com
+
 截至目前，国内钱包支持闪电网络情况如下：
 
 * Hoo，iOS 企业版和 Android 均支持
