@@ -17,7 +17,7 @@ tags:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
-Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp，下载地址点击 [此处](https://itunes.apple.com/us/app/bitpie-blockchain-wallet/id1168568820?mt=8)。此外，LApp 暂时只能在 Android 使用，iOS 暂不支持，在等苹果爸爸审核。比特派不采用企业证书，直接上架海外 App Store，还是比较稳，毕竟 iOS 掉签频率太高了，原因你懂的。
+Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp，下载地址点击 [此处](https://itunes.apple.com/us/app/bitpie-blockchain-wallet/id1168568820?mt=8)。官宣点击 [这里](https://medium.com/@Bitpie/bitpie-v3-9-8-now-support-lapps-c1a34344a54e)。此外，LApp 暂时只能在 Android 使用，iOS 暂不支持，在等苹果爸爸审核。比特派不采用企业证书，直接上架海外 App Store，还是比较稳，毕竟 iOS 掉签频率太高了，原因你懂的。
 
 ![](https://i.imgur.com/dGRYEm6.jpg)
 
