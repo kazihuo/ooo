@@ -27,7 +27,7 @@ tags:
 
 ## 二 示意图 ##
 
-![MySQL备份与恢复之热拷贝示意图](http://i.imgur.com/CUdQKmX.jpg)
+![MySQL备份与恢复之热拷贝示意图](https://cdn.wenguobing.com/CUdQKmX.jpg)
 
 ## 三 热拷贝模拟 ##
 
@@ -204,7 +204,7 @@ mysql> select * from class;
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/15026833" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之热拷贝" height="16px" width="16px" border="0" alt="MySQL备份与恢复之热拷贝" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/15026833" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之热拷贝" height="16px" width="16px" border="0" alt="MySQL备份与恢复之热拷贝" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

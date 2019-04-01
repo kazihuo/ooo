@@ -22,7 +22,7 @@ tags:
 
 外界的灯红酒绿扰乱了我们的内心，物欲横流的世界让你变得对物质、金钱趋之若鹜，我们变得不再是曾经的自己。我常常在思考是什么让我们背弃了曾经自己的底线，曾经打死也不会去做的事情如今做起来却像呼吸般容易。这个问题没有答案，如果有，那得问自己的内心。因为背弃自己的底线的理由有千千万个，坚持自己的理由却只有一个：我，还是那个我。
 
-![Be yourself](http://i.imgur.com/0xIsdvE.jpg)
+![Be yourself](https://cdn.wenguobing.com/0xIsdvE.jpg)
 
 看惯了所谓的不真实，再对比曾经的种种，我突然明白原来所谓的捷径就是保持真实。因为真实，让我掌握了很多知识和本领；因为真实，让我得到很多可以真正相交的挚友；因为真实，让我明白很多事情不是你不会去做，而是你压根就没想过要去做；因为真实，让我得到父母、亲戚的信任；因为真实，身边的人认为我是一个可以信任、可以托付责任、可以倾吐私话、有困难肯定会帮、找我肯定没错的人；因为真实，很多因此变得不一样，或许，真实，你的世界就会变得不同。
 
@@ -30,8 +30,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9199733" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（二十三）做自己 最真实" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十三）做自己 最真实" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9199733" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十三）做自己 最真实" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十三）做自己 最真实" /></a>
 
-题图来自：<a href="http://blogs.disney.com/oh-my-disney/2013/05/19/be-yourself/" target="_blank"><img src="http://i.imgur.com/fvxI0tC.png" title="disney" height="16px" width="16px" border="0" alt="disney" /></a>
+题图来自：<a href="http://blogs.disney.com/oh-my-disney/2013/05/19/be-yourself/" target="_blank"><img src="https://cdn.wenguobing.com/fvxI0tC.png" title="disney" height="16px" width="16px" border="0" alt="disney" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

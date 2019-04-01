@@ -39,7 +39,7 @@ comments:
 
 夏至过后的广州，热气袭人，行走在滚烫的地面，好似恍惚间就会被融化。来到熟悉的方所，感觉特别温馨。在差不多一年前，有幸在此见到李银河老师，如果读者感兴趣，还可以读下一年前写的 [文章](https://dbarobin.com/2015/07/26/meditation-of-an-atheist/)。快到下午 3 点，会场早已人山人海。抬头仰望，三角形的屋顶错落别致，书柜林立在两旁，在这丰富的世界里，特别充实。
 
-![Immersion by Offline](http://i.imgur.com/Vb8DuNp.jpg)
+![Immersion by Offline](https://cdn.wenguobing.com/Vb8DuNp.jpg)
 
 3 点整，离线杂志主编 **李婷** 些许寒暄，便开始了今天的分享。嘉宾分享之前，独立音乐人、演出策划人 **叶闿萌** 为观众带来了一个精彩无比的音乐开场。他提到「**音乐就是声音游戏**」、「**音乐就是世界**」，音符、音阶、音程等等作为声音游戏的元素，可以完成无穷无尽的组合，奏出变幻无穷的乐章。作为热爱音乐的笔者来说，深有体会。接下来他为我们演示了一段由软件合成的 BGM，主旋律来自植物大战僵尸，其中夹杂一些耳熟能详的曲子。这段音乐特别带感，特别酷，让人赞不绝口。接下来他为观众来了一首吉他弹奏，现场不插电，也特别好听。
 
@@ -61,7 +61,7 @@ comments:
 
 > BTW，这是离线寄送的纸质书。
 
-![Book by Offline](http://i.imgur.com/akaoMQS.jpg)
+![Book by Offline](https://cdn.wenguobing.com/akaoMQS.jpg)
 
 –EOF–
 

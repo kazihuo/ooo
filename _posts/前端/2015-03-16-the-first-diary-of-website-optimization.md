@@ -141,7 +141,7 @@ tags:
 
 读者可以感受下加速后的效果。
 
-![ping-dbarobin.com](http://i.imgur.com/JtYdyjB.png)
+![ping-dbarobin.com](https://cdn.wenguobing.com/JtYdyjB.png)
 
 ## 四 写在后面 ##
 ***

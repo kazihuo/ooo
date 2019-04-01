@@ -19,7 +19,7 @@ Shell脚本存在的价值，就是让工作更高效。
 
 脚本语言最大的特点就是边解释边执行，无需编译和链接。这样带来的好处就是很灵活，但不好的地方就是每次运行脚本都会带来较大的系统开销。现在的我习惯了命令式的交互，现在学习和工作环境一半Windows，一半Linux，以后的打算是全部迁到Linux上。最近整理文本，同一个文本Word处理30分钟，用Linux采用vim、grep和awk进行处理，1分钟左右搞定。所以，很多时候使用Linux耗费的时间成本远比Windows低。Shell脚本语法比较简洁，但是要求很严格，多一个空格或者少一个空格都不可以，所以如果有代码洁癖，比如喜欢关键字和符号之间留空格等等，在Shell脚本中最好改掉。我认为一个好的Shell应该满足以下几点：第一，有必要的注释，这点想必程序员都知道，但不一定这样做；第二，功能单一，实现某一个或者某几个联系紧密的功能，必要条件可以采用函数。这样可以满足软件工程中倡导的高内聚低耦合；第三，代码简洁，能用一行代码实现的绝不采用两行或者多行，当然应该满足必要的可读性。
 
-![Fall in love with shell script](http://i.imgur.com/oqp7ui0.png)
+![Fall in love with shell script](https://cdn.wenguobing.com/oqp7ui0.png)
 
 现在的我养成了一个习惯，就是任何重复性的工作都采用Shell脚本，迄今为止保存了大概上百个Shell脚本。使用Shell脚本的好处不言而喻，避免重复性操作，节省时间，可以把更多的时间放在其他事情上。当然，这里有个忠告，自己编写的Shell脚本一定包保证万无一失，写完后要做足够多的测试，编写的Shell脚本尽量考虑完善，否则一旦出问题后悔莫及。做运维和数据库一定要谨慎，做任何事之前考虑这件事情带来的后果。
 
@@ -31,6 +31,6 @@ Shell脚本存在的价值，就是让工作更高效。
 
 原文地址：微信公众号文章
 
-题图来自：<a href="https://www.iconfinder.com/icons/79962/application_shellscript_icon" target="_blank"><img src="http://i.imgur.com/15kX0JP.png" title="" height="16px" width="16px" border="0" alt="" /></a>
+题图来自：<a href="https://www.iconfinder.com/icons/79962/application_shellscript_icon" target="_blank"><img src="https://cdn.wenguobing.com/15kX0JP.png" title="" height="16px" width="16px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -26,7 +26,7 @@ tags:
 
 广州是一个适合人居住的地方，环境优美，空气较清新，不排外，有历史，生活成本较低。空气较清新那是毋庸置疑的，至少比成都好N多倍。广州的早晚非常凉快，沁人的海风让人觉得很舒服。广州不排外和历史是有很多原因的，广州的外来人口太多，本地人相对较少，随处可见的四川人、湖南人、川菜馆、湘菜馆，让远方的游子找到丁点家的感觉。广州的生活成本较低，这里是指饮食方面，这边的肉、菜比老家便宜很多，但住房仍然是个棘手的问题。与我而言，我是喜欢广州的。一方面是小时候对广州的印象，让我对广州有一种很特别的情愫；另一方面是这边的气候，冬天不冷很是吸引我，四川那种阴冷的冬天让我很是不习惯；最后一方面是饮食习惯，身为四川人对辣椒却有偏见，反而喜欢清淡的饮食，这点在广州正好适合。独自南下，虽很艰辛，但一想着在广州这边的好，很多烦恼便烟消云散。
 
-![The chapter nine of my university periodic history](http://i.imgur.com/6HEwzAo.jpg)
+![The chapter nine of my university periodic history](https://cdn.wenguobing.com/6HEwzAo.jpg)
 
 独自南下对于一个年轻人来说是好的，趁着年轻多出来走走，多感受下外面的世界，现在不远走，以后就没啥机会了。我在广州不知道能待多久，就看以后的缘分吧。我记得罗辑思维有一期节目叫做「逃离北上广」，但现实却是很多人已无法逃离。在北上广见的世面不一样，获取信息的速度不一样，结实的人不一样，诸多资源在小小的城镇是无法比拟的。罗胖说为什么要去北上广，是为了增长见识，这一点是我非常赞同的。独自南下对于一个人的成长来说有着很好的引导作用，养成凡事靠自己的习惯，今后受益无穷。一个人在远方遭遇的白眼、得到的不公也将是未来很大一笔财富。十年后再回过头来看这段独自南下的岁月，定会感慨万千，也定会感谢当初自己的选择。很多同学留在成都发展，多多少少都有些照应，很多时候确实挺羡慕的，但羡慕归羡慕，该一个人生活的，总要去面对。
 
@@ -36,8 +36,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/38147173" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（四十五）大学断代史（九）独自南下的岁月" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十五）大学断代史（九）独自南下的岁月" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/38147173" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四十五）大学断代史（九）独自南下的岁月" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十五）大学断代史（九）独自南下的岁月" /></a>
 
-题图来自：<a href="http://www.51766.com/jingdian/1102162722.html" target="_blank"><img src="http://i.imgur.com/sy6wpMn.png" title="广州塔" height="16px" width="16px" border="0" alt="广州塔" /></a>
+题图来自：<a href="http://www.51766.com/jingdian/1102162722.html" target="_blank"><img src="https://cdn.wenguobing.com/sy6wpMn.png" title="广州塔" height="16px" width="16px" border="0" alt="广州塔" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

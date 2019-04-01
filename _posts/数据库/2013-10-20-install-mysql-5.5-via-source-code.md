@@ -200,6 +200,6 @@ socket           =/tmp/mysql.sock
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/12881957" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL 5.5源码安装" height="16px" width="16px" border="0" alt="MySQL 5.5源码安装" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/12881957" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL 5.5源码安装" height="16px" width="16px" border="0" alt="MySQL 5.5源码安装" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -1232,7 +1232,7 @@ auto_deploy_app_windows: 适用于Windows。
 温国兵
 
 * Robin Wen
-* <a href="mailto:blockxyz@gmail.com"><img src="http://i.imgur.com/7yOaC7C.png" title="Robin's Gmail" border="0" height="16px" width="16px" alt="Robin's Gmail" /></a>
+* <a href="mailto:blockxyz@gmail.com"><img src="https://cdn.wenguobing.com/7yOaC7C.png" title="Robin's Gmail" border="0" height="16px" width="16px" alt="Robin's Gmail" /></a>
 * <a href="https://github.com/dbarobin" target="_blank"><i class="fa fa-github"></i></a>
-* <a href="https://dbarobin.com/" target="_blank"><img src="http://i.imgur.com/dEfMkyt.jpg" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
-* <a href="http://blog.csdn.net/justdb" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px" width="16px" border="0" alt="DBA@Robin's CSDN" /></a>
+* <a href="https://dbarobin.com/" target="_blank"><img src="https://cdn.wenguobing.com/dEfMkyt.jpg" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
+* <a href="http://blog.csdn.net/justdb" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px" width="16px" border="0" alt="DBA@Robin's CSDN" /></a>

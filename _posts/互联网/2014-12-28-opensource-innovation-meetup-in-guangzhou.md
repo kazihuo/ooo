@@ -21,7 +21,7 @@ tags:
 
 周六清晨，从睡梦中慢慢苏醒，睁开眼睛，望着天花板一个人发呆。朝窗外望去，淅淅沥沥的冬雨舞动着，整个世界笼罩在一片寂静之中，只剩下轻绕的雨滴声和不远处小鸟的鸣叫声。中午吃过饭，奔向网易大厦。网易大厦位于科韵路信息港，我住的地方离目的地不远，步行不久就可以到达。
 
-![开源中国广州源创会分享](http://i.imgur.com/OCoC6p7.jpg)
+![开源中国广州源创会分享](https://cdn.wenguobing.com/OCoC6p7.jpg)
 
 走到网易大厦的楼下，瞻仰大楼，楼顶有网易Logo，赫然醒目。走进大厅，签到，进会场。这里值得一提的是，此次大会对于以下与会者是免费的：女士、积分50以上和开源软件作者，正好我符合条件，以前在开源中国的付出总算没有白费。此时离正式分享还有半个小时左右，静坐，阅读。近14点一刻，分享开始。回头环绕四周，已是座无虚席。会场太小，还有很多与会者站在走廊，好一派热闹的景象。
 
@@ -45,6 +45,6 @@ tags:
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://www.oschina.net/question/28_60390" target="_blank"><img src="http://i.imgur.com/ZRkdggf.png" title="OSC" height="16px" width="16px" border="0" alt="OSC" /></a>
+题图来自：<a href="http://www.oschina.net/question/28_60390" target="_blank"><img src="https://cdn.wenguobing.com/ZRkdggf.png" title="OSC" height="16px" width="16px" border="0" alt="OSC" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

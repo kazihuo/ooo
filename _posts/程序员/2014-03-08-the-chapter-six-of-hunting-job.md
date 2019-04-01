@@ -19,7 +19,7 @@ tags:
 
 从2月17号开始至3月5号，前后半个多月的时间，对自己而言是一个磨砺的过程，确实有很大的收获。找工作也是人生的一个选择，我们终究在不断的选择和被选择中度过余生。当你满心欢喜认为胜券在握时，上天却给你开一个玩笑，原本唾手可得的瞬间就从你的眼前消失，你会感到失落，甚至会怀疑上天为什么对你这么不公；当你不抱任何希望认为就此作罢时，上天也给你开一个“玩笑”，原本与你无缘的立刻跟你有了交集，你会感到欣喜，心想老天对你为什么这么好。如此云云，不过如此。做人当做打不死的小强，区区失败何足挂齿。尼采说过：“凡不能毁灭我的，必使我强大”，找工作亦是如此。要相信每次遇见，都是最好的安排。每一次的遇见肯定都有它的道理。前前后后面试近10家公司，有私营企业，也有国企，也有外企，各种性质的企业都有所接触。通过这一段时间的笔试和面试，收获了很多。比如简历需要的注意事项，系统运维和数据库的笔试主要有哪些内容，系统运维和数据库的行情如何，面试主要询问哪些问题，具体的面试问题应该怎样答复，怎样和HR谈薪酬，招聘有哪些流程等等。另外，还结实了一些志同道合的朋友。每一个收获相信都会深深地镌刻在我的脑海，在以后的笔试和面试中带给我些许指引。同样，也收获了挫败后的觉悟。没有败在这些公司的笔试，但面试时这些公司提出的一些要求实感无力。还有就是网投的挫败，在几大招聘网站上，投简历的公司总量估计有50+，但真正能给予反馈的就一两家，其他的都石沉海底。参加的这些公司的笔试和面试过程中，真得非常感谢那些给予我帮助的老师，有前辈在技术上给予我指导和建议，有老师在一些非技术上的问题上给予我颇具建树性的建议，在此再次向这些尊敬的前辈致以诚挚的谢意。
 
-![The chapter six of hunting job](http://i.imgur.com/xcgJz2Q.jpg)
+![The chapter six of hunting job](https://cdn.wenguobing.com/xcgJz2Q.jpg)
 
 我从这一系列的最开始就从未想过要得到多大的关注。但是直到第五篇文章，CSDN推荐了我的文章，从而得到较高的访问量和各位热心读者的反馈。在此感谢CSDN的推荐。每一个反馈我都认真阅读了，并回复了绝大多数的评论。有夸赞文章写得不错的，诚然文笔没有，但都是我最用心最真诚的表达；有赞扬我是牛人的，借机表达下我的想法：我只是一个热爱技术热心分享的人，常言多说无益，智者寡言，真正牛逼的基本上都非常地低调，对于这些分享要么觉得毫无意义，要么觉得浪费时间，我距离真正的牛人还差十万八千里，自己有几斤几两还是清楚的；有问我为什么去年校招没有找到工作，是的，我确实没找到，参加的唯一的校招也被刷了，如果学弟学妹看到，真心告诫最好能在校招找到如意的工作，校招对自己是很有利的；也有读者提到能否透露下薪酬，我只想说的是像我这样一没经验二没毕业证的来说，没有任何讨价还价的砝码。即使拿到毕业证，作为职场新人也应该放低姿态。我们应该关注一年后，三年后甚至是可以规划的未来，而不要太在意当前了。总之，感谢每一位读者能在百忙之中能抽出时间看我瞎扯，感谢那些在评论中给予我鼓励的读者，正如我在评论中回复的一样：您们的支持是我坚持写作的最大动力！
 
@@ -29,8 +29,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/20787703" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（三十六）人在囧途之应聘篇（六）第一季终结篇" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十六）人在囧途之应聘篇（六）第一季终结篇" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/20787703" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（三十六）人在囧途之应聘篇（六）第一季终结篇" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十六）人在囧途之应聘篇（六）第一季终结篇" /></a>
 
-题图来自：<a href="http://overcomingsocialanxiety.com/job-interview-tips-for-social-anxiety/" target="_blank"><img src="http://i.imgur.com/HSNv7Q6.png" title="overcomingsocialanxiety" height="16px" width="16px" border="0" alt="overcomingsocialanxiety" /></a>
+题图来自：<a href="http://overcomingsocialanxiety.com/job-interview-tips-for-social-anxiety/" target="_blank"><img src="https://cdn.wenguobing.com/HSNv7Q6.png" title="overcomingsocialanxiety" height="16px" width="16px" border="0" alt="overcomingsocialanxiety" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

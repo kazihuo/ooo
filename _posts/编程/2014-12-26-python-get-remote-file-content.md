@@ -86,7 +86,7 @@ else:
 **Fabric**是一个Python的远程执行和部署工具，使用相当简洁。
 
 GitHub地址：<a href="https://github.com/fabric/fabric" target="_blank"><i class="fa fa-github"></i></a>
-官网：<a href="http://www.fabfile.org/"><img src="http://i.imgur.com/yiMwQRp.png" title="Fabric" border="0" height="16px" width="16px" alt="Fabric" /></a>
+官网：<a href="http://www.fabfile.org/"><img src="https://cdn.wenguobing.com/yiMwQRp.png" title="Fabric" border="0" height="16px" width="16px" alt="Fabric" /></a>
 
 其中，远程调用使用Fabric提供的run方法，此方法和Ruby中的run有异曲同工之妙。
 

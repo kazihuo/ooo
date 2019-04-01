@@ -30,7 +30,7 @@ SQL Server 2012 + CentOS 6.3
 我们可以这样：
 
 这是Excel中的源数据，如图1:
-![图1 Excel 源数据](http://i.imgur.com/vSbj6Ac.jpg)
+![图1 Excel 源数据](https://cdn.wenguobing.com/vSbj6Ac.jpg)
 图1 Excel 源数据
 
 **Step 1**，首先把源数据（Excel中的数据）拷贝出来，或者另存为csv文件（以逗号作为分隔），然后重命名后缀为txt。这里的文件名假设为source.txt，然后把行首标题去掉；
@@ -80,7 +80,7 @@ cat source1.txt
 ```
 
 效果如图2：
-![图2 Step 2 效果图](http://i.imgur.com/1VKz8ft.png)
+![图2 Step 2 效果图](https://cdn.wenguobing.com/1VKz8ft.png)
 图2 Step 2 效果图
 
 **Step 3**，考虑到这些数据都是基于文本存储的，那么INSERT插入时需要在值的首尾加上单引号或者双引号。代码如下：
@@ -121,7 +121,7 @@ cat source1.txt
 ```
 
 效果如图3：
-![图 3 Step 3效果图](http://i.imgur.com/3PP3uNb.png)
+![图 3 Step 3效果图](https://cdn.wenguobing.com/3PP3uNb.png)
 图 3 Step 3效果图
 
 **Step 4**，我们得到每列带单引号的文本，但是我们需要把这四个文件的每列放到一个文件中，就像炒青椒肉丝，把切好的瘦肉丝、佐料、青椒放到锅里炒一样。我们可以采用如下方法合并文件，使用paste命令，命令如下：
@@ -144,7 +144,7 @@ cat result.txt
 ```
 
 效果如图4：
-![图4 Step 4效果图](http://i.imgur.com/qlYzL3U.png)
+![图4 Step 4效果图](https://cdn.wenguobing.com/qlYzL3U.png)
 图4 Step 4效果图
 
 **Step 5**，将得到的结果进行最后的处理。我们在行尾加入INSERT语句，这里假设后面创建的临时表名称为##temp，在行尾加上括号和分号，语句如下：
@@ -167,7 +167,7 @@ INSERT INTO ##temp VALUES('4131','Fantasy','燕八','昆明');
 ```
 
 效果如图5：
-![图5 Step 5效果图](http://i.imgur.com/riTuoDD.png)
+![图5 Step 5效果图](https://cdn.wenguobing.com/riTuoDD.png)
 图5 Step 5效果图
 
 **Step 6**，创建临时表，语句如下：
@@ -185,7 +185,7 @@ CREATE TABLE ##temp
 **Step 7**，打开SQLServer的查询分析器，然后执行创建临时表的语句和插入数据的语句。
 
 执行结果如图6：
-![图6 插入数据效果](http://i.imgur.com/fXIYBUq.png)
+![图6 插入数据效果](https://cdn.wenguobing.com/fXIYBUq.png)
 图6 插入数据效果
 
 **其他说明**
@@ -246,7 +246,7 @@ sed 's/$/);/g'result.txt -i
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/21289621" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="缺乏导入数据权限，SQL Server创建测试数据" height="16px" width="16px" border="0" alt="缺乏导入数据权限，SQL Server创建测试数据" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/21289621" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="缺乏导入数据权限，SQL Server创建测试数据" height="16px" width="16px" border="0" alt="缺乏导入数据权限，SQL Server创建测试数据" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

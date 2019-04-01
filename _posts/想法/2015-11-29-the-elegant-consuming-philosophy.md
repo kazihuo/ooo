@@ -98,7 +98,7 @@ comments:
 
 我觉得这句话是对「免费才是最贵的」这个议题的最好解释。
 
-![The Starry Night By VanGoah](http://i.imgur.com/1P1OoWh.jpg)
+![The Starry Night By VanGoah](https://cdn.wenguobing.com/1P1OoWh.jpg)
 
 接下来，我将从自身经历中阐明我的观点。
 

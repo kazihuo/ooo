@@ -46,7 +46,7 @@ general log 会记录详细的 SQL 执行记录，但是生产环境如果业务
 
 除此之外，我们可以通过 init-connect 参数 + access_log + binlog 的方法进行 MySQL 的操作审计。由于 MySQL binlog 记录了所有对数据库产生实际修改的 SQL 语句、执行时间和 connection_id，但是却没有记录 connection_id 对应的详细用户信息。在后期审计进行行为追踪时，根据 binlog 记录的行为及对应的 connection_id，再加上之前连接记录进行分析，可以得出最后的结论。[^1]
 
-![Purple Scene](http://i.imgur.com/blQZ61i.jpg)
+![Purple Scene](https://cdn.wenguobing.com/blQZ61i.jpg)
 
 © Ivailo Nikolov / Purple Scene / fineartamerica.com
 

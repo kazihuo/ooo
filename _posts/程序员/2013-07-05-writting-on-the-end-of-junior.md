@@ -23,7 +23,7 @@ tags:
 
 最后一门考试是在7月2号，考完的瞬间，顿悟我的大学读书生涯已经划上了一个句号。同学们都在发表感慨，这蛋疼的大学生活终于结束了，这坑爹的学校终于要和我诀别了。每个人都在用各自的方式祭奠这收尾的大学生活，每个人都在用自己的方式庆祝这期盼已久的“凯旋”。这，是“天堂”。而我，却在思考着未来何去何从。
 
-![Writting on the end of junior](http://i.imgur.com/kkA5h4S.jpg)
+![Writting on the end of junior](https://cdn.wenguobing.com/kkA5h4S.jpg)
 
 考完后的第二天，骑自行车出去逛荡。出去才知道在学校是多么的美好，有清新的空气和优雅的环境，永远如此青春的笑脸，总是如此纯真的人心。成都的交通依然如此得糟糕，空气依然弥漫着令人窒息的味道，人们总是不按交通法规行驶，人们总是因为因为一点点小事大动干戈，总是因为自己的既得利益而做出种种，总是对该做出善举的事情无动于衷。顿时，觉得这个世界还是有太多的不和谐。静下心来看待这个世界，觉察世界的点点滴滴，再加上自己的思考，原来，我们的世界并不是自己想象中的那样。骑行到达川大，又让我的内心为之一振。宽广的校园以至于分不清马路是校内还是校外，一望无垠的绿色让我的眼睛充分享受这份美意，波澜不惊的湖水让人停下脚步静听这学校流淌着的气息，别致大气的建筑吸引着每个人的目光，最为感叹的是，每个人都露出自信的笑容，朴素的穿着折射出的是那份从容、淡定和不屈，每个人都充满朝气地为着自己心里的目标大步向前。此刻，只为你驻留。站在湖水旁，静静地冥想，是环境造就人才，还是人才赋予环境不一样的色彩。
 
@@ -37,8 +37,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9254835" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（二十四）写在大三结束之际" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十四）写在大三结束之际" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9254835" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十四）写在大三结束之际" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十四）写在大三结束之际" /></a>
 
-题图来自：<a href="http://www.cuit.edu.cn/" target="_blank"><img src="http://i.imgur.com/PrvUx6K.png" title="CUIT" height="16px" width="100px" border="0" alt="CUIT" /></a>
+题图来自：<a href="http://www.cuit.edu.cn/" target="_blank"><img src="https://cdn.wenguobing.com/PrvUx6K.png" title="CUIT" height="16px" width="100px" border="0" alt="CUIT" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

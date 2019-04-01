@@ -30,7 +30,7 @@ comments:
 
 获取信息的途径纷繁多样，比如 Wikipedia、朋友圈、微信公众平台、Twitter、Facebook、Blog、Google News、BBC……我们每天都处在信息的洪流中，好似卷入其中，无法自拔。信息的轰炸让我们变得焦虑抑或欣喜、沉默寡言抑或乐于其中。我们在信息的巨人面前，总显得如此悲哀。**此时此刻，获取高质量信息并且高效处理利用，就显得格外重要。**
 
-![480px-Vincent_Willem_van_Gogh_128](http://i.imgur.com/JDGdsom.jpg)
+![480px-Vincent_Willem_van_Gogh_128](https://cdn.wenguobing.com/JDGdsom.jpg)
 © Vincent van Gogh/Sunflowers (F.456), third version: blue green background Oil on canvas, August 1888/Wikipedia
 
 当然，获取到的信息不一定准确，比如你用某度。即使你用 Google，如果没有在信息基础上的对比、分析、佐证，同样也会被信息欺骗。笔者通常的做法是，搜索一定用 Google 本尊，搜索结果尽可能地找到原始出处，通常同一个 Issue 要找多个例证。这样做的好处是，你会得到一个相对客观相对准确的信息。另外，不轻信，这也是做一个明白人最基础也是最重要的。**我们需要掌握如此多的信息，目的就是在这个世界上不轻易地被忽悠。**

@@ -43,13 +43,13 @@ tags:
 
 Greenplum 集群采用 **Grouped Mirror** 备份方案。扩容之前，共有四台机（三台机器位于 A 机房、一台机器位于 B 机房），一个 Master 节点，一个 Standby 节点，两个 Segment 计算节点。每个计算节点有 4 主 4 备，架构图如图一：
 
-![扩容前](http://i.imgur.com/vLLX0uC.png)
+![扩容前](https://cdn.wenguobing.com/vLLX0uC.png)
 
 图一 扩容前 Greenplum 集群架构
 
 此次扩容共添加 2 台机器（两台 B 机房机器），每台机器从原来的 4 主 4 备改为原来的 8 主 8 备，架构图如图二：
 
-![扩容后](http://i.imgur.com/Ut8mYdK.png)
+![扩容后](https://cdn.wenguobing.com/Ut8mYdK.png)
 
 图二 扩容后 Greenplum 集群架构
 
@@ -58,7 +58,7 @@ Greenplum 集群采用 **Grouped Mirror** 备份方案。扩容之前，共有�
 
 扩容测试需要有测试数据，从线上导出了一张 127G 的表，耗时 30.16 分钟。导入到 Greenplum 测试环境中，耗时 1 h 40 min 23s。导入到 Greenplum 中，占用空间 142G。[2]
 
-![数据库容量大小](http://i.imgur.com/UN43mYS.png)
+![数据库容量大小](https://cdn.wenguobing.com/UN43mYS.png)
 
 图三 databaseA 容量大小
 
@@ -163,7 +163,7 @@ CREATE DATABASE gpexpand;
 
 **第八步，确认当前集群状态，如图四：**
 
-![当前集群状态](http://i.imgur.com/QjDz292.png)
+![当前集群状态](https://cdn.wenguobing.com/QjDz292.png)
 
 图四 当前集群状态
 
@@ -174,23 +174,23 @@ su - gpadmin
 gpexpand -f incre_hosts -D gpexpand
 ```
 
-![初始化 Segment 节点](http://i.imgur.com/HIW5PWJ.png)
+![初始化 Segment 节点](https://cdn.wenguobing.com/HIW5PWJ.png)
 
 图五 生成 input file 选项
 
-![初始化 Segment 节点-数据目录](http://i.imgur.com/nuL4xDm.png)
+![初始化 Segment 节点-数据目录](https://cdn.wenguobing.com/nuL4xDm.png)
 
 图六 生成 input file 选项之数据目录
 
 生成的 input file 如下：
 
-![生成的 input file](http://i.imgur.com/A8tyAmS.png)
+![生成的 input file](https://cdn.wenguobing.com/A8tyAmS.png)
 
 图七 生成的 input file
 
 **第十步，确定数据分布前状态，如图八：**
 
-![05-重新分布之前状态](http://i.imgur.com/TUDXGtU.png)
+![05-重新分布之前状态](https://cdn.wenguobing.com/TUDXGtU.png)
 
 图八 重新分布之前状态
 
@@ -232,19 +232,19 @@ compiled by GCC gcc (GCC) 4.4.2 compiled on Feb 25 2016 06:38:30'
 
 数据分布其间网卡流量如下，如图九：
 
-![数据分布网卡流量](http://i.imgur.com/ZqH3u46.png)
+![数据分布网卡流量](https://cdn.wenguobing.com/ZqH3u46.png)
 
 图九 数据分布其间网卡流量
 
 分布数据期间的状态如下，如图十：
 
-![分布数据期间的状态](http://i.imgur.com/uJqgsGh.png)
+![分布数据期间的状态](https://cdn.wenguobing.com/uJqgsGh.png)
 
 图十 分布数据期间的状态
 
 分布数据过程会话如下，如图十一：
 
-![分布过程会话](http://i.imgur.com/kexXJvG.png)
+![分布过程会话](https://cdn.wenguobing.com/kexXJvG.png)
 
 图十一 分布数据过程会话
 
@@ -252,19 +252,19 @@ compiled by GCC gcc (GCC) 4.4.2 compiled on Feb 25 2016 06:38:30'
 
 数据分布之后状态，如图十二：
 
-![数据分布之后状态](http://i.imgur.com/sTF4Rjr.png)
+![数据分布之后状态](https://cdn.wenguobing.com/sTF4Rjr.png)
 
 图十二 数据分布之后状态
 
 分布之后集群状态，如图十三：
 
-![分布之后集群状态](http://i.imgur.com/0jEvxiY.png)
+![分布之后集群状态](https://cdn.wenguobing.com/0jEvxiY.png)
 
 图十三 分布之后集群状态
 
 数据分布之后的计算节点空间容量如图十四：
 
-![数据分布之后的计算节点空间容量](http://i.imgur.com/S5QBM1C.png)
+![数据分布之后的计算节点空间容量](https://cdn.wenguobing.com/S5QBM1C.png)
 
 图十四 数据分布之后的计算节点空间容量
 
@@ -276,7 +276,7 @@ gpexpand -c -D gpexpand
 
 清理日志如图十五：
 
-![清理](http://i.imgur.com/Bj8duSm.png)
+![清理](https://cdn.wenguobing.com/Bj8duSm.png)
 
 图十五 清理日志
 

@@ -18,7 +18,7 @@ tags:
 
 工作3个月来，每天早出晚归，每天都有新的收获。这几个月来，养成的最好习惯就是写文档。从工作到现在，已经积累了数篇有点价值的文档，我想这就是经验的体现吧。GitBook上有很多优秀的文档，读者不妨拿来参考参考。我写文档严格按照要求来，出处、目录、排版、文笔、文档信息、作者信息等等，不敢有丁点马虎。这里还要提一点小技巧，一是文档可以采用软件工程的版本思想，在文档的前面增加一个更新日志，写清楚每一个版本做了什么，这样以后要查看就很明了，其实这就相当于软件中的Change Log。第二个技巧是可以采用知识管理工具进行同步，比如印象笔记、DropBox、Google Drive、百度网盘等等，这样可以减去很多麻烦。第三个技巧就是写文档不一定要使用Word、WPS，还可以使用Markdown编辑器，在线的、离线的都可以。在线的话可以使用马克飞象、离线的可以使用MarkdownPad，目前我正在积极的向Markdown转移。
 
-![Brief summary of work for three months](http://i.imgur.com/1Z2OzqW.jpg)
+![Brief summary of work for three months](https://cdn.wenguobing.com/1Z2OzqW.jpg)
 
 第二个值得一提的就是找资料的技巧。遇到问题可以快速的定位问题，快速的寻求帮助，快速的找到需要的资料，这就是你的竞争力。目前我最佩服我们老大的就是搜索的能力，他能做到现在的位置，或许这就是很关键的因素。现在遇到问题，第一考虑的就是上Google，百度已经基本弃用。当然，得益于GFW，让广大IT攻城狮苦不堪言。做技术的有一点很好，那就是任何问题都找得到靠谱的方法。比如跨越长城，我尝试过很多工具，最后还是转向付费的阵营，目前使用的是Green VPN，这个还是比较靠谱的，如果您也需要，可以先试用，如果觉得还不错，再考虑付费使用。要相信，付费的才是靠谱的。这一段时间，掌握了一些搜索技巧。每一个搞IT的都应该学习下如何高效的使用搜索引擎，知乎上有关于这方面的分享，如果感兴趣，可以点击此处查看。作为一个IT从业者，您应该或者必须使用Google。
 
@@ -34,8 +34,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（四十七）工作三个月小结" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十七）工作三个月小结" /></a>
+原文地址：<a href="" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四十七）工作三个月小结" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十七）工作三个月小结" /></a>
 
-题图来自：<a href="http://muir-way.com/blogs/news/14735641-happy-birthday-yosemite" target="_blank"><img src="http://i.imgur.com/KF9SQWy.png" title="Yosemite" height="16px" width="16px" border="0" alt="Yosemite" /></a>
+题图来自：<a href="http://muir-way.com/blogs/news/14735641-happy-birthday-yosemite" target="_blank"><img src="https://cdn.wenguobing.com/KF9SQWy.png" title="Yosemite" height="16px" width="16px" border="0" alt="Yosemite" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

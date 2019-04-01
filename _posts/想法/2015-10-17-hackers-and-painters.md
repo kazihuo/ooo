@@ -28,7 +28,7 @@ comments:
 
 「黑客与画家」是一本由硅谷创业之父 Paul Graham 所著的文集，著名博主阮一峰译。至于译者，爱读博客的读者想必不会陌生。这是一本很好看的文集，旁征博引，文笔有趣，字里行间可以窥探作者那种惊世骇俗的洞见。
 
-![Brueghel-tower-of-babel](http://i.imgur.com/5Dv7d6e.jpg)
+![Brueghel-tower-of-babel](https://cdn.wenguobing.com/5Dv7d6e.jpg)
 
 从这本书中，让我感受非常深的有几点。
 

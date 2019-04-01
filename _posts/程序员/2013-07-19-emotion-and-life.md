@@ -23,7 +23,7 @@ comments:
 
 最近的生活劳累且充实，劳累是身体累而心不累，内心却是很快乐、很轻松的。我想活在当下的生活态度是很需要的。过去已走远，无需眷顾和留念；未来还未知，更无需困扰和担忧。只有当下才是最需要把握的。老子言顺其自然，或许是看透了人世沉浮。老子又言知者不言，言者不知，我不是圣人，而且知不知，所以我所说的都是错的。
 
-![Emotion and life](http://i.imgur.com/XHsydOH.jpg)
+![Emotion and life](https://cdn.wenguobing.com/XHsydOH.jpg)
 
 回家停留了几天，又是一个人的生活。父母在身边的，你永远不会知道一个人打扫积累半年尘埃的楼房的辛苦，你永远不会知道一个人买菜做饭洗碗的不易，你永远不会知道夜深人静一个人的孤独，你永远不会知道一个人处理琐事的艰难……千金难买少年穷，成长到现在不知道经历了多少痛苦。曾经我也埋怨过，别人有的我却没有，但是岁月让我明白：所有的苦难都是上天对我们最好的馈赠。曾经很喜欢看心灵鸡汤、励志故事、成功学，现在我才明白所谓的心灵鸡汤等只不过是自欺欺人，断章取义的片段让我们顿时茅塞顿开，感觉成功如此临近；温馨有爱的故事让我们觉得醍醐灌顶，原来世界真的可以不同。可是，别人的生活总是别人的，成功是不可复制的。现在只会对这些不屑一顾，想想多少故事多少鸡汤对你的生活产生巨大的影响。所以我的每次感悟都是自己的切身感受，不会拷贝所谓的不真实。
 
@@ -35,8 +35,8 @@ comments:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9385547" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（二十五）情绪与生活" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十五）情绪与生活" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9385547" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十五）情绪与生活" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十五）情绪与生活" /></a>
 
-题图来自：<a href="http://www.wikihow.com/Gain-Control-of-Your-Emotions" target="_blank"><img src="http://i.imgur.com/jKrofsc.png" title="wikihow" height="16px" width="16px" border="0" alt="wikihow" /></a>
+题图来自：<a href="http://www.wikihow.com/Gain-Control-of-Your-Emotions" target="_blank"><img src="https://cdn.wenguobing.com/jKrofsc.png" title="wikihow" height="16px" width="16px" border="0" alt="wikihow" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -102,7 +102,7 @@ mysql>
 ## MySQL AB单向复制 ##
 
 好了，相信读者已经学会怎样打包MySQL和快速安装MySQL，接下来正式进入主题，我们先来看看一主多从架构的拓扑图：
-![图一 一主多从架构](http://i.imgur.com/twFnSZY.jpg)
+![图一 一主多从架构](https://cdn.wenguobing.com/twFnSZY.jpg)
 图一 一主多从架构
 
 该图展示了一个 master 复制多个 slave 的架构，多个 slave 和单个 slave 的实施并没有实质性的区别，在 master 端并不在乎有多少个 slave 连接自己，只要有 slave 的 IO 线程通过了连接认证，向他请求指定位置之后的 binary log 信息，他就会按照该 IO 线程的要球，读取自己的binary log 信息，返回给 slave的 IO 线程。
@@ -477,7 +477,7 @@ mysql> show processlist;
 
 好了，MySQL AB单向复制介绍完毕。接下来想想，会有这样的应用场景。比如Master和Slave之间都要进行数据同步，那么单向复制是无法完成的，因为一个是Master，一个是Slave，只能单向操作，这就像网络里的半双工一样。既然一方可以向另一方同步数据，那么两方都做成Master 不就可以实现互相同步数据了。这就是接下来要介绍的MySQL AB双向复制。同样我们来看看MySQL AB双向复制的拓扑图。
 
-![图二 MySQL AB双向复制](http://i.imgur.com/yGFM5W2.jpg)
+![图二 MySQL AB双向复制](https://cdn.wenguobing.com/yGFM5W2.jpg)
 图二 MySQL AB双向复制
 
 既然对拓扑图和原理有所了解，我们做一个实验，介绍如何使用MySQL AB双向复制，注意该实验是在MySQL单级复制的基础上做的。
@@ -665,7 +665,7 @@ mysql> select * from test;
 
 好了，MySQL AB双向复制介绍完毕，我们又想了，不管是MySQL AB单向复制，还是MySQL 双向复制，都是双方的关系。MySQL AB单向复制可以是一对一，也就是一个Master对应一个Slave，或者一对多，也就是一个Master对应多个Slave；MySQL双向复制是一对一的关系。我们可不可以这样，实现多级关系，一个Master，接下来Slave，Slave下面还有Slave。这样做有什么好处呢？这样可以缓解数据库压力。这就是接下来要介绍的MySQL多级主从复制。多级也就是A---->B---->C，A作为主服务器，B是从服务器，B跟A建立主从关系；而且B是主服务器，C作为从服务器，B跟C建立主从关系。这样：A是主服务器，B既是主服务器，又是从服务器，C是从服务器。同样，我们来看看MySQL 多级主从复制的拓扑图：
 
-![图三 MySQL 多级主从复制](http://i.imgur.com/1WNsydu.jpg)
+![图三 MySQL 多级主从复制](https://cdn.wenguobing.com/1WNsydu.jpg)
 图三 MySQL 多级主从复制
 
 该拓扑图实现 mysql 的 A 到B 的复制，再从 B 到 C 的复制。
@@ -1456,7 +1456,7 @@ mysql> select * from t2;
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/13168569" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL AB复制" height="16px" width="16px" border="0" alt="MySQL AB复制" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/13168569" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL AB复制" height="16px" width="16px" border="0" alt="MySQL AB复制" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

@@ -25,7 +25,7 @@ SQL Server快速导入数据，可以尝试的方法如下：**CTE、OpenRowSet/
 ## 1.CTE ##
 
 首先，我们看看什么是CTE。公用表表达式（Common Table Expression)是SQL SERVER 2005版本之后引入的一个特性。CTE可以看作是一个临时的结果集，可以在接下来的一个SELECT，INSERT，UPDATE，DELETE，MERGE语句中被多次引用。使用公用表达式可以让语句更加清晰简练。CTE 与派生表类似，具体表现在不存储为对象，并且只在查询期间有效。与派生表的不同之处在于，CTE 可自引用，还可在同一查询中引用多次。
-更多请点击：<a href="http://technet.microsoft.com/zh-cn/library/ms190766(v=sql.105).aspx" target="_blank"><img src="http://i.imgur.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
+更多请点击：<a href="http://technet.microsoft.com/zh-cn/library/ms190766(v=sql.105).aspx" target="_blank"><img src="https://cdn.wenguobing.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
 
 
 示例如下：
@@ -54,7 +54,7 @@ GO
 
 ## 2.OpenRowSet/OpenDataSource ##
 
-OpenRowSet和OpenDataSource都可以访问远程的数据库，但具体表现上，二者还是有差别的。OpenDataSource 不使用链接的服务器名，而提供特殊的连接信息，并将其作为四部分对象名的一部分。 而OpenRowSet 包含访问 OLE DB 数据源中的远程数据所需的全部连接信息。当访问链接服务器中的表时，这种方法是一种替代方法，并且是一种使用 OLE DB 连接并访问远程数据的一次性的、特殊的方法。可以在查询的 FROM 子句中像引用表那样引用 OpenRowSet 函数。依据 OLE DB 提供程序的能力，还可以将 而OpenRowSet 函数引用为 INSERT、UPDATE 或 DELETE 语句的目标表。尽管查询可能返回多个结果集，然而OPENROWSET 只返回第一个。更多请点击：<a href="http://technet.microsoft.com/en-us/library/ms179856.aspx" target="_blank"><img src="http://i.imgur.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
+OpenRowSet和OpenDataSource都可以访问远程的数据库，但具体表现上，二者还是有差别的。OpenDataSource 不使用链接的服务器名，而提供特殊的连接信息，并将其作为四部分对象名的一部分。 而OpenRowSet 包含访问 OLE DB 数据源中的远程数据所需的全部连接信息。当访问链接服务器中的表时，这种方法是一种替代方法，并且是一种使用 OLE DB 连接并访问远程数据的一次性的、特殊的方法。可以在查询的 FROM 子句中像引用表那样引用 OpenRowSet 函数。依据 OLE DB 提供程序的能力，还可以将 而OpenRowSet 函数引用为 INSERT、UPDATE 或 DELETE 语句的目标表。尽管查询可能返回多个结果集，然而OPENROWSET 只返回第一个。更多请点击：<a href="http://technet.microsoft.com/en-us/library/ms179856.aspx" target="_blank"><img src="https://cdn.wenguobing.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
 
 
 示例如下：
@@ -80,7 +80,7 @@ RECONFIGURE
 
 ## 3.BULK INSERT ##
 
-BULK INSERT允许用户以其指定的格式将数据文件导入到数据库表或视图中。更多请点击：<a href="http://msdn.microsoft.com/zh-cn/library/ms188365.aspx" target="_blank"><img src="http://i.imgur.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
+BULK INSERT允许用户以其指定的格式将数据文件导入到数据库表或视图中。更多请点击：<a href="http://msdn.microsoft.com/zh-cn/library/ms188365.aspx" target="_blank"><img src="https://cdn.wenguobing.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
 
 示例如下：
 
@@ -98,7 +98,7 @@ WITH (
 ## 4.bcp ##
 
 bcp 实用工具可以在 Microsoft SQL Server 实例和用户指定格式的数据文件间大容量复制数据。 使用 bcp 实用工具可以将大量新行导入 SQL Server 表，或将表数据导出到数据文件。 除非与 queryout 选项一起使用，否则使用该实用工具不需要了解 Transact-SQL 知识。 若要将数据导入表中，必须使用为该表创建的格式文件，或者必须了解表的结构以及对于该表中的列有效的数据类型。
-更多请点击：<a href="http://msdn.microsoft.com/zh-cn/library/ms162802.aspx" target="_blank"><img src="http://i.imgur.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
+更多请点击：<a href="http://msdn.microsoft.com/zh-cn/library/ms162802.aspx" target="_blank"><img src="https://cdn.wenguobing.com/5zY3SER.png" title="technet" height="16px" width="100px" border="0" alt="technet" /></a>
 
 示例如下：
 
@@ -120,11 +120,11 @@ Shell通过拼接插入字符串的方法非常灵活，并且出错较少，但
 
 最后，贴张前段时间做的图，导入数据总结：
 
-![导入数据总结](http://i.imgur.com/UK4yGEJ.jpg)
+![导入数据总结](https://cdn.wenguobing.com/UK4yGEJ.jpg)
 
 –EOF–
 
-原文地址：<a href="" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="" height="16px" width="16px" border="0" alt="" /></a>
+原文地址：<a href="" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="" height="16px" width="16px" border="0" alt="" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

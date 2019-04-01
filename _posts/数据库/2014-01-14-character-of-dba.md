@@ -20,7 +20,7 @@ tags:
 
 DBA从业性格迥异，但大多都是细心、谨慎、高抗、极具耐心、意志力强之人。从事DBA可不是一个轻松活，如果性格不好，遇事急躁，何谈胜任？在做DBA之前，可以好好地审视自己，自己的性格是否适合从事。我们认识别人不难，难的是认识自己。如果能很好地认识自己，对于人生的方向、遇事抉择也能起到很多正面的影响。
 
-![Character of DBA](http://i.imgur.com/lDlCUNm.jpg)
+![Character of DBA](https://cdn.wenguobing.com/lDlCUNm.jpg)
 
 DBA从业人员大多性格极好，这不仅是工作性质决定的，更是自我素质的体现。性格有遗传因素，但是后天改变的也大有人在。一个沉默寡言之人经过磨练也可以变得侃侃而谈，一个性格内向木讷之人经过环境改变也可以变得外向活泼开朗。性格也没有绝对地好坏之分，每一种性格也有自己的用武之地。性格内向好还是外向好？我想仁者见仁智者见智，我们没权评论别人，也不需要刻意地去改变自己的性格。
 
@@ -30,6 +30,6 @@ DBA从业人员大多性格极好，这不仅是工作性质决定的，更是�
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://www.transartdesign.com/page/dba/1" target="_blank"><img src="http://i.imgur.com/nWokFK4.png" title="DBA" height="16px" width="16px" border="0" alt="DBA" /></a>
+题图来自：<a href="http://www.transartdesign.com/page/dba/1" target="_blank"><img src="https://cdn.wenguobing.com/nWokFK4.png" title="DBA" height="16px" width="16px" border="0" alt="DBA" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

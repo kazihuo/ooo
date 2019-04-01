@@ -27,7 +27,7 @@ tags:
 
 ## 二 示意图 ##
 
-![真实环境使用冷备示意图](http://i.imgur.com/xdwARPo.jpg)
+![真实环境使用冷备示意图](https://cdn.wenguobing.com/xdwARPo.jpg)
 
 ## 三 真实环境使用冷备模拟 ##
 
@@ -318,7 +318,7 @@ mysql> select * from stu;
 
 –EOF–
 
-原文地址：<a href="" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之真实环境使用冷备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之真实环境使用冷备" /></a>
+原文地址：<a href="" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之真实环境使用冷备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之真实环境使用冷备" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

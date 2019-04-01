@@ -21,7 +21,7 @@ tags:
 
 插播下，特地做了一个思维导图，点击图片可以浏览大图。
 
-<a href="http://i.imgur.com/Ecer9TF.png" target="_blank"><img src="http://i.imgur.com/Ecer9TF.png" title="2015-07-26-meditation-of-an-atheist" border="0" alt="2015-07-26-meditation-of-an-atheist" /></a>
+<a href="https://cdn.wenguobing.com/Ecer9TF.png" target="_blank"><img src="https://cdn.wenguobing.com/Ecer9TF.png" title="2015-07-26-meditation-of-an-atheist" border="0" alt="2015-07-26-meditation-of-an-atheist" /></a>
 
 这本书是杂文集，分为几个主题。李银河老师的文笔很了不起，写的文章如诗般美丽。骈句散句，错落有致；主题鲜明，收放自如；论点严谨，引用合理。如此文笔，得益于大量阅读，耕耘不断。我记得李银河老师曾经做过编辑，这大抵也为李银河老师的写作技能增砖添瓦。这本书很薄，很快就能读完。但是，字字珠玑，每一个文字都是如此真实，好似绝佳的音符组成的美妙乐章。每篇文章，李银河老师娓娓道来，好似哲人在你耳边喃喃私语，谆谆告诫。
 

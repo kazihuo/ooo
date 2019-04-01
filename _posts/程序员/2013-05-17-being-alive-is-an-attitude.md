@@ -20,7 +20,7 @@ tags:
 
 **我相信一个人的价值观会随着时间的推移而改变，总在经历过才懂得。**当初弥足珍贵的，现在云淡风轻；以前不能释怀的，现在海阔天空；曾经一意孤行的，现在幡然醒悟。以前的态度是怎么样，曾经的生活就是怎样；现在的态度怎样，如今的生活就是如此般五颜六色。
 
-![Being alive is an attitude](http://i.imgur.com/LurZdG1.jpg)
+![Being alive is an attitude](https://cdn.wenguobing.com/LurZdG1.jpg)
 
 我们不是缺乏泛滥的信息，而是缺少深度的思考和灵性的内心。我们总在生活中感悟。多读书固然好，有的人喜欢读书，就可以多读书，而有的人不喜欢读书，就可以尽情享受生活的美好。没有必要为了在书里获得知识而强迫自己做某事。读的书不在于多，而在于精，在于阅读过程的思考和完后的总结。社会是本大书，很多知识是在书本里学不来的，所以仁者见仁，智者见智，凡事都需要拆开两面来看待。
 
@@ -39,8 +39,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/8941471" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（十八）人活着，只是一种态度" height="16px" width="16px" border="0" alt="程序员的奋斗史（十八）人活着，只是一种态度" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/8941471" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（十八）人活着，只是一种态度" height="16px" width="16px" border="0" alt="程序员的奋斗史（十八）人活着，只是一种态度" /></a>
 
-题图来自：<a href="http://izquotes.com/quote/45326" target="_blank"><img src="http://i.imgur.com/n6bZb9G.png" title="izquotes" height="16px" width="16px" border="0" alt="izquotes" /></a>
+题图来自：<a href="http://izquotes.com/quote/45326" target="_blank"><img src="https://cdn.wenguobing.com/n6bZb9G.png" title="izquotes" height="16px" width="16px" border="0" alt="izquotes" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

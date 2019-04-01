@@ -26,7 +26,7 @@ tags:
 
 走进音乐厅，一台硕大的钢琴映入眼帘。环顾四周，早已有听众静坐等候。这是一个偌大的音乐厅，但稍显斑驳，透露出历史的痕迹。舞台在音乐厅的中央，四周环绕着一排又一排的座位。伦敦交响乐团、费城交响乐团、俄罗斯国家交响乐团、慕尼黑爱乐乐团、BBC交响乐团、鲍罗丁弦乐四重奏、林肯中心爵士乐团、艾森巴赫、阿什肯纳齐、帕尔曼、穆特、马泽尔、麦斯基、克莱莫、马友友、余隆、谭盾、郎朗、李云迪等等，他们曾经在我前方的舞台上演绎着美妙的乐章。
 
-![Piano concert of shijin in GuangZhou](http://i.imgur.com/ny6YFsf.jpg)
+![Piano concert of shijin in GuangZhou](https://cdn.wenguobing.com/ny6YFsf.jpg)
 
 8点，一座城，一个人，一台琴。
 
@@ -42,7 +42,7 @@ tags:
 
 一提到钢琴，我就有一种莫名的激动。可惜，小时候家境原因，没有圆梦，如果可以……我平时听的歌大多都是钢琴曲、小提琴曲和大提琴曲，班得瑞、林海、David Garrett、Maksim Mrvica、石进、喜多郎、谭盾、川井宪次、Hans Zimmer、James Horner、梁邦彦、Itzhak Perlman、The Piano Guys、矶村由纪子、久石让……感谢这些大师带给我的美好！
 
-![ShiJIn](http://i.imgur.com/GJZdnTY.png)
+![ShiJIn](https://cdn.wenguobing.com/GJZdnTY.png)
 
 就像石进所言，他所处的年代可以看到乔丹驰骋球场，可以享受Jay的音乐。而我所处的年代，不仅可以享受Jay的音乐，还可以听到石进的个人作品音乐会。我所处的时代是一个最好的时代，实乃万幸。导演许鞍华在电影《黄金时代》里借萧红之口说道：「我不能选择怎么生怎么死，但我能选择怎么爱怎么活，这就是我的黄金时代」。也许在我的黄金时代里，我也可以选择怎么活。
 

@@ -100,7 +100,7 @@ GitHub 简称 GayHub，又称世界上最大的同性交友平台，还称程序
 
 熟练的程序员基本上都使用 Terminal 或者命令行访问 GitHub。那么问题来了，怎么优雅地使用 GitHub 呢？我觉得应该分享分享。
 
-![星夜 By ZanXiong Feng](http://i.imgur.com/SjmvjQm.jpg)
+![星夜 By ZanXiong Feng](https://cdn.wenguobing.com/SjmvjQm.jpg)
 
 © ZanXiong Feng/星夜/泼辣有图
 

@@ -29,8 +29,8 @@ MySQL集群分为三类节点：管理节点、SQL节点、存储节点。管理
 
 ## 二 MySQL集群示意图 ##
 
-![MySQL集群示意图](http://i.imgur.com/Eaz0QTm.png)
-图片来源：<a href="http://dev.mysql.com/doc/refman/5.1/en/mysql-cluster-overview.html" target="_blank"><img src="http://i.imgur.com/8dlN6sC.png" title="MySQL" border="0" alt="MySQL" height="16px" width="16px" /></a>
+![MySQL集群示意图](https://cdn.wenguobing.com/Eaz0QTm.png)
+图片来源：<a href="http://dev.mysql.com/doc/refman/5.1/en/mysql-cluster-overview.html" target="_blank"><img src="https://cdn.wenguobing.com/8dlN6sC.png" title="MySQL" border="0" alt="MySQL" height="16px" width="16px" /></a>
 
 ## 三 使用MySQL集群的优劣 ##
 
@@ -60,7 +60,7 @@ MySQL集群分为三类节点：管理节点、SQL节点、存储节点。管理
 |SQL节点   |192.168.1.13     | sql02  |
 |----------+------------+-----------------|
 
-![MySQL集群网络拓扑图](http://i.imgur.com/T2vpHZq.jpg)
+![MySQL集群网络拓扑图](https://cdn.wenguobing.com/T2vpHZq.jpg)
 MySQL集群网络拓扑图
 
 ### 4.2 操作系统版本 ###
@@ -783,11 +783,11 @@ Id= 5
 
 ## 五 参考资料 ##
 
-MySQL Cluster：<a href="http://dev.mysql.com/doc/refman/5.1/en/mysql-cluster.html" target="_blank"><img src="http://i.imgur.com/8dlN6sC.png" title="MySQL Cluster" height="16px" width="16px" border="0" alt="MySQL Cluster" /></a>
+MySQL Cluster：<a href="http://dev.mysql.com/doc/refman/5.1/en/mysql-cluster.html" target="_blank"><img src="https://cdn.wenguobing.com/8dlN6sC.png" title="MySQL Cluster" height="16px" width="16px" border="0" alt="MySQL Cluster" /></a>
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/17481389" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL 集群" height="16px" width="16px" border="0" alt="MySQL 集群" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/17481389" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL 集群" height="16px" width="16px" border="0" alt="MySQL 集群" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

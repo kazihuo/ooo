@@ -54,7 +54,7 @@ tags:
 
 **biti_rainy：**我学习oracle的时候oracle数据库还为广泛应用，DBA也比较少，算是懵懂的在正确的时间进了正确的门。2001年到2006年真的是DBA学习成长的黄金时期，那时候涌现了一堆有影响力的人。这不是说现在的oracle DBA技能就比那时候的差，而是现在的确算不上黄金时期了，因为oracle已经广泛应用了。但是现在这个时段就是做数据库服务的好时期，而我们那时候想做却不成气候。2006年的时候我招了个应届生叫简朝阳，后来我建议他重点学习mysql，并给予了很大的自由度和计划到他，帮助他成长，后来他写了本书，同时自己成长的非常快，在mysql领域也是非常有影响力。当时之所以建议他学习mysql，是因为oracle的硬件实施整体成本非常高，一用上小型机和SAN存储，oracle费用其实不足total费用的20%。一方面为了公司节约成本考虑，另一方面也感觉到这是未来的趋势，大环境给予了他这个机遇，而我只是提前做出了判断并引导了他。现在由于互联网企业的发展，好像nosql发展的迅猛，这其实不过是在特定场景解决特定问题罢了。我认为未来十年nosql可以取代RDBMS是个伪命题，其实发展到后来两者趋势逐渐一致，nosql想要通用也得具有RDBMS的很多特征，就越长越像了。Google最近出的数据库，其实我看很多特点和概念也类似oracle呢，概念上大家都没什么新鲜玩意,都是在规模上的量变导致质变。而一般用户解决规模问题最简单的是硬件、网络的突破，这更容易带来数据库应用的发展。所以我更主张大家透过现象去看技术的实质，研究各种技术的特点背后的优劣到底是怎么回事，这样才有自己的看法。Oracle、mysql、nosql都是一些具体的数据管理的表现形式，他们主要面对什么客户、解决什么问题、带来什么价值，看透了这些，我们就不会被表象所牵引。当然，我认为管理好数据之后，发掘数据价值是一个很重要的事情。
 
-From：<a href="http://www.itpub.net/thread-1573610-1-1.html" target="_blank"><img src="http://i.imgur.com/luz6LB6.png" title="ITPUB" border="0" alt="ITPUB" height="16px" width="16px" /></a>
+From：<a href="http://www.itpub.net/thread-1573610-1-1.html" target="_blank"><img src="https://cdn.wenguobing.com/luz6LB6.png" title="ITPUB" border="0" alt="ITPUB" height="16px" width="16px" /></a>
 
 黄杉
 1）MYSQL 重要参数的作用； 包括副作用哪些呢？ 是key_buffer_size、tmp_table_size、sort_buffer_size、innodb_buffer_size、innodb_log_file_size、innodb_flush_logs_at_trx_commit、max_tmp_tables等等！
@@ -63,7 +63,7 @@ From：<a href="http://www.itpub.net/thread-1573610-1-1.html" target="_blank"><i
 4）性能测试要会； 没有弄过，如何做，用啥工具，如何看测试过后的各种测试数据。
 5）LINUX 熟练操作； linux操作都包括哪些方面呢？能举几个例子说明一下吗？
 
-From：<a href="http://www.itpub.net/thread-1480980-1-1.html" target="_blank"><img src="http://i.imgur.com/luz6LB6.png" title="ITPUB" border="0" alt="ITPUB" height="16px" width="16px" /></a>
+From：<a href="http://www.itpub.net/thread-1480980-1-1.html" target="_blank"><img src="https://cdn.wenguobing.com/luz6LB6.png" title="ITPUB" border="0" alt="ITPUB" height="16px" width="16px" /></a>
 
 –EOF–
 

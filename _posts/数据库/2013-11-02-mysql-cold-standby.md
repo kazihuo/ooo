@@ -27,7 +27,7 @@ tags:
 
 ## 二 冷备示意图 ##
 
-![冷备示意图](http://i.imgur.com/55Y66DN.jpg)
+![冷备示意图](https://cdn.wenguobing.com/55Y66DN.jpg)
 
 ## 三 冷备实验 ##
 
@@ -206,7 +206,7 @@ mysql> select * from stu;
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/14053345" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之冷备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之冷备" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/14053345" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之冷备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之冷备" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

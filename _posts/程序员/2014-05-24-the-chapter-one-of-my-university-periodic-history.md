@@ -18,7 +18,7 @@ tags:
 
 这一系列文章，我想用话题的形式组织，这样更有头绪。如果用时间来组织，一来大多事情已忘却，二来稍显混乱。整个大学还算写了不少的文章，文笔稍有进步。如果以后我有什么副业，定是写作。这一系列文章略带伤感，但更多的是记录，是自我激励，是给学弟学妹一个借鉴。常言读万卷书不如行万里路，但行万里路不如阅人无数。我会站在我的视角，把我接触的人和我对这些人的思考展现给读者。写这一些列文章已经想了很久了，一直拖拖拉拉，现在才执笔。我想有些事情如果你认为是对的，那么立马去做，不然以后更没时间或心思去做。如果问写这些文章有什么意义，与我而言，意义重大。文字归文字，真正重要的是字里行间透露的对大学的追忆和思考。我不善言辞，但写作也算是我的一大爱好，也是一种表达方式。常言言多必失，该说的我一定说，不该说或者与我无关的事情我不必说。别人说我不善于表达，我一直试着改变，现在已经把这个问题想明白了，我为什么要活在别人的世界里？不善言辞的我照样可以活得很精彩，世界是自己的，与他人毫无关系。如果我们都要按照别人提供的路线走，那我只能说这样的人生百般无趣。
 
-![The chapter one of my university periodic history](http://i.imgur.com/ChzJFib.jpg)
+![The chapter one of my university periodic history](https://cdn.wenguobing.com/ChzJFib.jpg)
 
 整个大学，每天怎样汲取营养成为我的主旋律。所以，浪费时间的事情我不会去做。在旁人眼里，我是一个很勤奋的人，诚然，确实如此。如果有多余的时间，基本上可以在图书馆或者体育场看到我的身影。人生苦短，把大把的时间做些自认无聊的事情实在不是我的作风。别人在疯狂的游戏，我在学习；别人在肆意的狂欢，我在看书。别人在刷微博、空间、人人、微信，我在做有意义的事情。坚持一日作罢，如果长年累月如此，那这样的差距不是一点点。当然，我不是自我炫耀，而是想说明应该好好珍惜时间做有意义的事情。杨绛在她的《一百岁感言》里写道：“少年贪玩，青年迷恋爱情，壮年汲汲于成名成家，暮年自安于自欺欺人”。我的青年没有迷恋爱情，但壮年肯定是汲汲与成名成家。不知何日我才会明白当初的追求有几多有价值。她还说道：“一个人经过不同程度的锻炼，就获得不同程度的修养、不同程度的效益。好比香料，捣得愈碎，磨得愈细，香得愈浓烈”。此句非常赞同，你能承受多少，背负多少，在于你的锻炼和忍耐有多少。
 
@@ -28,8 +28,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/26817259" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（三十七）大学断代史（一）开篇" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十七）大学断代史（一）开篇" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/26817259" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（三十七）大学断代史（一）开篇" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十七）大学断代史（一）开篇" /></a>
 
-题图来自：<a href="http://yb.cuit.edu.cn/" target="_blank"><img src="http://i.imgur.com/PrvUx6K.png" title="CUIT" height="16px" width="100px" border="0" alt="CUIT" /></a>
+题图来自：<a href="http://yb.cuit.edu.cn/" target="_blank"><img src="https://cdn.wenguobing.com/PrvUx6K.png" title="CUIT" height="16px" width="100px" border="0" alt="CUIT" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

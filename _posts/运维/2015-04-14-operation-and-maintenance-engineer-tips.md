@@ -64,7 +64,7 @@ tags:
 
 基础的运维实际上相对简单，做好的前提下应该考虑更长远的发展。
 
-![2015-04-14-operation-and-maintenance-engineer-tips](http://i.imgur.com/2EpIX7H.jpg)
+![2015-04-14-operation-and-maintenance-engineer-tips](https://cdn.wenguobing.com/2EpIX7H.jpg)
 
 ### 工作场景 ###
 ***

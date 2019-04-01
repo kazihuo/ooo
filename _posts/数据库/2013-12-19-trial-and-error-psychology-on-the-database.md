@@ -64,7 +64,7 @@ mysql> SELECT id,name FROM test WHERE id=(SELECT max(id) FROM test);
 
 我就是一个在学习过程喜欢尝试，喜欢试错的人，这样带给我的好处就是可以遇到更多的问题，学习到更多知识。同样一个问题，在不同的软件版本，不同的实验环境结果是不一样的。如果你尝试在排列组合允许的范围内模拟各种问题，那样你的成长会相当地快。同理，把试错心理运用在生活中，你可能会遇到更多的问题，这样你会尝试使用更多的办法来解决。年轻人不要怕犯错，害怕犯错的人是很难取得成长的。
 
-![Trial and error psychology on the database](http://i.imgur.com/qssBzgF.jpg)
+![Trial and error psychology on the database](https://cdn.wenguobing.com/qssBzgF.jpg)
 
 从心理学上来讲，人类都有规避伤害的本能，埋藏在内心的规避伤害本能让我们错过太多。比如我们习惯了很多东西，一旦尝试其他的，就会遇到各种麻烦，但往往你尝试其他的会得到更好的，很多时候我们应该习惯改变习惯。尤其对做IT的人来说，死守“最好”的城池会让你止步不前，也会错过很多更好的东西。当你摆脱习惯，尝试其他，你的世界可以多一点不一样。在学习数据库时，如果不害怕“伤害”，不麻烦各种问题，你将会得到更广阔的天空。
 
@@ -74,6 +74,6 @@ mysql> SELECT id,name FROM test WHERE id=(SELECT max(id) FROM test);
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://fineartamerica.com/featured/trial-and-error-larry-mulvehill.html" target="_blank"><img src="http://i.imgur.com/c9ZcLir.png" title="" height="16px" width="100px" border="0" alt="" /></a>
+题图来自：<a href="http://fineartamerica.com/featured/trial-and-error-larry-mulvehill.html" target="_blank"><img src="https://cdn.wenguobing.com/c9ZcLir.png" title="" height="16px" width="100px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -16,7 +16,7 @@ tags:
 
 原本我是其他寝室的，缘分使然，让我和现在的室友相聚。和好友A、好友B、好友C之间发生了太多太多，以至于太多回忆从脑海中隐隐浮现。A在我的正前方，无数个夜晚不知道他在被窝里做些什么，我睡了很久还依稀可以听见他的声音。大学和A同学谈得最多，每次都是相当长的时间，在我的心里，一直把他当做大哥。每一次谈话都从中收获颇丰，增长不少见识。也是A同学让我变得比以前开朗。同一件事情，他比较乐观，我比较悲观；他看到最多的是希望，我看到最多的是绝望。也许是性格方面的差异，也让我们形成互补效应。同时，他也是我大学最应该感谢的好友。B同学的床位在我的对面，他更是一个乐天派，基本上看不到他因为什么事情担心和焦虑。每天的生活过得相当潇洒，看动漫、打游戏、打篮球，这几件事几乎把他的大学生活填满。每个人都有自己的追求，只要自己过得开心，足矣。我们寝室基本上都是早睡，每天晚上23:30关灯，他会爬到床上，在23:30之前跟我们说一句他关灯了，我们应和后，在床上趴着，一只手往下，摸到开关，得意的一生滴答声，整个寝室便进入黑暗的天堂。C同学在我的斜对面，他也是一个比较开朗乐观的人。整个寝室除了我，性格都比较乐观，正是在这样的环境下，我改变了很多。C同学很高，但很瘦，像一根电杆伫立在你的面前。他为人耿直豪爽，很好相处，也很喜欢帮助别人，好友的事情往往看得比自己的事情还重要。我们四个宛若一家人，大家互帮互助，度过了这最美好的青春。在一起发生的囧事、乐事，让我们的生活平添几分快乐。在这几个好兄弟的影响下，我也改变很多。什么样的环境塑造什么样的人，你结实的人往往反映了你是什么样的人。很庆幸和他们相聚。
 
-![The chapter eight of my university periodic history](http://i.imgur.com/17sJqQS.jpg)
+![The chapter eight of my university periodic history](https://cdn.wenguobing.com/17sJqQS.jpg)
 
 说完室友，接下来讲讲其他同学。
 
@@ -40,8 +40,8 @@ G同学用三个字形容最贴切不过：文艺范。他的身上，随处可�
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/37993183" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（四十四）大学断代史（八）大学的友谊" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十四）大学断代史（八）大学的友谊" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/37993183" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四十四）大学断代史（八）大学的友谊" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十四）大学断代史（八）大学的友谊" /></a>
 
-题图来自：<a href="http://what-buddha-said.net/drops/Selfless_Friendship_is_Sweetest.htm" target="_blank"><img src="http://i.imgur.com/7cj4dwE.png" title="what-buddha-said" height="16px" width="16px" border="0" alt="what-buddha-said" /></a>
+题图来自：<a href="http://what-buddha-said.net/drops/Selfless_Friendship_is_Sweetest.htm" target="_blank"><img src="https://cdn.wenguobing.com/7cj4dwE.png" title="what-buddha-said" height="16px" width="16px" border="0" alt="what-buddha-said" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -18,14 +18,14 @@ tags:
 
 分享，需要自己有颗无私的心。不管所有之大，不管所得之多，只要肯分享，就是好的，就会收获更多。
 
-![Share is a virtue](http://i.imgur.com/87uPaHP.jpg)
+![Share is a virtue](https://cdn.wenguobing.com/87uPaHP.jpg)
 
 **分享是种美德。**
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/8082780" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（九）分享是种美德" height="16px" width="16px" border="0" alt="程序员的奋斗史（九）分享是种美德" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/8082780" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（九）分享是种美德" height="16px" width="16px" border="0" alt="程序员的奋斗史（九）分享是种美德" /></a>
 
-题图来自：<a href="http://venspired.com/you-are-what-you-share/" target="_blank"><img src="http://i.imgur.com/0pt33e6.gif" title="Share" height="16px" width="16px" border="0" alt="Share" /></a>
+题图来自：<a href="http://venspired.com/you-are-what-you-share/" target="_blank"><img src="https://cdn.wenguobing.com/0pt33e6.gif" title="Share" height="16px" width="16px" border="0" alt="Share" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

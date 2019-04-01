@@ -39,14 +39,14 @@ tags:
 
 ## 二 延时备份示意图 ##
 
-![MySQL备份与恢复之MySQL](http://i.imgur.com/UYBSKEN.jpg)
+![MySQL备份与恢复之MySQL](https://cdn.wenguobing.com/UYBSKEN.jpg)
 MySQL备份与恢复之MySQL 延时备份示意图
 
 三 延时备份模拟
 
 网络拓扑图
 
-![MySQL备份与恢复之MySQL](http://i.imgur.com/4uaZGAF.jpg)
+![MySQL备份与恢复之MySQL](https://cdn.wenguobing.com/4uaZGAF.jpg)
 MySQL备份与恢复之MySQL 延时备份网络拓扑图
 
 实验环境简介。
@@ -586,11 +586,11 @@ esac
 
 ## 五 资源下载 ##
 
-percona-toolkit-2.1.7-1.noarch.rpm：<a href="http://download.csdn.net/detail/wentasy/6679233" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="percona-toolkit-2.1.7-1.noarch.rpm" height="16px" width="16px" border="0" alt="percona-toolkit-2.1.7-1.noarch.rpm" /></a>
+percona-toolkit-2.1.7-1.noarch.rpm：<a href="http://download.csdn.net/detail/wentasy/6679233" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="percona-toolkit-2.1.7-1.noarch.rpm" height="16px" width="16px" border="0" alt="percona-toolkit-2.1.7-1.noarch.rpm" /></a>
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/17201097" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="MySQL备份与恢复之MySQL" height="16px" width="16px" border="0" alt="MySQL备份与恢复之MySQL" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/17201097" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之MySQL" height="16px" width="16px" border="0" alt="MySQL备份与恢复之MySQL" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

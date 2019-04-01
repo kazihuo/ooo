@@ -45,7 +45,7 @@ tags:
 
 一线城市稀缺。想做 MySQL DBA，就不要想着去三线城市或者以下了，基本用不到。MySQL 占了互联网行业的大半壁江山，如果想从事 MySQL DBA，尽量前往一线城市，机会较多，得到锻炼的可能性也就越大。人才的分布同样符合二八原则，优秀的人永远都是少数。同 Oracle 不同，MySQL 当前发展正猛，机遇与挑战比趋近成熟的 Oracle 更多。
 
-![2015-04-14-mysql-dba-tips](http://i.imgur.com/VMb5fqF.jpg)
+![2015-04-14-mysql-dba-tips](https://cdn.wenguobing.com/VMb5fqF.jpg)
 
 ### 工作场景 ###
 ***
@@ -164,4 +164,4 @@ tags:
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
 
-题图来自：<a href="http://www.create-hub.com/comment/quotes-about-technology/" target="_blank"><img src="http://i.imgur.com/rNdmBXL.png" title="MySQL DBA Tips" height="16px" width="16px" border="0" alt="MySQL DBA Tips" /></a>
+题图来自：<a href="http://www.create-hub.com/comment/quotes-about-technology/" target="_blank"><img src="https://cdn.wenguobing.com/rNdmBXL.png" title="MySQL DBA Tips" height="16px" width="16px" border="0" alt="MySQL DBA Tips" /></a>

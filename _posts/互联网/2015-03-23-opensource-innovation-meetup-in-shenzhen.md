@@ -52,7 +52,7 @@ tags:
 
 上一张图，彭老师在尽情地演讲。PS：拍照能力有限，拍了好几张都拍得不好，就传这一张表示下吧。题图来自：By Robin.
 
-![MySQL-Plinux](http://i.imgur.com/oqMmehp.png)
+![MySQL-Plinux](https://cdn.wenguobing.com/oqMmehp.png)
 
 ## 腾讯自动化工具与开发的思路 ##
 ***

@@ -408,7 +408,7 @@ PS：两次插入数据，每次 两亿，已经耗去我 1 个多小时的时�
 
 截个图给读者欣赏欣赏。
 
-![2015-01-15-solution-of-droping-large-table-under-mysql](http://i.imgur.com/63SkdXF.png)
+![2015-01-15-solution-of-droping-large-table-under-mysql](https://cdn.wenguobing.com/63SkdXF.png)
 
 Enjoy!
 

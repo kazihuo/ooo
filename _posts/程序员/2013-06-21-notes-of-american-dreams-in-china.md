@@ -17,7 +17,7 @@ tags:
 
 端午节日期间把《中国合伙人》看了，不管是从故事的剪辑、拍摄技巧、故事的紧凑性，还是从演员的角度品评，都是一部很不错的电影。姜还是老的辣，陈可辛比起赵薇那可是有水准多了。不过作为赵薇的处女座，《致青春》还不算太菜。两部电影都是青春记忆，《致青春》是回忆型，《中国合伙人》是励志型。把整部电影看完后，内心受到很到的触动，想写点什么。无奈最近事情太多，一拖再拖，现在才写完。
 
-![Notes of american dreams in china](http://i.imgur.com/7Wn4H3H.jpg)
+![Notes of american dreams in china](https://cdn.wenguobing.com/7Wn4H3H.jpg)
 
 看看百度百科对几个主角的简介：成东青，从苦逼屌丝到高富帅；孟晓骏，海归军师；王阳，从愤青成长为成功商人。我觉得这部电影更是一部几个屌丝逆袭的故事，从平凡到不平凡，从普通到不普通，每个人都实现了蜕变。剧中很多场景都让我有一种为之一动的感触，不管是他们各自受到的打击、挫折、偏见、耻辱，还是他们各自的爱情故事。我们都是平凡人，都会在各自的人生十字路口转角，可是大多物是人非，我们总会变成曾经我们讨厌的自己，我们总会觅寻在迷失的青春，我们变成的模样又或许是我们不曾预见的那般。每个角色的转变都是一种突破，每一次的突破都是一种成功。
 
@@ -69,8 +69,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9147941" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（二十二）《中国合伙人》联想录" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十二）《中国合伙人》联想录" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9147941" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十二）《中国合伙人》联想录" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十二）《中国合伙人》联想录" /></a>
 
-题图来自：<a href="http://sugarmonkey.hatenablog.com/entry/2013/09/08/%E3%80%90%E4%B8%AD%E5%9B%BD%E7%94%9F%E6%B4%BB%E3%80%91_%E5%A4%A7%E3%83%92%E3%83%83%E3%83%88%E6%98%A0%E7%94%BB%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%90%88%E4%BC%99%E4%BA%BA(American_dreams_in_China)" target="_blank"><img src="http://i.imgur.com/hLYOs9z.png" title="" height="16px" width="16px" border="0" alt="http://i.imgur.com/Ja3bFT1.png" /></a>
+题图来自：<a href="http://sugarmonkey.hatenablog.com/entry/2013/09/08/%E3%80%90%E4%B8%AD%E5%9B%BD%E7%94%9F%E6%B4%BB%E3%80%91_%E5%A4%A7%E3%83%92%E3%83%83%E3%83%88%E6%98%A0%E7%94%BB%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%90%88%E4%BC%99%E4%BA%BA(American_dreams_in_China)" target="_blank"><img src="https://cdn.wenguobing.com/hLYOs9z.png" title="" height="16px" width="16px" border="0" alt="https://cdn.wenguobing.com/Ja3bFT1.png" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

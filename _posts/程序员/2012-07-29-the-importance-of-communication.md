@@ -20,7 +20,7 @@ tags:
 
 平时的沟通交流，因人而异。不同的人，不同的方式。自己在这方面也很欠缺，以后要多花时间培养。我觉得在和人沟通时，一定要看着对方的眼睛，用心、真诚。
 
-![The importance of communication](http://i.imgur.com/0GQNSkR.jpg)
+![The importance of communication](https://cdn.wenguobing.com/0GQNSkR.jpg)
 
 上学期在做项目的时候，自己遇到很多问题，或者想跟队友表达我的想法，自己的说话能力很弱，所以在这方面耽搁了不少时间。自己也意识到这个问题，一是向别人学习，比如小姜；二是在生活中努力提高自己的表达能力。我相信只要自己能意识到问题就是好的。
 
@@ -28,8 +28,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/7799651" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="程序员的奋斗史（七）沟通交流、表达能力的重要性" height="16px" width="16px" border="0" alt="程序员的奋斗史（七）沟通交流、表达能力的重要性" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/7799651" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（七）沟通交流、表达能力的重要性" height="16px" width="16px" border="0" alt="程序员的奋斗史（七）沟通交流、表达能力的重要性" /></a>
 
-题图来自：<a href="http://blog.ogroup.com.au/effective-communication-take-business-forward/" target="_blank"><img src="http://i.imgur.com/VKft3Yx.jpg" title="" border="0" alt="" height="16px" width="50px" /></a>
+题图来自：<a href="http://blog.ogroup.com.au/effective-communication-take-business-forward/" target="_blank"><img src="https://cdn.wenguobing.com/VKft3Yx.jpg" title="" border="0" alt="" height="16px" width="50px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

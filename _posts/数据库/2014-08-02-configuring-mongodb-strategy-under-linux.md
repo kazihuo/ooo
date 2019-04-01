@@ -21,7 +21,7 @@ tags:
 
 ## 一 MongoDB简介 ##
 
-> MongoDB是一个高性能，开源，无模式的文档型数据库，是当前NoSql数据库中比较热门的一种。它在许多场景下可用于替代传统的关系型数据库或键/值存储方式，Mongo使用C++开发。Mongo的官方网站地址是：<a href="http://www.mongodb.org/"><img src="http://i.imgur.com/16LI7Gj.png" title="MongoDB" border="0" alt="MongoDB" height="16px" width="16px" /></a>，读者可以在此获得更详细的信息。
+> MongoDB是一个高性能，开源，无模式的文档型数据库，是当前NoSql数据库中比较热门的一种。它在许多场景下可用于替代传统的关系型数据库或键/值存储方式，Mongo使用C++开发。Mongo的官方网站地址是：<a href="http://www.mongodb.org/"><img src="https://cdn.wenguobing.com/16LI7Gj.png" title="MongoDB" border="0" alt="MongoDB" height="16px" width="16px" /></a>，读者可以在此获得更详细的信息。
 
 **特点：**
 它的特点是高性能、易部署、易使用，存储数据非常方便。主要功能特性有：
@@ -67,7 +67,7 @@ tags:
 > RedHat：6.1 x86_64
 > MongoDB：2.6.3
 
-首先，我们到官网：<a href="http://www.mongodb.org/downloads"><img src="http://i.imgur.com/16LI7Gj.png" title="MongoDB" border="0" alt="MongoDB" height="16px" width="16px" /></a>，然后下载64位Linux 版的MongoDB；
+首先，我们到官网：<a href="http://www.mongodb.org/downloads"><img src="https://cdn.wenguobing.com/16LI7Gj.png" title="MongoDB" border="0" alt="MongoDB" height="16px" width="16px" /></a>，然后下载64位Linux 版的MongoDB；
 
 然后，做配置MongoDB之前的准备工作；
 
@@ -345,10 +345,10 @@ exit $RETVAL
 
 ## 四 参考资料 ##
 
-MongoDB（分布式文档存储数据库） <a href="http://baike.baidu.com/subview/3385614/9338179.htm" target    ="_blank"><img src="http://i.imgur.com/yvMcMOD.png" title="baike" border="0" alt="baike" height="16px" width="16px" /></a>
+MongoDB（分布式文档存储数据库） <a href="http://baike.baidu.com/subview/3385614/9338179.htm" target    ="_blank"><img src="https://cdn.wenguobing.com/yvMcMOD.png" title="baike" border="0" alt="baike" height="16px" width="16px" /></a>
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/38345537" target="_blank"><img src="http://i.imgur.com/BROigUO.jpg" title="深入理解MongoDB（一）Linux下配置MongoDB全攻略" height="16px" width="16px" border="0" alt="深入理解MongoDB（一）Linux下配置MongoDB全攻略" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/38345537" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="深入理解MongoDB（一）Linux下配置MongoDB全攻略" height="16px" width="16px" border="0" alt="深入理解MongoDB（一）Linux下配置MongoDB全攻略" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
