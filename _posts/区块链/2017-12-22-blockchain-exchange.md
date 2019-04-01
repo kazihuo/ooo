@@ -23,7 +23,7 @@ tags:
 
 [币问](https://www.bitask.org) 上有个提问，[你觉得哪个交易所最好用？](https://www.bitask.org/question/279)，这是笔者的回答。
 
-![Blockchain exchange](https://i.imgur.com/apE1zlt.jpg)
+![Blockchain exchange](https://cdn.wenguobing.com/apE1zlt.jpg)
 
 > 题图来自: © Universal Block Chainingn / Blockchain DApp / 8855104.com
 
@@ -98,7 +98,7 @@ OTCBTC 是台湾人郑伊廷团队作品。
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -126,7 +126,7 @@ OTCBTC 是台湾人郑伊廷团队作品。
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

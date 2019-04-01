@@ -28,7 +28,7 @@ Zcash 代号 ZEC。Zcash 是建立在区块链上的隐私保密技术。和比�
 
 Zcash 钱包资金分 2 种：透明资金、私有资金，透明资金类似比特币资金；私有资金加强了隐私性，涉及到私有资金的交易是保密不可查的，透明资金与透明资金的交易是公开可查的。
 
-![Zcash Investment Trust has officially Filed with the SEC](https://i.imgur.com/winFlax.jpg)
+![Zcash Investment Trust has officially Filed with the SEC](https://cdn.wenguobing.com/winFlax.jpg)
 
 > 题图来自: © Chuck / Zcash Investment Trust has officially Filed with the SEC / medium.com
 
@@ -91,7 +91,7 @@ Zcash 采用的 zk-SNARKs 零知识证明解决了比特币半匿名性的问题
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -119,7 +119,7 @@ Zcash 采用的 zk-SNARKs 零知识证明解决了比特币半匿名性的问题
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

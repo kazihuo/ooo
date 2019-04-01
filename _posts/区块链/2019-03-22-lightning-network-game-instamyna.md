@@ -45,19 +45,19 @@ Instamyna 是基于比特币闪电网络的比特币挖矿游戏。读者将获�
 
 首先，Chrome 打开游戏链接，读者将会看到如下的页面，可以看到有 Light、Standard、Pro 三个套餐选择，当然需要支付的聪也是不同的。
 
-![](https://i.imgur.com/qpm59gZ.png)
+![](https://cdn.wenguobing.com/qpm59gZ.png)
 
 接着，笔者选择了 1000 Satoshis Instamyna Light，选择了 #3 合约，使用 Hoo 钱包支付了 1000 聪（实际支付了 1001 Satoshi，Hoo [iOS](https://dbarobin.com/2019/03/22/lightning-network-hoo-ios) 和 Android 均支持闪电网络），之后可以看到秒级支付，合约马上开始执行。
 
-![](https://i.imgur.com/rwpML8n.png)
+![](https://cdn.wenguobing.com/rwpML8n.png)
 
 然后，看到如下图的 30 秒等待页面：
 
-![](https://i.imgur.com/u3oZJLI.png)
+![](https://cdn.wenguobing.com/u3oZJLI.png)
 
 最后，笔者输了，读者看到的图是这个样子的。
 
-![](https://i.imgur.com/vbwwdTU.png)
+![](https://cdn.wenguobing.com/vbwwdTU.png)
 
 ## 验证
 ***
@@ -122,7 +122,7 @@ Enjoy！
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -155,7 +155,7 @@ Enjoy！
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

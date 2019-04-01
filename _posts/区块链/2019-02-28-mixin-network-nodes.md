@@ -17,7 +17,7 @@ tags:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
-![](https://i.imgur.com/fIWTrII.png)
+![](https://cdn.wenguobing.com/fIWTrII.png)
 
 > 题图来自: © Mixin Network / All Cryptocurrencies Accepted Here / bitcointalk.org
 
@@ -37,7 +37,7 @@ Mixin Network 是何方神圣呢？笔者简单介绍下：
 
 根据 GitHub 公开的 [Mixin Network Nodes](https://github.com/MixinNetwork/mixin/blob/master/config/nodes.json)，笔者进行了溯源，主要追踪了节点所属、IP 地址、云服务商、IP 所属地，做了思维导图，如图一：
 
-![](https://i.imgur.com/Fn2bz8O.png)
+![](https://cdn.wenguobing.com/Fn2bz8O.png)
 
 图一 Mixin Network 主网节点
 
@@ -47,7 +47,7 @@ Mixin Network 是何方神圣呢？笔者简单介绍下：
 
 节点所属如图二：
 
-![](https://i.imgur.com/whTO9xb.png)
+![](https://cdn.wenguobing.com/whTO9xb.png)
 
 图二 Mixin Network 主网节点所属
 
@@ -77,7 +77,7 @@ Mixin Messager 是我非常喜欢的应用，真心祝愿 Mixin Network 主网�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/RBmpxTL.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -110,7 +110,7 @@ Mixin Messager 是我非常喜欢的应用，真心祝愿 Mixin Network 主网�
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

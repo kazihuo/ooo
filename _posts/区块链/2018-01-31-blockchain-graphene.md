@@ -33,7 +33,7 @@ tags:
 
 石墨烯是区块链工具组，由 **Cryptonomex** 公司开发，GitHub 项目地址：[https://github.com/cryptonomex/graphene](https://github.com/cryptonomex/graphene)，采用 C++ 编写，丹尼尔 • 拉里默（Dan Larimer）是 Cryptonomex 的创始人，而他的父亲斯坦•拉里默（Stan Larimer）是 Cryptonomex 的主席。Cryptonomex 基本上都是在石墨烯区块链库基础上做开发的，石墨烯区块链库已经被多个区块链所采纳，比如 BitShares，Muse，Identabit，Play 等。[1] 与大多数数字货币类似，Graphene (石墨烯) 使用区块链来记录参与者的转账信息及市场行为。由于每个区块总是指向前一个区块，因此一个区块链条包含了所有在网络上发生的交易信息。区块链是一个公开的、可审计的账簿，每个人都能够查看详细数据，并验证交易、市场订单和买卖盘数据。
 
-![2018-01-30-blockchain-graphene](https://i.imgur.com/0xt24BW.jpg)
+![2018-01-30-blockchain-graphene](https://cdn.wenguobing.com/0xt24BW.jpg)
 
 > 题图来自: © theschrammhit001 / Why EOS may represent your best bet if you dream of turning $10K into a million / steemit.com
 
@@ -95,7 +95,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -123,7 +123,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

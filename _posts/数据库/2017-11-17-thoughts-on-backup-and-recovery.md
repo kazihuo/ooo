@@ -16,7 +16,7 @@ tags:
 
 数据安全对于普通人而言会很陌生，然而早已在 DBA 心里生根发芽。数据对于一家企业的重要程度不言而喻，个人数据的管理也是极其重要，否则当数据损坏或者永久丢失，那将是毁灭性的灾难。
 
-![Dropbox plus](https://i.imgur.com/mQWnful.jpg)
+![Dropbox plus](https://cdn.wenguobing.com/mQWnful.jpg)
 
 既然提到备份与恢复，笔者简单介绍下 MySQL 数据库的备份与恢复。按照备份后产生的副本文件是否可以编辑，可以将 MySQL 的备份方法分为逻辑备份和物理备份。逻辑备份可以简单理解成跟版本无关的 SQL 文件，物理备份是磁盘文件的快照。数据备份期间，按照是否需要停止 MySQL 服务实例，可以将 MySQL 的数据恢复分为：冷备份、温备份和热备份。线上系统中，温备与热备使用较多，冷备常常用于归档。按照副本文件的缺失程度可以将数据备份分为完全备份以及增量备份。比如我们使用 mysqldump 备份，指定了 --all-databases 参数，此时就是一个完全备份。另外，我们可以使用 Percona 公司提供的 xtrabackup 工具实现完全备份与增量备份。线上系统，我们需要针对不同的业务场景采用合理的备份策略，定期巡检，并且做好备份恢复测试。另外，我们还可以根据备份需求，设计一套备份平台。
 
@@ -46,13 +46,13 @@ tags:
 
 Time Machine 可以说是 Mac 平台目前最好的备份方案。Time Machine 真得像是时光机，可以自由穿梭到任何一个可以去到的地方。我们可以准备一个移动硬盘，选择非工作时间，将硬盘插入硬盘，打开 Time Machine，开启自动备份，让 Mac 在晚上继续飞吧。至于 Time Machine 专用移动硬盘需要多大，这个因人而异，取决于你的钱包和备份频率。一般用于 Time Machine 的专用移动硬盘至少是 Mac 硬盘总空间的 2 倍以上。Time Machine 第一次备份是全量备份，会占用比较大的磁盘空间，当然我们可以排除不必要的文件。第一次全量备份之后，以后的备份都是增量备份，占用空间会比较小。这里有一个建议，Time Machine 开启加密备份。读者想想啊，Time Machine 备份可是 Mac 的全量拷贝，如果没有加密，假如移动硬盘丢失，别人拿到之后就可以完整地恢复，细思恐极。为了最大程度保障数据的安全，我们需要开启加密备份。这里有个技巧，不要在 Time Machine 设置加密，而是利用磁盘工具将移动硬盘加密，每次备份之前输入磁盘的加密密码，这样备份过程才会比较顺畅。如果使用 Time Machine 提供的加密，它的机制是等备份完成再加密，你将会发现从晚上等到第二天白天，进度条还在那里，不增不减，很是恼人。另外，在 AppSo 还有一系列 Time Machine 使用教程 [^1]，读者可以参考下。
 
-![Time Machine](https://i.imgur.com/x1uMLOK.png)
+![Time Machine](https://cdn.wenguobing.com/x1uMLOK.png)
 
 **第五，Dropbox Plus 云备份。**
 
 数据是无价的，假如 Mac 系统崩溃，假如移动硬盘损坏，假如平时又没有做任何备份，那这样数据灾难带来的损失是无可估量的。我们需要为美好的事物付费，Dropbox 就是其中之一。因为一些不可描述的原因，Dropbox 无法正常访问，但这并不能阻碍 Dropbox 成为一款成功而优雅的云同步工具。准备地说，Dropbox 是同步盘而不是云盘。Dropbox Plus 和 Dropbox Pro 都只有 1T 的空间。1T 的空间对于正常的用户已经足够了，一个人一生的重要文件并没有这么多。当然如果你把一些影音文件放 Dropbox，笔者也帮不了你。每年 99 美金的价格，对于视时间为生命的人来说，一点也不昂贵。自从用上了 Dropbox Plus，所有重要文件实时同步，这丝滑顺畅的用户体验简直太赞。如果你想本地存一份，本地修改然后实时同步到 Dropbox，没有问题，我们可以借鉴 mackup 的实现，实际上就是利用软链。比如有一个 Work 的目录，只需要执行 **ln -s ~/Documents/Work ~/Dropbox/Documents** 就可以同步到 Dropbox。相信我，Dropbox 绝对值得拥有，当然，推荐之后对我并没有丝毫好处。
 
-![Dropbox Plus](https://i.imgur.com/t8IATrp.png)
+![Dropbox Plus](https://cdn.wenguobing.com/t8IATrp.png)
 
 至于为什么不选国内的网盘，简单讲就是不信任，天知道国内厂商会拿这些文件做啥，还有某网盘无故删除用户文件之类的已经是家常便饭。除了 Dropbox，笔者认为还可以考虑 Google Drive。至于为什么不推荐 iCloud，从 Apple 将在贵州建立数据中心来看[^2]，不再信任 iCloud 了。当然这是笔者的判断，至于怎么取舍还是读者自行分析。其实即使 Apple 不在贵州建数据中心，iCloud 这用户体验依然很糟糕。
 
@@ -84,7 +84,7 @@ Time Machine 可以说是 Mac 平台目前最好的备份方案。Time Machine �
 > 本圈子有但不仅限于：「数据库知识和经验」「软件应用分享」「科技人文」「文章评论」「音乐艺术」「哲学哲思」等一系列看上去乱糟糟的独创或者二次信息传播。
 > 我们生存在三个世界中，第一个是真实的世界，第二个是互联网世界，第三个价值世界。希望我们能在价值世界里自由行走。
 
-![知识星球](https://i.imgur.com/9dhXNpn.jpg)
+![知识星球](https://cdn.wenguobing.com/9dhXNpn.jpg)
 
 [^1]: [Time Machine 使用教程（一）：设置 Time Machine 备份你的 Mac](https://sspai.com/post/30550)
 [^2]: [为什么在贵州？苹果中国首家数据中心有这些考量](http://tech.sina.com.cn/it/2017-07-13/doc-ifyiamif2743406.shtml)

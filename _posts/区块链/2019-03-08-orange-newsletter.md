@@ -26,7 +26,7 @@ tags:
 
 > 数字游民们穿着短裤、T 恤和凉鞋，在任何可以找到无线网络的地方，写博客。或是 coding。
 
-![](https://i.imgur.com/DY4LaPa.png)
+![](https://cdn.wenguobing.com/DY4LaPa.png)
 
 > 题图来自: © 橙皮书 / 橙皮书-首页 / orange.xyz
 
@@ -42,7 +42,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -75,7 +75,7 @@ tags:
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

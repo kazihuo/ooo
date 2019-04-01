@@ -21,7 +21,7 @@ tags:
 
 幸运的是，比特币生态有闪电网络。闪电网络，英文 Lighting Network，是工作在比特币上的 Layer 2 支付协议，目的是实现交易双方的及时交易。[比特币白皮书](https://bitcoin.org/bitcoin.pdf) 发表于 2009 年，[闪电网络白皮书](https://lightning.network/lightning-network-paper.pdf) 发表于 2016 年。闪电网络起源于比特币的扩容问题。闪电网络是基于微支付通道演进而来，创造性的设计出了两种类型的交易合约：序列到期可撤销合约 RSMC（Revocable Sequence Maturity Contract，哈希时间锁定合约 HTLC（Hashed Timelock Contract）。RSMC 解决了通道中币单向流动问题，HTLC 解决了币跨节点传递的问题。这两个类型的交易组合构成了闪电网络。
 
-![](https://i.imgur.com/SNzpY1G.png)
+![](https://cdn.wenguobing.com/SNzpY1G.png)
 
 > 题图来自: © Eric Grisholm / Bitcoin Lightning Network Nodes: Are They Profitable? / crushthestreet.com
 
@@ -37,7 +37,7 @@ tags:
 
 > 注意，这个数据有时效性，目前还在不断地变化中，当你看到这篇文章的时候，数据已经变了。
 
-![](https://i.imgur.com/apYTARb.png)
+![](https://cdn.wenguobing.com/apYTARb.png)
 
 闪电网络在国内的情况不是特别乐观，一方面根据 1ML 数据，来自 China 的节点占比较少，另一方面，支持的钱包较少。但截止发稿，已经有 Hoo、bitpie 支持闪电网络。体验闪电网络的快捷转账，目前有 BlueWallet、Hoo、bitpie 可以选择。教程分别如下：
 
@@ -65,7 +65,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -98,7 +98,7 @@ tags:
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

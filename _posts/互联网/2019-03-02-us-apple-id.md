@@ -14,7 +14,7 @@ tags:
 
 根据「七麦数据」的 [监控](https://www.qimai.cn/rank/offline)，每天不同地区的 App Store 都有不同数量的应用下架。下架的原因多种多样，当然国区还要受益于某国特殊的环境。在特殊时期，某类应用还会被批量下架，不要折腾，不要喧嚣，一片和谐多好。
 
-![Apple](https://i.imgur.com/r4WF9jd.jpg)
+![Apple](https://cdn.wenguobing.com/r4WF9jd.jpg)
 
 > 题图来自: © Apple / Apple Accessories / apple.com
 

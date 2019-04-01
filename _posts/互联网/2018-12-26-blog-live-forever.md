@@ -18,7 +18,7 @@ Fenng 写了一篇文章，标题叫做「[个人 Blog 时代的终结](http://d
 
 个人 Blog 又称个人博客，是个人表达所思所想的世外桃源。接触互联网的每一代人，相信或多或少都和 Blog 有着不解之缘。Blog + RSS，这个组合曾经是无数网民非常喜爱的阅读方式，时至今日，不知还有多少网友还在坚持。Blog 引擎换了一批又一批，RSS 阅读器、Blogger 也是如此。曾经耳熟能详的 Blogger，都已不再更新。
 
-![Blog](https://i.imgur.com/qql5WdN.jpg)
+![Blog](https://cdn.wenguobing.com/qql5WdN.jpg)
 
 © Admin / How Will You Start A Blog In 2018? / browsewire.net
 

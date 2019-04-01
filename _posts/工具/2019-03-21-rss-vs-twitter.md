@@ -21,7 +21,7 @@ tags:
 
 那么问题来了？RSS 能不能刷 Twitter 呢？笔者一番折腾，有了一个比较靠谱的解决方案，于是有了今天的文章。
 
-![](https://i.imgur.com/m0JcSk4.png)
+![](https://cdn.wenguobing.com/m0JcSk4.png)
 
 > 题图来自: © Heather Allen / 6 ways PR pros can use Feedly / prdaily.com
 

@@ -21,7 +21,7 @@ tags:
 
 很高兴地告知读者，Hoo iOS 企业版支持闪电网络，并且已经开放下载。需要注意的是，必须是企业版，也就是需要手工信任证书。海外 App Store 下载的 Hoo 钱包只支持云端钱包，而闪电网络需在 HD 钱包使用。同时，Hoo 企业版和 Hoo App Store 版本可以共存。下载链接点击 [此处](https://hoo.com)。
 
-![](https://i.imgur.com/PSNx3zq.jpg)
+![](https://cdn.wenguobing.com/PSNx3zq.jpg)
 
 > 题图来自: © Hoo 虎符媒体 / Hoo 虎符钱包今日推出 BTC、ETH 理财 / zhihu.com
 
@@ -35,7 +35,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -68,7 +68,7 @@ tags:
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

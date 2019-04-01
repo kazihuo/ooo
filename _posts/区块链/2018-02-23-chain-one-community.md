@@ -37,7 +37,7 @@ tags:
 * **优质产出**，我们对社区的产出有严格苛刻的高标准要求。
 * **多中心化**。去中心化永远只是个相对理论概念，究竟什么样的程度才算是去中心呢？我们希望社区每一位成员，每一位读者都是一个平等的节点，都可以为社区贡献自己的力量。
 
-![ChainONE Community](https://i.imgur.com/msSlIWZ.png)
+![ChainONE Community](https://cdn.wenguobing.com/msSlIWZ.png)
 
 > 题图来自: © Redacción / Blockchain: un futuro prometedor / antevenio.com
 
@@ -126,7 +126,7 @@ ChainONE Community 后续规划包括但不限于：
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -154,7 +154,7 @@ ChainONE Community 后续规划包括但不限于：
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

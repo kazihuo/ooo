@@ -19,7 +19,7 @@ tags:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
-![](https://i.imgur.com/smxzEPJ.png)
+![](https://cdn.wenguobing.com/smxzEPJ.png)
 
 > 题图来自: © ChainONE / Original / chainon.io
 
@@ -136,7 +136,7 @@ Cryptocurrency 这条路，当下持有多少不能定英雄，能长久地安�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/RBmpxTL.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -169,7 +169,7 @@ Cryptocurrency 这条路，当下持有多少不能定英雄，能长久地安�
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

@@ -36,7 +36,7 @@ comments:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
-![](https://i.imgur.com/smxzEPJ.png)
+![](https://cdn.wenguobing.com/smxzEPJ.png)
 
 > 题图来自: © ChainONE / Original / chainon.io
 
@@ -47,7 +47,7 @@ comments:
 
 执行 `eosio_build.sh` 脚本编译 nodeos 会默认安装 mongodb，但是从 Dawn 4.0 开始，`mongo_db_plugin` 插件不再生效，详情请参考 [#3030](https://github.com/EOSIO/eos/issues/3030)。[#4304](https://github.com/EOSIO/eos/pull/4304) PR 重新支持 MongoDB，本文讲解如何将链上数据实时同步到 MongoDB。
 
-![](https://i.imgur.com/O0w2yeu.jpg)
+![](https://cdn.wenguobing.com/O0w2yeu.jpg)
 
 ## 0x01 部署
 ***
@@ -191,7 +191,7 @@ MongoDB 适合如下场景：[1]
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/RBmpxTL.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -224,7 +224,7 @@ MongoDB 适合如下场景：[1]
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

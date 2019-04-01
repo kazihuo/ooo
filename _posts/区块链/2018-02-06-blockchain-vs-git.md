@@ -66,7 +66,7 @@ comments:
 
 正是 GitHub 网站在全球的成功运营，加密数字货币开源项目才得以爆发性地增长。这个世界上最顶尖的程序员都在为这些开源项目提交 PR，这种社区式连接的力量，是无法衡量的。我们可以在 GitHub 上看到 [Bitcoin](https://github.com/bitcoin/bitcoin)、[Ethereum](https://github.com/ethereum/go-ethereum)、[EOS](https://github.com/EOSIO/eos) 等项目的最新更新状态，每天都有无数的程序员为这些项目添砖加瓦。**加密数字货币的共识，很大一部分来自 GitHub 社区。**
 
-![2018-02-06-blockchain-vs-git](https://i.imgur.com/fgXyzdP.jpg)
+![2018-02-06-blockchain-vs-git](https://cdn.wenguobing.com/fgXyzdP.jpg)
 
 > 题图来自: © EarlGrey / Migrate to Qcloud Git Server / codingpy.com
 
@@ -98,7 +98,7 @@ comments:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -126,7 +126,7 @@ comments:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

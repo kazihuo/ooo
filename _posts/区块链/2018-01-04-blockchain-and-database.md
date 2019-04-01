@@ -23,7 +23,7 @@ tags:
 
 个人认为区块链只能借鉴传统的数据库技术，而无法将数据库改造成区块链。
 
-![2018-01-04-blockchain-and-database](https://i.imgur.com/lOS8SzA.jpg)
+![2018-01-04-blockchain-and-database](https://cdn.wenguobing.com/lOS8SzA.jpg)
 
 > 题图来自: © Fares Ghandour / Genesis of a cryptoeconomy / wamda.com
 
@@ -68,7 +68,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -96,7 +96,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 –EOF–
 
 版权声明：[自由转载-非商用-非衍生-保持署名（创意共享4.0许可证）](http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)

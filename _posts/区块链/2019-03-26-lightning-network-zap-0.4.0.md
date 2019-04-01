@@ -21,7 +21,7 @@ tags:
 
 此版本重新设计了通道 UI、优化第三方 LApp 集成、优化异常处理、支持高级用户测试 Neutrino、优化新手上路。详细地说明点击 [此处](https://medium.com/@JimmyMow/announcing-zap-desktop-0-4-0-beta-85de720859a2) 阅读。
 
-![](https://i.imgur.com/iMiVdbp.png)
+![](https://cdn.wenguobing.com/iMiVdbp.png)
 
 > 题图来自: © Jack Mallers / Announcing Zap Desktop 0.4.0-beta / medium.com
 
@@ -39,7 +39,7 @@ Zap 闪电钱包创始人名叫 Jack Mallers，他是 Bitcoin Lightning App Deve
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -72,7 +72,7 @@ Zap 闪电钱包创始人名叫 Jack Mallers，他是 Bitcoin Lightning App Deve
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

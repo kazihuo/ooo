@@ -21,7 +21,7 @@ tags:
 
 Lightning Loop 有什么作用呢？Lightning Loop 目的是解决目前通道容量限制的问题。我们都知道，如果通道到了容量限制，就不能接受更多的支付。如果闪电网络大规模应用，这显然是不能接受的。
 
-![](https://i.imgur.com/Hm5vOEC.jpg)
+![](https://cdn.wenguobing.com/Hm5vOEC.jpg)
 
 > 题图来自: © AcceleratingBiz / Lightning Labs logo / acceleratingbiz.com
 
@@ -50,7 +50,7 @@ Lightning Loop 有什么作用呢？Lightning Loop 目的是解决目前通道�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -83,7 +83,7 @@ Lightning Loop 有什么作用呢？Lightning Loop 目的是解决目前通道�
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

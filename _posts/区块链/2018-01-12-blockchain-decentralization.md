@@ -27,7 +27,7 @@ tags:
 
 本篇文章，笔者就中心化和去中心化问题做一个探讨。
 
-![2018-01-12-blockchain-decentralization](https://i.imgur.com/ZRMkSIC.jpg)
+![2018-01-12-blockchain-decentralization](https://cdn.wenguobing.com/ZRMkSIC.jpg)
 
 > 题图来自: © admin / Beginners Guide to Ethereum / create-hub.com
 
@@ -60,7 +60,7 @@ DPOS 这种投票机制存在中心化，但是中心化是受到控制的，因
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -88,7 +88,7 @@ DPOS 这种投票机制存在中心化，但是中心化是受到控制的，因
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

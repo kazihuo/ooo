@@ -16,7 +16,7 @@ tags:
 
 > 本文已参与 ExinOne 有奖征文，活动链接点击 [此处](https://mp.weixin.qq.com/s/BTU0qx3vEjxP8diXuWoI9g)。
 
-![](https://i.imgur.com/a9nBpkG.jpg)
+![](https://cdn.wenguobing.com/a9nBpkG.jpg)
 
 > 图片来自: © ExinOne / 重磅上线 KEY 交易对，狂撒 60W 代币奖励 / exinone.com
 
@@ -25,7 +25,7 @@ tags:
 
 2019 年 3 月 18 日，据 ExinOne 官方最新消息，ExinOne 重磅上线 KEY 交易对，包括法币、币币，这对广大的币乎作者来说简直是福音。
 
-![](https://i.imgur.com/RQmnDFX.jpg)
+![](https://cdn.wenguobing.com/RQmnDFX.jpg)
 
 > 图片来自: © ExinOne / 重磅上线 KEY 交易对，狂撒 60W 代币奖励 / exinone.com
 
@@ -45,7 +45,7 @@ Steemit 是区块链内容平台的鼻祖。据不完全统计，目前的内容
 
 由于币乎团队并没有主动联系交易所上币，所以 KEY 的流通一直是个难题。笔者整理了目前的法币、币币交易平台，如下图：
 
-![](https://i.imgur.com/4kjBVCW.png)
+![](https://cdn.wenguobing.com/4kjBVCW.png)
 
 > 图片来自: © Robin / Key 买卖 / original
 
@@ -73,7 +73,7 @@ ExinOne 是构建在 Mixin Network 上的交易所，由于没有托管用户资
 
 欢迎扫描下图，注册 ExinOne，开启定投。或者使用链接 [https://exinone.com/p/NX92O3](https://exinone.com/p/NX92O3) 注册。
 
-![](https://i.imgur.com/8PEkY39.png)
+![](https://cdn.wenguobing.com/8PEkY39.png)
 
 ## 打赏
 ***

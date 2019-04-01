@@ -19,7 +19,7 @@ tags:
 
 Bixin iOS 最新版，版本号 3.6.0，目前正式支持闪电网络，下载地址点击 [此处](https://itunes.apple.com/hk/app/bixin-secure-bitcoin-wallet/id1227683655?l=en&mt=8)。
 
-![](https://i.imgur.com/swNyoA9.jpg)
+![](https://cdn.wenguobing.com/swNyoA9.jpg)
 
 > 题图来自: © CoinTiger 币虎 / 0 费率、秒到账，CoinTiger 币信钱包互通啦 / xueqiu.com
 
@@ -43,7 +43,7 @@ Bixin iOS 最新版，版本号 3.6.0，目前正式支持闪电网络，下载�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -76,7 +76,7 @@ Bixin iOS 最新版，版本号 3.6.0，目前正式支持闪电网络，下载�
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

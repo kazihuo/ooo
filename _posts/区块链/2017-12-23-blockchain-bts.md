@@ -27,7 +27,7 @@ tags:
 
 比特股（BitShares，简称 BTS）是一个建立在区块链技术上的开源商业系统，由 3I 公司开发，结合了去中心化的全球支付系统（如支付宝），去中心化的数字货币交易所（如比特币中国），去中心化的证券交易所（如纳斯达克）的系统。BTS 是比特股系统中的计量单位。如果你是比特币的爱好者，可以理解为：BTS = BTC + BTCC + BitPay – Mining。它也是没有热钱包被盗风险、不会印白条发假币、没有作恶可能的交易所。如果你没有听说过比特币，那你可能需要先知道它能做什么：它没有每日限额的支付宝，它是手续费低至几乎为零、到账速度 10 秒钟的西联汇款，它是每年只需要数万美元基础安全维护成本、交易记录无法被任何人追踪监控的银行。
 
-![BitShares](https://i.imgur.com/fxHNOkG.jpg)
+![BitShares](https://cdn.wenguobing.com/fxHNOkG.jpg)
 
 > 题图来自: © sthitaprajna /What exactly the reason to delist Bitshares from Bittrex / steemit.com
 
@@ -80,7 +80,7 @@ BTS 引入的 **DPOS** 共识机制全称是委托权益证明，少量节点参
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -108,7 +108,7 @@ BTS 引入的 **DPOS** 共识机制全称是委托权益证明，少量节点参
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

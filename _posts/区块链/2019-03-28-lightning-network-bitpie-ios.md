@@ -19,7 +19,7 @@ tags:
 
 Bitpie iOS 最新版，版本号 3.9.7，目前正式支持闪电网络，下载地址点击 [此处](https://itunes.apple.com/us/app/bitpie-blockchain-wallet/id1168568820?mt=8)。当然，读者需要一个美区 Apple ID。如果读者没有，申请点击 [此处](https://dbarobin.com/2019/03/02/us-apple-id)。
 
-![](https://i.imgur.com/dGRYEm6.jpg)
+![](https://cdn.wenguobing.com/dGRYEm6.jpg)
 
 > 题图来自: © BCX / Transaction Overview-Purchasing BCX / bcx.org
 
@@ -41,7 +41,7 @@ Bitpie iOS 最新版，版本号 3.9.7，目前正式支持闪电网络，下载
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://i.imgur.com/3YzonTR.png)
+![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -74,7 +74,7 @@ Bitpie iOS 最新版，版本号 3.9.7，目前正式支持闪电网络，下载
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

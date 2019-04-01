@@ -27,7 +27,7 @@ tags:
 
 由于加密货币多数采用去中心化的区块链设计，节点是各处分散且平行的，所以必须设计一套制度，来维护系统的运作顺序与公平性，统一区块链的版本，并奖励提供资源维护区块链的使用者，以及惩罚恶意的危害者。这样的制度，必须依赖某种方式来证明，是由谁取得了一个区块链的打包权（或称记账权），并且可以获取打包这一个区块的奖励；又或者是谁意图进行危害，就会获得一定的惩罚，这就是加密数字货币的 **共识机制**。[1]
 
-![2017-12-27-blockchain-consensus](https://i.imgur.com/0pFDjEc.jpg)
+![2017-12-27-blockchain-consensus](https://cdn.wenguobing.com/0pFDjEc.jpg)
 
 > 题图来自: © Cliff Küle / How Blockchain Technology & Gold Can Work Together / cliffkule.com
 
@@ -382,7 +382,7 @@ Paxos、Raft、Zab 和 VR 都是解决一致性问题的协议，Paxos 协议原
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://i.imgur.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -410,7 +410,7 @@ Paxos、Raft、Zab 和 VR 都是解决一致性问题的协议，Paxos 协议原
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
+![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
 
 –EOF–
 

@@ -15,7 +15,7 @@ tags:
 
 Telegram 是一款著名的 IM，笔者使用频率相当高。Telegram 相比其他 IM 有什么优势，读者可以点击 [此处](https://telegram.org/faq) 阅读。
 
-![](https://i.imgur.com/2efMSBS.png)
+![](https://cdn.wenguobing.com/2efMSBS.png)
 
 > 题图来自: © IFTTT / Telegram is on IFTTT / ifttt.com
 
