@@ -25,7 +25,7 @@ Cobo Wallet 最新版，版本号 3.14.1，目前正式支持闪电网络，iOS 
 
 截至目前，国内钱包支持闪电网络情况如下：
 
-* Hoo，iOS 企业版和 Android 均支持
+* Hoo，iOS 企业版、iOS 海外 App Store 版和 Android 均支持
 * 比特派，iOS 海外 App Store 版和 Android 支持，Android 支持 LApp
 * 币信，iOS 海外 App Store 版和 Android 支持
 * Cobo，iOS 海外 App Store 版和 Android 支持
