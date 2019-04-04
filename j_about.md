@@ -34,7 +34,7 @@ Keep in touch: [LinkedIn](https://www.linkedin.com/in/dbarobin) <a href="https:/
 
 Telegram Group，点击加入：
 
-* [ChainONE Official Group](https://t.me/bcage)
+* [ChainONE Official Group](https://t.me/chainone)
 * [温国兵的随想录](https://t.me/dbarobin)
 
 Telegram Channel，点击订阅：
