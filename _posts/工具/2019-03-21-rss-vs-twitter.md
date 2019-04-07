@@ -4,12 +4,28 @@ author: Robin Wen
 layout: post
 title: 我用 RSS 刷 Twitter
 category: 工具
-summary: 关于 RSS，笔者之前有一篇文章叫做 RSS Never Die，文章的观点认为 RSS 是互联网阅读的最佳方式。此外，笔者还是 Twitter 用户，但 Twitter 的信息流设计，总让人有一种信息焦虑感。那么问题来了？RSS 能不能刷 Twitter 呢？笔者一番折腾，有了一个比较靠谱的解决方案，于是有了今天的文章。RSSHub 的 Slogan 是「万物皆可 RSS」，提供了比较多的订阅源，读者也可以按照 RSSHub 的规范个性化定制。RSS 在个人信息订阅服务这个事情上大有作为，感兴趣的读者可以自行研究。
+summary: >-
+  关于 RSS，笔者之前有一篇文章叫做 RSS Never Die，文章的观点认为 RSS 是互联网阅读的最佳方式。此外，笔者还是 Twitter 用户，但
+  Twitter 的信息流设计，总让人有一种信息焦虑感。那么问题来了？RSS 能不能刷 Twitter
+  呢？笔者一番折腾，有了一个比较靠谱的解决方案，于是有了今天的文章。RSSHub 的 Slogan 是「万物皆可
+  RSS」，提供了比较多的订阅源，读者也可以按照 RSSHub 的规范个性化定制。RSS 在个人信息订阅服务这个事情上大有作为，感兴趣的读者可以自行研究。
 tags:
   - 互联网
   - 工具
   - RSS
   - Twitter
+comments:
+  - author:
+      type: github
+      displayName: liewzy
+      url: 'https://github.com/liewzy'
+      picture: 'https://avatars3.githubusercontent.com/u/3881873?v=4&s=73'
+    content: >-
+      &#x53EF;&#x4EE5;&#x8BD5;&#x8BD5; feedbin
+      &#x5B83;&#x652F;&#x6301;twitter&#x7528;&#x6237;&#x7684;&#x5173;&#x6CE8;
+      https://feedbin.com/
+    date: 2019-04-07T08:11:07.596Z
+
 ---
 
 `文/温国兵`
