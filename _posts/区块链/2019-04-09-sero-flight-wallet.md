@@ -23,9 +23,13 @@ SERO 已发布 SERO Flight Wallet 公测版，目前支持 Android 和 iOS，iOS
 
 ![](https://cdn.wenguobing.com/obkaV8t.png)
 
+> 题图来自: © Robin / SERO Flight Wallet 公测版发布 / dbarobin.com
+
 笔者第一时间下载了轻钱包，并且体验了一番。SERO Flight Wallet 跟桌面版的 SERO Wallet 是两个不同的钱包。SERO Flight Wallet 是轻钱包，无需同步全节点，支持邮箱和手机号注册。SERO Wallet 是全节点钱包，区块数据全部同步完成之后（目前磁盘占用 13G），即可创建钱包，创建后会获得一个 SERO 地址。笔者从 SERO Wallet 转了 10 SERO 到 SERO Flight Wallet 地址，12 个确认到账，速度非常快。不过目前 SERO Flight Wallet 转账手续费需要 1 SERO，笔者感觉比较高，转的 10 个 SERO 先在里面放着吧。
 
 ![](https://cdn.wenguobing.com/ZethSf8.png)
+
+> 题图来自: © Robin / SERO Flight Wallet 公测版发布 / dbarobin.com
 
 SERO 最近在大力做营销，相关的活动可以关注微信公众号「SERO超零协议」，还有订阅 [Telegram Channel](https://t.me/SEROannouncements)。
 
