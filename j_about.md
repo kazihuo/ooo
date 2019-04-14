@@ -40,6 +40,7 @@ Telegram Group，点击加入：
 Telegram Channel，点击订阅：
 
 * [ChainONE Official Channel](https://t.me/BlockchainAge)
+* [隐私极客](https://t.me/privacygeek)
 
 另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时简单介绍下自己，并注明来自 dbarobin.com。
 
