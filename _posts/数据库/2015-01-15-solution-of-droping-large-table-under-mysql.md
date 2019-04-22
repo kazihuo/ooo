@@ -74,7 +74,7 @@ mysql> SHOW VARIABLES LIKE '%version%';
 5 rows in set (0.00 sec)
 ```
 
-### 2.2 添加 innodb_file_per_table 参数###
+### 2.2 添加 innodb_file_per_table 参数 ###
 
 由于我使用 mysql_multi  的形式启动 MySQL。所以我们需要在 MySQL 的配置文件 my.cnf 中加入 `innodb_file_per_table` 参数。
 
@@ -85,7 +85,7 @@ mysql> SHOW VARIABLES LIKE '%version%';
 > mysqladmin = /usr/local/mysql/mysql-5.1.73-osx10.6-x86_64/bin/mysqladmin
 > log = /var/log/mysqld_mutil.err
 > user       = root
-> 
+>
 > [mysqld5173]
 > port=5173
 > socket=/tmp/mysql_5173.sock
@@ -95,7 +95,7 @@ mysql> SHOW VARIABLES LIKE '%version%';
 > log-error=/var/log/mysqld_5173.log
 > pid-file=/tmp/mysqld_5173.pid
 > innodb_file_per_table
-> 
+>
 > [mysqld5540]
 > port=5540
 > socket=/tmp/mysql_5540.sock
@@ -105,7 +105,7 @@ mysql> SHOW VARIABLES LIKE '%version%';
 > log-error=/var/log/mysqld_5540.log
 > pid-file=/tmp/mysqld_5540.pid
 > innodb_file_per_table
-> 
+>
 > [mysqld5612]
 > port=5612
 > socket=/tmp/mysql_5612.sock
@@ -252,8 +252,8 @@ Max_data_length: 0
      Check_time: NULL
       Collation: utf8_general_ci
        Checksum: NULL
- Create_options: 
-        Comment: 
+ Create_options:
+        Comment:
 1 row in set (0.22 sec)
 
 mysql> SELECT count(*) FROM user;
@@ -365,8 +365,8 @@ Max_data_length: 0
      Check_time: NULL
       Collation: utf8_general_ci
        Checksum: NULL
- Create_options: 
-        Comment: 
+ Create_options:
+        Comment:
 1 row in set (0.38 sec)
 
 mysql> SELECT count(*) FROM city;
