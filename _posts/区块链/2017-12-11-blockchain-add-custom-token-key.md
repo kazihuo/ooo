@@ -80,7 +80,7 @@ Token Contract Address 表示合约地址，Token Symbol 表示 Token 的代号�
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
 * 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
-* 币乎，[https://bihu.com/people/12109](https://bihu.com/people/12109)
+* 币乎，[https://bihu.com/people/22207](https://bihu.com/people/22207)
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 

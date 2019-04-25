@@ -98,7 +98,7 @@ MaidSafe 是一个非常有野心的项目，它的目标超出了去中心化�
 * Steemit，[https://steemit.com/@robinwen](https://steemit.com/@robinwen)
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
 * 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
-* 币乎，[https://bihu.com/people/12109](https://bihu.com/people/12109)
+* 币乎，[https://bihu.com/people/22207](https://bihu.com/people/22207)
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 

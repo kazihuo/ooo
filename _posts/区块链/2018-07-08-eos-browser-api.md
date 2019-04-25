@@ -118,7 +118,7 @@ $ nohup php bin/console server:run 0.0.0.0:8000 > api.log 2>&1 &
 * Medium，[https://medium.com/@robinwan](https://medium.com/@robinwan)
 * 掘金，[robinwen@juejin.im](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
 * EOS LIVE，[https://eos.live/user/robin](https://eos.live/user/robin)
-* 币乎，[https://bihu.com/people/12109](https://bihu.com/people/12109)
+* 币乎，[https://bihu.com/people/22207](https://bihu.com/people/22207)
 
 原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
 
