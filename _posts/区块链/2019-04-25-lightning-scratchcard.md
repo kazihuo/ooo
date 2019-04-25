@@ -19,6 +19,10 @@ tags:
 
 发现一个闪电网络应用，名叫 Lightning Scratchcard，网站链接 [https://lightningscratchcard.io](https://lightningscratchcard.io)。
 
+![](https://cdn.wenguobing.com/pa5nkmb.jpg)
+
+> 题图来自: © Guillaume Verbal / tagline / lightningscratchcard.io
+
 这是一个怎么样的应用呢？简单讲是一个刮刮卡游戏。具体玩法如下：用户通过 Twitter 登陆网站，然后发布一篇文章（指定标题、筹集资金目标、限制每个 LN 交易显示的字符数、付款地址、内容）。发表成功之后，读者支付 1 聪来显示一个字符。
 
 开发者将向读者收取比作者设定的筹集资金目标多 10％ 的费用。例如，如果作者设定 0.01 BTC 作为筹集资金目标，读者将支付总共 0.011 BTC。作者获得 0.01，开发者获得 0.001，因为开发者要支付服务器成本，开发成本以及对应用作相应的 bug 修复。
