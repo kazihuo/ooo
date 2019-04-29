@@ -32,14 +32,9 @@ Keep in touch: [LinkedIn](https://www.linkedin.com/in/dbarobin) <a href="https:/
 
 当然，您也可以给我通过 PGP 和我联系，PGP PUBLIC KEY 点击 [此处](https://pgp.mit.edu/pks/lookup?search=0x9CD45A5A&op=index)。
 
-Telegram Group，点击加入：
-
-* [ChainONE Official Group](https://t.me/chainone)
-* [温国兵的随想录](https://t.me/dbarobin)
-
 Telegram Channel，点击订阅：
 
-* [ChainONE Official Channel](https://t.me/BlockchainAge)
+* [ChainONE Official Channel](https://t.me/chainone)
 * [隐私极客](https://t.me/privacygeek)
 
 另外，我的微信号：**Wentasy**，感兴趣可以加一下。加我时简单介绍下自己，并注明来自 dbarobin.com。
