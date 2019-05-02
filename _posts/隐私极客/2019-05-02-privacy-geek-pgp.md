@@ -33,7 +33,7 @@ PGP 使用的是非对称加密算法，关于 PGP 的更多知识，可以去�
 
 ![](https://cdn.wenguobing.com/cJVocVj.png)
 
-> 题图来自: © GO ANYWHERE / Open PGP Encryption / goanywhere.com
+> 图片来自: © GO ANYWHERE / Open PGP Encryption / goanywhere.com
 
 PGP 的工作原理是端对端加密，[Telegram](https://telegram.org) Secret Chat、[Singal](https://signal.org)、[Wire](https://wire.com) 等 IM 也提供端对端加密聊天功能。但为什么要用 PGP 呢？因为 PGP 是相当靠谱的加密工具，其安全性得到了充分的验证。
 
