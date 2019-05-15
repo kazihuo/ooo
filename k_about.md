@@ -32,7 +32,7 @@ Keep in touch: [LinkedIn](https://www.linkedin.com/in/dbarobin) <a href="https:/
 
 当然，您也可以给我通过 PGP 和我联系，PGP PUBLIC KEY 点击 [此处](https://pgp.mit.edu/pks/lookup?search=0x9CD45A5A&op=index)。
 
-Telegram Channel，点击订阅：
+Telegram Group 解散了，保留了 Telegram Channel，点击订阅：
 
 * [ChainONE Official Channel](https://t.me/chainone)
 * [隐私极客](https://t.me/privacygeek)
