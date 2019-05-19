@@ -453,7 +453,7 @@ Description=Group API Daemon
 After=network.target
 
 [Service]
-User=root
+User=test
 Type=simple
 ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one
 Restart=on-failure
@@ -471,7 +471,7 @@ Description=Group Message Daemon
 After=network.target
 
 [Service]
-User=root
+User=test
 Type=simple
 ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service message
 Restart=on-failure
