@@ -46,6 +46,7 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 为了方便读者理解，笔者设置的大群主域名是：group.test.com，API 域名是 api.test.com，并解决了 SSL 的问题。
 
 ### 4.1 申请服务器
+***
 
 国内外云服务商很多选择，国内的话，阿里云、腾讯云都可以选择，国外的话，AWS、Google Cloud、Azure。
 
@@ -54,10 +55,12 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 至于系统版本，笔者选择的是 Ubuntu 18.04.2 LTS。本文大部分操作都以 root 用户操作。
 
 ### 4.2 申请 Mixin 机器人
+***
 
 参考开发文档，点击 [此处](https://developers.mixin.one/api/alpha-mixin-network/register-app/)。
 
 ### 4.3 安装 PostgreSQL
+***
 
 命令如下：
 
@@ -116,6 +119,7 @@ $ ALTER USER test WITH PASSWORD 'xxxxxxxx';
 ```
 
 ### 4.4 安装 Nginx
+***
 
 命令如下：
 
@@ -129,6 +133,7 @@ nginx version: nginx/1.14.0 (Ubuntu)
 安装之后，Nginx 服务自动运行。当然读者也可以选择源码安装。
 
 ### 4.5 安装 Node.js
+***
 
 命令如下：
 
@@ -144,6 +149,7 @@ $ npm -v
 ```
 
 ### 4.6 安装 Go
+***
 
 命令如下：
 
@@ -171,6 +177,7 @@ go version go1.12.5 linux/amd64
 ```
 
 ### 4.7 编译后端
+***
 
 命令如下：
 
@@ -264,6 +271,7 @@ const (
 接着执行 `go build` 编译代码，如果没有什么问题的话，会在当前目录生成一个 **supergroup.mixin.one** 的可执行文件，当然读者可以重命名为其他名字。
 
 ### 4.8 编译前端
+***
 
 修改配置文件：
 
@@ -308,6 +316,7 @@ $ chown www-data:www-data -R /var/www/
 ```
 
 ### 4.9 配置 Nginx
+***
 
 创建配置文件。
 
@@ -424,6 +433,7 @@ $ systemctl restart nginx
 ```
 
 ### 4.10 部署服务
+***
 
 为了管理方便，为两个 Go 进程部署 Service 服务。
 
@@ -477,12 +487,14 @@ $ systemctl restart test.message.service
 ```
 
 ### 4.11 检测服务
+***
 
 使用 `netstat -langput | grep LISTEN` 检测监听端口，如果正常的话，Mixin 大群相关的，会有 80 和 443（Nginx）、5432（PostgreSQL）、7001 和 9001（Go 后端）。
 
 此外，服务器只需要对外开放 80 和 443 即可。
 
 ### 4.12 Mixin 测试
+***
 
 打开 Mixin，搜索机器人 ID，添加应用，点击机器人授权，多拉几个人即可进行测试。
 
