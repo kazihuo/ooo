@@ -268,6 +268,8 @@ const (
 )
 ```
 
+Operators 变量用于配置管理员列表，这里填写的不是管理员的 ID，而是真实 ID，格式为 UUID。笔者根据 [Mixin-SDK-PHP](https://github.com/ExinOne/mixin-sdk-php) 写了个脚本，可以参考下，点击 [此处](https://github.com/dbarobin/mixin/blob/master/mixin-searchuser.php) 阅读。
+
 接着执行 `go build` 编译代码，如果没有什么问题的话，会在当前目录生成一个 **supergroup.mixin.one** 的可执行文件，当然读者可以重命名为其他名字。
 
 ### 4.8 编译前端
