@@ -222,7 +222,7 @@ const (
 )
 
 const (
-  // 用什么 token 支付入群费，默认 XIN, 其它的资产可以在这里找到 https://mixin.one/snapshots
+        // 用什么 token 支付入群费，默认 XIN, 其它的资产可以在这里找到 https://mixin.one/snapshots
         PaymentAssetId = "c94ac88f-4671-3976-b60a-09064f1811e8"
         // 设置成 "0", 所有人都可以加入
         PaymentAmount  = "0"
