@@ -182,7 +182,7 @@ go version go1.12.5 linux/amd64
 命令如下：
 
 ``` bash
-go get github.com/MixinNetwork/supergroup.mixin.one
+$ go get github.com/MixinNetwork/supergroup.mixin.one
 ```
 
 如果顺利的话，在 $GOPATH 会 clone 大群代码，并自动解决依赖问题。
