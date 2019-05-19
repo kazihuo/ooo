@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: Mixin 大群部署完全教程
 category: 区块链
-summary: 群聊是社交软件非常重要的功能之一，Mixin Messager 当然也提供了群聊，不过美中不足的是，通过 Mixin Messager 创建的群最多支持 256 人。Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域名解析使用 Nginx，其中有大群主域名和 API 域名，主域名指向前端代码，前端右 Node.js 实现。API 域名指向后端，后端由 Go 实现，有两个进程，一个是处理 HTTP 请求的，一个是处理 Message 请求的。其中 Go 的进程还会和 Mixin 的 API 交互。此外，数据库采用 PostgreSQL。Mixin 大群最初的版本，数据库采用的是 Google 的 Spanner，但 Spanner 只有选择 Google Cloud，而且价格偏高。
+summary: 群聊是社交软件非常重要的功能之一，Mixin Messenger 当然也提供了群聊，不过美中不足的是，通过 Mixin Messenger 创建的群最多支持 256 人。Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域名解析使用 Nginx，其中有大群主域名和 API 域名，主域名指向前端代码，前端右 Node.js 实现。API 域名指向后端，后端由 Go 实现，有两个进程，一个是处理 HTTP 请求的，一个是处理 Message 请求的。其中 Go 的进程还会和 Mixin 的 API 交互。此外，数据库采用 PostgreSQL。Mixin 大群最初的版本，数据库采用的是 Google 的 Spanner，但 Spanner 只有选择 Google Cloud，而且价格偏高。
 tags:
   - 区块链
   - Blockchain
@@ -18,11 +18,11 @@ tags:
 ## 一 前言
 ***
 
-群聊是社交软件非常重要的功能之一，Mixin Messager 当然也提供了群聊，不过美中不足的是，通过 Mixin Messager 创建的群最多支持 256 人。
+群聊是社交软件非常重要的功能之一，Mixin Messenger 当然也提供了群聊，不过美中不足的是，通过 Mixin Messenger 创建的群最多支持 256 人。
 
 如何创建突破 256 人数限制的大群？官方已经有了答案，仓库 [在此](https://github.com/MixinNetwork/supergroup.mixin.one)，后端语言为 Go，前端语言为 Node.js。
 
-据笔者调研，目前 Mixin Messager 主要有 5 个大群，分别是：Mixin 中文群（7000101317）、PRESS.one 中文群（7000101697）、BigONE 官方中文群（7000101910）、Mixin English（7000101502）和 Exin 中文群（7000000016）。然而对于一款社交软件来说，数量这么少的大群是远远不够的。官方的大群仓库是有了，笔者却发现没有一个详细的帮助文档，这显然是不友好的。
+据笔者调研，目前 Mixin Messenger 主要有 5 个大群，分别是：Mixin 中文群（7000101317）、PRESS.one 中文群（7000101697）、BigONE 官方中文群（7000101910）、Mixin English（7000101502）和 Exin 中文群（7000000016）。然而对于一款社交软件来说，数量这么少的大群是远远不够的。官方的大群仓库是有了，笔者却发现没有一个详细的帮助文档，这显然是不友好的。
 
 ## 二 架构
 ***
