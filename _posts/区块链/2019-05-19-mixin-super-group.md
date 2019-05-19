@@ -303,6 +303,17 @@ const clientId = function (env) {
     return 'xxxxxxxx';
   }
 };
+
+plugins: [
+  new webpack.DefinePlugin({
+    PRODUCTION: (process.env.NODE_ENV === 'production'),
+    WEB_ROOT: JSON.stringify(webRoot(process.env.NODE_ENV)),
+    API_ROOT: JSON.stringify(apiRoot(process.env.NODE_ENV)),
+    CLIENT_ID: JSON.stringify(clientId(process.env.NODE_ENV)),
+    //将「Mixin 中文群」替换为您的群名称
+    APP_NAME: JSON.stringify('Mixin 中文群'),
+    LOCALE: JSON.stringify('zh-CN')
+  }),
 ```
 
 安装依赖：
