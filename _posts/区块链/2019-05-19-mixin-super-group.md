@@ -173,7 +173,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 $ source /etc/profile
 
 $ go version
-go version go1.12.5 linux/amd64  
+go version go1.12.5 linux/amd64
 ```
 
 ### 4.7 编译后端
@@ -222,48 +222,49 @@ const (
 )
 
 const (
-        // 用什么 token 支付入群费，默认 XIN, 其它的资产可以在这里找到 https://mixin.one/snapshots
-        PaymentAssetId = "c94ac88f-4671-3976-b60a-09064f1811e8"
-        // 设置成 "0", 所有人都可以加入
-        PaymentAmount  = "0"
+   // 用什么 token 支付入群费，默认 XIN, 其它的资产可以在这里找到 https://mixin.one/snapshots
+   PaymentAssetId = "c94ac88f-4671-3976-b60a-09064f1811e8"
+   // 设置成 "0", 所有人都可以加入
+   PaymentAmount  = "0"
 )
 
 const (
-        MessageShardModifier = "SHARD"
-        MessageShardSize     = 8 // 多少个 Goroutine 发送消息，开始可以小一些，比如 8
+   MessageShardModifier = "SHARD"
+   MessageShardSize     = 8 // 多少个 Goroutine 发送消息，开始可以小一些，比如 8
 )
 
 const (
-        GroupRedPacket          = "中文群红包"
-        GroupRedPacketShortDesc = "来自无名氏的红包"
-        GroupRedPacketDesc      = "来自 %s 的红包"
-        GroupOpenedRedPacket    = "%s 打开了你的红包"
+   WelcomeMessage          = "欢迎加入 XXX 中文群"
+   GroupRedPacket          = "中文群红包"
+   GroupRedPacketShortDesc = "来自无名氏的红包"
+   GroupRedPacketDesc      = "来自 %s 的红包"
+   GroupOpenedRedPacket    = "%s 打开了你的红包"
 
-        MessageTipsGuest       = "您需要先点击机器图标授权。"
-        MessageTipsJoin        = "%s 加入了群组"
-        MessageTipsHelp        = "您需要先加入群组才能发消息。"
-        MessageTipsHelpBtn     = "点击加入群组"
-        MessageTipsUnsubscribe = "您已经取消了本群的消息订阅, 无法发送或者接收消息。"
+   MessageTipsGuest       = "您需要先点击机器图标授权。"
+   MessageTipsJoin        = "%s 加入了群组"
+   MessageTipsHelp        = "您需要先加入群组才能发消息。"
+   MessageTipsHelpBtn     = "点击加入群组"
+   MessageTipsUnsubscribe = "您已经取消了本群的消息订阅, 无法发送或者接收消息。"
 
-        // commands
-        MessageCommandsInfo     = "/INFO"
-        MessageCommandsInfoResp = "当前订阅人数: %d"
+   // commands
+   MessageCommandsInfo     = "/INFO"
+   MessageCommandsInfoResp = "当前订阅人数: %d"
 )
 
 // 管理员列表，可以踢人，拉入黑名单
 var Operators = map[string]bool{
-        "xxxxxxxx": true,
-        "xxxxxxxx": true,
+   "xxxxxxxx": true,
+   "xxxxxxxx": true,
 }
 
 // 参考 https://steemit.com/cn/@over140/45sh3k-mixin-messenger
 const (
-        ClientId        = "xxxxxxxx"
-        ClientSecret    = "xxxxxxxx"
-        SessionAssetPIN = "xxxxxxxx"
-        PinToken        = "xxxxxxxx"
-        SessionId       = "xxxxxxxx"
-        SessionKey      = `-----BEGIN RSA PRIVATE KEY-----
+   ClientId        = "xxxxxxxx"
+   ClientSecret    = "xxxxxxxx"
+   SessionAssetPIN = "xxxxxxxx"
+   PinToken        = "xxxxxxxx"
+   SessionId       = "xxxxxxxx"
+   SessionKey      = `-----BEGIN RSA PRIVATE KEY-----
 -----END RSA PRIVATE KEY-----`
 )
 ```
@@ -441,7 +442,7 @@ server {
 接下来重启 Nginx：
 
 ``` bash
-$ /usr/sbin/nginx -t 
+$ /usr/sbin/nginx -t
 $ systemctl restart nginx
 ```
 
