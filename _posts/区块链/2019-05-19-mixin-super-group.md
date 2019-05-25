@@ -4,11 +4,28 @@ author: Robin Wen
 layout: post
 title: Mixin 大群部署完全教程
 category: 区块链
-summary: 群聊是社交软件非常重要的功能之一，Mixin Messenger 当然也提供了群聊，不过美中不足的是，通过 Mixin Messenger 创建的群最多支持 256 人。Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域名解析使用 Nginx，其中有大群主域名和 API 域名，主域名指向前端代码，前端右 Node.js 实现。API 域名指向后端，后端由 Go 实现，有两个进程，一个是处理 HTTP 请求的，一个是处理 Message 请求的。其中 Go 的进程还会和 Mixin 的 API 交互。此外，数据库采用 PostgreSQL。Mixin 大群最初的版本，数据库采用的是 Google 的 Spanner，但 Spanner 只有选择 Google Cloud，而且价格偏高。
+summary: >-
+  群聊是社交软件非常重要的功能之一，Mixin Messenger 当然也提供了群聊，不过美中不足的是，通过 Mixin Messenger 创建的群最多支持
+  256 人。Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域名解析使用 Nginx，其中有大群主域名和 API
+  域名，主域名指向前端代码，前端右 Node.js 实现。API 域名指向后端，后端由 Go 实现，有两个进程，一个是处理 HTTP 请求的，一个是处理
+  Message 请求的。其中 Go 的进程还会和 Mixin 的 API 交互。此外，数据库采用 PostgreSQL。Mixin
+  大群最初的版本，数据库采用的是 Google 的 Spanner，但 Spanner 只有选择 Google Cloud，而且价格偏高。
 tags:
   - 区块链
   - Blockchain
   - Mixin
+comments:
+  - author:
+      type: github
+      displayName: Kuri-su
+      url: 'https://github.com/Kuri-su'
+      picture: 'https://avatars3.githubusercontent.com/u/22676438?v=4&s=73'
+    content: >-
+      &#x4F60;&#x597D;,&#x6BD4;&#x8F83;&#x597D;&#x5947;,
+      &#x67B6;&#x6784;&#x56FE;&#x662F;&#x7528;&#x4EC0;&#x4E48;&#x8F6F;&#x4EF6;&#x753B;&#x7684;&#x4E2B;
+      :&gt;
+    date: 2019-05-25T04:35:29.163Z
+
 ---
 
 `文/温国兵`
