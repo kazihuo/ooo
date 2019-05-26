@@ -495,6 +495,7 @@ After=network.target
 [Service]
 User=test
 Type=simple
+# 需要将 $GOPATH 替换为真实路径
 ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one
 Restart=on-failure
 LimitNOFILE=65536
@@ -513,6 +514,7 @@ After=network.target
 [Service]
 User=test
 Type=simple
+# 需要将 $GOPATH 替换为真实路径
 ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service message
 Restart=on-failure
 LimitNOFILE=65536
