@@ -9,7 +9,7 @@ tags:
 - 程序员
 ---
 
-`文/温国兵`
+`文/robin`
 
 <a href="https://dbarobin.com/2012/04/04/breif-talk-on-primary-programming-language/" target="_blank">程序员的奋斗史（一）浅谈几种主要编程语言</a>
 

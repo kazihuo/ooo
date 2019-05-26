@@ -19,7 +19,7 @@ tags:
 * Table of Contents
 {:toc}
 
-`文/温国兵`
+`文/robin`
 
 ## 1.文档摘要 ##
 
@@ -1229,7 +1229,7 @@ auto_deploy_app_windows: 适用于Windows。
 
 ## 9.作者信息 ##
 
-温国兵
+robin
 
 * Robin Wen
 * <a href="mailto:blockxyz@gmail.com"><img src="https://cdn.wenguobing.com/7yOaC7C.png" title="Robin's Gmail" border="0" height="16px" width="16px" alt="Robin's Gmail" /></a>

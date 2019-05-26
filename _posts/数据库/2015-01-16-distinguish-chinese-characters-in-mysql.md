@@ -16,7 +16,7 @@ tags:
 * Table of Contents
 {:toc}
 
-`文/温国兵`
+`文/robin`
 
 ## 一 引子 ##
 
@@ -87,7 +87,7 @@ No query specified
 mysql> INSERT INTO user VALUES('robin');
 Query OK, 1 row affected (0.01 sec)
 
-mysql> INSERT INTO user VALUES('温国兵');
+mysql> INSERT INTO user VALUES('robin');
 Query OK, 1 row affected (0.00 sec)
 ```
 
@@ -100,7 +100,7 @@ mysql> SELECT * FROM user \G;
 *************************** 1. row ***************************
 name: robin
 *************************** 2. row ***************************
-name: 温国兵
+name: robin
 2 rows in set (0.00 sec)
 
 mysql> SELECT name,
@@ -113,7 +113,7 @@ mysql> SELECT name,
 | name      | 判断是否是中文字符 |
 +-----------+-----------------------------+
 | robin     | 不是中文字符          |
-| 温国兵 | 是中文字符             |
+| robin | 是中文字符             |
 +-----------+-----------------------------+
 2 rows in set (0.00 sec)
 
@@ -121,7 +121,7 @@ mysql> SELECT name FROM user WHERE NOT (name REGEXP "[\u0391-\uFFE5]");
 +-----------+
 | name      |
 +-----------+
-| 温国兵 |
+| robin |
 +-----------+
 1 row in set (0.00 sec)
 ```
@@ -134,7 +134,7 @@ mysql> SELECT name, length(name), char_length(name) FROM user;
 | name      | length(name) | char_length(name) |
 +-----------+--------------+-------------------+
 | robin     |            5 |                 5 |
-| 温国兵 |           20 |                 9 |
+| robin |           20 |                 9 |
 +-----------+--------------+-------------------+
 2 rows in set (0.00 sec)
 
@@ -142,7 +142,7 @@ mysql> SELECT name FROM user WHERE length(name) <> char_length(name);
 +-----------+
 | name      |
 +-----------+
-| 温国兵 |
+| robin |
 +-----------+
 1 row in set (0.00 sec)
 ```

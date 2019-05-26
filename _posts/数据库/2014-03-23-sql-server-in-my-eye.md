@@ -11,7 +11,7 @@ tags:
 - MSSQL
 ---
 
-`文/温国兵`
+`文/robin`
 
 本文站在一个初级DBA的角度来讲下我眼里的SQL Server。
 

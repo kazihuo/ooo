@@ -14,7 +14,7 @@ tags:
   - Telegram
 ---
 
-`文/温国兵`
+`文/robin`
 
 上一篇文章向大家介绍了隐私利器 [PGP](https://dbarobin.com/2019/05/02/privacy-geek-pgp)，好奇的是，读者有去实践吗？如果遇到有任何疑惑，欢迎交流。在博客的 [关于](https://dbarobin.com/about) 页面可以找到联系方式。
 

@@ -16,7 +16,7 @@ tags:
 * Table of Contents
 {:toc}
 
-`文/温国兵`
+`文/robin`
 
 SQL Server快速导入数据，可以尝试的方法如下：**CTE、OpenRowSet/OpenDataSource、BULK INSERT、bcp、Shell**。
 

@@ -10,7 +10,7 @@ tags:
   - 博客
 ---
 
-`文/温国兵`
+`文/robin`
 
 Fenng 写了一篇文章，标题叫做「[个人 Blog 时代的终结](http://dbanotes.net/review/blog-is-over.html)」，发布于 2018 年 12 月 14 日，然而今天 RSS 才推送给我。
 

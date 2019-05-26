@@ -14,7 +14,7 @@ tags:
 - BitShares
 ---
 
-`文/温国兵`
+`文/robin`
 
 > 本文由币乎社区（bihu.com）内容支持计划奖励。
 

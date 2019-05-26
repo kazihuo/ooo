@@ -12,7 +12,7 @@ tags:
   - Mixin
 ---
 
-`文/温国兵`
+`文/robin`
 
 > 本文已参与 ExinOne 定投有奖征文。
 

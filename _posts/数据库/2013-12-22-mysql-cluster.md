@@ -19,7 +19,7 @@ tags:
 * Table of Contents
 {:toc}
 
-`文/温国兵`
+`文/robin`
 
 ## 一 MySQL集群简介 ##
 

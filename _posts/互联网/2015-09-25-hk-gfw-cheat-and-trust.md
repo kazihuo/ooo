@@ -38,7 +38,7 @@ comments:
 
 ---
 
-`文/温国兵`
+`文/robin`
 
 看到标题，读者或许会感到亲切。是的，virushuo 前段时间写了一篇文章，标题叫做 「[墙、感染、信任和欺骗](http://mp.weixin.qq.com/s?__biz=MjM5MTE4Nzk1NA==&mid=209128120&idx=1&sn=f735996fe4c92bb91a1cb4808a5a7722&scene=2&srcid=09210n7flsORd0TnYWDiHRS3&from=timeline&isappinstalled=0)」。关于墙的思考和愤怒，积压太久，总算找到一个好时机说说自己的看法。相比这篇文章的内容，这个标题再适合不过。本文或许会有一些敏感词，我不打算放在除了博客以外的其他平台，这也是不备案的原因之一。我清楚的知道，写这种文章是有风险的。这篇文章反动吗？你可以这样认为，也可以那样以为。
 

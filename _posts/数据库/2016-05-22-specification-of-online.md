@@ -28,7 +28,7 @@ comments:
 
 ---
 
-`文/温国兵`
+`文/robin`
 
 根据**莫非定律**[^1]：「凡是可能出错的事必定会出错，任何一个事件，只要具有大于零的机率，就不能够确定它不会发生。」这句看似箴言的话，想必每个运维从业人员感触非常深刻。本文从 DBA 线上操作的角度，谈谈自己的看法。
 
@@ -61,5 +61,5 @@ comments:
 
 [^1]: [莫非定律，维基百科](https://zh.wikipedia.org/wiki/摩菲定理)
 [^2]: [Pierre Puvis de Chavannes, Wikipedia](https://en.wikipedia.org/wiki/Pierre_Puvis_de_Chavannes)
-[^3]: [学会提问 - 温国兵的随想录](https://dbarobin.com/2015/08/15/asking-the-right-questions/)
+[^3]: [学会提问 - @robin](https://dbarobin.com/2015/08/15/asking-the-right-questions/)
 [^4]: [DBA 警世录: 备份重于一切](http://www.eygle.com/archives/2006/10/backup_backup_backup.html)

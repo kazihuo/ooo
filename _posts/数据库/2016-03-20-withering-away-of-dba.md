@@ -36,7 +36,7 @@ comments:
 
 ---
 
-`文/温国兵`
+`文/robin`
 
 早在 2013 年，好友 [waterbin](http://blog.csdn.net/dba_waterbin) 就写过一篇文章，标题叫做**「[DBA 的职业发展机会](http://blog.csdn.net/dba_waterbin/article/details/17187257)」**。在这篇文章中，waterbin 提到了几个话题，亦即：一，OldSQL、NoSQL、NewSQL；二，DevOps；三，数据可视化；四，DBA 还是 DA。文章中的不少观点，现在看来依然不过时。而这篇文章，笔者想讲讲运维 DBA 的消亡。
 

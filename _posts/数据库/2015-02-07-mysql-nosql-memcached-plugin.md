@@ -20,7 +20,7 @@ tags:
 {:toc}
 
 `文/Marcelo Altmann`
-`译/温国兵`
+`译/robin`
 
 大多数人都已经听说 `NoSQL` 数据库，其中使用最广泛的工具是 `Memcached`，你们通过 Memcached 再应用层和数据库之间添加一个缓存层。从 MySQL 5.6 开始，你可以获得一个全新的插件，这个插件把 MySQL 和 Memcached 集成起来。在此文中，我们将学习怎样在 Linux 中 安装这个插件，怎样做一些基础的配置。
 

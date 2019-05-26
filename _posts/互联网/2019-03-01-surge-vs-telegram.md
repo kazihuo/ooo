@@ -11,7 +11,7 @@ tags:
   - Telegram
 ---
 
-`文/温国兵`
+`文/robin`
 
 Telegram 是一款著名的 IM，笔者使用频率相当高。Telegram 相比其他 IM 有什么优势，读者可以点击 [此处](https://telegram.org/faq) 阅读。
 
