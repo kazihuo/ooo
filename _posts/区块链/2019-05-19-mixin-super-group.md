@@ -25,6 +25,15 @@ comments:
       &#x67B6;&#x6784;&#x56FE;&#x662F;&#x7528;&#x4EC0;&#x4E48;&#x8F6F;&#x4EF6;&#x753B;&#x7684;&#x4E2B;
       :&gt;
     date: 2019-05-25T04:35:29.163Z
+  - author:
+      type: github
+      displayName: dbarobin
+      url: 'https://github.com/dbarobin'
+      picture: 'https://avatars1.githubusercontent.com/u/3949252?v=4&s=73'
+    content: >-
+      @Kuri-su &#x7528; OmniGraffle &#x753B;&#x7684;&#xFF0C;Omni
+      &#x5168;&#x5BB6;&#x6876;&#xFF0C;&#x1F602;
+    date: 2019-05-26T07:49:36.276Z
 
 ---
 
