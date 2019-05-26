@@ -376,7 +376,7 @@ WHERE  name LIKE N'%[一-龥]%' COLLATE Chinese_PRC_BIN
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/24516997" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="SQL Server截取字符串和处理中文技巧" height="16px" width="16px" border="0" alt="SQL Server截取字符串和处理中文技巧" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/24516997" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="SQL Server截取字符串和处理中文技巧" height="16px" width="16px" border="0" alt="SQL Server截取字符串和处理中文技巧" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

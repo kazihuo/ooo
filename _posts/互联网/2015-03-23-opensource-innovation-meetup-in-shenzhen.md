@@ -41,9 +41,9 @@ tags:
 
 上两张王涛老师的照片，来自 Fangfang，感谢。
 
-![rsz_wangtao-cto-2](https://cdn.wenguobing.com/wangtao-cto-2.png)
+![rsz_wangtao-cto-2](https://cdn.dbarobin.com/wangtao-cto-2.png)
 
-![rsz_wangtao-cto-1](https://cdn.wenguobing.com/rsz_wangtao-cto-1.png)
+![rsz_wangtao-cto-1](https://cdn.dbarobin.com/rsz_wangtao-cto-1.png)
 
 ## MySQL 开源社区的协作模式 ##
 ***
@@ -52,7 +52,7 @@ tags:
 
 上一张图，彭老师在尽情地演讲。PS：拍照能力有限，拍了好几张都拍得不好，就传这一张表示下吧。题图来自：By Robin.
 
-![MySQL-Plinux](https://cdn.wenguobing.com/oqMmehp.png)
+![MySQL-Plinux](https://cdn.dbarobin.com/oqMmehp.png)
 
 ## 腾讯自动化工具与开发的思路 ##
 ***

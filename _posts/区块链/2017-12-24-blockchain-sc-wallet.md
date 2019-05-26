@@ -28,7 +28,7 @@ tags:
 
 Sia 最初的设计目的是：让云储存去中心化。在这个平台上，您可以存放和提取各种各样的文件，并不需要为您的文件隐私和安全担心。通过运用加密技术，加密合约，和重复备份，Sia 能够使一群互不信任的和互不了解的计算机节点联合起来成为一种有统一运行逻辑和程序的云储存平台。
 
-![Siacoin](https://cdn.wenguobing.com/KedYD7P.jpg)
+![Siacoin](https://cdn.dbarobin.com/KedYD7P.jpg)
 
 > 题图来自: © Jonathan Tompkins / Crypto Review — Siacoin (SC) / hackernoon.com
 
@@ -79,7 +79,7 @@ MaidSafe 是一个非常有野心的项目，它的目标超出了去中心化�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -107,7 +107,7 @@ MaidSafe 是一个非常有野心的项目，它的目标超出了去中心化�
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

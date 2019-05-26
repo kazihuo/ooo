@@ -57,7 +57,7 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 
 架构示意图如下：
 
-![](https://cdn.wenguobing.com/loplv1n.png)
+![](https://cdn.dbarobin.com/loplv1n.png)
 
 ## 三 如何部署
 ***

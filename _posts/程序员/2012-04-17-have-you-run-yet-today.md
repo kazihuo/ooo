@@ -24,16 +24,16 @@ tags:
 
 如果跑步是一直信仰，那我希望我能一直坚持下去！坚持不懈地做一件事情非常需要毅力，就把跑步当做培养我毅力的美差。
 
-![Have you run yet today](https://cdn.wenguobing.com/CKlCVvp.jpg)
+![Have you run yet today](https://cdn.dbarobin.com/CKlCVvp.jpg)
 
 再来说我们IT这行吧。干我们这行的，身体显得格外重要，不要当生病时才知道珍惜身体，不要直到失去时才后悔当初我们为什么不好好把握。想想我们一天在电脑面前多少时间，手、脚一直保持一个状态，脑子在高负荷的运转，这样长期下来您能吃得消吗？我们现在年轻或许你感受不到，但是当你慢慢老去的时候，您还能有这样的保证吗？昨天一个很好的朋友说，“男人久坐必生病”，我想这句话是很有道理的。其他的坏处我不多说，大家自己上网查查就知道了。为了自己有一个健康强壮的身体，为了以后更好的生活，也为了自己更好的发展，在此呼吁大家，无论每天你是多么的忙碌，抽出一点时间锻炼吧。所以不要迟疑，不要犹豫，抓住青春的美好，放下背包，轻装上阵，去跑步，去锻炼吧！要相信，身体才是革命的本钱！
 
 当我跨过一个一个的障碍时，我只知道我离成功越来越近。
 
-![Have you run yet today](https://cdn.wenguobing.com/ocDlIKb.jpg)
+![Have you run yet today](https://cdn.dbarobin.com/ocDlIKb.jpg)
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/7469605" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二）今天你跑步了吗" height="16px" width="16px" border="0" alt="程序员的奋斗史（二）今天你跑步了吗" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/7469605" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二）今天你跑步了吗" height="16px" width="16px" border="0" alt="程序员的奋斗史（二）今天你跑步了吗" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -291,7 +291,7 @@ Master_SSL_Verify_Server_Cert: No
 
 在从节点执行的 1-4 步骤中，IO 线程会呈现 Reading event from the relay log 状态，持续地为下一个  LOAD DATA LOCAL INFILE 命令提取 CSV 行。此时从库会持续落后，一旦从库落后时间较长，会导致 SQL 线程阻塞，呈现 Queueing master event to the relay log 状态，从而复制夯住。
 
-![2015-08-22-mysql-replication-hanging](https://cdn.wenguobing.com/TLCA1lt.jpg)
+![2015-08-22-mysql-replication-hanging](https://cdn.dbarobin.com/TLCA1lt.jpg)
 
 ## 五 小结 ##
 ***

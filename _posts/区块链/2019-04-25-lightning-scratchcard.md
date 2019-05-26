@@ -19,7 +19,7 @@ tags:
 
 发现一个闪电网络应用，名叫 Lightning Scratchcard，网站链接 [https://lightningscratchcard.io](https://lightningscratchcard.io)。
 
-![](https://cdn.wenguobing.com/pa5nkmb.jpg)
+![](https://cdn.dbarobin.com/pa5nkmb.jpg)
 
 > 题图来自: © Guillaume Verbal / tagline / lightningscratchcard.io
 

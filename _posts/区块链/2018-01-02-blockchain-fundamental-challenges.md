@@ -30,7 +30,7 @@ tags:
 * 工具不足
 * 量子计算威胁
 
-![Cartoon: Murdoch Walking on Thin Ice](https://cdn.wenguobing.com/RPHVOoP.png)
+![Cartoon: Murdoch Walking on Thin Ice](https://cdn.dbarobin.com/RPHVOoP.png)
 
 > 题图来自: © Preethi Kasireddy / Fundamental challenges with public blockchains / medium.com
 
@@ -134,7 +134,7 @@ Kasireddy 明年（2018 年）的目标是：
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -162,7 +162,7 @@ Kasireddy 明年（2018 年）的目标是：
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

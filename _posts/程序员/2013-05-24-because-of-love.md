@@ -26,7 +26,7 @@ tags:
 
 **世间多沉浮，能找到另一半共同经历风风雨雨，白头偕老，那是人间之大幸福。**
 
-![Because of love](https://cdn.wenguobing.com/Yjo3nrJ.jpg)
+![Because of love](https://cdn.dbarobin.com/Yjo3nrJ.jpg)
 
 **执子之手，与子偕老。**相遇、相知、相爱。善待自己的另一半，不要做伤害对方、背叛对方、欺骗对方的事。如果你是个男人，并且已婚，那就好好的对待你的妻子吧。想想你的女人把她生命中最灿烂的年华、最美好的时光都献给了你，你又有什么理由不对她好？
 
@@ -40,8 +40,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/8971746" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（十九）因为爱情" height="16px" width="16px" border="0" alt="程序员的奋斗史（十九）因为爱情" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/8971746" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（十九）因为爱情" height="16px" width="16px" border="0" alt="程序员的奋斗史（十九）因为爱情" /></a>
 
-题图来自：<a href="http://blogs.wsj.com/chinarealtime/2012/04/25/why-china-loves-titanic-so-much-a-theory/" target="_blank"><img src="https://cdn.wenguobing.com/S5lbXHL.png" title="" height="16px" width="16px" border="0" alt="" /></a>
+题图来自：<a href="http://blogs.wsj.com/chinarealtime/2012/04/25/why-china-loves-titanic-so-much-a-theory/" target="_blank"><img src="https://cdn.dbarobin.com/S5lbXHL.png" title="" height="16px" width="16px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

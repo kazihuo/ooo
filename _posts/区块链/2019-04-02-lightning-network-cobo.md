@@ -19,7 +19,7 @@ tags:
 
 Cobo Wallet 最新版，版本号 3.14.1，目前正式支持闪电网络，iOS 和 Android 同步发布。下载地址点击 [此处](https://cobo.com)。
 
-![](https://cdn.wenguobing.com/rL9E1Gc.png)
+![](https://cdn.dbarobin.com/rL9E1Gc.png)
 
 > 题图来自: © 比特财经网 / 四张图看懂强大的跨链钱包 Cobo / btcmoney.cc
 
@@ -44,7 +44,7 @@ Cobo Wallet 最新版，版本号 3.14.1，目前正式支持闪电网络，iOS 
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
+![区块链技术指北](https://cdn.dbarobin.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -77,7 +77,7 @@ Cobo Wallet 最新版，版本号 3.14.1，目前正式支持闪电网络，iOS 
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

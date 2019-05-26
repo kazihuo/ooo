@@ -26,7 +26,7 @@ tags:
 
 首先我们来看币中之王 BTC。BTC 是迄今为止最为成功的区块链项目，也是市值排名第一的虚拟货币。比特币诞生源于神秘人物中本聪 2008 年的白皮书《比特币：一种点对点的电子货币系统。比特币总数固定在 2100 万个，没有发行方，去中心化，这些特性让比特币成为一种革命性货币。基于区块链技术，比特币的每个交易都经过全网广播，人人可见，可以查到任何交易历史，无法伪造、篡改交易记录，数字加密货币解决了网络去中心化、无主权货币、避免双重支付、可靠高效、廉价匿名等一系列过去觉得不可能解决的问题。
 
-![Bitcoin](https://cdn.wenguobing.com/82BCW5k.jpg)
+![Bitcoin](https://cdn.dbarobin.com/82BCW5k.jpg)
 
 > 题图来自: © WAN ASRAFF / Soal Jawab Tentang Mining Bitcoin / goo.gl/xVbMxR
 
@@ -76,7 +76,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -104,7 +104,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

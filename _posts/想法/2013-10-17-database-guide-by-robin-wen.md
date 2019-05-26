@@ -32,7 +32,7 @@ tags:
  
 **【我的回答】**
 
-![Database guide by robin wen](https://cdn.wenguobing.com/hKDzoKq.jpg)
+![Database guide by robin wen](https://cdn.dbarobin.com/hKDzoKq.jpg)
 
 我来说说自己的看法吧。
 

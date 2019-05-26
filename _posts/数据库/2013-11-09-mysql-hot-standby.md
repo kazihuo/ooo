@@ -29,7 +29,7 @@ tags:
 
 ## 二 示意图 ##
 
-![MySQL备份与恢复之热备示意图](https://cdn.wenguobing.com/UbrApUu.jpg)
+![MySQL备份与恢复之热备示意图](https://cdn.dbarobin.com/UbrApUu.jpg)
 
 ## 三 热备模拟 ##
 
@@ -458,7 +458,7 @@ mysql -uroot -p123456 -e "select * from game.country"
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/14644549" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之热备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之热备" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/14644549" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="MySQL备份与恢复之热备" height="16px" width="16px" border="0" alt="MySQL备份与恢复之热备" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

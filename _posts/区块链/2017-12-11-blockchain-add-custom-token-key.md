@@ -30,7 +30,7 @@ tags:
 
 接着点击「Add Custom Token」。根据币乎 [Contract Address](https://bihu.com/contractAddress.html) 页面提示。
 
-![Add Custom Token](https://cdn.wenguobing.com/x4bX0EG.png)
+![Add Custom Token](https://cdn.dbarobin.com/x4bX0EG.png)
 
 **Token Contract Address** 输入 `0x4cd988afbad37289baaf53c13e98e2bd46aaea8c`。
 
@@ -38,7 +38,7 @@ tags:
 
 **Decimals** 输入 `18`，点击 Save 保存。
 
-![Bihu Contract Address](https://cdn.wenguobing.com/s77ukaM.png)
+![Bihu Contract Address](https://cdn.dbarobin.com/s77ukaM.png)
 
 最后 **Load Tokens** 即可看到添加的币乎代币 KEY。
 
@@ -61,7 +61,7 @@ Token Contract Address 表示合约地址，Token Symbol 表示 Token 的代号�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -89,7 +89,7 @@ Token Contract Address 表示合约地址，Token Symbol 表示 Token 的代号�
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

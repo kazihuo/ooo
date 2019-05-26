@@ -26,7 +26,7 @@ tags:
 
 目前我在知乎回答了近200个问题，编辑了1211次，获得了500+赞同、200+感谢，关注者214人。如此拙绩虽不敢和知乎大牛相比，但一路走来的分享和进步令人欣慰。我在知乎上的回答大半数都是关于数据库的，现在每天平均能收到1个邀请。很多知友向我提的问题我都会认真对待，但我确实不了解或者超过能力范畴的问题，我会跳过。我的回答有一部分得到了知友的赞同，每收到1个赞同或者1个感谢，心里都洋溢着幸福的味道。每一次回答知友的问题，都要花费大量的时间去收集数据，旁征博引，避免出现错误。还有知友在私信中向我请教问题、推荐工作等等。同时我也利用知乎私信向他人请教问题，受益颇多。正如一次谈话中提及，帮助别人就是帮助自己，只要你去做了，尽己所能地帮助别人，终有一日会生根发芽，这就是所谓的「念念不忘，必有回响」。
 
-![The chapter three of my university periodic history](https://cdn.wenguobing.com/GO2YTlC.jpg)
+![The chapter three of my university periodic history](https://cdn.dbarobin.com/GO2YTlC.jpg)
 
 现在依然记忆犹新的是「程浩」。关于谁是程浩，常年混迹知乎的人想必如雷贯耳。他在「你觉得自己牛逼在哪里？」这个问题上的回答号称是知乎上赞同数最多的。让我们一起回忆这句经典：「真正牛逼的，不是那些可以随口拿来夸耀的事迹，而是那些在困境中依然保持微笑的凡人」。他在「地狱在身后」文章中写道：「天堂未必在前方，但地狱一定在身后」。没有浩瀚的阅读和深刻的思考，是很难写出这样的句子。这让我想起尼采所说：「凡不能毁灭我的，必使我强大」。浩瀚星辰，莽莽岁月，穿越过时间和空间，这句话之于程浩，是最好的印证。疾病让他痛苦万分，而他和命运进行抗争的勇敢、坚强激励着我们。生命之于程浩，是不幸的；程浩之于我们，是万幸的。
 
@@ -40,7 +40,7 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/32935805" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（三十九）大学断代史（三）我和知乎邂逅" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十九）大学断代史（三）我和知乎邂逅" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/32935805" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（三十九）大学断代史（三）我和知乎邂逅" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十九）大学断代史（三）我和知乎邂逅" /></a>
 
 题图来自：<a href="http://www.pmkankan.com/html/date/2013/05" target="_blank">pmkankan</a>
 

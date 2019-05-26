@@ -17,7 +17,7 @@ tags:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
-![](https://cdn.wenguobing.com/smxzEPJ.png)
+![](https://cdn.dbarobin.com/smxzEPJ.png)
 
 > 题图来自: © ChainONE / Original / chainon.io
 
@@ -30,7 +30,7 @@ tags:
 
 <!--more-->
 
-![](https://cdn.wenguobing.com/O0w2yeu.jpg)
+![](https://cdn.dbarobin.com/O0w2yeu.jpg)
 
 ## 0x01 解决方案
 ***
@@ -198,7 +198,7 @@ SQL 语句优化是一门不断试错，不断否定自己的学问。读者需�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://cdn.wenguobing.com/RBmpxTL.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -231,7 +231,7 @@ SQL 语句优化是一门不断试错，不断否定自己的学问。读者需�
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

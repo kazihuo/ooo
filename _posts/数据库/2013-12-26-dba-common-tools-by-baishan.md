@@ -35,7 +35,7 @@ DBA 的电脑上需要安装什么软件？经常有人问老白，其实每个 
 
 **lNETTERM**是 TELNET 的工具，而且有免费版的。NETTERM的兼容性很不错，主流的操作系统下表现都不错，而且这个软件可以免安装，所以每次老白换电脑的时候只要把安装目录拷贝过去就行了，里面的服务器定义不会丢失。NETTERM的 SESSION LOG 功能也十分好，每次老白连到客户系统上的时候手心会开启SESSION LOG，这样就可以把每次操作的情况记录下来，这回老白写 DBA 日记，很多细节都是借助SESSION LOG 才回忆起来的。老白不喜欢使用支持多页的TELNET 工具，这不是说多页支持不好，而是在老白的 DBA 生涯中越做越谨慎了。5 、6 年前老白还是很喜欢一次性开多个窗口来进行操作的。而随着 DBA 工作经历的增加，现在老白很怕在同时开多个窗口进行操作。如果必须开多个窗口，那么绝对要保证，多个窗口都是连到同一台服务器的同一个 UNIX 账号的。这是为什么呢？作为一个 DBA，没有过误操作经历的人可能很少，有时候误操作只能让你出身汗，而很多时候，误操作可以让你万劫不复。大概 7、8 年前吧，老白碰到过一件事，当时在一个客户那里做服务，和开发商的人坐在一个办公室里。当时开发商有个哥们刚刚做了火车回到客户那里，正好碰到两个事情，一个是生产库上有个进程 HANG 住了，另外是测试小组要开始新一轮测试，需要清理一下测试机的数据库。所以那个哥们开了两个窗口，分别进行操作，由于当时可能刚刚坐了一夜火车，在这两个系统上来回倒了几次后终于做了一个误操作，删除了一张重要的生产表的数据。从那次以后，老白在客户现场尽可能避免同时连到多个系统上，以避免不必要的误操作；
 
-![DBA common tools by baishan](https://cdn.wenguobing.com/lkqPTDC.jpg)
+![DBA common tools by baishan](https://cdn.dbarobin.com/lkqPTDC.jpg)
 
 **SSh secure shell**是连接 ssh 的服务器的工具，不需要老白做过多的解释了吧；
 
@@ -53,6 +53,6 @@ DBA 的电脑上需要安装什么软件？经常有人问老白，其实每个 
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://www.carolynhampe.com/253671/3313623/work/common-tools-commencement-show-branding" target="_blank"><img src="https://cdn.wenguobing.com/klUhMnG.png" title="" height="16px" width="16px" border="0" alt="" /></a>
+题图来自：<a href="http://www.carolynhampe.com/253671/3313623/work/common-tools-commencement-show-branding" target="_blank"><img src="https://cdn.dbarobin.com/klUhMnG.png" title="" height="16px" width="16px" border="0" alt="" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

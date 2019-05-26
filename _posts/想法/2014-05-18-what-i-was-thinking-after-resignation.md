@@ -13,7 +13,7 @@ tags:
 
 2014年5月8日，正式辞职，离入职刚好两个月。
 
-![What I was thinking after resignation](https://cdn.wenguobing.com/VkOoWtA.png)
+![What I was thinking after resignation](https://cdn.dbarobin.com/VkOoWtA.png)
 
 做这个决定或许稍显唐突，但其中缘由且听我慢慢道来。
 
@@ -37,6 +37,6 @@ tags:
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://zrdavis.com/i-quit/" target="_blank"><img src="https://cdn.wenguobing.com/nh8cHh4.gif" title="Quit" border="0" alt="Quit" height="16px" width="16px" /></a>
+题图来自：<a href="http://zrdavis.com/i-quit/" target="_blank"><img src="https://cdn.dbarobin.com/nh8cHh4.gif" title="Quit" border="0" alt="Quit" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

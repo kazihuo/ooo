@@ -28,7 +28,7 @@ oracle的exadata好像全球销量并不高。现在国内很多厂商喊着去I
 **2.大数据一体机的实质是什么？**
 个人理解，大数据一体机的实质就是围绕大数量做的简化，集成产生和维护数据所需的各种资源。我们对世界的认识有一种简化机制，大数据一体机也是一种简化；
 
-![The essence of Big Data Appliance](https://cdn.wenguobing.com/DzU9EdA.jpg)
+![The essence of Big Data Appliance](https://cdn.dbarobin.com/DzU9EdA.jpg)
 
 **3.大数据分析领域这种一体机真的有市场吗？**
 对大数据分析领域不是非常的了解，但数据分析不也是基于大数据量所做的应用？大数据一体机最核心的也就是围绕着大数据量，传统的数据分析在数据量过大时很可能不再奏效，那大数据一体机很可能契合了这种需求，所以个人认为在此领域大数据一体机还是有市场的；
@@ -93,6 +93,6 @@ oracle的exadata好像全球销量并不高。现在国内很多厂商喊着去I
 
 原文地址：微信公众号文章
 
-题图来自：<a href="https://www.oracle.com/engineered-systems/big-data-appliance/index.html" target="_blank"><img src="https://cdn.wenguobing.com/mvKAMvm.png" title="The essence of Big Data Appliance" border="0" alt="The essence of Big Data Appliance" height="16px" width="16px" /></a>
+题图来自：<a href="https://www.oracle.com/engineered-systems/big-data-appliance/index.html" target="_blank"><img src="https://cdn.dbarobin.com/mvKAMvm.png" title="The essence of Big Data Appliance" border="0" alt="The essence of Big Data Appliance" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

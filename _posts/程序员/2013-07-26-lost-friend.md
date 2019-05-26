@@ -18,7 +18,7 @@ tags:
 
 相遇便是缘分，相知相识更是不知前世多少岁月的修炼。你说缘分真是神奇，有缘千里来相会，无缘对坐不相见。我们每个人都是大千世界的沧海一粟，是缘分让我们有机会同窗三载，是缘分让我们彼此相惜，是缘分让我们在赛道上一起奔跑，是缘分让我们在图书馆一起接受书籍的洗礼，但是，又是缘分让我们彼此冷漠，又是缘分让我们越走越远，又是缘分让我们形同陌路，又是缘分让我们彼此相离。或许是缘来相聚，缘尽相散，如此这般，不过如此。
 
-![Lost friend](https://cdn.wenguobing.com/P8DS2Vw.png)
+![Lost friend](https://cdn.dbarobin.com/P8DS2Vw.png)
 
 常言“朋友多了路好走”，可见朋友的重要性。一个人是否能成功，关键在于对资源的整合能力，特别是人脉。还有句话是这样的：学历是铜牌，能力是银牌，人脉是金牌，也足以说明人脉的重要性。在中国这个“人情味”很足的国家里，什么人脉啊，关系啊就显得尤其重要。写到这里，好吧，有点偏题了。当然，人脉并不等于朋友，人脉中你找别人帮忙很多都是情面和利益关系，朋友的话也有很多种，有酒肉朋友，有一生知己，有蓝颜红颜，有普通朋友……如此种种。一生知己是可遇不可求的，有些一生知己是相识很久，甚至是青梅竹马然而有些人是萍水相逢，却似故人那般，相见恨晚。一生知己数量肯定是很少的，如果很多人你都把他当做一生知己，只能说那不是真正的一生知己。这样的朋友也需要用心经营，那将是人生的一大笔财富。
 
@@ -30,7 +30,7 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9500233" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十六）迷失的朋友" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十六）迷失的朋友" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9500233" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二十六）迷失的朋友" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十六）迷失的朋友" /></a>
 
 题图来自：<a href="http://smallscreenscoop.com/claire-kate-lost/37069/" target="_blank">SmallScreenScoop</a>
 

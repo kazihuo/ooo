@@ -22,7 +22,7 @@ tags:
 
 有了目标，有了方向，不会迷茫，不会彷徨，死心塌地的朝着前方永不停歇地奋斗，这是多么的畅快。
 
-![Interest is the first driving force](https://cdn.wenguobing.com/YpXWXqK.jpg)
+![Interest is the first driving force](https://cdn.dbarobin.com/YpXWXqK.jpg)
 
 昨天在网上看到一段话，说得很对，特此摘抄下来和大家共享。
 
@@ -42,6 +42,6 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/7536831" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四）兴趣是第一驱动力" height="16px" width="16px" border="0" alt="程序员的奋斗史（四）兴趣是第一驱动力" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/7536831" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（四）兴趣是第一驱动力" height="16px" width="16px" border="0" alt="程序员的奋斗史（四）兴趣是第一驱动力" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

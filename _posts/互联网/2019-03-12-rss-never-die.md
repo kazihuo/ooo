@@ -16,7 +16,7 @@ RSS（ 简易信息聚合）是一种消息来源格式规范，用以聚合经�
 
 RSS 的第一个版本为 RDF Site Summary，在 1999 年三月由美国网景公司的 Guha 为了用在 My.Netscape.Com 门户网站而开发。这个版本开始以 RSS0.9 为名。[2] 随后，被称为互联网之子的「亚伦・斯沃茨」参与了 [RSS 1.0](http://web.resource.org/rss/1.0) 标准的制定。最新的版本是 2.0，于 2009 年由 RSS Advisory Board 发布。目前支持较多的也是 1.0 和 2.0 这两个版本。
 
-![RSS](https://cdn.wenguobing.com/CZSh4eJ.png)
+![RSS](https://cdn.dbarobin.com/CZSh4eJ.png)
 
 > 题图来自: © LibGuides / Current Awareness: RSS feeds / libguides.napier.ac.uk
 

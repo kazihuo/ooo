@@ -160,7 +160,7 @@ AS 本质上与 Deadline 一样，但在最后一次读操作后，要等待 6ms
 
 A 项目 MySQL 主从关系如图一：
 
-![Yzone](https://cdn.wenguobing.com/ktLzmgs.png)
+![Yzone](https://cdn.dbarobin.com/ktLzmgs.png)
 图一 A 项目 MySQL 主从关系图
 
 ## 六 程序切换之前调优
@@ -374,12 +374,12 @@ SET GLOBAL innodb_adaptive_flushing = ON;
 
 以下是高速缓冲区的脏页数据情况，如图二：
 
-![InnoDB Dirty pages](https://cdn.wenguobing.com/3elQdCP.png)
+![InnoDB Dirty pages](https://cdn.dbarobin.com/3elQdCP.png)
 图二 主库的脏数据情况
 
 以下是脏数据落地的情况，如图三
 
-![InnoDB Flushed](https://cdn.wenguobing.com/xvXiOAW.png)
+![InnoDB Flushed](https://cdn.dbarobin.com/xvXiOAW.png)
 图三 主库的脏数据落地情况
 
 28 号早 8 点到下午 7 点，当脏数据上升，也就是在内存中的数据更多，那么落地就会很少，呈现一个平稳的趋势；当脏数据维持不变，也就是脏数据达到了 innodb_max_dirty_pages_pct 的限额（innodb_buffer_pool_size 为 40G，innodb_max_dirty_pages_pct 为 40%，也就是在内存中的脏数据最多为 16G，每个 Page 16K，则 innodbBufferPoolDirtyPages 最大为 1000K），落地就会增多，呈现上升的趋势，所以才会出现上述图片中的曲线。

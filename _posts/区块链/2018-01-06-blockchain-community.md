@@ -71,7 +71,7 @@ comments:
 
 网站测试优化部分，笔者测试了手机终端兼容性，做了汉化，测试了邮箱、GitHub、Twitter 登录方式，修改了网站的相关信息……这种日夜兼程，忙得忘记时间的感觉真好。后续的运营、网站技术支持才是重点，未来还要花大力气打磨，咱一步一个脚印，慢慢优化。
 
-![Google](https://cdn.wenguobing.com/3lyEZWR.jpg)
+![Google](https://cdn.dbarobin.com/3lyEZWR.jpg)
 
 > 题图来自: © Google Images / Tech / google.com
 
@@ -87,7 +87,7 @@ comments:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -115,7 +115,7 @@ comments:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

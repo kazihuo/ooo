@@ -18,7 +18,7 @@ tags:
 
 2015 年的春节很不一样，大家都在摇一摇中度过春节。2015 年春节微信红包和支付宝红包大战，高下立判。
 
-![2015-02-27-lucky-money-of-wechat-and-alipay](https://cdn.wenguobing.com/YnPvIEB.png)
+![2015-02-27-lucky-money-of-wechat-and-alipay](https://cdn.dbarobin.com/YnPvIEB.png)
 
 这篇文章以一个技术人的视角来看这场没有硝烟的大战。个人观点，不喜勿喷。
 
@@ -43,6 +43,6 @@ tags:
 
 –EOF–
 
-题图来自：<a href="http://www.chinainternetwatch.com/5034/wechat-payment-and-alipayment-wallet-strike/" target="_blank"><img src="https://cdn.wenguobing.com/KxlXroE.png" title="WeChat Payment and Alipayment Wallet Strike" height="16px" width="16px" border="0" alt="WeChat Payment and Alipayment Wallet Strike" /></a>
+题图来自：<a href="http://www.chinainternetwatch.com/5034/wechat-payment-and-alipayment-wallet-strike/" target="_blank"><img src="https://cdn.dbarobin.com/KxlXroE.png" title="WeChat Payment and Alipayment Wallet Strike" height="16px" width="16px" border="0" alt="WeChat Payment and Alipayment Wallet Strike" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

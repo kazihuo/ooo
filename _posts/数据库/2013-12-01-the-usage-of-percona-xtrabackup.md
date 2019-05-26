@@ -41,13 +41,13 @@ tags:
 
 **软件获取**
 
-<a href="http://www.percona.com/software/percona-xtrabackup/downloads" target="_blank"><img src="https://cdn.wenguobing.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a> <br/>
-<a href="http://download.csdn.net/detail/wentasy/6638171" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a>
+<a href="http://www.percona.com/software/percona-xtrabackup/downloads" target="_blank"><img src="https://cdn.dbarobin.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a> <br/>
+<a href="http://download.csdn.net/detail/wentasy/6638171" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a>
 
 **文档获取**
 
-<a href="http://www.percona.com/doc/percona-xtrabackup/2.1/" target="_blank"><img src="https://cdn.wenguobing.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a> <br/>
-<a href="http://download.csdn.net/detail/wentasy/6638029" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a>
+<a href="http://www.percona.com/doc/percona-xtrabackup/2.1/" target="_blank"><img src="https://cdn.dbarobin.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a> <br/>
+<a href="http://download.csdn.net/detail/wentasy/6638029" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a>
 
 ## 四 软件使用讲解 ##
 
@@ -182,11 +182,11 @@ mysql> show databases;
 
 ## 五 参考资料 ##
 
-Percona 文档：<a href="http://www.percona.com/doc/percona-xtrabackup/2.1/" target="_blank"><img src="https://cdn.wenguobing.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a>
+Percona 文档：<a href="http://www.percona.com/doc/percona-xtrabackup/2.1/" target="_blank"><img src="https://cdn.dbarobin.com/18VTVkQ.jpg" title="percona-xtrabackup" height="16px" width="16px" border="0" alt="percona-xtrabackup" /></a>
 
 –EOF–
 
-原文地址：<a href="" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之percona-xtrabackup软件的使用" height="16px" width="16px" border="0" alt="MySQL备份与恢复之percona-xtrabackup软件的使用" /></a>
+原文地址：<a href="" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="MySQL备份与恢复之percona-xtrabackup软件的使用" height="16px" width="16px" border="0" alt="MySQL备份与恢复之percona-xtrabackup软件的使用" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

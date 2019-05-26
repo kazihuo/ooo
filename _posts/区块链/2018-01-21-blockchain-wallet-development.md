@@ -44,7 +44,7 @@ comments:
 
 我们怎么样理解钱包呢？**简单讲它是连接区块链的一个入口**。目前比较成熟的公链，如比特币、以太坊都有很多钱包可以选择。一般钱包需要完全访问你的用户资产，也就是会要求你输入私钥。钱包的作恶成本极低，这也是笔者建议选择开源钱包的原因之一。
 
-![2018-01-21-blockchain-wallet-development](https://cdn.wenguobing.com/p1Tu0t4.jpg)
+![2018-01-21-blockchain-wallet-development](https://cdn.dbarobin.com/p1Tu0t4.jpg)
 
 > 题图来自: © admin / Delphi White Paper Interpretation / 8855104.com
 
@@ -215,7 +215,7 @@ JSON-RPC 使用了 JSON 格式，那 JSON 是什么呢？
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -243,7 +243,7 @@ JSON-RPC 使用了 JSON 格式，那 JSON 是什么呢？
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

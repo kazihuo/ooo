@@ -40,7 +40,7 @@ tags:
 
 架构示例图：
 
-![Recommendation on MySQL Cluster](https://cdn.wenguobing.com/4IIe1YH.jpg)
+![Recommendation on MySQL Cluster](https://cdn.dbarobin.com/4IIe1YH.jpg)
 
 题图来自CNBlog。
 
@@ -50,6 +50,6 @@ tags:
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://cdn.marketplaceimages.windowsphone.com/v8/images/a94f0340-4e3d-428b-ba1d-7d5e21eed186?imageType=ws_icon_large" target="_blank"><img src="https://cdn.wenguobing.com/Tnv4yD7.png" title="CNBLOG" border="0" alt="CNBLOG" height="16px" width="16px" /></a>
+题图来自：<a href="http://cdn.marketplaceimages.windowsphone.com/v8/images/a94f0340-4e3d-428b-ba1d-7d5e21eed186?imageType=ws_icon_large" target="_blank"><img src="https://cdn.dbarobin.com/Tnv4yD7.png" title="CNBLOG" border="0" alt="CNBLOG" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

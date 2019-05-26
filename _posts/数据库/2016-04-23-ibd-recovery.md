@@ -244,12 +244,12 @@ xxd -r \
 
 接下来看看 ibdata 文件的组织结构，如下图：
 
-![ibdata1_File_Overview](https://cdn.wenguobing.com/7ne7eCG.png)
+![ibdata1_File_Overview](https://cdn.dbarobin.com/7ne7eCG.png)
 From [blog.jcole.us](https://blog.jcole.us/2013/01/03/the-basics-of-innodb-space-file-layout/), by Jeremy Cole.
 
 然后看看 ibd 文件的组织结构，如下图：
 
-![IBD_File_Overview](https://cdn.wenguobing.com/lToZcaf.png)
+![IBD_File_Overview](https://cdn.dbarobin.com/lToZcaf.png)
 From [blog.jcole.us](https://blog.jcole.us/2013/01/03/the-basics-of-innodb-space-file-layout/), by Jeremy Cole.
 
 我们要修改的表空间 id，位于 FSP_HEADER。不同的 ibd 文件，表空间 id 是不同的。ibdata 文件中有一个数据字典 data dictionary，记录的是实例中每个表在 ibdata 中的一个逻辑位置，而在 ibd 文件中也存储着同样的一个 tablespace id，两者必须一致，InnoDB 引擎才能正常加载到数据。所以，我们需要修改旧的表空间 id 为新的。

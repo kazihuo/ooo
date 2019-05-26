@@ -18,7 +18,7 @@ tags:
 
 上大学以来，我的娱乐方式不外乎运动、出去走走、看电影、写作。运动包括了跑步、羽毛球、篮球。不过从大二开始篮球打得比较少了。以前在一篇文章中写到跑步，我是喜欢跑步的，还记得春上村树的作品《当我跑步时我在谈些什么》，其中提到关于生命的思考：「转过弯道时，有时觉得他们好像呼着白气，正从对面默默跑将过来。经受了那般苛酷训练的他们，胸怀的希望、梦想和计划，究竟都消失到了哪里呢？人的思绪也会伴随着肉体的死亡，草草消逝无踪么？」。我也有类似的习惯，就是在跑步的同时思考很多。跑步给我带来很多，从起点到终点，只有不断前行，不断冲刺。是的，对于一个IT行业的学徒，身体是至关重要的。现在的我还保持着每天锻炼的习惯，时长不定。至于出去走走，我是非常喜欢的。不一定要走多远，也不一定要有人陪伴。看着车水马龙的街道，观察浮世中的人们；眺望远方的明星，瞻仰落日余晖；沐浴鸟语花香，感慨一岁枯荣；欣赏美丽杏叶，展望路的远方……有句话如是说：读书和旅行，灵魂和身体总有一条在路上。旅行不一定要走多远，就像担水挑柴皆能悟道。
 
-![The chapter five of my university periodic history](https://cdn.wenguobing.com/P1RucDC.jpg)
+![The chapter five of my university periodic history](https://cdn.dbarobin.com/P1RucDC.jpg)
 
 我是不喜欢玩游戏的，大学貌似只玩过极品飞车。诚然，极品飞车做得非常棒，现在的我还有意愿去玩下。每次毕业季就是失业季，大量的毕业生找不到工作。然后很奇怪的是，企业招不到合适的人，毕业生又经常抱怨找不到工作。刨根问底，不过就是大学生掌握的技能和企业需要的严重脱轨，何况很多大学生连学校的课程都没掌握。至于为什么没有好好学，我想大抵是太放纵，不能管住自己。放纵的方式，游戏功不可没。魔兽世界、地下城与勇士、多塔、CF……一连串熟悉的名字从脑海里浮现。班上很多同学熬夜玩游戏，甚至通宵。在考试前夕仍然每天沉浸在无止境的游戏中，通宵达旦，云烟雾绕，异味纷扰，在一片狼藉中尽情释放，时不时嘴里发出咒骂。我在想这是在世间活着，未必，应该是地狱。我经常发出这样的感慨，上天给你一个健康无比的身体，你却用他来熬夜玩游戏。是这样的，至于太容易得到的，我们往往都不珍惜。每天沉浸在虚拟的世界里的后果，大家可想而知，一学期挂无数，如此恶性循环。当然，我们不得不承认或许他们会比我们发展得好。适当的玩游戏是非常值得提倡的，但如果太放纵自己，将会一步步走向堕落的深渊。我记得有一个经济学家说过，一个玩游戏的民族是没有希望的。纵观现在游戏的发展，不管是手游，还是网游、页游，都是非常炙手可热的。公交车上，电脑旁边，只要有手机和电脑的地方，就一定有人在玩游戏。而且我观察过，公交车上10个人玩手机，9个都人都在玩游戏，剩下的1个，要么看视频，要么听音乐，很少看到看电子书的。至于那些在做游戏的公司，不知道是不是害了祖国的花朵。
 
@@ -32,8 +32,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/35778205" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="" height="16px" width="16px" border="0" alt="" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/35778205" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="" height="16px" width="16px" border="0" alt="" /></a>
 
-题图来自：<a href="http://blog.csdn.net/justdb/article/details/35778205" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="CUIT 银杏" height="16px" width="16px" border="0" alt="CUIT 银杏" /></a>
+题图来自：<a href="http://blog.csdn.net/justdb/article/details/35778205" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="CUIT 银杏" height="16px" width="16px" border="0" alt="CUIT 银杏" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

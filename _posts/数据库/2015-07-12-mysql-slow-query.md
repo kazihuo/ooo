@@ -35,11 +35,11 @@ tags:
 
 故障期间的慢查询数，如图：
 
-![SLow query](https://cdn.wenguobing.com/AF0BGeJ.png)
+![SLow query](https://cdn.dbarobin.com/AF0BGeJ.png)
 
 CPU 平均使用率，如图：
 
-![CPU Usage](https://cdn.wenguobing.com/hsXu70E.png)
+![CPU Usage](https://cdn.dbarobin.com/hsXu70E.png)
 
 接着使用 SHOW FULL PROCESSLIST 查看完整状态，在最上面居然发现几条 SQL。这些 SQL 操作使用子查询实现，TIME 列居然达到了 30000 秒，折算过来差不多 10 小时。EXPLAIN 这些语句，居然出现了 USING TEMPORY 和 USING FILESORT，可以看出这些语句是很糟糕的。于是跟开发确认，紧急把这些会话 kill 掉。稍等片刻，会话数立马降下来，只有 100+，top 查看 mysqld 进程，内存和 CPU 都呈现下降的趋势。接着分析开发说上午 9 时写了这些 SQL，发现有问题，注释掉了。新的代码虽然没有此类 SQL，但之前建立的连接并不会释放。解决问题和出现问题的时间差刚好可以和添加子查询的时间对应，就可以确认子查询是此次故障的罪魁祸首。
 

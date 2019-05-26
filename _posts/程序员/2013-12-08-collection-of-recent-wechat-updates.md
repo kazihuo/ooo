@@ -27,7 +27,7 @@ tags:
 
 不管是搞开发，还是做运维，只要是做技术，我们都会在技术细节的死海里苦苦挣扎，暗无天日。
 
-![Collection of recent wechat updates](https://cdn.wenguobing.com/GLyiQxP.png)
+![Collection of recent wechat updates](https://cdn.dbarobin.com/GLyiQxP.png)
 
 一个程序员和设计师最大的区别就是看问题的角度，运维工程师和系统架构师亦是如此。比如一只麻雀，程序员和运维工程师看到的就是麻雀的五脏六腑，而设计师和系统架构师看到的是一个麻雀的轮廓，什么叫做麻雀，至于麻雀有几只脚或者有几双翅膀，并不关注，也无需关注。拿实际中的例子来说，一个系统正常运行，运维工程师考虑的是各种技术细节，比如怎样写一个脚本对整个系统进行监控，比如某个软件的某个参数应该怎样配置等等，而系统架构师需要考虑的是怎样保证这个系统不挂掉，怎样保证系统的安全，怎样承担更大的并发量，需要何时对系统风险评估，系统的设计是否合理，怎样保证在代价最小化的前提下保证系统性能最大化，在性能和安全出现矛盾时怎样权衡取舍，怎样解决和改善IO瓶颈等等。所以说运维工程师做的事情大多数运维人员都能做，而系统架构师做的事却只有少数人能做，因为考虑的点太多，需要的知识面太广，是一个大杂烩、多面手、大而全的职位。
 
@@ -57,7 +57,7 @@ DBA的首要职责就是保证数据的完整性和安全性，责任重于泰�
 
 Oracle官方文档确实是好东西，但是要看到谁手里。
 
-![Collection of recent wechat updates](https://cdn.wenguobing.com/iqbwgGK.jpg)
+![Collection of recent wechat updates](https://cdn.dbarobin.com/iqbwgGK.jpg)
 
 想必大家有这种印象，到一个论坛问一个问题，很多人的回答都是回去看官方文档，然后搞定了洗洗睡吧。不可否认，Oracle的官方文档做得很优秀，大而全，美而广。但是叫谁一上来就看官方文档恐怕不是最优之计。读过官方文档的童鞋都知道，想完全读懂还是有点难度，想全部读完并理解其中精髓可能性非常低，就算国内顶级的Oracle大牛，比如盖国强，楼方鑫，冯春培，徐戟等等，我想也不能把那么庞大的文档全部一字一句地看完吧。对于初学者，想通过官方文档学习不太靠谱，除非英语水平好，有一些编程和SQL基础，否则很难“入戏”。把官方文档全部看完的做法一是太浪费时间，二是不现实。文档存在的必要性不是让你全部看完，而是在不会或者遇到问题时查阅，万不可本末倒置。学习Oracle需要什么，一是官方文档，二是实验环境，三是网络。至于书籍什么的，可以后期考虑。当然，通过官方文档你可以很系统地进行学习，但我也觉得没有必要一字一句地看完，而应该把握重点，把每一个模块最核心的东西深啃，模拟上面的示例，其他细枝末节待来日补齐。这就好比建房造屋，肯定是先有设计图，才有施工；先有宏观，才有细节。如果一开始就把细节弄得万无一失，最后可能拣了芝麻丢了西瓜，得不偿失。
 
@@ -71,7 +71,7 @@ Oracle官方文档确实是好东西，但是要看到谁手里。
 
 以前我有提到Oracle技术博大精深，要达到精通，需要很长的时间。本文谈谈Oracle学习的窘境。
 
-![Collection of recent wechat updates](https://cdn.wenguobing.com/BZ6zCBo.jpg)
+![Collection of recent wechat updates](https://cdn.dbarobin.com/BZ6zCBo.jpg)
 
 谈Oracle学习的窘境，就从OCP谈起。曾几何时，我非常热衷OCP证书，好似抓住救命稻草般，有了这个便衣食无忧，任行天下。现在想起当时的想法多么幼稚。是的，我热爱数据库，也想在数据库行业有所作为。一蹴而就的心理曾经我也有，什么都想速成。可是天下没有什么东西是很容易就能获得的，凡事都有一个循序渐进的过程，切记欲速则不达。应届生有OCP固然是好事，但现在的证书含金量不断缩水，除了证明自己在考试上面厉害，不能说明什么。即使你有OCP证书，了解的也是一些原理性的东西，一到实践大多还是无从下手。据我所知，现在的OCP考试基本上是报名包过，全靠题库，基本上十来天的课程，再加上疯狂的背题，拿下易如反掌。试想这样的证书有何意义，什么东西一到天朝就会变味。现在的我对于这个已经热情了，夯实自己才是正经。所以，窘境之一，该不该考OCP证书，我觉得能力才是王道，牛逼的人不需要这个来证明自己。
 
@@ -89,7 +89,7 @@ Oracle官方文档确实是好东西，但是要看到谁手里。
 
 昨天23岁生日，来点碎碎念。
 
-![Collection of recent wechat updates](https://cdn.wenguobing.com/IJVPHNr.jpg)
+![Collection of recent wechat updates](https://cdn.dbarobin.com/IJVPHNr.jpg)
 
 这一年欢笑与悲痛并存，这一年成长与进步不止。23生日来临，但22岁的生日仿佛就在昨天。时间流逝地如此之快，叫人怎能赶上时间的脚步。
 
@@ -141,8 +141,8 @@ Oracle官方文档确实是好东西，但是要看到谁手里。
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/17201769" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（三十）近期微信公众平台更新文章集锦" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十）近期微信公众平台更新文章集锦" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/17201769" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（三十）近期微信公众平台更新文章集锦" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十）近期微信公众平台更新文章集锦" /></a>
 
-题图来自：<a href="http://blog.csdn.net/justdb/article/details/17201769" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px" width="16px" border="0" alt="DBA@Robin's CSDN" /></a>
+题图来自：<a href="http://blog.csdn.net/justdb/article/details/17201769" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px" width="16px" border="0" alt="DBA@Robin's CSDN" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -17,7 +17,7 @@ tags:
 
 今天区块链行业最大的新闻莫过于币安发布的 [公告](https://binance.zendesk.com/hc/zh-cn/articles/360028031711)，7000 个比特币不幸被盗。接着各大媒体报道蜂拥而至，万能蹭流量王 [Justin](https://twitter.com/justinsuntron/status/1125932499761225728) 又吸了一波眼球。关于此次事件相关的文章，可以点击 [此处](https://bbs.chainon.io/d/3487-7000) 阅读。
 
-![](https://cdn.wenguobing.com/fLUtbpv.png)
+![](https://cdn.dbarobin.com/fLUtbpv.png)
 
 > 题图来自: © Christopher Williams / Is Binance Coin (BNB) Decoupling from Bitcoin (BTC)? / dapplife.com
 

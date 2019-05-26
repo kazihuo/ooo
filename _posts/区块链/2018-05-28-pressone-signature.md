@@ -12,7 +12,7 @@ tags:
 
 `文/robin`
 
-![PRESS.one](https://cdn.wenguobing.com/fFXm7J3.jpg)
+![PRESS.one](https://cdn.dbarobin.com/fFXm7J3.jpg)
 
 [PRESS.one](https://press.one/main/p/22d3a65fa68303cdf0f1a38223b97efe48eb2529) 目前提供 **「数字身份验证和数字内容签名」**。
 

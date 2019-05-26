@@ -19,7 +19,7 @@ tags:
 
 学习数据库理论时就会了基本的SQL查询，MSSQL安装和简单使用，比如登录数据库、程序使用ODBC连接数据库、SQL查询分析器的使用。还记得当初能把MSSQL安装上在同学之间就很牛逼了。授课老师使用MSSQL也是用一些基本的功能，教授SQL也是为实现具体的功能，从未考虑过SQL的优化。
 
-![SQL Server in my eye](https://cdn.wenguobing.com/iI2jZCK.jpg)
+![SQL Server in my eye](https://cdn.dbarobin.com/iI2jZCK.jpg)
 
 这两周工作接触到的MSSQL和当初学习又是两番境地。第一，作为生产库，数据量是相当庞大，其中一张表百亿级别，另一张表十亿级别。最开始我不知道有那么大的数据量，就用count(*)统计了下记录数，结果等了半个多小时还没出结果，只好终止查询；第二，目前的工作主要是数据查询，每天接触大量的SQL，其中就涉及到SQL优化。最近把SQL优化好好地学习下，也总结了很多优化技巧。实现同样的功能，使用不同的SQL，哪怕是语句的顺序调整下，效果也是千差万别的。目前优化过程中使用较多的是查看执行计划，也一直在看优化相关的书；第三，更加坚信了这个信念：思维不局限与哪个数据库。以前有篇文章讲的是数据库思维，里面提到我们更应关注的是数据本身，而不是某个具体的数据库；第四，T-SQL使用灵活，也是工作的一大利器，对于重复性的操作尽量编写T-SQL完成；第五，MSSQL也有高可用、复制等等，其他数据库有的MSSQL基本上有，只不过实现的方式不同罢了。
 
@@ -33,6 +33,6 @@ tags:
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://invisibleflamelight.wordpress.com/2013/03/09/sql-server-como-resolver-problemas-relacionados-a-conflitos-de-collation/" target="_blank"><img src="https://cdn.wenguobing.com/kG2Wr20.png" title="sql server in my eye" border="0" alt="sql server in my eye" height="16px" width="16px" /></a>
+题图来自：<a href="http://invisibleflamelight.wordpress.com/2013/03/09/sql-server-como-resolver-problemas-relacionados-a-conflitos-de-collation/" target="_blank"><img src="https://cdn.dbarobin.com/kG2Wr20.png" title="sql server in my eye" border="0" alt="sql server in my eye" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

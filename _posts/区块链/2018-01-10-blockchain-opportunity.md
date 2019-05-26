@@ -23,7 +23,7 @@ tags:
 
 > 各位 CEO，区块链革命已经到来。这是一场顺之者昌，逆之者亡的伟大技术革命。它对传统的颠覆，将会比互联网、移动互联网来得更加迅猛、彻底。希望大家立即行动起来，在立足自身业务，做好现有模式的同时，了解区块链、理解 ICO，逬入区块链时代。大家对区块链革命不要有怀疑，不要有迟疑，立即动员全体高管和员工，学习如何拥抱这场革命！真格基金会组织这方面的行业领袖和大家普及、讲解区块链知识。但我以全部的智慧呼盱大家，千万不要临渊羡鱼，而要冲到浪涛中去，迎接区块链即将给各行各业带来的巨大冲击！
 
-![2018-01-10-blockchain-opportunity](https://cdn.wenguobing.com/k2DZhLa.jpg)
+![2018-01-10-blockchain-opportunity](https://cdn.dbarobin.com/k2DZhLa.jpg)
 
 > 题图来自: © brandminds / Worldwide technology trends in 2017 / brandminds.asia
 
@@ -74,7 +74,7 @@ Fenng 早已是数据库行业的 [专家](http://dbanotes.net/siteinfo.html)，
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -102,7 +102,7 @@ Fenng 早已是数据库行业的 [专家](http://dbanotes.net/siteinfo.html)，
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 –EOF–
 
 版权声明：[自由转载-非商用-非衍生-保持署名（创意共享4.0许可证）](http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)

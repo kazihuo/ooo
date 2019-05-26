@@ -61,7 +61,7 @@ tags:
 
 爱情，我是相信缘分的。爱情，不必强求。我不止一次的告诉自己：不要紧的，缘分没到罢了。对学弟而言，如果有条件，可以谈一场轰轰烈烈的恋爱，在敢爱敢恨的年龄拥有美好的经历，至于结果怎么样，很多时候不是那么重要。如果没有条件，你喜欢的女生不喜欢你，也不要紧，努力让自己变得更优秀。对于学妹，恋爱并不是你的全部，知道当前最重要的事情是什么，不要放纵自己，不然以后会后悔莫及。有种情侣很值得我羡慕，在安静的图书馆，相对而坐，各自忙着自己的事情，时不时抬起头看着对方，傻傻的微笑，然后埋下头继续忙碌。「注：以下配图来自同学阿华，在此感谢！」
 
-![The chapter ten of my university periodic history](https://cdn.wenguobing.com/uo448oO.jpg)
+![The chapter ten of my university periodic history](https://cdn.dbarobin.com/uo448oO.jpg)
 
 ## 「关于兼职」 ##
 
@@ -89,11 +89,11 @@ tags:
 
 The End.
 
-大学断代史系列文章迷你电子书现已上线，下载地址：<a href="http://vdisk.weibo.com/s/axqD_CoYqJkIn" target="_blank"><img src="https://cdn.wenguobing.com/bJZVCgp.png" title="vdisk" height="16px" width="16px" border="0" alt="vdisk" /></a>。请笑纳。
+大学断代史系列文章迷你电子书现已上线，下载地址：<a href="http://vdisk.weibo.com/s/axqD_CoYqJkIn" target="_blank"><img src="https://cdn.dbarobin.com/bJZVCgp.png" title="vdisk" height="16px" width="16px" border="0" alt="vdisk" /></a>。请笑纳。
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/38332365" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四十六）大学断代史（十）给学弟学妹们的忠告-终结篇" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十六）大学断代史（十）给学弟学妹们的忠告-终结篇" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/38332365" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（四十六）大学断代史（十）给学弟学妹们的忠告-终结篇" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十六）大学断代史（十）给学弟学妹们的忠告-终结篇" /></a>
 
 题图来自：同学阿华
 

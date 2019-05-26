@@ -353,7 +353,7 @@ comments:
 * [coconutBattery](http://www.coconut-flavour.com/coconutbattery)，免费，查看 iOS 和 Mac 电池使用情况
 * [Noizio](http://noiz.io)，免费，白噪音软件
 
-![Landscape from Saint-Rémy](https://cdn.wenguobing.com/PXaTioN.jpg)
+![Landscape from Saint-Rémy](https://cdn.dbarobin.com/PXaTioN.jpg)
 
 © Vincent van Gogh/Landscape from Saint-Rémy, 1889/Wikipedia
 

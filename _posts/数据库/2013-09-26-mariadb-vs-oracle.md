@@ -20,7 +20,7 @@ tags:
 
 但另外一条新闻是“MySQL再度失势：继维基百科之后，Google也迁移到了MariaDB”，不知此时Oracle怎么想。早在今年4月份就有报道MySQL原始团队已重整旗鼓。Oracle于09年收购了Sun，其中必不可少的原因就是获得MySQL这个最热门开源DBMS的控制权。然而这一收购似乎并未完全达到Oracle的目的：早在08年MySQL被Sun收购之后，MySQL旧部（一些创始人及顶级工程师）就离开了MySQL并成立新公司SkySQL；而在Sun被Oracle收购后，同样有一批高层出去创立了Monty Program Ab（MariaDB的母公司）。
 
-![Imgur](https://cdn.wenguobing.com/WiY6p7L.png)
+![Imgur](https://cdn.dbarobin.com/WiY6p7L.png)
 
 我们来看看什么是MariaDB。MariaDB官网写了这样一句话：Anenhanced, drop-in replacement for MySQL。Oracle看到这个标题肯定瞬间凌乱了，不过有很多说法，文末会给出。MariaDB是一个向后兼容、替代MySQL的数据库服务器。它包含所有主要的开源存储引擎。与MySQL 相比较，MariaDB 更强的地方在于：Maria 存储引擎、PBXT 存储引擎、XtraDB存储引擎、FederatedX存储引擎、更快的复制查询处理、线程池、更少的警告和bug、运行速度更快、更多的 Extensions(More index parts, new startup options etc)、更好的功能测试、数据表消除、慢查询日志的扩展统计、支持对 Unicode 的排序。相对于MySQL最新的版本5.6来说，在性能、功能、管理、NoSQL扩展方面，MariaDB包含了更丰富的特性。。比如微秒的支持、线程池、子查询优化、组提交、进度报告等。
 

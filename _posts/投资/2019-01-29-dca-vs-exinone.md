@@ -16,7 +16,7 @@ tags:
 
 > 本文已参与 ExinOne 定投有奖征文。
 
-![](https://cdn.wenguobing.com/flRj1os.jpg)
+![](https://cdn.dbarobin.com/flRj1os.jpg)
 
 ## 前言
 ***
@@ -45,15 +45,15 @@ tags:
 
 **指数基金** 是被动投资基金的代表。我们以美股（Dow Jones Industrial Average，INDEXDJX: .DJI；S&P 500 Index，INDEXSP: .INX）和 A 股（沪深 300，SHA: 000300）指数为例，用 Google 搜索，把时间跨度拉到最大，请看下图：
 
-![](https://cdn.wenguobing.com/K9KSU82.png)
+![](https://cdn.dbarobin.com/K9KSU82.png)
 
 > Dow Jones Industrial Average，INDEXDJX: .DJI，数据来源: Google Search
 
-![](https://cdn.wenguobing.com/4BGZuQl.png)
+![](https://cdn.dbarobin.com/4BGZuQl.png)
 
 > S&P 500 Index，INDEXSP: .INX，数据来源: Google Search
 
-![](https://cdn.wenguobing.com/qs5jTLw.png)
+![](https://cdn.dbarobin.com/qs5jTLw.png)
 
 > 沪深 300，SHA: 000300，数据来源: Google Search
 
@@ -74,13 +74,13 @@ tags:
 
 全球区块链指数（GBI）图表：
 
-![](https://cdn.wenguobing.com/Wdd6sf1.png)
+![](https://cdn.dbarobin.com/Wdd6sf1.png)
 
 > 数据来源: GBI.news
 
 全球区块链指数（GBI）成份：
 
-![](https://cdn.wenguobing.com/4Z9xY7o.png)
+![](https://cdn.dbarobin.com/4Z9xY7o.png)
 
 > 数据来源: GBI.news
 
@@ -148,7 +148,7 @@ Renrenbit 是最近这两天上线的产品，据说某大佬加持。笔者第�
 
 加密货币定投，ExinOne 就够了。欢迎扫描下图，注册 ExinOne，开启定投。或者使用链接 [https://exinone.com/p/NX92O3](https://exinone.com/p/NX92O3) 注册。
 
-![](https://cdn.wenguobing.com/8PEkY39.png)
+![](https://cdn.dbarobin.com/8PEkY39.png)
 
 ## 参考资料
 ***

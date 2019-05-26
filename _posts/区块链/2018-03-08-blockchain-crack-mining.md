@@ -67,7 +67,7 @@ comments:
 
 该服务器提供 Redis 资源供笔者测试使用，明显上面两个定时任务不是笔者创建的。定时任务访问外网服务器，紧急处理有三点，一是确认其他服务是否受到影响，二是注释定时任务，三是临时断外网，处理完之后，再来排查原因。
 
-![2018-03-08-blockchain-crack-mining](https://cdn.wenguobing.com/Xf3ZNJY.jpg)
+![2018-03-08-blockchain-crack-mining](https://cdn.dbarobin.com/Xf3ZNJY.jpg)
 
 > 题图来自: © kisspng.com / Anonymous Guy Fawkes mask Gunpowder Plot / kisspng.com
 
@@ -221,7 +221,7 @@ file.close
 
 就在最近，一个朋友的服务器也有类似的现象。脚本可以参考：[crack-mining v2](https://github.com/BlockchainOne/crack-mining/tree/master/v2)。脚本大同小异，不过用于挖矿的可执行文件做了手脚。除了 Usage 这里的名字不一样，其他都是一样的。
 
-![dump.db](https://cdn.wenguobing.com/oXJizEC.jpg)
+![dump.db](https://cdn.dbarobin.com/oXJizEC.jpg)
 
 同样，上传到 [virscan.org](http://virscan.org)，得到的报告，点击 [此处](http://r.virscan.org/report/fc17f9c18266646045fcd0375279bf34) 阅读。
 
@@ -379,7 +379,7 @@ PermitEmptyPasswords no # 禁止空密码
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -407,7 +407,7 @@ PermitEmptyPasswords no # 禁止空密码
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

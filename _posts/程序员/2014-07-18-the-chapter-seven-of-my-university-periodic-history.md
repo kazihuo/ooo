@@ -28,7 +28,7 @@ tags:
 
 以上谈了在大学的日子，接着试着用简短的几句话描述下我的学业。（图片来源：同学阿华，在此感谢）
 
-![The chapter seven of my university periodic history ](https://cdn.wenguobing.com/ckBUodc.jpg)
+![The chapter seven of my university periodic history ](https://cdn.dbarobin.com/ckBUodc.jpg)
 
 上大学以来，老师和父母从未担心过我的学业。从进入大学的第一天起，我就有了自己的安排和打算。回顾整个大学，成绩还算将就，获得奖学金无数，第一批过四六级。我想这样的成绩没有辜负父母的一片苦心。但是，这没有什么值得炫耀的。到社会工作，看重的是你会什么，而不是你成绩有多好，所以在保证学业的同时，定要让自己的技术本领得到锻炼。我想肯定有很多技术牛人是这样的：大学挂科无数，唯一值得骄傲的就是他那牛叉的技术。这样也是不可取的，在保证不挂科的最低前提下，然后去让自己的技术丰满，这才是明智之道。不然挂科太多，烦人的考试重修会让你苦不堪言。在技术强硬的前提下，然后得一点奖学金犒劳自己，顺便利用这笔钱做点有价值的投资，又何乐而不为？
 
@@ -38,7 +38,7 @@ tags:
 
 –EOF–
 
-原文地址：<a href="" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四十三）大学断代史（七）在实验室的日子与我的学业" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十三）大学断代史（七）在实验室的日子与我的学业" /></a>
+原文地址：<a href="" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（四十三）大学断代史（七）在实验室的日子与我的学业" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十三）大学断代史（七）在实验室的日子与我的学业" /></a>
 
 题图来自：同学阿华
 

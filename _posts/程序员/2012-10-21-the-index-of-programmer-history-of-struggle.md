@@ -105,7 +105,7 @@ tags:
 
 <a href="https://dbarobin.com/2014/10/26/brief-summary-of-working-for-three-months/" target="_blank">程序员的奋斗史（四十七）工作三个月小结</a>
 
-![The index of programmer history of struggle](https://cdn.wenguobing.com/gxfRTbC.jpg)
+![The index of programmer history of struggle](https://cdn.dbarobin.com/gxfRTbC.jpg)
 
 更佳直观的目录，请点击：[程序员的奋斗史](https://dbarobin.com/tags/#程序员的奋斗史)
 
@@ -116,8 +116,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/8096041" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="《程序员的奋斗史》目录" height="16px" width="16px" border="0" alt="《程序员的奋斗史》目录" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/8096041" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="《程序员的奋斗史》目录" height="16px" width="16px" border="0" alt="《程序员的奋斗史》目录" /></a>
 
-题图来自：<a href="http://www.wetcanvas.com/forums/showthread.php?t=202637" target="_blank"><img src="https://cdn.wenguobing.com/zs5n1QE.jpg" title="Life is an Uphill Struggle" height="16px" width="100px" border="0" alt="Life is an Uphill Struggle" /></a>
+题图来自：<a href="http://www.wetcanvas.com/forums/showthread.php?t=202637" target="_blank"><img src="https://cdn.dbarobin.com/zs5n1QE.jpg" title="Life is an Uphill Struggle" height="16px" width="100px" border="0" alt="Life is an Uphill Struggle" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -16,7 +16,7 @@ tags:
 
 项目不是一个人的战斗，管理好一个团队是很重要的。对于管理者来说，对情商的强调多于智商。如果一个人智商高，加之努力、踏实，那么他很有可能成为技术上的大牛；如果一个人情商高，那么他很有可能成为公关型人才；如果一个人智商高，情商也高，那么他是综合型人才，必成大器。
 
-![Project management](https://cdn.wenguobing.com/ZBZpuUM.jpg)
+![Project management](https://cdn.dbarobin.com/ZBZpuUM.jpg)
 
 对项目管理者来说，如何提高团队的凝聚力和战斗力很重要。疏于管理、不团结的团队就像是一盘散沙，毫无战斗力可言。所以管理者一方面要监督项目的进度，另一方面要在项目的凝聚力、和谐程度多下功夫。
 
@@ -34,8 +34,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/8373430" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（十）谈项目管理" height="16px" width="16px" border="0" alt="程序员的奋斗史（十）谈项目管理" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/8373430" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（十）谈项目管理" height="16px" width="16px" border="0" alt="程序员的奋斗史（十）谈项目管理" /></a>
 
-题图来自：<a href="http://www.denizon.com/project-management/" target="_blank"><img src="https://cdn.wenguobing.com/wFkNs3K.jpg" title="denizon" height="16px" width="16px" border="0" alt="denizon" /></a>
+题图来自：<a href="http://www.denizon.com/project-management/" target="_blank"><img src="https://cdn.dbarobin.com/wFkNs3K.jpg" title="denizon" height="16px" width="16px" border="0" alt="denizon" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

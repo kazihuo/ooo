@@ -19,7 +19,7 @@ tags:
 
 Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp，下载地址点击 [此处](https://itunes.apple.com/us/app/bitpie-blockchain-wallet/id1168568820?mt=8)。官宣点击 [这里](https://medium.com/@Bitpie/bitpie-v3-9-8-now-support-lapps-c1a34344a54e)。此外，LApp 暂时只能在 Android 使用，iOS 暂不支持，在等苹果爸爸审核。比特派不采用企业证书，直接上架海外 App Store，还是比较稳，毕竟 iOS 掉签频率太高了，原因你懂的。
 
-![](https://cdn.wenguobing.com/dGRYEm6.jpg)
+![](https://cdn.dbarobin.com/dGRYEm6.jpg)
 
 > 题图来自: © BCX / Transaction Overview-Purchasing BCX / bcx.org
 
@@ -41,7 +41,7 @@ Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
+![区块链技术指北](https://cdn.dbarobin.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -74,7 +74,7 @@ Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

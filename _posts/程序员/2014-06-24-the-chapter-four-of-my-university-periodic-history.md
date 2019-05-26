@@ -27,7 +27,7 @@ tags:
 
 除了CSDN博客，我还维护着博客园和51CTO。51CTO现已是推荐博客，博客园已经停止更新。个人感觉博客园的用户体验强过CSDN博客，51CTO博客在很多方面也是胜于CSDN博客。至于为什么现在还坚持CSDN博客，大抵是一种习惯罢了。此外，我还基于WordPress在百度云上搭建了一个博客，现在已经没用了。个人评价自己就是一个博客控，总想在什么地方写点东西心里才舒服。在网上看到一些独立博客，才发觉博客还可以做得这么新颖，这么美观。
 
-![The chapter four of my university periodic history](https://cdn.wenguobing.com/ZrXoZXD.jpg)
+![The chapter four of my university periodic history](https://cdn.dbarobin.com/ZrXoZXD.jpg)
 
 2014年3月10日，这是我成为CSDN博客专家的日子。在我成为CSDN博客专家之后，博客访问量、粉丝数暴增，让我惶恐不安，于是我写了一篇文章。说说几个现象及我的思考。
 
@@ -43,8 +43,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/34072669" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（四十）大学断代史（四）我与博客" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十）大学断代史（四）我与博客" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/34072669" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（四十）大学断代史（四）我与博客" height="16px" width="16px" border="0" alt="程序员的奋斗史（四十）大学断代史（四）我与博客" /></a>
 
-题图来自：<a href="http://blog.web20classroom.org/2013/04/soyou-wanna-use-blogs-in-classroom.html" target="_blank"><img src="https://cdn.wenguobing.com/B1pMTMN.png" title="web20classroom" height="16px" width="16px" border="0" alt="web20classroom" /></a>
+题图来自：<a href="http://blog.web20classroom.org/2013/04/soyou-wanna-use-blogs-in-classroom.html" target="_blank"><img src="https://cdn.dbarobin.com/B1pMTMN.png" title="web20classroom" height="16px" width="16px" border="0" alt="web20classroom" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -16,7 +16,7 @@ tags:
 
 想了很久，这周谈谈什么呢？转念一想，既然有一件事情你坚持了那么久，为什么不和大家分享分享呢？本文谈谈英语学习。
 
-![Talk about english learning](https://cdn.wenguobing.com/yXAEDWE.png)
+![Talk about english learning](https://cdn.dbarobin.com/yXAEDWE.png)
 
 英语的重要性不言而喻了吧，对于IT人来说其重要性更是荦荦大者。经常听有人说IT人英语不好走不远，话虽如此，但不可以偏概全，我们可以看到英语不咋样的技术奇才照样可以过得风生水起。这里我想说的是英语好在IT行业绝对是一个很好的优势，最新的技术，一手的文档，毋庸置疑是英语的，这样你就别人走在更前面，懂得更多；抛开技术，对于一个人的职业发展、资源整合、信息获取、思维转变也是大有益处。
 
@@ -34,7 +34,7 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9863479" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十七）谈谈英语学习" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十七）谈谈英语学习" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9863479" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二十七）谈谈英语学习" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十七）谈谈英语学习" /></a>
 
 题图来自：<a href="http://www.gotmesh.org/category/dos-and-donts/" target="_blank">Gotmesh.org</a>
 

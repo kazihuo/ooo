@@ -17,7 +17,7 @@ tags:
 
 光阴似箭，一转眼就已经到了大二下期，仿佛昨天才踏入大学的校门。这一年多来，还是很有收获的。从当初对计算机一窍不通，到现在对计算机知识的入门和了解。这一路走来充满艰辛，但更充满着欢乐。从进入大学的第一天，我就要求和告诫自己不能浪费大学生活的每一天。所以对现在取得的小小成绩心里还是很欣慰。每一次的掌声是对我的最大肯定，也更加激励我一路前行。
 
-![Precious time](https://cdn.wenguobing.com/IRPrxOu.jpg)
+![Precious time](https://cdn.dbarobin.com/IRPrxOu.jpg)
 
 为什么我会取得一定的成绩，我认为我是一个较好的时间管理者。很久以前看过一本书，里面有句话，成功的人都是优秀的时间管理者。我每天都给自己制定计划，并尽最大的努力完成。一天的时间很短暂，但是我们却把很多时间浪费在很多无关紧要的事情上。我认为要利用好时间，关键就是专注。做一件事情就专注地做，不因外物而干扰，不因杂事而分心。专注于一件事情是种生活态度，是种敬业精神。
 
@@ -27,6 +27,6 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/7525218" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（三）——谈时间" height="16px" width="16px" border="0" alt="程序员的奋斗史（三）——谈时间" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/7525218" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（三）——谈时间" height="16px" width="16px" border="0" alt="程序员的奋斗史（三）——谈时间" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -14,7 +14,7 @@ tags:
 
 相信读者大都看过这篇文章。如果没看过赶紧去天涯论坛看看或者关注鬼脚七阅读吧。天涯原文：寒门再难出贵子（修改版）；知乎相关话题：<a href="http://www.zhihu.com/question/21358190" target="_blank">「这个时代 寒门再难出贵子」如何看待？</a>
 
-![Rural family and great man](https://cdn.wenguobing.com/pZl5Bv1.jpg)
+![Rural family and great man](https://cdn.dbarobin.com/pZl5Bv1.jpg)
 
 这篇文章最早是永乐大帝最早在天涯论坛上发的，我是从鬼脚七那里阅读到的。讲述的是一些大学毕业生在银行实习的各路人生，很现实，很骨感。我花了两个小时左右看完了，看完五味杂陈，心里很不是滋味，很老实地讲，讲到宝宝哥那段，看完后我哭得稀里哗啦，我经常说我是一个理性面具下的感性之人，这次也毫不例外。七哥最早摘录的时候我就看了，现在才写写自己的看法，这段时间也想了很多，联系到自身，确实有很多共鸣的地方。
 
@@ -28,8 +28,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/10257641" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十八）寒门再难出贵子？" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十八）寒门再难出贵子？" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/10257641" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二十八）寒门再难出贵子？" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十八）寒门再难出贵子？" /></a>
 
-题图来自：<a href="http://airsama.blogspot.jp/2014/03/blog-post_3.html" target="_blank"><img src="https://cdn.wenguobing.com/B1pMTMN.png" title="airsama" height="16px" width="16px" border="0" alt="airsama" /></a>
+题图来自：<a href="http://airsama.blogspot.jp/2014/03/blog-post_3.html" target="_blank"><img src="https://cdn.dbarobin.com/B1pMTMN.png" title="airsama" height="16px" width="16px" border="0" alt="airsama" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

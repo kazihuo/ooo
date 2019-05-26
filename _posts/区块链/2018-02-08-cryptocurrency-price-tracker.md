@@ -21,7 +21,7 @@ tags:
 
 最近看到一篇文章 [Build a Cryptocurrency Price Tracker in 5 Minutes](https://hackernoon.com/build-a-cryptocurrency-price-tracker-in-5-minutes-d66c3d37ad71)，笔者对加密数字货币价格走势不是特别关心，但这篇文章非常有趣，本文想从技术的角度分析下实现思路。
 
-![2018-02-08-cryptocurrency-price-tracker](https://cdn.wenguobing.com/jqLBEMu.jpg)
+![2018-02-08-cryptocurrency-price-tracker](https://cdn.dbarobin.com/jqLBEMu.jpg)
 
 > 题图来自: © Mr. Crowd / Tether Claims US$30 Million Worth of Token Stolen / mrcrowd.com
 
@@ -47,7 +47,7 @@ Joe Hanson 实现此功能使用了如下的 **技术栈**：
 
 我们在浏览器同时打开发布器（cryptoPublisher.html）和订阅器（cryptoSubscriber.html），就可以在订阅器中看到实时展示的图表了。效果如图：
 
-![2018-02-08-cryptocurrency-price-tracker](https://cdn.wenguobing.com/IJ2hJma.gif)
+![2018-02-08-cryptocurrency-price-tracker](https://cdn.dbarobin.com/IJ2hJma.gif)
 
 当然，生产环境我们还需要 [Access Manager](https://www.pubnub.com/docs/web-javascript/pam-security) 来做安全控制。
 
@@ -59,7 +59,7 @@ Joe Hanson 实现此功能使用了如下的 **技术栈**：
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -87,7 +87,7 @@ Joe Hanson 实现此功能使用了如下的 **技术栈**：
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

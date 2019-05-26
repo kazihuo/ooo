@@ -48,7 +48,7 @@ DBA 在多年以前是一个很风光的行业，那时会搭 DG 都是件特别
 
 [四火](http://www.raychase.net/)在**「[从淘汰 Oracle 数据库的事情说起](http://www.raychase.net/3689)」**一文中提到一个观点很有意思：**「维护」要么因为简单而能被机器和软件替代掉，要么因为复杂而被革命掉。**不少公司的 DBA，做的工作基本上是偏运维的，比如日常的变更工单、故障处理、隐患处理、备份恢复、SQL 优化等等。纯粹的没有开发能力的运维 DBA，是没有前途的。
 
-![A Wheatfield, with Cypresses](https://cdn.wenguobing.com/AqBXPzz.jpg)
+![A Wheatfield, with Cypresses](https://cdn.dbarobin.com/AqBXPzz.jpg)
 
 运维 DBA 为什么会消亡，笔者做下不成熟的分析，理由如下：
 

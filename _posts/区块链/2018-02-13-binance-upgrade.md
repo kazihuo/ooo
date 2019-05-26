@@ -23,7 +23,7 @@ tags:
 
 2 月 10 日，币安 CEO Changpeng Zhao 在 LinkedIn 发布了文章 [Binance Incident Recap](https://www.linkedin.com/pulse/binance-incident-recap-changpeng-zhao/)，FlockFleecer 做了翻译，阅读文章点击 [此处](https://mp.weixin.qq.com/s/5VGkzYoPm6oN3Myu6RdPng)。
 
-![2018-02-13-binance-upgrade](https://cdn.wenguobing.com/WgmaS6z.jpg)
+![2018-02-13-binance-upgrade](https://cdn.dbarobin.com/WgmaS6z.jpg)
 
 > 题图来自: © B.C. / Binance Exchange and Token Summary (BNB) / boxmining.com
 
@@ -49,7 +49,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -77,7 +77,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

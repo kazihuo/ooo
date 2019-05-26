@@ -15,7 +15,7 @@ tags:
 
 写在前面：如果你看到这篇文章，那是缘分。如果你因为这篇文章有所收获，那是我莫大的欣慰。请读者静下心来，认真看完本文，阅毕肯定会有不一样的感受。
 
-写这篇博客之前看看我在知乎上提的问题和有缘人对这个问题的回答。原帖地址： <a href="http://www.zhihu.com/question/20896970" target="_blank"><img src="https://cdn.wenguobing.com/VktTAvi.png" title="Zhihu" border="0" alt="Zhihu" height="16px" width="16px" /></a>
+写这篇博客之前看看我在知乎上提的问题和有缘人对这个问题的回答。原帖地址： <a href="http://www.zhihu.com/question/20896970" target="_blank"><img src="https://cdn.dbarobin.com/VktTAvi.png" title="Zhihu" border="0" alt="Zhihu" height="16px" width="16px" /></a>
 
 **问题：** 
 
@@ -62,7 +62,7 @@ tags:
 
 有句话是这样说的：“男生一定要看王小波，女生一定要看周国平”。但我认为，不管性别是何，周国平真的是一本值得一读的大书，你一定会从中收获很多。周国平有句话说得好：“人生最好的境界是丰富的安静。安静，是因为摆脱了外界虚名浮利的诱惑。丰富，是因为拥有了内在精神世界的宝藏”。最开始接触这句话是在高中，当时语文练习，有篇作文就是以这个为话题进行写作，题目叫做“丰富的安静”。那个时候只知道这句话说得很好，很有分量，至于内涵其实是不懂的。当然现在我也不懂，只是有了新的领悟。社会太浮躁，真正沉下心来做事的并不多，我们总被太多的诱惑扰乱自己的生活，想想曾经自己追求的现在看来重要吗？寡欲者常乐，知足常乐，想必也是这个道理。但这并不是教导我们不追求，而是在追求的时候想清楚这个对自己是否有价值，如果一件事情或者某个物体对你来说不重要，完全可以抛弃的。这点可以映射到程序员上，涉猎多固然是好，但如果什么都会，什么都不精通，那等于什么都不会，社会需要的是专才。另一方面，什么是丰富，我想内心世界的丰富才是真正的丰富。一个人是否浮华那就要看他追求什么，一个人不仅要对物质有合理的追求，更重要的是精神世界的丰富。老子、孔子、柏拉图、约翰米勒、苏格拉底、托尔斯泰、尼采、马克思、黑格尔、叔本华、康德、亚里士多德、罗素等一大批中外的哲学家交给了我们大智慧，我们应该从他们的思想，他们的灵魂中汲取那一亩安宁和深邃。柏拉图提到智、情、意，对应着真、美、善，智即智力生活，情即情感生活，意即信仰生活，这三者组成了我们的精神生活。一个丰富的人必是精神生活丰富的人。怎样丰富呢？周国平提到了两点，第一点要养成独处的习惯，第二点就是多读书。多读好书，多独处，和自己的灵魂交流，多和有思想的人思考，总有一天你就会达到“丰富的安静”的境界。更高的自我必定是充实的灵魂，对一个人来说，最重要的品质是善良、丰富和高贵。人应该做一个有灵魂的人，要有善良的心、有丰富的心灵、有高贵的灵魂。
 
-![Regarding blog and ideology](https://cdn.wenguobing.com/klB44NF.jpg)
+![Regarding blog and ideology](https://cdn.dbarobin.com/klB44NF.jpg)
 
 白岩松因其敏锐的洞察力，极富内涵的言辞深入人们的喜欢，当然也包括我。前些天看了他在江西财经大学的演讲，讲到了几点让人感触颇深：维系集体友情、心理素养、用自己的眼光看待世界和思维方式、社会需要能看到你会学习会进步和生长空间的可能、从传统的思维方式中走出、我们带着什么离开校园，走向社会：带着生活多是平淡的走向社会，每一点都值得我们深思。这些话题可以展开很多思考，有心的读者可以试着分析下。
 
@@ -74,8 +74,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9002127" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十）沉思录（一）关于博客和思想" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十）沉思录（一）关于博客和思想" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9002127" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二十）沉思录（一）关于博客和思想" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十）沉思录（一）关于博客和思想" /></a>
 
-题图来自：<a href="http://allfookedup.com/in-which-you-dont-care/the-thinker/" target="_blank"><img src="https://cdn.wenguobing.com/iHpCuCs.png" title="allfookedup" height="16px" width="16px" border="0" alt="allfookedup" /></a>
+题图来自：<a href="http://allfookedup.com/in-which-you-dont-care/the-thinker/" target="_blank"><img src="https://cdn.dbarobin.com/iHpCuCs.png" title="allfookedup" height="16px" width="16px" border="0" alt="allfookedup" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

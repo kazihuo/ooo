@@ -18,14 +18,14 @@ tags:
 
 我们是群居动物，这是永远都不会变的。人是感情动物，日久生情是很自然的。如果一直都是一个人，很难想象以后怎么适应社会，因为以后出社会不和别人打交道是不可能的。所以提醒大家不要太孤僻。
 
-![We are social animal](https://cdn.wenguobing.com/IH5kAF0.gif)
+![We are social animal](https://cdn.dbarobin.com/IH5kAF0.gif)
 
 **我们是群居动物，多花时间和别人相处。**
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/8536691" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（十一）我们是群居动物" height="16px" width="16px" border="0" alt="程序员的奋斗史（十一）我们是群居动物" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/8536691" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（十一）我们是群居动物" height="16px" width="16px" border="0" alt="程序员的奋斗史（十一）我们是群居动物" /></a>
 
-题图来自：<a href="https://frazbakhsh.wordpress.com/2012/09/22/socialanimal/" target="_blank"><img src="https://cdn.wenguobing.com/8sKBWbP.jpg" title="Fraz Bakhsh" height="16px" width="16px" border="0" alt="Fraz Bakhsh" /></a>
+题图来自：<a href="https://frazbakhsh.wordpress.com/2012/09/22/socialanimal/" target="_blank"><img src="https://cdn.dbarobin.com/8sKBWbP.jpg" title="Fraz Bakhsh" height="16px" width="16px" border="0" alt="Fraz Bakhsh" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -108,7 +108,7 @@ Google的Gmail的用户可以用创建标签的方式来创建“待办事项”
 
 半小时管理法，也就是列出当天需要完成的任务，以半小时为一个单位，逐一突破，半小时过后休息3-5分钟。下面详细阐述：为什么是半小时呢？因为据科学研究表明，一个成年人集中注意力大概在半小时左右，所以，在注意力集中的情况下做事情是效率最高的。我觉得太详细、太科学、太严谨的时间管理方法实施起来不易，这样也束缚了自己。我理解的时间管理是在付出最小化而收益最大化，所以时间管理的方法不一定要太复杂，适合自己、提高效率一切都OK。我们每天都有很多事情要做，这样就可以把这些待做的事情列出，当然，这些事情都有优先级，哪些重要，哪些紧急，重要或者紧急的可以列在前面，次要或不紧急的可以列在后面。在上午、下午、晚上分别列出各个时间段需要完成的事情。以上午为例，我要看某本书多少页、写完一篇文章等等，看某本书多少页重要紧急，我可以先做这件事，先用时间专家设定一个时间点，然后开始看书，半小时到了，站起来扭扭脖子扭扭腰，看看远方，休息3-5分钟，如果在半小时内完成了这件任务，我用绿色标识，表示已经完成，如果未完成，待休息完后继续完成这个任务。当然，如果两件事情的优先级相同，下一个半小时可以做其他事情，因为交替完成不同的任务给人新鲜感，效率会更高些。做其他事情需要考虑事情的优先级，如果第一个任务的优先级明显高于第二个，那么第二个半小时最好继续完成第一个任务。依次类推，直到上午结束。上午结束的时候，对所有任务做一个评估，如果该任务已完成，标识绿色，如果未完成，标识红色，然后反省下是什么原因导致某任务未完成，完成的任务质量如何等等，等到下一个半小时，吸取教训，不要因为相同的原因导致该任务未完成。按照这样的方法，可以很好的做到高效率完成任务且很好地得到休息。
 
-![Share my time management method](https://cdn.wenguobing.com/BsrOOKx.jpg)
+![Share my time management method](https://cdn.dbarobin.com/BsrOOKx.jpg)
 
 好了，这就是我的半小时管理法。下面说明使用此方法需要**注意的地方**：
  
@@ -125,27 +125,27 @@ Google的Gmail的用户可以用创建标签的方式来创建“待办事项”
 
 ## 资料下载 ##
 
-半小时管理法模板下载，里面的内容可以自行调整。下载地址：<a href="http://download.csdn.net/detail/wentasy/6350263" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="download" height="16px" width="16px" border="0" alt="download" /></a>
-时间管理软件（时间专家，非常本土化的软件）。下载地址：<a href="http://download.csdn.net/detail/wentasy/6350347" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="download" height="16px" width="16px" border="0" alt="download" />
+半小时管理法模板下载，里面的内容可以自行调整。下载地址：<a href="http://download.csdn.net/detail/wentasy/6350263" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="download" height="16px" width="16px" border="0" alt="download" /></a>
+时间管理软件（时间专家，非常本土化的软件）。下载地址：<a href="http://download.csdn.net/detail/wentasy/6350347" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="download" height="16px" width="16px" border="0" alt="download" />
 
 ## 拓展阅读 ##
 
-程序员的奋斗史（三）谈时间：<a href="https://dbarobin.com/2012/05/01/precious-time/" target="_blank"><img src="https://cdn.wenguobing.com/dEfMkyt.jpg" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
+程序员的奋斗史（三）谈时间：<a href="https://dbarobin.com/2012/05/01/precious-time/" target="_blank"><img src="https://cdn.dbarobin.com/dEfMkyt.jpg" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
  
 ## 参考资料 ##
 
-* 豆瓣,番茄学习法&nbsp;<a href="http://www.douban.com/group/topic/22543566/" target="_blank"><img src="https://cdn.wenguobing.com/GoilVod.png" title="Douban" border="0" alt="Douban" height="16px" width="16px" /></a>
+* 豆瓣,番茄学习法&nbsp;<a href="http://www.douban.com/group/topic/22543566/" target="_blank"><img src="https://cdn.dbarobin.com/GoilVod.png" title="Douban" border="0" alt="Douban" height="16px" width="16px" /></a>
 
-* 维基百科,GTD&nbsp;<a href="http://zh.wikipedia.org/wiki/GTD" target="_blank"><img src="https://cdn.wenguobing.com/6uwPagq.png" title="wikipedia" border="0" alt="wikipedia" height="16px" width="16px" /></a>
+* 维基百科,GTD&nbsp;<a href="http://zh.wikipedia.org/wiki/GTD" target="_blank"><img src="https://cdn.dbarobin.com/6uwPagq.png" title="wikipedia" border="0" alt="wikipedia" height="16px" width="16px" /></a>
 
-* 百度百科,时间管理&nbsp;<a href="http://baike.baidu.com/link?url=oYbMlF4cZ12XPGv7kbfBCyrbc7VbcEphiLInTBLmV3sTn01BTbzNYpQ_ztGDDrKc" target="_blank"><img src="https://cdn.wenguobing.com/yvMcMOD.png" title="baike" border="0" alt="baike" height="16px" width="16px" /></a>
+* 百度百科,时间管理&nbsp;<a href="http://baike.baidu.com/link?url=oYbMlF4cZ12XPGv7kbfBCyrbc7VbcEphiLInTBLmV3sTn01BTbzNYpQ_ztGDDrKc" target="_blank"><img src="https://cdn.dbarobin.com/yvMcMOD.png" title="baike" border="0" alt="baike" height="16px" width="16px" /></a>
 
-* 智库百科,时间管理&nbsp;<a href="http://wiki.mbalib.com/wiki/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86" target="_blank"><img src="https://cdn.wenguobing.com/tJvewJW.png" title="mbalib" border="0" alt="mbalib" height="16px" width="16px" /></a>
+* 智库百科,时间管理&nbsp;<a href="http://wiki.mbalib.com/wiki/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86" target="_blank"><img src="https://cdn.dbarobin.com/tJvewJW.png" title="mbalib" border="0" alt="mbalib" height="16px" width="16px" /></a>
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/12249819" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十九）分享我的时间管理-半小时管理法" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十九）分享我的时间管理-半小时管理法" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/12249819" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二十九）分享我的时间管理-半小时管理法" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十九）分享我的时间管理-半小时管理法" /></a>
 
-题图来自：<a href="http://www.mindmapart.com/time-management-mind-map-paul-foreman/" target="_blank"><img src="https://cdn.wenguobing.com/KnxTItV.png" title="mindmapart" height="16px" width="16px" border="0" alt="mindmapart" /></a>
+题图来自：<a href="http://www.mindmapart.com/time-management-mind-map-paul-foreman/" target="_blank"><img src="https://cdn.dbarobin.com/KnxTItV.png" title="mindmapart" height="16px" width="16px" border="0" alt="mindmapart" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

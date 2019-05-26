@@ -37,7 +37,7 @@ comments:
 
 ---
 
-![SuperONE](https://cdn.wenguobing.com/gGzpjed.jpg)
+![SuperONE](https://cdn.dbarobin.com/gGzpjed.jpg)
 
 > 题图来自: © SuperONE / SuperONE / superone.io
 
@@ -136,7 +136,7 @@ EOS 钱包视频介绍：
 
 后期我们将在全球选取优秀项目上线交易所，陆续开放支付宝、微信、银行卡等一键充值功能，届时用户出入金更为便捷。同时，SOT 作为 SuperONE（superone.io）的 Token，注册即送 100 个 SOT。
 
-![Scan the QR code to download SuperONE wallet](https://cdn.wenguobing.com/7k5YZLW.jpg)
+![Scan the QR code to download SuperONE wallet](https://cdn.dbarobin.com/7k5YZLW.jpg)
 
 扫码下载 SuperONE 钱包
 

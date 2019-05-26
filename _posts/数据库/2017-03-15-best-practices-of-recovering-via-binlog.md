@@ -141,7 +141,7 @@ mysql> SHOW BINARY LOGS;
 
 10、192.168.1.102 打开同步，可以看到同步正常，再确认 192.168.1.103，同步也正常。
 
-![OIl_2](https://cdn.wenguobing.com/c69sDpL.jpg)
+![OIl_2](https://cdn.dbarobin.com/c69sDpL.jpg)
 
 © cosgood1969/OIl_2/Pinterest
 

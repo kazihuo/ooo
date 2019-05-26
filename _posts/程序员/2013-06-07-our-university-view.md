@@ -26,7 +26,7 @@ tags:
 > 我真正想表达的：“名校”与“高薪”的相关度有多高？
 高三的一名学生。成绩一般 可能也就考一所一般的二本。我知道知乎上有不少高材生大哥大姐 我想问你们是否一所普通的大学大部分都意味着你以后就是很普通的工作薪水 就是那种饿不死但永远都爬不上去那种？不用因为我是高中生就安慰我，你们尽情说些真实的残酷的来吧。还有，也没必要举一些什么个例比如什么大专又怎样拿高薪的，告诉我名校大部分意味着好的人生，普通的就永远在挣扎线（这里的好就单纯指普遍的好工作高新）。最后，如果各位大哥大姐觉得我这种想法不好也可以批评指正。
 > 
-> **我的回答：**<a href="http://www.zhihu.com/question/20879275/answer/16585096" target="_blank"><img src="https://cdn.wenguobing.com/VktTAvi.png" title="Zhihu" border="0" alt="Zhihu" height="16px" width="16px" /></a>
+> **我的回答：**<a href="http://www.zhihu.com/question/20879275/answer/16585096" target="_blank"><img src="https://cdn.dbarobin.com/VktTAvi.png" title="Zhihu" border="0" alt="Zhihu" height="16px" width="16px" /></a>
 > 
 > 来说说我的一些看法吧。
 1.以前看过一句话：“**其实文凭不过是一张火车票，清华的软卧，本科的硬卧，专科的硬座，民办的站票，成教的在厕所挤着。火车到站，都下车找工作，才发现老板并不太关心你是怎么来的，只关心你会干什么**”。等找工作时才知道文凭并不是最重要的，只是一个敲门砖。企业看重的是你的能力；
@@ -39,7 +39,7 @@ tags:
 
 大学就是象牙塔，对我们总是充满了无尽的诱惑。宽阔的运动场，硕大的图书馆，寂静的银杏林，自由的大学时间安排，各种协会俱乐部学生会……还有，邂逅的爱情。可是如此种种，都需要经过高考的洗礼。
 
-![Our university view](https://cdn.wenguobing.com/B4gmYSR.jpg)
+![Our university view](https://cdn.dbarobin.com/B4gmYSR.jpg)
 
 在农村，能考上一所大学，特别是重本，是件很荣耀的事情。父母在谈到自己的孩子在重点大学上学，别人都投来羡慕的眼光。考上了重本，考上了大学，就是“铁饭碗”，荣华富贵，前途无量。对于农村里的贫穷孩子里来说，高考或许是唯一的走出山沟、接触外面的精彩世界、过上高品质生活的唯一出路。我们生活的世界无法和城里的孩子相比，资源匮乏、信息闭塞、机会缺失，所有的一切都是那么的“惨淡”。父母望子成龙，望女成凤，总希望自己的子女以后有很好的发展。于是，初中、高中便成了我们最痛苦的回忆。各种补习班，来自父母、老师、亲戚、升学、自身的压力，压得我们喘不过气。在高中，我们的压力可以说是到达了顶峰。不过往往最痛苦的却是最幸福的，时不时回忆起当初的种种，都会微笑着品尝当初的美好。
 
@@ -53,7 +53,7 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/9050957" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（二十一）我们的大学观" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十一）我们的大学观" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/9050957" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（二十一）我们的大学观" height="16px" width="16px" border="0" alt="程序员的奋斗史（二十一）我们的大学观" /></a>
 
 题图来自：同学阿华
 

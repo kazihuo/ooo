@@ -27,7 +27,7 @@ tags:
 
 ## 二 增量备份示意图 ##
 
-![MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复示意图 ](https://cdn.wenguobing.com/FJfvnLm.jpg)
+![MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复示意图 ](https://cdn.dbarobin.com/FJfvnLm.jpg)
 
 ## 三 percona-xtrabackup实现增量备份及恢复原理 ##
 
@@ -317,7 +317,7 @@ mysql> select * from larrydb.stu;
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/17054667" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复" height="16px" width="16px" border="0" alt="MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/17054667" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复" height="16px" width="16px" border="0" alt="MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

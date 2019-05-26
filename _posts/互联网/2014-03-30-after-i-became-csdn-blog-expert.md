@@ -17,7 +17,7 @@ tags:
 
 在那之后，博客访问量、粉丝数暴增，让我惶恐不安。本文说说几个现象及我的思考。
 
-![After I became csdn blog expert](https://cdn.wenguobing.com/Wdg2Uis.jpg)
+![After I became csdn blog expert](https://cdn.dbarobin.com/Wdg2Uis.jpg)
 
 **第一个现象是有人找我购买或者交换博客友情链接**，购买友情链接也就是在我的博客添加他们网站的链接，然后付费给我。这两者都被我无情地拒绝了，我的博客是一个分享的地方，应该给读者一片纯净的乐园，而不是成为乌烟瘴气之地，更不想让博客成为赚钱机器。
 
@@ -41,6 +41,6 @@ tags:
 
 原文地址：微信公众号文章
 
-题图来自：<a href="http://jimsmarketingblog.com/2010/07/30/business-blogging-experts/" target="_blank"><img src="https://cdn.wenguobing.com/sUIhtkt.png" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
+题图来自：<a href="http://jimsmarketingblog.com/2010/07/30/business-blogging-experts/" target="_blank"><img src="https://cdn.dbarobin.com/sUIhtkt.png" title="Robin's Blog" border="0" alt="Robin's Blog" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -20,7 +20,7 @@ tags:
 
 隐私极客第 2 篇文章给大家介绍什么呢？读者打开每天必用的软件想了想，选中了 Telegram。关于 Telegram 最好的文章出自霍炬，点击 [此处](https://www.tmtpost.com/1443098.html) 阅读。
 
-![](https://cdn.wenguobing.com/Mo07Awi.jpg)
+![](https://cdn.dbarobin.com/Mo07Awi.jpg)
 
 > 题图来自: © DAN GOODIN / “Privacy is not for sale,” Telegram founder says after being banned in Russia / arstechnica.com
 

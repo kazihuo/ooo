@@ -25,7 +25,7 @@ tags:
 
 MySQL Proxy最强大的一项功能是实现“读写分离(Read/Write Splitting)”。基本的原理是让主数据库处理事务性查询，而从数据库处理SELECT查询。数据库复制被用来把事务性查询导致的变更同步到集群中的从数据库。 当然，主服务器也可以提供查询服务。使用读写分离最大的作用无非是环境服务器压力。可以看下这张图：
 
-![MySQL 读写分离示意图](https://cdn.wenguobing.com/wySnl1E.jpg)
+![MySQL 读写分离示意图](https://cdn.dbarobin.com/wySnl1E.jpg)
 
 ## 二 读写分离的好处 ##
 
@@ -46,7 +46,7 @@ MySQL Proxy最强大的一项功能是实现“读写分离(Read/Write Splitting
 
 ## 四 读写分离示意图 ##
 
-![读写分离示意图](https://cdn.wenguobing.com/wytqs5M.jpg)
+![读写分离示意图](https://cdn.dbarobin.com/wytqs5M.jpg)
 
 ## 五 读写分离模拟 ##
 
@@ -570,12 +570,12 @@ mysql> select * from larrydb.user;
 ```
 
 ## 六 参考资料 ##
-<a href="http://www.itpub.net/thread-1184103-1-1.html" target="_blank"><img src="https://cdn.wenguobing.com/luz6LB6.png" title="ITPUB" height="16px" width="16px" border="0" alt="ITPUB" /></a> <br/>
-<a href="http://segmentfault.com/q/1010000000304576" target="_blank"><img src="https://cdn.wenguobing.com/mf0AZ2m.png" title="segmentfault" height="16px" width="16px" border="0" alt="segmentfault" /></a>
+<a href="http://www.itpub.net/thread-1184103-1-1.html" target="_blank"><img src="https://cdn.dbarobin.com/luz6LB6.png" title="ITPUB" height="16px" width="16px" border="0" alt="ITPUB" /></a> <br/>
+<a href="http://segmentfault.com/q/1010000000304576" target="_blank"><img src="https://cdn.dbarobin.com/mf0AZ2m.png" title="segmentfault" height="16px" width="16px" border="0" alt="segmentfault" /></a>
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/17331569" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="MySQL 读写分离" height="16px" width="16px" border="0" alt="MySQL 读写分离" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/17331569" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="MySQL 读写分离" height="16px" width="16px" border="0" alt="MySQL 读写分离" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

@@ -25,7 +25,7 @@ tags:
 
 本文从钱包、密码、软件、备份、交易所、习惯几个方面给出一些指引。
 
-![hackernoon](https://cdn.wenguobing.com/O07H43e.jpg)
+![hackernoon](https://cdn.dbarobin.com/O07H43e.jpg)
 
 > 题图来自: © Preethi Kasireddy / Bitcoin, Ethereum, Blockchain, Tokens, ICOs / hackernoon.com
 
@@ -99,7 +99,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -127,7 +127,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

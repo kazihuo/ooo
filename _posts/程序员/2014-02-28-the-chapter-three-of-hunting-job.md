@@ -17,7 +17,7 @@ tags:
 
 早餐食佐，休息会，买完菜，回家就开始今天的正式安排。由于下午有上一家公司的面试复试，所以还得准备下。采用了自己一直在用的半小时学习法，很快就到中午了。简单地吃了午餐，准备午休会。好了，下午三点面试，1点30分准时出发。走在街道就开始感受到天气的炎热，人们的穿着已经夏天化，估计成都那边还在穿厚衣服吧。一颗又一颗的黄角树落叶枯荣，一片片的黄叶随风起舞，此景甚是漂亮。嫩的水亮的新芽羞嗒地探出头来，依稀可以感受到春天的到来，可是这气温分明是夏天的节奏。
 
-![The chapter three of hunting job](https://cdn.wenguobing.com/DHgZP0B.jpg)
+![The chapter three of hunting job](https://cdn.dbarobin.com/DHgZP0B.jpg)
 
 到达公家站，坐上去往地铁站的BRT。上车后揾到一个后面的座位，一只手搭在窗边，双眼望向窗外，故作深沉的浮想联翩。想想到广州已经十多天了，人生地不熟，连一个可以说话的人都找不到。这十多天来，每天除了买菜等其他杂货可以和别人交流外，其余时间都待在几十平米的房间。我是一个喜欢独处的人，从小养成的独处习惯让我收获和自己心灵对话的同时也失去很多。在一间房子里我要么读书，要么听音乐，要么做点其他事情，总之，我很少有没事做的时候，也很少感受到孤独。只身来到偌大的城市，想着哪一天才能在这个城市站住脚，哪一天才能有自己的一席之地。想象虽好，现实又是另一般景象。看着窗外穿梭的一辆又一辆好车，想象车主经历过哪些艰难苦楚才能到达今天这般境地。外表虽华丽，但是可以肯定的是每个人都有自己的不易，没有谁能随随便便过上幸福美好的生活。就像以前听到的一句话，每一个荣耀的背后，都有一段辛酸苦逼的历史。不一会儿，达到地铁站。走进地铁口，清晰明了的指示让人倍感温馨。应着指示，顺利坐上3号线。刚出地铁口，难以言表的口渴让人很难受，强烈的阳光让人睁不开眼，袭人的热气更是让我有脱衣服的冲动。走进便利店买了最爱的农夫山泉，开心的走向面试地点。不一会儿，达到目的地。走进园区，沁人的桂花香迎面扑来，我正纳闷这个季节有桂花？还没到3点，找个树荫休息会，等到2点45左右拨通了面试官的电话，因为有门禁，需要有公司员工才能进出。
 
@@ -29,8 +29,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/20121739" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（三十三）——人在囧途之应聘篇（三）" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十三）——人在囧途之应聘篇（三）" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/20121739" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（三十三）——人在囧途之应聘篇（三）" height="16px" width="16px" border="0" alt="程序员的奋斗史（三十三）——人在囧途之应聘篇（三）" /></a>
 
-题图来自：<a href="http://rebloggy.com/post/quote-life-cool-birds-words-creative-inspirational-yay-saying-fly-let-it-go/23591569625" target="_blank"><img src="https://cdn.wenguobing.com/MBUEkle.png" title="rebloggy" height="16px" width="16px" border="0" alt="rebloggy" /></a>
+题图来自：<a href="http://rebloggy.com/post/quote-life-cool-birds-words-creative-inspirational-yay-saying-fly-let-it-go/23591569625" target="_blank"><img src="https://cdn.dbarobin.com/MBUEkle.png" title="rebloggy" height="16px" width="16px" border="0" alt="rebloggy" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

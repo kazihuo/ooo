@@ -22,7 +22,7 @@ tags:
 
 比特币迄今为止最为成功的区块链项目，也是市值排名第一的虚拟货币。**比特币只是区块链技术的运用，而技术是为了解决特定的问题。** 纵观币圈，这里诞生了无数的财富神话，然而绝大多数人连比特币的白皮书都没有看过，参与 ICO 项目也不会阅读该项目的白皮书。他们更多关注的是虚拟货币能换来多少法币，某个币能带来多少倍的收益，而鲜有关注区块链技术本身。他们追涨杀跌，听风是风，听雨是雨，早起晚睡，各交易所频繁买入卖出，恨不得 24 小时盯着电脑手机。是的，币圈一日，人间一年，区块链技术的应用如雨后春笋般兴起，他们为之狂欢鼓舞，为之呐喊助威。各类消息如狂风暴雨般席卷而来，他们为之欣喜疯狂，为之唏嘘不已。
 
-![Blockchain](https://cdn.wenguobing.com/HHwisU3.jpg)
+![Blockchain](https://cdn.dbarobin.com/HHwisU3.jpg)
 
 © Daniel Ben-Ami / Blockchain / goo.gl/xGU57e
 
@@ -34,7 +34,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -62,7 +62,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 **货币的本质就是信任，从今天开启新的序幕。**
 

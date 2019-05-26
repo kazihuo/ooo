@@ -28,7 +28,7 @@ Monero 作为对比，Dogecoin 目前 24 小时内的交易数已经比较低了
 
 在之前的 [文章](https://dbarobin.com/2019/03/16/bitcoin-lightning-network) 中，笔者讲解了目前使用闪电网络有数个钱包供选择。其中 Hoo 钱包支持生成闪电网络收款码。
 
-![](https://cdn.wenguobing.com/bW6w12P.png)
+![](https://cdn.dbarobin.com/bW6w12P.png)
 
 > 题图来自: © cripto2018 / Bitcoin: Lightning Network goes live / cryptoglobo.com
 
@@ -56,7 +56,7 @@ openid 查找办法，打开 Hoo 钱包，切换到闪电网络钱包，点击�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://cdn.wenguobing.com/3YzonTR.png)
+![区块链技术指北](https://cdn.dbarobin.com/3YzonTR.png)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -89,7 +89,7 @@ openid 查找办法，打开 Hoo 钱包，切换到闪电网络钱包，点击�
 > PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 > 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

@@ -212,7 +212,7 @@ comments:
 
 也就是说，智能合约概念并不是随着区块链技术诞生的。区块链技术天然给智能合约带来得天独厚的应用前提。如果说区块链落地应用，比特币和以太坊就是最大的应用了。
 
-![2018-01-24-blockchain-smart-contract](https://cdn.wenguobing.com/3M3ZviW.jpg)
+![2018-01-24-blockchain-smart-contract](https://cdn.dbarobin.com/3M3ZviW.jpg)
 
 > 题图来自: © Guia do Bitcoin / Tudo que você precisa saber sobre o Ethereum Hard Fork que acontecerá amanhã / guiadobitcoin.com.br
 
@@ -227,7 +227,7 @@ comments:
 
 下面这个示意图就是一个智能合约模型：一段代码（智能合约），被部署在分享的、复制的账本上，它可以维持自己的状态，控制自己的资产和对接收到的外界信息或者资产进行回应。
 
-![Smart contact](https://cdn.wenguobing.com/Ms2x7nM.png)
+![Smart contact](https://cdn.dbarobin.com/Ms2x7nM.png)
 
 **智能合约模型：它是运行在可复制、共享的账本上的计算机程序，可以处理信息，接收、储存和发送价值。**
 
@@ -353,7 +353,7 @@ DAPP 和 APP 是对应的。APP 我们已经很熟悉了，目前我们主要在
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -381,7 +381,7 @@ DAPP 和 APP 是对应的。APP 我们已经很熟悉了，目前我们主要在
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

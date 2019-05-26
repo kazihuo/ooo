@@ -17,7 +17,7 @@ tags:
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
-![](https://cdn.wenguobing.com/smxzEPJ.png)
+![](https://cdn.dbarobin.com/smxzEPJ.png)
 
 > 题图来自: © ChainONE / Original / chainon.io
 
@@ -37,7 +37,7 @@ EOS 的诞生让交易所爆发了新的生机，本文试着解读下。
 
 EOS 生态有众多中心化交易所和去中心化交易所。怎么理解中心化和去中心化呢？以 EOS 为例，EOS 中心化交易所，用户只需要邮箱加密码，再加上 GA，就可以访问自己的资产，从而进行交易、充值、提现。如果资产处于静态，EOS 中心化交易所等于钱包，然而用户却不掌握私钥。EOS 去中心化交易所却不一样，交易所不掌握私钥，交易通过合约进行。用户通过 EOS 钱包和交易所的合约账号进行交互，即可交易资产。
 
-![](https://cdn.wenguobing.com/KfUemDc.jpg)
+![](https://cdn.dbarobin.com/KfUemDc.jpg)
 
 > 题图来自: © eosio / Congratulations to the EOSIO Community / medium.com
 
@@ -131,7 +131,7 @@ DeltaDex 是第一个基于 EOS 构建的完全去中心化交易所（真正的
 
 关于 DeltaDex、Newdex 和 DEXEOS 的介绍，可以参考下图 [9]：
 
-![](https://cdn.wenguobing.com/TDzVbwy.png)
+![](https://cdn.dbarobin.com/TDzVbwy.png)
 
 ### 2.10 OneDex
 ***
@@ -241,7 +241,7 @@ CoinDex 创立于 2018 年 9 月 18 日，是一个基于 EOS 的 C2C 去中心�
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 
-![区块链技术指北](https://cdn.wenguobing.com/RBmpxTL.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/RBmpxTL.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -274,7 +274,7 @@ CoinDex 创立于 2018 年 9 月 18 日，是一个基于 EOS 的 C2C 去中心�
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

@@ -26,11 +26,11 @@ tags:
 
 我们来看看错误日志：
 
-![错误日志](https://cdn.wenguobing.com/fwtY0xt.jpg)
+![错误日志](https://cdn.dbarobin.com/fwtY0xt.jpg)
 
 再来看看TempDB自增长记录：
 
-![TempDB自增长记录](https://cdn.wenguobing.com/exMPjmh.png)
+![TempDB自增长记录](https://cdn.dbarobin.com/exMPjmh.png)
 
 ## 导致原因 ##
 
@@ -68,7 +68,7 @@ IF NOT EXISTS (SELECT *
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/24097741" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="深刻的教训-SQL Server关于TempDB的使用" height="16px" width="16px" border="0" alt="深刻的教训-SQL Server关于TempDB的使用" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/24097741" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="深刻的教训-SQL Server关于TempDB的使用" height="16px" width="16px" border="0" alt="深刻的教训-SQL Server关于TempDB的使用" /></a>
 
 题图来自：原创，By <a href="https://dbarobin.com/" target="_blank">Robin Wen</a>
 

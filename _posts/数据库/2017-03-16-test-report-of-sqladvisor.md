@@ -43,7 +43,7 @@ SQLAdvisor 的优点
 
 SQLAdvisor 架构流程图：
 
-![SQLAdvisor Structure](https://cdn.wenguobing.com/Ndau7CG.png)
+![SQLAdvisor Structure](https://cdn.dbarobin.com/Ndau7CG.png)
 
 SQLAdvisor 包含了如下的处理方式：Join 处理、where 处理、计算区分度、添加备选索引、Group 与 Order 处理、驱动表选择、添加被驱动表备选索引、输出建议，具体的流程图可以参考：[美团点评 SQL 优化工具 SQLAdvisor 开源](http://tech.meituan.com/sqladvisor_pr.html)
 

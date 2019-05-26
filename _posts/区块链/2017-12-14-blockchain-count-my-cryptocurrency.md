@@ -26,7 +26,7 @@ tags:
 
 摆在笔者面前的一大难题，区块链资产比较分散，各类钱包、各大交易所，同一币种在不同交易所价格还不一样。怎么样精准快速统计个人资产，这还是个问题。
 
-![blockchain](https://cdn.wenguobing.com/44SYx6s.jpg)
+![blockchain](https://cdn.dbarobin.com/44SYx6s.jpg)
 
 > 题图来自: © JASON / Hoard Joins INV Fintech Accelerator / hoardinvest.com
 
@@ -152,7 +152,7 @@ def CountCryptoCurrency(file):
 
 脚本编写完成后，执行 `python cryptocurrency.py`，就会得到如下输出：
 
-![cryptocurrency](https://cdn.wenguobing.com/3xz1ahK.png)
+![cryptocurrency](https://cdn.dbarobin.com/3xz1ahK.png)
 
 看到这么多现值，是不是很酷啊，有时产生下错觉也挺好的。
 
@@ -172,7 +172,7 @@ def CountCryptoCurrency(file):
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -200,7 +200,7 @@ def CountCryptoCurrency(file):
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

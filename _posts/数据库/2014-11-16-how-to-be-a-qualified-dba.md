@@ -23,7 +23,7 @@ tags:
 **1.DBA的前途如何？**
 DBA的前途从目前来说是不错的，但未来怎么发展我表示看不太清楚。有人说未来大规模集群，自动化智能管理，DBA的部分工作会被机器取代，需要DBA的机率会越来越低，但对高级DBA的需求仍然是很大，我表示部分赞同；有人说未来数据规模越来越大，数据的安全性越来越重要，数据的维护也变得很关键，DBA仍然会赤手可热，我也表示部分赞同；有人说数据库的发展趋势呈多样性发展，传统RDBMS使用频率会较低，非RDBMS会蓬勃发展，我仍然部分赞同。
 
-![How to become a qualified DBA](https://cdn.wenguobing.com/LCfXHUO.gif)
+![How to become a qualified DBA](https://cdn.dbarobin.com/LCfXHUO.gif)
 
 **2.成为DBA需要学些什么？**
 关系型数据库理论基础、SQL、Linux基本命令和操作、数据库基础管理、数据库备份和恢复、SQL优化、数据库性能优化、一门脚本语言（Shell/Python/Perl/Ruby）……

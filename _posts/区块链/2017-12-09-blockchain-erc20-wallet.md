@@ -23,7 +23,7 @@ tags:
 
 以太坊，[Ethereum](https://www.ethereum.org) 是一个分布式的计算机，有许多的节点，其中的每一个节点，都会执行字节码（其实就是智能合约），然后把结果存在区块链上。由于整个网络是分布式的，且应用就是一个个的状态组成，存储了状态就有了服务；所以它就能永不停机，没有一个中心化的结点（没有任何一个节点说了算，去中心化的），任何第三方不能干预。
 
-![Ethereum](https://cdn.wenguobing.com/vW0Z1oB.jpg)
+![Ethereum](https://cdn.dbarobin.com/vW0Z1oB.jpg)
 
 > 题图来自: © José Domingues / Ethereum / goo.gl/uHDq2M
 
@@ -45,7 +45,7 @@ Mist 是一个全节点钱包，需要同步全部的以太坊区块信息。优
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -73,7 +73,7 @@ Mist 是一个全节点钱包，需要同步全部的以太坊区块信息。优
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

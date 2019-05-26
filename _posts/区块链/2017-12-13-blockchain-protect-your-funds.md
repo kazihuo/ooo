@@ -23,7 +23,7 @@ tags:
 
 本文翻译来自 MyEtherWallet 官网文章 [Protecting Yourself and Your Funds](https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html)。
 
-![Bitcoin software wallets and security](https://cdn.wenguobing.com/TVdszJY.png)
+![Bitcoin software wallets and security](https://cdn.dbarobin.com/TVdszJY.png)
 
 > 题图来自: © cctrading / Bitcoin software wallets and security / cctrading.biz
 
@@ -119,7 +119,7 @@ tags:
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -147,7 +147,7 @@ tags:
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

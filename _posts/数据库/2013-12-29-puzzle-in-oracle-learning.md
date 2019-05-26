@@ -20,7 +20,7 @@ tags:
 
 有的时候真的很累，都不知道自己活着到底是为了什么？大学很差4流本科，非计算机专业，自知没有天资，只能靠拼命努力，所以从大一到大三，我一直全身心的在学习oracle，除了白天要上学校的的课外，平时就一直窝在图书馆学习oracle，在杭州快4年了，不要说去逛下西湖，就是去逛下下沙都没有。同学关系也不理想，在大家眼里，我只是一只‘学霸’。我到底哪里出了问题？算了，不写了。。
 
-![Puzzle in oracle learning](https://cdn.wenguobing.com/4UejF4X.jpg)
+![Puzzle in oracle learning](https://cdn.dbarobin.com/4UejF4X.jpg)
 
 **【我的回答】**
 

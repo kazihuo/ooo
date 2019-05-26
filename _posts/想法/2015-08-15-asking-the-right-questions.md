@@ -18,7 +18,7 @@ tags:
 
 作者从提出正确问题的益处说起，循序渐进，给出论题和结论的定义。别人试图说服你，那给出的理由是什么，怎样识别有歧义的词句。接着作者讲到价值观冲突和价值观假设，提到了一些列谬误。在本书的最后几章，作者花了大量的功夫论证了数据的可信度。
 
-![2015-08-15-asking-the-right-questions](https://cdn.wenguobing.com/qLzwoef.jpg)
+![2015-08-15-asking-the-right-questions](https://cdn.dbarobin.com/qLzwoef.jpg)
 
 此书通俗易懂，论证严谨，典型的美国式记者文风。作者给出大量的实例，这些例子都贴近现实生活，给出提示，并不断鞭策读者思考。
 

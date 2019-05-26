@@ -32,7 +32,7 @@ comments:
 
 **我不考研最重要的原因是父母**。父母为了我苦苦打拼一辈子，现在身体不好，如果我再读个几年，他们又要很辛苦辛苦地挣钱，我舍不得，我想早些尽孝，让他们尽快地享受天伦之乐。我知道考好的学校学费可以解决，但还要生活费等，高昂的机会成本、青春成本我耗不起。每次打电话听到父母还在加班，即使腰酸背痛都还在坚持，我又无能为力，只有静静的想着一盏明灯下我为他们洗脚的场景。父母舍不得吃，舍不得穿，把最好的都留给我，送我去最好的学校，尽他们的努力给我最优越的条件。此养育之恩，永生铭记于心。父亲经常头疼，母亲经常腰疼，我能想象他们的老年生活是多么地吃力。我能做的就是尽早工作，让他们尽早退休，享受生活。
 
-![Why I quit postgraduate](https://cdn.wenguobing.com/TJaVUa4.jpg)
+![Why I quit postgraduate](https://cdn.dbarobin.com/TJaVUa4.jpg)
 
 我不考研的第二个原因是我想尽快进入社会打拼。习惯了象牙塔的生活，外面的社会对我充满了十足的吸引力。我深知一个人在外的生活很艰难，但这是每个人都要经历的。
 
@@ -46,8 +46,8 @@ comments:
 
 –EOF–
 
-原文地址：<a href="" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="" height="16px" width="16px" border="0" alt="" /></a>
+原文地址：<a href="" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="" height="16px" width="16px" border="0" alt="" /></a>
 
-题图来自：<a href="http://www.nps.edu/video/portal/Default.aspx" target="_blank"><img src="https://cdn.wenguobing.com/CXTac8i.jpg" title="Naval Postgraduate School" height="16px" width="16px" border="0" alt="Naval Postgraduate School" /></a>
+题图来自：<a href="http://www.nps.edu/video/portal/Default.aspx" target="_blank"><img src="https://cdn.dbarobin.com/CXTac8i.jpg" title="Naval Postgraduate School" height="16px" width="16px" border="0" alt="Naval Postgraduate School" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

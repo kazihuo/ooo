@@ -138,7 +138,7 @@ pt-duplicate-key-checker --user=root \
 
 重复的索引必定会浪费系统资源，势必找出重复索引，然后干掉它。`pt-duplicate-key-checker`工具是Percona Toolkit中的一员，是DBA进行维护的好帮手。顺便说下，`Percona Toolkit`是一组相当赞的MySQL维护管理工具，相当赞，强烈推荐使用。
 
-工具传送门：<a href="http://www.percona.com/software/percona-toolkit" target="_blank"><img src="https://cdn.wenguobing.com/18VTVkQ.jpg" title="Percona Toolkit" height="16px" width="16px" border="0" alt="Percona Toolkit" /></a> 
+工具传送门：<a href="http://www.percona.com/software/percona-toolkit" target="_blank"><img src="https://cdn.dbarobin.com/18VTVkQ.jpg" title="Percona Toolkit" height="16px" width="16px" border="0" alt="Percona Toolkit" /></a> 
 
 –EOF–
 

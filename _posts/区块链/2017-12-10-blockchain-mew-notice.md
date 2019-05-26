@@ -23,7 +23,7 @@ tags:
 
 最近打开 MyEtherWallet 官网，发现有很长的提示，仔细阅读之后，觉得对于了解 ERC20 Token 甚至是区块链技术都有比较好的参考价值，于是心血来潮，把这些提示逐页拷贝下来，并做了翻译。
 
-![MyEtherWallet](https://cdn.wenguobing.com/BD9Rk6t.png)
+![MyEtherWallet](https://cdn.dbarobin.com/BD9Rk6t.png)
 
 > 题图来自: © MEW / MyEtherWallet banner logo / www.myetherwallet.com
 
@@ -246,7 +246,7 @@ If you lose your private key or password, it is gone forever. Don't lose it.
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
-![区块链技术指北](https://cdn.wenguobing.com/pQxlDqF.jpg)
+![区块链技术指北](https://cdn.dbarobin.com/pQxlDqF.jpg)
 
 「区块链技术指北」相关资讯渠道：
 
@@ -274,7 +274,7 @@ If you lose your private key or password, it is gone forever. Don't lose it.
 * PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
 * 微信打赏二维码
 
-![Wechat](https://cdn.wenguobing.com/SzoNl5b.jpg)
+![Wechat](https://cdn.dbarobin.com/SzoNl5b.jpg)
 
 –EOF–
 

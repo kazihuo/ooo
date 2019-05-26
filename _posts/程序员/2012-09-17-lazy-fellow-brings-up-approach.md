@@ -16,7 +16,7 @@ tags:
 
 懒人造就了方法，这句话一点也没错。突然间想想那些聪明的人，大多都是懒人。因为想得多，所以做得少。因为想得多，所以思维得到了锻炼，变得越来越聪明。懒人造就了方法，当一件事情需要很大功夫才能做完时，勤快人想得是马上去做，尽快完成，而懒人想得是怎样做省力，怎样做最节省时间，此时懒人创造了一系列的方法。越勤快，越没有机会找到更快的方法。因为勤快人的脑子里想的并不是方法相关的东西。很多时候，做一个懒人还是很有必要的。
 
-![ Lazy fellow brings up approach](https://cdn.wenguobing.com/ZE1HTs8.jpg)
+![ Lazy fellow brings up approach](https://cdn.dbarobin.com/ZE1HTs8.jpg)
 
 以前的我可以用木讷来形容，没有自己的思想。经过长时间的学习和积累，深刻认识到思考的重要性。如果一个人活在这个世界连思想都没有，那他又跟行尸走肉有何区别？**勤于思考，勇于表达自己的想法，这才是重中自重。**
 
@@ -26,8 +26,8 @@ tags:
 
 –EOF–
 
-原文地址：<a href="http://blog.csdn.net/justdb/article/details/7988620" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="程序员的奋斗史（八）懒人造就方法" height="16px" width="16px" border="0" alt="程序员的奋斗史（八）懒人造就方法" /></a>
+原文地址：<a href="http://blog.csdn.net/justdb/article/details/7988620" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="程序员的奋斗史（八）懒人造就方法" height="16px" width="16px" border="0" alt="程序员的奋斗史（八）懒人造就方法" /></a>
 
-题图来自：<a href="http://kapilarambam.blogspot.jp/2011/10/mellow-mellow-lazy-fellow.html" target="_blank"><img src="https://cdn.wenguobing.com/zOeiV4B.png" title="" border="0" alt="" height="16px" width="16px" /></a>
+题图来自：<a href="http://kapilarambam.blogspot.jp/2011/10/mellow-mellow-lazy-fellow.html" target="_blank"><img src="https://cdn.dbarobin.com/zOeiV4B.png" title="" border="0" alt="" height="16px" width="16px" /></a>
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
