@@ -27,7 +27,7 @@ Installation via git clone or download this repo.
 
 ## History
 
-1. Clone from [https://github.com/yulijia/freshman21](https://github.com/yulijia/freshman21)
+1. Clone from [freshman21](https://github.com/yulijia/freshman21)
 2. Update theme.
 
 ## Credits
@@ -39,7 +39,7 @@ Installation via git clone or download this repo.
 
 ## Preview
 
-![Screenshots of dbarobin.com at 2019.05.26](https://dbarobin.com/images/dbarobin.com.screenshots.190526.png)
+![](https://dbarobin.com/images/dbarobin.com.screenshots.190526.png)
 
 ## Contact
 
