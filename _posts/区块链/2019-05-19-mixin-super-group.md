@@ -95,7 +95,7 @@ postgres (PostgreSQL) 10.8 (Ubuntu 10.8-0ubuntu0.18.04.1)
 
 ``` bash
 $ sudo -i -u postgres
-$ psql
+# 注意：以下命令在切换到 postgres 用户之后的命令行执行
 $ createuser --interactive
 
 Enter name of role to add: test
@@ -131,8 +131,10 @@ test=> \conninfo
 You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
 test=> \i $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/schema.sql
 
+# 也可以 sudo -i -u test 修改用户密码
 $ sudo -i -u postgres
-$ ALTER USER test WITH PASSWORD 'xxxxxxxx';
+$ psql
+postgres=# ALTER USER test WITH PASSWORD 'xxxxxxxx';
 ```
 
 ### 4.4 安装 Nginx
