@@ -29,7 +29,7 @@ title: About this blog
 
 ## 微信平台 ##
 
-「DBTalk By 温国兵」（dbtalk）
+「DBTalk」（dbtalk）
 
 ## 联系方式 ##
 
