@@ -16,10 +16,10 @@ title: About this blog
 
 ## 相关网站 ##
 
-* <a href="http://about.me/dbarobin" target="_blank"><img src="https://cdn.wenguobing.com/i2rzbE6.png" title="Robin Wen's AboutMe" height="16px" width="16px" border="0" alt="Robin Wen's AboutMe" /></a>
-* <a href="http://blog.csdn.net/justdb" target="_blank"><img src="https://cdn.wenguobing.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px"     width="16px" border="0" alt="DBA@Robin's CSDN" /></a>
-* <a href="http://www.zhihu.com/people/wentasy" target="_blank"><img src="https://cdn.wenguobing.com/VktTAvi.png" title="Robin's Zhihu" border="0" alt="Robin's Zhihu" height="16px" width="16px" /></a>
-* <a href="http://www.douban.com/people/wentasy/" target="_blank"><img src="https://cdn.wenguobing.com/GoilVod.png" title="Robin's Douban" border="0" alt="Robin's Douban" height="16px" width="16px" /></a>
+* <a href="http://about.me/dbarobin" target="_blank"><img src="https://cdn.dbarobin.com/i2rzbE6.png" title="Robin Wen's AboutMe" height="16px" width="16px" border="0" alt="Robin Wen's AboutMe" /></a>
+* <a href="http://blog.csdn.net/justdb" target="_blank"><img src="https://cdn.dbarobin.com/BROigUO.jpg" title="DBA@Robin's CSDN" height="16px"     width="16px" border="0" alt="DBA@Robin's CSDN" /></a>
+* <a href="http://www.zhihu.com/people/wentasy" target="_blank"><img src="https://cdn.dbarobin.com/VktTAvi.png" title="Robin's Zhihu" border="0" alt="Robin's Zhihu" height="16px" width="16px" /></a>
+* <a href="http://www.douban.com/people/wentasy/" target="_blank"><img src="https://cdn.dbarobin.com/GoilVod.png" title="Robin's Douban" border="0" alt="Robin's Douban" height="16px" width="16px" /></a>
 * <a href="http://weibo.com/wentasy" target="_blank"><i class="fa fa-weibo"></i></a>
 * <a href="https://github.com/dbarobin" target="_blank"><i class="fa fa-github"></i></a>
 * <a href="https://twitter.com/dbarobin" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -33,4 +33,4 @@ title: About this blog
 
 ## 联系方式 ##
 
-<a href="mailto:blockxyz@gmail.com"><img src="https://cdn.wenguobing.com/7yOaC7C.png" title="Robin's Gmail" border="0" alt="Robin's Gmail" /></a>
+<a href="mailto:blockxyz@gmail.com"><img src="https://cdn.dbarobin.com/7yOaC7C.png" title="Robin's Gmail" border="0" alt="Robin's Gmail" /></a>
