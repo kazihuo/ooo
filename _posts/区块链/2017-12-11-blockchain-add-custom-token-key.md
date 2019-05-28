@@ -67,8 +67,7 @@ Token Contract Address 表示合约地址，Token Symbol 表示 Token 的代号�
 
 * 「区块链技术指北」同名知识星球，[https://t.xiaomiquan.com/ZRbmaU3](https://t.xiaomiquan.com/ZRbmaU3)
 * 官方社区，[https://bbs.chainon.io](https://bbs.chainon.io)
-* Telegram Channel，[https://t.me/BlockchainAge](https://t.me/BlockchainAge)
-* Telegram Group，[https://t.me/bcage](https://t.me/bcage)
+* Telegram Channel，[https://t.me/chainone](https://t.me/chainone)
 * Twitter，[https://twitter.com/bcageone](https://twitter.com/bcageone)
 * 新浪微博，[https://weibo.com/BlockchainAge](https://weibo.com/BlockchainAge)
 
