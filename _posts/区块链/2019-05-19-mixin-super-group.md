@@ -39,6 +39,11 @@ comments:
 
 `文/robin`
 
+| 版本 | 更新历史 | 更新时间 | 备注 |
+| :------: | :------: | :------: | :------: |
+| v1.0 | 文档初稿 | 2019/05/19 12:49:38 | 全网公开 |
+| v2.0 | 更改后端启动方式 | 2019/06/06 17:27:57 | 重构后的代码，大群维护更友好 |
+
 这是「区块链技术指北」的第 **63** 篇文章。
 
 ## 一 前言
@@ -49,6 +54,8 @@ comments:
 如何创建突破 256 人数限制的大群？官方已经有了答案，仓库 [在此](https://github.com/MixinNetwork/supergroup.mixin.one)，后端语言为 Go，前端语言为 Node.js。
 
 据笔者调研，目前 Mixin Messenger 主要有 5 个大群，分别是：Mixin 中文群（7000101317）、PRESS.one 中文群（7000101697）、BigONE 官方中文群（7000101910）、Mixin English（7000101502）和 Exin 中文群（7000000016）。然而对于一款社交软件来说，数量这么少的大群是远远不够的。官方的大群仓库是有了，笔者却发现没有一个详细的帮助文档，这显然是不友好的。
+
+最近 Mixin 大群代码做了重构，修改后端相关的配置无需重新编译代码，所以本教程也做相应的调整。
 
 ## 二 架构
 ***
@@ -217,132 +224,101 @@ $ go get github.com/MixinNetwork/supergroup.mixin.one
 
 如果是国内服务器，估计比较悬。读者可以采用 ss + [cow](https://github.com/cyfdecyf/cow/) 解决这个问题，在此不多说。
 
-clone 下来后，创建配置目录：
+clone 下来后，直接 build 代码：
 
 ``` bash
 $ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
-$ mkdir config
-$ cp config.gocfg config.go
+$ go build
+```
+
+如果没有什么问题的话，会在当前目录生成一个 `supergroup.mixin.one` 的可执行文件，当然读者可以重命名为其他名字。
+
+此外，不少读者反馈 go build 遇到各种各样的问题，为了方便读者搭建大群，笔者为大家提前编译好了。如果读者使用笔者编译好的二进制文件，4.6 和 4.7 步骤都可以忽略。
+
+下载地址点击 [此处](https://download.exin.one/mixin/supergroup)。需要说明的是，下载目录以日期为归档，建议下载最新的可执行文件。笔者会跟踪大群代码，保持同步，并且定期上传二进制文件。将 `supergroup.mixin.one` 可执行文件下载下来之后，读者将此文件上传到服务器，需要执行 `chmod +x supergroup.mixin.one` 为二进制文件添加可执行权限，并且可以重命名为其他名字。
+
+重构后的代码，`config.go` 文件无需编辑，只需要修改 config.yaml 文件，步骤如下：
+
+``` bash
+# clone 代码后，当前目录拷贝即可
+$ cp config.tpl.yaml config.yaml
+$ vim config.yaml
 ```
 
 修改配置文件：
 
-``` go
-package config
-
-const (
-    Name             = "YOUR-GROUP-NAME"
-    Environment      = "Your Environment like production, development or test"
-    BuildVersion     = "BUILD_VERSION"
-    HTTPListenPort   = 7001 // HTTP Port
-    HTTPResourceHost = "https://group.test.com" // 大群的网址
-
-    DetectImageEnabled = false
-    DetectLinkEnabled  = false
-)
-
-const (
-    DatebaseUser     = "Your-Database-User"
-    DatabasePassword = "Your-Database-Password"
-    DatabaseHost     = "Your-Database-Host"
-    DatabasePort     = "Your-Database-Port"
-    DatabaseName     = "Your-Database-Name"
-)
-
-const (
-   // 用什么 token 支付入群费，默认 XIN, 其它的资产可以在这里找到 https://mixin.one/snapshots
-   PaymentAssetId = "c94ac88f-4671-3976-b60a-09064f1811e8"
-   // 设置成 "0", 所有人都可以加入
-   PaymentAmount  = "0"
-)
-
-const (
-   MessageShardModifier = "SHARD"
-   MessageShardSize     = 8 // 多少个 Goroutine 发送消息，开始可以小一些，比如 8
-)
-
-const (
-   WelcomeMessage          = "欢迎加入 XXX 中文群"
-   GroupRedPacket          = "中文群红包"
-   GroupRedPacketShortDesc = "来自无名氏的红包"
-   GroupRedPacketDesc      = "来自 %s 的红包"
-   GroupOpenedRedPacket    = "%s 打开了你的红包"
-
-   MessageTipsGuest       = "您需要先点击机器图标授权。"
-   MessageTipsJoin        = "%s 加入了群组"
-   MessageTipsHelp        = "您需要先加入群组才能发消息。"
-   MessageTipsHelpBtn     = "点击加入群组"
-   MessageTipsUnsubscribe = "您已经取消了本群的消息订阅, 无法发送或者接收消息。"
-
-   // commands
-   MessageCommandsInfo     = "/INFO"
-   MessageCommandsInfoResp = "当前订阅人数: %d"
-)
-
-// 管理员列表，可以踢人，拉入黑名单
-var Operators = map[string]bool{
-   "xxxxxxxx": true,
-   "xxxxxxxx": true,
-}
-
-// 参考 https://steemit.com/cn/@over140/45sh3k-mixin-messenger
-const (
-   ClientId        = "xxxxxxxx"
-   ClientSecret    = "xxxxxxxx"
-   SessionAssetPIN = "xxxxxxxx"
-   PinToken        = "xxxxxxxx"
-   SessionId       = "xxxxxxxx"
-   SessionKey      = `-----BEGIN RSA PRIVATE KEY-----
------END RSA PRIVATE KEY-----`
-)
+``` yaml
+service:
+  name: "Mixin 中文群"
+  enviroment: "production or development"
+  port: 7001
+  host: "https://you-domain-name"
+database:
+  username: "postgres"
+  password: ""
+  host: "localhost"
+  port: 5432
+  database_name: "postgres"
+system:
+  message_shard_modifier: SHARD
+  message_shard_size: 4
+  price_asset_enable: true
+  operator_list:
+    - "e9a5b807-fa8b-455a-8dfa-b189d28310ff"
+    - "fcc87491-4fa0-4c2f-b387-262b63cbc112"
+  detect_image: false
+  detect_link: false
+  payment_asset_id: "c94ac88f-4671-3976-b60a-09064f1811e8"
+  payment_amount: "0.001"
+message_template:
+  welcome_message        : "欢迎加入 Mixin 中文群"
+  group_redpacket        : "中文群红包"
+  group_redpacket_short_desc: "来自无名氏的红包"
+  group_redpacket_desc    : "来自 %s 的红包"
+  group_opened_redpacket  : "%s 打开了你的红包"
+  message_tips_guest     : "您需要先点击机器图标授权。"
+  message_tips_join      : "%s 加入了群组"
+  message_tips_help      : "您需要先支付 0.001 XIN, 加入群组才能发消息。"
+  message_tips_help_btn   : "点击加入群组"
+  message_tips_unsubscribe: "您已经取消了本群的消息订阅, 无法发送或者接收消息。"
+  message_commands_info   : "/INFO"
+  message_commands_info_resp: "当前订阅人数: %d"
+mixin:
+  client_id        : "xxxxxxxx"
+  client_secret    : "xxxxxxxx"
+  session_asset_pin : "xxxxxxxx"
+  pin_token        : "xxxxxxxx"
+  session_id       : "xxxxxxxx"
+  session_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    -----END RSA PRIVATE KEY-----
 ```
 
 Operators 变量用于配置管理员列表，这里填写的不是管理员的 ID，而是真实 ID，格式为 UUID。笔者根据 [Mixin-SDK-PHP](https://github.com/ExinOne/mixin-sdk-php) 写了个脚本，可以参考下，点击 [此处](https://github.com/dbarobin/mixin/blob/master/mixin-searchuser.php) 阅读。
 
-接着执行 `go build` 编译代码，如果没有什么问题的话，会在当前目录生成一个 **supergroup.mixin.one** 的可执行文件，当然读者可以重命名为其他名字。
-
 ### 4.8 编译前端
 ***
+
+编译前端的方式也有变化，之前是修改 `webpack.config.js` 文件，重构后的代码修改的是 `env.prod.sh` 脚本，步骤如下：
+
+``` bash
+$ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/web
+# 如果只编译线上环境，可以不用修改 env.dev.sh 文件
+$ cp -v env.dev.tpl.sh env.dev.sh
+$ cp -v env.prod.tpl.sh env.prod.sh
+```
 
 修改配置文件：
 
 ``` bash
-$ vim web/webpack.config.js
+$ vim env.prod.sh
 
-const webRoot = function (env) {
-  if (env === 'production') {
-    return 'https://group.test.com';
-  } else {
-    return 'https://group.test.com';
-  }
-};
-
-const apiRoot = function (env) {
-  if (env === 'production') {
-    return 'https://api.test.com';
-  } else {
-    return 'http://127.0.0.1:7001';
-  }
-};
-
-const clientId = function (env) {
-  if (env === 'production') {
-    return 'xxxxxxxx';
-  } else {
-    return 'xxxxxxxx';
-  }
-};
-
-plugins: [
-  new webpack.DefinePlugin({
-    PRODUCTION: (process.env.NODE_ENV === 'production'),
-    WEB_ROOT: JSON.stringify(webRoot(process.env.NODE_ENV)),
-    API_ROOT: JSON.stringify(apiRoot(process.env.NODE_ENV)),
-    CLIENT_ID: JSON.stringify(clientId(process.env.NODE_ENV)),
-    //将「Mixin 中文群」替换为您的群名称
-    APP_NAME: JSON.stringify('Mixin 中文群'),
-    LOCALE: JSON.stringify('zh-CN')
-  }),
+export NODE_ENV="production"
+export SUPERGROUP_WEB_ROOT="http://your-host"
+export SUPERGROUP_API_ROOT="http://your-api"
+export SUPERGROUP_CLIENT_ID="xxxxxxxx"
+export SUPERGROUP_APP_NAME="Mixin 中文群"
+export SUPERGROUP_LOCALE="zh-CN"
 ```
 
 安装依赖：
@@ -368,7 +344,7 @@ $ touch group.test.com.conf
 $ touch api.test.com.conf
 ```
 
-group.test.com.conf 内容如下（参考 [nginx.web.conf](https://raw.githubusercontent.com/MixinNetwork/supergroup.mixin.one/master/nginx.web.conf)）：
+group.test.com.conf 内容如下（参考 [nginx.web.conf](https://raw.githubusercontent.com/ExinOne/supergroup.mixin.one/exin/nginx/nginx.web.conf)）：
 
 ``` bash
 server {
@@ -379,7 +355,7 @@ server {
     ssl_certificate_key /etc/nginx/conf.d/cert/group.test.com.key;
     ssl_session_timeout 5m;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers xxxxxxxx
+    ssl_ciphers xxxxxxxx;
     ssl_prefer_server_ciphers on;
 
     root /var/www/test/dist;
@@ -426,7 +402,7 @@ server {
 }
 ```
 
-api.test.com.conf 内容如下（参考 [nginx.api.conf](https://raw.githubusercontent.com/MixinNetwork/supergroup.mixin.one/master/nginx.api.conf)）：
+api.test.com.conf 内容如下（参考 [nginx.api.conf](https://raw.githubusercontent.com/ExinOne/supergroup.mixin.one/exin/nginx/nginx.api.conf)）：
 
 ``` bash
 upstream test {
@@ -477,7 +453,7 @@ $ systemctl restart nginx
 ### 4.10 部署服务
 ***
 
-为了管理方便，为两个 Go 进程部署 Service 服务。
+为了管理方便，为两个 Go 进程部署 Service 服务。因为重构后的代码，编译不依赖配置文件，所以 Service 服务脚本，需要指定 `-dir` 参数。
 
 ``` bash
 $ cd /etc/systemd/system
@@ -496,7 +472,7 @@ After=network.target
 User=test
 Type=simple
 # 需要将 $GOPATH 替换为真实路径
-ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one
+ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service http -dir $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
 Restart=on-failure
 LimitNOFILE=65536
 
@@ -515,7 +491,7 @@ After=network.target
 User=test
 Type=simple
 # 需要将 $GOPATH 替换为真实路径
-ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service message
+ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service message -dir $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
 Restart=on-failure
 LimitNOFILE=65536
 
@@ -547,7 +523,7 @@ $ systemctl restart test.message.service
 
 目前 Mixin 大群部署维护成本还是比较高，然而建大群需求还是有的，建议接下来 Mixin 能提供对用户的大群服务。
 
-后续如果仓库有更新，git pull 在 go build 然后重启 service 即可。当然读者有开发能力，可以在开源的代码基础上添加自己想要的功能。
+后续如果仓库有更新，针对后端，git pull 在 go build 然后重启 service 即可（如果没法编译后端代码，可以下载由本教程提供的二进制文件）；针对前端，git pull 然后 npm run dist 编译替换 Web 目录的内容即可。当然读者有开发能力，可以在开源的代码基础上添加自己想要的功能。
 
 如果读者在部署过程中有任何问题，欢迎交流，[关于](https://dbarobin.com/about) 页面有我的联系方式。
 
