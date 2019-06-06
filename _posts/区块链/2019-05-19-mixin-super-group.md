@@ -252,13 +252,13 @@ service:
   name: "Mixin 中文群"
   enviroment: "production or development"
   port: 7001
-  host: "https://you-domain-name"
+  host: "https://group.test.com"
 database:
-  username: "postgres"
-  password: ""
+  username: "test"
+  password: "xxxxxxxx"
   host: "localhost"
   port: 5432
-  database_name: "postgres"
+  database_name: "test"
 system:
   message_shard_modifier: SHARD
   message_shard_size: 4
@@ -314,8 +314,8 @@ $ cp -v env.prod.tpl.sh env.prod.sh
 $ vim env.prod.sh
 
 export NODE_ENV="production"
-export SUPERGROUP_WEB_ROOT="http://your-host"
-export SUPERGROUP_API_ROOT="http://your-api"
+export SUPERGROUP_WEB_ROOT="http://group.test.com"
+export SUPERGROUP_API_ROOT="http://api.test.com"
 export SUPERGROUP_CLIENT_ID="xxxxxxxx"
 export SUPERGROUP_APP_NAME="Mixin 中文群"
 export SUPERGROUP_LOCALE="zh-CN"
