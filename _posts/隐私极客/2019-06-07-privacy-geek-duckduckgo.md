@@ -67,6 +67,8 @@ Google 每秒 4 万～8 万次搜索量，强大的计算能力和数据采集�
 
 DuckDuckGo 不过滤结果，不追踪你的搜索记录，把搜索引擎隐私发挥到了极致，帮助你在 Cyberspace 中自由流荡。
 
+最后，为了安全起见，读者只有两个渠道订阅本专栏，一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)，另一个是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等）。
+
 –EOF–
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

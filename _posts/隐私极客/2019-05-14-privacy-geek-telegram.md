@@ -78,6 +78,8 @@ Telegram 作为一款注重隐私和安全的及时通讯工具，比同类产�
 
 好了，写到这里吧，希望对读者有所帮助。
 
+最后，为了安全起见，读者只有两个渠道订阅本专栏，一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)，另一个是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等）。
+
 –EOF–
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
