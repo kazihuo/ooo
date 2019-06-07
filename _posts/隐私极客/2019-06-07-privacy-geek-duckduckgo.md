@@ -2,7 +2,7 @@
 published: true
 author: Robin Wen
 layout: post
-title: 隐私极客 Privacy Geek 0x03-DuckDuckGo
+title: 隐私极客 Privacy Geek | 0x03 DuckDuckGo
 category: 隐私极客
 summary: 谈到搜索引擎，不得不提到 Google（注意，某度不在讨论范围）。笔者每天使用 Google 的频率相当高，但 DuckDuckGo 依然是 Google 之外的有力补充。关于 DuckDuckGo 的故事，可以阅读 @virushuo 的文章，穿越寒冬的独行者。当然，更多的技巧需要读者去探索，DuckDuckGo 可以作为 Google 有力的补充或者替代。不过不幸的是，DuckDuckGo 像 Google 一样无法摆脱被墙的命运。DuckDuckGo 不过滤结果，不追踪你的搜索记录，把搜索引擎隐私发挥到了极致，帮助你在 Cyberspace 中自由流荡。
 tags:
