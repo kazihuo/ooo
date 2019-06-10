@@ -93,7 +93,7 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 
 参考开发文档，点击 [此处](https://developers.mixin.one/api/alpha-mixin-network/register-app/)。
 
-这里有一点非常重要，机器人后台配置：
+这里有一点非常重要，机器人后台配置（访问 Mixin Developers 后台，点击申请的 App 的 client id 即可修改配置）：
 
 * The home uri：设置为主域名，这个教程里的示例为 [https://group.test.com](https://group.test.com)
 * The OAuth redirect uri：设置为 [https://group.test.com/auth](https://group.test.com/auth)，如果设置为跟 home uri 一致，用户访问机器人请求授权的时候是一直循环
