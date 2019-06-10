@@ -45,6 +45,7 @@ comments:
 | :------: | :------: | :------: | :------: |
 | v1.0 | 文档初稿 | 2019/05/19 12:49:38 | 全网公开 |
 | v2.0 | 更改后端启动方式 | 2019/06/06 17:27:57 | 重构后的代码，大群维护更友好 |
+| v2.1 | 增加机器人后台配置 | 2019/06/10 12:10:17 | home uri 和 OAuth redirect uri |
 
 ## 一 前言
 ***
@@ -91,6 +92,11 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 ***
 
 参考开发文档，点击 [此处](https://developers.mixin.one/api/alpha-mixin-network/register-app/)。
+
+这里有一点非常重要，机器人后台配置：
+
+* The home uri：设置为主域名，这个教程里的示例为 [https://group.test.com](https://group.test.com)
+* The OAuth redirect uri：设置为 [https://group.test.com/auth](https://group.test.com/auth)，如果设置为跟 home uri 一致，用户访问机器人请求授权的时候是一直循环
 
 ### 4.3 安装 PostgreSQL
 ***
@@ -256,7 +262,7 @@ $ vim config.yaml
 ``` yaml
 service:
   name: "Mixin 中文群"
-  enviroment: "production or development"
+  enviroment: "production"
   port: 7001
   host: "https://group.test.com"
 database:
