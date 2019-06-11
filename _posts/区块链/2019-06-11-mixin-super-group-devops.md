@@ -104,7 +104,7 @@ $ systemctl restart sshd.service
 
 放行指定端口，也就是传统意义的防火墙。如果服务器部署在云服务商，后台已经有比较完善的防火墙管理规则，无需使用 `iptables` 配置。
 
-按照之前 [Mixin 大群部署完全教程](https://dbarobin.com/2019/05/19/mixin-super-group)部署的大群，只需要开放 SSH 端口、80、443 即可。
+按照之前 [Mixin 大群部署完全教程](https://dbarobin.com/2019/05/19/mixin-super-group) 部署的大群，只需要开放 SSH 端口、80、443 即可。
 
 ### 2.3 定期更换机器人配置信息
 ***
