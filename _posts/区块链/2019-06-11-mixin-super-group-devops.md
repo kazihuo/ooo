@@ -83,7 +83,11 @@ RSAAuthentication yes
 PubkeyAuthentication yes
 
 # 确认配置
-$ grep -e Port -e PasswordAuthentication -e PermitEmptyPasswords -e PermitRootLogin -e RSAAuthentication -e PubkeyAuthentication /etc/ssh/sshd_config | grep -v "^#" | grep -v "RhostsRSAAuthentication"
+$ grep -e Port -e PasswordAuthentication \
+-e PermitEmptyPasswords -e PermitRootLogin \
+-e RSAAuthentication -e PubkeyAuthentication \
+/etc/ssh/sshd_config | grep -v "^#" \
+| grep -v "RhostsRSAAuthentication"
 ```
 
 修改完成之后，保留当前会话。然后到云服务器后台安全组放行自定义的 SSH 端口。
