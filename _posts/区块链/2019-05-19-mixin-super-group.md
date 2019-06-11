@@ -46,6 +46,7 @@ comments:
 | v1.0 | 文档初稿 | 2019/05/19 12:49:38 | 全网公开 |
 | v2.0 | 更改后端启动方式 | 2019/06/06 17:27:57 | 重构后的代码，大群维护更友好 |
 | v2.1 | 增加机器人后台配置 | 2019/06/10 12:10:17 | home uri 和 OAuth redirect uri |
+| v2.2 | 增加修改时区 | 2019/06/11 17:43:29 | 部署在国内服务器的读者尤其注意 |
 
 ## 一 前言
 ***
@@ -161,7 +162,35 @@ $ psql
 postgres=# ALTER USER test WITH PASSWORD 'xxxxxxxx';
 ```
 
-### 4.4 安装 Nginx
+### 4.4 修改时区
+***
+
+部署在国内服务器的读者注意了，强烈建议将服务器时间改为 UTC。部署在国外服务器的大群时区默认是 UTC，但国内服务器时区默认是 CST。如果时区为 CST，浏览群组列表「加载更多」将会导致一直重复显示第一页。
+
+修改方法如下：
+
+第一，修改系统时区：
+
+``` bash
+$ timedatectl set-timezone UTC
+```
+
+第二，修改数据库配置：
+
+``` bash
+# 将 CST 修改为为 UTC
+$ vim /etc/postgresql/10/main/postgresql.conf
+
+timezone = 'UTC'
+log_timezone = 'UTC'
+
+# 重启数据库
+$ systemctl restart postgresql
+```
+
+由于时间字段使用的格式为 `TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()`，所以即使是先在国内服务器上线大群，后期再修改也不影响服务。
+
+### 4.5 安装 Nginx
 ***
 
 命令如下：
@@ -175,7 +204,7 @@ nginx version: nginx/1.14.0 (Ubuntu)
 
 安装之后，Nginx 服务自动运行。当然读者也可以选择源码安装。
 
-### 4.5 安装 Node.js
+### 4.6 安装 Node.js
 ***
 
 命令如下：
@@ -191,7 +220,7 @@ $ npm -v
 6.9.0
 ```
 
-### 4.6 安装 Go
+### 4.7 安装 Go
 ***
 
 命令如下：
@@ -219,7 +248,7 @@ $ go version
 go version go1.12.5 linux/amd64
 ```
 
-### 4.7 编译后端
+### 4.8 编译后端
 ***
 
 命令如下：
@@ -241,7 +270,7 @@ $ go build
 
 如果没有什么问题的话，会在当前目录生成一个 `supergroup.mixin.one` 的可执行文件，当然读者可以重命名为其他名字。
 
-此外，不少读者反馈 go build 遇到各种各样的问题，为了方便读者搭建大群，笔者为大家提前编译好了。如果读者使用笔者编译好的二进制文件，4.6 和 4.7 步骤都可以忽略。
+此外，不少读者反馈 go build 遇到各种各样的问题，为了方便读者搭建大群，笔者为大家提前编译好了。如果读者使用笔者编译好的二进制文件，4.7 和 4.8 步骤都可以忽略。
 
 下载地址点击 [此处](https://download.exin.one/mixin/supergroup)。需要说明的是，下载目录以日期为归档，建议下载最新的可执行文件。笔者会跟踪大群代码，保持同步，并且定期上传二进制文件。将 `supergroup.mixin.one` 可执行文件下载下来之后，读者将此文件上传到服务器，需要执行 `chmod +x supergroup.mixin.one` 为二进制文件添加可执行权限，并且可以重命名为其他名字。
 
@@ -310,7 +339,7 @@ mixin:
 
 Operators 变量用于配置管理员列表，这里填写的不是管理员的 ID，而是真实 ID，格式为 UUID。笔者根据 [Mixin-SDK-PHP](https://github.com/ExinOne/mixin-sdk-php) 写了个脚本，可以参考下，点击 [此处](https://github.com/dbarobin/mixin/blob/master/mixin-searchuser.php) 阅读。
 
-### 4.8 编译前端
+### 4.9 编译前端
 ***
 
 编译前端的方式也有变化，之前是修改 `webpack.config.js` 文件，重构后的代码修改的是 `env.prod.sh` 脚本，步骤如下：
@@ -347,7 +376,7 @@ $ mv dist /var/www/test
 $ chown www-data:www-data -R /var/www/
 ```
 
-### 4.9 配置 Nginx
+### 4.10 配置 Nginx
 ***
 
 创建配置文件。
@@ -464,7 +493,7 @@ $ /usr/sbin/nginx -t
 $ systemctl restart nginx
 ```
 
-### 4.10 部署服务
+### 4.11 部署服务
 ***
 
 为了管理方便，为两个 Go 进程部署 Service 服务。因为重构后的代码，编译不依赖配置文件，所以 Service 服务脚本，需要指定 `-dir` 参数。
@@ -520,14 +549,14 @@ $ systemctl restart test.api.service
 $ systemctl restart test.message.service
 ```
 
-### 4.11 检测服务
+### 4.12 检测服务
 ***
 
 使用 `netstat -langput | grep LISTEN` 检测监听端口，如果正常的话，Mixin 大群相关的，会有 80 和 443（Nginx）、5432（PostgreSQL）、7001 和 9001（Go 后端）。
 
 此外，服务器只需要对外开放 80 和 443 即可。
 
-### 4.12 Mixin 测试
+### 4.13 Mixin 测试
 ***
 
 打开 Mixin，搜索机器人 ID，添加应用，点击机器人授权，多拉几个人即可进行测试。
