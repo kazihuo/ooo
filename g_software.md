@@ -1,0 +1,48 @@
+---
+layout: page
+title: 正版软件
+permalink: /software/
+---
+
+***
+
+正版软件，尽在 [数码荔枝](https://www.lizhi.io)。点击 [https://partner.lizhi.io/robin/cp](https://partner.lizhi.io/robin/cp) 领取专属「** 优惠券 **」，全场订单满 29 元减 5 元。此外，还有海量正版软件专属优惠，点击 [此处](https://dbarobin.com/about) 联系我获取。
+
+***
+
+### 给荔 618：全场正版 95 折，15 款热门 6 折起，更可抽奖三连！
+
+我们的老朋友「数码荔枝」近日开始了正版软件届的 618 活动～
+
+活动时间：6 月 1 日～6 月 20 日
+
+1. 在商城首页参与抽奖 (三次机会)，获得支付宝红包、618 元免单等奖品！
+2. 全场 250 款正版软件 95 折；
+3. IDM、Eagle、PDF Expert、Listary、Bartender 等 15 款热门软件 6 折起；
+
+领取专属优惠券，前往荔枝软件商城首页参与，还可再减 5 元：[点击领取](https://partner.lizhi.io/robin/cp)
+
+![](https://cdn.dbarobin.com/bhnODjj.png)
+
+### 连抽 3 次奖，最高赢免单
+
+只要关注店铺、分享抽奖、在店进行任意消费，即可各获得一次抽奖机会，共计 3 次。有机会获得包括 500 个 2/3/5 元支付宝红包，618 元免单等奖品！
+
+![](https://cdn.dbarobin.com/VSLvtXB.jpg)
+
+领取专属优惠券，前往荔枝软件商城首页拼手气：[点击领取]https://partner.lizhi.io/robin/cp)
+
+### 全场正版 95 折，热门软件 6 折起
+
+全场 250 款正版软件 95 折。还有 15 款高人气的热门软件 6-7 折，如：
+
+- IDM [Win]：一年版 79 -> 49 元；终生版 149 -> 99 元
+- PDF Expert [Mac]：169 -> 99 元
+- Eagle [Win/Mac]：199 -> 139 元
+- ……
+
+其实，更具体的折扣，他们做了一个很嘻哈的一图流 ...
+
+![](https://cdn.dbarobin.com/OakMYAF.png)
+
+最后，领取专属优惠券，在 6 月 20 日前，往荔枝软件商城首页参与，还可再减 5 元：[点击领取](https://partner.lizhi.io/robin/cp)
