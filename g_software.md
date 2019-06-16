@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 正版软件
+title: 正版
 permalink: /software/
 ---
 
