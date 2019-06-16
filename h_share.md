@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 分享
+title: 演讲
 permalink: /share/
 ---
 
