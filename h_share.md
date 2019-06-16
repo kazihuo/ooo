@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 活动
+title: 分享
 permalink: /share/
 ---
 
