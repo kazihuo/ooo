@@ -116,52 +116,6 @@ postgres (PostgreSQL) 10.8 (Ubuntu 10.8-0ubuntu0.18.04.1)
 
 安装之后，PostgreSQL 服务自动运行。当然读者也可以选择源码安装。
 
-安装好之后，需要建用户、建库、建表、授权。
-
-``` bash
-$ sudo -i -u postgres
-# 注意：以下命令在切换到 postgres 用户之后的命令行执行
-$ createuser --interactive
-
-Enter name of role to add: test
-Shall the new role be a superuser? (y/n) n
-Shall the new role be allowed to create databases? (y/n) y
-Shall the new role be allowed to create more new roles? (y/n) n
-
-$ createdb test
-
-$ adduser test
-Adding user `test' ...
-Adding new group `test' (1000) ...
-Adding new user `test' (1000) with group `test' ...
-Creating home directory `/home/test' ...
-Copying files from `/etc/skel' ...
-Enter new UNIX password:
-Retype new UNIX password:
-passwd: password updated successfully
-Changing the user information for test
-Enter the new value, or press ENTER for the default
-        Full Name []:
-        Room Number []:
-        Work Phone []:
-        Home Phone []:
-        Other []:
-Is the information correct? [Y/n] y
-
-$ sudo -i -u test
-$ psql
-psql (10.8 (Ubuntu 10.8-0ubuntu0.18.04.1))
-Type "help" for help.
-test=> \conninfo
-You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
-test=> \i $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/schema.sql
-
-# 也可以 sudo -i -u test 修改用户密码
-$ sudo -i -u postgres
-$ psql
-postgres=# ALTER USER test WITH PASSWORD 'xxxxxxxx';
-```
-
 ### 4.4 修改时区
 ***
 
@@ -280,10 +234,63 @@ $ go build
 $ git clone https://github.com/MixinNetwork/supergroup.mixin.one
 ```
 
+### 4.9 数据库配置
+
+PostgreSQL 安装好之后，需要建用户、建库、建表、授权。
+
+``` bash
+$ sudo -i -u postgres
+# 注意：以下命令在切换到 postgres 用户之后的命令行执行
+$ createuser --interactive
+
+Enter name of role to add: test
+Shall the new role be a superuser? (y/n) n
+Shall the new role be allowed to create databases? (y/n) y
+Shall the new role be allowed to create more new roles? (y/n) n
+
+$ createdb test
+
+$ adduser test
+Adding user `test' ...
+Adding new group `test' (1000) ...
+Adding new user `test' (1000) with group `test' ...
+Creating home directory `/home/test' ...
+Copying files from `/etc/skel' ...
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Changing the user information for test
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+
+$ sudo -i -u test
+$ psql
+psql (10.8 (Ubuntu 10.8-0ubuntu0.18.04.1))
+Type "help" for help.
+test=> \conninfo
+You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
+# 这个路径仅供参考，只要能找到 schema.sql 文件即可
+test=> \i $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/schema.sql
+
+# 也可以 sudo -i -u test 修改用户密码
+$ sudo -i -u postgres
+$ psql
+postgres=# ALTER USER test WITH PASSWORD 'xxxxxxxx';
+```
+
+### 4.10 修改后端配置
+***
+
 重构后的代码，`config.go` 文件无需编辑，只需要修改 config.yaml 文件，步骤如下：
 
 ``` bash
 # clone 代码后，当前目录拷贝即可
+$ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
 $ cp config.tpl.yaml config.yaml
 $ vim config.yaml
 ```
@@ -311,6 +318,7 @@ system:
     - "fcc87491-4fa0-4c2f-b387-262b63cbc112"
   detect_image: false
   detect_link: false
+  prohibited_message: true
   payment_asset_id: "c94ac88f-4671-3976-b60a-09064f1811e8"
   payment_amount: "0.001"
 message_template:
@@ -339,7 +347,7 @@ mixin:
 
 Operators 变量用于配置管理员列表，这里填写的不是管理员的 ID，而是真实 ID，格式为 UUID。笔者根据 [Mixin-SDK-PHP](https://github.com/ExinOne/mixin-sdk-php) 写了个脚本，可以参考下，点击 [此处](https://github.com/dbarobin/mixin/blob/master/mixin-searchuser.php) 阅读。
 
-### 4.9 编译前端
+### 4.11 编译前端
 ***
 
 编译前端的方式也有变化，之前是修改 `webpack.config.js` 文件，重构后的代码修改的是 `env.prod.sh` 脚本，步骤如下：
@@ -376,7 +384,7 @@ $ mv dist /var/www/test
 $ chown www-data:www-data -R /var/www/
 ```
 
-### 4.10 配置 Nginx
+### 4.12 配置 Nginx
 ***
 
 创建配置文件。
@@ -493,7 +501,7 @@ $ /usr/sbin/nginx -t
 $ systemctl restart nginx
 ```
 
-### 4.11 部署服务
+### 4.13 部署服务
 ***
 
 为了管理方便，为两个 Go 进程部署 Service 服务。因为重构后的代码，编译不依赖配置文件，所以 Service 服务脚本，需要指定 `-dir` 参数。
@@ -549,14 +557,14 @@ $ systemctl restart test.api.service
 $ systemctl restart test.message.service
 ```
 
-### 4.12 检测服务
+### 4.14 检测服务
 ***
 
 使用 `netstat -langput | grep LISTEN` 检测监听端口，如果正常的话，Mixin 大群相关的，会有 80 和 443（Nginx）、5432（PostgreSQL）、7001 和 9001（Go 后端）。
 
 此外，服务器只需要对外开放 80 和 443 即可。
 
-### 4.13 Mixin 测试
+### 4.15 Mixin 测试
 ***
 
 打开 Mixin，搜索机器人 ID，添加应用，点击机器人授权，多拉几个人即可进行测试。
