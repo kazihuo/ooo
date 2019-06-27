@@ -158,19 +158,50 @@ $ sudo -i -u postgres
 $ mkdir -p ~/postgres/backups
 ```
 
-然后，创建定时任务：
+然后，编写备份脚本，内容如下：
+
+``` bash
+$ vim ~/postgres/backups/backup.sh
+```
+
+``` bash
+#!/bin/bash
+#
+# Copyright © 2019 ExinPool <robin@exin.one>
+#
+# Distributed under terms of the MIT license.
+#
+# Desc: Mixin super group PostgreSQL backup script.
+# User: Robin@ExinPool
+# Date: 2019-6-27
+# Time: 10:15:18
+
+BACKUP_DIR="/var/lib/postgresql/postgres/backups"
+BACKUP_TIME=`date '+%Y%m%d%H%M%S'`
+
+# pg_dumpall 表示备份所有数据库，通过这个备份就可以完整地恢复
+pg_dumpall | pigz > ${BACKUP_DIR}/${BACKUP_TIME}-postgres-backup.sql.gz
+
+if [ $? -eq 0 ]
+then
+    echo "`date '+%Y-%m-%d %H:%M:%S'` `whoami` INFO Mixin super group PostgreSQL backup successfully."
+else
+    echo "`date '+%Y-%m-%d %H:%M:%S'` `whoami` ERROR Mixin super group PostgreSQL backup failed."
+fi
+```
+
+接着，创建定时任务：
 
 ``` bash
 crontab -e
 
 # 0 3 * * * 表示每天凌晨 3 点备份，这个频率可以自定义
-# 定时任务内容如下，pg_dumpall 表示备份所有数据库，通过这个备份就可以完整地恢复。
-0 3 * * * pg_dumpall | pigz > ~/postgres/backups/`date '+%Y%m%d%H%M%S'`-postgres-backup.sql.gz
+0 3 * * * nohup bash /var/lib/postgresql/postgres/backups/backup.sh >> /var/lib/postgresql/postgres/backups/backup.log 2>&1 &
 
 crontab -l
 ```
 
-考虑单节点云服务器服务可能中断，读者可以将数据库备份推送到另外一台服务器或者存储到云服务商的对象存储。
+数据备份完成之后，需要定期检查备份情况以及做备份恢复测试。考虑单节点云服务器服务可能中断，读者可以将数据库备份推送到另外一台服务器或者存储到云服务商的对象存储。
 
 ### 3.2 配置备份
 ***
