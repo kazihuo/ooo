@@ -252,6 +252,10 @@ Shall the new role be allowed to create more new roles? (y/n) n
 
 $ createdb test
 
+$ exit
+logout
+
+# adduser 以 root 用户执行
 $ adduser test
 Adding user `test' ...
 Adding new group `test' (1000) ...
@@ -278,6 +282,10 @@ test=> \conninfo
 You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
 # 这个路径仅供参考，只要能找到 schema.sql 文件即可
 test=> \i $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/schema.sql
+test=> \q
+
+$ exit
+logout
 
 # 也可以 sudo -i -u test 修改用户密码
 $ sudo -i -u postgres
