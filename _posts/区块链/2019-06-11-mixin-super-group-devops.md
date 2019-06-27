@@ -63,7 +63,7 @@ $ mkdir -p /home/robin/.ssh
 $ touch /home/robin/.ssh/authorized_keys
 
 # 修改权限
-$ $ chown robin:robin -R /home/robin/.ssh
+$ chown robin:robin -R /home/robin/.ssh
 $ chmod 600 /home/robin/.ssh/authorized_keys
 
 # 写入个人 Pub Key，也就是本地 id_rsa_mixin.pub 内容
