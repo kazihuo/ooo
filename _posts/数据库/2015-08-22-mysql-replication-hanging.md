@@ -2,15 +2,42 @@
 published: true
 author: Robin Wen
 layout: post
-title: "MySQL 复制夯住排查以及原理探讨"
+title: MySQL 复制夯住排查以及原理探讨
 category: 数据库
-summary: "研发反应，有台从库和主库不同步。由于业务读操作是针对从库的，数据不同步必定会带来数据的不一致，业务获取的结果会受影响，所以这个问题必须尽快解决。登上服务器，查看 MySQL 的从库状态，并没有任何报错信息。刷新从库状态，发现状态没有任何变化，Exec_Master_Log_Pos 卡住不动。这样的故障，归根结底还是研发写的程序还有优化的余地。大批量的数据插入，这在 MySQL 中是不推荐使用的。我们可以这样：第一，一条 SQL 语句插入多条数据；第二，在事务中进行插入处理；第三，分批插入，在程序中设置 auto_commit 为 0，分批插入完成后，手动 COMMIT；第四，需要使用 LOAD DATA LOCAL INFILE 时，设置 sync_binlog 为 1。"
+summary: >-
+  研发反应，有台从库和主库不同步。由于业务读操作是针对从库的，数据不同步必定会带来数据的不一致，业务获取的结果会受影响，所以这个问题必须尽快解决。登上服务器，查看
+  MySQL 的从库状态，并没有任何报错信息。刷新从库状态，发现状态没有任何变化，Exec_Master_Log_Pos
+  卡住不动。这样的故障，归根结底还是研发写的程序还有优化的余地。大批量的数据插入，这在 MySQL 中是不推荐使用的。我们可以这样：第一，一条 SQL
+  语句插入多条数据；第二，在事务中进行插入处理；第三，分批插入，在程序中设置 auto_commit 为 0，分批插入完成后，手动
+  COMMIT；第四，需要使用 LOAD DATA LOCAL INFILE 时，设置 sync_binlog 为 1。
 tags:
-- 数据库
-- Database
-- MySQL
-- 复制
-- 故障排查
+  - 数据库
+  - Database
+  - MySQL
+  - 复制
+  - 故障排查
+comments:
+  - author:
+      type: github
+      displayName: RorschachChan
+      url: 'https://github.com/RorschachChan'
+      picture: 'https://avatars0.githubusercontent.com/u/31002078?v=4&s=73'
+    content: >-
+      &#x535A;&#x4E3B;&#x4F60;&#x597D;&#xFF01;
+
+
+      &#x770B;&#x4E86; &#x6545;&#x969C;&#x89E3;&#x51B3;
+      &#x90A3;&#x8282;&#x6CA1;&#x6709;&#x5F88;&#x61C2;&#xFF1A;
+
+      1&#xFF09;&#x6545;&#x969C;&#x53D1;&#x751F;&#x5728;&#x4ECE;&#x5E93;&#xFF0C;&#x4E3A;&#x5565;&#x8FD8;&#x8981;&#x91CD;&#x542F;&#x4E3B;&#x5E93;&#xFF1F;
+
+      2&#xFF09;&#x4E3B;&#x5E93;&#x91CD;&#x542F;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x9A6C;&#x4E0A;&#x628A;&#x6D41;&#x91CF;&#x5207;&#x56DE;&#x53BB;&#x4E86;&#x5417;&#xFF1F;&#x8FD8;&#x662F;&#x5728;&#x4ECE;&#x5E93;&#x7684;my.cnf&#x6DFB;&#x52A0;replicate-ignore-table
+      &#x5E76;&#x91CD;&#x542F;&#x540E;&#xFF0C;&#x518D;&#x5207;&#x56DE;&#x53BB;&#x7684;&#x5462;&#xFF1F;
+
+
+      &#x5148;&#x611F;&#x8C22;&#x60A8;&#x7684;&#x89E3;&#x60D1;&#x4E86;&#x3002;
+    date: 2019-07-08T11:27:26.570Z
+
 ---
 
 ## 目录 ##
