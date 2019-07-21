@@ -1,0 +1,67 @@
+---
+published: true
+author: Robin Wen
+layout: post
+title: 隐私极客 Privacy Geek | 0x04 Firefox
+category: 隐私极客
+summary: 上一篇文章讲解了 DuckDuckGo，提到 DuckDuckGo 适合 Firefox 配合使用，本篇文章就为大家讲解 Firefox。Firefox 可以说是黑客利器，连 Tor Browser 都是基于 Firefox ESR 的。Firefox 相比其他浏览器有什么优势呢（国内毫无操守的浏览器就不再此讨论范围）？注重隐私未来是大势所趋，Firefox 浏览器将成为这部分用户的首选。Chrome 和 Google 的服务绑定太深，抛开 Chrome，选择还有很多。
+tags:
+  - 互联网
+  - 隐私极客
+  - 安全
+  - 隐私
+  - Privacy
+---
+
+`文/robin`
+
+上一篇文章讲解了 [DuckDuckGo](https://dbarobin.com/2019/06/07/privacy-geek-duckduckgo)，提到 DuckDuckGo 适合 Firefox 配合使用，本篇文章就为大家讲解 Firefox。
+
+![](https://cdn.dbarobin.com/kkqHnTR.jpg)
+
+> 题图来自: © Tim Murray / Firefox: The Evolution Of A Brand / blog.mozilla.org
+
+Firefox 可以说是黑客利器，连 Tor Browser 都是基于 Firefox ESR 的。Firefox 相比其他浏览器有什么优势呢（国内毫无操守的浏览器就不再此讨论范围）？
+
+第一，开发 Firefox 的 Mozilla 是一个「非营利组织」；而开发 Chrome 的 Google 是一家「商业公司」。商业公司想要的是从用户的数据获取更多的利益，而非赢利组织可以坚持操守。Google 的利润，90% 以上是来自于广告收入。广告讲究「精准投放」，Google 必须要采集海量数据才能做到，因为，对于追求隐私的用户而言，Chrome 并不是什么好的选择。
+
+第二，2017 年 11 月 14 日，Firefox Quantum 的第一个通用版本发布，意味着 Firefox 更快了。Firefox Quantum 引入了 Servo 引擎，该引擎由 Rust 开发。在之前的版本，Firefox 使用的引擎叫做 Gecko，由 C++ 开发。 Rust 作为一门新的编程语言，它一方面可以达到与 C/C++ 相同的性能，另一方面又避免 C/C++ 在内存和多线程方面的弊端。
+
+第三，Firefox 使用自带 CA 证书，而 Chrome 使用了操作系统提供的 CA 证书。这样有什么好处呢？自带的 CA 证书不会受到操作系统及其厂商的影响。
+
+第四，Firefox 定制化比 Chrome 强，读者可以按照自己的需求定制强大无比的浏览器。
+
+讲解完 Firefox 的优势，接下来为大家说说使用 Firefox 都活哪些技巧。
+
+第一，将默认引擎设置为 [DuckDuckGo](https://duckduckgo.com)，原因不再赘述。
+
+第二，将 Firefox 打造为隐私浏览器，设置方法如下：
+
+* Firefox 打开 about:preferences#privacy，Content Blocking 选择 Custom，然后勾选「Trackers」，接着选择「In all windows」；
+* Send websites a “Do Not Track” signal that you don’t want to be tracked 选择 「Always」；
+* Cookies and Site Data，如果是永久的隐身模式，「Delete cookies and site data when Firefox is closed」会默认勾选；
+* History 勾选「Never remember history」；
+* Permissions 勾选：「Block websites from automatically playing sound」、「Block pop-up windows」、「Warn you when websites try to install add-ons」、「Prevent accessibility services from accessing your browser」；
+* Firefox Data Collection and Use，所有的选型都不勾选，不允许采集数据；
+* Security，Deceptive Content and Dangerous Software Protection 都勾选；
+* Certificates，When a server requests your personal certificate 选择「Ask you every time」，「Query OCSP responder servers to confirm the current validity of certificates」勾选。
+
+做完上述的设置，让 Firefox 浏览器成为真正的无痕浏览。
+
+第三，安装必备插件，如 DuckDuckGo Privacy Essentials、Mailvelope、Greasemonkey、NoScript、HTTPS Everywhere，安装完之后，大部分的插件，Run in Private Windows 需要勾选「Allow」。其他插件感兴趣可以 DuckDuckGo 搜索下。
+
+注重隐私未来是大势所趋，Firefox 浏览器将成为这部分用户的首选。Chrome 和 Google 的服务绑定太深，抛开 Chrome，选择还有很多。
+
+**
+
+最后，为了安全起见，读者只有两个渠道订阅本专栏，一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)，另一个是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等）。
+
+–EOF–
+
+版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
+
+***
+
+本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码进行打赏。
+
+<center><img title="Bitcoin Lightning Network Donate" width="180" height="180" src="https://lnd.hoo.com/api/generate?openid=TruSwjrK2q57V484Tf0u&isimg=1" alt="Bitcoin Lightning Network Donate"/></center>
