@@ -50,6 +50,8 @@ Firefox 可以说是黑客利器，连 Tor Browser 都是基于 Firefox ESR 的�
 
 第三，安装必备插件，如 DuckDuckGo Privacy Essentials、Mailvelope、Greasemonkey、NoScript、HTTPS Everywhere，安装完之后，大部分的插件，Run in Private Windows 需要勾选「Allow」。其他插件感兴趣可以 DuckDuckGo 搜索下。
 
+第四，Firefox 有 Firefox Monitor 服务，可用来查询使用者的电子邮件地址是否曾经出现在外泄的数据库中。该服务由 Mozilla 和 HaveIBeenPwned.com 合作推出，当用户在 [https://monitor.firefox.com](https://monitor.firefox.com) 网站上输入自己的邮箱地址时，系统就会比对由 Have I Been Pwned 所搜集的外泄资料库（包含来自中国网站和服务泄漏的数据），倘若查询到符合的资料，会具体显示该电子邮件曾出现在哪些外泄事件中，用户则应该立即去修改密码。此外，从 Firefox 70 开始，如果浏览器保存的登录信息出现在已暴露数据库内 Mozilla 将会发出警告。
+
 注重隐私未来是大势所趋，Firefox 浏览器将成为这部分用户的首选。Chrome 和 Google 的服务绑定太深，抛开 Chrome，选择还有很多。
 
 **
