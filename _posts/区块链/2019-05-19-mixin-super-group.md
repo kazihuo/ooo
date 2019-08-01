@@ -419,7 +419,7 @@ Operators 变量用于配置管理员列表，这里填写的不是管理员的 
 ### 4.11 编译前端
 ***
 
-编译前端的方式也有变化，之前是修改 `webpack.config.js` 文件，重构后的代码修改的是 `env.prod.sh` 脚本，步骤如下：
+编译前端的方式也有变化，之前是修改 `webpack.config.js` 文件，重构后的代码修改的是 `env.prod.sh` 脚本，更换为 VUE 修改的是 `.env.local`，步骤如下：
 
 ``` bash
 $ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/web
