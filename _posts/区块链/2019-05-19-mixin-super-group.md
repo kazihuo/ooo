@@ -48,6 +48,7 @@ comments:
 | v2.1 | 增加机器人后台配置 | 2019/06/10 12:10:17 | home uri 和 OAuth redirect uri |
 | v2.2 | 增加修改时区 | 2019/06/11 17:43:29 | 部署在国内服务器的读者尤其注意 |
 | v2.3 | 修复创建数据库无法找到 schema.sql | 2019/06/27 10:51:29 | 对内容也做了小幅调整 |
+| v3.0 | 前端更换为 vue 版本 | 2019/08/04 19:52:18 | 大版本更新 |
 
 ## 一 前言
 ***
@@ -90,7 +91,7 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 
 申请服务器并不难，根据预算选择，建议前期选择配置中等的机器，机器配置可以根据情况调整。
 
-至于系统版本，笔者选择的是 Ubuntu 18.04.2 LTS。本文大部分操作都以 root 用户操作。
+至于系统版本，笔者选择的是 Ubuntu 18.04.2 LTS。本文大部分操作都以 root 用户操作。如果是 ubuntu 用户，使用 sudo 执行。
 
 ### 4.2 申请 Mixin 机器人
 ***
@@ -183,8 +184,8 @@ $ npm -v
 ``` bash
 $ mkdir -p /data/tmp
 $ cd /data/tmp
-$ wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz
-$ tar -zxvf go1.12.5.linux-amd64.tar.gz
+$ wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+$ tar -zxvf go1.12.7.linux-amd64.tar.gz
 $ mv go /usr/local
 ```
 
@@ -200,7 +201,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 $ source /etc/profile
 
 $ go version
-go version go1.12.5 linux/amd64
+go version go1.12.7 linux/amd64
 ```
 
 ### 4.8 编译后端
@@ -280,7 +281,7 @@ psql (10.8 (Ubuntu 10.8-0ubuntu0.18.04.1))
 Type "help" for help.
 test=> \conninfo
 You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
-# 这个路径仅供参考，只要能找到 schema.sql 文件即可
+# 这个路径仅供参考，只要能找到 schema.sql 文件即可，真实运行需要将 $GOPATH 替换为真实路径
 test=> \i $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/schema.sql
 test=> \q
 
@@ -312,44 +313,102 @@ service:
   name: "Mixin 中文群"
   enviroment: "production"
   port: 7001
-  host: "https://group.test.com"
+  host: "https://you-domain-name"
 database:
-  username: "test"
-  password: "xxxxxxxx"
+  username: "postgres"
+  password: "YOUR_PASSWORD"
   host: "localhost"
   port: 5432
-  database_name: "test"
+  database_name: "postgres"
 system:
   message_shard_modifier: SHARD
-  message_shard_size: 4
+  message_shard_size: 8
+  # 只允许发有价格的红包，默认为 true
   price_asset_enable: true
+  # 允许发送语音消息
+  audio_message_enable: false
+  # 允许发送图片消息
+  image_message_enable: true
+  # 允许发送视频消息
+  video_message_enable: false
+  # 允许发送名片
+  contact_message_enable: true
+  # 限制发送频率
+  limit_message_frequency: false
+  # 禁止发带二维码的图片
+  detect_image: false
+  # 禁止发送链接
+  detect_link: false
+  # 支持撤回其他人的消息，管理员适用
+  prohibited_message: true
+  # new payment settings，自动估价
+  auto_estimate: false
+  # 自动估价法币
+  auto_estimate_currency: "usd" # cny or usd. only useful when auto_estimate == true
+  # 自动估价基准
+  auto_estimate_base: "9.9"
+  # 支持微信支付
+  accept_wechat_payment: false
+  # 微信支付数额
+  wechat_payment_amount: "0.01"
+  # 管理员列表
   operator_list:
     - "e9a5b807-fa8b-455a-8dfa-b189d28310ff"
     - "fcc87491-4fa0-4c2f-b387-262b63cbc112"
-  detect_image: false
-  detect_link: false
-  prohibited_message: true
-  payment_asset_id: "c94ac88f-4671-3976-b60a-09064f1811e8"
-  payment_amount: "0.001"
+  # 只能支付加入
+  pay_to_join: true
+  # 支持支付数字货币列表
+  accept_asset_list:
+    - symbol: "XIN"
+      asset_id: "c94ac88f-4671-3976-b60a-09064f1811e8" # XIN
+      amount: "auto" # auto estimate
+    - symbol: "CNB"
+      asset_id: "965e5c6e-434c-3fa9-b780-c50f43cd955c" # CNB
+      amount: "1000.00"
+# 主页外观
+appearance:
+  home_shortcut_groups:
+    - label_en: "3-Party Services"
+      label_zh: "第三方提供的服务"
+      shortcuts:
+        # icon URL
+        - icon: "..."
+          label_en: "Service Name"
+          label_zh: "服务名称"
+          # 服务链接
+          url: https://exinone.com
 message_template:
   welcome_message        : "欢迎加入 Mixin 中文群"
   group_redpacket        : "中文群红包"
   group_redpacket_short_desc: "来自无名氏的红包"
   group_redpacket_desc    : "来自 %s 的红包"
   group_opened_redpacket  : "%s 打开了你的红包"
+  message_prohibit        : "群主开启了禁言，暂时不能发言了。"
+  message_allow           : "群主关闭了禁言，你可以发言了。"
   message_tips_guest     : "您需要先点击机器图标授权。"
   message_tips_join      : "%s 加入了群组"
   message_tips_help      : "您需要先支付 0.001 XIN, 加入群组才能发消息。"
   message_tips_help_btn   : "点击加入群组"
   message_tips_unsubscribe: "您已经取消了本群的消息订阅, 无法发送或者接收消息。"
+  message_tips_too_many   : "发送太频繁"
   message_commands_info   : "/INFO"
   message_commands_info_resp: "当前订阅人数: %d"
+wechat:
+  # 微信配置
+  app_id: ""
+  app_secret: ""
+  token: ""
+  encodine_aes_key: ""
+  # 微信支付配置
+  mch_id: ""
+  mch_key: ""
+  notify_url:
 mixin:
-  client_id        : "xxxxxxxx"
-  client_secret    : "xxxxxxxx"
-  session_asset_pin : "xxxxxxxx"
-  pin_token        : "xxxxxxxx"
-  session_id       : "xxxxxxxx"
+  client_id        : ""
+  client_secret    : ""
+  session_asset_pin : ""
+  pin_token        : ""
+  session_id       : ""
   session_key: |
     -----BEGIN RSA PRIVATE KEY-----
     -----END RSA PRIVATE KEY-----
@@ -365,30 +424,29 @@ Operators 变量用于配置管理员列表，这里填写的不是管理员的 
 ``` bash
 $ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/web
 # 如果只编译线上环境，可以不用修改 env.dev.sh 文件
-$ cp -v env.dev.tpl.sh env.dev.sh
-$ cp -v env.prod.tpl.sh env.prod.sh
+$ cp env.tpl.sh .env.local
 ```
 
 修改配置文件：
 
 ``` bash
-$ vim env.prod.sh
+$ vim .env.local
 
-export NODE_ENV="production"
-export SUPERGROUP_WEB_ROOT="http://group.test.com"
-export SUPERGROUP_API_ROOT="http://api.test.com"
-export SUPERGROUP_CLIENT_ID="xxxxxxxx"
-export SUPERGROUP_APP_NAME="Mixin 中文群"
-export SUPERGROUP_LOCALE="zh-CN"
+NODE_ENV="production"
+VUE_APP_WEB_ROOT="http://group.test.com"
+VUE_APP_API_ROOT="http://api.test.com"
+VUE_APP_CLIENT_ID="xxxxxxxx"
+VUE_APP_ROUTER_MODE="history"
 ```
 
 安装依赖：
 
 ``` bash
 $ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/web
+# 安装依赖
 $ npm install
 # 编译线上环境
-$ npm run dist
+$ npm run build
 $ mkdir /var/www/test
 $ mv dist /var/www/test
 $ chown www-data:www-data -R /var/www/
@@ -453,8 +511,10 @@ server {
       text/x-component
       text/x-cross-domain-policy;
 
-    location ~* ^/assets(.*)$ {
-      try_files $1 =404;
+    # 注意，这里有修改，前端跳转路径变了
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+      expires max;
+      try_files $uri =404;
     }
 
     location / {
@@ -530,6 +590,7 @@ Description=Group API Daemon
 After=network.target
 
 [Service]
+# 需要把 test 替换为运行 service 的 linux 用户，比如 ubuntu
 User=test
 Type=simple
 # 需要将 $GOPATH 替换为真实路径
@@ -549,6 +610,7 @@ Description=Group Message Daemon
 After=network.target
 
 [Service]
+# 需要把 test 替换为运行 service 的 linux 用户，比如 ubuntu
 User=test
 Type=simple
 # 需要将 $GOPATH 替换为真实路径
