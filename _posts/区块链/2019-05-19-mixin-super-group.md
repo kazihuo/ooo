@@ -49,6 +49,7 @@ comments:
 | v2.2 | 增加修改时区 | 2019/06/11 17:43:29 | 部署在国内服务器的读者尤其注意 |
 | v2.3 | 修复创建数据库无法找到 schema.sql | 2019/06/27 10:51:29 | 对内容也做了小幅调整 |
 | v3.0 | 前端更换为 vue 版本 | 2019/08/04 19:52:18 | 大版本更新 |
+| v3.1 | 更改为 go module 方式编译 | 2019/08/04 19:52:18 | go module 将成为标准 |
 
 ## 一 前言
 ***
@@ -207,22 +208,24 @@ go version go1.12.7 linux/amd64
 ### 4.8 编译后端
 ***
 
-命令如下：
+最新的代码采用了 go module，所以代码无需存放在 $GOPATH。
+
+如果依然在 $GOPATH/src/github.com 目录下 go build，会出现如下的问题：
 
 ``` bash
-$ go get github.com/MixinNetwork/supergroup.mixin.one
+# github.com/MixinNetwork/supergroup.mixin.one/services
+supergroup.mixin.one/services/tasks.go:44:22: xurls.Relaxed.Match undefined (type func() *regexp.Regexp has no field or method Match)
 ```
 
-如果顺利的话，在 $GOPATH 会 clone 大群代码，并自动解决依赖问题。
-
-如果是国内服务器，估计比较悬。读者可以采用 ss + [cow](https://github.com/cyfdecyf/cow/) 解决这个问题，在此不多说。
-
-clone 下来后，直接 build 代码：
+编译命令如下：
 
 ``` bash
-$ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
+$ git clone https://github.com/MixinNetwork/supergroup.mixin.one
+$ cd supergroup.mixin.one
 $ go build
 ```
+
+如果是国内服务器，估计比较悬。读者可以采用 ss + [cow](https://github.com/cyfdecyf/cow/) 解决这个问题，在此不多说。
 
 如果没有什么问题的话，会在当前目录生成一个 `supergroup.mixin.one` 的可执行文件，当然读者可以重命名为其他名字。
 
