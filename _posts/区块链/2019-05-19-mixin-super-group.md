@@ -208,9 +208,9 @@ go version go1.12.7 linux/amd64
 ### 4.8 编译后端
 ***
 
-最新的代码采用了 go module，所以代码无需存放在 $GOPATH。
+最新的代码采用了 go module，所以代码无需存放在 `$GOPATH`。
 
-如果依然在 $GOPATH/src/github.com 目录下 go build，会出现如下的问题：
+如果依然在 `$GOPATH/src/github.com` 目录下 go build，会出现如下的问题：
 
 ``` bash
 # github.com/MixinNetwork/supergroup.mixin.one/services
