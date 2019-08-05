@@ -233,12 +233,6 @@ $ go build
 
 下载地址点击 [此处](https://download.exin.one/mixin/supergroup)。需要说明的是，下载目录以日期为归档，建议下载最新的可执行文件。笔者会跟踪大群代码，保持同步，并且定期上传二进制文件。将 `supergroup.mixin.one` 可执行文件下载下来之后，读者将此文件上传到服务器，需要执行 `chmod +x supergroup.mixin.one` 为二进制文件添加可执行权限，并且可以重命名为其他名字。
 
-还有一点值得提醒，没有编译后端的用户，还是需要 clone 代码，因为无论如何还需要编译前端的。clone 代码命令如下：
-
-``` bash
-$ git clone https://github.com/MixinNetwork/supergroup.mixin.one
-```
-
 ### 4.9 数据库配置
 ***
 
