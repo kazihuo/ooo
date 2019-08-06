@@ -375,7 +375,7 @@ appearance:
           label_en: "Service Name"
           label_zh: "服务名称"
           # 服务链接
-          url: https://exinone.com
+          url: "https://exinone.com"
 message_template:
   welcome_message        : "欢迎加入 Mixin 中文群"
   group_redpacket        : "中文群红包"
