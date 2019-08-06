@@ -50,6 +50,7 @@ comments:
 | v2.3 | 修复创建数据库无法找到 schema.sql | 2019/06/27 10:51:29 | 对内容也做了小幅调整 |
 | v3.0 | 前端更换为 vue 版本 | 2019/08/01 19:52:18 | 大版本更新 |
 | v3.1 | 更改为 go module 方式编译 | 2019/08/05 17:38:20 | go module 将成为标准 |
+| v3.2 | 去除 GOPATH 路径 | 2019/08/06 16:38:30 | 同时做小幅修正 |
 
 ## 一 前言
 ***
@@ -81,7 +82,7 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 ## 四 部署大群
 ***
 
-为了方便读者理解，笔者设置的大群主域名是：group.test.com，API 域名是 api.test.com，并解决了 SSL 的问题。
+为了方便读者理解，笔者设置的大群主域名是：group.test.com，API 域名是 api.test.com，并解决了 SSL 的问题。测试用户为 test，真实运行需要替换用户。
 
 > 如果大群部署在国内服务器，因为众所周知的原因，域名需要备案。如果没有域名，IP + 端口的形式也可以实现，缺陷在于无法使用 SSL。
 
@@ -220,6 +221,7 @@ supergroup.mixin.one/services/tasks.go:44:22: xurls.Relaxed.Match undefined (typ
 编译命令如下：
 
 ``` bash
+$ mkdir -p /data && cd /data
 $ git clone https://github.com/MixinNetwork/supergroup.mixin.one
 $ cd supergroup.mixin.one
 $ go build
@@ -278,8 +280,8 @@ psql (10.8 (Ubuntu 10.8-0ubuntu0.18.04.1))
 Type "help" for help.
 test=> \conninfo
 You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
-# 这个路径仅供参考，只要能找到 schema.sql 文件即可，真实运行需要将 $GOPATH 替换为真实路径
-test=> \i $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/schema.sql
+# 这个路径仅供参考，只要能找到 schema.sql 文件即可，新版无需依赖 $GOPATH，放在任何位置即可
+test=> \i /data/supergroup.mixin.one/schema.sql
 test=> \q
 
 $ exit
@@ -298,8 +300,8 @@ postgres=# ALTER USER test WITH PASSWORD 'xxxxxxxx';
 
 ``` bash
 # clone 代码后，当前目录拷贝即可
-$ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
-$ cp config.tpl.yaml config.yaml
+$ cd /data/supergroup.mixin.one
+$ cp -v config/config.tpl.yaml config.yaml
 $ vim config.yaml
 ```
 
@@ -419,9 +421,9 @@ Operators 变量用于配置管理员列表，这里填写的不是管理员的 
 编译前端的方式也有变化，之前是修改 `webpack.config.js` 文件，重构后的代码修改的是 `env.prod.sh` 脚本，更换为 VUE 修改的是 `.env.local`，步骤如下：
 
 ``` bash
-$ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/web
+$ cd /data/supergroup.mixin.one/web
 # 如果只编译线上环境，可以不用修改 env.dev.sh 文件
-$ cp env.tpl.sh .env.local
+$ cp -v env.example .env.local
 ```
 
 修改配置文件：
@@ -439,7 +441,7 @@ VUE_APP_ROUTER_MODE="history"
 安装依赖：
 
 ``` bash
-$ cd $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/web
+$ cd /data/supergroup.mixin.one/web
 # 安装依赖
 $ npm install
 # 编译线上环境
@@ -590,8 +592,8 @@ After=network.target
 # 需要把 test 替换为运行 service 的 linux 用户，比如 ubuntu
 User=test
 Type=simple
-# 需要将 $GOPATH 替换为真实路径
-ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service http -dir $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
+# 新版无需依赖 $GOPATH
+ExecStart=/data/supergroup.mixin.one/supergroup.mixin.one -service http -dir /data/supergroup.mixin.one
 Restart=on-failure
 LimitNOFILE=65536
 
@@ -610,8 +612,8 @@ After=network.target
 # 需要把 test 替换为运行 service 的 linux 用户，比如 ubuntu
 User=test
 Type=simple
-# 需要将 $GOPATH 替换为真实路径
-ExecStart=$GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one/supergroup.mixin.one -service message -dir $GOPATH/src/github.com/MixinNetwork/supergroup.mixin.one
+# 新版无需依赖 $GOPATH
+ExecStart=/data/supergroup.mixin.one/supergroup.mixin.one -service message -dir /data/supergroup.mixin.one
 Restart=on-failure
 LimitNOFILE=65536
 
