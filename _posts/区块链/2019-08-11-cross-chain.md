@@ -21,7 +21,7 @@ tags:
 
 跨链、DeFi、Staking，这几个名词成为 2019 年区块链行业讨论最为广泛的话题。这三者互相关联，跨链是底层基础，Staking 是网络治理和经济模型，DeFi 是金融应用。这三者往往又可以相互转化，心系一个共同的目标。
 
-![](https://cdn.dbarobin.com/vibNxIo.jpg)
+![](https://cdn.dbarobin.com/vibNxIo.jpeg)
 
 > 题图来自: © EVEN Foundation / Analysis of crosschain platforms / medium.com
 
