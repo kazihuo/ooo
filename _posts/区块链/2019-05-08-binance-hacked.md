@@ -9,6 +9,8 @@ tags:
   - 区块链
   - Blockchain
   - 安全
+  - 币安
+  - Binance
 ---
 
 `文/robin`
