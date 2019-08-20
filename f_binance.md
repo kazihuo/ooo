@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 币安
+title: 币安说
 comments: no
 permalink: /binance/
 ---
