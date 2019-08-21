@@ -25,10 +25,10 @@ permalink: /blockchain/
 <ul class="tags-box">
 {% if site.posts != empty %}
     {% for tag in site.tags %}
-        {% if tag[1].size * 1%}
+        {% if tag[1].size > 1%}
             {% if tag[0] == 'Blockchain' %}
                 {% for post in tag[1] %}
-                    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time* &raquo;
+                    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
                     <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
                 {% endfor %}
             {% endif %}
