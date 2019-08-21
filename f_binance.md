@@ -11,7 +11,7 @@ permalink: /binance/
 
 这里是「币安说」专栏相关信息页面，我是主理人 Robin。笔者是币安老用户，一路见证了币安的崛起。一个因缘巧合的机会，笔者有幸能和币安合作，推出「币安说」专栏。个人资产神圣不可侵犯，让价值自由流通，Cryptocurrency 做到了。币安的目标是 Exchange the World，然而 Blockchain vs Cryptocurrency 普及远未达成。这就是「币安说」创立的初衷，一个致力于普及区块链和加密货币的专栏。
 
-币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易，目前上架的币种数量为 166 个。
 
 > 币安注册: [https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
 > 邀请码: **11190872**
