@@ -43,7 +43,7 @@ permalink: /binance/
 * BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
 * ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
 
-#### Archive
+#### 归档
 ***
 
 <ul class="tags-box">
