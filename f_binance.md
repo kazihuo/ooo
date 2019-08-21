@@ -13,8 +13,8 @@ permalink: /binance/
 
 币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
 
-* 币安注册: [https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
-* 邀请码: **11190872**
+> 币安注册: [https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
+> 邀请码: **11190872**
 
 有任何问题，欢迎与我 [联系](https://dbarobin.com/about)。
 
