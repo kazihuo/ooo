@@ -84,7 +84,7 @@ permalink: /blockchain/
 #### Referrals
 ***
 
-> **币安**，[https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
+> **币安**，[https://www.binance.net/cn/register/?ref=11190872](https://www.binance.net/cn/register/?ref=11190872)
 > **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
 
 #### Donate
