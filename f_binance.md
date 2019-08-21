@@ -13,8 +13,8 @@ permalink: /binance/
 
 币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
 
-币安注册: [https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
-邀请码: **11190872**
+* 币安注册: [https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
+* 邀请码: **11190872**
 
 有任何问题，欢迎与我 [联系](https://dbarobin.com/about)。
 
@@ -38,14 +38,10 @@ permalink: /binance/
 * [Steemit](https://steemit.com/@robinwen)
 * [Medium](https://medium.com/@robinwan)
 
-原创不易，读者可以通过如下途径打赏，虚拟货币、美元、法币均支持。
+原创不易，读者可以通过如下途径打赏，支持 BTC 和 ERC20 Token。
 
 * BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
 * ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
-* PayPal: [https://www.paypal.me/robinwen](https://www.paypal.me/robinwen)
-* 微信打赏二维码
-
-![Wechat](https://i.imgur.com/SzoNl5b.jpg)
 
 #### Archive
 ***
