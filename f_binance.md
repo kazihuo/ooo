@@ -32,7 +32,7 @@ permalink: /binance/
 * [币乎](https://bihu.com/people/22207)
 * [知乎](https://www.zhihu.com/people/wentasy)
 * [简书](https://www.jianshu.com/c/65dfa1ee8b6a)
-* [今日头条](https://www.toutiao.com/c/user/101084147997)
+* [今日头条](https://www.toutiao.com/c/user/101084147997/)
 * [掘金](https://juejin.im/user/5673ccae60b2260ee435f89a/posts)
 * [开发者头条](https://toutiao.io/subjects/15354)
 * [Steemit](https://steemit.com/@robinwen)
