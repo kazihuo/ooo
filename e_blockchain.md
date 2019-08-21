@@ -64,7 +64,7 @@ permalink: /blockchain/
 * 「区块链技术指北」同名 [知识星球](https://t.xiaomiquan.com/ZRbmaU3)
 * [官网](https://chainon.io)
 * [官方博客](https://blog.chainon.io)
-* [官方社区])(https://bbs.chainon.io)
+* [官方社区](https://bbs.chainon.io)
 * [Telegram Channel](https://t.me/chainone)
 * [Twitter](https://twitter.com/bcageone)
 * [Facebook](https://www.facebook.com/chainone.org)
