@@ -62,3 +62,9 @@ permalink: /binance/
     <span>No posts</span>
 {% endif %}
 </ul>
+
+<p class="post-meta">
+   <span id="busuanzi_container_page_pv">
+      By Robin Wen, Viewd <span id="busuanzi_value_page_pv"></span> times.
+   </span>
+</p>
