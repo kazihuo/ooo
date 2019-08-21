@@ -40,8 +40,8 @@ permalink: /binance/
 
 原创不易，读者可以通过如下途径打赏，支持 BTC 和 ERC20 Token。
 
-* BTC: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
-* ERC20 Token: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
+> **BTC**: 3QboL2k5HfKjKDrEYtQAKubWCjx9CX7i8f
+> **ERC20 Token**: 0x8907B2ed72A1E2D283c04613536Fac4270C9F0b3
 
 #### 归档
 ***

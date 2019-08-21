@@ -84,16 +84,16 @@ permalink: /blockchain/
 #### Referrals
 ***
 
-* **币安**，[https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
-* **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
+> **币安**，[https://www.binance.net/cn/markets?ref=11190872](https://www.binance.net/cn/markets?ref=11190872)
+> **币乎**，[https://zt.bihu.com/?id=22207](https://zt.bihu.com/?id=22207)
 
 #### Donate
 ***
 
 原创不易，读者可以通过如下途径打赏，支持 BTC 和 ERC20 Token。
 
-* **BTC**: 1HRZ7og2KjqpP3v3jskgueNu64kJrFU8GD
-* **ERC20 Token**: 0x5c8DEB48dC08b5dC60A0290B718690a801509Dd1
+> *BTC**: 1HRZ7og2KjqpP3v3jskgueNu64kJrFU8GD
+> **ERC20 Token**: 0x5c8DEB48dC08b5dC60A0290B718690a801509Dd1
 
 © ChainONE
 
