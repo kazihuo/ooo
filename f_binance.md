@@ -30,7 +30,7 @@ permalink: /binance/
 * [金色财经](https://www.jinse.com/member/29374)
 * [巴比特](https://www.8btc.com/user/199009)
 * [币乎](https://bihu.com/people/22207)
-* [百家号](https://baijiahao.baidu.com/u?app_id=1642481132762660/)
+* [百家号](https://baijiahao.baidu.com/u?app_id=1642481132762660)
 * [豆瓣](https://www.douban.com/people/robinwan/notes)
 * [雪球](https://xueqiu.com/u/binance)
 * [一点资讯](https://www.yidianzixun.com)
