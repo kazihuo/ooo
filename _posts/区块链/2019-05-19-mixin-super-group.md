@@ -51,6 +51,7 @@ comments:
 | v3.0 | 前端更换为 vue 版本 | 2019/08/01 19:52:18 | 大版本更新 |
 | v3.1 | 更改为 go module 方式编译 | 2019/08/05 17:38:20 | go module 将成为标准 |
 | v3.2 | 去除 GOPATH 路径 | 2019/08/06 16:38:30 | 同时做小幅修正 |
+| v3.3 | 添加打赏功能 | 2019/08/28 12:25:19 | 注意修改 config.yaml |
 
 ## 一 前言
 ***
@@ -81,6 +82,8 @@ Mixin 大群是基于 Mixin Bot 实现的。笔者简单画了个架构图。域
 
 ## 四 部署大群
 ***
+
+> 大群部署或者更新之前务必阅读 CHANGELOG.md
 
 为了方便读者理解，笔者设置的大群主域名是：group.test.com，API 域名是 api.test.com，并解决了 SSL 的问题。测试用户为 test，真实运行需要替换用户。
 
@@ -325,11 +328,11 @@ system:
   # 只允许发有价格的红包，默认为 true
   price_asset_enable: true
   # 允许发送语音消息
-  audio_message_enable: false
+  audio_message_enable: true
   # 允许发送图片消息
   image_message_enable: true
   # 允许发送视频消息
-  video_message_enable: false
+  video_message_enable: true
   # 允许发送名片
   contact_message_enable: true
   # 限制发送频率
@@ -340,16 +343,6 @@ system:
   detect_link: false
   # 支持撤回其他人的消息，管理员适用
   prohibited_message: true
-  # new payment settings，自动估价
-  auto_estimate: false
-  # 自动估价法币
-  auto_estimate_currency: "usd" # cny or usd. only useful when auto_estimate == true
-  # 自动估价基准
-  auto_estimate_base: "9.9"
-  # 支持微信支付
-  accept_wechat_payment: false
-  # 微信支付数额
-  wechat_payment_amount: "0.01"
   # 管理员列表
   operator_list:
     - "e9a5b807-fa8b-455a-8dfa-b189d28310ff"
@@ -389,6 +382,8 @@ message_template:
   message_tips_help      : "您需要先支付 0.001 XIN, 加入群组才能发消息。"
   message_tips_help_btn   : "点击加入群组"
   message_tips_unsubscribe: "您已经取消了本群的消息订阅, 无法发送或者接收消息。"
+  message_reward_label: "% s 给 % s 转了 % s % s"
+  message_reward_memo: " 来自 % s"
   message_tips_too_many   : "发送太频繁"
   message_commands_info   : "/INFO"
   message_commands_info_resp: "当前订阅人数: %d"
