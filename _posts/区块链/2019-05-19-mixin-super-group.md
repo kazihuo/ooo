@@ -387,16 +387,6 @@ message_template:
   message_tips_too_many   : "发送太频繁"
   message_commands_info   : "/INFO"
   message_commands_info_resp: "当前订阅人数: %d"
-wechat:
-  # 微信配置
-  app_id: ""
-  app_secret: ""
-  token: ""
-  encodine_aes_key: ""
-  # 微信支付配置
-  mch_id: ""
-  mch_key: ""
-  notify_url:
 mixin:
   client_id        : ""
   client_secret    : ""
