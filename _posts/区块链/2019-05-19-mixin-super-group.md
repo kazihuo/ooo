@@ -640,7 +640,7 @@ $ systemctl restart test.message.service
 
 目前 Mixin 大群部署维护成本还是比较高，然而建大群需求还是有的，建议接下来 Mixin 能提供对用户的大群服务。
 
-后续如果仓库有更新，针对后端，git pull 在 go build 然后重启 service 即可（如果没法编译后端代码，可以下载由本教程提供的二进制文件）；针对前端，git pull 然后 npm run dist 编译替换 Web 目录的内容即可。当然读者有开发能力，可以在开源的代码基础上添加自己想要的功能。
+后续如果仓库有更新，针对后端，git pull 在 go build 然后重启 service 即可（如果没法编译后端代码，可以下载由本教程提供的二进制文件）；针对前端，git pull 然后 npm run build 编译替换 Web 目录的内容即可。当然读者有开发能力，可以在开源的代码基础上添加自己想要的功能。
 
 如果读者在部署过程中有任何问题，欢迎交流，[关于](https://dbarobin.com/about) 页面有我的联系方式。
 
