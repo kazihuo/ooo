@@ -54,7 +54,7 @@ tags:
 * 起息日：开始计算利息的日期
 * 赎回日：用户本金和利息到账的日期
 
-申购地址：[https://www.binance.net/cn/lending](https://www.binance.net/cn/lending)
+申购地址：[https://www.binance.net/cn/lending](https://www.binance.net/cn/lending)，账号注册点击 [此处](https://www.binance.net/cn/register/?ref=11190872)。
 
 ![](https://cdn.dbarobin.com/binance/002/002-binance-lending-01.png)
 
