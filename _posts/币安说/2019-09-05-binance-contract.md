@@ -53,7 +53,7 @@ Binance 将上线合约交易平台（Binance Futures），并同时推出两个
 
 ### 2.4 教程
 
-币安双合约争霸赛网址：[https://www.binance.net/cn/vote/13](https://www.binance.net/cn/vote/13)
+币安双合约争霸赛网址：[https://www.binance.net/cn/vote/13](https://www.binance.net/cn/vote/13)，币安交易所账号注册点击 [此处](https://www.binance.net/cn/register/?ref=11190872)。
 
 首先，在 [合约 A](https://testnet.binancefuture.com/cn/futures/BTCUSDT) 和 [合约 B](https://testnet.jexzh.com) 两个网站使用同一邮箱注册账号。
 
