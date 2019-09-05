@@ -65,7 +65,7 @@ Binance 将上线合约交易平台（Binance Futures），并同时推出两个
 
 最后持续交易（可使用 API），在 [合约 A 排名](https://testnet.binancefuture.com/en/activity) 和 [合约 B 排名](https://testnet.jex.com/cn/futures_market_1) 关注自己的排名。
 
-### 三 小结
+## 三 小结
 ***
 
 可能部分读者会担心合约的高风险，因为前有很多 OKEx 合约的黑幕爆料。币安此次推出的双合约争霸赛是模拟盘，完全可以尝试，对理解合约也很有帮助，排名靠前还有奖品拿。
