@@ -52,6 +52,7 @@ comments:
 | v3.1 | 更改为 go module 方式编译 | 2019/08/05 17:38:20 | go module 将成为标准 |
 | v3.2 | 去除 GOPATH 路径 | 2019/08/06 16:38:30 | 同时做小幅修正 |
 | v3.3 | 添加打赏功能 | 2019/08/28 12:25:19 | 注意修改 config.yaml |
+| v3.4 | 更改限制发送消息频率 | 2019/09/19 17:51:29 | limit_message_duration 参数 |
 
 ## 一 前言
 ***
@@ -335,8 +336,8 @@ system:
   video_message_enable: true
   # 允许发送名片
   contact_message_enable: true
-  # 限制发送频率
-  limit_message_frequency: false
+  # 限制发送频率，单位秒
+  limit_message_duration: 5
   # 禁止发带二维码的图片
   detect_image: false
   # 禁止发送链接
