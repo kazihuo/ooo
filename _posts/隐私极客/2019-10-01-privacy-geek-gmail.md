@@ -26,6 +26,8 @@ tags:
 
 ![](https://cdn.dbarobin.com/F6rwzBy.jpg)
 
+> 题图来自: © MATTHEW HUGHES / Hang on, you can @ people in Gmail? / thenextweb.com
+
 目前靠正常的渠道基本上无法注册 Gmail，因为大陆手机号无法接收验证码。读者可以自行想点办法，本文不赘述。
 
 接下来笔者给大家讲讲 Gmail 的使用技巧。
