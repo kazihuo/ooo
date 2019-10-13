@@ -30,7 +30,7 @@ tags:
 
 接下来笔者为大家讲解下 ProtonMail 使用技巧。
 
-第一，ProtonMail 注册无需绑定手机号，甚至提供个人隐私。不过值得注意的是，ProtonMail 也有防刷策略，一个登录 IP 不允许注册过多的账号。如果被 ProtonMail 风控了，需要提供辅助邮箱或者手机号以验证人工操作。
+第一，ProtonMail 注册无需绑定手机号，甚至无需提供手机号之外的任何隐私。不过值得注意的是，ProtonMail 也有防刷策略，一个登录 IP 不允许注册过多的账号。如果被 ProtonMail 风控了，需要提供辅助邮箱或者手机号以验证人工操作。
 
 第二，注册好 ProtonMail 之后，强烈建议开启二次验证。二次验证之外，还有 Mailbox 密码，也建议设置。也就是说，这些都开启之后，正常登录 ProtonMail，需要邮箱名 + 登录密码 + 二次验证 + Mailbox 密码。
 
@@ -53,7 +53,7 @@ tags:
 十一，ProtonMail 支持自定义主题。感兴趣关注以下几个主题来源：
 
 * [ProtonMail Themes](https://protonmail.tumblr.com/)，官方维护的主题列表
-* [Easy Themes for ProtonMail](https://github.com/amdelamar/pm-theme)，amdelamar 维护的 GitHub 项目，支持多个主题
+* [Easy Themes for ProtonMail](https://github.com/amdelamar/pm-theme)，[amdelamar](https://github.com/amdelamar) 维护的 GitHub 项目，支持多个主题
 * [ProtonMail theme creator](https://scastiel.gitlab.io/protonmail-theme-creator/)，主题生成器
 
 在 Gmail 之外，ProtonMail 是一个相当不错的邮箱补充服务。ProtonMail 在安全和隐私方面做到了极致，强烈建议读者用起来。
