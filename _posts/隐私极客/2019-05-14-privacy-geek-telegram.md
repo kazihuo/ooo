@@ -91,6 +91,7 @@ Telegram 作为一款注重隐私和安全的及时通讯工具，比同类产�
 * [隐私极客 Privacy Geek 0x05 Google Voice](https://dbarobin.com/2019/08/10/privacy-geek-google-voice/)
 * [隐私极客 Privacy Geek 0x06 国内手机号](https://dbarobin.com/2019/08/18/privacy-geek-mobile/)
 * [隐私极客 Privacy Geek 0x07 Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail/)
+* [隐私极客 Privacy Geek | 0x08 ProtonMail](https://dbarobin.com/2019/10/13/privacy-geek-protonmail/)
 
 –EOF–
 
