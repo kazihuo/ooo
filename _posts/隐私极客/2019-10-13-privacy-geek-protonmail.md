@@ -36,7 +36,7 @@ tags:
 
 第三，ProtonMail 有「Automatically save contacts」功能，也就是自动保存联系人，根据需求启用。
 
-第四，ProtonMail 的 Tor 服务网址：[https://protonirockerxow.onion/](https://protonirockerxow.onion/)，打开速度取决于网速。如果 Tor 浏览器启用了 NoScript，记得信任此网址。最新的 Tor 地址，点击 [此处](https://protonmail.com/tor)。
+第四，ProtonMail 的 Tor 服务网址：[https://protonirockerxow.onion/](https://protonirockerxow.onion/)，打开速度取决于梯子质量。如果 Tor 浏览器启用了 NoScript，记得信任此网址。最新的 Tor 地址，点击 [此处](https://protonmail.com/tor)。
 
 第五，ProtonMail 免费账号支持有限，PLUS 支持自定义域名等更多服务，当然还有 PROFESSIONAL 和更高级别的 VISIONARY 套餐。PLUS 支持自定义域名，也就是说读者可以拥有一个自定义域名的邮箱。此外，支持 BTC 订阅，对于将隐私发挥到极致的 Geek 们，这个特性相当给力。
 
