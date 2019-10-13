@@ -37,14 +37,14 @@ tags:
 
 ## 「隐私极客」系列文章
 
-* [隐私极客 Privacy Geek | 0x00 开篇](https://dbarobin.com/2019/04/14/privacy-geek-prologue/)
-* [隐私极客 Privacy Geek | 0x01 PGP](https://dbarobin.com/2019/05/02/privacy-geek-pgp/)
-* [隐私极客 Privacy Geek | 0x02 Telegram](https://dbarobin.com/2019/05/14/privacy-geek-telegram/)
-* [隐私极客 Privacy Geek | 0x03 DuckDuckGo](https://dbarobin.com/2019/06/07/privacy-geek-duckduckgo/)
-* [隐私极客 Privacy Geek | 0x04 Firefox](https://dbarobin.com/2019/07/21/privacy-geek-firefox/)
-* [隐私极客 Privacy Geek | 0x05 Google Voice](https://dbarobin.com/2019/08/10/privacy-geek-google-voice/)
-* [隐私极客 Privacy Geek | 0x06 国内手机号](https://dbarobin.com/2019/08/18/privacy-geek-mobile/)
-* [隐私极客 Privacy Geek | 0x07 Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail/)
+* [隐私极客 Privacy Geek 0x00 开篇](https://dbarobin.com/2019/04/14/privacy-geek-prologue/)
+* [隐私极客 Privacy Geek 0x01 PGP](https://dbarobin.com/2019/05/02/privacy-geek-pgp/)
+* [隐私极客 Privacy Geek 0x02 Telegram](https://dbarobin.com/2019/05/14/privacy-geek-telegram/)
+* [隐私极客 Privacy Geek 0x03 DuckDuckGo](https://dbarobin.com/2019/06/07/privacy-geek-duckduckgo/)
+* [隐私极客 Privacy Geek 0x04 Firefox](https://dbarobin.com/2019/07/21/privacy-geek-firefox/)
+* [隐私极客 Privacy Geek 0x05 Google Voice](https://dbarobin.com/2019/08/10/privacy-geek-google-voice/)
+* [隐私极客 Privacy Geek 0x06 国内手机号](https://dbarobin.com/2019/08/18/privacy-geek-mobile/)
+* [隐私极客 Privacy Geek 0x07 Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail/)
 
 –EOF–
 
