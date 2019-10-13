@@ -76,7 +76,8 @@ PGP 适用于大多数加密传输的场景。有了 PGP，读者甚至可以在
 * [隐私极客 Privacy Geek 0x06 国内手机号](https://dbarobin.com/2019/08/18/privacy-geek-mobile/)
 * [隐私极客 Privacy Geek 0x07 Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail/)
 
-**参考资料**
+### 参考资料
+***
 
 > [1] yestyle (2017-08-02). PGP 自我扫盲. Retrieved from [https://www.jianshu.com/p/0e1e66423055](https://www.jianshu.com/p/0e1e66423055).
 

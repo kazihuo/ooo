@@ -70,7 +70,8 @@ Gmail 是笔者最为常用的邮箱服务。据笔者所知，Gmail 足够安�
 * [隐私极客 Privacy Geek 0x06 国内手机号](https://dbarobin.com/2019/08/18/privacy-geek-mobile/)
 * [隐私极客 Privacy Geek 0x07 Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail/)
 
-## 参考资料
+### 参考资料
+***
 
 > [1] 维基百科 (2019-04-29). Gmail. Retrieved from https://zh.wikipedia.org/wiki/Gmail.
 
