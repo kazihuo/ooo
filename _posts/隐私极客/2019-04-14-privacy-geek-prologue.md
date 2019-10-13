@@ -35,7 +35,8 @@ tags:
 
 最后，为了安全起见，读者只有两个渠道订阅本专栏，一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)，另一个是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等）。归档页面点击 [此处](https://dbarobin.com/privacy/)。
 
-## 「隐私极客」系列文章
+### 「隐私极客」系列文章
+***
 
 * [隐私极客 Privacy Geek 0x00 开篇](https://dbarobin.com/2019/04/14/privacy-geek-prologue/)
 * [隐私极客 Privacy Geek 0x01 PGP](https://dbarobin.com/2019/05/02/privacy-geek-pgp/)
