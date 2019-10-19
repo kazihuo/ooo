@@ -62,7 +62,7 @@ PGP 适用于大多数加密传输的场景。有了 PGP，读者甚至可以在
 
 只要自己的私钥安全、密码安全，可以说只有信息交互的双方才能解密，再顶级的黑客也无能为力。保护隐私非常重要，PGP 就是一个非常实用的利器，希望本文能给注重隐私的读者带来一些帮助。
 
-最后，为了安全起见，读者只有两个渠道订阅本专栏，一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)，另一个是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等）。归档页面点击 [此处](https://dbarobin.com/privacy/)。
+最后，为了安全起见，读者只有三个渠道订阅本专栏，第一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)，第二是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。第三是 Mixin Channel，下载安装 [Mixin Messenger](https://mixin.one/messenger) 之后，访问 [mixin://users/b8f7e6e4-9ac2-4a85-9b17-257faac2d8d6](mixin://users/b8f7e6e4-9ac2-4a85-9b17-257faac2d8d6) 订阅。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等），Mixin Channel 作为同步渠道。归档页面点击 [此处](https://dbarobin.com/privacy/)。
 
 ### 「隐私极客」系列文章
 ***
