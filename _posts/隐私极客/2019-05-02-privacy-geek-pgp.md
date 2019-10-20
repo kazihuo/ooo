@@ -76,6 +76,7 @@ PGP 适用于大多数加密传输的场景。有了 PGP，读者甚至可以在
 * [隐私极客 Privacy Geek 0x06 国内手机号](https://dbarobin.com/2019/08/18/privacy-geek-mobile/)
 * [隐私极客 Privacy Geek 0x07 Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail/)
 * [隐私极客 Privacy Geek 0x08 ProtonMail](https://dbarobin.com/2019/10/13/privacy-geek-protonmail/)
+* [隐私极客 Privacy Geek 0x09 Apple ID](https://dbarobin.com/2019/10/20/privacy-geek-appleid/)
 
 ### 参考资料
 ***
