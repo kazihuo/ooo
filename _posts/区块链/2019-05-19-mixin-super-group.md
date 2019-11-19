@@ -53,6 +53,7 @@ comments:
 | v3.2 | 去除 GOPATH 路径 | 2019/08/06 16:38:30 | 同时做小幅修正 |
 | v3.3 | 添加打赏功能 | 2019/08/28 12:25:19 | 注意修改 config.yaml |
 | v3.4 | 更改限制发送消息频率 | 2019/09/19 17:51:29 | limit_message_duration 参数 |
+| v3.5 | 增加 mixin info bot | 2019/11/19 16:12:18 | 便捷获取 UUID |
 
 ## 一 前言
 ***
@@ -399,7 +400,7 @@ mixin:
     -----END RSA PRIVATE KEY-----
 ```
 
-Operators 变量用于配置管理员列表，这里填写的不是管理员的 ID，而是真实 ID，格式为 UUID。笔者根据 [Mixin-SDK-PHP](https://github.com/ExinOne/mixin-sdk-php) 写了个脚本，可以参考下，点击 [此处](https://github.com/dbarobin/mixin/blob/master/mixin-searchuser.php) 阅读。
+Operators 变量用于配置管理员列表，这里填写的不是管理员的 ID，而是真实 ID，格式为 UUID。笔者根据 [Mixin-SDK-PHP](https://github.com/ExinOne/mixin-sdk-php) 写了个脚本，可以参考下，点击 [此处](https://github.com/dbarobin/mixin/blob/master/mixin-searchuser.php) 阅读。此外，还可以通过「mixin info bot」机器人获取（机器人 ID：**7000101942**），添加机器人之后，回复「search:ID」指令就可以获取到用户的 UUID。
 
 ### 4.11 编译前端
 ***
