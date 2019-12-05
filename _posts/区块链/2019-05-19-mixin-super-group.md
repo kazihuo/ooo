@@ -54,6 +54,7 @@ comments:
 | v3.3 | 添加打赏功能 | 2019/08/28 12:25:19 | 注意修改 config.yaml |
 | v3.4 | 更改限制发送消息频率 | 2019/09/19 17:51:29 | limit_message_duration 参数 |
 | v3.5 | 增加 mixin info bot | 2019/11/19 16:12:18 | 便捷获取 UUID |
+| v3.6 | 更新 Go 版本 | 2019/12/05 11:29:19 | 更新到 1.13.5 |
 
 ## 一 前言
 ***
@@ -191,8 +192,8 @@ $ npm -v
 ``` bash
 $ mkdir -p /data/tmp
 $ cd /data/tmp
-$ wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
-$ tar -zxvf go1.12.7.linux-amd64.tar.gz
+$ wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+$ tar -zxvf go1.13.5.linux-amd64.tar.gz
 $ mv go /usr/local
 ```
 
@@ -208,7 +209,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 $ source /etc/profile
 
 $ go version
-go version go1.12.7 linux/amd64
+go version go1.13.5 linux/amd64
 ```
 
 ### 4.8 编译后端
