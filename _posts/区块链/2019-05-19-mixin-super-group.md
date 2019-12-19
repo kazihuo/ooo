@@ -55,6 +55,7 @@ comments:
 | v3.4 | 更改限制发送消息频率 | 2019/09/19 17:51:29 | limit_message_duration 参数 |
 | v3.5 | 增加 mixin info bot | 2019/11/19 16:12:18 | 便捷获取 UUID |
 | v3.6 | 更新 Go 版本 | 2019/12/05 11:29:19 | 更新到 1.13.5 |
+| v3.7 | 更新 nodejs 版本 | 2019/12/18 14:34:19 | 更新到 node v13 |
 
 ## 一 前言
 ***
@@ -174,14 +175,14 @@ nginx version: nginx/1.14.0 (Ubuntu)
 命令如下：
 
 ``` bash
-$ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+$ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 $ apt-get -y install nodejs
 
 $ node -v
-v12.2.0
+v13.5.0
 
 $ npm -v
-6.9.0
+6.11.2
 ```
 
 ### 4.7 安装 Go
