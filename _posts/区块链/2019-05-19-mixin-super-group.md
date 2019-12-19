@@ -56,6 +56,7 @@ comments:
 | v3.5 | 增加 mixin info bot | 2019/11/19 16:12:18 | 便捷获取 UUID |
 | v3.6 | 更新 Go 版本 | 2019/12/05 11:29:19 | 更新到 1.13.5 |
 | v3.7 | 更新 nodejs 版本 | 2019/12/18 14:34:19 | 更新到 node v13 |
+| v3.8 | 更新 schema.sql 位置 | 2019/12/18 15:349:38 | 解决权限问题 |
 
 ## 一 前言
 ***
@@ -281,6 +282,9 @@ Enter the new value, or press ENTER for the default
         Other []:
 Is the information correct? [Y/n] y
 
+$ cp -v /data/supergroup.mixin.one/schema.sql /home/test
+$ chown test:test /home/test/schema.sql
+
 $ sudo -i -u test
 $ psql
 psql (10.8 (Ubuntu 10.8-0ubuntu0.18.04.1))
@@ -288,7 +292,7 @@ Type "help" for help.
 test=> \conninfo
 You are connected to database "test" as user "test" via socket in "/var/run/postgresql" at port "5432".
 # 这个路径仅供参考，只要能找到 schema.sql 文件即可，新版无需依赖 $GOPATH，放在任何位置即可
-test=> \i /data/supergroup.mixin.one/schema.sql
+test=> \i /home/test/schema.sql
 test=> \q
 
 $ exit
