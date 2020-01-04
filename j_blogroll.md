@@ -30,3 +30,4 @@ permalink: /blogroll/
 * <a href="http://qyuan.top" title="清源的博客~" target="_blank">清源的博客~</a>
 * <a href="https://www.xuanzhangjiong.top" title="TopJohn's Blog" target="_blank">TopJohn's Blog</a>
 * <a href="https://mntn0x.github.io" title="mntn's blog" target="_blank">mntn's blog</a>
+* <a href="https://xiequan.info" title="谢权’Blog" target="_blank">谢权’Blog</a>
