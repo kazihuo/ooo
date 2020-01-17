@@ -57,6 +57,7 @@ comments:
 | v3.6 | 更新 Go 版本 | 2019/12/05 11:29:19 | 更新到 1.13.5 |
 | v3.7 | 更新 nodejs 版本 | 2019/12/18 14:34:19 | 更新到 node v13 |
 | v3.8 | 更新 schema.sql 位置 | 2019/12/18 15:349:38 | 解决权限问题 |
+| v3.9 | 更新 Go 版本 | 2020/01/17 12:33:16 | 更新到 1.13.6 |
 
 ## 一 前言
 ***
@@ -194,8 +195,8 @@ $ npm -v
 ``` bash
 $ mkdir -p /data/tmp
 $ cd /data/tmp
-$ wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
-$ tar -zxvf go1.13.5.linux-amd64.tar.gz
+$ wget https://dl.google.com/go/go1.13.6.linux-amd64.tar.gz
+$ tar -zxvf go1.13.6.linux-amd64.tar.gz
 $ mv go /usr/local
 ```
 
@@ -211,7 +212,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 $ source /etc/profile
 
 $ go version
-go version go1.13.5 linux/amd64
+go version go1.13.6 linux/amd64
 ```
 
 ### 4.8 编译后端
