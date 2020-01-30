@@ -14,6 +14,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 本文已参与 ExinOne 有奖征文，活动链接点击 [此处](https://mp.weixin.qq.com/s/BTU0qx3vEjxP8diXuWoI9g)。
 
 ![](https://cdn.dbarobin.com/a9nBpkG.jpg)
@@ -74,6 +85,17 @@ ExinOne 是构建在 Mixin Network 上的交易所，由于没有托管用户资
 欢迎扫描下图，注册 ExinOne，开启定投。或者使用链接 [https://exinone.com/p/NX92O3](https://exinone.com/p/NX92O3) 注册。
 
 ![](https://cdn.dbarobin.com/8PEkY39.png)
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 打赏
 ***

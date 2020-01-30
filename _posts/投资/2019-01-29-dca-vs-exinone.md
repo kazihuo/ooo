@@ -14,6 +14,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 本文已参与 ExinOne 定投有奖征文。
 
 ![](https://cdn.dbarobin.com/flRj1os.jpg)
@@ -149,6 +160,17 @@ Renrenbit 是最近这两天上线的产品，据说某大佬加持。笔者第�
 加密货币定投，ExinOne 就够了。欢迎扫描下图，注册 ExinOne，开启定投。或者使用链接 [https://exinone.com/p/NX92O3](https://exinone.com/p/NX92O3) 注册。
 
 ![](https://cdn.dbarobin.com/8PEkY39.png)
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 参考资料
 ***
