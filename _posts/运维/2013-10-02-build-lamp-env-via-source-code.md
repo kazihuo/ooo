@@ -5,7 +5,7 @@ layout: post
 title: "搭建 LAMP 环境(源码方式)"
 category: 运维
 summary: "LAMP：Linux、Apache、MySQL、PHP 的组合。目前企业使用较多。本文提供采用源码搭建 LAMP 环境的方法。"
-tags: 
+tags:
 - 运维
 - MySQL
 - Linux
@@ -19,6 +19,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 关于LAMP ##
 
@@ -403,6 +414,17 @@ cat user_list.php
 > 3------->wgb
 
 Enjoy!
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 
