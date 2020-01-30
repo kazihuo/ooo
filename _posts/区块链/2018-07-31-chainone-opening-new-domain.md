@@ -32,6 +32,17 @@ comments:
 
 这是「区块链技术指北」的第 36 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
 
 ![](https://cdn.dbarobin.com/smxzEPJ.png)
@@ -51,6 +62,17 @@ comments:
 其中 [chainon.io](https://chainon.io) 和 [blog.chainon.io](https://blog.chainon.io) 采用开源的 Hexo 搭建，[bbs.chainon.io](https://bbs.chainon.io) 采用开源的 [Flarum](https://github.com/flarum/flarum) 搭建。所有网站采用统一的简洁风格，无广告，无插件，全部启用 HTTPS，欢迎体验。
 
 区块链技术指北社区还很年轻，笔者已经踏入区块链行业，相信会有十足的动力继续做下去。读者能够从中获得哪怕丁点的收获，笔者已经倍感荣幸。**区块链世界，最困难而且最可贵的就是冷静和坚持。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 

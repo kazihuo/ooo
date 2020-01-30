@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 41 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 ![](https://cdn.dbarobin.com/smxzEPJ.png)
@@ -66,6 +77,17 @@ ALTER TABLE accounts_keys CHANGE COLUMN public_key public_key varchar(64) DEFAUL
 ***
 
 MySQL 插件目前不太成熟，还有很多坑，谨慎入坑。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。
 

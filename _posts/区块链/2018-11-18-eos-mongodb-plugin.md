@@ -34,6 +34,17 @@ comments:
 
 这是「区块链技术指北」的第 38 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 ![](https://cdn.dbarobin.com/smxzEPJ.png)
@@ -183,6 +194,17 @@ MongoDB 适合如下场景：[1]
 而 MongoDB 不支持事务、不支持 JOIN，所以涉及事务和复杂查询的场景不适合 MySQL。
 
 关于 MongoDB 和 MySQL 的对比，可以点击 [此处](https://ruby-china.org/topics/27659) 查看。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 0x04 参考
 ***

@@ -17,6 +17,17 @@ tags:
 
 这是「区块链技术指北」的第 39 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 ![](https://cdn.dbarobin.com/smxzEPJ.png)
@@ -129,6 +140,17 @@ EOS 生态蓬勃发展，目前 EOS 钱包数量众多，主要分为硬件钱�
 ***
 
 Cryptocurrency 这条路，当下持有多少不能定英雄，能长久地安全地持有才是王者。如果是大额资产，建议选择硬件钱包，笔者也会在后续的文章更新。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 
