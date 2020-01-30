@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **51** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 在 [闪电网络初体验](https://dbarobin.com/2019/03/16/bitcoin-lightning-network) 一文中，笔者简单介绍了闪电网络以及哪些钱包支持。
@@ -28,6 +39,17 @@ tags:
 如果读者在 Android 版创建了 HD 钱包，可以在 iOS 企业版恢复。iOS 闪电网络钱包交互和 Android 一致，恢复之后，之前 BTC 闪电网络钱包的资产、交易记录一目了然。
 
 此外，Hoo 钱包提供的教程点击 [此处](https://s1.rylink.com/info_detail/248)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

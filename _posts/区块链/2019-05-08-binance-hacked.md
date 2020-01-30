@@ -17,6 +17,17 @@ tags:
 
 这是「区块链技术指北」的第 **62** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 今天区块链行业最大的新闻莫过于币安发布的 [公告](https://binance.zendesk.com/hc/zh-cn/articles/360028031711)，7000 个比特币不幸被盗。接着各大媒体报道蜂拥而至，万能蹭流量王 [Justin](https://twitter.com/justinsuntron/status/1125932499761225728) 又吸了一波眼球。关于此次事件相关的文章，可以点击 [此处](https://bbs.chainon.io/d/3487-7000) 阅读。
 
 ![](https://cdn.dbarobin.com/fLUtbpv.png)
@@ -52,6 +63,15 @@ tags:
 此外，我们还要做的，就是保持理智。
 
 区块链世界，安全是永恒的话题。关于区块链资产安全相关的文章，可以阅读 [之前](https://dbarobin.com/2017/12/18/blockchain-security-notice) 的文章。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
 
 ***
 

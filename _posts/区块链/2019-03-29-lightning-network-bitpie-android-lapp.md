@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **57** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp，下载地址点击 [此处](https://itunes.apple.com/us/app/bitpie-blockchain-wallet/id1168568820?mt=8)。官宣点击 [这里](https://medium.com/@Bitpie/bitpie-v3-9-8-now-support-lapps-c1a34344a54e)。此外，LApp 暂时只能在 Android 使用，iOS 暂不支持，在等苹果爸爸审核。比特派不采用企业证书，直接上架海外 App Store，还是比较稳，毕竟 iOS 掉签频率太高了，原因你懂的。
@@ -32,6 +43,17 @@ Bitpie Android 最新版，版本号 3.9.8，目前正式支持闪电网络 LApp
 目前比特派支持的 LApp 共有 10 款，如下：Bitrefill、Blockstream、LightningSpin、Three-CardMonte、POLLO FEED、LuckyThunder、Excellion、Bitcoin Tunnels、Zigzag、Reveive SMS。根据 BlueWallet 的 [MarketPlace](https://bluewallet.io/marketplace)，截止目前共计展示 32 款。
 
 笔者将会持续关注闪电网络，欢迎通过 [RSS](https://dbarobin.com/feed.xm) 订阅本博客。区块链技术指北社区也有 [Lightning](https://bbs.chainon.io/t/lightning) 模块，欢迎关注。此外，读者还可以关注笔者的 [Twitter](https://twitter.com/vrwio)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

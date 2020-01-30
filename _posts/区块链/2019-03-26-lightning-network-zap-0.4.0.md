@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **54** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 闪电网络钱包 Zap 于今日发布 0.4.0 Beta 版。版本覆盖 Mac、Windows 和 Linux。
@@ -28,6 +39,17 @@ tags:
 下载地址点击 [此处](https://github.com/LN-Zap/zap-desktop/releases/tag/v0.4.0-beta)。需要注意的是，此次更新的版本，Mac App 叫做 Zap，而不是之前的 ZapDesktop，建议在 ZapDesktop 备份好之后删除旧的 App。
 
 Zap 闪电钱包创始人名叫 Jack Mallers，他是 Bitcoin Lightning App Developer 项目导师。Jack 有多年比特币相关产品开发经验。[1] 2019 年 3 月 2 日，他还来到中国举办了国内首场闪电网络体验馆开放日。此外，他的 [Twitter](https://twitter.com/JackMallers) 账号可以关注下。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

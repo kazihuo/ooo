@@ -13,6 +13,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 这是「区块链技术指北」的第 **66** 篇文章。
 
 ### 两周年
@@ -46,6 +57,17 @@ ChainONE 微信群很久了，Telegram 群也尝试过，那最后为什么是 M
 目前 Mixin 上最大的群有 2 万多人，管理略为麻烦。ChainONE 中文群为了避免太多的杂音，用收费做了一层过滤，收取的加密货币为 0.000001 BTC 或 0.1 USDT，折算为 CNY 不足一元。ChainONE 微信群、知识星球的可以免费加入，加我 Mixin 26930，介绍下自己，我将入群费转给你。
 
 ![](https://cdn.dbarobin.com/infvwfq.jpg)
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ### 进群都能做什么
 ***

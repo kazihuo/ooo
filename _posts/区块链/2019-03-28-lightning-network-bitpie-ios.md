@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **56** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 Bitpie iOS 最新版，版本号 3.9.7，目前正式支持闪电网络，下载地址点击 [此处](https://itunes.apple.com/us/app/bitpie-blockchain-wallet/id1168568820?mt=8)。当然，读者需要一个美区 Apple ID。如果读者没有，申请点击 [此处](https://dbarobin.com/2019/03/02/us-apple-id)。
@@ -32,6 +43,17 @@ Bitpie iOS 最新版，版本号 3.9.7，目前正式支持闪电网络，下载
 笔者为了体验比特派的闪电网络，第一时间更新了 iOS 版（注：笔者使用的是美区 Apple ID）。笔者使用 Hoo iOS 专业版向比特派转了一笔，接着从比特派转账到 Hoo 钱包。比特派闪电网络转账暂时无需路由手续费，Hoo 钱包转账需要 1 聪的手续费。Hoo 钱包闪电网络和比特派闪电网络的交互都比较人性化，不过比特派在发起收款的时候，需要设置金额。如果笔者不确定能收到多少，可以设置 0。
 
 笔者将会持续关注闪电网络，欢迎通过 [RSS](https://dbarobin.com/feed.xm) 订阅本博客。区块链技术指北社区也有 [Lightning](https://bbs.chainon.io/t/lightning) 模块，欢迎关注。此外，读者还可以关注笔者的 [Twitter](https://twitter.com/vrwio)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

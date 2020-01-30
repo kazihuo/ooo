@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **61** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 发现一个闪电网络应用，名叫 Lightning Scratchcard，网站链接 [https://lightningscratchcard.io](https://lightningscratchcard.io)。
@@ -28,6 +39,17 @@ tags:
 开发者将向读者收取比作者设定的筹集资金目标多 10％ 的费用。例如，如果作者设定 0.01 BTC 作为筹集资金目标，读者将支付总共 0.011 BTC。作者获得 0.01，开发者获得 0.001，因为开发者要支付服务器成本，开发成本以及对应用作相应的 bug 修复。
 
 感兴趣可以去体验下，网址：[https://lightningscratchcard.io](https://lightningscratchcard.io)。Good Luck！
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

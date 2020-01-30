@@ -16,6 +16,17 @@ tags:
 
 这是「区块链技术指北」的第 **65** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 前言
 ***
 
@@ -102,6 +113,17 @@ Edgeware 也是 Polkadot 生态的项目，与 ChainX 不同的是，Edgeware �
 
 > 链接: https://www.dropbox.com/sh/7dalrji5iswb2dh/AABG6Ijyxl5Qlo0MSTSBo2w_a?dl=0
 > 密码: JtkzRbd3WsC@W+vZ+Xhsh99iHMFf2;oK
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ### 五 参考资料
 ***

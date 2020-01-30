@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **60** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 关于 SERO，可以阅读笔者之前的文章：[匿名货币 2.0 SERO](https://dbarobin.com/2019/01/20/sero-cash)。
@@ -32,6 +43,17 @@ SERO 已发布 SERO Flight Wallet 公测版，目前支持 Android 和 iOS，iOS
 > 题图来自: © Robin / SERO Flight Wallet 公测版发布 / dbarobin.com
 
 SERO 最近在大力做营销，相关的活动可以关注微信公众号「SERO超零协议」，还有订阅 [Telegram Channel](https://t.me/SEROannouncements)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

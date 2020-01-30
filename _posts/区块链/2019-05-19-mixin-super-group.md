@@ -41,6 +41,17 @@ comments:
 
 这是「区块链技术指北」的第 **63** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 | 版本 | 更新历史 | 更新时间 | 备注 |
 | :------: | :------: | :------: | :------: |
 | v1.0 | 文档初稿 | 2019/05/19 12:49:38 | 全网公开 |
@@ -633,6 +644,17 @@ $ systemctl restart test.message.service
 ***
 
 打开 Mixin，搜索机器人 ID，添加应用，点击机器人授权，多拉几个人即可进行测试。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 五 小结
 ***

@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **55** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 Bixin Android 最新版，版本号 3.6.0，目前正式支持闪电网络，下载地址点击 [此处](https://bixin.com/webapp)。
@@ -34,6 +45,17 @@ Bixin Android 最新版，版本号 3.6.0，目前正式支持闪电网络，下
 笔者使用 Hoo iOS 专业版向币信转了一笔，接着想从币信转账到 Hoo 钱包。币信闪电网络转账和 Hoo 钱包手续费一致，都是 1 聪，不过坑爹的地方来了，币信要求 KYC，包含了身份证登记、银行卡登记、面部识别登记，于是放弃了。
 
 笔者将会持续关注闪电网络，欢迎通过 [RSS](https://dbarobin.com/feed.xm) 订阅本博客。区块链技术指北社区也有 [Lightning](https://bbs.chainon.io/t/lightning) 模块，欢迎关注。此外，读者还可以关注笔者的 [Twitter](https://twitter.com/vrwio)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 
