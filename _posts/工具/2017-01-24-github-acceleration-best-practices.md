@@ -23,6 +23,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 GitHub 简称 GayHub，又称世界上最大的同性交友平台，还称程序员的左右手。但由于众所周知的原因，GitHub 在没有翻墙的前提下，访问速度就像乌龟在漫步，让追求效率的程序员痛苦不堪，恨不得肉身翻墙，享受优质互联网服务的同时晒晒太阳，吹吹海风。
 
 熟练的程序员基本上都使用 Terminal 或者命令行访问 GitHub。那么问题来了，怎么优雅地使用 GitHub 呢？我觉得应该分享分享。
@@ -152,6 +163,17 @@ PC 可以使用 `Shadowsocks for Windows`，然后 Shadowsocks 设置为全局�
 最后，为自由付费是值得的。最近工信部颁文：**[未经批准不得自建或租用 VPN](http://www.miit.gov.cn/n1146290/n4388791/c5471946/content.html)**，以后的墙只会越来越高，自由的成本也会越来越高，珍重！
 
 Enjoy!
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

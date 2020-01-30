@@ -111,6 +111,17 @@ comments:
 
 赠人玫瑰，手有余香。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 硬件篇
 ***
 
@@ -678,6 +689,17 @@ comments:
 GitHub 地址：[https://github.com/dbarobin/liqi](https://github.com/dbarobin/liqi)，本文同步更新。
 
 © 2016 Robin Wen
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

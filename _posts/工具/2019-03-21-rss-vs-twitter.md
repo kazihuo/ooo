@@ -39,6 +39,17 @@ comments:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 前言
 ***
 
@@ -72,6 +83,17 @@ OPML 文件生成之后，接着访问 Feedly 的 [OPML Import](https://feedly.c
 ***
 
 RSSHub 的 Slogan 是「**万物皆可 RSS**」，提供了比较多的订阅源，读者也可以按照 RSSHub 的规范个性化定制。RSS 在个人信息订阅服务这个事情上大有作为，感兴趣的读者可以自行研究。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 参考资料
 ***
