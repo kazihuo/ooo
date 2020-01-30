@@ -14,6 +14,8 @@ tags:
 
 `文/robin`
 
+***
+
 **本站推广**
 
 币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
@@ -71,6 +73,8 @@ PGP 可以进行安全验证，因为 Gmail 也不安全，发私密邮件，可
 ![Screenshots of dbarobin.com at 2017.02.26](https://dbarobin.com/images/dbarobin.com.screenshots.170226.png)
 
 Enjoy!
+
+***
 
 **本站推广**
 
