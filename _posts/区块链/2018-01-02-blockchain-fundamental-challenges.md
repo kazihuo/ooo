@@ -15,6 +15,17 @@ tags:
 
 > 本文由币乎社区（bihu.com）内容支持计划奖励。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 这是「区块链技术指北」的第 14 篇文章。
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
@@ -131,6 +142,17 @@ Kasireddy 明年（2018 年）的目标是：
 本文提出了不少问题，也提出了很多解决方案。一个技术从诞生到普及需要时间的积累，现在没有人说 Android 不成熟。
 
 想要了解本文的完整内容，[点此](https://medium.com/@preethikasireddy/fundamental-challenges-with-public-blockchains-253c800e9428) 阅读。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
