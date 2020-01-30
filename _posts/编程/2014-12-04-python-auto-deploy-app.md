@@ -21,6 +21,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 1.文档摘要 ##
 
 > Python 自动化打包业务和认证平台，本机只需执行脚本，远程即可自动部署。脚本采用Python编写，远程调用使用Fabric实现。
@@ -1222,6 +1233,17 @@ python-auto-deploy：<a href="https://github.com/dbarobin/python-auto-deploy" ta
 ## 8.项目说明 ##
 auto_deploy_app_v2: 适用于Linux。
 auto_deploy_app_windows: 适用于Windows。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 
