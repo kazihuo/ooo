@@ -13,6 +13,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 Telegram 是一款著名的 IM，笔者使用频率相当高。Telegram 相比其他 IM 有什么优势，读者可以点击 [此处](https://telegram.org/faq) 阅读。
 
 ![](https://cdn.dbarobin.com/2efMSBS.png)
@@ -52,5 +63,16 @@ IP-CIDR,216.58.197.100/32,Proxy,no-resolve
 根据实测，优化前后，某个未读消息超过上千条的群，点击未读消息秒级极速加载，图片、视频、音频加载速度也得到显著提升。当然，笔者懒，没法给出具体数据。读者不妨试试这个技巧，感受下比微信还流畅的聊天是什么个体验。
 
 –EOF–
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

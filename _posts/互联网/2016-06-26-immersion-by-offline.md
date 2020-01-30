@@ -27,6 +27,17 @@ comments:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 从 2015 年开始，笔者就很少去参加技术分享了。一方面，工作确实很忙，空闲时间又有一大堆事情要做；另一方面，参加这类技术分享的时间成本太高，收益太少。不过，本次由离线空间主办的 [线下活动](https://zhuanlan.zhihu.com/p/21369942)，期待已久，个人认为这类分享很值得一去，因为你可以认识很多不同行业背景的人，他们有趣，往往会给你带来很多好玩、新鲜、很酷、高级的东西，对你的认知升级有很好的启发。
 
 可能读者不太清楚，离线究竟是什么？
@@ -64,6 +75,17 @@ comments:
 ![Book by Offline](https://cdn.dbarobin.com/akaoMQS.jpg)
 
 –EOF–
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
 

@@ -12,6 +12,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 根据「七麦数据」的 [监控](https://www.qimai.cn/rank/offline)，每天不同地区的 App Store 都有不同数量的应用下架。下架的原因多种多样，当然国区还要受益于某国特殊的环境。在特殊时期，某类应用还会被批量下架，不要折腾，不要喧嚣，一片和谐多好。
 
 ![Apple](https://cdn.dbarobin.com/r4WF9jd.jpg)
@@ -27,5 +38,16 @@ tags:
 笔者目前已经全局使用美区 Apple ID，如果有通畅的网络，美区 Apple ID 其实很好用。笔者认为，没有什么比信息自由和隐私更重要的。祝每位读者在信息自由和保护隐私的路上更进一步。
 
 –EOF–
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

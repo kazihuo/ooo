@@ -12,6 +12,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 RSS（ 简易信息聚合）是一种消息来源格式规范，用以聚合经常发布更新数据的网站，例如博客文章、新闻、音频或视频的网摘。RSS 文件（或称做摘要、网络摘要、或频更新，提供到频道）包含全文或是节录的文字，再加上发布者所订阅之网摘数据和授权的元数据。[1]
 
 RSS 的第一个版本为 RDF Site Summary，在 1999 年三月由美国网景公司的 Guha 为了用在 My.Netscape.Com 门户网站而开发。这个版本开始以 RSS0.9 为名。[2] 随后，被称为互联网之子的「亚伦・斯沃茨」参与了 [RSS 1.0](http://web.resource.org/rss/1.0) 标准的制定。最新的版本是 2.0，于 2009 年由 RSS Advisory Board 发布。目前支持较多的也是 1.0 和 2.0 这两个版本。
@@ -43,5 +54,16 @@ RSS 阅读器的变迁也是一部互联网的进步史。曾经风靡一时的 
 > [3] Eric_hong (2017-07-06). 纪念为 RSS 而生的鲜果阅读. Retrieved from [https://sspai.com/post/39919](https://sspai.com/post/39919).
 
 –EOF–
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>

@@ -5,12 +5,23 @@ layout: post
 title: "失控"
 category: 互联网
 summary: "互联网思维带来的世界观和方法论，人类的文明形态也会发生天翻地覆的变化。或许，我们活在一个最好的时代。"
-tags: 
+tags:
 - 互联网
 - 书评
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 最近看完了凯文·凯利的《失控》，给我带来的震撼是前所未有的。作者从蜂群开始谈起，娓娓道来很多我们之前没有强烈意识到的问题。
 
@@ -45,6 +56,17 @@ KK 的思想和老子的思想有很多类似的地方，如果时光交错，�
 你会发现很有意思。KK 的思想和老子的思想如出一辙。老子讲：**「人法地，地法天，天法道，道法自然」**，道家的思想在于自然和无为。老子讲顺其自然，庄子讲安身立命，讲的都是接受自然发生的一切，顺应自然的就是美的，顺应自然的就是符合道的。老子的无为思想不是讲无所为，而是顺应自然、无妄为，无为而治乃是最高管理的最高境界。罗胖在「总统是怎么被扒光的」一期节目中提到，美国先进的不是制度， 而是制度下里的每一个人。每一个人都各司其职，尽所己能地做好自己地本份工作，不妄为，这本身就是无为思想地一种体现。《失控》的最后一章，KK 总结了**九律**：分布式（Distribute being）、自下而上的控制（Control from the bottom up）、递增收益（Cultivate increasing returns）、模块化生长（Grow by chunking）、边界最大化（Maximize the fringes）、鼓励范错误（Honor your errors）、不求最优化，但求多目标（Pursue no optima, have multiple goals）、谋求持久的不均衡态（Seek persistent disequilibrium）合变自生变（Change changes itself），这和老子的思想有着异曲同工之妙。
 
 互联网思维带来的世界观和方法论，人类的文明形态也会发生天翻地覆的变化。**或许，我们活在一个最好的时代。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

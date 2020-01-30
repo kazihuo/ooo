@@ -12,6 +12,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 Fenng 写了一篇文章，标题叫做「[个人 Blog 时代的终结](http://dbanotes.net/review/blog-is-over.html)」，发布于 2018 年 12 月 14 日，然而今天 RSS 才推送给我。
 
 > BTW：从去年年底到现在，写了数篇区块链相关的文章，接下来我会尝试更多的写作方式，内容没有边界。
@@ -37,6 +48,17 @@ Fenng 写了一篇文章，标题叫做「[个人 Blog 时代的终结](http://d
 笔者获取的大量优质信息，都是来源于个人 Blog。热爱自由的极客，或许还会用 Blog 延续互联网精神。只要互联网存在，总会有那么一批人认真地记录着，个人 Blog 时代永远不会终结，只是它在用新颖的方式迭代。
 
 –EOF–
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
 

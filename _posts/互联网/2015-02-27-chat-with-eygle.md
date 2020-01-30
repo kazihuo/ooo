@@ -13,6 +13,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 新年开班的第一篇文章，多少有些期许。希望自己在 2015 年能做到每日精进，平安开心，也就无所求了。其他的大志大向、规划目标，就让它随波逐流，飘到哪里是哪里。
 
 这片文章本来打算早些完成，春节来临，亲情要紧，于是作罢。今日提笔，突然觉得那些箴言片语依然回荡在耳边，不敢独享，遂作此文。
@@ -34,5 +45,16 @@ tags:
 –EOF–
 
 题图来自：<a href="http://t.cn/Rw03KnN" target="_blank">@Eygle</a>
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
