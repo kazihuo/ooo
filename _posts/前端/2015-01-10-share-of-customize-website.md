@@ -24,6 +24,15 @@ comments:
 
 ## 目录 ##
 
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 * Table of Contents
 {:toc}
 
@@ -126,6 +135,15 @@ blockquote {
 这次建站经历于我而言是相当宝贵的，很多看似简单的问题，真正实施的时候未必如此。常言**知易行难**，这次感触颇深。把整个建站过程分享给大家，希望能给读者丁点启示，实乃欣慰。**更希望我在自己的小屋里好好写作，静心而为，大放异彩。**
 
 Enjoy!
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

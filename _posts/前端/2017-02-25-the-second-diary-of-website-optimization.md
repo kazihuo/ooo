@@ -14,6 +14,15 @@ tags:
 
 `文/robin`
 
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 在第一篇网站优化日志中，写到了一些优化策略。本篇文章从主题格式、增加功能方面讲解下网站的优化。
 
 **第一，博客主题由两列显示改为一列显示**，右侧导航栏完全取消，包括关于、Google 搜索、分类、Blogroll。
@@ -62,6 +71,15 @@ PGP 可以进行安全验证，因为 Gmail 也不安全，发私密邮件，可
 ![Screenshots of dbarobin.com at 2017.02.26](https://dbarobin.com/images/dbarobin.com.screenshots.170226.png)
 
 Enjoy!
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 
