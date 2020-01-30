@@ -16,6 +16,17 @@ tags:
 
 > 本文由币乎社区（bihu.com）内容支持计划奖励。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 这是「区块链技术指北」的第 5 篇文章。
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
@@ -58,6 +69,17 @@ Token Contract Address 表示合约地址，Token Symbol 表示 Token 的代号�
 我们还可以通过 [Ethereum Based Tokens](https://theethereum.wiki/w/index.php/Ethereum_Based_Tokens) 查看知名项目的 Token 信息。
 
 本文比较基础，主要是给读者一个手动添加 Token 的指引，希望对读者有所帮助。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 
