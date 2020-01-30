@@ -13,6 +13,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 前言
 ***
 
@@ -63,10 +74,16 @@ USDT 于 2014 年发行，现在有 4 个版本，分别是 Omni（比特币）�
 
 在 USDT 强势垄断的稳定币市场，BUSD 将会以崭新的方式加快资产的流动，让我们拭目以待吧。
 
-币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易，目前上架的币种数量为 166 个。
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
 
 > 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
 > 邀请码: **11190872**
+
+***
 
 ## 四 币安说
 ***

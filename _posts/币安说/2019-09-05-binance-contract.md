@@ -13,6 +13,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 前言
 ***
 
@@ -70,10 +81,16 @@ Binance 将上线合约交易平台（Binance Futures），并同时推出两个
 
 可能部分读者会担心合约的高风险，因为前有很多 OKEx 合约的黑幕爆料。币安此次推出的双合约争霸赛是模拟盘，完全可以尝试，对理解合约也很有帮助，排名靠前还有奖品拿。
 
-币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易，目前上架的币种数量为 166 个。
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
 
 > 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
 > 邀请码: **11190872**
+
+***
 
 ## 四 币安说
 ***
