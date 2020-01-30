@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **52** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 3 月 20 日，Lightning Labs 发布 Lightning Loop Alpha。[1] 此次更新被称为 Loop Out。
@@ -38,6 +49,17 @@ Lightning Loop 有什么作用呢？Lightning Loop 目的是解决目前通道�
 * [Lightning Labs Releases Alpha Version of Lightning Offramp Solution Lightning Loop](https://cointelegraph.com/news/lightning-labs-releases-alpha-version-of-lightning-offramp-solution-lightning-loop)
 
 此外，如果想深入了解 Lightning Loop 的技术实现，可以在 GitHub 查看，链接点击 [此处](https://github.com/lightninglabs/loop)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

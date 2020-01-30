@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **49** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 2019 年 3 月 15 日，Mixin Messenger Desktop 在 GitHub 开放下载，链接 [在此](https://github.com/MixinNetwork/desktop-app/releases)。目前支持 Windows 和 macOS。
@@ -42,6 +53,17 @@ tags:
 > 图片来自: © Robin / Mixin Messenger Desktop / original
 
 Enjoy！
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 最后，本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

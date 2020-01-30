@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 43 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 ![](https://cdn.dbarobin.com/smxzEPJ.png)
@@ -191,6 +202,17 @@ LIMIT ?, ?
 ***
 
 SQL 语句优化是一门不断试错，不断否定自己的学问。读者需要对业务逻辑有深刻的认识，才有可能优化出对业务友好的 SQL 语句。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

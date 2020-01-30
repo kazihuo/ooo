@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **48** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 我们都知道，比特币交易需要确认时间，根据消耗的矿工费不同，确认时间也不同。从 BitInfoCharts 的 [Bitcoin 平均交易确认时间图像](https://bitinfocharts.com/zh/comparison/bitcoin-confirmationtime.html#3m) 我们可以得出，最近 3 个月平均交易确认时间在 10 分钟以内，但把时间维度扩大，最长平均交易时间到了 360 分钟。对比国内流行的支付宝、微信支付等秒级支付方式，比特币不确定的交易时间很难达到大规模利用，这也是比特币广为诟病的地方之一。
@@ -52,6 +63,17 @@ tags:
 闪电网络离比特币的 **A Peer-to-Peer Electronic Cash System** 又近了一步。
 
 **闪电网络，未来已来。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 最后，本博客开通了闪电网络打赏，读者可以扫描下方的闪电网络二维码（博客右侧导航栏也有）进行打赏。
 

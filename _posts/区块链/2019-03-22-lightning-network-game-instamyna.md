@@ -15,6 +15,17 @@ tags:
 
 这是「区块链技术指北」的第 **53** 篇文章。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」，同时我会把你拉入微信群。
 
 ## 前言
@@ -113,6 +124,17 @@ function calcSeed(server_seed, client_seed, nonce) {
 ***
 
 相信读者也看明白了，游戏宣传是比特币挖矿游戏，实际上这就是骰子游戏啊。比特币闪电网络的极速支付，将会诞生越来越多的 Lapp。笔者将会持续关注闪电网络，欢迎通过 [RSS](https://dbarobin.com/feed.xm) 订阅本博客。区块链技术指北社区也有 [Lightning](https://bbs.chainon.io/t/lightning) 模块，欢迎关注。此外，读者还可以关注笔者的 [Twitter](https://twitter.com/vrwio)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 Enjoy！
 
