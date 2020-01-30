@@ -19,6 +19,17 @@ tags:
 
 > 本文由币乎(bihu.com)优质内容计划支持。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 这是「区块链技术指北」的第 26 篇文章。
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
@@ -48,6 +59,17 @@ tags:
 8、最后，提供一条消息，连 Bitfinex 都开始构建基于 EOS 的去中心化交易所 **[EOSfinex](https://medium.com/bitfinex/announcing-eosfinex-69eea273369f)**。
 
 **祝大家新年快乐，平安喜顺！**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 「区块链技术指北」同名 **知识星球**，二维码如下，欢迎加入。BTW，**李笑来老师也加入了**。
 

@@ -22,6 +22,17 @@ tags:
 
 ***
 
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
+***
+
 [https://press.one/p/address/v?s=02d1508e49149b17838d86ca9a83ce322baae28c6de8edac72f9d25d8f038a7d1ef3d97a29611529474d6081c2e2d6b50f4dcc85c8c255ecfc4ad32c76b99c3d0&h=93cec5f964299b63f9a0f657c580129f7e1a18dc076a0d8a978e73476099ebe9&a=22d3a65fa68303cdf0f1a38223b97efe48eb2529&f=P1&v=2](https://press.one/p/address/v?s=02d1508e49149b17838d86ca9a83ce322baae28c6de8edac72f9d25d8f038a7d1ef3d97a29611529474d6081c2e2d6b50f4dcc85c8c255ecfc4ad32c76b99c3d0&h=93cec5f964299b63f9a0f657c580129f7e1a18dc076a0d8a978e73476099ebe9&a=22d3a65fa68303cdf0f1a38223b97efe48eb2529&f=P1&v=2)
 
 –EOF–

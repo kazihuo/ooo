@@ -58,6 +58,17 @@ comments:
 
 > 本文由币乎(bihu.com)优质内容计划支持。
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 这是「区块链技术指北」的第 24 篇文章。
 
 > 如果对我感兴趣，想和我交流，我的微信号：**Wentasy**，加我时简单介绍下自己，并注明来自「区块链技术指北」。同时我会把你拉入微信群「区块链技术指北」。BTW，李笑来老师也加入了我的知识星球，文末有加入方式。
@@ -91,6 +102,17 @@ comments:
 另外，区块链的另一个特性是不可篡改，也就是只能 INSERT。Git 呢？GitHub 托管的 repo 里的内容本身是可以修改的，然而这个 commit 历史却是无法修改的。每一次 commit 都有唯一标志，本次 commit 会有 parent commit 的信息。Git 产生的 log 也可以通区块链数据库进行类比。
 
 **也就是说，Git 是简化的 blockchain，用 Git 来理解区块链，这个事情是不是特别有趣？**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **参考**
 

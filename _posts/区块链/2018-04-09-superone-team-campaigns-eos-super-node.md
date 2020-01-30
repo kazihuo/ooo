@@ -41,6 +41,17 @@ comments:
 
 > 题图来自: © SuperONE / SuperONE / superone.io
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 何为 EOS 超级节点？
 ***
 
@@ -161,3 +172,14 @@ EOS 钱包视频介绍：
 ***
 
 凭借 SuperONE 团队雄厚的技术实力和运营能力，相信我们会是 EOS 超级节点的有力竞争者，顺祝 SuperONE 团队竞选成功，共同促进 EOS 生态的发展。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
