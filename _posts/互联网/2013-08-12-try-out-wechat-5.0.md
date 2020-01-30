@@ -10,6 +10,8 @@ tags:
 - 微信
 ---
 
+`文/robin`
+
 ***
 
 **本站推广**
@@ -19,7 +21,7 @@ tags:
 > 币安注册: https://www.binancezh.com/cn/register/?ref=11190872
 > 邀请码: **11190872**
 
-`文/robin`
+***
 
 最新微信 5.0 很火，关于微信 5.0 的文章太多了，几乎各大媒体、各个自媒体人都在谈论这个，我也凑下热闹，不过我不谈太宏观的东西，一是我不会，二是我也没这本领，三是为了接地气。本文站在用户的角度来谈谈微信 5.0，做一回 UX。
 
@@ -45,5 +47,7 @@ tags:
 
 > 币安注册: https://www.binancezh.com/cn/register/?ref=11190872
 > 邀请码: **11190872**
+
+***
 
 版权声明：自由转载-非商用-非衍生-保持署名<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">（创意共享4.0许可证）</a>
