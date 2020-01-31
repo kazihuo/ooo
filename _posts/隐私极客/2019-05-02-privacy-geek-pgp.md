@@ -16,6 +16,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 4 月份这个专栏开了个头，这算是「**隐私极客**」的第一篇文章。想了许久，第一篇文章写什么主题呢？列了很多大纲，最后还是选定 PGP。
 
 PGP 是什么呢？不少从事互联网行业的可能也未必知道，这个技术不断地从我们的视野中消失，然而这却是一个相当有用的技术。可能读者会好奇独立博客博主为什么会在自己的博客上留 PGP 公钥，也在某些电影看到 PGP 用于发送邮件。诚然，虽然普通网民越来越少地使用 PGP，但 PGP 用到的非对称加密是加密学领域非常重要的技术。
@@ -61,6 +72,17 @@ PGP 适用于大多数加密传输的场景。有了 PGP，读者甚至可以在
 * 务必保存好私钥、密码。
 
 只要自己的私钥安全、密码安全，可以说只有信息交互的双方才能解密，再顶级的黑客也无能为力。保护隐私非常重要，PGP 就是一个非常实用的利器，希望本文能给注重隐私的读者带来一些帮助。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 最后，为了安全起见，读者只有四个渠道订阅本专栏，第一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)。第二是在线小册，[https://privacy.dbarobin.com](https://privacy.dbarobin.com)。第三是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。第四是 Mixin Channel，下载安装 [Mixin Messenger](https://mixin.one/messenger) 之后，访问 [mixin://users/b8f7e6e4-9ac2-4a85-9b17-257faac2d8d6](mixin://users/b8f7e6e4-9ac2-4a85-9b17-257faac2d8d6) 订阅。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等），Mixin Channel 作为同步渠道。归档页面点击 [此处](https://dbarobin.com/privacy/)。
 

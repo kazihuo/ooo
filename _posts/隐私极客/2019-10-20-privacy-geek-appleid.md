@@ -16,6 +16,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 上一篇文章讲解了 [ProtonMail](https://dbarobin.com/2019/10/13/privacy-geek-protonmail/)，提到 ProtonMail 的一些使用技巧。本篇文章为大家讲讲大家习以为常的 Apple ID。
 
 ![](https://cdn.dbarobin.com/r4WF9jd.jpg)
@@ -45,6 +56,17 @@ tags:
 第八，如果读者还在使用国区 Apple ID，强烈建议不要将敏感信息同步到 iCloud，也建议将备份放到 Mac。
 
 以上建议和技巧希望能够给读者带来帮助，Apple ID 的安全和隐私非常重要，读者千万不能掉以轻心。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ***
 

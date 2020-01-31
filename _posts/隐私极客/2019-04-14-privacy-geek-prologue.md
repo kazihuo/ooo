@@ -15,6 +15,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 酝酿了一段时间，新专栏「**隐私极客**」终于和大家见面了。
 
 关于隐私，「[黑客伦理与信息时代精神](https://book.douban.com/subject/1071093)」写到：「言论自由和隐私权一直是很重要的黑客理想，网络的发展也一直与此一致。隐私不只是一个伦理问题，它还是一个技术问题」。
@@ -32,6 +43,17 @@ tags:
 这个专栏会给读者带来哪些内容呢？一个软件、一个技巧、一则资讯、一篇感悟……主题只有一个，那就是「**隐私**」。至于更新频率，笔者向来比较随性，但笔者可以保证的是，这个专栏会持续写下去，因为隐私是个亘古不变的话题，而且这也是笔者感兴趣的一个方向。
 
 借用 [PeterCxy](https://github.com/PeterCxy) 的一句话：**希望从今以后，隐私不会再只是茶余饭后一笑而过的谈资**。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 最后，为了安全起见，读者只有四个渠道订阅本专栏，第一是本博客，RSS 订阅点击 [此处](https://dbarobin.com/feed.xml)。第二是在线小册，[https://privacy.dbarobin.com](https://privacy.dbarobin.com)。第三是 Telegram Channel，名叫 [隐私极客](https://t.me/privacygeek)。第四是 Mixin Channel，下载安装 [Mixin Messenger](https://mixin.one/messenger) 之后，访问 [mixin://users/b8f7e6e4-9ac2-4a85-9b17-257faac2d8d6](mixin://users/b8f7e6e4-9ac2-4a85-9b17-257faac2d8d6) 订阅。博客以文章为主，Telegram Channel 内容多样化且碎片化（图片、音频、视频、文字、链接等），Mixin Channel 作为同步渠道。归档页面点击 [此处](https://dbarobin.com/privacy/)。
 

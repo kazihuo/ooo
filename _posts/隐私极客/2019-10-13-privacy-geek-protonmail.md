@@ -16,6 +16,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 上一篇文章讲解了 [Gmail](https://dbarobin.com/2019/10/01/privacy-geek-gmail)，提到注册 Gmail 的必要性以及一些使用技巧。本篇文章为大家讲讲另一个邮箱服务 ProtonMail。
 
 早在 2017 年，余弦在「懒人在思考」中推荐了 ProtonMail。余弦列举了 13 条 ProtonMail 的优势，诸如开源、点对点加密、注册不需要个人隐私、服务器在瑞士、安全、支持 Tor 等等。[1]
@@ -57,6 +68,17 @@ tags:
 * [ProtonMail theme creator](https://scastiel.gitlab.io/protonmail-theme-creator/)，主题生成器
 
 在 Gmail 之外，ProtonMail 是一个相当不错的邮箱补充服务。ProtonMail 在安全和隐私方面做到了极致，强烈建议读者用起来。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ***
 

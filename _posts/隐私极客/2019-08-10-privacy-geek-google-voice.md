@@ -15,6 +15,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 上一篇文章讲解了 [Firefox](https://dbarobin.com/2019/07/21/privacy-geek-firefox)，提到 Firefox 的使用技巧。本篇文章为大家讲解 [Google Voice](https://voice.google.com)。
 
 可能读者不太清楚 Google Voice 是啥，笔者简单介绍下。
@@ -34,6 +45,17 @@ Google Voice 可以用来接收短信、打电话，前提是要科学上网。�
 如果读者有朋友在美国或者有自己去美国的计划，可以代购或者购买 [Google Fi](https://fi.google.com)，这东西除了资费贵之外，几乎是最完美的全球网络解决方案。Google Fi 可以绑定之前的 Google Voice 号码，也可以申请新的，相当方便。
 
 隐私应该是个人坚决捍卫的权利，Google Voice 是每个注重隐私保护的读者必备利器。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ***
 

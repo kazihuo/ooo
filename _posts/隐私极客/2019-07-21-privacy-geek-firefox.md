@@ -15,6 +15,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 上一篇文章讲解了 [DuckDuckGo](https://dbarobin.com/2019/06/07/privacy-geek-duckduckgo)，提到 DuckDuckGo 适合 Firefox 配合使用，本篇文章就为大家讲解 Firefox。
 
 ![](https://cdn.dbarobin.com/kkqHnTR.jpg)
@@ -53,6 +64,17 @@ Firefox 可以说是黑客利器，连 Tor Browser 都是基于 Firefox ESR 的�
 第四，Firefox 有 Firefox Monitor 服务，可用来查询使用者的电子邮件地址是否曾经出现在外泄的数据库中。该服务由 Mozilla 和 HaveIBeenPwned.com 合作推出，当用户在 [https://monitor.firefox.com](https://monitor.firefox.com) 网站上输入自己的邮箱地址时，系统就会比对由 Have I Been Pwned 所搜集的外泄资料库（包含来自中国网站和服务泄漏的数据），倘若查询到符合的资料，会具体显示该电子邮件曾出现在哪些外泄事件中，用户则应该立即去修改密码。此外，从 Firefox 70 开始，如果浏览器保存的登录信息出现在已暴露数据库内 Mozilla 将会发出警告。
 
 注重隐私未来是大势所趋，Firefox 浏览器将成为这部分用户的首选。Chrome 和 Google 的服务绑定太深，抛开 Chrome，选择还有很多。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ***
 
