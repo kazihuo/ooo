@@ -5,13 +5,24 @@ layout: post
 title: "缺乏导入数据权限，SQL Server创建测试数据"
 category: 数据库
 summary: "只具有生产库的登录、查询、创建临时表权限，缺失导入数据（比如Excel文件、txt文档、sql脚本等等）权限，需要创建临时表，插入测试数据。"
-tags: 
+tags:
 - 数据库
 - Database
 - MSSQL
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 环境 ##
 
@@ -243,6 +254,17 @@ paste -d ","source1.txt source2.txt source3.txt source4.txt > result.txt
 sed 's/^/INSERT INTO ##tempVALUES(/g' result.txt -i
 sed 's/$/);/g'result.txt -i
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

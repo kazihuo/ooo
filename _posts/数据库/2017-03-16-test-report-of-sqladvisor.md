@@ -15,6 +15,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 0x00 目录
 ***
 
@@ -297,6 +308,17 @@ idx_LID_GT(LID,GT)
 ***
 
 美团点评开源 SQL 优化工具 SQLAdvisor 得到的优化建议比较满意，建议在线上试用一段时间。这个工具的成本在于需要在线上 DB 安装相关依赖，如果确认采用，可以考虑在初始化 DB 服务器时部署此工具。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 0x05 参考
 ***

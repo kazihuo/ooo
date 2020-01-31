@@ -5,7 +5,7 @@ layout: post
 title: "MySQL集群建议"
 category: 数据库
 summary: "基于以上分析，我给你的建议是：主主复制被动模式+Slave+MMM。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -17,6 +17,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **问题**
 
@@ -45,6 +56,17 @@ tags:
 题图来自CNBlog。
 
 供你参考。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

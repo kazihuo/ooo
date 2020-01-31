@@ -5,7 +5,7 @@ layout: post
 title: "MySQL UUID() 函数"
 category: 数据库
 summary: "MySQL 实现了 UUID，并且提供 UUID() 函数方便用户生成 UUID。在 MySQL 的 UUID() 函数中，前三组数字从时间戳中生成，第四组数字暂时保持时间戳的唯一性，第五组数字是一个 IEEE 802 节点标点值，保证空间唯一。使用 UUID() 函数，可以生成时间、空间上都独一无二的值。据说只要是使用了 UUID，都不可能看到两个重复的 UUID 值。当然，这个只是在理论情况下。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -19,6 +19,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 引子 ##
 
@@ -346,6 +357,17 @@ mysql> SELECT UUID_SHORT();
 * MySQL 中，utf8 字符集下，生成的 UUID 长度为 36 位；
 * 不同机器生成的 UUID 不同，包括第五组值；
 * 在复制环境中，使用到 UUID() 函数，则一定要使用基于行或者基于混合模式复制方式。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 六 Ref ##
 

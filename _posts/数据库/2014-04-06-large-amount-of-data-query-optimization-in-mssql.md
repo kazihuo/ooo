@@ -5,7 +5,7 @@ layout: post
 title: "SQL Server DBA调优日记（一）大数据量查询记录数优化及原理探讨"
 category: 数据库
 summary: "count(*)在没有索引的情况下速度慢的原因是走的全表扫描，使用sysindexes速度快的原因是直接从该视图中得到记录数。"
-tags: 
+tags:
 - 数据库
 - Database
 - MSSQL
@@ -18,6 +18,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 问题描述 ##
 
@@ -63,7 +74,7 @@ BEGIN
         cast(cast(rand(checksum(newid()))*100000000 AS int)
         AS varchar),9) AS VARCHAR(40))
         UNION ALL
-        SELECT id+1,cast('13'+right('000000000'+ 
+        SELECT id+1,cast('13'+right('000000000'+
         cast(cast(rand(checksum(newid()))*100000000 AS int)
         AS varchar),9) AS VARCHAR(20)),
         cast('name_'+right('000000000' +
@@ -285,6 +296,17 @@ CREATE NONCLUSTERED INDEX idx_nonclu_count_test ON count_Test(id);
 说点题外话，在插入数据时，最开始我采用了WHILE循环插入10亿条数据，等了两个多小时还没插入完，只好停掉，改用CTE插入数据。CTE插入数据的效率很高，数据文件大小以近2M/s的速度递增，但是由于数据量太大，也只好停掉，把10亿改成1000万。插入1000万数据用时4分52秒，数据文件占用磁盘空间470M，日志文件占用磁盘空间2.3G，但做统计记录数时看不到效果，所以改成插入1亿条数据。插入1亿条数据用时47分29秒，数据文件占用磁盘空间4.54G，日志文件占用磁盘空间33.28G。从插入数据的数据量级别我们知道，每多一个数量级，插入数据的时间会成倍地增长，具体多少倍有很多因素影响，比如系统空闲率、机器CPU和IO负载、插入的数据每行占用空间是否一致等等。这里还需要搞明白一个问题，那就是为什么CTE法那么快？首先我们了解下CTE。公用表表达式（Common Table Expression)是SQL SERVER 2005版本之后引入的一个特性。CTE可以看作是一个临时的结果集，可以在接下来的一个SELECT，INSERT，UPDATE，DELETE，MERGE语句中被多次引用。使用公用表达式可以让语句更加清晰简练。本文中的插入示例使用了CTE递归查询。CTE递归查询原理是这样的：第一步，将CTE表达示拆分为“定位点成员”和“递归成员”；第二步，运行定位点成员，执行创建第一个结果集R0；第三步，运行递归成员时，将前一个结果集作为输入(Ri)，将Ri+1作为输出；第四步，重复第三步，直到返回空集；第五步，返回结果集，通过UNION ALL合并R0 到 Rn的结果。熟知编程的读者清楚，递归在编程中效率也是极高的。同样，CTE采用递归后插入数据会变得相当得高，从数据文件的增长速率就可以看出，使用CTE之前数据文件增长以几K每秒的速度增长，使用CTE之后，数据文件以近2M每秒的速度增长。搞清楚CTE为什么那么快后，这里还说下清空日志文件的小技巧。我们使用DROP TABLE count_Test后，数据文件和日志文件的空间并不会真正清空，这时如果我们执行DBCC  SHRINKDATABASE(db_test_wgb)（注：db_test_wgb为数据库名）后，你会发觉数据文件和日志文件从数十G一下变成几M。这和Oracle中的SHRINK TABLE有几丝类似。这里还得着重强调下，不要在生产库中执行此语句，否则会让你后悔莫及！切记！
 
 最后说明下，本文参考了姜敏前辈的这两篇文章，<a href="http://www.cnblogs.com/ASPNET2008/archive/2010/12/18/1910147.html" target="_blank">软件开发人员真的了解SQL索引吗(聚集索引)</a>和<a href="http://www.cnblogs.com/ASPNET2008/archive/2010/12/18/1910183.html" target="_blank">软件开发人员真的了解SQL索引吗(索引原理)</a>，还参考了宋沄剑前辈的文章：<a href="http://www.cnblogs.com/CareySon/archive/2011/12/12/2284740.html" target="_blank">T-SQL查询进阶--详解公用表表达式(CTE)</a>。如果想了解索引原理，强烈建议阅读姜敏前辈的这篇文章：<a href="http://www.cnblogs.com/ASPNET2008/archive/2010/12/18/1910183.html" target="_blank">软件开发人员真的了解SQL索引吗(索引原理)</a>。对于什么是IAM，读者可以看下微软的官方文档，<a href="http://technet.microsoft.com/zh-cn/library/ms187501(v=sql.105).aspx" target="_blank"></a>管理对象使用的空间。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

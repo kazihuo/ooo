@@ -22,6 +22,17 @@ tags:
 `文/Marcelo Altmann`
 `译/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 大多数人都已经听说 `NoSQL` 数据库，其中使用最广泛的工具是 `Memcached`，你们通过 Memcached 再应用层和数据库之间添加一个缓存层。从 MySQL 5.6 开始，你可以获得一个全新的插件，这个插件把 MySQL 和 Memcached 集成起来。在此文中，我们将学习怎样在 Linux 中 安装这个插件，怎样做一些基础的配置。
 
 ## 先决条件 ##
@@ -452,6 +463,17 @@ Value of key1 is:Entry modified  directly on MySQL
 > daemon_memcached_option="-p11222"
 
 就是这样，我希望你已经学会了如何安装和配置 MySQL 和 Memcached 插件的集成工作。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

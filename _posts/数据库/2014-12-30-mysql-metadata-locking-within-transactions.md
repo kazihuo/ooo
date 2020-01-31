@@ -5,7 +5,7 @@ layout: post
 title: "MySQL事务中的元数据锁"
 category: 数据库
 summary: "MySQL 5.5中表的“元数据锁”一直到整个”事务”全部完成后才会释放，而5.1中，一个事务请求表的“元数据锁”直到“语句”执行完毕。这个特性的好处在于可以避免复制过程中日志顺序错误的问题。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -15,6 +15,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 首先看两个例子:
 
@@ -201,6 +212,17 @@ Query OK, 0 rows affected (0.00 sec)
 > To ensure transaction serializability, the server must not permit one session to perform a data definition language (DDL) statement on a table that is used in an uncompleted explicitly or implicitly started transaction in another session. The server achieves this by acquiring metadata locks on tables used within a transaction and deferring release of those locks until the transaction ends. A metadata lock on a table prevents changes to the table's structure. This locking approach has the implication that a table that is being used by a transaction within one session cannot be used in DDL statements by other sessions until the transaction ends.
 
 也就是说，5.5中表的“元数据锁”一直到整个”事务”全部完成后才会释放，而5.1中，一个事务请求表的“元数据锁”直到“语句”执行完毕。这个特性的好处在于可以避免复制过程中日志顺序错误的问题。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **参考资料**
 

@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之热备"
 category: 数据库
 summary: "在上两篇文章（MySQL备份与恢复之冷备，MySQL备份与恢复之真实环境使用冷备）中，我们提到了冷备和真实环境中使用冷备。那从这篇文章开始我们看下热备。显然热备和冷备是两个相对的概念，冷备是把数据库服务，比如MySQL，Oracle停下来，然后使用拷贝、打包或者压缩命令对数据目录进行备份；那么我们很容易想到热备就是在MySQL或者其他数据库服务在运行的情况下进行备份。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 热备 ##
 
@@ -455,6 +466,17 @@ mysql -uroot -p123456 -e "select * from game.country"
 |  60 | 魏国    | 洛阳     |
 +-----+---------+----------+
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

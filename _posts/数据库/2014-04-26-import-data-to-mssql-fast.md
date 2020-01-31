@@ -5,7 +5,7 @@ layout: post
 title: "SQL Server快速导入数据分享"
 category: 数据库
 summary: "SQL Server快速导入数据，可以尝试的方法如下：CTE、OpenRowSet/OpenDataSource、BULK INSERT、bcp、Shell。"
-tags: 
+tags:
 - 数据库
 - Database
 - MSSQL
@@ -17,6 +17,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 SQL Server快速导入数据，可以尝试的方法如下：**CTE、OpenRowSet/OpenDataSource、BULK INSERT、bcp、Shell**。
 
@@ -121,6 +132,17 @@ Shell通过拼接插入字符串的方法非常灵活，并且出错较少，但
 最后，贴张前段时间做的图，导入数据总结：
 
 ![导入数据总结](https://cdn.dbarobin.com/UK4yGEJ.jpg)
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

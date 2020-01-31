@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之真实环境使用冷备"
 category: 数据库
 summary: "在上一篇文章（MySQL备份与恢复之冷备）中，我们提到了冷备。但是有个问题，我们存储的数据文件是保存在当前本地磁盘的，如果这个磁盘挂掉，那我们存储的数据不就丢失了，这样备份数据不就功亏一篑，劳而无功。所以真实环境中我们多准备几块磁盘，然后再在这些磁盘上搭建LVM，把MySQL的数据目录挂载到LVM上，这样数据就不是存储在当前磁盘上，就可以保证数据的安全性。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 真实环境使用冷备 ##
 
@@ -126,7 +137,7 @@ tmpfs                 188M     0  188M   0% /dev/shm
 /dev/mapper/data-mydata
                       2.0G   67M  1.9G   4% /usr/local/mysql/data
 ```
-[root@serv01 ~]# 
+[root@serv01 ~]#
 
 第十一步，将挂载信息写入配置文件。
 
@@ -315,6 +326,17 @@ mysql> select * from stu;
 +------+---------+------+
 2 rows in set (0.00 sec)
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

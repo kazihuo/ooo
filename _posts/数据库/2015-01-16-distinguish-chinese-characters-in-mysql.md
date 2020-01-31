@@ -5,7 +5,7 @@ layout: post
 title: "MySQL 判断中文字符"
 category: 数据库
 summary: "在生产环境中，经常会有这样的场景：获得中文数据。那问题就来了，怎么才能匹配出中文字符呢？本文提供两种方法。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -17,6 +17,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 引子 ##
 
@@ -152,6 +163,17 @@ mysql> SELECT name FROM user WHERE length(name) <> char_length(name);
 方法一中，`[\u0391-\uFFE5]` 匹配中文以外的字符。
 
 方法二中，当字符集为UTF-8，并且字符为中文时，`length()` 和 `char_length()` 两个方法返回的结果不相同。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 参考官方文档：
 

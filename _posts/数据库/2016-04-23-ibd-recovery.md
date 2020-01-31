@@ -15,6 +15,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 0x00 文章目录
 ***
 
@@ -283,6 +294,17 @@ From [blog.jcole.us](https://blog.jcole.us/2013/01/03/the-basics-of-innodb-space
 第三，解决问题的同时，做好素材收集很重要。如果没有完善的素材收集，读者也就很难看到这篇文章了。
 
 第四，官方文档是一手好资料，应该好好利用。另外，强烈推荐看看姜老师写的这本书：[MySQL 技术内幕 InnoDB 存储引擎](https://book.douban.com/subject/24708143/)。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 0x06 相关资料
 ***

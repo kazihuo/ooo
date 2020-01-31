@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之热拷贝"
 category: 数据库
 summary: "在上一篇文章中我们提到热备，热备也就是在MySQL或者其他数据库服务在运行的情况下进行备份。本文分享另外一种备份的方法，也就是热拷贝。热拷贝跟热备很类似，只不过热备使用mysqldump命令，热拷贝使用mysqlhotcopy命令。热拷贝的优势在于支持服务运行中进行备份，速度快，性能好；劣势在于只能备份MyIsam的表，无法备份InnoDB的表。所以在生产环境中应该酌情使用。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 热拷贝 ##
 
@@ -40,9 +51,9 @@ mysqlhotcopy -uroot -p123456 --database larrydb > larrydb_hostcopy.sql
 第二步，报错。因为这个命令是用perl写的或者此命令需要perl支持，所以需要perl支持。
 如果出现如下错误：
 
-> Can't locate DBI.pm in @INC (@INC contains: /usr/local/lib64/perl5 
-> /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl 
-> /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) 
+> Can't locate DBI.pm in @INC (@INC contains: /usr/local/lib64/perl5
+> /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl
+> /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .)
 > at /usr/local/mysql/bin/mysqlhotcopy line 25.
 > BEGIN failed--compilation aborted at /usr/local/mysql/bin/mysqlhotcopy line 25.
 
@@ -201,6 +212,17 @@ mysql> select * from class;
 +------+--------+
 2 rows in set (0.00 sec)
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

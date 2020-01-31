@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之保证数据一致性"
 category: 数据库
 summary: "在上一篇文章中我们提到热拷贝（MySQL备份与恢复之热拷贝），热拷贝也就是在MySQL或者其他数据库服务在运行的情况下使用mysqlhotcopy命令进行备份。这篇文章我们讲解怎样保证数据一致性。现在假设有这样一种情况，我们总是在凌晨对数据库进行备份，假设在凌晨之后发生数据库异常，并且导致数据丢失。这样凌晨之前的数据我们已经做了备份，但是凌晨到发生异常这段时间的数据就会丢失（没有binlog的情况下）。好在InnoDB存储引擎支持事务，也支持Binlog，凌晨到发生异常这段时间的数据就可以通过日志文件进行备份。所以，日志文件是非常重要，非常关键的。我们备份不仅要对数据进行备份，如果条件允许还需要对二进制文件进行备份。当然备份好数据之后，可以清空二进制文件，但如果为了长远考虑，比如恢复出来的数据并不是我们想要的，我们就需要备份二进制文件了。还有一点切记，恢复数据需要转到测试数据库中做，不要在生产环境中做。待测试库中测试没有问题，再在生产环境中做。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 数据一致性 ##
 
@@ -307,7 +318,7 @@ mysqlbinlog mysql-bin.000001
 
 ``` bash
 # at 7131
-#130910 19:37:45 server id 1  end_log_pos 7240  
+#130910 19:37:45 server id 1  end_log_pos 7240
 Query thread_id=20  exec_time=996 error_code=0
 SET TIMESTAMP=1378813065/*!*/;
 update stu set sname="larry007" where sid=1
@@ -323,6 +334,17 @@ DELIMITER ;
 ROLLBACK /* added by mysqlbinlog */;
 /*!50003 SET COMPLETION_TYPE=@OLD_COMPLETION_TYPE*/;
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

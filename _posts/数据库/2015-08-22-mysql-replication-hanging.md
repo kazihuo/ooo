@@ -48,6 +48,17 @@ comments:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 引子 ##
 ***
 
@@ -324,6 +335,17 @@ Master_SSL_Verify_Server_Cert: No
 ***
 
 这样的故障，归根结底还是研发写的程序还有优化的余地。大批量的数据插入，这在 MySQL 中是不推荐使用的。我们可以这样：第一，一条 SQL 语句插入多条数据；第二，在事务中进行插入处理；第三，分批插入，在程序中设置 auto_commit 为 0，分批插入完成后，手动 COMMIT；第四，需要使用 LOAD DATA LOCAL INFILE 时，设置 sync_binlog 为 1。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之percona-xtrabackup软件的使用"
 category: 数据库
 summary: "在前面，我们讲到MySQL冷备、热备、mysqldump、热拷贝、保证数据的一致性。因为mysql冷备、mysqldump、mysql热拷贝均不能实现增量备份，在实际环境中增量备份是使用较多的，percona-xtrabackup就是为实现增量备份而生，因此我们需要使用percona-xtrabackup。在前面，我们讲到MySQL冷备、热备、mysqldump、热拷贝、保证数据的一致性。因为mysql冷备、mysqldump、mysql热拷贝均不能实现增量备份，在实际环境中增量备份是使用较多的，percona-xtrabackup就是为实现增量备份而生，因此我们需要使用percona-xtrabackup。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -21,6 +21,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 使用percona-xtrabackup的原因 ##
 
 在前面，我们讲到MySQL冷备、热备、mysqldump、热拷贝、保证数据的一致性。因为mysql冷备、mysqldump、mysql热拷贝均不能实现增量备份，在实际环境中增量备份是使用较多的，percona-xtrabackup就是为实现增量备份而生，因此我们需要使用percona-xtrabackup。
@@ -30,11 +41,11 @@ tags:
 ## 二 什么是percona-xtrabackup ##
 
 > Percona XtraBackup is an open-source hot backup utility for MySQL -based servers that doesn’t lock your database during the backup.
-> 
+>
 > It can back up data from <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-innodb" target="_blank">InnoDB</a>, <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-xtradb" target="_blank">XtraDB</a>,and <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-myisam" target="_blank">MyISAM</a> tableson MySQL 5.1 <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/#n-1" target="_blank">[1]</a>, 5.5 and5.6 servers, as well as Percona Server with <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-xtradb" target="_blank">XtraDB</a>. For a high-level overview of many of its advanced features, including a featurecomparison, please see <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/intro.html" target="_blank">About Percona Xtrabackup</a>.
-> 
+>
 > Whether it is a 24x7 highly loaded server or alow-transaction-volume environment, Percona XtraBackup isdesigned to make backups a seamless procedure without disrupting theperformance of the server in a production environment.<a href="http://www.percona.com/services/mysql-support" target="_blank">Commercial support contracts areavailable</a>.
-> 
+>
 > Percona XtraBackup is a combination of the **xtrabackup** C program,and the **innobackupex** Perl script. The **xtrabackup** programcopies and manipulates <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-innodb" target="_blank">InnoDB</a> and <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-xtradb" target="_blank">XtraDB</a> datafiles, and the Perl script enables enhanced functionality,such as interacting with a running MySQL server and backing up <a href="http://www.percona.com/doc/percona-xtrabackup/2.1/glossary.html#term-myisam" target="_blank">MyISAM</a> tables.
 
 ## 三 软件及文档获取 ##
@@ -133,7 +144,7 @@ innobackupex: Finished copying back files.
 ``` bash
 /etc/init.d/mysqld restart
  ERROR! MySQL server PID file could not be found!
-Starting MySQL. ERROR! The server quit without updating PID file 
+Starting MySQL. ERROR! The server quit without updating PID file
 (/usr/local/mysql/data/serv01.host.com.pid).
 ```
 
@@ -148,7 +159,7 @@ chown mysql.mysql /usr/local/mysql/data/ -R
 ``` bash
 /etc/init.d/mysqld restart
  ERROR! MySQL server PID file could not be found!
-Starting MySQL.. ERROR! The server quit without updating PID file 
+Starting MySQL.. ERROR! The server quit without updating PID file
 (/usr/local/mysql/data/serv01.host.com.pid).
 
 ps -ef | grep mysql
@@ -179,6 +190,17 @@ mysql> show databases;
 8 rows in set (0.00 sec)
 
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 五 参考资料 ##
 

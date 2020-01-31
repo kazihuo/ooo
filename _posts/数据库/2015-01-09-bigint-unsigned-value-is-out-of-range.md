@@ -5,7 +5,7 @@ layout: post
 title: "MySQL BIGINT UNSIGNED value is out of range"
 category: 数据库
 summary: "MySQL中，SMALLINT 有符号数的范围是 -32768 到 32767，无符号数的范围是 0 到 65535。因为创建表时，定义为无符号数，cola - 100 显然超过了它所表示的范围，所以会报错。我们在查询时，把无符号数转换为有符号数，就不会有这个问题了。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -13,6 +13,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 环境：
 Linux：RHEL 6.1
@@ -75,6 +86,17 @@ URL: http://dev.mysql.com/doc/refman/5.5/en/numeric-type-overview.html
 ```
 
 可以看到，MySQL中，`SMALLINT` 有符号数的范围是 -32768 到 32767，无符号数的范围是 0 到 65535。因为创建表时，定义为无符号数，cola - 100 显然超过了它所表示的范围，所以会报错。我们在查询时，把无符号数转换为有符号数，就不会有这个问题了。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 Enjoy!
 

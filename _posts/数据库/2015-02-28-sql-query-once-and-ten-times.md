@@ -5,7 +5,7 @@ layout: post
 title: "MySQL 每次查询一条数据查询十次与一次查询十条数据之间的区别"
 category: 数据库
 summary: "有个知友邀请我回答问题，问道：「MySQL 每次查询一条数据查 10 次和一次查询 10 条数据效率有多少差距？」总体上来说，一次查询 10 条数据效率是高于每次查询一条数据查 10 次的。但究竟差距多少，具体的数据很难说。这本来是一个很简单的问题，但我还是想亲身实践下，给以后碰到这个问题的朋友一点参考。我先做一个模拟，然后在文末给出一个分析。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -13,6 +13,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 引子 ##
 
@@ -187,6 +198,17 @@ MySQL 中，每一次查询要经过如下过程：
 ![MySQL Architecture](https://cdn.dbarobin.com/xCOBqKX.jpg)
 
 读者请看，一个正确的 SQL 查询需要经历以上步骤，稍显复杂。获得 10 条数据，查询十次，每一次都要经历上述过程，耗费的时间不用说，也比查询 1 次要多。所以，推荐的是 1 次就获取 10 条数据，而不是执行 10 次。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

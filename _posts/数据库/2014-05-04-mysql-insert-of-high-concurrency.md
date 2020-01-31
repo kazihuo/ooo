@@ -5,7 +5,7 @@ layout: post
 title: "高并发Insert Ignore存储引擎的选择"
 category: 数据库
 summary: "如果不是对事务要求非常的强，高并发写推荐选择MyISAM。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -15,6 +15,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **「问题」**
 
@@ -46,6 +57,17 @@ InnoDB存储引擎在插入数据时会花更多的开销在维护完整性、�
 我们知道有三种插入方法，insert into、replace into及insert ignore。既然题主提供表的3个字段都是唯一的，那不会出现重复的数据，为什么还用insert ignore呢？insert into此时跟insert ignore不是一样。
 
 如上，个人拙见，仅供参考。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

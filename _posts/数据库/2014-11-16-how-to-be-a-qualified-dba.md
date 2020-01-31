@@ -5,7 +5,7 @@ layout: post
 title: "DBA的前途如何，如何成为一名合格的DBA"
 category: 数据库
 summary: "DBA并不像想象中的那么光鲜，很苦逼的，如果真想做一名DBA，做好心理准备。:）知友问题以及我的回答。"
-tags: 
+tags:
 - 数据库
 - Database
 - DBA
@@ -13,6 +13,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **问题描述：**
 
@@ -65,6 +76,17 @@ mysql的学习顺序及入门要求是什么？<br/>
 **5.BTW，DBA并不像想象中的那么光鲜，很苦逼的，如果真想做一名DBA，做好心理准备。:）**
 
 Good Luck!
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

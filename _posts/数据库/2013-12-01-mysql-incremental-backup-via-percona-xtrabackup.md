@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复"
 category: 数据库
 summary: "在上一篇文章，我们讲到 percona-xtrabackup软件的使用，这一篇文章我们讲解percona-xtrabackup实现增量备份及恢复。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 文章回顾 ##
 
@@ -200,7 +211,7 @@ innobackupex --apply-log --redo-only \
 InnoDB Backup Utility v1.5.1-xtrabackup; Copyright 2003, 2009 Innobase Oy
 and Percona Inc 2009-2012.  All Rights Reserved.
 ……
-innobackupex: Copying '/databackup/2013-09-10_22-15-45/hello/db.opt' to 
+innobackupex: Copying '/databackup/2013-09-10_22-15-45/hello/db.opt' to
 '/databackup/2013-09-10_22-12-50/hello/db.opt'
 130910 22:32:26  innobackupex: completed OK!
 ```
@@ -314,6 +325,17 @@ mysql> select * from larrydb.stu;
 +------+----------+------+
 4 rows in set (0.00 sec)
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

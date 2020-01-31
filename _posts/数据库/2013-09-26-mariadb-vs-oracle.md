@@ -5,7 +5,7 @@ layout: post
 title: "MariaDB, Replacement for MySQL, 此时Oracle态度"
 category: 数据库
 summary: "众说纷纭，不过对企业、用户来说未尝不是好事，数据库技术肯定是不断地向前发展，企业、用户也会有更多的选择。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -15,6 +15,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 2013年9月22日Oracle官方发布MySQL5.7.2，功能增加了很多，也有很多优化，该版本提供了更快的连接速度，更高的事务吞吐量，提升了复制速度，带来了内存仪表和其他增强功能，从而实现更高的性能和增强的可管理性。
 
@@ -27,6 +38,17 @@ tags:
 毋庸置疑，Oracle是当今数据库的老大，现在坐拥收费的Oracle和开源免费的MySQL，不用说是数据库的王者。有说法Oracle会把MySQL一步步搞死，MySQL走向闭源；又有说法Oracle会大力扶持MySQL，甚至加入Oracle中优秀的元素，从而牵制其他数据库的发展。现在MariaDB的发展迅猛，势必会对MySQL构成威胁，一方面Oracle很担心会使MySQL的占有率下降，另一方面Oracle也很期望有这样的产品对MySQL造成威胁，这样自家的Oracle会更有优势。不过前途并不见得光明，现在互联网有去Oracle化的趋势，也就是说很多互联网企业会抛弃Oracle，转向MySQL或者其他一些开源的数据库，或者在MySQL源码上进行二次开发，Oracle只是一些传统企业，比如电信、移动、金融、一些国企使用。而且云计算、大数据时代，刚发布的12c（关键词：”Plug into the Cloud”）虽加入Multitenant组件（PluggableDatabase特性），也就是Oracle对云计算发起突击，但传统关系型数据库怎么适应这个变化前途也不是那么明朗，想必这些也是Oracle现在担心的吧。
 
 众说纷纭，不过对企业、用户来说未尝不是好事，数据库技术肯定是不断地向前发展，企业、用户也会有更多的选择。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

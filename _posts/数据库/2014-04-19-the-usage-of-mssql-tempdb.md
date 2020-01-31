@@ -5,7 +5,7 @@ layout: post
 title: "深刻的教训-SQL Server关于TempDB的使用"
 category: 数据库
 summary: "由于tempdb是存储在SSD上，且总大小为270G。所以，在显式使用临时表时一定要注意数据大小。避免把tempdb空间耗尽，影响整个SQLServer的正常运行。好在设置了tempdb的最大空间，并且最大空间小于SSD硬盘的最大容量，不然服务器的盘就会挂掉，从而导致服务器宕机，多么痛的领悟！切忌犯如此低级错误，作下此文提醒和鞭策自己，凡事三思而后行！"
-tags: 
+tags:
 - 数据库
 - Database
 - MSSQL
@@ -17,6 +17,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 场景现象 ##
 
@@ -65,6 +76,17 @@ IF NOT EXISTS (SELECT *
 ## 总结 ##
 
 由于tempdb是存储在SSD上，且总大小为270G。所以，在显式使用临时表时一定要注意数据大小。避免把tempdb空间耗尽，影响整个SQLServer的正常运行。好在设置了tempdb的最大空间，并且最大空间小于SSD硬盘的最大容量，不然服务器的盘就会挂掉，从而导致服务器宕机，多么痛的领悟！切忌犯如此低级错误，作下此文提醒和鞭策自己，凡事三思而后行！
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

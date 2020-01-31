@@ -6,7 +6,7 @@ title: "MySQL DBA Tips"
 category: 数据库
 comments: no
 summary: "应网友邀请，写的 MySQL DBA Tips。目前 MySQL DBA 的职业现状：一线城市稀缺。想做 MySQL DBA，就不要想着去三线城市或者以下了，基本用不到。MySQL 占了互联网行业的大半壁江山，如果想从事 MySQL DBA，尽量前往一线城市，机会较多，得到锻炼的可能性也就越大。人才的分布同样符合二八原则，优秀的人永远都是少数。同 Oracle 不同，MySQL 当前发展正猛，机遇与挑战比趋近成熟的 Oracle 更多。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ### 工作内容 ###
 ***
@@ -159,6 +170,17 @@ tags:
 * [数据库书籍及相关资料-GitHub](https://github.com/dbarobin/db-books)
 * [推荐 15 个有价值的 MySQL 教程网站](http://blog.jobbole.com/1093/)
 * [我的知乎回答](http://www.zhihu.com/people/wentasy/answers?order_by=vote_num)
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

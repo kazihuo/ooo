@@ -21,6 +21,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 为什么需要延时备份 ##
 
 在上一篇文章中，我们讲到<a href="https://dbarobin.com/2013/12/01/mysql-incremental-backup-via-percona-xtrabackup/" target="_blank">MySQL备份与恢复之percona-xtrabackup实现增量备份及恢复</a>，percona-xtrabackup是一个优秀的用于增量备份的工具。今天我们讲到的延时备份也是使用他们的产品。
@@ -583,6 +594,17 @@ case "$1" in
         exit 1
 esac
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 五 资源下载 ##
 

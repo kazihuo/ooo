@@ -37,6 +37,17 @@ comments:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 目录
 ***
 
@@ -279,6 +290,17 @@ MySQL 迁移无非是围绕着数据做工作，再继续延伸，无非就是�
 读者在实施迁移的过程中，可以参考此文提供的思路。但怎样保证每个操作正确无误地运行，还需要三思而后行。
 
 说句题外话，**「证明自己有能力最重要的一点就是让一切都在自己的掌控之中。」**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 > 本文首发于 [杰微刊](http://www.jointforce.com/jfperiodical/article/1041)，感谢杰微刊提供赞助！
 

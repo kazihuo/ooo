@@ -5,7 +5,7 @@ layout: post
 title: "白鳝前辈分享的DBA常用软件"
 category: 数据库
 summary: "DBA 的电脑上需要安装什么软件？经常有人问老白，其实每个 DBA 都有自己喜欢使用的软件。对于使用什么软件，用的习惯，用的熟练就好。因为工具只是起到一个辅助的作用，工具的作用是帮助 DBA 思考，在 DBA 进行分析的时候提供辅助作用。因此每个 DBA 使用的软件一定是要和自己的分析习惯相吻合。对于初级的 DBA 来说， QUEST公司的 SPOTLIGHT 这样的的工具对于 DBA 来说是十分有效的工具，可以帮助 DBA 对数据库的总体情况做出一个初步的分析。而对于资深的 DBA ，SPOTLIGHT这样的工具能够提供的帮助就比较少了。"
-tags: 
+tags:
 - 数据库
 - Database
 - DBA
@@ -14,7 +14,18 @@ tags:
 ---
 
 `整理/robin`
-      
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 **【了解作者】**
 
 > 白鳝，真名徐戟，国内资深的系统优化专家。著有《Oracle优化日记》、《OracleRAC日记》。本文摘自《DBA日志》。
@@ -48,6 +59,17 @@ DBA 的电脑上需要安装什么软件？经常有人问老白，其实每个 
 **Wincvs**可能听说的朋友比较少，cvs 是著名的文档版本管理软件，老白用来管理文档的；
 
 **Firefox+scrapboo**老白的知识库收集工具，在网上看到喝什么好的文档，立即拉到知识库里。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

@@ -5,7 +5,7 @@ layout: post
 title: "一次慢查询导致的故障"
 category: 数据库
 summary: "周四一整天，研发反应某台数据库僵死，后面的会话要么连接不上，要么要花费大量的时间返回结果，哪怕是一个简单的查询。本文记录周四遇到的故障。最后做如下总结：出现这类问题的排查步骤：第一，查看服务器监控和 MySQL 监控，分析服务器以及 MySQL 性能，找出异常；第二，如果是慢查询导致，查看慢查询日志，找出出现问题的 SQL，试着优化，或者把结果缓存；第三，分清主次，先解决大块问题，后解决细小问题。 把大块的异常解决，小问题就迎刃而解了。比如本文中的例子，把耗费时间长的会话 kill 掉后，后面的连接就正常了；第四，总结分析。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -18,6 +18,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 引子 ##
 
@@ -97,6 +108,17 @@ SELECT concat('kill ',id,';')
 FROM information_schema.processlist
 WHERE info LIKE 'XXX';
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 Enjoy!
 

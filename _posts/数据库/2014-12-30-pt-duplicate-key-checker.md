@@ -5,7 +5,7 @@ layout: post
 title: "MySQL检查重复索引工具-pt-duplicate-key-checker"
 category: 数据库
 summary: "重复的索引必定会浪费系统资源，势必找出重复索引，然后干掉它。pt-duplicate-key-checker工具是Percona Toolkit中的一员，是DBA进行维护的好帮手。顺便说下，Percona Toolkit是一组相当赞的MySQL维护管理工具，相当赞，强烈推荐使用。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -13,6 +13,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 在MySQL中是允许在同一个列上创建多个索引的，示例如下：
 
@@ -36,7 +47,7 @@ mysql> CREATE TABLE temp
     -> (id int auto_increment primary key,
     -> name varchar(20),
     -> password varchar(20),
-    -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8; 
+    -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8;
 Query OK, 0 rows affected (0.12 sec)
 
 # 插入测试数据
@@ -81,14 +92,14 @@ Records: 3  Duplicates: 0  Warnings: 0
 pt-duplicate-key-checker --user=root \
 --password=xxxx \
 --host=localhost \
---socket=/tmp/mysql5173.sock 
+--socket=/tmp/mysql5173.sock
 ```
 
 输出结果。
 
 ``` bash
 # ########################################################################
-# test.temp                                                               
+# test.temp
 # ########################################################################
 
 # idx_test_temp_name is a duplicate of idx_test_temp_name_new
@@ -101,7 +112,7 @@ pt-duplicate-key-checker --user=root \
 ALTER TABLE `test`.`temp` DROP INDEX `idx_test_temp_name`;
 
 # ########################################################################
-# Summary of indexes                                                      
+# Summary of indexes
 # ########################################################################
 
 # Size Duplicate Indexes   189
@@ -123,12 +134,12 @@ Records: 3  Duplicates: 0  Warnings: 0
 pt-duplicate-key-checker --user=root \
 --password=xxxx \
 --host=localhost \
---socket=/tmp/mysql5173.sock 
+--socket=/tmp/mysql5173.sock
 ```
 
 ``` bash
 # ########################################################################
-# Summary of indexes                                                      
+# Summary of indexes
 # ########################################################################
 
 # Total Indexes  31
@@ -137,6 +148,17 @@ pt-duplicate-key-checker --user=root \
 **总结**
 
 重复的索引必定会浪费系统资源，势必找出重复索引，然后干掉它。`pt-duplicate-key-checker`工具是Percona Toolkit中的一员，是DBA进行维护的好帮手。顺便说下，`Percona Toolkit`是一组相当赞的MySQL维护管理工具，相当赞，强烈推荐使用。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 工具传送门：<a href="http://www.percona.com/software/percona-toolkit" target="_blank"><img src="https://cdn.dbarobin.com/18VTVkQ.jpg" title="Percona Toolkit" height="16px" width="16px" border="0" alt="Percona Toolkit" /></a> 
 

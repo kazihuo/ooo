@@ -5,7 +5,7 @@ layout: post
 title: "Oracle性能调整工具浅谈"
 category: 数据库
 summary: "Oracle性能调整在工作中经常遇到，比如TopSQL的出现导致系统资源浪费严重、物理读过多导致IO出现瓶颈、独占锁导致事务不能提交、索引建立不合理导致查询速度极慢、PGA或者SGA设置不合理导致内存不足、PCTFREE值设置不合理导致的行链接、热点块等等。作为一个DBA应该实时的监控系统，然后找出问题，再分析问题，最后解决。真正有难度的是找出问题所在，对于大多数的问题，只要经验足够都是很好解决的。有经验和没经验主要区别就在于定位问题的速度。"
-tags: 
+tags:
 - 数据库
 - Database
 - Oracle
@@ -14,6 +14,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 Oracle性能调整在工作中经常遇到，比如TopSQL的出现导致系统资源浪费严重、物理读过多导致IO出现瓶颈、独占锁导致事务不能提交、索引建立不合理导致查询速度极慢、PGA或者SGA设置不合理导致内存不足、PCTFREE值设置不合理导致的行链接、热点块等等。作为一个DBA应该实时的监控系统，然后找出问题，再分析问题，最后解决。真正有难度的是找出问题所在，对于大多数的问题，只要经验足够都是很好解决的。有经验和没经验主要区别就在于定位问题的速度。
 
@@ -31,6 +42,17 @@ Oracle性能调整在工作中经常遇到，比如TopSQL的出现导致系统�
 ![Oracle Performance Tuning Tools](https://cdn.dbarobin.com/71WXikr.gif)
 
 **性能调优是一门相当庞大的学问，要知道怎样调优，为什么要这样调优，这个就是一个厚积薄发的过程。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

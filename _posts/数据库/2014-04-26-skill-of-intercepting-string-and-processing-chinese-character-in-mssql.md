@@ -5,7 +5,7 @@ layout: post
 title: "SQL Server截取字符串和处理中文技巧"
 category: 数据库
 summary: "在工作中，发现和总结这些小技巧会让你的工作事半功倍。"
-tags: 
+tags:
 - Database
 - 数据库
 - MSSQL
@@ -17,6 +17,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 环境介绍 ##
 
@@ -127,10 +138,10 @@ FROM   #temp
 **Substring**
 
 > **Returns the part of a character expression that starts at the specified position and has the specified length. The position parameter and the length parameter must evaluate to integers.**
-> 
+>
 > **Syntax**
 > SUBSTRING(character_expression, position, length)
-> 
+>
 > **Arguments**
 > character_expression
 > Is a character expression from which to extract characters.
@@ -138,17 +149,17 @@ FROM   #temp
 > Is an integer that specifies where the substring begins.
 > length
 > Is an integer that specifies the length of the substring as number of characters.
-> 
+>
 > **Result Types**
 > DT_WSTR
 
 **Charindex**
 
 > **Searches an expression for anOther expression and returns its starting position if found.**
-> 
+>
 > **Syntax**
 > CHARINDEX ( expressionToFind ,expressionToSearch [ , start_location ] )
-> 
+>
 > **Arguments**
 > expressionToFind
 > Is a character expression that contains the sequence to be found. expressionToFind is limited to 8000 characters.
@@ -156,39 +167,39 @@ FROM   #temp
 > Is a character expression to be searched.
 > start_location
 > Is an integer or bigint expression at which the search starts. If start_location is not specified, is a negative number, or is 0, the search starts at the beginning of expressionToSearch.
-> 
+>
 > **Return Types**
 > bigint if expressionToSearch is of the varchar(max), nvarchar(max), or varbinary(max) data types; Otherwise, int.
 
 **Rtrim**
 
 > **Returns a character expression after removing trailing spaces.**
-> 
+>
 > RTRIM does not remove white space characters such as the tab or line feed characters. Unicode provides code points for many different types of spaces, but this function recognizes only the Unicode code point 0x0020. When double-byte character set (DBCS) strings are converted to Unicode they may include space characters Other than 0x0020 and the function cannot remove such spaces. To remove all kinds of spaces, you can use the Microsoft Visual Basic .NET RTrim method in a script run from the Script component.
-> 
+>
 > **Syntax**
 > RTRIM(character expression)
-> 
+>
 > **Arguments**
 > character_expression
 > Is a character expression from which to remove spaces.
-> 
+>
 > **Result Types**
 > DT_WSTR
 
 **Ltrim**
 
 > **Returns a character expression after removing leading spaces.**
-> 
+>
 > LTRIM does not remove white-space characters such as the tab or line feed characters. Unicode provides code points for many different types of spaces, but this function recognizes only the Unicode code point 0x0020. When double-byte character set (DBCS) strings are converted to Unicode they may include space characters Other than 0x0020 and the function cannot remove such spaces. To remove all kinds of spaces, you can use the Microsoft Visual Basic .NET LTrim method in a script run from the Script component.
-> 
+>
 > **Syntax**
 > LTRIM(character expression)
-> 
+>
 > **Arguments**
 > character_expression
 > Is a character expression from which to remove spaces.
-> 
+>
 > **Result Types**
 > DT_WSTR
 
@@ -373,6 +384,17 @@ WHERE  name LIKE N'%[一-龥]%' COLLATE Chinese_PRC_BIN
 ```
 
 **在工作中，发现和总结这些小技巧会让你的工作事半功倍。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

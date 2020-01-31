@@ -5,7 +5,7 @@ layout: post
 title: "深入理解MongoDB（一）Linux下配置MongoDB全攻略"
 category: 数据库
 summary: "这是深入理解MongoDB的第一篇文章，本篇文章简要地介绍了MongoDB，并把Linux下完整的配置过程呈现给读者。"
-tags: 
+tags:
 - 数据库
 - Database
 - MongoDB
@@ -18,6 +18,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 MongoDB简介 ##
 
@@ -342,6 +353,17 @@ exit $RETVAL
 ## 三 后记 ##
 
 这是深入理解MongoDB的第一篇文章，本篇文章简要地介绍了MongoDB，并把Linux下完整的配置过程呈现给读者。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 四 参考资料 ##
 

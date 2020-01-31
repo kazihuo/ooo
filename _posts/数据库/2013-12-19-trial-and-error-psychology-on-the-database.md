@@ -5,7 +5,7 @@ layout: post
 title: "数据库上的试错心理"
 category: 数据库
 summary: "从心理学上来讲，人类都有规避伤害的本能，埋藏在内心的规避伤害本能让我们错过太多。比如我们习惯了很多东西，一旦尝试其他的，就会遇到各种麻烦，但往往你尝试其他的会得到更好的，很多时候我们应该习惯改变习惯。尤其对做IT的人来说，死守“最好”的城池会让你止步不前，也会错过很多更好的东西。当你摆脱习惯，尝试其他，你的世界可以多一点不一样。在学习数据库时，如果不害怕“伤害”，不麻烦各种问题，你将会得到更广阔的天空。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -14,10 +14,21 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 如果我们习惯试错，将会收获更多。
 
 最近一位好友问了我一个问题，就是MySQL的Delete语句删除会报ERROR1093 (HY000)错误。SQL语句如下：DELETE FROM test WHEREid=(SELECT max(id) FROM test); 我看了下这个SQL，语法上面没有什么问题啊，这不是标准SQL吗。于是我在Linux环境下测试了MySQL5.1版本和MySQL 5.5版本，均有这样的问题。后来我又到Oracle 11G R2环境下模拟了相同的问题，却可以正确地删除。后来才知道，使用MySQL进行DELETE FROM操作时，若子查询的 FROM 字句和更新或者删除对象使用同一张表，会出现错误。这里有一个变通的解决办法，可以通过多加一层SELECT别名表来变通解决。比如DELETE FROM test WHERE id=(SELECT max(id) FROM (SELECT * FROM test) AS t)，但是这样的效率是极低的。这也算是MySQL的一个坑吧。
- 
+
 以下是操作日志：
 
 ``` bash
@@ -69,6 +80,17 @@ mysql> SELECT id,name FROM test WHERE id=(SELECT max(id) FROM test);
 从心理学上来讲，人类都有规避伤害的本能，埋藏在内心的规避伤害本能让我们错过太多。比如我们习惯了很多东西，一旦尝试其他的，就会遇到各种麻烦，但往往你尝试其他的会得到更好的，很多时候我们应该习惯改变习惯。尤其对做IT的人来说，死守“最好”的城池会让你止步不前，也会错过很多更好的东西。当你摆脱习惯，尝试其他，你的世界可以多一点不一样。在学习数据库时，如果不害怕“伤害”，不麻烦各种问题，你将会得到更广阔的天空。
 
 **年轻在于折腾。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

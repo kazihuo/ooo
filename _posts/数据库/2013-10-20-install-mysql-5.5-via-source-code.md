@@ -5,7 +5,7 @@ layout: post
 title: "MySQL 5.5源码安装"
 category: 数据库
 summary: "MySQL 5.5的安装方法和5.1略有 不同，主要区别在配置环境，MySQL 5.1的安装方法，参考搭建LAMP环境(源码方式)。本文讲解怎样在RedHat 6.1系统上安装MySQL 5.5。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -18,6 +18,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 MySQL 5.5的安装方法和5.1略有 不同，主要区别在配置环境，MySQL 5.1的安装方法，参考搭建LAMP环境(源码方式)。本文讲解怎样在RedHat 6.1系统上安装MySQL 5.5。
 
@@ -197,6 +208,17 @@ cat /etc/my.cnf |grep -e sock -e port
 port              =3306
 socket           =/tmp/mysql.sock
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

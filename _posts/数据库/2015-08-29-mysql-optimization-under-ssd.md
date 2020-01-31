@@ -55,6 +55,17 @@ comments:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 目录
 ***
 
@@ -412,6 +423,17 @@ SET GLOBAL innodb_adaptive_flushing = ON;
 * 这类调优是非常有意义的，是真正能带来价值的，所以需要多下功夫，并且尽可能地搞明白为什么要这么调整。
 
 文末，说一点比较有意思的。之前有篇文章提到过 SSDB。SSDB 底层采用 Google 的 LevelDB，并支持 Redis 协议。LevelDB 的设计完全是贴合 SSD 的设计思想的。首先，尽可能地转化为连续写；其次，不断新增数据文件，防止同一位置不断擦写。另外，SSDB 的名字取得也很有意思，也很有水平。我猜想作者也是希望用户将 SSDB 应用在 SSD 上吧。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 九 参考
 ***

@@ -5,7 +5,7 @@ layout: post
 title: "MySQL AB复制"
 category: 数据库
 summary: "本文讲解如何快速打包和安装MySQL， MySQL AB复制，MySQL AB双向复制，MySQL多级主从复制，解决AB双向复制主键冲突。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 关于MySQL AB复制 ##
 
@@ -1453,6 +1464,17 @@ mysql> select * from t2;
 +----+---------+
 5 rows in set (0.00 sec)
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

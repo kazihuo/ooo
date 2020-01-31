@@ -5,13 +5,24 @@ layout: post
 title: "Mac OS X 运行多个版本 MySQL 之解决方案"
 category: 数据库
 summary: "MySQL 中允许运行多个实例，举一反三，也可以同时运行多个版本的 MySQL。每个版本的 MySQL 占有独立的数据目录、端口、Socket、PID 即可。有了这种思路，就不难实现了。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
 ---
 
-`文/robin` 
+`文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **环境**
 
@@ -56,7 +67,7 @@ sudo chown -R mysql:mysql /usr/local/mysql
 添加环境变量。
 
 ``` bash
-vim ~/.bash_profile 
+vim ~/.bash_profile
 grep mysql-5.1.73 ~/.bash_profile
 ```
 
@@ -67,7 +78,7 @@ grep mysql-5.1.73 ~/.bash_profile
 使配置生效。
 
 ``` bash
-source ~/.bash_profile 
+source ~/.bash_profile
 ```
 
 安装 MySQL 5.1.73。
@@ -98,7 +109,7 @@ sudo scripts/mysql_install_db --user=mysql \
 
 ``` bash
 sudo vim /etc/my.cnf
-cat /etc/my.cnf 
+cat /etc/my.cnf
 ```
 
 内容如下：
@@ -108,7 +119,7 @@ cat /etc/my.cnf
 > mysqladmin = /usr/local/mysql/mysql-5.1.73-osx10.6-x86_64/bin/mysqladmin
 > log = /var/log/mysqld_mutil.err
 > user       = root
-> 
+>
 > [mysqld5173]
 > port=5173
 > socket=/tmp/mysql_5173.sock
@@ -117,7 +128,7 @@ cat /etc/my.cnf
 > user=_mysql
 > log-error=/var/log/mysqld_5173.log
 > pid-file=/tmp/mysqld_5173.pid
-> 
+>
 > [mysqld5540]
 > port=5540
 > socket=/tmp/mysql_5540.sock
@@ -126,7 +137,7 @@ cat /etc/my.cnf
 > user=_mysql
 > log-error=/var/log/mysqld_5540.log
 > pid-file=/tmp/mysqld_5540.pid
-> 
+>
 > [mysqld5612]
 > port=5612
 > socket=/tmp/mysql_5612.sock
@@ -147,7 +158,7 @@ vim ~/.bash_profile
 > \#   ---------------------------------------
 > \#   10.  MySQL alias command configuration
 > \#   ---------------------------------------
-> 
+>
 > \#   Start MySQL 5.1
 > \#   ---------------------------------------
 > alias sta-5.1='sudo mysqld_multi start 5173 && sleep 2 && ps -ef | grep mysql'
@@ -155,19 +166,19 @@ vim ~/.bash_profile
 > \#   Stop MySQL 5.1
 > \#   ---------------------------------------
 > alias sto-5.1="ps -ef | grep mysql_5173 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
-> 
+>
 > \#   Start MySQL 5.5
 > \#   ---------------------------------------
 > alias sta-5.5='sudo mysqld_multi start 5540 && sleep 2 && ps -ef | grep mysql'
-> 
+>
 > \#   Stop MySQL 5.5
 > \#   ---------------------------------------
 > alias sto-5.5="ps -ef | grep mysql_5540 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
-> 
+>
 > \#   Start MySQL 5.6
 > \#   ---------------------------------------
 > alias sta-5.6='sudo mysqld_multi start 5612 && sleep 2 && ps -ef | grep mysql'
-> 
+>
 > \#   Stop MySQL 5.6
 > \#   ---------------------------------------
 > alias sto-5.6="ps -ef | grep mysql_5612 | grep -v grep | awk -F' ' '{print $2}' | xargs sudo kill -9"
@@ -175,7 +186,7 @@ vim ~/.bash_profile
 使配置生效。
 
 ``` bash
-source ~/.bash_profile 
+source ~/.bash_profile
 ```
 
 **测试**
@@ -229,6 +240,17 @@ sto-5.6
 ```
 
 文中涉及的配置文件：<a href="https://github.com/dbarobin/configfiles" target="_blank">configfiles</a>
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 Enjoy!
 

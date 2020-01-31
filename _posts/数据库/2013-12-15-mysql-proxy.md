@@ -5,7 +5,7 @@ layout: post
 title: "MySQL 读写分离"
 category: 数据库
 summary: "MySQL Proxy最强大的一项功能是实现“读写分离(Read/Write Splitting)”。基本的原理是让主数据库处理事务性查询，而从数据库处理SELECT查询。数据库复制被用来把事务性查询导致的变更同步到集群中的从数据库。 当然，主服务器也可以提供查询服务。使用读写分离最大的作用无非是环境服务器压力。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 什么是读写分离 ##
 
@@ -568,6 +579,17 @@ mysql> select * from larrydb.user;
 +------+----------+
 5 rows in set (0.00 sec)
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 六 参考资料 ##
 <a href="http://www.itpub.net/thread-1184103-1-1.html" target="_blank"><img src="https://cdn.dbarobin.com/luz6LB6.png" title="ITPUB" height="16px" width="16px" border="0" alt="ITPUB" /></a> <br/>

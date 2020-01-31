@@ -15,6 +15,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 | 日期 | 作者 |  文档概要 | 版本 | 更新历史 |
 |:------------|:---------------|:-----|:-----|:-----|:-----|
 | 2017/03/01 | robin |  MySQL binlog 物理回溯最佳实战 | v1.0 | 文档初稿 |
@@ -316,6 +327,17 @@ Default database: ''. Query: 'INSERT INTO sbtest.sbtest(k, c, pad) VALUES \
 * mysql-bin.index 这个文件不管加一行减一行，在触发 FLUSH LOGS 的时候原有的复制会被中断。如果旧 Master 有从库，恢复其他从库数据的时候，需要暂时将已有的从库同步停掉（执行 STOP SLAVE），就能避免中断
 * 任何线上操作，都要在完备的测试前提下再操作
 * 迁移过程中，重要的一点是做好数据校验，不管是用 pt，还是手动写脚本，这个过程不能缺失
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

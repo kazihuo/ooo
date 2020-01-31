@@ -5,7 +5,7 @@ layout: post
 title: "如何系统学习MySQL?"
 category: 数据库
 summary: "如何“系统”学习mysql？比如需要看哪些书籍，哪些资料？我曾研读过以下几本书：《高性能mysql》，简朝阳的mysql优化，innodb存储引擎。我个人感觉前两本是告诉读者知其然，第三本是告诉读者所以然。这三本书是有一种渐进的关系的，如果没有前两本的积累和一定的工作经验，直接看第三本的效果是不太好的。学习数据库知识，或者狭义说学习mysql，其学习过程比较曲折，没人谁能告诉你，只要看过某几本书，掌握好哪些知识就算是精通、掌握mysql了。知识面是非常广，知识点是零散的，不像学习编程语言那么系统、那么直接明了。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -13,6 +13,17 @@ tags:
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **【知友问题】**
 
@@ -64,6 +75,17 @@ From：<a href="http://www.itpub.net/thread-1573610-1-1.html" target="_blank"><i
 5）LINUX 熟练操作； linux操作都包括哪些方面呢？能举几个例子说明一下吗？
 
 From：<a href="http://www.itpub.net/thread-1480980-1-1.html" target="_blank"><img src="https://cdn.dbarobin.com/luz6LB6.png" title="ITPUB" border="0" alt="ITPUB" height="16px" width="16px" /></a>
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

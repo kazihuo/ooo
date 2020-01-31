@@ -21,6 +21,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 一 MySQL集群简介 ##
 
 上一篇文章我们提到<a href="https://dbarobin.com/2013/12/15/mysql-proxy/" target="_blank">MySQL 读写分离</a>，这篇文章我们讲解MySQL集群。我们提到的集群，是指多台机器完成一个工作，最主要的场景是数据库服务器和Web服务器，但是集群环境不适合大规模计算。前面我们有提到<a href="https://dbarobin.com/2013/10/27/mysql-replication/" target="_blank">MySQL AB复制</a>，因为MySQL AB复制不适合大规模运用，要解决这个问题，我们可以使用MySQL集群。
@@ -780,6 +791,17 @@ Id= 5
 
 # 其他节点做sql节点的配置即可
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 五 参考资料 ##
 

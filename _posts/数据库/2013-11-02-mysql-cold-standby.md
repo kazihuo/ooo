@@ -5,7 +5,7 @@ layout: post
 title: "MySQL备份与恢复之冷备"
 category: 数据库
 summary: "用一句话概括冷备，就是把数据库服务，比如MySQL，Oracle停下来，然后使用拷贝、打包或者压缩命令对数据目录进行备份。如果数据出现异常，则可以通过备份数据恢复。冷备一般需要定制计划，比如什么时候做备份，每次对哪些数据进行备份等等。但是由于这样的备份占用过多的空间，对大数据量的环境下不一定适合，故生产环境很少使用。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -20,6 +20,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一 什么是冷备 ##
 
@@ -151,7 +162,7 @@ tar -cvPzf mysql01.tar.gz
 
 ``` bash
 rm -rf /usr/local/mysql/data/*
-```# 
+```
 
 第六步，删除所有数据后数据库不能启动。
 
@@ -203,6 +214,17 @@ mysql> select * from stu;
 +------+---------+------+
 2 rows in set (0.00 sec)
 ```
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

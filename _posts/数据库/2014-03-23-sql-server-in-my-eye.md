@@ -5,13 +5,24 @@ layout: post
 title: "我眼里的SQL Server"
 category: 数据库
 summary: "我眼里的MSSQL是图形化界面数据库的翘楚，有着良好的交互，在整体上并不比Oracle、MySQL逊色多少。"
-tags: 
+tags:
 - 数据库
 - Database
 - MSSQL
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 本文站在一个初级DBA的角度来讲下我眼里的SQL Server。
 
@@ -28,6 +39,17 @@ tags:
 同时，以前接触Oracle 和MySQL较多，也发现了MSSQL和他们的很多相似之处和不同。第一，如前所述，MSSQL图形界面优秀，可以让你摆脱纯命令行的操作，而MySQL、OracleDBA的维护99%以上都是使用命令行；第二，MSSQL下的T-SQL和Oracle的PL/SQL非常类似，这也印证了那一点，原理相通的东西表现形式也差不到哪里去；第三，都说MySQL、Oracle优秀，其实上MSSQL也是很优秀的。MSSQL的开发运营团队确实花了大量的功夫，才让MSSQL在市场上占有一席之地；第四，和Oracle一样，深入MSSQL相对困难，封闭式的环境下研究实现过程、原理性探讨确实比MySQL要难太多；第五，前面说到，优秀的图形化设计让维护MSSQL的成本变低，就拿执行计划来说，MSSQL下那是点下鼠标，再用用眼睛，动动脑就能知道是哪里是最大的性能问题，而Oracle还要打开执行计划，然后执行语句，最后再一大堆行中利用优先执行原则一一分析，这也是MSSQL DBA较Oracle DBA低廉的原因之一。
 
 综上所述，我眼里的MSSQL是图形化界面数据库的翘楚，有着良好的交互，在整体上并不比Oracle、MySQL逊色多少。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

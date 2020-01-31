@@ -6,7 +6,7 @@ title: "MySQL 5.5 InnoDB 锁等待"
 category: 数据库
 summary: "MySQL 5.5 中，information_schema 库中新增了三个关于锁的表，亦即 innodb_trx、innodb_locks 和 innodb_lock_waits。
 其中 innodb_trx 表记录当前运行的所有事务，innodb_locks 表记录当前出现的锁，innodb_lock_waits 表记录锁等待的对应关系。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
@@ -19,6 +19,17 @@ tags:
 {:toc}
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 一  引子 ##
 
@@ -584,6 +595,17 @@ mysql> SHOW VARIABLES LIKE '%innodb_lock_wait%';
     * MySQK Error Log；
     * SHOW CREATE TABLE 输出；
 * 发生锁等待会引起系统资源的大量浪费，合理的监控和处理锁等待很重要。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 ## 五 Ref ##
 

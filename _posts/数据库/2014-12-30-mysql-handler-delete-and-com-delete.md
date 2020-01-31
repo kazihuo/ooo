@@ -5,13 +5,24 @@ layout: post
 title: "MySQL Handler_delete and Com_delete"
 category: 数据库
 summary: "Handler_delete是删除的记录数，Com_delete是执行Delete命令的次数。"
-tags: 
+tags:
 - 数据库
 - Database
 - MySQL
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 首先看一个示例。
 
@@ -34,7 +45,7 @@ mysql> CREATE TABLE t2
     -> (id int auto_increment primary key,
     -> name varchar(20),
     -> password varchar(20),
-    -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8; 
+    -> age int) ENGINE=INNODB DEFAULT CHARSET=utf8;
 Query OK, 0 rows affected (0.07 sec)
 
 mysql> INSERT INTO t2(name, password, age) \
@@ -95,7 +106,18 @@ mysql> SHOW GLOBAL STATUS LIKE '%delete%';
 
 > The Com_xxx statement counter variables indicate the number of times each xxx statement has been executed. There is one status variable for each type of statement. For example, Com_delete and Com_update count DELETE and UPDATE statements, respectively. Com_delete_multi and Com_update_multi are similar but apply to DELETE and UPDATE statements that use multiple-table syntax.
 
-也就是说Handler_delete是**删除的记录数**，Com_delete是**执行Delete命令的次数**。
+也就是说 Handler_delete是 **删除的记录数**，Com_delete 是 **执行 Delete命令的次数**。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **参考资料**
 
