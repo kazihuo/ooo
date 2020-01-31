@@ -22,6 +22,17 @@ comments:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 > 我们的时代是程序员主导的时代，而伟大的程序员就是黑客。
 
 钝感力贯穿于我的阅读行为当中，不那么敏感或许会得到更多。写一篇书评，我通常的做法是在一本书阅读完之后，隔一段时间再提笔。这样带来的好处是，有充足的时间思考。大多数的事情，都是需要长时间地观察和思考，才能获得相对客观的理解。
@@ -65,6 +76,17 @@ Paul 认为，财富和金钱并不相同。金钱只是用来交易财富的一
 模仿游戏（The Imitation Game）改编自安德鲁 · 霍奇斯所写的传记「Alan Turing: The Enigma」。上面摘抄的那句话，用在图灵身上再恰当不过。图灵对计算机科学的影响不言而喻。这是一个伟大的数学家、科学家，他所在的时代，别人对他的思想提出质疑。时至今日，我们依然深受他的影响。片尾，图灵因同性恋遭受化学阉割，狼狈不堪，不能自已。Joan Clarke 对 Allen 所说的话：「No one normal could have done that. Now, if you wish you could have been normal, I can promise you I do not. The world is an infinitely better place precisely because you weren’t. I think that sometimes it’s the people who no one imagines anything of who do the things that no one can imagine.」我想，是的。
 
 **做不了黑客，但至少要有一种黑客的精神；成不了画家，但终究需要一种画家的审美。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

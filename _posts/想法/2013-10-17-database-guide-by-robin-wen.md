@@ -5,13 +5,24 @@ layout: post
 title: "一个即将毕业的大学生不是计算机专业的但想往数据库方向走，该怎么做？"
 category: 想法
 summary: "一个即将毕业的大学生不是计算机专业的但想往数据库方向走，该怎么做？一个知友在知乎上的提问以及我的回答。"
-tags: 
+tags:
 - 想法
 - 数据库
 - 计算机
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 **【知友问题】**
 
@@ -29,7 +40,7 @@ tags:
 
 我现在内心非常焦灼！求各位大大给点建议或意见，求敲打求鞭笞！无论鼓励的或者蔑视的，我都会认真的思考吸收并找出一条适合我的道路。
 再次感谢！
- 
+
 **【我的回答】**
 
 ![Database guide by robin wen](https://cdn.dbarobin.com/hKDzoKq.jpg)
@@ -53,6 +64,17 @@ d.很多基本的东西一定要烂熟于心，耳熟能详，不要说你记不
 6.多向大牛看齐，比如@Fenng、@盖国强、@冯春培、@戴明明等等。
 
 7.可以看下这个：<a href="http://www.acoug.org/" target="_blank">中国 Oracle 用户组</a>，祝楼主旅途愉快！
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 
