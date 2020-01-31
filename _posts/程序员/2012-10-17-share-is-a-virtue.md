@@ -5,12 +5,23 @@ layout: post
 title: "程序员的奋斗史（九）分享是种美德"
 category: 程序员
 summary: "分享，需要自己有颗无私的心。不管所有之大，不管所得之多，只要肯分享，就是好的，就会收获更多。"
-tags: 
+tags:
 - 程序员
 - 想法
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 一群人到市场上买了很多水果，而且每个人买的水果都不一样。这时有个人提议，为什么大家不分享出来呢？这样每个人都能吃到不同的水果。于是大家响应了这个提议。大家收获了不同的水果，享受了不同的美味，得到了更多的快乐。
 
@@ -21,6 +32,17 @@ tags:
 ![Share is a virtue](https://cdn.dbarobin.com/87uPaHP.jpg)
 
 **分享是种美德。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

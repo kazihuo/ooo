@@ -5,7 +5,7 @@ layout: post
 title: "程序员的奋斗史（十一）我们是群居动物"
 category: 程序员
 summary: "我们是群居动物，这是永远都不会变的。人是感情动物，日久生情是很自然的。如果一直都是一个人，很难想象以后怎么适应社会，因为以后出社会不和别人打交道是不可能的。所以提醒大家不要太孤僻。"
-tags: 
+tags:
 - 程序员
 - 想法
 ---
@@ -21,6 +21,17 @@ tags:
 ![We are social animal](https://cdn.dbarobin.com/IH5kAF0.gif)
 
 **我们是群居动物，多花时间和别人相处。**
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

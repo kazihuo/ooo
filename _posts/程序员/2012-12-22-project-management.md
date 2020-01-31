@@ -5,12 +5,23 @@ layout: post
 title: "程序员的奋斗史（十）谈项目管理"
 category: 程序员
 summary: "如何让手下的人做事高效，这就需要管理好时间。高效的做事归根到底是时间的管理，而对于时间的管理有可推广到对自我的管理。"
-tags: 
+tags:
 - 程序员
 - 想法
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 现在我来谈项目管理可能太唐突，自己根本没有资本来谈论这个话题。毕竟自己做的项目不是很多，而且作为管理者也很少。但是今天自己突然想在这个话题上说点什么。
 
@@ -31,6 +42,17 @@ tags:
 推荐博客：<a href="http://iamsujie.com/" target="_blank">人人都是产品经理</a>
 
 参考资料：<a href="http://www.pmtoo.com/project/2012/1125/1560.html" target="_blank">淘宝苏杰：分享项目管理中的经验</a>
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

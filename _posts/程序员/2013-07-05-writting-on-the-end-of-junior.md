@@ -5,12 +5,23 @@ layout: post
 title: "程序员的奋斗史（二十四）写在大三结束之际"
 category: 程序员
 summary: "文末，大三是一个终点，同时又是另一个起点。“不要因为走得太远，而忘记为什么出发”，怀着最初的梦想，稳稳地、慢慢地走好每一步。"
-tags: 
+tags:
 - 程序员
 - 大学
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 > 不要因为走得太远，而忘记为什么出发。<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——摘自《看见》 柴静<br/>
@@ -34,6 +45,17 @@ tags:
 最近发生在自己身上的一点点情感波折，让我明白了这样一个道理：All pays deserve gains, maybe not. You will get whatever you want,maybe wrong. You will change something cannot be changed, maybe ridiculous. The only thing I can do is: Let nature take its course.
 
 文末，大三是一个终点，同时又是另一个起点。**“不要因为走得太远，而忘记为什么出发”**，怀着最初的梦想，稳稳地、慢慢地走好每一步。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

@@ -5,12 +5,23 @@ layout: post
 title: "程序员的奋斗史（十九）因为爱情"
 category: 程序员
 summary: "爱情是急不得的，只要情意已到位，很多事情是很自然的，越想得到的往往越得不到，越不抱任何希望往往结果出乎意料。四个字：顺其自然。"
-tags: 
+tags:
 - 程序员
 - 想法
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 问世间情为何物，直教人生死相许。
 
@@ -37,6 +48,17 @@ tags:
 **爱，要矢志不渝；爱，要刻骨铭心；爱，要海枯石烂。爱，要天长地久。**
 
 因为爱情。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

@@ -5,12 +5,23 @@ layout: post
 title: "程序员的奋斗史（二）今天你跑步了吗"
 category: 程序员
 summary: "突然之间有种想跑步的冲动，于是我开始了我的旅程。我是那种想做什么，只要觉得是有意义的事情，就会立马去做的人。这也算是自己的一个特点吧。"
-tags: 
+tags:
 - 程序员
 - 想法
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 突然之间有种想跑步的冲动，于是我开始了我的旅程。
 
@@ -31,6 +42,17 @@ tags:
 当我跨过一个一个的障碍时，我只知道我离成功越来越近。
 
 ![Have you run yet today](https://cdn.dbarobin.com/ocDlIKb.jpg)
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

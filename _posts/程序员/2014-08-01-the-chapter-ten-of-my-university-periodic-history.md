@@ -17,6 +17,17 @@ tags:
 
 `文/robin`
 
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
+
 ## 「写在前面」 ##
 
 大学断代史终于要完结了，就像一条再长的路总有终点一样。该系列文章前前后后写了一两个月，也该收尾了，至于收尾的文章，想了想，决定写写自己对学弟学妹的忠告。本篇文章以话题的形式呈现。
@@ -90,6 +101,17 @@ tags:
 The End.
 
 大学断代史系列文章迷你电子书现已上线，下载地址：<a href="http://vdisk.weibo.com/s/axqD_CoYqJkIn" target="_blank"><img src="https://cdn.dbarobin.com/bJZVCgp.png" title="vdisk" height="16px" width="16px" border="0" alt="vdisk" /></a>。请笑纳。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 

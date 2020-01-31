@@ -5,11 +5,22 @@ layout: post
 title: "《程序员的奋斗史》目录"
 category: 程序员
 summary: "《程序员的奋斗史》，记录着一个伪程序员成长的点点滴滴。五年后我会基于这些连载博文出本书，名字就叫做《程序员的奋斗史》。悉心撰写，悉心整理，希望到时与大家见面。"
-tags: 
+tags:
 - 程序员
 ---
 
 `文/robin`
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 <a href="https://dbarobin.com/2012/04/04/breif-talk-on-primary-programming-language/" target="_blank">程序员的奋斗史（一）浅谈几种主要编程语言</a>
 
@@ -113,6 +124,17 @@ tags:
 
 五年后我会基于这些连载博文出本书，名字就叫做<a href="https://dbarobin.com/" target="_blank">**《程序员的奋斗史》**</a>
 。悉心撰写，悉心整理，希望到时与大家见面。
+
+***
+
+**本站推广**
+
+币安是全球领先的数字货币交易平台，提供比特币、以太坊、BNB 以及 USDT 交易。
+
+> 币安注册: [https://www.binancezh.com/cn/register/?ref=11190872](https://www.binancezh.com/cn/register/?ref=11190872)
+> 邀请码: **11190872**
+
+***
 
 –EOF–
 
