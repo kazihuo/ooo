@@ -33,7 +33,7 @@ WordPress 不用过多介绍了，据 [W3Techs](https://w3techs.com/technologies
 
 内容变现是无数内容创作者朝思暮想的话题，国内有相当多的产品旨在解决这个问题。在相对中心化的世界之外，还有些不那么中心的网站存在，至少不会受内容监管的约束。
 
-FO-Pay 是一个基于加密稳定币 FOUSDT 的 WordPress 付费阅读插件。可能读者会好奇，FOUSDT 是个啥。在讲解 FOUSDT 之前，先了解下 FIBOS。
+FO-Pay 是一个基于加密稳定币 FOUSDT 的 WordPress 付费阅读插件。可能读者会好奇，FOUSDT 是个啥。在讲解 FOUSDT 之前，先了解下 [FIBOS](https://fibos.io)。
 
 ![FIBOS](https://cdn.dbarobin.com/v23bhnb.png)
 
