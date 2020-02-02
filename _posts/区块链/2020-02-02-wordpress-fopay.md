@@ -46,7 +46,7 @@ FO-Pay 是一个基于加密稳定币 FOUSDT 的 WordPress 付费阅读插件。
 * 开放，无准入限制，任何人都可以成为矿工，参与完成稳定币跨链
 * 透明，基于智能合约，无中心化风险，跨链无需任何人为参与，可信
 
-FOUSDT 可以在 FO 钱包中双向兑换，操作教程点击 [此处](https://www.biask.com/article/16096)。USDT 目前有多个版本，Omni、ERC-20、TRC-20、EOS、FIBOS，目前使用最多的是 ERC-20 版本。如果读者在使用 WordPress 搭建博客，可以尝试使用 FO-Pay 插件开启付费阅读，使用教程参考 [此处](https://github.com/easychen/fo-pay/blob/master/README.MD)。
+[FOUSDT](https://fibos.io/zh-cn/fousdt) 可以在 [FO 钱包](https://wallet.fo) 中双向兑换，操作教程点击 [此处](https://www.biask.com/article/16096)。USDT 目前有多个版本，Omni、ERC-20、TRC-20、EOS、FIBOS，目前使用最多的是 ERC-20 版本。如果读者在使用 WordPress 搭建博客，可以尝试使用 FO-Pay 插件开启付费阅读，使用教程参考 [此处](https://github.com/easychen/fo-pay/blob/master/README.MD)。
 
 > 让创作者们得到应有的、开放的、自由的创作环境，并在全球范围内，通过受众的付费，获得持续的发展。
 
