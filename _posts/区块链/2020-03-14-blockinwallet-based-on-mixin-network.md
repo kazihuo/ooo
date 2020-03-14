@@ -50,7 +50,7 @@ tags:
 
 **Mixin Network 从不说自己是 Web3，但实际上已经用项目证明，Mixin Network 比大多数号称 Web3 的项目都更能 Mass Adoption**。
 
-![](https://cdn.dbarobin.com/xxdg7vy.png)
+![](https://cdn.dbarobin.com/xxdg7vy.jpg)
 
 ***
 
