@@ -4,7 +4,7 @@ author: Robin Wen
 layout: post
 title: 币印钱包，基于 Mixin Network 的又一力作
 category: 区块链
-summary: 今天给大家介绍一款基于 Mixin Network 的钱包，出自 BTC 全球第一大矿池币印，名字就叫做「币印钱包」。Mixin Network 从不说自己是 Web3，但实际上已经用项目证明，Mixin Network 比大多数号称 Web3 的项目都更能 Mass Adoption。
+summary: 今天给大家介绍一款基于 Mixin Network 的钱包，出自 BTC 全球第一大矿池币印，名字就叫做「币印钱包」。矿工除了收币的需求，还有场外、借贷等需求，来 Mixin 生态吧，这里都能满足。全球第一的 BTC 矿池，选择了 Mixin Network 作为钱包的底层技术，Mixin Network 再一次验证了安全和便利。Mixin Network 从不说自己是 Web3，但实际上已经用项目证明，Mixin Network 比大多数号称 Web3 的项目都更能 Mass Adoption。
 tags:
   - 区块链
   - Blockchain
@@ -28,6 +28,8 @@ tags:
 
 这是「区块链技术指北」的第 **69** 篇文章。
 
+> 友情提醒：文末有 BTC 红包。
+
 今天给大家介绍一款基于 Mixin Network 的钱包，出自 BTC 全球第一大矿池币印，名字就叫做「[币印钱包](https://blockinwallet.com)」。
 
 关于币印，读者感兴趣可以阅读「**全都是空气**」许大大的文章，[币印是怎么成为 BTC 全球第一大矿池的？](https://mp.weixin.qq.com/s/Zesfn8LePkipM_cD2w5-iw)。
@@ -47,6 +49,8 @@ tags:
 矿工除了收币的需求，还有场外、借贷等需求，来 Mixin 生态吧，这里都能满足。全球第一的 BTC 矿池，选择了 Mixin Network 作为钱包的底层技术，Mixin Network 再一次验证了安全和便利。如果读者想在 Mixin Network 上开发应用，开发者文档在这里：[https://developers.mixin.one](https://developers.mixin.one)。
 
 **Mixin Network 从不说自己是 Web3，但实际上已经用项目证明，Mixin Network 比大多数号称 Web3 的项目都更能 Mass Adoption**。
+
+![](https://cdn.dbarobin.com/xxdg7vy.png)
 
 ***
 
