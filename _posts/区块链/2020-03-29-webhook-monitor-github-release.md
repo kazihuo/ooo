@@ -10,7 +10,8 @@ tags:
   - Blockchain
   - Mixin
   - Mixin Network
-  - 币印
+  - Webhook
+  - GitHub
 ---
 
 `文/robin`
@@ -129,7 +130,7 @@ OK，我们现在开始。
 
 图十：Action Fields 填写页面 2
 
-第十二步，Step 6 of 6，Review，名字命名为「Mixin Messenger Android Release」，点击「Finish」保存，如图十一。保存成功，如图十二：
+第十三步，Step 6 of 6，Review，名字命名为「Mixin Messenger Android Release」，点击「Finish」保存，如图十一。保存成功，如图十二：
 
 ![](https://cdn.dbarobin.com/webhook/webhook-11-dl72ihb.png)
 
