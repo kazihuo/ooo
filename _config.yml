@@ -146,3 +146,5 @@ kramdown:
   syntax_highlighter: rouge
 
 ### Custom gems.
+
+theme: jekyll-theme-cayman
